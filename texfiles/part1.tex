@@ -1,0 +1,168 @@
+\part{A quick review on SR \& GR}
+\section{Basics conceptions in SR}\label{sec:1}
+我们生活的空间是一个四维局部平坦的\textbf{Lorentz流形}，也就是一个四维微分流形配备一个非正定、非退化的度规$g=g_{\mu\nu}dx^\mu\otimes dx^\nu$，这是一个$(0,2)$张量。局部平坦意思是说任何一点处都可以选取一个坐标系\sn{这个坐标系称为\textbf{局部惯性系}，由于可以从指数映射结合测地线来构造这个惯性系，所以也称为\textbf{自由下落参考系}}使得$g_{\mu\nu}=\eta_{\mu\nu},\nabla_\rho g_{\mu\nu}$\sn{这里符号约定为$\eta_{\mu\nu}=(-,+,+,+)$}。而Lorentz体现在$\eta$有一个指标是负数，而且根据惯性定理，无论你选取什么坐标系将度规对角化，最终负数的个数都是一样的，这样一来我们便可以严格的区分时间和空间\sn{如果这里把$\eta$中的$-1$变成$+1$，我们称为\textbf{Riemann流形}}。
+
+参数化流形后，时空上的每一点（事件）都将对应一个坐标$x^\mu$，时空中的曲线（世界线）可以参数化为$x^\mu(\tau)$，其可以看作是由矢量场$X=X^\mu\partial_\mu=\frac{x^\mu(\tau)}{d\tau}\partial_\mu$诱导的。考虑世界线上相邻的两点，我们可以定义线长为
+\[dl=\sqrt{|g(X,X)|}=\int d\tau\sqrt{g_{\mu\nu}\frac{x^\mu}{d\tau}\frac{x^\nu}{d\tau}}\]
+很多时候也把线长记为$ds^2=g_{\mu\nu}dx^\mu dx^\nu$但是在微分几何的严格意义下，$dx^\mu$是对偶矢量，并不是初等微积分中的微分，所以这个式子只能理解为$ds^2=g_{\mu\nu}dx^\mu\otimes dx^\nu$，也就是说$ds^2$只是张量$g$的另一个叫法而已！后面我们为了方便可能牺牲严谨性，使用$ds^2$表示世界线长。
+
+GR中最重要的基本假设便是在坐标变换下物理定律是不变的，这说明作用量必须是标量，几乎唯一确定了真空引力场作用量为：
+\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		$\Lambda$是宇宙学常数\\
+		$g\equiv\det g_{\mu\nu}$\\
+		$R$是Ricci标量\\
+		取自然单位制$c=\hbar=1$
+	\end{tabularx}
+\end{margintable}
+\begin{equation}
+	S_{\mathrm{EH}}=\frac{1}{16\pi G}\int \mathrm{d}^4x\sqrt{-g} (R-2\Lambda)
+\end{equation}
+由于度规是张量，所以其在坐标变换下分量变换为：\sn{注意两边对应的自变量，因为张量都是关于流形上点的场，所以这里坐标变换后流形上某点对应的坐标也变了。}
+\[\tilde{g}_{\mu\nu}(\tilde{x})=\frac{\partial \tilde{x}^\rho}{\partial x^\mu}\frac{\partial \tilde{x}^\sigma}{\partial x^\nu}g_{\rho\sigma}(x)\]
+在SR中我们仅研究平直的时空，或者说只研究惯性系之间的变换，这些惯性系中的变换满足$\tilde{\eta}=\eta$，可以一般的记为：
+\[\tilde{x}^\mu=\Lambda^{\mu}_{\ \nu}x^\nu+a^\mu\]
+那么$\Lambda$满足：
+\begin{equation}
+	\Lambda^{\operatorname{T}}\eta\Lambda=\eta
+\end{equation}
+本笔记主要考虑SR时空。
+\section{Poincar\'e group and Lorentz group}
+显然所有的$\Lambda$构成了一个群，称之为\textbf{Lorentz群}：
+\begin{equation}
+	L\equiv O(3,1)\equiv\left\{\Lambda\in M(4,\mathbb{R})|	\Lambda^{\operatorname{T}}\eta\Lambda=\eta\right\}
+\end{equation}
+而所有的保度规变换还要加入$a^mu$，构成\textbf{Poincar\'e群}：$O(3,1)\ltimes \mathbb{R}$，群乘法为：
+\begin{equation}
+	(\Lambda,a)\cdot(\Lambda',a')=(\Lambda\cdot\Lambda',a+\Lambda\cdot a')
+\end{equation}
+利用Poincar\'e群的不等价不可约表示可以对基本粒子进行分类，见本部分末尾。后面我们将主要关注Lorentz群。
+不难验证$\det \Lambda=\pm 1$，它将Lorentz群分成两个分支，其中$\det \Lambda=1$的部分含有单位元，构成子群\textbf{正规Lorentz群}。记为$SO(3,1)$或$L_+$
+
+另外$(\Lambda^0_{\ 0})^2\geq 1$也将Lorentz群分成两个分支，其中$\Lambda^0_{\ 0}\geq1$的部分含有单位元，构成子群\textbf{正时Lorentz群}。记为$O(3,1)^\uparrow$或$L^\uparrow$。
+
+最后$L^\uparrow_+\equiv L^\uparrow\cap L_+$也构成了$L$的一个子群。这些子群之间可以用时间反演和空间反演算符相联系：
+\begin{equation}
+	\mathcal{T}=\begin{pmatrix}
+		-1&  &  & \\
+		& 1 &  & \\
+		&  & 1 & \\
+		&  &  &1
+	\end{pmatrix},\quad\quad\mathcal{P}=\begin{pmatrix}
+	1&  &  & \\
+	& -1 &  & \\
+	&  & -1 & \\
+	&  &  &-1
+	\end{pmatrix}
+\end{equation}
+显然$L_+=\{L_+^\uparrow,\mathcal{T}\},L^\uparrow=\{L_+^\uparrow,\mathcal{P}\},L=\{L_+^\uparrow,\mathcal{T},\mathcal{P}\}$
+
+\subsection{Poincar\'e algebra}
+现在考虑群的局部性质，考虑无穷小坐标变换$x^\mu\mapsto x^\mu+\xi^\mu$，保度规条件为：
+\begin{equation}\label{lie_eta}
+	\mathscr{L}_\xi\eta_{\mu\nu}=\partial_\mu\xi_\nu+\partial_\mu\xi_\nu=\tilde{\eta}_{\mu\nu}(\tilde x)-\eta_{\mu\nu}(x)=0
+\end{equation}
+\begin{remark}
+	这里$\mathscr{L}_\xi$表示李导数。李导数的严格定义涉及到拉回映射，首先对于某个矢量场$\xi$，其给出了一个单参微分同胚群$\phi_t$（可以想象矢量场生成了一簇积分曲线，流形上每一点根据积分曲线移动便生成了单参微分同胚群），利用它我们可以构造拉回映射$\phi_t^*$，从而构造李导数为：
+	\[\mathscr{L}_{\xi}T^{{a_1\cdots a_k}}_{b_1\cdots b_l}\equiv\lim_{t\to0}\frac{1}{t}\left(\phi_t^*{T^{a_1\cdots a_k}}_{b_1\cdots b_l}-{T^{a_1\cdots a_k}}_{b_1\cdots b_l}\right)\]
+	这里$a,b$是抽象指标，只表示张量类型，不表示分量。李导数可以利用下式计算其分量：
+	\begin{equation}
+		\begin{aligned}
+			\mathscr{L}_{\xi}{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\nu_l}=&\xi^\lambda\nabla_\lambda{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\nu_l}-{T^{\lambda\cdots \mu_k}}_{\nu_1\cdots\nu_l}\nabla_\lambda\xi^{\mu_1}-\cdots-{T^{\mu_1\cdots \lambda}}_{\nu_1\cdots\nu_l}\nabla_\lambda\xi^{\mu_k}\\
+			&+{T^{\mu_1\cdots \mu_k}}_{\lambda\cdots\nu_l}\nabla_{\nu_1}\xi^{\lambda}+\cdots+{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\lambda}\nabla_{\nu_l}\xi^{\lambda}
+		\end{aligned}		
+	\end{equation}
+	利用上式便可证明\ref{lie_eta}的正确性。
+\end{remark}
+$\xi^\mu$可以用$\omega_{\ \nu}^\mu$和$b^\mu$两个无穷小参数标记：
+\[\xi^\mu={\omega^\mu}_\nu x^\nu+b^\mu,\quad \omega_{\mu\nu}=-\omega_{\nu\mu}\]
+平移生成元为:
+\[P_\mu=-i\partial_\mu\Rightarrow T(b)=\exp(-i b^\mu P_\mu)\]
+boost和转动生成元为：
+\[M_{\mu\nu}=i\left(x_\mu\partial_\nu-x_\nu\partial_\mu\right)\Rightarrow \Lambda(\omega)=\exp(-\frac{i}{2} \omega^{\mu\nu} M_{\mu\nu})\]
+生成共同构成Poincar\'e代数：
+\begin{equation}
+	\begin{aligned}
+		&[P_\mu,P_\nu]=0,\quad[P_\rho,M_{\mu\nu}]=i(\eta_{\mu\rho}P_\nu-\eta_{\nu\rho} P_\mu)\\
+		&[M_{\mu\nu},M_{\rho\sigma}=i\left(\eta_{\mu\rho}M_{\nu\sigma}-\eta_{\mu\sigma}M_{\nu\rho}-\eta_{\nu\rho}M_{\nu\rho}+\eta_{\nu\sigma}M_{\mu\rho}\right)]
+	\end{aligned}
+\end{equation}
+
+对于更一般的度规，如果矢量场满足\sn{这里我们用到了度规平行移动的性质，$\forall X\in \mathscr{X}(\mathcal{M}),\nabla_X g=0$}
+\[\mathscr{L}_\mathbf{\xi} g_{\mu\nu}=\nabla_\mu\xi_\nu+\nabla_\mu\xi_\nu=0\]
+那我们称$\mathbf{\xi}$为Killing矢量场，如果
+\[\mathscr{L}_\mathbf{\xi} g=0\]
+则称为共形Killing矢量场，后面共形变换部分会对这一点做深入讨论。
+\begin{remark}
+	注意，当我们用矢量场来看待这个问题的时候，我们其实是在用所谓坐标变换的主动观点，也就是坐标变换诱导矢量场，矢量场再诱导流形同胚从而导致张量变换，因为在被动的坐标变换观点下，张量场不会有任何改变。更多关于主动被动观点的讨论见\cite{lcb}。
+\end{remark}
+\section{Boost and Rapidity}
+我们把Lorentz群记为$O(3,1)$强烈暗示了其与$O(n)$群的类似性，其实Lorentz变换完全可以看作是四维时空中的旋转。三维空间旋转有三个自由度，分别是绕着$x,y,z$轴的旋转，这些轴都是由另外两个轴张成的平面所确定的，总数为$C_3^2=3$。那么对于高维空间旋转，比如四维空间可以推广为共$C_4^2=6$个自由度。其中有3个是单纯的$\mathbb{R}^3$中的旋转，还有三个是混合了时间轴的旋转，也就是初等SR介绍中的两个相对速度为$v$的惯性系之间的变换，称为\textbf{boost}。比如$x$方向上的boost就可以显式表达出来为：
+\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		$\gamma(v)=1/\sqrt{(1-\beta(v)^2)}$\\
+		$\beta(v)=v/c$
+	\end{tabularx}
+\end{margintable}
+\begin{equation}
+	\Lambda(v)=\begin{pmatrix}
+		\gamma(v)&-\gamma(v)\beta(v)  &0  & 0\\
+		-\gamma(v)\beta(v) & \gamma(v) &0  &0 \\
+		0&0  & 1 &0 \\
+		0&  0&  0&1
+	\end{pmatrix}
+\end{equation}
+
+$\Lambda(v)$是一个boost，或者说四维转动，类比三维转动$R_x(\theta)R_x(\phi)R_x(\theta+\phi)$，很容易想到$\Lambda(v)\Lambda(w)\overset{?}{=}\Lambda(v+w)$，即绕着某个轴的转动是一个单参数Abel子群。但实际上以$v$为参数并不能看出这一点。可以定义\sn{$\chi\in(-\infty,+\infty)$，所以是非紧致的Lie群}：
+\begin{equation}
+	\chi(v)\equiv\operatorname{arctanh}(\frac{v}{c})
+\end{equation}
+称为\textbf{rapidity}这样便有$\Lambda(\chi_2)\Lambda(\chi_1)=\Lambda(\chi_2+\chi_1)$。
+
+rapidity其实有非常明显的物理含义，回忆一下速度的定义：
+\[\text{velocity}=\frac{\text{displacement}}{\text{time}}\]
+由于右边的分式分子分母都是依赖于参考系的，所以如果B相对于A运动\sn{方便起见假设沿$x$轴作直线运动，但不要求匀速}，实际上可以对于B定义三种不同的速度。
+\begin{definition}
+	$v=\frac{dx}{dt}$，这里$x,t$都是在A的参考系下测得的。
+\end{definition}
+\begin{definition}
+	$u=\frac{dx}{d\tau}$，这里$x$是在A的参考系下测的，$\tau$是B的固有时。
+\end{definition}
+这个定义是关于参考系协变的，也就是通常的$\mathfrak{4}$\mbox{-}速度的定义。
+\begin{definition}
+	$\tilde(v)=\frac{dx_B}{d\tau}$，分子分母都是B自己测得的。
+\end{definition}
+但是这个定义有个很大的问题，B自己测量时间没问题，但是B自己测量自己的位移始终是0，所以上面这个定义必须重新审视。首先我们看如何对应B的加速度，假设B在固有时$\tau$的时刻相对于地面系的速度\sn{第一个定义}为$v$，这个时候考虑一个与B速度相同的瞬时惯性系，也就是说过一段时间$d\tau$之后B相对于这个瞬时惯性系会有个速度$d\tilde{v}$，加速度也便定义为$d\tilde{v}/d\tau$。假设这段时间内，相对于地面系B速度增加了$dv$，那么根据速度叠加法则：
+\begin{equation}
+	\frac{v+d\tilde{v}}{1+vd\tilde{v}/c^2}=v+dv\Rightarrow d\tilde{v}\left(1+v^2/c^2\right)dv
+\end{equation}
+现在对加速度进行积分：
+\begin{equation}
+		I(\tau)=\int^\tau_0 d\tau\frac{d\tilde{v}}{d\tau}=\int^{\tilde{v}}_0d\tilde{v}=\int^{v}_0\frac{dv}{1+v^2/c^2}=c\cdot\operatorname{arctanh}\frac{v(\tau)}{c}=c\cdot\chi(v(\tau))
+\end{equation}
+所以在这个速度的定义下，自然导出了rapidity，如果取自然单位制$c=1$，那么两者完全一致。
+\section{Connected components of Lorentz group}
+对于任何正规且正时的Lorentz群中的元素都可以做标准分解：
+\begin{theorem}
+	$\forall \Lambda\in L_+^\uparrow, \exists R_1,R_2\in SO(3)$，使得
+	\begin{equation}\label{eq:4.1}
+		\Lambda = R_1 L_x(\chi) R_2
+	\end{equation}
+\end{theorem}
+而Lorentz群只需要再加上$\mathcal{T}$和$\mathcal{P}$即可，而且这种分解对于$d>2$维时空都是适用的。从物理上很好理解，一般的Lorentz变换无非就是绕着任意轴的boost，我们都可以先进行转动，将boost方向转为$x$轴，进行boost之后再转回原来的方向。
+
+任何一个Lie群实际上都是一个微分流形，而连通性这个概念正是建立在此之上从拓扑观点来看的。作为一个流形，$G$不一定是连通的，可以有很多个连通分支，其中只有含有$e$的连通分支才能构成子群，我们记为$G_e$，有下面的定理成立：
+\begin{theorem}
+	$G_e\lhd G$且所有连通分支构成商群$G/G_e$.
+\end{theorem}
+这里不做严格证明，下面我们将此定理用于Lorentz群。根据\ref{eq:4.1}，由于其中的每个因子都与$e$道路连通，所以$L^\uparrow_+\subseteq L_e$，而$L$中的其它群元为了与$e$相连，必须通过离散变换$\mathcal{T},\mathcal{P}$，所以实际上$L^\uparrow_+=L_e$，那么连通分支构成商群$L/L^\uparrow_+\cong \mathbb{Z}_2\times\mathbb{Z}_2$，这里同构成立是因为商群实际上由$\{\mathcal{T},\mathcal{P}\}$生成。
+\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		后面我们都用$\cong$表示同构，$\simeq$表示同态
+	\end{tabularx}
+\end{margintable}
+
+可见Lorentz群确实包含了4个连通分支，可以根据$\Lambda^0_{\ 0}$以及$\det \Lambda$的符号进行分类。
+\section{Poincar\'e group and particles}
+encoding$\cdots$
+

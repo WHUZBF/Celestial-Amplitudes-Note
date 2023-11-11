@@ -1,0 +1,37 @@
+\documentclass[10pt]{ctexart}
+\usepackage{NotesTeXV3,lipsum}
+%\usepackage{showframe}
+\usepackage{amsmath}
+\usepackage{amsfonts,amssymb}
+\usepackage{mathrsfs}
+\bibliographystyle{JHEP}
+\usepackage{hyperref}% 可能有用
+
+\begin{document}
+	\title{{天球振幅科研笔记}\\{\normalsize{\itshape Celestial Amplitudes}}}
+	\author{Bufan Zheng}
+	\affiliation{
+	Undergraduate Student at the Wuhan University\\
+%	\href{https://adhumunt.github.io/}{Website}\\
+%	\href{https://inspirehep.net/authors/1669979}{Inspire-HEP}\\
+%	\href{https://www.linkedin.com/in/aditya-dhumuntarao-80a0b8112/}{LinkedIn}\\
+	\href{https://github.com/WHUZBF}{GitHub}\\
+	}
+	\emailAdd{whuzbf@qq.com}
+	
+	\maketitle
+	
+	\newpage
+	\pagestyle{fancynotes}
+	\include{texfiles/part1.tex}
+	\include{texfiles/part2.tex}
+	\include{texfiles/part3.tex}
+	
+%	\begin{thebibliography}{99}
+%	
+%	\end{thebibliography}
+	\nocite{*}
+	\addcontentsline{toc}{part}{参考文献}
+	\bibliographystyle{JHEP}
+	\bibliography{ref.bib}
+\end{document}

@@ -1,0 +1,29 @@
+
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{lcb}
+梁灿彬, \emph{《微分几何入门与广义相对论》}, vol.~1,
+  科学出版社 (2006).
+
+\bibitem{Baez1}
+J.C.~Baez and J.~Huerta, \emph{{Division Algebras and Supersymmetry I}},
+  \href{https://doi.org/10.1090/pspum/081/2681758}{\emph{Proc. Symp. Pure
+  Maths.} {\bfseries 81} (2010) 65}
+  [\href{https://arxiv.org/abs/0909.0551}{{\ttfamily 0909.0551}}].
+
+\bibitem{Baez2}
+J.C.~Baez and J.~Huerta, \emph{{Division Algebras and Supersymmetry II}},
+  \href{https://doi.org/10.4310/ATMP.2011.v15.n5.a4}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 15} (2011) 1373}
+  [\href{https://arxiv.org/abs/1003.3436}{{\ttfamily 1003.3436}}].
+
+\bibitem{Weinberg}
+S.~Weinberg, \emph{{The Quantum theory of fields. Vol. 1: Foundations}},
+  Cambridge University Press (6, 2005),
+  \href{https://doi.org/10.1017/CBO9781139644167}{10.1017/CBO9781139644167}.
+
+\bibitem{Oblak:2015qia}
+B.~Oblak, \emph{{From the Lorentz Group to the Celestial Sphere}},  8, 2015
+  [\href{https://arxiv.org/abs/1508.00920}{{\ttfamily 1508.00920}}].
+
+\end{thebibliography}\endgroup

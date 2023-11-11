@@ -1,0 +1,213 @@
+\part{Lorentz group \& special linear groups}
+% 计数器清零，每个part都要引用，除了part1
+\setcounter{theorem}{0}
+\setcounter{definition}{0}
+\setcounter{lemma}{0}
+\setcounter{sidenote}{1}
+
+本部分我们的目的是建立一系列同构关系，基本思路就是先找到一个同态，然后利用同态核定理构造同构
+\begin{theorem}[同态核定理]
+	如果$f:G\to H$是一个群同态，那么有$\ker(f)\lhd G$且$G/\ker(f)\cong\Im(f)$
+\end{theorem}
+而且本部分会充分利用李群是微分流形这一拓扑性质进行说明，很多证明没有数学上的严谨，重在直观的感性认知。
+\section{$SO(3)\cong SU(2)/\mathbb{Z}_2$}
+$SU(2)$是所有行列式为1的酉矩阵构成的群，其群元素可以一般的写为：
+\[
+U=
+\begin{pmatrix}
+	\alpha & \beta\\
+	-\beta^* &\alpha^*
+\end{pmatrix},\quad |\alpha|^2+|\beta|^2=1
+\]
+这意味着描述一个群元需要四个实参，且满足$\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2=1$，显然这意味着$SU(2)$的拓扑结构为$\mathcal{S}^3$。另外一个需要用到的概念是\textbf{群中心}，也就是与所有群元都对易的群元\sn{注意与Casimir算符的区别}。不难看出$SU(2)$的群中心构成子群$\mathbb{Z}^2$：
+\[
+\mathbb{I}_2=\begin{pmatrix}
+	1 & 0\\
+	0 &1
+\end{pmatrix},\quad
+-\mathbb{I}_2=\begin{pmatrix}
+	-1 &0\\
+	0 &\-1
+\end{pmatrix}
+\]
+\begin{theorem}
+$
+		SO(3)\cong SU(2)/\mathbb{Z}_2
+$
+\end{theorem}
+
+\begin{proof}
+	首先考虑$2\times2$无迹厄米矩阵构成的线性空间$\mathbb{V}$，显然其中任意一个元素都可以写为$X=x^i\sigma_i$，其中$\sigma_i$是三个Pauli矩阵，这实际上建立起了同构$\mathbb{V}\cong\mathbb{R}^3$。$\mathfrak{su}(2)$李代数作为线性空间显然是与$\mathbb{V}$同构的，而$SU(2)$在李代数\footnote{所谓代数，就是线性空间赋予一个封闭的乘法结构}上诱导出一个所谓伴随表示：
+	\[
+	\mathcal{U}(U)X=UXU^\dagger=Ux^i\sigma_i U^\dagger\equiv f(U)^i_j x^j\sigma_i
+	\]
+	容易验证这个表示是保范数$\left\|x\right\|$的，那么$f(U)\in O(3)$，也就是说我们建立了一个同态：
+	\[f:SU(2)\to O(3),U\mapsto f(U)\]
+	
+	
+	\setlength\parindent{2em}为了利用同态核定理，首先计算$\Im(f)$。由于$f$是个连续映射，而且$SU(2)$单连通\footnote{$\mathcal{S}^n$的基本群在$n=1$时为自由群$\mathbb{Z}$，其它时候都为平凡群}，所以$f(U)$也应当包含在$O(3)$的单连通子群中，即$\Im(f)\subseteq SO(3)$。反过来$SO(3)\subseteq \Im(f)$也成立，可以看作是Euler角和Caylay\mbox{-}Klein参数之间的对应，所以$\Im(f)=SO(3)$
+	
+	
+	\setlength\parindent{2em}现在来计算$\ker(f)$，$f(U)=\mathbb{I}_{3\times 3}$说明$\forall X\in \mathbb{V}$，都有$UXU^\dagger=X$，也就是说要找的$U$与任意$X$对易，那么其也与任意的$e^{i X}$对易，然而$\text{Lie Group}=\mathrm{e}^{\textbf{Lie Algebra}}$，所以$U$就是群中心的元素，所以$\ker(f)\cong\mathbb{Z}_2$，根据同态核定理便有$SO(3)\cong SU(2)/\mathbb{Z}_2$。
+\end{proof}
+\begin{remark}
+	这其实说明了$SU(2)$是$SO(3)$群的双覆盖，$SO(3)$群对应流形是对径认同实心球$\mathbb{R}\mathbf{P}^2\times [0,\pi]$，从流形上也能感受一下。最后我们显式给出这个同态：
+	\[
+	f\left[\begin{pmatrix}
+		a& b\\
+		c &f
+	\end{pmatrix}\right]=\begin{pmatrix}
+	\Re(\bar a d+\bar b c) & \Im(a\bar  d-b\bar c)  &\Re(\bar a c-\bar bd) \\
+	\Im(\bar a d+\bar b c) & \Re(a\bar  d-b\bar c)   & \Im(\bar a c-\bar bd)\\
+	\Re(a\bar b-c\bar d) & \Im(a\bar b-c\bar d) &\frac{1}{2}\left(|a|^2-|b|^2-|c|^2+|d|^2\right)
+	\end{pmatrix}
+	\]
+	上式直接从$U,-U$对应同一个$SO(3)$中元素也可看出双覆盖性。
+\end{remark}
+
+\section{$SO(2,1)^\uparrow\cong SL(2,\mathbb{R})/\mathbb{Z}_2$}
+\begin{lemma}[QR分解]
+	任意复矩阵都可以分解为一个酉矩阵$Q$和一个上三角矩阵$R$的乘积，且$R$主对角元全为正数。如果这个矩阵是实矩阵，那么$Q$为正交矩阵。如矩阵可逆，则分解唯一。
+\end{lemma}
+\begin{lemma}
+	$SL(2,\mathbb{R})$的拓扑结构为$\mathcal{S}$，基本群为$\mathbb{Z}$
+\end{lemma}
+\begin{proof}
+	根据QR分解，以及$det S=1\neq 0$，任意$SL(2,\mathbb{R})$中的矩阵都可以唯一的分解为$S=QR$，而且要求$|Q|\cdot|R|=1$，而$R$主对角元全为正数以及$|Q|=\pm 1$实际上给出$Q\in SO(3)$且$R$的对角线上元素有$a\cdot b=1$且为正数的限制，而另一个元素不做限制。这其实就是在对$SL(2,\mathbb{R})$做直积分解，由于$SO(2)$对应的流形为$\mathcal{S}^1$，所以$SL(2,\mathbb{R})$对应的流形为$\mathcal{S}^1\times \mathbb{R}\times\mathbb{R}^+$，后两者基本群平凡，所以$SL(2,\mathbb{R})$对应的基本群为$\mathbb{Z}$。\footnote{这里用了乘积空间基本群为各自基本群的直积。}
+\end{proof}
+了解了$SL(2)$的拓扑性质后就可以开始证明本节的核心结论。
+\begin{theorem}
+	$SO(2,1)^\uparrow\cong SL(2,\mathbb{R})/\mathbb{Z}_2$
+\end{theorem}
+\begin{proof}
+	与上一节同样，我们先构造$\mathfrak{sl}(2,\mathbb{C})$李代数，其由二维实无迹矩阵构成，生成元为：
+	\[t_0=\begin{pmatrix}
+		0 &1 \\
+		-1&0
+	\end{pmatrix},\quad t_1=\begin{pmatrix}
+	0 &1 \\
+	1&0
+	\end{pmatrix},\quad t_2=\begin{pmatrix}
+	1 &0 \\
+	0&-1
+	\end{pmatrix} \]
+	张成的线性空间中任一元素可以表达为$X=x^\mu t_\mu$，显然$\det X=-\eta_{\mu\nu}x^\mu x^\nu=-x^2$，同样我们对$S\in SL(2,\mathbb{C})$构造伴随表示$X\mapsto SXS^{-1}$，其保事件间隔不变，所以诱导了一个同态：
+	\[f:SL(2,\mathbb{R})\to O(2,1),S\mapsto f(S)\]
+	其中
+	\[S t_\mu x^\mu S^{-1}=t_\mu {f(S)^\mu}_\nu x^\nu,\forall x^\mu \in\mathbb{R}^3\iff S t_\mu  S^{-1}=t_\nu {f(S)^\nu}_\mu \]
+	根据$f$连续，从拓扑上得知$\Im f\in SO(2,1)^\uparrow$，反过来，要论证任何$\Lambda \in SO(2,1)^\uparrow$都可以用$f(S)$表示，根据$\Lambda=R_1 L(\chi) R_2$，我们只需要找到$S_1,S_2,S(\chi)$使得
+	\[f(S_1)=R_1,f(S_1)=R_2,f(S(\chi))=L(\chi)\]
+	不难验证前两个等式只需要选取
+	\[S=\begin{pmatrix}
+		\cos\theta &\sin\theta \\
+		-\sin\theta&\cos\theta
+	\end{pmatrix}\in SO(2)\subseteq SL(2,\mathbb{R})\]
+	并合适选取$\theta$参数即可，而后面一个只需选取：
+	\[S(\chi)=\begin{pmatrix}
+		e^{-\chi/2} &0 \\
+		0&e^{\chi/2} 
+	\end{pmatrix}\]
+	最后证明$\ker f\cong \mathbb{Z}_2$的方法就和上一节一样了。
+\end{proof}
+\begin{remark}
+	下面显式给出同态：
+	\begin{equation}
+		f\left[\begin{pmatrix}
+			a &b \\
+			c&d
+		\end{pmatrix}\right]=\begin{pmatrix}
+		\frac{1}{2}\left(a^2+b^2+c^2+d^2\right) &\frac{1}{2}\left(a^2-b^2+c^2-d^2\right) &-ab-cd\\
+		\frac{1}{2}\left(a^2+b^2-c^2-d^2\right)&\frac{1}{2}\left(a^2-b^2-c^2-d^2\right)&-ab+cd\\
+		-ac-bd&bd-ac&ad+bc
+		\end{pmatrix}
+	\end{equation}
+\end{remark}
+\section{$SO(3,1)^\uparrow\cong SL(2,\mathbb{C})/\mathbb{Z}_2$}
+这一节的证明与上一节非常类似，证明细节会适当省略。还是首先关注一下$SL(2,\mathbb{C})$$SL(2,\mathbb{C})$的拓扑性质。
+\begin{lemma}
+	$SL(2,\mathbb{C})$单连通
+\end{lemma}
+\begin{proof}
+	证明依旧是使用QR分解，现在$R$需要一个正实数和一个复数来描述，所以对应流形为$\mathbb{R}^+\times\mathbb{C}$，基本群平凡。而$Q\in SU(2)$对应流形为$\mathcal{S}^3$，基本群也平凡，所以$SL(2,\mathbb{C})$基本群平凡，即单连通。
+\end{proof}
+下面证明本节核心定理：
+\begin{theorem}
+	$SO(3,1)^\uparrow\cong SL(2,\mathbb{C})/\mathbb{Z}_2$
+\end{theorem}
+\begin{proof}
+	证明完全仿造上一节，只是$t\to\tau$，$\tau_0=\mathbb{I}_{2\times 2}$，$\tau_1=-\sigma_1$\footnote{这里符号约定上比一般定义多了个负号，是为了后文处理天球符号更自洽。},$\tau_2=-\sigma_2$，$\tau_3=-\sigma_3$。后面的证明也是用伴随表示诱导同态后计算$\Im f$，这里根据$SL(2,\mathbb{C})\supseteq SU(2)/\mathbb{Z}_2\cong SO(3)$可以得到$f(S)=R$，剩下的一个只用取：
+	\[S(\chi)=\begin{pmatrix}
+		\cosh\frac{\chi}{2} &\sinh\frac{\chi}{2} \\
+		\sinh\frac{\chi}{2} &\cosh\frac{\chi}{2} 
+	\end{pmatrix}\]
+	最后计算$\ker f$也是同样的思路说明$\ker f\cong\mathbb{Z}_2$
+\end{proof}
+\begin{remark}
+	下面显式给出同态：
+	\begin{equation}
+		\begin{aligned}
+		&f\left[\begin{pmatrix}
+			a &b \\
+			c&d
+		\end{pmatrix}\right]=\\
+		&\begin{pmatrix}
+			\frac{1}{2}\left(|a|^2+|b|^2+|c|^2+|d|^2\right) &-\Re(a\bar b +c\bar d) &\Im(a\bar b +c\bar d)&\frac{1}{2}\left(|a|^2-|b|^2+|c|^2-|d|^2\right)\\
+			-\Re(\bar ac +\bar bd)&\Re(\bar ad +\bar bc)&-\Im(a\bar d- b\bar c)&-\Re(\bar ac -\bar bd)\\
+			\Im(\bar ac +\bar bd)&-\Im(\bar ad +\bar bc)&\Re(a\bar d- b\bar c)&\Im(\bar ac -\bar bd)\\
+			\frac{1}{2}\left(|a|^2+|b|^2-|c|^2-|d|^2\right)&-\Re(a\bar b -c\bar d)&\Im(a\bar b -c\bar d)&\frac{1}{2}\left(|a|^2-|b|^2-|c|^2+|d|^2\right)
+		\end{pmatrix}
+		\end{aligned}
+	\end{equation}
+\end{remark}
+下面给出两个之后会用到的例子：
+\begin{example}
+	$z$轴旋转
+	\begin{equation}
+		\begin{pmatrix}
+			1 & 0 &0  &0 \\
+			0&\cos\theta  &-\sin\theta  & 0\\
+			0&-\sin\theta  & \cos\theta &0 \\
+			0&  0&  0&1
+		\end{pmatrix}\sim\pm\begin{pmatrix}
+		e^{-i\theta/2}&0\\
+		0&e^{i\theta/2}
+		\end{pmatrix}
+	\end{equation}
+	$z$方向boost
+	\begin{equation}
+		\begin{pmatrix}
+			\cosh\chi& 0 &0  &\sinh\chi \\
+			0&1  &0  & 0\\
+			0&0 & 1 &0 \\
+			\sinh\chi&  0&  0&\cosh\chi
+		\end{pmatrix}\sim\pm\begin{pmatrix}
+			e^{-\chi/2}&0\\
+			0&e^{\chi/2}
+		\end{pmatrix}
+	\end{equation}
+\end{example}
+\section{Higher dimensions}
+\begin{definition}[赋范可除代数]
+	首先考虑$\mathbb{R}$或者$\mathbb{C}$上的线性空间我们可以赋予乘法结构将其提升为代数，如果除了$0$元其它元素都有逆元，我们称为\textbf{可除代数}，进一步我们可以赋予范数，而且要求范数满足：
+	\[\left\|xy\right\|=\left\|x\right\|\left\|x\right\|,\forall x,y\in V\]
+	即\textbf{赋范可除代数}。
+\end{definition}
+\begin{theorem}[Hurwitz]
+	任何赋范可除代数都同构于$\mathbb{R},\mathbb{C},\mathbb{H},\mathbb{O}$中的一种。其中$\mathbb{H}$是四元数，$\mathbb{O}$是八元数。
+\end{theorem}
+这是一个非常漂亮的结论，告诉我们为什么历史上发现复数之后寻找三元数必然是失败的，而哈密顿的四元数会成功。
+
+不难猜测，对于更高维时空的Lorentz群，会对应四元数和八元数，实际上有：
+\begin{equation}
+	SO(5,1)^\uparrow\cong SL(2,\mathbb{H})/\mathbb{Z}_2\quad\quad
+	SO(9,1)^\uparrow\cong SL(2,\mathbb{O})/\mathbb{Z}_2
+\end{equation}
+另外，八元数实际上构成的不是一个结合代数，所以$SL(2,\mathbb{O})$的存在并非显然的，这里并不深入讨论。但是实际上这些同构关系式蕴含着很深刻的物理，暗示着最小超对称理论只能构建在3，4，6，10维时空中。更有意思的是，可除代数与超弦理论之间有着非常深刻的联系。\cite{Baez1,Baez2}
+\section*{Interlude: Project representation}
+{\color{red}\hrule}
+\hspace*{\fill} \\
+
+下面对Lorentz群表示的本身做更加细致的考量，主要是为了引进一些必要的数学概念，最终结论主要就是将一些讨论更加数学严格化，不用过分在意。本节讨论主要参照Weinberg\cite{Weinberg}。
+
+to be continue\ldots
+
