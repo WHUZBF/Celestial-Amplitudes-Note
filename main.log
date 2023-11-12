@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  12 NOV 2023 00:00
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  12 NOV 2023 23:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1244,31 +1244,136 @@ Package: lipsum 2021-08-01 v2.5 150 paragraphs of Lorem Ipsum dummy text
 \l__lipsum_a_int=\count387
 \l__lipsum_b_int=\count388
 
-(d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./main.aux
-(./texfiles/part1.aux) (./texfiles/part2.aux) (./texfiles/part3.aux))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/latex/annotate-equations/annotate-equatio
+ns.sty
+Package: annotate-equations 2023/05/06 v0.2.2 easily annotate equations using T
+ikZ
+ (d:/LaTeX/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@layerbox@background=\box135
+\pgf@layerboxsaved@background=\box136
+)
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.co
+de.tex
+File: pgflibraryarrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\arrowsize=\dimen360
+))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarysh
+apes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarysh
+apes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarysh
+apes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarysh
+apes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryshapes.callouts.code.tex
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarysh
+apes.callouts.code.tex))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarysh
+apes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodepartlowerbox=\box137
+\pgfnodeparttwobox=\box138
+\pgfnodepartthreebox=\box139
+\pgfnodepartfourbox=\box140
+\pgfnodeparttwentybox=\box141
+\pgfnodepartnineteenbox=\box142
+\pgfnodeparteighteenbox=\box143
+\pgfnodepartseventeenbox=\box144
+\pgfnodepartsixteenbox=\box145
+\pgfnodepartfifteenbox=\box146
+\pgfnodepartfourteenbox=\box147
+\pgfnodepartthirteenbox=\box148
+\pgfnodeparttwelvebox=\box149
+\pgfnodepartelevenbox=\box150
+\pgfnodeparttenbox=\box151
+\pgfnodepartninebox=\box152
+\pgfnodeparteightbox=\box153
+\pgfnodepartsevenbox=\box154
+\pgfnodepartsixbox=\box155
+\pgfnodepartfivebox=\box156
+)))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/latex/tikzmark/tikzlibrarytikzmark.code.t
+ex
+File: tikzlibrarytikzmark.code.tex 2021/02/16 v1.10 TikZ library for marking po
+sitions in a document
+\l__sn_x_dim=\dimen361
+\l__sn_y_dim=\dimen362
+\l__sn_xa_dim=\dimen363
+\l__sn_ya_dim=\dimen364
+)
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+\c@eqnannotatenode=\count389
+) (./main.aux (./texfiles/part1.aux)
+(./texfiles/part2.aux) (./texfiles/part3.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 10.
-LaTeX Font Info:    ... okay on input line 10.
-Package hyperref Info: Link coloring ON on input line 10.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+Package hyperref Info: Link coloring ON on input line 11.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1279,19 +1384,19 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (d:/LaTeX/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count389
+\c@section@level=\count390
 )
-LaTeX Info: Redefining \ref on input line 10.
-LaTeX Info: Redefining \pageref on input line 10.
-LaTeX Info: Redefining \nameref on input line 10.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen360
-\caption@adjustwidth@linewidth=\dimen361
+\caption@adjustwidth@hsize=\dimen365
+\caption@adjustwidth@linewidth=\dimen366
 Package caption Info: float package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1372,7 +1477,7 @@ Package fontspec Info: Could not resolve font "Microsoft YaHei/I" (it probably
 (fontspec)             doesn't exist).
 
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-2.
+3.
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1397,14 +1502,14 @@ Package fontspec Info: Font family 'MicrosoftYaHei(0)' created for font
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sc' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 22.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 23.
 
 
 LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 22.
+(Font)              using `T1/lmr/m/scsl' instead on input line 23.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 22--22
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
 
  []
 
@@ -1421,7 +1526,7 @@ Package fontspec Info: Could not resolve font "FangSong/I" (it probably
 (fontspec)             doesn't exist).
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-2.
+3.
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1437,48 +1542,48 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-2.
+3.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-2.
+3.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-22.
+23.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-22.
+23.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 22.
+(Font)              <10> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 22.
+(Font)              <7> on input line 23.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 22.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 22
+(Font)              <5> on input line 23.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23
 .
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
 
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
 
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1488,7 +1593,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Package marginnote Info: Using workaround for absolute page number on input lin
-e 22.
+e 23.
  (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -1548,13 +1653,13 @@ File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
 t line 147.
-)
-[4]
+
+[4]) [5]
 \openout2 = `texfiles/part2.aux'.
 
  (./texfiles/part2.tex
-Package marginnote Info: Margin note 9.1 is on absolute page 9 on input line 1.
-
+Package marginnote Info: Margin note 10.1 is on absolute page 10 on input line 
+1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1758,7 +1863,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
 line 40.
-[5
+[6
 
 
 
@@ -1969,7 +2074,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
 line 69.
-[6]
+[7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 125.
@@ -2193,24 +2298,28 @@ t line 164.
 Package tcolorbox Warning: Discard zero height first box part due to break prob
 lems (possible loss of zero height content) on input line 188.
 
-[7]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-) [8]
+[9] [10])
+
+LaTeX Warning: Marginpar on page 11 moved.
+
+[11]
 \openout2 = `texfiles/part3.aux'.
 
  (./texfiles/part3.tex
-Package marginnote Info: Margin note 13.1 is on absolute page 13 on input line 
+Package marginnote Info: Margin note 16.1 is on absolute page 16 on input line 
 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
-) [9
+) [12
 
 
 
-] (./main.bbl) [10
+] (./main.bbl) [13
 
 
 ] (./main.aux
@@ -2222,12 +2331,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: F3068314A033B467CA9AE5D68E5574AC;2786.
  ) 
 Here is how much of TeX's memory you used:
- 35891 strings out of 476533
- 763016 string characters out of 5818886
- 1243538 words of memory out of 5000000
- 55542 multiletter control sequences out of 15000+600000
- 588058 words of font info for 190 fonts, out of 8000000 for 9000
+ 38904 strings out of 476533
+ 850396 string characters out of 5818886
+ 1347101 words of memory out of 5000000
+ 58492 multiletter control sequences out of 15000+600000
+ 590829 words of font info for 191 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,19n,122p,1234b,999s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,19n,122p,1234b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (12 pages).
+Output written on main.pdf (15 pages).

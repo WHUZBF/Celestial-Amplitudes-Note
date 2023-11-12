@@ -209,5 +209,87 @@ $
 
 下面对Lorentz群表示的本身做更加细致的考量，主要是为了引进一些必要的数学概念，最终结论主要就是将一些讨论更加数学严格化，不用过分在意。本节讨论主要参照Weinberg\cite{Weinberg}。
 
-to be continue\ldots
+对于一个对称群$G$，在考虑量子力学关于这个群的对称性时我们其实是在考虑其表示对Hilbert空间的作用。群表示自然是个同态，所以我们想到去考虑：
+\begin{equation}
+	U(T)U(\bar T)=U(T\cdot \bar T)
+\end{equation}
+但是量子力学的希尔伯特空间实际上是一个射影空间，两个相差全局相位的量子态视作等价，所以我们实际上应该去考虑群的\textbf{射影表示}：
+\begin{equation}
+	U(T)U(\bar T)=e^{i\phi(T,\bar T)}U(T\cdot \bar T)	
+\end{equation}
+这里利用线性可以证明$\phi(T,\bar T)$与所作用的量子态本身无关，但前提条件是这两个量子态是可加的。比如具有半整数自旋和整数自旋的量子态就是不可加的，最多只能制备出这俩态的直积态。
 
+但是射影表示用起来很麻烦，如果相位具有下面的特殊结构：
+\[\phi(T,\bar T)=\alpha(T\bar T)-\alpha(T)-\alpha(\bar T)\]
+那我们可以对群表示后的算符重定义：
+\begin{equation}\label{redefine1}
+	\tilde U(T)=U(T)\exp\left(i\alpha(T)\right)
+\end{equation}
+这样我们就可以继续考虑普通的表示而不是射影表示了。现在我们必须严格考虑一个群是否存在不能通过重定义消去的射影表示，我们称为\textbf{内禀射影表示}。
+
+既然考虑的是李群，那我们可以把群元用$\theta^a$参数化，并定义：
+\[T(\bar\theta)T(\theta)=T\left(f(\bar\theta,\theta)\right)\]
+根据$f(0,\theta)=f(0,\theta)=\theta$，我们得到单位元附近群元表示的展开：
+\begin{equation}\label{eq:9.3}
+	U\left(T(\theta)\right)=1+i\theta^a t_a+\frac{1}{2}\theta^b\theta^c t_{bc}+\mathcal{O}(\theta^3)
+\end{equation}
+这里$t_a$就是常说的生成元，在这个符号约定下是厄米的，$t_{ab}$关于指标对称，表示更高阶的项。另外$f$有展开：
+\begin{equation}\label{eq:9.4}
+	f^a(\bar\theta,\theta)=\theta^a+\theta^a+{f^a}_{bc}\bar\theta^b\theta^c+\mathcal{O}(\theta^3)
+\end{equation}
+类似地，因为$\phi(T,1)=\phi(T,1)=0$，我们有展开：
+\begin{equation}\label{eq:9.5}
+	\phi\left(T(\theta),T(\bar\theta)\right)=f_{ab}\theta^a\bar\theta^b
+\end{equation}
+结合\ref{eq:9.3}，\ref{eq:9.4}和\ref{eq:9.5}我们得到：
+\begin{equation}
+	t_{bc}=-t_bt_c-i{f^a}_{bc}t_a-if_{bc}
+\end{equation}
+再根据$t_{bc}$的对称性有：
+\begin{equation}
+	[t_b,t_c]=i\eqnmarkbox[blue]{node1}{\left({f^a}_{cb}-{f^a}_{bc}\right)}t_a+i\eqnmarkbox[red]{node2}{\left(f_{cb}-f_{bc}\right)}\cdot\mathbb{I}
+\end{equation}
+\annotate[yshift=1em]{left}{node1}{denote by ${C^a}_{bc}$}
+\annotate[yshift=-1em]{below,label below}{node2}{denote by $C_{bc}$}
+
+在相位不为0时，生成元的对易关系之间多了一项$iC_{bc}\cdots\mathbb{I}$，称为\textbf{中心荷}。根据Jacobi恒等式，中心荷要满足方程：
+\begin{equation}
+	\begin{aligned}
+		{C^a}_{bc}{C^e}_{ad}+{C^a}_{cd}{C^e}_{ab}+{C^a}_{db}{C^e}_{ac}&=0\\
+		{C^a}_{bc}{C}_{ad}+{C^a}_{cd}{C}_{ab}+{C^a}_{db}{C}_{ac}&=0
+	\end{aligned}
+\end{equation}
+这是与李代数具体结构无关的约束，给出一类特解：
+\[C_{ab}={C^e}_{ab}\phi_e,\quad\phi_e\in\mathbb{R}\]
+这类解到底存不存在要看李代数具体结构，但如果说李代数恰好是这样的解，那么我们可以通过重定义生成元：
+\begin{equation}\label{redefine2}
+	\tilde t_a=t_a+\phi_a\Rightarrow [\tilde t_b,\tilde t_c]=i{C^a}_{bc}\tilde t_a
+\end{equation}
+来消除中心荷。这引出了李群是否存在内禀射影表示的定理。
+\begin{theorem}
+	如果李群满足下面两个条件：
+	\begin{itemize}
+		\item[$\bullet$] 可以类似\ref{redefine2}重定义生成元消去所有中心荷。
+		\item[$\bullet$] 群的拓扑结构单连通。
+	\end{itemize}
+	那么我么总可以类似\ref{redefine1}一样令相位为。
+\end{theorem}
+证明比较复杂，我们重点看在Poincar\'e群上的应用，另外，这个定理告诉我们只有两种方式产生内禀投影表示，一种是代数的，一种是拓扑的。
+
+\begin{theorem}[V.Bargmann\cite{V.Bargmann}]
+	半单Lie代数都没可以重定义生成元消去中心荷
+\end{theorem}
+很幸运，齐次Lorentz群，也就是$M_{\mu\nu}$张成的代数是半单的，但不幸的是Poincar\'e代数不是半单的，不过更加幸运的是中心荷依旧可以被消除。
+
+前面我们说明Lorentz群的拓扑结构使用了$QR$分解，实际上，使用另一种稍微不同的分解方式——极分解——可以证明拓扑结构其实同胚于$\mathbb{R}^3\times\mathcal{S}^3\times\mathbb{Z}_2$，Poincar\'e群多出来的那一部分，也就是$\mathbb{R}^4$是平凡的，重点在于$\mathcal{S}^3\times\mathbb{Z}_2$，这其实是个双连通结构。也就是说基本群为$\mathbb{Z}_2$。直观但不严谨的说就是初始点固定，转两圈总共回到初始点两次的“双圈”可以连续收缩到一点，但是单圈被分成两种，一种能收缩到一点，另一种必须再重复自己以此才能收缩到一点。
+
+这么来看Lorentz群必须得用射影表示，我们看一下这个射影表示的特点，核心在于双圈可以收缩到单位元，所以$1\to\Lambda\to\Lambda\bar\Lambda\to1$的路径走两次等于单位元：
+\begin{equation}
+	\left[U(\Lambda)U(\bar\Lambda)U^{-1}(\Lambda\bar\Lambda)\right]^2=1\Rightarrow U(\Lambda)U(\bar\Lambda)=\pm U(\Lambda\bar\Lambda)
+\end{equation} 
+
+这里的正负号完全可以解释成自旋！整数自旋取正号，半整数取负号。而完整的描述应该是这个射影表示加上所谓“超选择定则”。前面我们说过相位是不依赖于态的，但前提条件是这些态是可加的，所以我们可以认为整数和半整数自旋存在超选择定则，也就是说它们不可加，那么相位就依赖于作用的态的自旋，我们实验上也确实发现了这种不可加性。这就构成了整个Lorentz群的表示（同样的推理也可以扩张到Poincar\'e群，毕竟它们拓扑结构一致）。
+
+但是这样还是比较繁琐，但是从数学上看似乎引进射影表示是必然的，那我们能否从物理上把超选择定则给去掉呢？其实，我们完全可以把大自然真正的对称群取为$SL(2,\mathbb{C})$而不是Lorentz群$SL(2,\mathbb{C})/\mathbb{Z}$，这个更大的对称群只有普通表示，射影表示里的正负号随着表示本身的不同就自然的冒出来了。就像是$SU(2)$，看作是对$SO(3)$对称性的扩张，奇数维表示是简并表示，会出现负号，而偶数维是忠实表示，就只留下正号了。当然这一做法有代价，那就是抛弃了超选择定则\sn{总之除了超选择定则，其它完全一样。}，这样不同自旋态的不可加性就不能从Lorentz不变性直接导出，但并不用担心这一点，毕竟实验上从未制备出这样的叠加态。
+
+所以，对于任何对称群，如果存在中心荷，可以干脆扩张这个李代数，把与一切生成元都对易的生成元包含进来，这样就不存在中心荷了\sn{伽利略群就存在质量$M$这个中心荷，我们可以进行扩张，见A.Zee\cite{A.Zee}}，但是同样也会丢弃超选择定则；如果李群不是单连通的，我们可以将其表示成$C/H$，其中$C$单连通，称为$G$的通用覆盖群\sn{类似的论述可以在\cite{PFS}对应章节找到}。然后把对称群取为$C$而不是$G$，这样扩张群之后就可以不用担心射影表示问题，也不用引入超选择定则。

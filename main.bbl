@@ -5,6 +5,17 @@
 梁灿彬, \emph{《微分几何入门与广义相对论》}, vol.~1,
   科学出版社 (2006).
 
+\bibitem{Weinberg}
+S.~Weinberg, \emph{{The Quantum theory of fields. Vol. 1: Foundations}},
+  Cambridge University Press (6, 2005),
+  \href{https://doi.org/10.1017/CBO9781139644167}{10.1017/CBO9781139644167}.
+
+\bibitem{WKT}
+W.-K.~Tung, \emph{Group Theory in Physics}, WORLD SCIENTIFIC (1985),
+  \href{https://doi.org/10.1142/0097}{10.1142/0097},
+  [\href{https://arxiv.org/abs/https://www.worldscientific.com/doi/pdf/10.1142/0097}{{\ttfamily
+  https://www.worldscientific.com/doi/pdf/10.1142/0097}}].
+
 \bibitem{Baez1}
 J.C.~Baez and J.~Huerta, \emph{{Division Algebras and Supersymmetry I}},
   \href{https://doi.org/10.1090/pspum/081/2681758}{\emph{Proc. Symp. Pure
@@ -17,10 +28,16 @@ J.C.~Baez and J.~Huerta, \emph{{Division Algebras and Supersymmetry II}},
   Phys.} {\bfseries 15} (2011) 1373}
   [\href{https://arxiv.org/abs/1003.3436}{{\ttfamily 1003.3436}}].
 
-\bibitem{Weinberg}
-S.~Weinberg, \emph{{The Quantum theory of fields. Vol. 1: Foundations}},
-  Cambridge University Press (6, 2005),
-  \href{https://doi.org/10.1017/CBO9781139644167}{10.1017/CBO9781139644167}.
+\bibitem{V.Bargmann}
+V.~Bargmann, \emph{On unitary ray representations of continuous groups},
+  {\emph{Annals of Mathematics} {\bfseries 59} (1954) 1}.
+
+\bibitem{A.Zee}
+A.~Zee, \emph{Group Theory in A Nutshell}, Princeton University Press (2016).
+
+\bibitem{PFS}
+J.~Schwichtenberg, \emph{Physics from Symmetry}, Springer Cham, 2~ed. (2017),
+  \href{https://doi.org/10.1007/978-3-319-66631-0}{10.1007/978-3-319-66631-0}.
 
 \bibitem{Oblak:2015qia}
 B.~Oblak, \emph{{From the Lorentz Group to the Celestial Sphere}},  8, 2015

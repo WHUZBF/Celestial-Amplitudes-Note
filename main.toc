@@ -4,11 +4,11 @@
 \contentsline {subsection}{\numberline {2.1}Poincar\'e algebra}{2}{subsection.2.1}%
 \contentsline {section}{\numberline {3}Boost and Rapidity}{3}{section.3}%
 \contentsline {section}{\numberline {4}Connected components of Lorentz group}{4}{section.4}%
-\contentsline {section}{\numberline {5}Poincar\'e group and particles}{4}{section.5}%
-\contentsline {part}{第二部分\hspace {1em}Lorentz group \& special linear groups}{5}{part.2}%
-\contentsline {section}{\numberline {6}$SO(3)\cong SU(2)/\mathbb {Z}_2$}{5}{section.6}%
-\contentsline {section}{\numberline {7}$SO(2,1)^\uparrow \cong SL(2,\mathbb {R})/\mathbb {Z}_2$}{6}{section.7}%
-\contentsline {section}{\numberline {8}$SO(3,1)^\uparrow \cong SL(2,\mathbb {C})/\mathbb {Z}_2$}{7}{section.8}%
-\contentsline {section}{\numberline {9}Higher dimensions}{8}{section.9}%
-\contentsline {part}{第三部分\hspace {1em}Conformal transformations}{9}{part.3}%
-\contentsline {part}{参考文献}{10}{part.3}%
+\contentsline {section}{\numberline {5}Poincar\'e group and particles}{5}{section.5}%
+\contentsline {part}{第二部分\hspace {1em}Lorentz group \& special linear groups}{6}{part.2}%
+\contentsline {section}{\numberline {6}$SO(3)\cong SU(2)/\mathbb {Z}_2$}{6}{section.6}%
+\contentsline {section}{\numberline {7}$SO(2,1)^\uparrow \cong SL(2,\mathbb {R})/\mathbb {Z}_2$}{7}{section.7}%
+\contentsline {section}{\numberline {8}$SO(3,1)^\uparrow \cong SL(2,\mathbb {C})/\mathbb {Z}_2$}{8}{section.8}%
+\contentsline {section}{\numberline {9}Higher dimensions}{9}{section.9}%
+\contentsline {part}{第三部分\hspace {1em}Conformal transformations}{12}{part.3}%
+\contentsline {part}{参考文献}{13}{part.3}%
