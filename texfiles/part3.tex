@@ -91,9 +91,9 @@
 	\end{equation}
 	其中$\Omega^2\in C^\infty(\mathcal{M})$且正定。我们就称向量场为\textbf{共形Killing向量场}，对应的微分同胚称为\textbf{共形映射（变换）}。从李导数的观点来看就是要求：
 	\begin{equation}
-		\mathscr{L}_\xi g_{\mu\nu}=\lambda(t)g_{\mu\nu}
+		\mathscr{L}_\xi g_{\mu\nu}=\omega(t)g_{\mu\nu}
 	\end{equation}
-	其中$\lambda(t)\in C^\infty(\mathcal{M})$，有关系$\Omega^2=1+\lambda(t)t+\mathcal{O}(t^2)$。特殊的，如果$\Omega^2=1$也即$\lambda(t)=0$，那我们就称$\xi^a$为\textbf{Killing向量场}，对应的微分同胚为\textbf{等度规映射}。
+	其中$\omega(t)\in C^\infty(\mathcal{M})$，有关系$\Omega^2=1+\omega(t)t+\mathcal{O}(t^2)$。特殊的，如果$\Omega^2=1$也即$\omega(t)=0$，那我们就称$\xi^a$为\textbf{Killing向量场}，对应的微分同胚为\textbf{等度规映射}。
 \end{definition}
 前面的Lorentz变换其实就是在找在Minkowski时空内由Killing场诱导的变换，这要求：
 \[\mathscr{L}_\xi \eta_{\mu\nu}\nabla_\mu\xi_\nu+\nabla_\mu\xi_\nu=\partial_\mu\xi_\nu+\partial_\nu\xi_\mu=0\]
@@ -109,9 +109,132 @@
 	\[\tilde{g}_{ab}=\Omega^2g_{ab}\]
 	还要求物理不变，这就是Wald invariant，定义与共形变换非常类似，但是不能混淆两者，两者之间的微妙区别会体现在弦论中共形反常的消去上。\cite{Blumenhagen}
 \end{remark}
+
+度规在流形上定义了长度$\|v\|\equiv g(v,v)$，相应的可以定义角度为：
+\[\cos\theta\equiv\frac{g(v,w)}{\|v\|\cdot\|w\|}\]
+显然，共形变换是不改变两曲线交点处切矢之间角度的变换，也常被称为\textbf{保角变换}。
 \section{Conformal transformations in $d>2$}
-
+	现在假设背景时空是平直时空\footnote{后面的推导对于Minkowski时空和Euclide时空都适用}，利用共形Killing方程，共形Killing场满足：
+	\begin{equation}\label{11.6}
+		\partial_\mu\xi_\nu+\partial_\nu\xi_\mu = \omega(x)g_{\mu\nu}
+	\end{equation}
+	式子两边同时取迹得到：
+	\begin{equation}\label{11.7}
+		\omega(x)=\frac{2}{d}\partial^\mu\xi_\mu
+	\end{equation}
+	\ref{11.6}两边同时微分$\partial_\rho$得到：
+	\begin{equation}
+		2\partial_\rho\partial_{{\{\mu}}\xi_{{\nu\}}}=\partial_\rho\omega g_{\mu\nu}
+	\end{equation}
+	上式对三个指标进行轮换，每次轮换改变符号然后相加得到：
+	\begin{equation}\label{11.9}
+		-\partial_\rho \omega g_{\mu\nu}+\partial_\mu \omega g_{\nu\mu}=2\partial_\mu\partial\nu \xi_\rho
+	\end{equation}
+	再次与$g^{\mu\nu}$缩并得到：
+	\begin{equation}\label{11.10}
+		\partial^\u\partial_\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+	\end{equation}
+	\ref{11.6}作用上$\partial^\rho\partial_\rho$，再由\ref{11.10}得到：
+	\begin{equation}\label{11.11}
+		\left[\partial^\rho\partial_\rho g_{\mu\nu}+(d-2)\partial_\mu\partial_\nu\right]\omega(x)
+	\end{equation}
+	上式两边求迹得到：
+	\begin{equation}
+		(d-1)\partial^\mu\partial_\mu \omega(x)=0
+	\end{equation}
+	$d=1$，上式恒成立，也就是说任意变换都是共形变换，这是由于一维无法定义角度导致的，$d\geq 2$时，满足拉普拉斯方程：
+	\begin{equation}
+		\square^2 \omega(x)=0
+	\end{equation}
+	$d>2$则根据\ref{11.11}还进一步要求：
+	\begin{equation}
+		\partial_\mu\partial_\nu\omega(x)=0
+	\end{equation}
+	这说明$\omega$形式上只能为：
+	\begin{equation}
+		\omega(x)=A+B_\mu x^\mu
+	\end{equation}
+	代入 ref{11.10}得到
+	\begin{equation}
+		\partial_{\mu} \partial_{\nu} \xi_{\rho}=\frac{1}{2}\left(-B_{\rho} g_{\mu \nu}+B_{\mu} g_{\nu \rho}+B_{\nu} g_{\rho \mu}\right)
+	\end{equation}
+	右边是常向量。因此， $\xi_\mu $是 $x^\mu $的二次函数，可展开成
+	\begin{equation}
+		\xi_{\mu}(x)=a_{\mu}+b_{\mu \nu} x^{\nu}+c_{\mu \nu \rho} x^{\nu} x^{\rho}
+	\end{equation}
+	
+	这里， $a_\mu,b_{\mu\nu},c_{\mu\nu\rho}$ 是常数， $c_{\mu\nu\rho} $关于后两指标对称： $c_{\mu \nu \rho}=c_{\mu \rho \nu} $。将上式代入 \ref{11.7} ，得到
+	\begin{equation}
+		\omega(x)=\frac{2}{d}\left(b^{\mu}{}_{\mu}+2 c^{\mu}{}_{\mu \rho} x^{\rho}\right)
+	\end{equation}
+	因此， $\omega $的展开式 (1.30) 中的系数 $A,B $同 $b,c $的关系是
+	\begin{equation}
+		A=\frac{2}{d} b^{\mu}{}_{\mu}, \quad B_{\mu}=\frac{4}{d} c^{\nu}{}_{\nu \mu}
+	\end{equation}
+	那么 $A,B$ 由 $a,b,c $确定了， (1.32) 代入 (1.31) 和 (1.18) ，可进一步限制 $b,c$ 的形式。事实上，代入后得到
+	\begin{align} &2 c_{\rho \mu \nu}=\frac{1}{2}\left(-B_{\rho} g_{\mu \nu}+B_{\mu} g_{\nu \rho}+B_{\nu} g_{\rho \mu}\right)\\ &b_{\mu \nu}+b_{\nu \mu}+2\left(c_{\mu \nu \rho}+c_{\nu \mu \rho}\right) x^{\rho}=\left(A+B_{\rho} x^{\rho}\right) g_{\mu \nu} \end{align}
+	于是
+	\begin{align} &b_{\mu \nu}+b_{\nu \mu}=A g_{\mu \nu}\\ &c_{\mu \nu \rho}=\frac{1}{4}\left(-B_{\mu} g_{\nu \rho}+B_{\nu} g_{\rho \mu}+B_{\rho} g_{\mu \nu}\right) \end{align}
+	
+	由此，知道共形因子后就可以写出共形变换。最终得到无穷小变换可分成以下几类：\sn{SCT: Special Conformal Transformation}
+	\begin{equation}
+		\boxed{
+		\begin{aligned}
+				&\text{Translation}&&x^{\prime \mu}=x^{\mu}-a^{\mu}\\
+				&\text{Rotation}&&x^{\prime \mu}=x^{\mu}-b^{A \mu \nu} x_{\nu}, \quad b^{A \mu \nu}=-b^{A \nu \mu}\\
+				&\text{Dilation}&&x^{\prime \mu}=x^{\mu}-\frac{A}{2} x^{\mu}\\
+				&\text{SCT}&&x^{\prime \mu}=x^{\mu}-\frac{1}{4}\left(-B^{\mu} x^{2}+2 x^{\mu} B^{\nu} x_{\nu}\right)
+		\end{aligned}
+	}
+	\end{equation}
+	
+	对应的无穷小变换的生成元可表示为
+	\begin{equation}
+		\boxed{
+		\begin{aligned} &P_{\mu}=-i \partial_{\mu} \\ &M_{\mu \nu}=i\left(x_{\mu} \partial_{\nu}-x_{\nu} \partial_{\mu}\right) \\\ &D=-i x^{\mu} \partial_{\mu} \\ &K_{\mu}=-i\left(2 x_{\mu} x^{\nu} \partial_{\nu}-x^{2} \partial_{\mu}\right)  
+		\end{aligned}
+	}
+	\end{equation}
+	它们之间的对易关系为：
+	\begin{equation}
+		\boxed{
+				\begin{aligned} 
+					&[P_\mu,P_\nu]=0,\quad[P_\rho,M_{\mu\nu}]=i(\eta_{\mu\rho}P_\nu-\eta_{\nu\rho} P_\mu)\\
+					&[M_{\mu\nu},M_{\rho\sigma}=i\left(\eta_{\mu\rho}M_{\nu\sigma}-\eta_{\mu\sigma}M_{\nu\rho}-\eta_{\nu\rho}M_{\nu\rho}+\eta_{\nu\sigma}M_{\mu\rho}\right)]\\
+					&\left[D, P_{\mu}\right]=i P_{\mu}\\ &\left[D, K_{\mu}\right]=-i K_{\mu} \\ &\left[K_{\mu}, P_{\nu}\right]=2 i\left(g_{\mu \nu} D-M_{\mu \nu}\right) \\ &\left[K_{\rho}, M_{\mu \nu}\right]=i\left(g_{\rho \mu} K_{\nu}-g_{\rho \nu} K_{\mu}\right) \\ &\left[P_{\rho}, M_{\mu \nu}\right]=i\left(g_{\rho \mu} P_{\nu}-g_{\rho \nu} P_{\mu}\right) 
+			\end{aligned}
+		
+		}
+	\end{equation}
+	
+	可以看到其中一部分就是Poincar\'e代数\sn{$g_{\mu\nu}=\delta_{\mu\nu}$时为Euclide代数}，这也说明了等度规变换是共形变换的特殊情况。这个Lie代数称为\textbf{$ d $维共形代数}。
+	
+	重定义生成元 $J_{ab} (a,b=-1,0,\cdots,d )$：
+	\begin{align} &J_{\mu \nu}=M_{\mu \nu}\\ &J_{-1 \mu}=\frac{1}{2}\left(P_{\mu}-K_{\mu}\right) \\ &J_{-10}=D \\ &J_{0 \mu}=\frac{1}{2}\left(P_{\mu}+K_{\mu}\right)  \end{align}
+	从共形代数的对易关系，可以得到 $J_{ab}$ 满足对易关系
+	\begin{equation}
+		\left[J_{a b}, J_{c d}\right]=i\left(g_{a d} J_{b c}+g_{b c} J_{a d}-g_{a c} J_{b d}-g_{b d} J_{a c}\right)
+	\end{equation}
+	当共形变换是Euclide空间中的变换时， $g_{ab} $是号差为 $(-,+, \cdots,+)$ 的Minkowski度规\sn{否则有两个负号}。也就是说$d$维（Euclide空间）中的共形代数，同构于Lorentz代数$\mathfrak{so}(d+1,1) $。
+	
+	有限共形变换可有由无穷小共形变换的叠加构成，形式为：
+	\begin{equation}
+		\boxed{
+			\begin{aligned}
+				&\text{Translation}&&x^{\prime \mu}=x^{\mu}-a^{\mu}\\
+				&\text{Rotation(Boost)}&&x^{\prime \mu}=\Lambda_{\nu}^{\mu} x^{\nu}\\
+				&\text{Dilation}&&x^{\prime \mu}=\alpha x^{\mu}\\
+				&\text{SCT}&&x^{\prime \mu}=\frac{x^{\mu}-b^{\mu} x^{2}}{1-2 b\cdot x+b^{2} x^{2}}
+			\end{aligned}
+		}
+	\end{equation}
+	其中最后一个变换是由平移和反演变换的组合得到的：
+		\begin{equation}
+		x^{\mu} \rightarrow x^{\prime \mu}=\frac{x^{\mu}}{x^{2}} \rightarrow x^{\prime \prime \mu}=x^{\prime \mu}-b^{\mu} \rightarrow x^{\prime \prime \prime \mu}=\frac{x^{\prime \prime \mu}}{x^{\prime \prime 2}}
+	\end{equation}
+	而反演变换是离散的，所以SCT并不能用无穷小变换生成。根据前面的讨论，这些变化构成$SO(d+1,1)$群。
 \section{Conformal transformations in $d=2$}
-
+	上一节利用李导数看待问题，也就是所谓主动观点，现在用坐标变换的观点来进行推演。
+	
 \section{Conformal transformations on the Riemann sphere}
 

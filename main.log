@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  14 NOV 2023 14:26
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  14 NOV 2023 23:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1350,7 +1350,7 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 \c@eqnannotatenode=\count389
 ) (./main.aux (./texfiles/part1.aux)
-(./texfiles/part2.aux) (./texfiles/part3.aux))
+(./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -1599,14 +1599,12 @@ e 23.
 \openout5 = `main.toc'.
 
 
-[1]
+[1] [2]
 \openout2 = `texfiles/part1.aux'.
 
  (./texfiles/part1.tex
-Package marginnote Info: Margin note 4.1 is on absolute page 4 on input line 1.
-
 Package marginnote Info: right page because not two side mode on input line 1.
-Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
+Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <24.88> on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1637,23 +1635,20 @@ LaTeX Warning: Marginpar on page 1 moved.
 [1
 
 
-]
-Package marginnote Info: Using workaround for absolute page number on input lin
-e 38.
- [2]
+] [2]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
-nput line 106.
-LaTeX Font Info:    Trying to load font information for U+euf on input line 111
+nput line 108.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 113
 .
  (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 127.
+t line 129.
 
 
 Package tcolorbox Warning: Discard zero height first box part due to break prob
-lems (possible loss of zero height content) on input line 131.
+lems (possible loss of zero height content) on input line 133.
 
 [3]) [4]
 \openout2 = `texfiles/part2.aux'.
@@ -2344,38 +2339,250 @@ LaTeX Warning: Command \' invalid in math mode on input line 106.
 Missing character: There is no é ("E9) in font lmmi10!
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
+(hyperref)                removing `math shift' on input line 116.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 112.
+(hyperref)                removing `math shift' on input line 116.
+
+! Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.135 ^^I^^I\partial^\u
+                       \partial_\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \u invalid in math mode on input line 135.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.135 ^^I^^I\partial^\u\partial
+                               _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Improper \spacefactor.
+<recently read> \spacefactor 
+                             
+l.135 ^^I^^I\partial^\u\partial
+                               _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+You can refer to \spacefactor only in horizontal mode;
+you can refer to \prevdepth only in vertical mode; and
+neither of these is meaningful inside \write. So
+I'm forgetting what you said and using zero instead.
+
+! Extra }, or forgotten $.
+\add@accent ... \accent@spacefactor \spacefactor }
+                                                  \let \maybe@load@fontshape...
+l.135 ^^I^^I\partial^\u\partial
+                               _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.135 ^^I^^I\partial^\u\partial
+                               _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Extra }, or forgotten $.
+\add@accent ...spaces \relax \accent #1 #2\egroup 
+                                                  \spacefactor \accent@space...
+l.135 ^^I^^I\partial^\u\partial
+                               _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! You can't use `\spacefactor' in math mode.
+\add@accent ... \accent #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.135 ^^I^^I\partial^\u\partial
+                               _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `\eqno' in math mode.
+\endmathdisplay@a ...\df@tag \@empty \else \veqno 
+                                                  \alt@tag \df@tag \fi \ifx ...
+l.136 ^^I\end{equation}
+                       
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.136 ^^I\end{equation}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.136 ^^I\end{equation}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.136 ^^I\end{equation}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.136 ^^I\end{equation}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.136 ^^I\end{equation}
+                       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.136 ^^I\end{equation}
+                       
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+LaTeX Warning: Reference `11.10' on page 13 undefined on input line 137.
+
+[13]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207 ^^I^^I}
+             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.207 ^^I^^I}
+             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.207 ^^I^^I}
+             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.207 ^^I^^I}
+             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[14]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 236.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 114.
+(hyperref)                removing `math shift' on input line 236.
+
+) [15] [16]
+\openout2 = `texfiles/part4.aux'.
+
+ (./texfiles/part4.tex
+Package marginnote Info: Margin note 21.1 is on absolute page 21 on input line 
+1.
+Package marginnote Info: right page because not two side mode on input line 1.
+Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
+) [17
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 114.
 
-) [13] (./main.bbl) [14
+] (./main.bbl) [18
 
 
-] (./main.aux (./texfiles/part1.aux)
-(./texfiles/part2.aux) (./texfiles/part3.aux))
+] (./main.aux
+(./texfiles/part1.aux) (./texfiles/part2.aux) (./texfiles/part3.aux)
+(./texfiles/part4.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0C3B5BC0C513E3F0ED7EBA0B5789DC87;4072.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 0B6AF0596B4E7AC9E4EBA2F9E1E63713;4194
+(rerunfilecheck)             After:  1B7197B65D35C815B5B51E059779AEDF;4232.
  ) 
 Here is how much of TeX's memory you used:
- 39296 strings out of 476533
- 860212 string characters out of 5818886
- 1373199 words of memory out of 5000000
- 58883 multiletter control sequences out of 15000+600000
+ 39318 strings out of 476533
+ 860555 string characters out of 5818886
+ 1374278 words of memory out of 5000000
+ 58898 multiletter control sequences out of 15000+600000
  591194 words of font info for 192 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,19n,122p,1234b,1115s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (16 pages).
+Output written on main.pdf (21 pages).
