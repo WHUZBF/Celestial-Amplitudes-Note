@@ -59,21 +59,9 @@ GR中最重要的基本假设便是在坐标变换下物理定律是不变的，
 
 \subsection{Poincar\'e algebra}
 现在考虑群的局部性质，考虑无穷小坐标变换$x^\mu\mapsto x^\mu+\xi^\mu$，保度规条件为：
-\begin{equation}\label{lie_eta}
-	\mathscr{L}_\xi\eta_{\mu\nu}=\partial_\mu\xi_\nu+\partial_\mu\xi_\nu=\tilde{\eta}_{\mu\nu}(\tilde x)-\eta_{\mu\nu}(x)=0
+\begin{equation}
+	\tilde{\eta}_{\mu\nu}(\tilde x)-\eta_{\mu\nu}(x)=\partial_\mu\xi_\nu+\partial_\mu\xi_\nu=0
 \end{equation}
-\begin{remark}
-	这里$\mathscr{L}_\xi$表示李导数。李导数的严格定义涉及到拉回映射，首先对于某个矢量场$\xi$，其给出了一个单参微分同胚群$\phi_t$（可以想象矢量场生成了一簇积分曲线，流形上每一点根据积分曲线移动便生成了单参微分同胚群），利用它我们可以构造拉回映射$\phi_t^*$，从而构造李导数为：
-	\[\mathscr{L}_{\xi}T^{{a_1\cdots a_k}}_{b_1\cdots b_l}\equiv\lim_{t\to0}\frac{1}{t}\left(\phi_t^*{T^{a_1\cdots a_k}}_{b_1\cdots b_l}-{T^{a_1\cdots a_k}}_{b_1\cdots b_l}\right)\]
-	这里$a,b$是抽象指标，只表示张量类型，不表示分量。李导数可以利用下式计算其分量：
-	\begin{equation}
-		\begin{aligned}
-			\mathscr{L}_{\xi}{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\nu_l}=&\xi^\lambda\nabla_\lambda{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\nu_l}-{T^{\lambda\cdots \mu_k}}_{\nu_1\cdots\nu_l}\nabla_\lambda\xi^{\mu_1}-\cdots-{T^{\mu_1\cdots \lambda}}_{\nu_1\cdots\nu_l}\nabla_\lambda\xi^{\mu_k}\\
-			&+{T^{\mu_1\cdots \mu_k}}_{\lambda\cdots\nu_l}\nabla_{\nu_1}\xi^{\lambda}+\cdots+{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\lambda}\nabla_{\nu_l}\xi^{\lambda}
-		\end{aligned}		
-	\end{equation}
-	利用上式便可证明\ref{lie_eta}的正确性。
-\end{remark}
 $\xi^\mu$可以用$\omega_{\ \nu}^\mu$和$b^\mu$两个无穷小参数标记：
 \[\xi^\mu={\omega^\mu}_\nu x^\nu+b^\mu,\quad \omega_{\mu\nu}=-\omega_{\nu\mu}\]
 平移生成元为:
@@ -88,14 +76,6 @@ boost和转动生成元为：
 	\end{aligned}
 \end{equation}
 
-对于更一般的度规，如果矢量场满足\sn{这里我们用到了度规平行移动的性质，$\forall X\in \mathscr{X}(\mathcal{M}),\nabla_X g=0$}
-\[\mathscr{L}_\mathbf{\xi} g_{\mu\nu}=\nabla_\mu\xi_\nu+\nabla_\mu\xi_\nu=0\]
-那我们称$\mathbf{\xi}$为Killing矢量场，如果
-\[\mathscr{L}_\mathbf{\xi} g=0\]
-则称为共形Killing矢量场，后面共形变换部分会对这一点做深入讨论。
-\begin{remark}
-	注意，当我们用矢量场来看待这个问题的时候，我们其实是在用所谓坐标变换的主动观点，也就是坐标变换诱导矢量场，矢量场再诱导流形同胚从而导致张量变换，因为在被动的坐标变换观点下，张量场不会有任何改变。更多关于主动被动观点的讨论见\cite{lcb}。
-\end{remark}
 \section{Boost and Rapidity}
 我们把Lorentz群记为$O(3,1)$强烈暗示了其与$O(n)$群的类似性，其实Lorentz变换完全可以看作是四维时空中的旋转。三维空间旋转有三个自由度，分别是绕着$x,y,z$轴的旋转，这些轴都是由另外两个轴张成的平面所确定的，总数为$C_3^2=3$。那么对于高维空间旋转，比如四维空间可以推广为共$C_4^2=6$个自由度。其中有3个是单纯的$\mathbb{R}^3$中的旋转，还有三个是混合了时间轴的旋转，也就是初等SR介绍中的两个相对速度为$v$的惯性系之间的变换，称为\textbf{boost}。比如$x$方向上的boost就可以显式表达出来为：
 \begin{margintable}\footnotesize 

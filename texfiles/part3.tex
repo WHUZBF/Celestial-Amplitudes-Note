@@ -1,1 +1,117 @@
 \part{Conformal transformations}
+\section{Pull back, push forward \& Lie derivative}
+考虑光滑映射$\phi:\mathcal{M}\to\mathcal{N}$，可以定义拉回映射为：
+\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		$C^{\infty}(\mathcal{M})$表示$\mathcal{M}$上的光滑标量场\\
+		$\mathscr{X}(\mathcal{M})$表示$\mathcal{M}$上某点处的切矢空间，相应的$\mathscr{X}^*(\mathcal{M})$表示余切丛空间\\
+		$\mathscr{T}_\mathcal{M}(k,l)$表示$\mathcal{M}$上的$(k,l)$型张量场
+	\end{tabularx}
+\end{margintable}
+\begin{definition}[pull back]
+	$\phi^*: C^{\infty}(\mathcal{N})\to C^{\infty}(\mathcal{M}),f\mapsto \phi^*f$
+	其中$\phi^*f\equiv f\circ\phi$，也即$(\phi^*f)|_p=f|_{\phi(p)}$，这个定义可以自然延拓到$\phi^*:\mathscr{T}_\mathcal{N}(0,l)\to\mathscr{T}_\mathcal{M}(0,l)$，其中：
+	\begin{equation*}
+		(\phi^*T)_{a_1\cdots a_l}|_p(v_1)^{a_1}\cdots (v_l)^{a_l}\equiv
+		T_{a_1\cdots a_l}|_{\phi(p)}(\phi_*v_1)^{a_1}\cdots (\phi_*v_l)^{a_l}
+	\end{equation*}
+	对于$\forall p\in\mathcal{M},v_1,\ldots,v_l\in\mathscr{X}_p(\mathcal{M})$恒成立。
+\end{definition}
+类似的可以定义推前映射概念：
+\begin{definition}[push forward]
+	$\phi_*: \mathscr{X}_p(\mathcal{M})\to \mathscr{X}_{\phi(p)}(\mathcal{N}),X^a\mapsto (\phi_*X)^a$
+	其中
+	
+	\begin{equation*}
+	\eqnmarkbox[blue]{node1}{(\phi_*X)}(f)=\eqnmarkbox[red]{node2}{X}(\phi^*f),\quad\forall f\in C^\infty(\mathcal{N})	
+	\end{equation*}
+	\annotate[yshift=-0.5em]{below,left,label below}{node1}{at $\phi(p)$}
+	\annotate[yshift=-0.5em]{below,label below}{node2}{at $p$}
+	
+	同样也可以进行延拓$\phi_*:\mathscr{T}_\mathcal{M}(k,0)\to\mathscr{T}_\mathcal{N}(k,0)$，其中
+	\[
+		(\phi_*T)^{a_1\cdots a_k}|_{q}(w^1)_{a_1}\cdots (w^k)_{a_l}\equiv
+		T^{a_1\cdots a_k}|_{\phi^{-1}(q)}(\phi^*w_1)_{a_1}\cdots (\phi^*v_l)_{a_l}
+	\]
+	对于$\forall q\in\mathcal{N},w_1,\ldots,w_l\in\mathscr{X}^*_p(\mathcal{N})$恒成立。
+\end{definition}
+
+如果$\phi$是一个微分同胚，那可以进一步延拓到$\mathscr{T}_\mathcal{M}(k,0)\leftrightarrow\mathscr{T}_\mathcal{N}(k,0)$之间的推前和拉回映射。
+\begin{definition}
+	以$(1,1)$型张量的推前映射为例：
+	\[
+		(\phi_*T)^a_b|_qw_av^b\equiv T^a_b|_{\phi^{-1}(q)}(\phi^*w)_a(\phi^*v)^b
+	\]
+	对于任意的$q\in\mathcal{N},w_a\in\mathscr{X}_q^*(\mathcal{N}),v^b\in\mathscr{X}_q(\mathcal{N})$成立，其中$(\phi^*v)^b$理解为$(\phi^{-1}_*v)^b$。其它类型张量，以及拉回映射可类似定义，而且$\phi^*=\phi^{-1}_*$
+\end{definition}
+
+\begin{remark}
+	现在我们有必要澄清一下关于映射的主动和被动观点。首先注意到微分同胚$\phi$其实很自然地定义了一个$\mathcal{M}$坐标变换$x\mapsto x^\prime$，其中$x$是$\mathcal{M}$上老坐标，$y$是$\mathcal{N}$上坐标，则：$$x^\prime(p)\equiv y(\phi(p))$$反过来，坐标变换也可以确定一个微分同胚映射。这让我们可以用两种方法去看待这个微分同胚：
+	\begin{itemize}
+		\item \textbf{主动观点}：老老实实看作是$p\in\mathcal{M}\mapsto \phi(p)\in\mathcal{N}$，然后在$\mathcal{N}$上确定了一个新的张量场，由原先的张量场“认同”后得来，也就是$T|p\mapsto\phi_*T|_{\phi(p)}$。
+		\item \textbf{被动观点}：还是在原先的$\mathcal{M}$，点和张量也没有变换，而是现在在新的坐标系$\{x^\mu\}$下考虑问题。
+	\end{itemize}
+	这两种观点是等价的，关键就在于下面的这个等式：
+	
+	\begin{equation}\label{eq:equiv}
+		\eqnmarkbox[blue]{node1}{(\phi_*T)}\eqnmarkbox[red]{node2}{{{}^{\mu_1\cdots\mu_k}}_{\nu_1\cdots\nu_l}}\eqnmarkbox[yellow]{node3}{\bigg|_{\phi(p)}}=\eqnmarkbox[blue]{node4}{T}\eqnmarkbox[red]{node5}{{{}^{\prime\mu_1\cdots\mu_k}}_{\nu_1\cdots\nu_l}}\eqnmarkbox[yellow]{node6}{\bigg|_{p}}
+	\end{equation}
+	\annotate[yshift=-1em]{below,left,label below}{node1}{New tensor}
+	\annotate[yshift=0.7em]{left}{node2}{in Old coordinate $\{y^\mu\}$}
+	\annotate[yshift=-0.5em]{below,label below}{node3}{at New point}
+	\annotate[yshift=0.7em]{left}{node4}{Old tensor}
+	\annotate[yshift=-1em]{below,label below}{node5}{in New coordinate $\{x^{\prime\mu}\}$}
+	\annotate[yshift=1em]{}{node6}{at Old point}
+	\vspace{0em}\\
+	
+	更多关于等价性的论述见梁灿彬\cite{lcb}第四章相关内容，后面会直接作为结论直接进行引述。
+\end{remark}
+
+\section{Killing \& Conformal Killing vector field}
+下面我们考虑$\mathcal{M}=\mathcal{N},\{x^\mu\}=\{y^\mu\}$。对于矢量场$\xi^a$，其积分曲线诱导了一个微分同胚（点沿着积分曲线流动），在被动观点下看就是诱导了一个无穷小坐标变换$x^\mu\mapsto x^\mu+\xi^\mu t$，其中$t\to0$，在主动观点下看就是诱导了流形上点的变换和张量的变换，但是坐标系仍然不变。首先给出对$\xi$方向的李导数的定义：
+\begin{definition}[李导数]
+	李导数$\mathscr{L}_\xi$定义为
+	\[\mathscr{L}_{\xi}T^{{a_1\cdots a_k}}_{b_1\cdots b_l}\equiv\lim_{t\to0}\frac{1}{t}\left(\phi_t^*{T^{a_1\cdots a_k}}_{b_1\cdots b_l}-{T^{a_1\cdots a_k}}_{b_1\cdots b_l}\right)\]
+	可以利用下面的式子计算其在某一坐标系下分量：
+	\begin{equation}
+		\begin{aligned}
+			\mathscr{L}_{\xi}{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\nu_l}=&\xi^\lambda\nabla_\lambda{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\nu_l}-{T^{\lambda\cdots \mu_k}}_{\nu_1\cdots\nu_l}\nabla_\lambda\xi^{\mu_1}-\cdots-{T^{\mu_1\cdots \lambda}}_{\nu_1\cdots\nu_l}\nabla_\lambda\xi^{\mu_k}\\
+			&+{T^{\mu_1\cdots \mu_k}}_{\lambda\cdots\nu_l}\nabla_{\nu_1}\xi^{\lambda}+\cdots+{T^{\mu_1\cdots \mu_k}}_{\nu_1\cdots\lambda}\nabla_{\nu_l}\xi^{\lambda}
+		\end{aligned}		
+	\end{equation}
+\end{definition}
+比如度规的李导数：\sn{这里我们用到了度规平行移动的性质，$\forall X\in \mathscr{X}(\mathcal{M}),\nabla_X g=0$}
+\begin{equation}
+	\mathscr{L}_\mathbf{\xi} g_{\mu\nu}=\nabla_\mu\xi_\nu+\nabla_\mu\xi_\nu	
+\end{equation}
+\begin{definition}[Killing]
+	矢量场$\xi^a$诱导单参数微分同胚群$\phi_t:\mathcal{M}\to\mathcal{M}$，如果其诱导的度规变换满足：
+	\begin{equation}
+		\phi^*g_{ab}=\Omega^2g_{ab},\quad \forall p\in\mathcal{M}
+	\end{equation}
+	其中$\Omega^2\in C^\infty(\mathcal{M})$且正定。我们就称向量场为\textbf{共形Killing向量场}，对应的微分同胚称为\textbf{共形映射（变换）}。从李导数的观点来看就是要求：
+	\begin{equation}
+		\mathscr{L}_\xi g_{\mu\nu}=\lambda(t)g_{\mu\nu}
+	\end{equation}
+	其中$\lambda(t)\in C^\infty(\mathcal{M})$，有关系$\Omega^2=1+\lambda(t)t+\mathcal{O}(t^2)$。特殊的，如果$\Omega^2=1$也即$\lambda(t)=0$，那我们就称$\xi^a$为\textbf{Killing向量场}，对应的微分同胚为\textbf{等度规映射}。
+\end{definition}
+前面的Lorentz变换其实就是在找在Minkowski时空内由Killing场诱导的变换，这要求：
+\[\mathscr{L}_\xi \eta_{\mu\nu}\nabla_\mu\xi_\nu+\nabla_\mu\xi_\nu=\partial_\mu\xi_\nu+\partial_\nu\xi_\mu=0\]
+称为\textbf{Killing方程}。这与前面直接从坐标变换导出的式子是一致的\sn{前面的式子实际上是把无穷小因子$t$吸收进了$\xi$中}。实际上，前面用坐标变换那一套就是在玩被动观点，可以证明，$\xi^a$是（共形）Killing场的充要条件是其生成的坐标变换使得：\sn{注意张量分量作为坐标的函数在何处取值，以及偏导数在何处取值，只要想清楚这些函数的自变量是什么、方程两边各自在哪个坐标系，以及方程作为张量等式都是在流形上同一点取值即可。}
+\begin{equation}
+	g^\prime_{\mu\nu}(x^\prime)=\frac{\partial x^\sigma}{\partial x^{\prime\mu}}(x^\prime)\frac{\partial x^\sigma}{\partial x^{\prime\nu}}(x^\prime)g_{\sigma\rho}(x)=\Omega^2(x)g_{\mu\nu}(x)
+\end{equation}
+在场论中我们更多使用坐标变换的被动观点来看问题。这个等式的证明关键就是使用\ref{eq:equiv}。
+
+根据前面的论证，对于四维闵氏时空，Killing方程共有$10=\frac{4\times(4+1)}{2}$个独立解，也就是说存在$10$个独立的Killing场。实际上可以证明，对于任意$n$维时空，其最多具有$\frac{n(n+1)}{2}$个独立的Killing场，然而闵氏时空的$Poincar\'e$变换正好取到不等式上界。由于Killing场诱导的是等度规映射，所以也成为时空的对称性，根据上面的分析，平直闵氏时空具有最大的对称性。
+\begin{remark}
+	在GR的语境下提到共形变换更多的其实是指Wald invariant，它的定义和共形变换很像，但是不等价。Wald invariant的定义不需要微分同胚，或者说我们直接取同胚为$\mathrm{id}_\mathcal{M}$，这样流形上的点、张量和坐标系都不变，但是我们直接把流形上的度规结构改变，变成：
+	\[\tilde{g}_{ab}=\Omega^2g_{ab}\]
+	还要求物理不变，这就是Wald invariant，定义与共形变换非常类似，但是不能混淆两者，两者之间的微妙区别会体现在弦论中共形反常的消去上。\cite{Blumenhagen}
+\end{remark}
+\section{Conformal transformations in $d>2$}
+
+\section{Conformal transformations in $d=2$}
+
+\section{Conformal transformations on the Riemann sphere}
+

@@ -1,9 +1,5 @@
 
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
-
-\bibitem{lcb}
-梁灿彬, \emph{《微分几何入门与广义相对论》}, vol.~1,
-  科学出版社 (2006).
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
 
 \bibitem{Weinberg}
 S.~Weinberg, \emph{{The Quantum theory of fields. Vol. 1: Foundations}},
@@ -38,6 +34,16 @@ A.~Zee, \emph{Group Theory in A Nutshell}, Princeton University Press (2016).
 \bibitem{PFS}
 J.~Schwichtenberg, \emph{Physics from Symmetry}, Springer Cham, 2~ed. (2017),
   \href{https://doi.org/10.1007/978-3-319-66631-0}{10.1007/978-3-319-66631-0}.
+
+\bibitem{lcb}
+梁灿彬, \emph{《微分几何入门与广义相对论》}, vol.~1,
+  科学出版社 (2006).
+
+\bibitem{Blumenhagen}
+R.~Blumenhagen, D.~L\"ust and S.~Theisen, \emph{{Basic concepts of string
+  theory}}, Theoretical and Mathematical Physics, Springer, Heidelberg, Germany
+  (2013),
+  \href{https://doi.org/10.1007/978-3-642-29497-6}{10.1007/978-3-642-29497-6}.
 
 \bibitem{Oblak:2015qia}
 B.~Oblak, \emph{{From the Lorentz Group to the Celestial Sphere}},  8, 2015
