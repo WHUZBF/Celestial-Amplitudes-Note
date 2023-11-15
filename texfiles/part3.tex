@@ -236,5 +236,48 @@
 \section{Conformal transformations in $d=2$}
 	上一节利用李导数看待问题，也就是所谓主动观点，现在用坐标变换的观点来进行推演。
 	
+	在二维情况下，使用复数作为参数非常方便，定义复变量：\sn{导数这样定义是为了$\partial_z z=\partial_{\bar z}\bar z=1$}
+	\[z=x^1+ix^2,\quad \partial_z\equiv\frac{1}{2}(\partial_1-i\partial_2),\quad \partial_{\bar z}\equiv\frac{1}{2}(\partial_1+i\partial_2)\]
+	Euclide空间中度规可以写成：
+	\begin{equation}
+		g_z = dzd\bar z
+	\end{equation}
+	现在考虑坐标变换$z\mapsto z^\prime(z,\bar z)$，度规相应变为：
+	\begin{equation}
+		\begin{aligned}
+			g_z\mapsto g^'_z&=dz^\prime d{\bar z}^\prime\\
+			&=\left(\frac{\partial z^\prime}{\partial z}dz+\frac{\partial z^\prime}{\partial\bar z}d\bar z\right)
+			\left(\frac{\partial \bar z^\prime}{\partial z}dz+\frac{\partial \bar z^\prime}{\partial\bar z}d\bar z\right)\\
+			&=\frac{\partial z^\prime}{\partial z}\frac{\partial \bar z^\prime}{\partial z}dz^2+\frac{\partial z^\prime}{\partial \bar z}\frac{\partial \bar z^\prime}{\partial \bar z}{dz^\prime}^2+\left(\frac{\partial \bar z^\prime}{\partial  z}\frac{\partial  z^\prime}{\partial \bar z}+\frac{\partial z^\prime}{\partial z}\frac{\partial \bar z^\prime}{\partial \bar z}\right)dzd\bar z
+		\end{aligned}
+	\end{equation}
+	这导致了下面的Cauchy-Riemann条件：
+	\begin{equation}
+		\frac{\partial z^\prime}{\partial z}=0\quad \text{or} \frac{\partial z^\prime}{\partial \bar z}=0
+	\end{equation}
+	而且前面的推导只要求度规形式为$\Omega(z,\bar z)dzd\bar z$。也就是说，变换$z^\prime$为全纯或者反全纯函数，而反全纯函数会将右手系变为左手系，后面主要考虑全纯情况，反全纯情况只需要全部取复共轭即可。
+	
+	考虑局部的无穷小共形变换，变换形式可以写成：
+	\[z\mapsto z+\xi(z),\quad \bar z\mapsto \bar z+\bar\xi(\bar z)\]
+	其中$\xi$可以进行Laurent展开为：
+	\[\xi(z)=\sum_{n=-\infty}^{+\infty}\xi_n z^{n+1} ,\quad \bar\xi(\bar z)=\sum_{n=-\infty}^{+\infty}\bar\xi_n \bar z^{n+1}\]
+	对应于
+	
+	
+	
+	
+	
+	$d$维共性代数与$\mathfrak{so}(d+1,1)$之间的同构可以显式的构造出来。首先注意到由于Lorentz变换保$ds^2$，所以对于顶点在原点处的光锥，Lorentz变换是在光锥上的同胚。那我们可以把光锥看作是嵌入在$\mathbb{R}^{d+1,1}$中的子流形，这实际上是将$\mathbb{R}^{d}$通过下面的方式嵌入到$\mathbb{R}^{d+1,1}$中：
+	\begin{equation}
+		q^{\mu}=(1+x^2,2x^A,1-x^2),\quad x^A\in\mathbb{R}^d
+	\end{equation}
+	这样，Lorentz变换作用在光锥上可以看作是$\mathbb{R}^d$上的一个变换：
+	\begin{equation}
+		q^\mu\mapsto q^{\prime\mu}=\frac{(\Lambda q)^\mu}{(\Lambda q)^+}
+	\end{equation}
+	其中分母是为了将$q^+\equiv\frac{1}{2}\left(q^0+q^{d+1}\right)=1$归一化。而且，可以验证这个变换还是一个共形变换！特别地，当$d=2$时，定义$w=x^1+ix^2$，这个同构变成：
+	\begin{equation}
+		q^\mu=()
+	\end{equation}
 \section{Conformal transformations on the Riemann sphere}
 

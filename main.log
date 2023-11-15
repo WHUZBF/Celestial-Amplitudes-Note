@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  14 NOV 2023 23:42
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  16 NOV 2023 00:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1353,27 +1353,27 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
-LaTeX Font Info:    ... okay on input line 11.
-Package hyperref Info: Link coloring ON on input line 11.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
+LaTeX Font Info:    ... okay on input line 12.
+Package hyperref Info: Link coloring ON on input line 12.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1386,9 +1386,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count390
 )
-LaTeX Info: Redefining \ref on input line 11.
-LaTeX Info: Redefining \pageref on input line 11.
-LaTeX Info: Redefining \nameref on input line 11.
+LaTeX Info: Redefining \ref on input line 12.
+LaTeX Info: Redefining \pageref on input line 12.
+LaTeX Info: Redefining \nameref on input line 12.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
@@ -1477,7 +1477,7 @@ Package fontspec Info: Could not resolve font "Microsoft YaHei/I" (it probably
 (fontspec)             doesn't exist).
 
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-3.
+4.
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1502,14 +1502,14 @@ Package fontspec Info: Font family 'MicrosoftYaHei(0)' created for font
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sc' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 23.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 24.
 
 
 LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 23.
+(Font)              using `T1/lmr/m/scsl' instead on input line 24.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
 
  []
 
@@ -1526,7 +1526,7 @@ Package fontspec Info: Could not resolve font "FangSong/I" (it probably
 (fontspec)             doesn't exist).
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-3.
+4.
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1542,48 +1542,48 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-3.
+4.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-3.
+4.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-23.
+24.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-23.
+24.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 23.
+(Font)              <10> on input line 24.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 23.
+(Font)              <7> on input line 24.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 23.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23
+(Font)              <5> on input line 24.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 24
 .
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
 
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
 
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1593,7 +1593,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 Package marginnote Info: Using workaround for absolute page number on input lin
-e 23.
+e 24.
  (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
@@ -1603,8 +1603,10 @@ e 23.
 \openout2 = `texfiles/part1.aux'.
 
  (./texfiles/part1.tex
+Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 1.
+
 Package marginnote Info: right page because not two side mode on input line 1.
-Package marginnote Info: xpos seems to be \@mn@currxpos  on input line 1.
+Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <24.88> on input line 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2540,7 +2542,27 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 236.
 
-) [15] [16]
+[15]
+! Missing { inserted.
+<to be read again> 
+                   ^
+l.248 ^^I^^I^^Ig_z\mapsto g^'
+                             _z&=dz^\prime d{\bar z}^\prime\\
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.248 ^^I^^I^^Ig_z\mapsto g^'_z&
+                                =dz^\prime d{\bar z}^\prime\\
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+) [16]
 \openout2 = `texfiles/part4.aux'.
 
  (./texfiles/part4.tex
@@ -2548,6 +2570,11 @@ Package marginnote Info: Margin note 21.1 is on absolute page 21 on input line
 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\\' on input line 1.
+
 ) [17
 
 
@@ -2555,31 +2582,21 @@ Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 ] (./main.bbl) [18
 
 
-] (./main.aux
-(./texfiles/part1.aux) (./texfiles/part2.aux) (./texfiles/part3.aux)
-(./texfiles/part4.aux))
+] (./main.aux (./texfiles/part1.aux)
+(./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 0B6AF0596B4E7AC9E4EBA2F9E1E63713;4194
-(rerunfilecheck)             After:  1B7197B65D35C815B5B51E059779AEDF;4232.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B7CDDB7593FD5E7DCB4D011244040F3C;4420.
  ) 
 Here is how much of TeX's memory you used:
  39318 strings out of 476533
- 860555 string characters out of 5818886
- 1374278 words of memory out of 5000000
+ 860549 string characters out of 5818886
+ 1374276 words of memory out of 5000000
  58898 multiletter control sequences out of 15000+600000
  591194 words of font info for 192 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
