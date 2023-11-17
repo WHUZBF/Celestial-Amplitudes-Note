@@ -459,6 +459,15 @@
 \if!\@dedicated!\else\vbox{\small\it\raggedleft\@dedicated}\afterDedicatedSpace\fi
 %
 \ifnotoc\else
+%封面插图
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.85]{figs/cover2.pdf}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.85]{figs/cover.pdf}
+\end{figure}
 \iftoccontinuous\else\newpage\fi
 \beforetochook\hrule
 \tableofcontents

@@ -45,6 +45,15 @@ R.~Blumenhagen, D.~L\"ust and S.~Theisen, \emph{{Basic concepts of string
   (2013),
   \href{https://doi.org/10.1007/978-3-642-29497-6}{10.1007/978-3-642-29497-6}.
 
+\bibitem{Rychkov:2016iqz}
+S.~Rychkov, \emph{{EPFL Lectures on Conformal Field Theory in D\ensuremath{>}=
+  3 Dimensions}}, SpringerBriefs in Physics (1, 2016),
+  \href{https://doi.org/10.1007/978-3-319-43626-5}{10.1007/978-3-319-43626-5},
+  [\href{https://arxiv.org/abs/1601.05000}{{\ttfamily 1601.05000}}].
+
+\bibitem{Hugh}
+H.~Osborn, \emph{Lecture notes on conformal field theories},  October, 2019.
+
 \bibitem{Oblak:2015qia}
 B.~Oblak, \emph{{From the Lorentz Group to the Celestial Sphere}},  8, 2015
   [\href{https://arxiv.org/abs/1508.00920}{{\ttfamily 1508.00920}}].
