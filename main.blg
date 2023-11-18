@@ -6,7 +6,7 @@ A level-1 auxiliary file: texfiles/part1.aux
 A level-1 auxiliary file: texfiles/part2.aux
 A level-1 auxiliary file: texfiles/part3.aux
 A level-1 auxiliary file: texfiles/part4.aux
-Illegal, another \bibstyle command---line 78 of file main.aux
+Illegal, another \bibstyle command---line 82 of file main.aux
  : \bibstyle
  :          {JHEP}
 I'm skipping whatever remains of this command
@@ -14,45 +14,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref.bib
 Warning--empty publisher in Rychkov:2016iqz
 Warning--empty booktitle in Oblak:2015qia
-You've used 12 entries,
+You've used 13 entries,
             2363 wiz_defined-function locations,
-            656 strings with 5504 characters,
-and the built_in function-call counts, 3088 in all, are:
-= -- 271
-> -- 79
+            663 strings with 5631 characters,
+and the built_in function-call counts, 3315 in all, are:
+= -- 285
+> -- 84
 < -- 0
-+ -- 28
-- -- 16
-* -- 299
-:= -- 402
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 6
++ -- 30
+- -- 17
+* -- 332
+:= -- 430
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 228
-empty$ -- 367
-format.name$ -- 48
-if$ -- 764
+cite$ -- 15
+duplicate$ -- 248
+empty$ -- 399
+format.name$ -- 51
+if$ -- 818
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 35
-newline$ -- 40
-num.names$ -- 12
-pop$ -- 64
+int.to.str$ -- 13
+missing$ -- 41
+newline$ -- 43
+num.names$ -- 13
+pop$ -- 68
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 63
+skip$ -- 61
 stack$ -- 0
-substring$ -- 119
-swap$ -- 30
+substring$ -- 123
+swap$ -- 32
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 34
-width$ -- 14
-write$ -- 116
+while$ -- 36
+width$ -- 15
+write$ -- 127
 (There was 1 error message)
