@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  19 NOV 2023 01:02
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  21 NOV 2023 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1349,31 +1349,86 @@ tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 \c@eqnannotatenode=\count389
-) (./main.aux (./texfiles/part1.aux)
-(./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux))
+)
+(d:/LaTeX/texlive/2021/texmf-dist/tex/latex/l3packages/xfp/xfp.sty
+Package: xfp 2021-08-27 L3 Floating point unit
+)
+(d:/LaTeX/texlive/2021/texmf-dist/tex/latex/contour/contour.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: contour 2004/11/18 v2.14 Print contoured text (HH, MH)
+\con@length=\skip90
+
+Loading configuration file `contour.cfg'.
+(d:/LaTeX/texlive/2021/texmf-dist/tex/latex/contour/contour.cfg
+File: contour.cfg 2004/11/18 v2.14 Print contoured text (HH, MH)
+)
+contour: Using driver file `dvips.cnt'.
+(d:/LaTeX/texlive/2021/texmf-dist/tex/latex/contour/dvips.cnt
+File: dvips.cnt 2004/11/18 v2.14 Print contoured text (HH, MH)
+))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibrarydecorations.markings.code.tex
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibrarydecorations.code.tex
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.
+code.tex
+\pgfdecoratedcompleteddistance=\dimen365
+\pgfdecoratedremainingdistance=\dimen366
+\pgfdecoratedinputsegmentcompleteddistance=\dimen367
+\pgfdecoratedinputsegmentremainingdistance=\dimen368
+\pgf@decorate@distancetomove=\dimen369
+\pgf@decorate@repeatstate=\count390
+\pgfdecorationsegmentamplitude=\dimen370
+\pgfdecorationsegmentlength=\dimen371
+)
+\tikz@lib@dec@box=\box157
+)
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibr
+arydecorations.markings.code.tex))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibrarydecorations.pathmorphing.code.tex
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibr
+arydecorations.pathmorphing.code.tex))
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/
+tikzlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)
+(d:/LaTeX/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.me
+ta.code.tex
+File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowinset=\dimen372
+\pgfarrowlength=\dimen373
+\pgfarrowwidth=\dimen374
+\pgfarrowlinewidth=\dimen375
+) (./main.aux (./texfiles/part1.aux) (./texfiles/part2.aux)
+(./texfiles/part3.aux) (./texfiles/part4.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-Package hyperref Info: Link coloring ON on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+Package hyperref Info: Link coloring ON on input line 70.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1384,23 +1439,23 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (d:/LaTeX/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count390
+\c@section@level=\count391
 )
-LaTeX Info: Redefining \ref on input line 12.
-LaTeX Info: Redefining \pageref on input line 12.
-LaTeX Info: Redefining \nameref on input line 12.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen365
-\caption@adjustwidth@linewidth=\dimen366
+\caption@adjustwidth@hsize=\dimen376
+\caption@adjustwidth@linewidth=\dimen377
 Package caption Info: float package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\@sidenotes@extrawidth=\skip90
+\@sidenotes@extrawidth=\skip91
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1476,8 +1531,8 @@ Package fontspec Info: Could not resolve font "Microsoft YaHei Bold/I" (it
 Package fontspec Info: Could not resolve font "Microsoft YaHei/I" (it probably
 (fontspec)             doesn't exist).
 
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
-3.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 8
+1.
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1502,14 +1557,14 @@ Package fontspec Info: Font family 'MicrosoftYaHei(0)' created for font
 
 
 LaTeX Font Warning: Font shape `TU/SimSun(0)/m/sc' undefined
-(Font)              using `TU/SimSun(0)/m/n' instead on input line 23.
+(Font)              using `TU/SimSun(0)/m/n' instead on input line 81.
 
 
 LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 23.
+(Font)              using `T1/lmr/m/scsl' instead on input line 81.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--23
+Underfull \hbox (badness 10000) in paragraph at lines 81--81
 
  []
 
@@ -1525,8 +1580,8 @@ Package fontspec Info: Could not resolve font "FangSong/B" (it probably
 Package fontspec Info: Could not resolve font "FangSong/I" (it probably
 (fontspec)             doesn't exist).
 
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-3.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
+1.
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1541,49 +1596,49 @@ Package fontspec Info: Font family 'FangSong(0)' created for font 'FangSong'
 (fontspec)             <->"FangSong/OT:script=hani;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-3.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
+1.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-3.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
+1.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-23.
+81.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-23.
+81.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 23.
+(Font)              <10> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 23.
+(Font)              <7> on input line 81.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 23.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 23
+(Font)              <5> on input line 81.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 81
 .
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
 
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
 
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1598,7 +1653,7 @@ File: figs/cover.pdf Graphic file (type pdf)
 
 ]
 Package marginnote Info: Using workaround for absolute page number on input lin
-e 23.
+e 81.
  (./main.toc
 [1])
 \tf@toc=\write5
@@ -2321,7 +2376,7 @@ Package marginnote Info: Margin note 15.1 is on absolute page 15 on input line
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--66
+Underfull \hbox (badness 10000) in paragraph at lines 64--72
 
  []
 
@@ -2334,28 +2389,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 58--66
 LaTeX Warning: Marginpar on page 12 moved.
 
 
-Overfull \hbox (5.39442pt too wide) in paragraph at lines 103--105
+Overfull \hbox (5.39442pt too wide) in paragraph at lines 109--111
 \TU/SimSun(0)/m/n/10 在 场 论 中 我 们 更 多 使 用 坐 标 变 换 的 被 动 观 点 来 看 问 题。|  这 个 等 式 的
  证 明 关 键 就 是 使 用[][]\T1/lmr/m/n/10 10.1[][]\TU/SimSun(0)/m/n/10 。| 
  []
 
 [12]
 
-LaTeX Warning: Command \' invalid in math mode on input line 106.
+LaTeX Warning: Command \' invalid in math mode on input line 112.
 
 Missing character: There is no é ("E9) in font lmmi10!
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 116.
+(hyperref)                removing `math shift' on input line 122.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 116.
+(hyperref)                removing `math shift' on input line 122.
 
 ! Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.135 ^^I^^I\partial^\u
+l.141 ^^I^^I\partial^\u
                        \partial_\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2363,12 +2418,12 @@ so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
 
-LaTeX Warning: Command \u invalid in math mode on input line 135.
+LaTeX Warning: Command \u invalid in math mode on input line 141.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.135 ^^I^^I\partial^\u\partial
+l.141 ^^I^^I\partial^\u\partial
                                _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2376,7 +2431,7 @@ you left one out. Proceed, with fingers crossed.
 ! Improper \spacefactor.
 <recently read> \spacefactor 
                              
-l.135 ^^I^^I\partial^\u\partial
+l.141 ^^I^^I\partial^\u\partial
                                _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
 You can refer to \spacefactor only in horizontal mode;
 you can refer to \prevdepth only in vertical mode; and
@@ -2386,7 +2441,7 @@ I'm forgetting what you said and using zero instead.
 ! Extra }, or forgotten $.
 \add@accent ... \accent@spacefactor \spacefactor }
                                                   \let \maybe@load@fontshape...
-l.135 ^^I^^I\partial^\u\partial
+l.141 ^^I^^I\partial^\u\partial
                                _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2397,7 +2452,7 @@ deleted material, e.g., by typing `I$}'.
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \spacefactor ...
-l.135 ^^I^^I\partial^\u\partial
+l.141 ^^I^^I\partial^\u\partial
                                _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2405,7 +2460,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Extra }, or forgotten $.
 \add@accent ...spaces \relax \accent #1 #2\egroup 
                                                   \spacefactor \accent@space...
-l.135 ^^I^^I\partial^\u\partial
+l.141 ^^I^^I\partial^\u\partial
                                _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2416,7 +2471,7 @@ deleted material, e.g., by typing `I$}'.
 ! You can't use `\spacefactor' in math mode.
 \add@accent ... \accent #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.135 ^^I^^I\partial^\u\partial
+l.141 ^^I^^I\partial^\u\partial
                                _\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2426,7 +2481,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! You can't use `\eqno' in math mode.
 \endmathdisplay@a ...\df@tag \@empty \else \veqno 
                                                   \alt@tag \df@tag \fi \ifx ...
-l.136 ^^I\end{equation}
+l.142 ^^I\end{equation}
                        
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2436,7 +2491,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.136 ^^I\end{equation}
+l.142 ^^I\end{equation}
                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2447,7 +2502,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.136 ^^I\end{equation}
+l.142 ^^I\end{equation}
                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2458,7 +2513,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.136 ^^I\end{equation}
+l.142 ^^I\end{equation}
                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2469,7 +2524,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.136 ^^I\end{equation}
+l.142 ^^I\end{equation}
                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2480,7 +2535,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.136 ^^I\end{equation}
+l.142 ^^I\end{equation}
                        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2491,19 +2546,19 @@ my insertion and my current dilemma will both disappear.
 ! Display math should end with $$.
 <to be read again> 
                    \endgroup 
-l.136 ^^I\end{equation}
+l.142 ^^I\end{equation}
                        
 The `$' that I just saw supposedly matches a previous `$$'.
 So I shall assume that you typed `$$' both times.
 
 
-LaTeX Warning: Reference `11.10' on page 13 undefined on input line 137.
+LaTeX Warning: Reference `11.10' on page 13 undefined on input line 143.
 
 [13]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.207 ^^I^^I}
+l.213 ^^I^^I}
              
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2511,7 +2566,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <recently read> }
                  
-l.207 ^^I^^I}
+l.213 ^^I^^I}
              
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2522,7 +2577,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.207 ^^I^^I}
+l.213 ^^I^^I}
              
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2530,7 +2585,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.207 ^^I^^I}
+l.213 ^^I^^I}
              
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2541,17 +2596,17 @@ my insertion and my current dilemma will both disappear.
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 236.
+(hyperref)                removing `math shift' on input line 242.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 236.
+(hyperref)                removing `math shift' on input line 242.
 
 [15]
 ! Missing { inserted.
 <to be read again> 
                    ^
-l.248 ^^I^^I^^Ig_z\mapsto g^'
+l.254 ^^I^^I^^Ig_z\mapsto g^'
                              _z&=dz^\prime d{\bar z}^\prime\\
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2561,14 +2616,14 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.248 ^^I^^I^^Ig_z\mapsto g^'_z&
+l.254 ^^I^^I^^Ig_z\mapsto g^'_z&
                                 =dz^\prime d{\bar z}^\prime\\
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 [16]
-Overfull \hbox (24.2978pt too wide) detected at line 336
+Overfull \hbox (24.2978pt too wide) detected at line 342
 [][]
  []
 
@@ -2581,7 +2636,7 @@ Package marginnote Info: Margin note 23.1 is on absolute page 23 on input line
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 
-Overfull \hbox (4.55725pt too wide) in paragraph at lines 52--53
+Overfull \hbox (4.55725pt too wide) in paragraph at lines 58--59
  [] 
  []
 
@@ -2589,12 +2644,19 @@ Overfull \hbox (4.55725pt too wide) in paragraph at lines 52--53
 
 
 
-]
+] Penrose diagram (radius r)
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
+Making world lines...
+ Running i/N=1/4, c=0.2, tan(90*0.2)=0.32489...
+ Running i/N=2/4, c=0.4, tan(90*0.4)=0.72649...
+ Running i/N=3/4, c=0.59999, tan(90*0.59999)=1.37648...
+ Running i/N=4/4, c=0.79999, tan(90*0.79999)=3.07764...
+Missing character: There is no ; ("3B) in font nullfont!
+Missing character: There is no ; ("3B) in font nullfont!
 File: figs/cover.pdf Graphic file (type pdf)
 <use figs/cover.pdf>
-File: figs/cover.pdf Graphic file (type pdf)
-<use figs/cover.pdf>
- [20]) [21] (./main.bbl
+[20]) [21] (./main.bbl
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 50.
 ) [22
@@ -2609,15 +2671,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 67A68CA62778E44E59C439D1D074428C;4881.
+(rerunfilecheck)             Checksum: B094C1AC78F7702968D482935EE7239E;4871.
  ) 
 Here is how much of TeX's memory you used:
- 39449 strings out of 476533
- 863150 string characters out of 5818886
- 1374718 words of memory out of 5000000
- 59020 multiletter control sequences out of 15000+600000
+ 41387 strings out of 476533
+ 918429 string characters out of 5818886
+ 1464530 words of memory out of 5000000
+ 60915 multiletter control sequences out of 15000+600000
  599220 words of font info for 203 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 116i,19n,122p,1234b,1115s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 116i,19n,122p,1234b,1213s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on main.pdf (25 pages).

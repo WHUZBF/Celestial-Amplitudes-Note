@@ -1,4 +1,10 @@
 \part{Celestial Sphere \&  Asymptotic Flat Spacetime}
+% 计数器清零，每个part都要引用，除了part1
+\setcounter{theorem}{0}
+\setcounter{definition}{0}
+\setcounter{lemma}{0}
+\setcounter{sidenote}{1}
+
 \section{Carter-Penrose diagram}
 Minkowski时空的度规在球坐标系下可以写为：
 
@@ -82,23 +88,99 @@ Minkowski时空的度规在球坐标系下可以写为：
 \end{itemize}
 从这个意义上看，如果我们只关注时空的因果结构，完全可以考虑共形紧化之后的度规，重点是共形紧化后坐标变成有限区间内取值，这使得我们有希望在时空图上表现出共形无限远。继续对\ref{eq:15.6}做变换：
 \begin{equation}
-	T=U+V,\quad R=U-V,\text{overall:}t\pm r=\tan\frac{1}{2}\left(T\pm R\right)
+	T=U+V,\quad R=U-V,\overset{\Rightarrow}{\text{overall}}t\pm r=\tan\frac{1}{2}\left(T\pm R\right)
 \end{equation}
 度规变为：
 \begin{equation}
-	\tilde{ds}^2=-dT^2+dR^2+\sin^2Rd{\Omega_2}^2,\quad-\pi<T\leq R<\pi
+	\tilde{ds}^2=-dT^2+dR^2+\sin^2Rd{\Omega_2}^2,\quad|T|+R<\pi,0\leq R<\pi
 \end{equation}
 最后一项角向不用在意\sn{坐标变换的时候我们只是把$r,t$进行变换，没有将他们与角向坐标混合}，现在整个时空图是一个有限大小的图，其上面的每一点表示一个球面（除了$i^0$），而且共形无限远以边界的形式表现出来：
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.618\linewidth]{figs/cover.pdf}
+	\begin{tikzpicture}[scale=3.5]
+		\message{Penrose diagram (radius r)^^J}
+		
+		\def\Nlines{4} % number of world lines (at constant r/t)
+		\def\ta{tan(90*1.0/(\Nlines+1))} % constant r/t value 1
+		\def\tb{tan(90*2.0/(\Nlines+1))} % constant r/t value 2
+		\coordinate (O) at ( 0, 0); % center: origin (r,t) = (0,0)
+		\coordinate (S) at ( 0,-1); % south: t=-infty, i-
+		\coordinate (N) at ( 0, 1); % north: t=+infty, i+
+		\coordinate (E) at ( 1, 0); % east:  r=+infty, i0
+		\coordinate (X) at ({penroseu(\tb,\tb)},{penrosev(\tb,\tb)});
+		\coordinate (X0) at ({penroseu(\ta,-\tb)},{penrosev(\ta,-\tb)});
+		
+		% AXES
+		\fill[mylightblue] (N) -- (E) -- (S) -- cycle;
+		\draw[->,thick] (-0.1,0) -- (1.2,0) node[below right=-2] {$R$};
+		\draw[->,thick] (0,-1.1) -- (0,1.2) node[left=-1] {$T$};
+		
+		% INFINITY LABELS
+		\node[above=1,above left=0,mydarkblue,align=center] at (O)
+		{$r=0$};
+		\node[left=6,above right=-2,mydarkblue,align=center] at (1,0.04)
+		{spacelike\\[-2]infinity ($i^0$)\\[-2]$r=+\infty$};
+		\node[above=6,below right=0,mydarkpurple,align=left] at (0.04,-1)
+		{$t=-\infty$\\[-2]past timelike\\[-2]infinity ($i^-$)};
+		\node[below=6,above right=0,mydarkpurple,align=left] at (0.04,1)
+		{future timelike\\[-2]infinity ($i^+$)\\[-2]$t=+\infty$};
+		\node[mydarkblue,above right,align=right] at (57:0.68)
+		{future lightlike\\[-2]infinity ($\mathcal{I}^+$)};
+		\node[mydarkblue,below right,align=right] at (-60:0.68)
+		{past lightlike\\[-2]infinity ($\mathcal{I}^-$)};
+		
+		% CONE BACK
+		\coneback{X};
+		\coneback{X0};
+		
+		% WORLD LINES
+		\draw[world line] (N) -- (S);
+		\draw[world line] (O) -- (E);
+		\message{Making world lines...^^J}
+		\foreach \i [evaluate={\c=\i/(\Nlines+1); \ct=tan(90*\c);}] in {1,...,\Nlines}{
+			\message{  Running i/N=\i/\Nlines, c=\c, tan(90*\c)=\ct...^^J}
+			\draw[world line t,samples=\Nsamples,smooth,variable=\t,domain=0.001:1] % constant t
+			plot(\t,{-penrose(\t*pi/2,\ct)})
+			plot(\t,{ penrose(\t*pi/2,\ct)});
+			\draw[world line,samples=\Nsamples,smooth,variable=\r,domain=-1:1] % constant r
+			plot({penrose(\r*pi/2,\ct)},\r);
+		}
+		\draw[thick,mydarkblue] (N) -- (E) -- (S) -- cycle;
+		
+		% CONSTANT
+		\draw[->,mydarkpurple!80!black,shorten <=0.4] % constant r
+		(0.66,{-penrose(0.66*pi/2,tan(90*3/(\Nlines+1)))}) to[out=-70,in=150]++ (-45:0.23)
+		node[right=-1] {$t=\text{constant}$};
+		\draw[->,mydarkblue!80!black,shorten <=0.4] % constant t
+		({penrose(-0.27*pi/2,tan(90*3/(\Nlines+1)))},-0.27) to[out=-55,in=170]++ (-35:0.3)
+		node[right=-1] {$r=\text{constant}$};
+		
+		% PARTICLE
+		\draw[particle,decoration={markings,mark=at position 0.24 with {\arrow{latex}},
+			mark=at position 0.55 with {\arrow{latex}},
+			mark=at position 0.82 with {\arrow{latex}}},postaction={decorate}]
+		(S) to[out=90,in=-80] (X0) to[out=100,in=-95] (X) to[out=85,in=-90] (N);
+		
+		% LIGHT CONE FRONT
+		\conefront{X};
+		\conefront{X0};
+		
+		% PHOTON
+		\draw[->,photon] (O) -- (0.5,0.5) node[above=2,right=1] {photon};
+		
+		% TICKS
+		\tick{E}{90} node[right=4,below=-1] {$+\pi$};
+		\tick{S}{ 0} node[left=-1] {$-\pi$};
+		\tick{N}{ 0} node[left=-1] {$+\pi$};
+	\end{tikzpicture}
 	\caption{Minkowski时空彭罗斯图}
 \end{figure}
-这种类光测地线都是$45^\circ$斜线，而且能表示共形无限远的图称为彭罗斯图。这个图还有另一种更常用的画法，注意到上面的图
+这种类光测地线都是$45^\circ$斜线，而且能表示共形无限远的图称为彭罗斯图。这个图还有另一种更常用的画法，其实是比上面的形式多出一个维度，用图上左右部分两个点表示一个球$\mathcal{S}^2$，表示球上的一对对径点。原先在上图中只能画成折线的测地线现在可以展开画为曲线：
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.618\linewidth]{figs/cover.pdf}
 	\caption{Minkowski时空彭罗斯图的另一种形式}
 \end{figure}
-\section{Conformal infinity}
+\section{Celestial Sphere}
+
 \section{Asymptotic flat spacetime}
