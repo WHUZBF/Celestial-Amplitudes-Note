@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  21 NOV 2023 00:26
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  21 NOV 2023 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2656,10 +2656,15 @@ Missing character: There is no ; ("3B) in font nullfont!
 Missing character: There is no ; ("3B) in font nullfont!
 File: figs/cover.pdf Graphic file (type pdf)
 <use figs/cover.pdf>
-[20]) [21] (./main.bbl
+[20] [21]
+File: figs/fig1.pdf Graphic file (type pdf)
+<use figs/fig1.pdf>
+File: figs/fig2.pdf Graphic file (type pdf)
+<use figs/fig2.pdf>
+ [22]) [23] (./main.bbl
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 50.
-) [22
+) [24
 
 
 ] (./main.aux (./texfiles/part1.aux)
@@ -2674,12 +2679,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B094C1AC78F7702968D482935EE7239E;4871.
  ) 
 Here is how much of TeX's memory you used:
- 41387 strings out of 476533
- 918429 string characters out of 5818886
- 1464530 words of memory out of 5000000
- 60915 multiletter control sequences out of 15000+600000
+ 41408 strings out of 476533
+ 918822 string characters out of 5818886
+ 1464619 words of memory out of 5000000
+ 60934 multiletter control sequences out of 15000+600000
  599220 words of font info for 203 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,19n,122p,1234b,1213s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (25 pages).
+Output written on main.pdf (27 pages).

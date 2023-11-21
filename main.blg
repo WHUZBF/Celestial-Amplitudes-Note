@@ -14,45 +14,46 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref.bib
 Warning--empty publisher in Rychkov:2016iqz
 Warning--empty booktitle in Oblak:2015qia
-You've used 13 entries,
+Warning--empty publisher in Strominger:2017zoo
+You've used 14 entries,
             2363 wiz_defined-function locations,
-            663 strings with 5631 characters,
-and the built_in function-call counts, 3315 in all, are:
-= -- 285
-> -- 84
+            668 strings with 5759 characters,
+and the built_in function-call counts, 3513 in all, are:
+= -- 298
+> -- 89
 < -- 0
-+ -- 30
-- -- 17
-* -- 332
-:= -- 430
-add.period$ -- 13
-call.type$ -- 13
++ -- 32
+- -- 18
+* -- 356
+:= -- 453
+add.period$ -- 14
+call.type$ -- 14
 change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 248
-empty$ -- 399
-format.name$ -- 51
-if$ -- 818
+cite$ -- 17
+duplicate$ -- 263
+empty$ -- 427
+format.name$ -- 54
+if$ -- 865
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 41
-newline$ -- 43
-num.names$ -- 13
-pop$ -- 68
+int.to.str$ -- 14
+missing$ -- 44
+newline$ -- 46
+num.names$ -- 14
+pop$ -- 75
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 61
+skip$ -- 62
 stack$ -- 0
-substring$ -- 123
-swap$ -- 32
+substring$ -- 127
+swap$ -- 33
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 36
-width$ -- 15
-write$ -- 127
+warning$ -- 3
+while$ -- 38
+width$ -- 16
+write$ -- 135
 (There was 1 error message)
