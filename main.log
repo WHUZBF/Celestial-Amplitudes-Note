@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  21 NOV 2023 13:18
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.9.12)  24 NOV 2023 00:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2656,18 +2656,25 @@ Missing character: There is no ; ("3B) in font nullfont!
 Missing character: There is no ; ("3B) in font nullfont!
 File: figs/cover.pdf Graphic file (type pdf)
 <use figs/cover.pdf>
-[20] [21]
+[20]
 File: figs/fig1.pdf Graphic file (type pdf)
 <use figs/fig1.pdf>
+ [21] [22]
 File: figs/fig2.pdf Graphic file (type pdf)
 <use figs/fig2.pdf>
- [22]) [23] (./main.bbl
+ [23]
+! Double superscript.
+l.320 ...ma_{AB}$对角项为0，由$C_{AB}$的无迹对称性质有$C_{zz}^C^
+                                                  {zz}=C_{\bar z\bar z}C^{\b...
+I treat `x^1^2' essentially like `x^1{}^2'.
+
+[24]) [25] (./main.bbl
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 50.
-) [24
+ [26
 
 
-] (./main.aux (./texfiles/part1.aux)
+]) [27] (./main.aux (./texfiles/part1.aux)
 (./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2676,15 +2683,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B094C1AC78F7702968D482935EE7239E;4871.
+(rerunfilecheck)             Checksum: 6F2EAA55162D9B72FDA70A5C36B7876D;5200.
  ) 
 Here is how much of TeX's memory you used:
- 41408 strings out of 476533
- 918822 string characters out of 5818886
- 1464619 words of memory out of 5000000
- 60934 multiletter control sequences out of 15000+600000
+ 41456 strings out of 476533
+ 920189 string characters out of 5818886
+ 1465010 words of memory out of 5000000
+ 60982 multiletter control sequences out of 15000+600000
  599220 words of font info for 203 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  116i,19n,122p,1234b,1213s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (27 pages).
+Output written on main.pdf (30 pages).
