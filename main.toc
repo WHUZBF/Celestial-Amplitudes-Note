@@ -20,5 +20,8 @@
 \contentsline {section}{\numberline {15}Carter-Penrose diagram}{19}{section.15}%
 \contentsline {section}{\numberline {16}Celestial Sphere}{21}{section.16}%
 \contentsline {section}{\numberline {17}Asymptotic flat spacetime: basic concepts}{23}{section.17}%
-\contentsline {section}{\numberline {18}Asymptotic flat spacetime: BMS group}{25}{section.18}%
-\contentsline {part}{参考文献}{26}{section.18}%
+\contentsline {section}{\numberline {18}Asymptotic flat spacetime: BMS group}{26}{section.18}%
+\contentsline {section}{\numberline {19}Asymptotic flat spacetime: charges}{26}{section.19}%
+\contentsline {part}{第五部分\hspace {1em}Soft Theorem}{27}{part.5}%
+\contentsline {section}{\numberline {20}Review on the quantization of gravity}{27}{section.20}%
+\contentsline {part}{参考文献}{28}{section.20}%

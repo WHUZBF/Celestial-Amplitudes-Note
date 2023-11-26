@@ -313,7 +313,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 \ref{eq:17.4}引进的这些参数都是有具体的物理意义的：
 \begin{itemize}
 	\item[$\bullet$]$m_B$：\textbf{Bondi mass aspect}，物理意义是在$\mathcal{I}^+$的$u$处天球上观察得到的时空的能量角密度分布。\textbf{Bondi mass}可以通过积分$M(u)=\oint_{\mathcal{S}^2_\infty}\mathrm{d}^2\Omega m_B(u,x^A)$给出，$u\to-\infty$时，Bondi mass等于ADM能量。
-	\item[$\bullet$]$C_{AB}$：这个量根据无迹对称约束，会给出两种极化模式，它完全确定了$\mathcal{I}^+$上的引力波辐射，根据他可以定义\textbf{Bondi news tensor}$N_{AB}=\partial_u C_{AB}$，这个量可以和电磁Fraday张量$F_{uz}=\partial_u A_z$\sn{后面章节将会看到为何是这个形式}类比，它的平方正比于$\mathcal{I}^+$上的能流。
+	\item[$\bullet$]$C_{AB}$：这个量根据无迹对称约束，会给出两种极化模式（或者说引力子的两个螺旋度取值），它完全确定了$\mathcal{I}^+$上的引力波辐射，根据他可以定义\textbf{Bondi news tensor}$N_{AB}=\partial_u C_{AB}$，这个量可以和电磁Fraday张量$F_{uz}=\partial_u A_z$\sn{后面章节将会看到为何是这个形式}类比，它的平方正比于$\mathcal{I}^+$上的能流。
 	\item[$\bullet$]$N_A$：\textbf{angular momentum aspect}，这是相对于$r=0$这一点的角动量角密度分布，对他在$\mathcal{S}^2_\infty$上积分得到在$\mathcal{I}^+$的$u$处天球上观察得到的时空的总角动量。
 \end{itemize}
 
@@ -360,9 +360,13 @@ Minkowski时空的度规在球坐标系下可以写为：
 	\end{equation}
 	显然，为了满足渐近平直性，要求$U_z=D^zC_{zz}$，推导过程中我们完全没有使用场方程。
 \end{remark}
-利用场方程代入度规进行计算，逐项比较得到三个量满足的约束条件为：
+使用\ref{eq:17.6}的约定，利用场方程代入度规进行计算，逐项比较得到三个量满足的约束条件为：
 \begin{equation}
-	d
+	\begin{aligned}
+		\partial_u m_B=&\frac{1}{4}D_z^2N^{zz}+\frac{1}{4}D_{\bar z}^2N^{\bar z\bar z}-\frac{1}{2}T^M_{uu}-\frac{1}{4}N_{zz}N^{zz}\\
+		\partial_u N_z=&-\frac{1}{4}\left(D_zD_{\bar z}^2C^{\bar z\bar z}-D^3_zC^{zz}\right)-T^{M}_{uz}+\partial_z m_B+\frac{1}{16}D_zz\partial_u(C_{zz}C^{zz})\\
+		&-\frac{1}{4}N^{zz}D_zC_{zz}-\frac{1}{4}N_{zz}D_zC^{zz}-\frac{1}{4}D_z\left(C^{zz}N_{zz}-N^{zz}C_{zz}\right)
+	\end{aligned}
 \end{equation}
 其中
 \begin{equation}
@@ -370,7 +374,30 @@ Minkowski时空的度规在球坐标系下可以写为：
 \end{equation}
 
 对$\mathcal{I}^{-}$可以类似分析，这里仅罗列结果\sn{这里$r\to\infty,v\approx t+r$，角向坐标与$\mathcal{I}^{+}$上的对径认同}：
+\begin{equation}
+	\begin{aligned}
+		ds^2=&-dv^2+2dvdr+2r^2\gamma_{z\bar z}dzd{\bar z}\\
+		&+\frac{2m^-_B}{r}dv^2+rD_{zz}dz^2+rD_{\bar z\bar z}d{\bar z}^2+2g_{vz}dvdz+2g_{v\bar z}dvd\bar z+\cdots
+	\end{aligned}
+\end{equation}
+其中\sn{这里$D^{AB}$相当于前面的$C^{AB}$，不要与协变导数弄混！}
+\begin{equation}
+	g_{vz}=-\frac{1}{2}D^zD_{zz}-\frac{1}{6r}D_{zz}D_zD^{zz}-\frac{2}{3r}N^-_z+\mathcal{O}(r^{-2})
+\end{equation}
+类似的可以定义News tensor：
+\begin{equation}
+	M_{zz}\equiv \partial_v D_{zz}
+\end{equation}
+约束条件为：
+\begin{equation}
+	\begin{aligned}
+		\partial_u m^-_B=&\frac{1}{4}D_z^2M^{zz}+\frac{1}{4}D_{\bar z}^2M^{\bar z\bar z}+\frac{1}{2}T^M_{vv}+\frac{1}{4}M_{zz}M^{zz}\\
+		\partial_u N^-_z=&\frac{1}{4}\left(D_zD_{\bar z}^2D^{\bar z\bar z}-D^3zD^{zz}\right)-T^{M}_{vz}-\partial_z m^-_B+\frac{1}{16}D_zz\partial_v(C_{zz}C^{zz})\\
+		&-\frac{1}{4}M^{zz}D_zD_{zz}-\frac{1}{4}M_{zz}D_zD^{zz}-\frac{1}{4}D_z\left(D^{zz}M_{zz}-M^{zz}D_{zz}\right)
+	\end{aligned}
+\end{equation}
 
-渐近平直时空也可以从时空图上一窥其特征\cite{zhaoliu}：
+渐近平直时空也可以从时空图上一窥其特征\cite{zhaoliu}，只要是渐近平直时空，Penrose图在$\mathcal{I}^\pm$边界上都类似于Minkowski时空图的直角形状。
 
 \section{Asymptotic flat spacetime: BMS group}
+\section{Asymptotic flat spacetime: charges}
