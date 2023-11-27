@@ -328,7 +328,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 其中$C_zz,N_z,m_B$按照\ref{eq:17.4}类似定义，而且只与$(u,z,\bar z)$有关，与$r$无关。所以渐近平直时空的度规渐近式（在Bondi gauge下）可以概括为：
 \begin{align*}
 	&g_{uu}=-1+\mathcal{O}(r^{-1}),&&g_{ur}=-1+\mathcal{O}(r^{-2}),&&g_{uz}=\mathcal{O}(1)\\
-	&g_{zzz}=\mathcal{O}(1),&&g_{z\bar z}=r^2\gamma_{z\bar z}+\mathcal{O}(1),&&g_{rr}=g_{rz}=0
+	&g_{zz}=\mathcal{O}(1),&&g_{z\bar z}=r^2\gamma_{z\bar z}+\mathcal{O}(1),&&g_{rr}=g_{rz}=0
 \end{align*}
 在不少文献中\cite{Pasterski:2021rjz,Kapec:2014opa,Raclariu:2021zjz}也经常见到\ref{eq:17.5}的另一种等价写法\sn{等价性并不显然，实际上，说他们等价，并不是说可以直接通过\ref{eq:17.5}得到\ref{eq:17.6}，而是\ref{eq:17.6}形势下参量由场方程诱导的约束条件的形式会与\ref{eq:17.5}中的不同，他们的等价性隐藏在约束条件之中了。}：
 \begin{equation}\label{eq:17.6}
@@ -400,4 +400,99 @@ Minkowski时空的度规在球坐标系下可以写为：
 渐近平直时空也可以从时空图上一窥其特征\cite{zhaoliu}，只要是渐近平直时空，Penrose图在$\mathcal{I}^\pm$边界上都类似于Minkowski时空图的直角形状。
 
 \section{Asymptotic flat spacetime: BMS group}
+\begin{equation}
+	\text{Asymptotic symmetries}=\frac{\text{Allowed symmetries}}{\text{Trivial symmetries}}
+\end{equation}
+
+这个式子是在说我们在体系背景时空原有的对称性外，对于其它允许的对称性寻找叫\textbf{渐近对称性}，我们现在考虑的问题就是平直时空背景，由于渐近平直带来的高阶项（描述无穷远处的引力波扰动），这会导致体系的对称性远远大于Poincar\'e群。
+
+所谓$AFS$的对称变换，并不要求是等度规映射，仅仅要求保持Bondi gauge以及渐近平直性，这其实是要求下面的asymptotic invariant:
+\begin{align*}
+	&\mathcal{L}_\xi g_{uu}=\mathcal{O}(r^{-1}),&&\mathcal{L}_\xi g_{ur}=\mathcal{O}(r^{-2}),&&\mathcal{L}_\xi g_{uz}=\mathcal{O}(1)\\
+	&\mathcal{L}_\xi g_{zz}=\mathcal{O}(1),&&\mathcal{L}_\xi g_{z\bar z}=\mathcal{O}(1),&&\mathcal{L}_\xi g_{\bar z \bar zz}=\mathcal{O}(1)
+\end{align*}
+和gauge invariant:
+\begin{equation}
+	\mathcal{L}_\xi g_{zz}=\mathcal{L}_\xi g_{rz}=0
+\end{equation}
+计算后发现\sn{相当冗长的计算，细节请参考：\cite{Bondi:1962px,Sachs:1962wk,Barnich:2009se,Barnich:2010ojg,Barnich:2011mi,Barnich:2010eb}}这要求矢量场形式为：
+\begin{equation}
+	\begin{aligned}
+		\xi^+=&\eqnmarkbox[red]{node1}{\left(1+\frac{u}{2r}\right)Y^{+z}\partial_z-\frac{u}{2r}D^{\bar z}D_zY^{+z}\partial_{\bar z}-\frac{1}{2}(u+r)D_zY^{+z}\partial_r+\frac{u}{2}D_zY^{+z}\partial_u+c.c.}\\
+		&+\eqnmarkbox[blue]{node2}{f^+\partial_u-\frac{1}{r}\left(D^zf^+\partial_z+D^{\bar z}f^+\partial_{\bar z}\right)+D^zD_zf^+\partial_r}
+	\end{aligned}
+\end{equation}
+\annotate[yshift=0.7em]{}{node1}{$\text{Superrotation  }\xi_Y^+$}
+\annotate[yshift=-0.7em]{below,label below}{node2}{$\text{Supertranslation  }\xi_f^+$}
+
+\noindent 其中，$f(z,\bar z)$是$C\mathcal{S}^2$上的任意函数，而$Y^{+z}$在$C\mathcal{S}^2$上全纯：
+\begin{equation}\label{Y}
+	\partial_{\bar z}Y^{+z}=0
+\end{equation}
+
+首先来看相对比较简单的supertranslation，可以验证，当$f$取为常函数，其生成$u$方向的平移，其它三个方向平移则由$Y_1^{\{0,\pm1\}}$生成\sn{这里$Y_\ell^m$指球谐函数}。所以下面这四个$f$：
+\begin{equation}\label{f}
+	f_0=1,\quad f_1=\frac{z+\bar z}{1+z\bar z},\quad f_2=\frac{i\left(\bar z-z\right)}{1+z\bar z},\quad f_3\frac{1-z\bar z}{1+z\bar z}
+\end{equation}
+所对应的生成元正好是Poincar\'e群的四个方向平移，进一步$f$扩展为任意函数，就变成了所谓“supertranslation”。在无穷小的supertranslation下$N_{zz},m_B,C_{zz}$的改变可以由下式定量刻画\sn{略去了后面应乘的无穷小参数}：
+\begin{equation}
+	\begin{aligned}
+		&\delta_{f^+}N_{zz}=f^+\partial_u N_{zz}\\
+		&\delta_{f^+} m_B=f^+\partial_u m_B+\frac{1}{4}\left[N_{zz}D_z^2f^++2D_zN^{zz}D_zf^++c.c.\right]\\
+		&\delta_{f^+} C_{zz}=f^+\partial_u C_{zz}-2D_z^2f^+
+	\end{aligned}
+\end{equation}
+
+Minkowski时空自然渐近平直，对应的三个参数都为0，上式中前两个为0，可以解释为换一下坐标系不会改变质量，也不会产生引力波。但是第三个式子不为0，这意味着渐近对称性在Minkowski时空中被破缺，容易验证当且仅当$f$取\ref{f}的四个值时，对应Poincar\'e群的平动，会让$\delta_{f^+} C_{zz}=0$。这种对称性的自发破缺实际上意味着经典引力中的真空不唯一，且存在Goldstone粒子\cite{Strominger:2017zoo}。
+
+再来看superrotation，首先注意到$Y^{+z}$全纯，这意味着其在$C\mathcal{S}^2$上全局解析，否则在极点处不满足\ref{Y}。这说明$Y^{+z}$只能取为全局共形变换Mobi\"us变换形式，构成Witt代数的$\mathfrak{sl}(2,\mathbb{C})$子代数，有六个分量，通常取为：
+\begin{align*}
+	&Y^{+z}_{12}=-iz,&&Y^{+z}_{13}=\frac{1}{2}(1+z^2),&&Y^{+z}_{23}=\frac{i}{2}(1-z^2)\\
+	&Y^{+z}_{03}=-z,&&Y^{+z}_{01}=\frac{1}{2}(1-z^2),&&Y^{+z}_{02}=\frac{i}{2}(1+z^2)
+\end{align*}
+事实上，这六个函数对应的正是$SO(3,1)^\uparrow$的六个boost和rotation！所以BMS群的superrotation对应的就是Lorentz群：
+\begin{equation}
+	\text{BMS}=\text{Supertranslation}\ltimes SO(3,1)^\uparrow
+\end{equation}
+所以，BMS群在最初的意义上并没有superrotation，只是单纯的rotation。但是，文献\cite{Barnich:2009se,Barnich:2010ojg,Barnich:2011mi,Banks:2003vp}指出，真正的渐近对称性或许应该是下面的所谓\textbf{extended BMS group}：
+\begin{equation}
+	\text{extended BMS} =\text{Supertranslation}\ltimes \text{Superrotation}
+\end{equation}
+也就是说，那些local的解析函数$Y^{+z}$也应当是渐近对称性，这样的话，渐近对称性也变成无限维对称性，superrotation部分与天球上共形变换一一对应。
+
+在superrotation下度规前系数的变换可以写为\sn{这里$\mathcal{L}_{Y^+}\equiv\mathbf{Y}^+\cdot \mathbf{D}+2D_zY^z$，这一点可以从把$C_{zz}$看作$(0,2)$张量场分量，然后利用\ref{lie}求李导数看出}：
+\begin{equation}
+	\begin{aligned}
+		&\delta_{Y^+}C_{zz}=\frac{u}{2}\left(D_zY^{+z}+D_{\bar z}Y^{+\bar z} \right)\partial_u C_{zz}+\mathcal{L}_{Y^+}C_{zz}-\frac{1}{2}\left(D_zY^{+z}+D_{\bar z}Y^{+\bar z}\right)C_{zz}-uD^3_{z}Y^{+z}\\
+		&\delta_{Y^+}N_{zz}\equiv\partial_u\delta_{Y^+}C_{zz}=\frac{u}{2}\left(D_zY^{+z}+D_{\bar z}Y^{+\bar z} \right)\partial_u N_{zz}+\mathcal{L}_{Y^+}N_{zz}-D^3_zY^{+z}
+	\end{aligned}
+\end{equation}
+
+对于$\text{BMS}^-$，同样可以进行讨论，这里仅罗列一些公式：
+
+\noindent Supertranslation：
+\begin{equation}
+	\xi_{f^-}=-f^-\partial_v-\frac{1}{r}\left(D^zf^-\partial_z+D^{\bar z}f^-\partial_{\bar z}\right)+D^zD_zf^-\partial_r
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		&\delta_{f^-}M_{zz}=f^-\partial_v M_{zz}\\
+		&\delta_{f^-}D_{zz}=f^-\partial_v D_{zz}+2D_z^2f^-
+	\end{aligned}
+\end{equation}
+Superrotation：
+\begin{equation}
+	\xi_{Y^-}=\left(1-\frac{v}{2r}\right)Y^{-z}\partial_z+\frac{v}{2r}D^{\bar z}D_zY^{-z}\partial_{\bar z}-\frac{1}{2}(r-v)D_zY^{-z}\partial_r+\frac{v}{2}D_zY^{-z}\partial_v+c.c.
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		&\delta_{Y^-}D_{zz}=\frac{v}{2}\left(D_zY^{-z}+D_{\bar z}Y^{-\bar z} \right)\partial_v D_{zz}+\mathcal{L}_{Y^-}D_{zz}-\frac{1}{2}\left(D_zY^{-z}+D_{\bar z}Y^{-\bar z}\right)D_{zz}+vD^3_{z}Y^{-z}\\
+		&\delta_{Y^-}M_{zz}\equiv\partial_v\delta_{Y^-}D_{zz}=\frac{v}{2}\left(D_zY^{-z}+D_{\bar z}Y^{-\bar z} \right)\partial_v M_{zz}+\mathcal{L}_{Y^-}M_{zz}+D^3_zY^{-z}
+	\end{aligned}
+\end{equation}
+
+文献\cite{Barnich:2010ojg,Barnich:2010eb}中还给出了$\mathfrak{bms}_4$及其中心扩张：
+to be continue \ldots
 \section{Asymptotic flat spacetime: charges}
+本节的重点是时空对称性对应的守恒荷，主要参考，首先我们用流形和坐标语言重述一下Noether定理作为热身。
+\subsection{Noether theorem}
