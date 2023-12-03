@@ -138,7 +138,7 @@
 	\end{equation}
 	再次与$g^{\mu\nu}$缩并得到：
 	\begin{equation}\label{11.10}
-		\partial^\u\partial_\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
+		\partial^u\partial_\mu\xi_\rho=\frac{2-d}{2}\partial_\rho\omega
 	\end{equation}
 	\ref{11.6}作用上$\partial^\rho\partial_\rho$，再由\ref{11.10}得到：
 	\begin{equation}\label{11.11}
@@ -209,7 +209,6 @@
 					&[M_{\mu\nu},M_{\rho\sigma}=i\left(\eta_{\mu\rho}M_{\nu\sigma}-\eta_{\mu\sigma}M_{\nu\rho}-\eta_{\nu\rho}M_{\nu\rho}+\eta_{\nu\sigma}M_{\mu\rho}\right)]\\
 					&\left[D, P_{\mu}\right]=i P_{\mu}\\ &\left[D, K_{\mu}\right]=-i K_{\mu} \\ &\left[K_{\mu}, P_{\nu}\right]=2 i\left(g_{\mu \nu} D-M_{\mu \nu}\right) \\ &\left[K_{\rho}, M_{\mu \nu}\right]=i\left(g_{\rho \mu} K_{\nu}-g_{\rho \nu} K_{\mu}\right) \\ &\left[P_{\rho}, M_{\mu \nu}\right]=i\left(g_{\rho \mu} P_{\nu}-g_{\rho \nu} P_{\mu}\right) 
 			\end{aligned}
-		
 		}
 	\end{equation}
 	
@@ -251,7 +250,7 @@
 	现在考虑坐标变换$z\mapsto z^\prime(z,\bar z)$，度规相应变为：
 	\begin{equation}
 		\begin{aligned}
-			g_z\mapsto g^'_z&=dz^\prime d{\bar z}^\prime\\
+			g_z\mapsto g^\prime_z&=dz^\prime d{\bar z}^\prime\\
 			&=\left(\frac{\partial z^\prime}{\partial z}dz+\frac{\partial z^\prime}{\partial\bar z}d\bar z\right)
 			\left(\frac{\partial \bar z^\prime}{\partial z}dz+\frac{\partial \bar z^\prime}{\partial\bar z}d\bar z\right)\\
 			&=\frac{\partial z^\prime}{\partial z}\frac{\partial \bar z^\prime}{\partial z}dz^2+\frac{\partial z^\prime}{\partial \bar z}\frac{\partial \bar z^\prime}{\partial \bar z}{dz^\prime}^2+\left(\frac{\partial \bar z^\prime}{\partial  z}\frac{\partial  z^\prime}{\partial \bar z}+\frac{\partial z^\prime}{\partial z}\frac{\partial \bar z^\prime}{\partial \bar z}\right)dzd\bar z
@@ -288,9 +287,13 @@
 	\begin{equation}
 		q^\mu\mapsto q^{\prime\mu}=\frac{(\Lambda q)^\mu}{(\Lambda q)^+}
 	\end{equation}
-	其中分母是为了将$q^+\equiv\frac{1}{2}\left(q^0+q^{d+1}\right)=1$归一化。而且，可以验证这个变换还是一个共形变换！特别地，当$d=2$时，定义$w=x^1+ix^2$，这个同构变成：
+	其中分母是为了将$q^+\equiv\frac{1}{2}\left(q^0+q^{d+1}\right)=1$归一化，所谓嵌入到光锥的\textbf{正则部分（canonical section）}。而且，可以验证这个变换还是一个共形变换！特别地，当$d=2$时，定义$w=x^1+ix^2$，这个同构变成：
 	\begin{equation}
 		q^\mu(w,\bar w)=(1+w\bar w,w+\bar w,i(\bar w-w),1-w\bar w)
+	\end{equation}
+	如果并不在意归一化，可以将类光矢量参数化为：
+	\begin{equation}
+		q^\mu(w,\bar w)=\frac{q^0}{1+w\bar w}(1+w\bar w,w+\bar w,i(\bar w-w),1-w\bar w)
 	\end{equation}
 \section{Conformal transformations on the Riemann sphere}
 本节的关键在于下面的式子：

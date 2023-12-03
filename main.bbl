@@ -164,4 +164,30 @@ S.~Badger, J.~Henn, J.~Plefka and S.~Zoia, \emph{{Scattering Amplitudes in
   Quantum Field Theory}},  \href{https://arxiv.org/abs/2306.05976}{{\ttfamily
   2306.05976}}.
 
+\bibitem{Goldberger:2004jt}
+W.D.~Goldberger and I.Z.~Rothstein, \emph{{An Effective field theory of gravity
+  for extended objects}},
+  \href{https://doi.org/10.1103/PhysRevD.73.104029}{\emph{Phys. Rev. D}
+  {\bfseries 73} (2006) 104029}
+  [\href{https://arxiv.org/abs/hep-th/0409156}{{\ttfamily hep-th/0409156}}].
+
+\bibitem{Bern:2019crd}
+Z.~Bern, C.~Cheung, R.~Roiban, C.-H.~Shen, M.P.~Solon and M.~Zeng, \emph{{Black
+  Hole Binary Dynamics from the Double Copy and Effective Theory}},
+  \href{https://doi.org/10.1007/JHEP10(2019)206}{\emph{JHEP} {\bfseries 10}
+  (2019) 206} [\href{https://arxiv.org/abs/1908.01493}{{\ttfamily
+  1908.01493}}].
+
+\bibitem{Mogull:2020sak}
+G.~Mogull, J.~Plefka and J.~Steinhoff, \emph{{Classical black hole scattering
+  from a worldline quantum field theory}},
+  \href{https://doi.org/10.1007/JHEP02(2021)048}{\emph{JHEP} {\bfseries 02}
+  (2021) 048} [\href{https://arxiv.org/abs/2010.02865}{{\ttfamily
+  2010.02865}}].
+
+\bibitem{Sannan:1986tz}
+S.~Sannan, \emph{{Gravity as the Limit of the Type {II} Superstring Theory}},
+  \href{https://doi.org/10.1103/PhysRevD.34.1749}{\emph{Phys. Rev. D}
+  {\bfseries 34} (1986) 1749}.
+
 \end{thebibliography}\endgroup

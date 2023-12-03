@@ -5,4 +5,92 @@
 \setcounter{lemma}{0}
 \setcounter{sidenote}{1}
 \section{Review on the quantization of gravity}
-本节采用\cite{Badger:2023eqz}中的记号简要回顾引力量子化以及树图顶点项。
+本节采用\cite{Badger:2023eqz}中的记号简要回顾引力量子化以及树图顶点项。众所周知微扰量子引力是不可重整化的，所以只能看作是一个有效理论，但好就好在它的低能极限是可以用于计算引力波振幅的\cite{Goldberger:2004jt,Bern:2019crd,Mogull:2020sak}。
+
+取自由引力场拉式量为：
+\begin{equation}
+	\mathcal{L}_{EH}=\frac{2}{\kappa^2}\sqrt{-g}R,\quad \kappa=\sqrt{32\pi G}
+\end{equation}
+然后在平直度规附近做微扰：
+\begin{equation}
+	g_{\mu\nu}=\eta_{\mu\nu}+\kappa h_{\mu\nu}
+\end{equation}
+代入到$\mathcal{L}_{EH}$进行计算得到：
+\begin{equation}
+	\begin{aligned}
+		\mathcal{L}_{\mathrm{EH}}& =\partial_{\alpha}h\partial_{\beta}h^{\alpha\beta}-\partial_{\alpha}h_{\beta\gamma}\partial^{\beta}h^{\alpha\gamma}-\frac{1}{2}(\partial_{\alpha}h)^{2}+\frac{1}{2}(\partial_{\gamma}h_{\alpha\beta})^{2}  \\
+		&+\text{total derivatives}+\mathcal{O}\left(\kappa,h^{3}\right).
+	\end{aligned}
+\end{equation}
+其中$h\equiv h^\alpha_\alpha$。这一堆都是$(\partial h)^2$项，对应动能项，显然由于没有$h^2$项，所以引力子质量为0。后面的高阶项意味着引力子之间是有自相互作用的。
+
+由于广义相对论是微分同胚不变的，所以他其实也是个规范理论，不同的坐标系就意味着不同的规范，度规分量的变换正对应于场的规范变换。那么我们对$h_{\mu\nu}$进行路径积分时就必须在规范下进行，这可以使用F-P鬼场方法来系统的处理。比较常用的规范选取是下面的de-Donder规范：
+\begin{equation}
+	G_\mu\equiv\partial^\nu h_{\mu\nu}\frac{1}{2}\partial_\mu h=0
+\end{equation}
+这导致规范固定项：
+\begin{equation}
+	{\mathcal L}_{\mathrm{GF}}=G_{\mu}G^{\mu}=\partial^{\nu}h_{\mu\nu}\partial^{\rho}h^{\mu}{}_{\rho}+\frac{1}{4}(\partial_{\mu}h)^{2}-\partial^{\nu}h_{\mu\nu}\partial^{\mu}h
+\end{equation}
+以及鬼场：
+\begin{equation}
+	\mathcal{L}_{\mathrm{GH}}=-\bar{b}^{\mu}\left(\kappa\frac{\delta G_{\mu}}{\delta\xi^{\nu}}\right)b^{\nu}
+\end{equation}
+de-Donder规范下：
+\begin{equation}
+	\kappa\frac{\delta G_{\mu}}{\delta\xi^{\nu}}=\eta_{\mu\nu}\partial^{2}+\kappa\bigl[\partial^{\rho}h_{\mu\nu}\partial_{\rho}+\partial^{\rho}h_{\nu\rho}\partial_{\mu}+\partial^{\rho}(\partial_{\nu}h_{\mu\rho})-\partial_{\mu}h_{\nu\rho}\partial^{\rho}-\frac{1}{2}\partial_{\mu}(\partial_{\nu}h)\bigr]
+\end{equation}
+进行路径积分时，就不必再考虑规范，取而代之$\mathcal{L}_{EH}\mapsto\mathcal{L}_{EH}+\mathcal{L}_{GF}+\mathcal{L}_{GH}$，由于树图鬼场无贡献，所以这里只考虑前两项：
+\begin{equation}
+	\begin{aligned}
+		\mathcal{L}_{\mathrm{EH}}|_{h^{2}}+\mathcal{L}_{\mathrm{GF}}& =-\frac{1}{2}h_{\alpha\beta}\partial^{2}h_{\alpha\beta}+\frac{1}{4}h\partial^{2}h  \\
+		&=-\frac{1}{2}h_{\alpha\beta}\underbrace{\left[\eta^{\alpha(\gamma}\eta^{\delta)\beta}-\frac{1}{2}\eta^{\alpha\beta}\eta^{\gamma\delta}\right]}_{I^{\alpha\beta,\gamma\delta}}\partial^{2}h_{\gamma\delta} 
+	\end{aligned}
+\end{equation}
+给出费曼图顶点和传播子项：
+\begin{equation}
+	\feynmandiagram [horizontal=a to b] {a[particle=\(\alpha\beta\)] -- [gluon] b[particle=\(\gamma\delta\)]};
+	=\dfrac{\text{i}P_{\alpha\beta,\gamma\delta}}{p^2-\text{i}0^+}\quad\text{with}\quad P_{\alpha\beta,\gamma\delta}=\eta_{\alpha(\gamma}\eta_{\delta)\beta}-\dfrac{1}{D-2}\eta_{\alpha\beta}\eta_{\gamma\delta}
+\end{equation}
+其中$I^{\alpha\beta,\gamma\delta}P_{\gamma\delta,\rho\kappa}=\delta_{(\rho}^{\alpha}\delta_{\kappa)}^{\beta}$。高阶自相互作用顶点可以在\cite{Sannan:1986tz}中找到。
+
+引力子自旋为$2$，但由于规范的限制，其仍然如光子一样只有两个独立的极化矢量（张量），对应引力波的两种偏振模式，只不过这个时候其实是个二阶对称极化张量。满足下面的条件：
+\begin{equation} 
+	p_\mu \epsilon^{\mu\nu}_{++/--} (p)=0,\quad \eta_{\mu\nu} \epsilon^{\mu\nu}_{++/--} (p)=0
+\end{equation}
+利用光子的极化矢量，可以构造出一组非常方便的$\epsilon^{\mu\nu}_{++/--}$选取：
+\begin{equation}
+	\epsilon^{\mu\nu}_{\pm\pm}=\epsilon^{\mu}_{\pm}\epsilon^{\nu}_{\pm}
+\end{equation}
+
+现在考虑引力场与其他场的耦合，耦合项拉式量为：
+\begin{equation}
+	\mathcal{L}_{\text{int}}=\frac{\kappa}{2}h^{\mu\nu}T_{\mu\nu}
+\end{equation}
+这里$T_{\mu\nu}$是场的能动张量，可以使用下式进行计算：
+\begin{equation}
+	T_{\mu\nu}(x)=-\frac{2}{\sqrt{-g}}\frac{\delta S_M}{\delta g_{\mu\nu}(x)}
+\end{equation}
+$S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最小耦合方法得到\sn{玻色场可以这么做，费米场复杂些}。以自旋为0对应的实标量场为例。
+\begin{equation}\label{S_M}
+	S_M=\int d^4x\sqrt{-\eta}\left(-\frac{1}{2}\eta^{\mu\nu}\partial_\mu\phi\partial_\nu\phi-V(\phi)\right)
+\end{equation}
+这里我们把所有暗含$\eta$的地方都显式的写出来了，弯曲时空中的作用量只需要将$\eta\mapsto g,\partial\mapsto\nabla$即可，得到：
+\begin{equation}
+	\tilde S_M=\int d^4x\sqrt{-g}\left(-\frac{1}{2}g^{\mu\nu}\nabla_\mu\phi\nabla_\nu\phi-V(\phi)\right)
+\end{equation}
+
+当然，对称性允许我们在后面添加正比于Ricci标量的项等等，但所谓我们要的就是“最小”耦合。不过在微扰引力框架下，我们其实只需要利用\ref{S_M}对$\eta$求变分导数就好了，对于无质量的自由标量场（对应不动点处的理论），我们得到：
+\begin{equation}
+	T_{\mu\nu}=\partial_\mu\phi\partial_\nu\phi-\frac{1}{2}\eta_{\mu\nu}\partial^\rho\phi\partial_\rho\phi
+\end{equation}
+对应的顶点项为：
+\begin{equation}
+	\feynmandiagram [inline=(d.base), horizontal=d to b] {
+		a --[momentum=\(p\)]  b[dot] --[momentum=\(q\)]  c,
+		b -- [gluon] d ,
+	};
+	= i \kappa p_{\mu}q_\nu +\text{正比于}\eta_{\mu\nu}\text{的项}
+\end{equation}
+
+\section{Soft theorem from feynman diagrams}

@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {10}Pull back, push forward \& Lie derivative}{11}{section.10}%
 \contentsline {section}{\numberline {11}Killing \& Conformal Killing vector field}{12}{section.11}%
 \contentsline {section}{\numberline {12}Conformal transformations in $d>2$}{13}{section.12}%
-\contentsline {section}{\numberline {13}Conformal transformations in $d=2$}{15}{section.13}%
+\contentsline {section}{\numberline {13}Conformal transformations in $d=2$}{16}{section.13}%
 \contentsline {section}{\numberline {14}Conformal transformations on the Riemann sphere}{17}{section.14}%
 \contentsline {part}{第四部分\hspace {1em}Celestial Sphere \& Asymptotic Flat Spacetime}{19}{part.4}%
 \contentsline {section}{\numberline {15}Carter-Penrose diagram}{19}{section.15}%
@@ -25,5 +25,6 @@
 \contentsline {subsection}{\numberline {19.1}Noether theorem}{28}{subsection.19.1}%
 \contentsline {part}{第五部分\hspace {1em}Soft Theorem}{29}{part.5}%
 \contentsline {section}{\numberline {20}Review on the quantization of gravity}{29}{section.20}%
-\contentsline {part}{第六部分\hspace {1em}Appendix: Geometric Approaches}{30}{part.6}%
-\contentsline {part}{参考文献}{31}{part.6}%
+\contentsline {section}{\numberline {21}Soft theorem from feynman diagrams}{31}{section.21}%
+\contentsline {part}{第六部分\hspace {1em}Appendix: Geometric Approaches}{32}{part.6}%
+\contentsline {part}{参考文献}{33}{part.6}%

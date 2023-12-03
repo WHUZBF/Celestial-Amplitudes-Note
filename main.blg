@@ -7,7 +7,8 @@ A level-1 auxiliary file: texfiles/part2.aux
 A level-1 auxiliary file: texfiles/part3.aux
 A level-1 auxiliary file: texfiles/part4.aux
 A level-1 auxiliary file: texfiles/part5.aux
-Illegal, another \bibstyle command---line 93 of file main.aux
+A level-1 auxiliary file: texfiles/appendix.aux
+Illegal, another \bibstyle command---line 92 of file main.aux
  : \bibstyle
  :          {JHEP}
 I'm skipping whatever remains of this command
@@ -16,45 +17,45 @@ Database file #1: ref.bib
 Warning--empty publisher in Rychkov:2016iqz
 Warning--empty booktitle in Oblak:2015qia
 Warning--empty publisher in Strominger:2017zoo
-You've used 31 entries,
+You've used 35 entries,
             2363 wiz_defined-function locations,
-            787 strings with 8270 characters,
-and the built_in function-call counts, 8686 in all, are:
-= -- 828
-> -- 234
+            825 strings with 9163 characters,
+and the built_in function-call counts, 10500 in all, are:
+= -- 1026
+> -- 289
 < -- 0
-+ -- 79
-- -- 48
-* -- 857
-:= -- 1137
-add.period$ -- 31
-call.type$ -- 31
-change.case$ -- 18
++ -- 95
+- -- 60
+* -- 1036
+:= -- 1367
+add.period$ -- 35
+call.type$ -- 35
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 634
-empty$ -- 936
-format.name$ -- 144
-if$ -- 2170
+cite$ -- 38
+duplicate$ -- 779
+empty$ -- 1097
+format.name$ -- 180
+if$ -- 2628
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 105
-newline$ -- 97
-num.names$ -- 31
-pop$ -- 116
+int.to.str$ -- 35
+missing$ -- 121
+newline$ -- 109
+num.names$ -- 35
+pop$ -- 124
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 213
+skip$ -- 270
 stack$ -- 0
-substring$ -- 360
-swap$ -- 117
+substring$ -- 464
+swap$ -- 153
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 97
-width$ -- 33
-write$ -- 301
+while$ -- 117
+width$ -- 37
+write$ -- 344
 (There was 1 error message)
