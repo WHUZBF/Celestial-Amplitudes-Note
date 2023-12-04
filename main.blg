@@ -17,45 +17,45 @@ Database file #1: ref.bib
 Warning--empty publisher in Rychkov:2016iqz
 Warning--empty booktitle in Oblak:2015qia
 Warning--empty publisher in Strominger:2017zoo
-You've used 35 entries,
+You've used 42 entries,
             2363 wiz_defined-function locations,
-            825 strings with 9163 characters,
-and the built_in function-call counts, 10500 in all, are:
-= -- 1026
-> -- 289
+            886 strings with 10342 characters,
+and the built_in function-call counts, 13410 in all, are:
+= -- 1350
+> -- 353
 < -- 0
-+ -- 95
-- -- 60
-* -- 1036
-:= -- 1367
-add.period$ -- 35
-call.type$ -- 35
-change.case$ -- 22
++ -- 115
+- -- 73
+* -- 1283
+:= -- 1727
+add.period$ -- 42
+call.type$ -- 42
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 38
-duplicate$ -- 779
-empty$ -- 1097
-format.name$ -- 180
-if$ -- 2628
+cite$ -- 45
+duplicate$ -- 1000
+empty$ -- 1366
+format.name$ -- 219
+if$ -- 3382
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 121
-newline$ -- 109
-num.names$ -- 35
-pop$ -- 124
+int.to.str$ -- 42
+missing$ -- 148
+newline$ -- 130
+num.names$ -- 42
+pop$ -- 148
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 270
+skip$ -- 385
 stack$ -- 0
-substring$ -- 464
-swap$ -- 153
+substring$ -- 667
+swap$ -- 212
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 3
-while$ -- 117
-width$ -- 37
-write$ -- 344
+while$ -- 148
+width$ -- 44
+write$ -- 415
 (There was 1 error message)

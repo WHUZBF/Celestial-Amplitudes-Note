@@ -81,7 +81,7 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 \end{equation}
 
 当然，对称性允许我们在后面添加正比于Ricci标量的项等等，但所谓我们要的就是“最小”耦合。不过在微扰引力框架下，我们其实只需要利用\ref{S_M}对$\eta$求变分导数就好了，对于无质量的自由标量场（对应不动点处的理论），我们得到：
-\begin{equation}
+\begin{equation}\label{eq:20.10}
 	T_{\mu\nu}=\partial_\mu\phi\partial_\nu\phi-\frac{1}{2}\eta_{\mu\nu}\partial^\rho\phi\partial_\rho\phi
 \end{equation}
 对应的顶点项为：
@@ -94,3 +94,90 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 \end{equation}
 
 \section{Soft theorem from feynman diagrams}
+所谓软粒子，指的就是动量趋于0的无质量粒子，因为无质量$E=cp$，所以能量也会趋于0，任意过程都会辐射出期望值为无限多个的软粒子。本节使用费曼图方法讨论辐射软粒子的振幅修正\cite{McLoughlin:2022ljp}。
+
+首先考虑辐射一个软光子，理论背景为旋量QED，散射过程为$ne^-\to me^-+\gamma $，注意考虑的是一般的旋量QED，可以有不同味的电子，电荷为$Q_i$。这里考虑的是电子，正电子的讨论也类似，最终结论是一样的。
+
+辐射软光子可以从入射外线辐射，也可以从出射外线辐射，还可以从内线辐射：
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/fig3.pdf}
+	\caption{辐射软光子的三种情况}
+\end{figure}
+我们使用$\mathcal{A}(p,q)$表示辐射一个软光子后的振幅$\mathcal{A}(p)$表示没有辐射软光子的振幅（所有阶费曼图求和）。用$T(p_i-q)$表示原先没有辐射软光子的费曼图砍掉一个$p_i$外线但保留外线动量为非在壳的$p_i-q$得到的费曼图振幅，显然$T(p_i)u(p_i)=\mathcal{A}(p)$。
+
+首先计算入射外线辐射软光子：
+\begin{equation}
+	\begin{aligned}
+		Q_iT(p_i-q)\frac{(-\slashed{p}_i^\prime+\slashed{q}+m)\slashed{\epsilon}(q)}{(p_i-q)^2+m^2}u(p_i)&=-Q_iT(p_i-q)\Big[\frac{\epsilon(q)\cdot p_i+i\epsilon(q)_\mu q_\nu S^{\mu\nu}}{q\cdot p_i+\mathrm{i}0^+}\Big]u(p_i)
+	\end{aligned}
+\end{equation}
+其中利用了$\slashed{a}\slashed{b}=-2a\cdot b-\slashed{b}\slashed{a}$，$q\cdot \epsilon_\pm(q)=0$以及狄拉克方程$(\slashed{p}+m)u(p)=0$。其中$S^{\mu\nu}=\frac{\mathrm{i}}{4}[\gamma^\mu,\gamma^\nu]$。唯一做近似的地方就是分母里面的$q^2$我们略去了，这对后面的高阶修正也不会影响。这一注意到$q=0$实际上是一个极点，这是因为在光子无线“软”的时候，多出来的那条内线传播子会无线趋于在壳，导致分母为0。
+
+对于出射粒子辐射软光子也是类似的计算得到：
+\begin{equation}\label{eq:20.17}
+	\begin{aligned}
+		Q^\prime_i\bar u(p_i^\prime)\frac{(-\slashed{p}_i^\prime-\slashed{q}+m)\slashed{\epsilon}(q)}{(p_i-q)^2+m^2}\bar T(p_i+q)&=-Q^\prime_i\bar u(p_i^\prime)\Big[\frac{\epsilon(q)\cdot p_i-i\epsilon(q)_\mu q_\nu S^{\mu\nu}}{q\cdot p_i-\mathrm{i}0^+}\Big]\bar T(p_i-q)
+	\end{aligned}
+\end{equation}
+
+至于内线发射光子，我们用$N^\mu(p,q)$表示，而且注意到$q\to0$时$N\to0$，而且内线本身就是不在壳的，所以可以认为$N^\mu(p,q)\sim\mathcal{O}(q)$。三项加起来得到：
+\begin{equation}
+	\begin{aligned}
+		\mathcal{A}(p,p^{\prime},q) =&\sum_\text{incoming }{ - Q _ i T ( p _ i - q )}\frac{\epsilon(q)\cdot p_i+i\epsilon(q)_{\mu}q_\nu S^{\mu\nu}}{q\cdot p_i+\mathrm{i}0^+}u(p_i)  \\
+		&+\sum_{\mathrm{outgoing}}Q_{i}^{\prime}\bar{u}(p_{i}^{\prime})\frac{\epsilon(q)\cdot p_{i}^{\prime}-i\epsilon(q)_{\mu}q_{\nu}{S}^{\mu\nu}}{q\cdot p_{i}^{\prime}-\mathrm{i}0^+}\bar{T}(p_{i}^{\prime}+q)
+		&+\epsilon(q)_{\mu}N^{\mu}(p,p^{\prime},q)
+	\end{aligned}
+\end{equation}
+考虑最低阶修正，也就是只保留极点，得到：
+\begin{equation}\label{eq:21.4}
+	\boxed{
+	\mathcal{A}(p,q)=\left[\sum_{i}\eta_iQ_{i}\frac{\epsilon(q)\cdot p_{i}}{q\cdot p_{i}}\right]\mathcal{A}(p)}+\mathcal{O}(1)
+\end{equation}
+其中对于入射粒子$\eta_i=-1$，出射粒子为$+1$。QED中辐射出光子的振幅都可以拆分成$\epsilon(q)_\mu \mathcal{M}^\mu$，振幅是相对论不变量，但是我们虽然常说$\epsilon(q)_\mu$是极化矢量，但它并不是真正意义上的矢量，因为其在lorentz变换下并不协变，而是会多出来一个正比于$q$的项\sn{我们是在Lorentz变换的意义下理解，其实矢量的这种变换完全可以理解为规范选取不同，从而从振幅的规范不变性导出结果。\cite{srednicki}}\cite{Weinberg}。为了让振幅是相对论不变量，必须有：
+\begin{equation}\label{eq:21.5}
+	\boxed{
+	q_\mu\mathcal{M}^\mu=0}
+\end{equation}
+也就是Ward恒等式，也可以从Ward-高桥恒等式在U(1)对称性下导出它，实际上也就是利用电荷守恒导出它，但是前面我们的导出仅仅依赖于Lorentz不变性。现在把\ref{eq:21.4}中的$\epsilon(q)$替换为$q$我们得到：
+\begin{equation}
+	\left[\sum_i\eta_i Q_i\right]\mathcal{A}(p)=0
+\end{equation}
+也就是说，如果散射过程不被禁闭，也就是$\mathcal{A}(p)\neq 0$，那么这个过程必然要电荷守恒！另外说一句，我们这里的推导得到的\ref{eq:21.4}对于任意自旋的场都适用，比如对于标量QED，只需要把$S^{\mu\nu}$替换为0就好，不同的自旋对应$S^{\mu\nu}$的不同表示。
+
+现在继续考虑两个光子的情况，两个光子由不同外线发射，在最低阶近似下只是乘上了\ref{eq:21.4}中两个因子，但是由相同外线发射就要考虑发射的先后顺序，因子形式会变化：
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/fig4.pdf}
+	\caption{同一外线辐射两个软光子}
+\end{figure}
+把两幅图贡献的因子加起来得到：
+\begin{equation}
+	\begin{aligned}
+	&\left[\frac{\eta Q\epsilon(q_1)\cdot p}{p\cdot q_1-\mathrm{i}\eta0^+}\right]\left[\frac{\eta Q\epsilon(q_2)\cdot p}{p\cdot(q_2+q_1)-\mathrm{i}\eta 0^+}\right]+\left[\frac{\eta Q\epsilon(q_2)\cdot p}{p\cdot q_2-\mathrm{i}\eta0^+}\right]\left[\frac{\eta Q\epsilon(q_1)\cdot p}{p\cdot(q_1+q_2)-\mathrm{i}\eta 0^+}\right]\\=&\left[\frac{\eta Q\epsilon(q_1)\cdot p}{p\cdot q_1-\mathrm{i}\eta0^+}\right]\left[\frac{\eta Q\epsilon(q_2)\cdot p}{p\cdot q_2-\mathrm{i}\eta 0^+}\right]	
+	\end{aligned}
+\end{equation}
+得到的结果就是不同外腿上面的辐射两个软光子得到的因子，利用数学归纳法可以证明这一结论对于辐射任意数量的软光子都是适用的，那么最终我们只需要把因子乘起来，然后对所有外腿求和就好了，用式子表示如下：
+\begin{equation}
+	\boxed{\mathcal{A}(p,q_1,\ldots,q_m)=\prod_{j=1}^m\left[\sum_{i=1}^nQ_i\eta_i\frac{\epsilon(q_j)\cdot p_i}{q_j\cdot p_i}\right]\mathcal{A}(p)++\mathcal{O}(1)}
+\end{equation}
+前面的因子称为\textbf{eikonal因子}。推广到non-Abelian Y-M场的软定理也早有人计算过了\cite{Berends:1987me,Berends:1988zn,Mangano:1987kp,Mangano:1990by}，软定理更多更一般的推广见\cite{McLoughlin:2022ljp}的文献索引。
+
+现在来考虑辐射一个软引力子的情况，考虑第一节引入的标量场模型，传播子为：
+\begin{equation}
+	-\frac{i }{(p+\eta q)^2+m^2}
+\end{equation}
+顶点由\ref{eq:20.17}给出，但是由于\ref{eq:20.10}，要与$\epsilon^{\mu\nu}$缩并，正比于$\eta_{\mu\nu}$的项没有贡献。以出射外线辐射软引力子为例，给出因子：
+\begin{equation}
+	i\sqrt{32\pi G}\varepsilon^{\mu\nu}p_{\mu}p_{\nu}\frac{-i}{\left(p+q\right)^{2}+m^{2}}\rightarrow\sqrt{8\pi G}\frac{\varepsilon^{\mu\nu}p_{\mu}p_{\nu}}{p\cdot q}
+\end{equation}
+求和后得到：
+\begin{equation}
+	\boxed{
+	\mathcal{A}(p,q)=\left[\sum_i\frac{\kappa_i}{2}\eta_i\frac{\epsilon_{\mu\nu}(q)p_i^\mu p_i^\nu}{q\cdot p_i}\right]\mathcal{A}(p)+\mathcal{O}(1)}
+\end{equation}
+
+引力子同样有类似于\ref{eq:21.5}的恒等式，由此我们可以得到所有的$\kappa_i$都是相等的\sn{这里有点循环论证了，因为前面为了推导的方便我们同一取$\kappa_i=\sqrt{32\pi G}$}，也就是等效原理！而自旋大于二的软粒子的软定理沿用上面的方法给出的限制就太强了，以至于散射$\mathcal{S}$矩阵必须trivial，所以一般认为自旋大于二的无质量粒子在“变软”的时候就脱耦合了。
+\section{Subleading and subsubleading order soft theorem}
+
+\section{Ward indentity = Soft theorem}

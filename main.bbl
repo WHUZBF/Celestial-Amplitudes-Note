@@ -190,4 +190,42 @@ S.~Sannan, \emph{{Gravity as the Limit of the Type {II} Superstring Theory}},
   \href{https://doi.org/10.1103/PhysRevD.34.1749}{\emph{Phys. Rev. D}
   {\bfseries 34} (1986) 1749}.
 
+\bibitem{McLoughlin:2022ljp}
+T.~McLoughlin, A.~Puhm and A.-M.~Raclariu, \emph{{The SAGEX review on
+  scattering amplitudes chapter 11: soft theorems and celestial amplitudes}},
+  \href{https://doi.org/10.1088/1751-8121/ac9a40}{\emph{J. Phys. A} {\bfseries
+  55} (2022) 443012} [\href{https://arxiv.org/abs/2203.13022}{{\ttfamily
+  2203.13022}}].
+
+\bibitem{srednicki}
+M.~Srednicki, \emph{{Quantum field theory}}, Cambridge University Press (1,
+  2007).
+
+\bibitem{Berends:1987me}
+F.A.~Berends and W.T.~Giele, \emph{{Recursive Calculations for Processes with n
+  Gluons}}, \href{https://doi.org/10.1016/0550-3213(88)90442-7}{\emph{Nucl.
+  Phys. B} {\bfseries 306} (1988) 759}.
+
+\bibitem{Berends:1988zn}
+F.A.~Berends and W.T.~Giele, \emph{{Multiple Soft Gluon Radiation in Parton
+  Processes}}, \href{https://doi.org/10.1016/0550-3213(89)90398-2}{\emph{Nucl.
+  Phys. B} {\bfseries 313} (1989) 595}.
+
+\bibitem{Mangano:1987kp}
+M.L.~Mangano and S.J.~Parke, \emph{{Quark - Gluon Amplitudes in the Dual
+  Expansion}}, \href{https://doi.org/10.1016/0550-3213(88)90368-9}{\emph{Nucl.
+  Phys. B} {\bfseries 299} (1988) 673}.
+
+\bibitem{Mangano:1990by}
+M.L.~Mangano and S.J.~Parke, \emph{{Multiparton amplitudes in gauge theories}},
+  \href{https://doi.org/10.1016/0370-1573(91)90091-Y}{\emph{Phys. Rept.}
+  {\bfseries 200} (1991) 301}
+  [\href{https://arxiv.org/abs/hep-th/0509223}{{\ttfamily hep-th/0509223}}].
+
+\bibitem{Ellis:2016jkw}
+J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},
+  \href{https://doi.org/10.1016/j.cpc.2016.08.019}{\emph{Comput. Phys. Commun.}
+  {\bfseries 210} (2017) 103}
+  [\href{https://arxiv.org/abs/1601.05437}{{\ttfamily 1601.05437}}].
+
 \end{thebibliography}\endgroup
