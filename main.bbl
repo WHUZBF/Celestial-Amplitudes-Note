@@ -222,6 +222,15 @@ M.L.~Mangano and S.J.~Parke, \emph{{Multiparton amplitudes in gauge theories}},
   {\bfseries 200} (1991) 301}
   [\href{https://arxiv.org/abs/hep-th/0509223}{{\ttfamily hep-th/0509223}}].
 
+\bibitem{Lee:1990nz}
+J.~Lee and R.M.~Wald, \emph{{Local symmetries and constraints}},
+  \href{https://doi.org/10.1063/1.528801}{\emph{J. Math. Phys.} {\bfseries 31}
+  (1990) 725}.
+
+\bibitem{Jackson1998ClassicalE3}
+J.D.~Jackson, \emph{Classical electrodynamics, 3rd edition},  1998,
+  \href{https://api.semanticscholar.org/CorpusID:119985144}{https://api.semanticscholar.org/CorpusID:119985144}.
+
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},
   \href{https://doi.org/10.1016/j.cpc.2016.08.019}{\emph{Comput. Phys. Commun.}

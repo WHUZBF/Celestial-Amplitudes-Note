@@ -180,4 +180,89 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 引力子同样有类似于\ref{eq:21.5}的恒等式，由此我们可以得到所有的$\kappa_i$都是相等的\sn{这里有点循环论证了，因为前面为了推导的方便我们同一取$\kappa_i=\sqrt{32\pi G}$}，也就是等效原理！而自旋大于二的软粒子的软定理沿用上面的方法给出的限制就太强了，以至于散射$\mathcal{S}$矩阵必须trivial，所以一般认为自旋大于二的无质量粒子在“变软”的时候就脱耦合了。
 \section{Subleading and subsubleading order soft theorem}
 
+\section{Massless QED}
+本章用天球的视角来看QED理论，为下一节做准备，本节的讨论都局限于比较简单的，不含磁荷而且电子没有质量的QED理论，但是基于此推出的许多结论实际上是普适的，可以推广到有质量QED上\cite{Strominger:2017zoo}。
+
+弯曲时空中QED作用量：
+\begin{equation}
+	S_{EM}=-\frac{1}{2e^2}\int{F}\wedge\star F +S_M=-\frac{1}{4e^2}\int \mathrm{d}^4x\sqrt{-g}F_{\mu]nu}F^{\mu\nu}+S_M
+\end{equation}
+其中$S_M$由$j^\nu A_\nu$形式给出相互作用项，即$j^\nu=-\frac{\delta S_M}{\delta A^\nu}$。Maxwell场方程有下面简洁形式：
+\begin{equation}
+	\begin{cases}
+		dF=0&\Rightarrow \nabla_\mu F_{\nu\rho}+\nabla_\nu F_{\rho\mu}+\nabla_\rho F_{\mu\nu}=0\\
+		d\star F=e^2\star j&\Rightarrow \nabla_\mu F_{\mu\nu}=e^2j_\nu
+	\end{cases}
+\end{equation}
+下式给出了整个空间内的净电荷/磁荷\sn{后文$\star,*$指的都是Hodge dual}：
+\begin{equation}
+	Q_E=\frac{1}{e^2}\int_{\mathcal{S}^2_\infty}\star F=\int_{\Sigma}\star j,\quad Q_M=\frac{1}{2\pi}\int_{\mathcal{S}^2_\infty} F
+\end{equation}
+它们是量子化的，只能取整数。QED是$U(1)$规范理论，在$A\mapsto A+d\varepsilon$的规范变换下理论不变，后文不加说明都在所谓\textbf{retarded radial 规范}下进行计算\cite{Lee:1990nz}：
+\begin{equation}
+	\begin{aligned}
+		&\mathcal{I}^+: A_r=0,\quad A_u|_{\mathcal{I}^+}=0\\
+		&\mathcal{I}^-: A_r=0,\quad A_v|_{\mathcal{I}^-}=0
+	\end{aligned}
+\end{equation}
+在$\mathcal{I}^{\pm}$附近可以把$A,F$展开成$\mathcal{O}(1/r)$的形式，用$A^{(i)},F^{(i)}$表示$r^{-i}$项前的系数，那么在这一规范下有：
+\begin{equation}
+	F_{ur}^{(0)}=A_u^{(0)}=0, F_{z\bar z}^{(0)}=\partial_z A_{\bar z}^{(0)}-\partial_{\bar z}A_z^{(0)},F_{uz}^{(0)}=\partial_u A_z^{(0)},F_{rz}^{(0)}=-A_z^{(1)}
+\end{equation}
+$\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \mathbf{A}=0$一样没有完全确定规范，$A_z$还可以进行下面的所谓Large gauge transformation：
+\begin{equation}
+	A_z\mapsto A_z+\partial_z\varepsilon(z,\bar z),\quad \forall \varepsilon\in C^\infty\left[C\mathcal{S}^2\right]
+\end{equation}
+运动电荷激发的电磁场即所谓Li\'enard\mbox{-}Wiecher势\cite{Jackson1998ClassicalE3}。这里我们在天球坐标下将advanced和retarded势统一写为：
+\begin{equation}
+	F_{rt}(\vec{x},t)=\frac{e^2}{4\pi}\sum_{k=1}^n\frac{Q_k\gamma_k\left(r-t\hat{x}\cdot\vec{\beta}_k\right)}{\left|\gamma_k^2\left(t-r\hat{x}\cdot\vec{\beta}_k\right)^2-t^2+r^2\right|^{3/2}},\quad r^2=\vec{x}\cdot\vec{x},\quad\vec{x}=r\hat{x}
+\end{equation}
+其中我们假设所有电荷之间匀速运动，而且相互作用可忽略，这个假设有点强，但是请\textbf{相信}后面导出的结论是可以推广到一般情形的。现在计算在天球上的极限：
+\begin{equation}
+	\begin{aligned}
+		&\left.F_{rt}\right|_{\mathcal{I}^{+}}=\frac{e^{2}}{4\pi r^{2}}\sum_{k=1}^{n}\frac{Q_{k}}{\gamma_{k}^{2}(1-\hat{x}\cdot\vec{\beta}_{k})^{2}}\\
+		&\left.F_{rt}\right|_{\mathcal{I}^{-}}=\frac{e^{2}}{4\pi r^{2}}\sum_{k=1}^{n}\frac{Q_{k}}{\gamma_{k}^{2}(1+\hat{x}\cdot\vec{\beta_{k}})^{2}}
+	\end{aligned}
+\end{equation}
+取极限，得到：
+\begin{equation}
+	\boxed{
+	\left.F_{rt}\right|_{\mathcal{I}^{+}_-}\neq \left.F_{rt}\right|_{\mathcal{I}^{-}_+}}
+\end{equation}
+正是这个式子说明了要严格区分$\mathcal{I}^{+}_-,\mathcal{I}^{-}_{+}$和$i^0$。但是，因为$F_{ru}=F_{rt}=F_{rv}$：
+\begin{equation}
+	\boxed{
+		\lim\limits_{r\to\infty}r^2F_{ru}(\hat{x})\Big|_{\mathcal{I}_{-}^+}=\lim\limits_{r\to\infty}r^2F_{rv}(-\hat{x})\Big|_{\mathcal{I}_{+}^-}
+	}
+\end{equation}
+也就是说场在两个天球上是对径认同的，这也是为什么前面$\mathcal{I}^{\pm}$天球的角向选取是antipodal的，上边的式子可以写成下面很简洁的形式：
+\begin{equation}
+	\boxed{
+	\left.F_{ru}^{(2)}(z,\bar z)\right|_{\mathcal{I}^{+}_-}=\left.F_{rv}^{(2)}(z,\bar z)\right|_{\mathcal{I}^{-}_+}
+	}
+\end{equation}
+这个式子是普适的，而且非常重要，是后面散射问题的核心。现在考虑任意一个天球上的对径认同的函数：
+\begin{equation}
+	\varepsilon(z,\overline{z})|_{\mathcal{I}_{-}^{+}}=\varepsilon(z,\overline{z})|_{\mathcal{I}_{+}^{-}}
+\end{equation}
+定义下面的future charges和past charges：
+\begin{equation}
+	\boxed{
+		Q_{\varepsilon}^{+}=\frac{1}{e^{2}}\int_{\mathcal I_{-}^{+}}\varepsilon*F,\quad Q_{\varepsilon}^{-}=\frac{1}{e^{2}}\int_{\mathcal I_{+}^{-}}\varepsilon*F
+	}
+\end{equation}
+由于Hodge对偶后出来的体积元$\propto r^2$，所以在天球上$r\to\infty$，$F\to F^{(2)}$，再根据对径认同的条件，这样对于任意一个函数$\varepsilon$，我们都给出了一个“电荷”守恒律：
+\begin{equation}
+	\boxed{
+	Q_\varepsilon^+=Q_\varepsilon^-
+	}
+\end{equation}
+对于$\varepsilon$是常函数情形，就得到了一般的电荷守恒律。利用Stokes公式\sn{$\int_{\partial \Omega}\omega =\int_{ \Omega}d\omega$}可以改写$Q_\varepsilon^{\pm}$为\sn{$Q_\varepsilon^-$只用把$+\mapsto -$}：
+\begin{equation}
+	Q_\varepsilon^+=\frac{1}{e^2}\int_{\mathcal{I}^+}\mathrm{d}\varepsilon\wedge*F+\int_{\mathcal{I}^+}\varepsilon*j+\cancelto{0}{\frac{1}{e^2}\int_{\mathcal{I}_+^+}\varepsilon*F}
+\end{equation}
+最后一项为0是因为我们假设电子是无质量的，这样电子就是从$\mathcal{I}^-\to\mathcal{I}^+$，而不是$i^{-}\to i^+$，所以$F|_{\mathcal{I}_+^{+}}=0$。第一项是Soft term $Q_S^+$与软光子的产生湮灭有关，第二项由于是与流耦合，所以叫Hard term $Q_H^+$与带电实物粒子有关。将上面的微分形式写成分量形式\sn{其中使用了Bianchi恒等式：$\partial_{u}F_{ru}^{(2)}+D^{z}F_{uz}^{(0)}+D^{\bar{z}}F_{u\bar{z}}^{(0)}+e^2j_{u}^{(2)}=0$}：
+\begin{equation}
+	Q_{\varepsilon}^{+}=\underbrace{-\frac{1}{e^{2}}\int_{\mathcal{I}^{+}}dud^{2}z\left(\partial_{z}\varepsilon F_{u\bar{z}}^{(0)}+\partial_{\bar{z}}\varepsilon F_{uz}^{(0)}\right)}_{Q_{S}^{+}}+\underbrace{\int_{\mathcal{I}^{+}}dud^{2}z\varepsilon\gamma_{z\bar{z}}j_{u}^{(2)}}_{Q_{H}^{+}}
+\end{equation}
 \section{Ward indentity = Soft theorem}
