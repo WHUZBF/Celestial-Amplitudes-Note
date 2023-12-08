@@ -117,15 +117,15 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 对于出射粒子辐射软光子也是类似的计算得到：
 \begin{equation}\label{eq:20.17}
 	\begin{aligned}
-		Q^\prime_i\bar u(p_i^\prime)\frac{(-\slashed{p}_i^\prime-\slashed{q}+m)\slashed{\epsilon}(q)}{(p_i-q)^2+m^2}\bar T(p_i+q)&=-Q^\prime_i\bar u(p_i^\prime)\Big[\frac{\epsilon(q)\cdot p_i-i\epsilon(q)_\mu q_\nu S^{\mu\nu}}{q\cdot p_i-\mathrm{i}0^+}\Big]\bar T(p_i-q)
+		Q^\prime_i\bar u(p_i^\prime)\frac{(-\slashed{p}_i^\prime-\slashed{q}+m)\slashed{\epsilon}(q)}{(p_i-q)^2+m^2}\bar T(p_i+q)&=Q^\prime_i\bar u(p_i^\prime)\Big[\frac{\epsilon(q)\cdot p_i+i\epsilon(q)_\mu q_\nu S^{\mu\nu}}{q\cdot p_i-\mathrm{i}0^+}\Big]\bar T(p_i-q)
 	\end{aligned}
 \end{equation}
 
-至于内线发射光子，我们用$N^\mu(p,q)$表示，而且注意到$q\to0$时$N\to0$，而且内线本身就是不在壳的，所以可以认为$N^\mu(p,q)\sim\mathcal{O}(q)$。三项加起来得到：
-\begin{equation}
+至于内线发射光子，我们用$N^\mu(p,q)$表示，而且注意到$q\to0$时$N$非奇异，而且内线本身就是不在壳的，所以可以认为$N^\mu(p,q)\sim\mathcal{O}(q^0)$。三项加起来得到：
+\begin{equation}\label{eq:21.3}
 	\begin{aligned}
 		\mathcal{A}(p,p^{\prime},q) =&\sum_\text{incoming }{ - Q _ i T ( p _ i - q )}\frac{\epsilon(q)\cdot p_i+i\epsilon(q)_{\mu}q_\nu S^{\mu\nu}}{q\cdot p_i+\mathrm{i}0^+}u(p_i)  \\
-		&+\sum_{\mathrm{outgoing}}Q_{i}^{\prime}\bar{u}(p_{i}^{\prime})\frac{\epsilon(q)\cdot p_{i}^{\prime}-i\epsilon(q)_{\mu}q_{\nu}{S}^{\mu\nu}}{q\cdot p_{i}^{\prime}-\mathrm{i}0^+}\bar{T}(p_{i}^{\prime}+q)
+		&+\sum_{\mathrm{outgoing}}Q_{i}^{\prime}\bar{u}(p_{i}^{\prime})\frac{\epsilon(q)\cdot p_{i}^{\prime}+i\epsilon(q)_{\mu}q_{\nu}{S}^{\mu\nu}}{q\cdot p_{i}^{\prime}-\mathrm{i}0^+}\bar{T}(p_{i}^{\prime}+q)\\
 		&+\epsilon(q)_{\mu}N^{\mu}(p,p^{\prime},q)
 	\end{aligned}
 \end{equation}
@@ -140,7 +140,7 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 	q_\mu\mathcal{M}^\mu=0}
 \end{equation}
 也就是Ward恒等式，也可以从Ward-高桥恒等式在U(1)对称性下导出它，实际上也就是利用电荷守恒导出它，但是前面我们的导出仅仅依赖于Lorentz不变性。现在把\ref{eq:21.4}中的$\epsilon(q)$替换为$q$我们得到：
-\begin{equation}
+\begin{equation}\label{eq:21.6}
 	\left[\sum_i\eta_i Q_i\right]\mathcal{A}(p)=0
 \end{equation}
 也就是说，如果散射过程不被禁闭，也就是$\mathcal{A}(p)\neq 0$，那么这个过程必然要电荷守恒！另外说一句，我们这里的推导得到的\ref{eq:21.4}对于任意自旋的场都适用，比如对于标量QED，只需要把$S^{\mu\nu}$替换为0就好，不同的自旋对应$S^{\mu\nu}$的不同表示。
@@ -179,6 +179,33 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 
 引力子同样有类似于\ref{eq:21.5}的恒等式，由此我们可以得到所有的$\kappa_i$都是相等的\sn{这里有点循环论证了，因为前面为了推导的方便我们同一取$\kappa_i=\sqrt{32\pi G}$}，也就是等效原理！而自旋大于二的软粒子的软定理沿用上面的方法给出的限制就太强了，以至于散射$\mathcal{S}$矩阵必须trivial，所以一般认为自旋大于二的无质量粒子在“变软”的时候就脱耦合了。
 \section{Subleading and subsubleading order soft theorem}
+考虑动量为$\delta q,\delta \to0$的软光子辐射，$\pm$表示软光子的螺旋度，而$\ell_i$表示其它粒子的螺旋度，则更一般的软定理可以用洛朗展开写成：
+\begin{equation}
+	\mathcal{A}_{\ell_1,...,\ell_n,\pm}(p,\delta q)=\left[\sum_{a=0}^\infty\delta^{-1+a}S_\pm^{(a)}\right]\mathcal{A}_{\ell_1,...,\ell_n}(p)
+\end{equation}
+次领头阶的计算可以从\ref{eq:21.5}式出发，将\ref{eq:21.3}中所有的$\epsilon$替换为动量，保留到$\mathcal{O}(\delta^0)$，并且令等式左边为0。注意到这一阶近似下可以有$N^\mu(p,q)\approx N^\mu(p,0)$，得到：
+\begin{equation}
+	-q^{\mu}N_{\mu}(p,0)=\cancelto{0}{\frac{1}{\delta}\sum_{i=1}^{n}\eta_{i}Q_{i}\mathcal{A}(p)}+q^{\mu}\sum_{i=1}^{n}Q_{i}\frac{\partial}{\partial p_{i}^{\mu}}\mathcal{A}(p)
+\end{equation}
+其中第一项为0是因为电荷守恒\ref{eq:21.6}，第二项中的$\partial_{p_i}$只作用于$\mathcal{A}$中的$T$，不作用于$u$\sn{因为这个式子的导出，是对$T(p\pm q)$展开得到的。}。这样就确定出了$N^\mu$\sn{其实只能确定到某个与$q$无关的矢量$v$，满足$q\cdot v=0$，但是这样的$v$实际上不存在。}，再带回到\ref{eq:21.3}得到：
+\begin{equation}
+	A^\mu=\sum_{i=1}^nQ_i\left[\frac{\eta_ip_i^\mu}{\delta q\cdot p_i}+\frac{q^\nu p_i^\mu}{q\cdot p_i}\frac{\partial}{\partial p_i^\nu}-\frac{iq_\nu S_i^{\mu\nu}}{q\cdot p_i}-\frac{\partial}{\partial p_{i\mu}}\right]\mathcal{A}(p)+\mathcal{O}(\delta)
+\end{equation}
+这个式子里面的$\partial_{p_i}$就是作用于整个$\mathcal{A}$了。定义：
+\begin{equation}
+	L_i^{\mu\nu}=i\left(p_i^\mu\frac{\partial}{\partial p_{i\nu}}-p_i^\nu\frac{\partial}{\partial p_{i\mu}}\right),\quad J^{\mu\nu}_i+S_i^{\mu\nu}
+\end{equation}
+这里$S_i^{\mu\nu}$要根据第i个粒子的自旋去选取对应的Lorentz群不可约表示，比如$s=0,S^{\mu\nu}=0;s=\frac{1}{2},S^{\mu\nu}=\frac{i}{4}[\gamma^\mu,\gamma^\nu]$。这样我们就得到了包含subleading修正的软定理（LBK定理\cite{PhysRevLett.20.86,PhysRev.110.974}）：
+\begin{equation}
+	\begin{aligned}S_{\pm}^{(0)}&=\sum_{i=1}^nQ_i\eta_i\frac{\epsilon_{\pm\mu}(q)p_i^\mu}{q\cdot p_i},\quad\text{and}\quad S_{\pm}^{(1)}&=-i\sum_{i=1}^nQ_i\frac{\epsilon_{\pm\mu}(q)q_\nu J_i^{\mu\nu}}{q\cdot p_i}\end{aligned}
+\end{equation}
+同样的方法可以推导出软引力子定理的subleading和subsubleading的修正项\sn{软定理已经使用不同的方法推了很多遍，文献\cite{McLoughlin:2022ljp,Brandhuber:2022qbk}中有不同证明方法的文献索引,而且还有对于更复杂的非阿贝尔规范理论的软定理讨论。}\cite{PhysRevD.90.084035,PhysRev.168.1623,White:2014qia,Broedel:2014fsa}：
+\begin{equation}
+	\begin{gathered}
+		S_{\pm}^{(0)}=\frac{\kappa}{2}\sum_{i=1}^{n}\eta_{i}\frac{\epsilon_{\pm\mu\nu}(q)p_{i}^{\mu}p_{i}^{\nu}}{q\cdot p_{i}},\quad S_{\pm}^{(1)}=-i\frac{\kappa}{2}\sum_{i=1}^{n}\frac{\epsilon_{\pm\mu\nu}(q)p_{i}^{\mu}q_{\lambda}J_{i}^{\nu\lambda}}{q\cdot p_{i}}, \\
+		S_{\pm}^{(2)}=-\frac{\kappa}{4}\sum_{i=1}^{n}\eta_{i}\frac{\epsilon_{\pm\mu\nu}(q)q_{\rho}q_{\sigma}J_{i}^{\mu\rho}J_{i}^{\nu\sigma}}{q\cdot p_{i}}
+	\end{gathered}
+\end{equation}
 
 \section{Massless QED}
 本章用天球的视角来看QED理论，为下一节做准备，本节的讨论都局限于比较简单的，不含磁荷而且电子没有质量的QED理论，但是基于此推出的许多结论实际上是普适的，可以推广到有质量QED上\cite{Strominger:2017zoo}。
@@ -198,7 +225,7 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 \begin{equation}
 	Q_E=\frac{1}{e^2}\int_{\mathcal{S}^2_\infty}\star F=\int_{\Sigma}\star j,\quad Q_M=\frac{1}{2\pi}\int_{\mathcal{S}^2_\infty} F
 \end{equation}
-它们是量子化的，只能取整数。QED是$U(1)$规范理论，在$A\mapsto A+d\varepsilon$的规范变换下理论不变，后文不加说明都在所谓\textbf{retarded radial 规范}下进行计算\cite{Lee:1990nz}：
+它们是量子化的，只能取整数。QED是$U(1)$规范理论，在$A\mapsto A+d\varepsilon$的规范变换下理论不变，后文不加说明都在所谓\textbf{retarded radial 规范}下进行计算\cite{He:2014cra}：
 \begin{equation}
 	\begin{aligned}
 		&\mathcal{I}^+: A_r=0,\quad A_u|_{\mathcal{I}^+}=0\\
@@ -213,6 +240,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}
 	A_z\mapsto A_z+\partial_z\varepsilon(z,\bar z),\quad \forall \varepsilon\in C^\infty\left[C\mathcal{S}^2\right]
 \end{equation}
+
 运动电荷激发的电磁场即所谓Li\'enard\mbox{-}Wiecher势\cite{Jackson1998ClassicalE3}。这里我们在天球坐标下将advanced和retarded势统一写为：
 \begin{equation}
 	F_{rt}(\vec{x},t)=\frac{e^2}{4\pi}\sum_{k=1}^n\frac{Q_k\gamma_k\left(r-t\hat{x}\cdot\vec{\beta}_k\right)}{\left|\gamma_k^2\left(t-r\hat{x}\cdot\vec{\beta}_k\right)^2-t^2+r^2\right|^{3/2}},\quad r^2=\vec{x}\cdot\vec{x},\quad\vec{x}=r\hat{x}
@@ -265,4 +293,31 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}
 	Q_{\varepsilon}^{+}=\underbrace{-\frac{1}{e^{2}}\int_{\mathcal{I}^{+}}dud^{2}z\left(\partial_{z}\varepsilon F_{u\bar{z}}^{(0)}+\partial_{\bar{z}}\varepsilon F_{uz}^{(0)}\right)}_{Q_{S}^{+}}+\underbrace{\int_{\mathcal{I}^{+}}dud^{2}z\varepsilon\gamma_{z\bar{z}}j_{u}^{(2)}}_{Q_{H}^{+}}
 \end{equation}
+定义Soft phonton mode $N_z$：
+\begin{equation}
+	N_{z}\equiv \int_{-\infty}^{\infty}duF_{uz}^{(0)}=\lim_{\omega\to0}\int_{-\infty}^{\infty}duF_{uz}^{(0)}e^{i\omega u}
+\end{equation}
+再次看到$N_z$对应的是电磁场的零频部分，也就是软光子部分，而且有：
+\begin{equation}
+	\begin{aligned}
+		\partial_{\bar{z}}N_{z}-\partial_{z}N_{\bar{z}}& =\int_{-\infty}^{\infty}du\left[\partial_{\bar{z}}F_{uz}^{(0)}-\partial_{z}F_{u\bar{z}}^{(0)}\right]  \\
+		&=-\int_{-\infty}^{\infty}du\left.\partial_{u}F_{z\bar{z}}^{(0)}=-F_{z\bar{z}}^{(0)}\right|_{\mathcal{I}_{-}^{+}}^{\mathcal{I}_{+}^{+}}=0
+	\end{aligned}
+\end{equation}
+最后等于0是因为$F_{z\bar z}|_{\mathcal{I}_{+}^{\pm}}$，本质上是因为没有磁单极子，磁场不是long-range的，在无穷远处为0\sn{因为$F_{z\bar z}=\frac{\partial x^{\mu}}{\partial z}\frac{\partial x^{\nu}}{\partial\bar{z}}F_{\mu\nu}=\frac{\partial x^{i}}{\partial z}\frac{\partial x^{j}}{\partial\bar{z}}F_{ij}$，而规范场强的空间分量$F_{ij}$只和磁场有关。}。所以$N_z$无旋，可以由此引申出一个实标量场$N$作为其原函数：
+\begin{equation}
+	N_z\equiv e^2\partial_zN=\int_{-\infty}^{\infty}duF_{uz}^{(0)}=A_{z}^{(0)}|_{\mathcal{I}_{+}^{+}}-A_{z}^{(0)}|_{\mathcal{I}_{-}^{+}}
+\end{equation}
+利用$N$，future charges可以写成下面简洁形式：
+\begin{equation}
+	Q_{\varepsilon}^{+}=2\int_{\mathcal{S}_\infty^2} d^{2}zN\partial_{z}\partial_{\bar{z}}\varepsilon+\int_{\mathcal I^{+}}dud^{2}z\varepsilon\gamma_{z\bar{z}}j_{u}^{(2)}
+\end{equation}
+对past charge也可以来上面的这一套：
+\begin{equation}
+	Q_{\varepsilon}^{-}=-2\int_{\mathcal{S}_\infty^2} d^{2}zN\partial_{z}\partial_{\bar{z}}\varepsilon+\int_{\mathcal I^{-}}dvd^{2}z\varepsilon\gamma_{z\bar{z}}j_{v}^{(2)}
+\end{equation}
+
+上面讨论的都是经典场，现在进行量子化，目的是说明前面定义的future charge 和 past charges 都是 Large gauge transformations 对应的生成元算符。量子化方案选用正则量子化方案，这里使用的方法不需要事先对时空进行3+1分解，是协变的方法\cite{Ashtekar1987AsymptoticQ,Frolov:1979ab,1989thyg.book.....H,Lee:1990nz,Wald:1999wa}。
+
+
 \section{Ward indentity = Soft theorem}

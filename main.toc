@@ -27,7 +27,7 @@
 \contentsline {section}{\numberline {20}Review on the quantization of gravity}{29}{section.20}%
 \contentsline {section}{\numberline {21}Soft theorem from feynman diagrams}{31}{section.21}%
 \contentsline {section}{\numberline {22}Subleading and subsubleading order soft theorem}{33}{section.22}%
-\contentsline {section}{\numberline {23}Massless QED}{33}{section.23}%
-\contentsline {section}{\numberline {24}Ward indentity = Soft theorem}{35}{section.24}%
-\contentsline {part}{第六部分\hspace {1em}Appendix: \\Geometric Approaches}{36}{part.6}%
-\contentsline {part}{参考文献}{37}{part.6}%
+\contentsline {section}{\numberline {23}Massless QED}{34}{section.23}%
+\contentsline {section}{\numberline {24}Ward indentity = Soft theorem}{37}{section.24}%
+\contentsline {part}{第六部分\hspace {1em}Appendix: \\Geometric Approaches}{38}{part.6}%
+\contentsline {part}{参考文献}{39}{part.6}%

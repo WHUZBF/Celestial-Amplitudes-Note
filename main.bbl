@@ -222,14 +222,83 @@ M.L.~Mangano and S.J.~Parke, \emph{{Multiparton amplitudes in gauge theories}},
   {\bfseries 200} (1991) 301}
   [\href{https://arxiv.org/abs/hep-th/0509223}{{\ttfamily hep-th/0509223}}].
 
+\bibitem{PhysRevLett.20.86}
+T.H.~Burnett and N.M.~Kroll, \emph{Extension of the low soft-photon theorem},
+  \href{https://doi.org/10.1103/PhysRevLett.20.86}{\emph{Phys. Rev. Lett.}
+  {\bfseries 20} (1968) 86}.
+
+\bibitem{PhysRev.110.974}
+F.E.~Low, \emph{Bremsstrahlung of very low-energy quanta in elementary particle
+  collisions}, \href{https://doi.org/10.1103/PhysRev.110.974}{\emph{Phys. Rev.}
+  {\bfseries 110} (1958) 974}.
+
+\bibitem{Brandhuber:2022qbk}
+A.~Brandhuber, J.~Plefka and G.~Travaglini, \emph{{The SAGEX Review on
+  Scattering Amplitudes Chapter 1: Modern Fundamentals of Amplitudes}},
+  \href{https://doi.org/10.1088/1751-8121/ac8254}{\emph{J. Phys. A} {\bfseries
+  55} (2022) 443002} [\href{https://arxiv.org/abs/2203.13012}{{\ttfamily
+  2203.13012}}].
+
+\bibitem{PhysRevD.90.084035}
+Z.~Bern, S.~Davies, P.~Di~Vecchia and J.~Nohle, \emph{Low-energy behavior of
+  gluons and gravitons from gauge invariance},
+  \href{https://doi.org/10.1103/PhysRevD.90.084035}{\emph{Phys. Rev. D}
+  {\bfseries 90} (2014) 084035}.
+
+\bibitem{PhysRev.168.1623}
+R.~Jackiw, \emph{Low-energy theorems for massless bosons: Photons and
+  gravitons}, \href{https://doi.org/10.1103/PhysRev.168.1623}{\emph{Phys. Rev.}
+  {\bfseries 168} (1968) 1623}.
+
+\bibitem{White:2014qia}
+C.D.~White, \emph{{Diagrammatic insights into next-to-soft corrections}},
+  \href{https://doi.org/10.1016/j.physletb.2014.08.041}{\emph{Phys. Lett. B}
+  {\bfseries 737} (2014) 216}
+  [\href{https://arxiv.org/abs/1406.7184}{{\ttfamily 1406.7184}}].
+
+\bibitem{Broedel:2014fsa}
+J.~Broedel, M.~de~Leeuw, J.~Plefka and M.~Rosso, \emph{{Constraining subleading
+  soft gluon and graviton theorems}},
+  \href{https://doi.org/10.1103/PhysRevD.90.065024}{\emph{Phys. Rev. D}
+  {\bfseries 90} (2014) 065024}
+  [\href{https://arxiv.org/abs/1406.6574}{{\ttfamily 1406.6574}}].
+
+\bibitem{He:2014cra}
+T.~He, P.~Mitra, A.P.~Porfyriadis and A.~Strominger, \emph{{New Symmetries of
+  Massless QED}}, \href{https://doi.org/10.1007/JHEP10(2014)112}{\emph{JHEP}
+  {\bfseries 10} (2014) 112} [\href{https://arxiv.org/abs/1407.3789}{{\ttfamily
+  1407.3789}}].
+
+\bibitem{Jackson1998ClassicalE3}
+J.D.~Jackson, \emph{Classical electrodynamics, 3rd edition},  1998,
+  \href{https://api.semanticscholar.org/CorpusID:119985144}{https://api.semanticscholar.org/CorpusID:119985144}.
+
+\bibitem{Ashtekar1987AsymptoticQ}
+A.~Ashtekar, \emph{Asymptotic quantization : based on 1984 naples lectures},
+  1987,
+  \href{https://api.semanticscholar.org/CorpusID:107226501}{https://api.semanticscholar.org/CorpusID:107226501}.
+
+\bibitem{Frolov:1979ab}
+V.P.~Frolov, \emph{{NULL SURFACE QUANTIZATION AND QUANTUM THEORY OF MASSLESS
+  FIELDS IN ASYMPTOTICALLY FLAT SPACE-TIME}},
+  \href{https://doi.org/10.1007/BF00756663}{\emph{Gen. Rel. Grav.} {\bfseries
+  10} (1979) 833}.
+
+\bibitem{1989thyg.book.....H}
+S.W.~{Hawking} and W.~{Israel}, \emph{{Three Hundred Years of Gravitation}},
+  Cambridge University Press (1989).
+
 \bibitem{Lee:1990nz}
 J.~Lee and R.M.~Wald, \emph{{Local symmetries and constraints}},
   \href{https://doi.org/10.1063/1.528801}{\emph{J. Math. Phys.} {\bfseries 31}
   (1990) 725}.
 
-\bibitem{Jackson1998ClassicalE3}
-J.D.~Jackson, \emph{Classical electrodynamics, 3rd edition},  1998,
-  \href{https://api.semanticscholar.org/CorpusID:119985144}{https://api.semanticscholar.org/CorpusID:119985144}.
+\bibitem{Wald:1999wa}
+R.M.~Wald and A.~Zoupas, \emph{{A General definition of 'conserved quantities'
+  in general relativity and other theories of gravity}},
+  \href{https://doi.org/10.1103/PhysRevD.61.084027}{\emph{Phys. Rev. D}
+  {\bfseries 61} (2000) 084027}
+  [\href{https://arxiv.org/abs/gr-qc/9911095}{{\ttfamily gr-qc/9911095}}].
 
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},
