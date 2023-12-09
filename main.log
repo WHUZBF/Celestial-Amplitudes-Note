@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  9 DEC 2023 00:29
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  9 DEC 2023 15:46
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1686,7 +1686,7 @@ LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 ne 73.
  (./main.aux (./texfiles/part1.aux)
 (./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux)
-(./texfiles/part5.aux) (./texfiles/appendix.aux))
+(./texfiles/part5.aux) (./texfiles/part6.aux) (./texfiles/appendix.aux))
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
@@ -2007,7 +2007,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 warning  (file figs/cover2.pdf) (pdf inclusion): PDF inclusion: found PDF versio
 n '1.6', but at most version '1.5' allowed
-<figs/cover2.pdf, id=140, 294.25534pt x 154.93384pt>
+<figs/cover2.pdf, id=168, 294.25534pt x 154.93384pt>
 File: figs/cover2.pdf Graphic file (type pdf)
 <use figs/cover2.pdf>
 Package luatex.def Info: figs/cover2.pdf  used on input line 84.
@@ -2015,7 +2015,7 @@ Package luatex.def Info: figs/cover2.pdf  used on input line 84.
 
 warning  (file figs/cover.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/cover.pdf, id=141, 264.08864pt x 274.22751pt>
+<figs/cover.pdf, id=169, 264.08864pt x 274.22751pt>
 File: figs/cover.pdf Graphic file (type pdf)
 <use figs/cover.pdf>
 Package luatex.def Info: figs/cover.pdf  used on input line 84.
@@ -3045,7 +3045,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (file figs/fig1.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig1.pdf, id=845, 499.44893pt x 234.68678pt>
+<figs/fig1.pdf, id=880, 499.44893pt x 234.68678pt>
 File: figs/fig1.pdf Graphic file (type pdf)
 <use figs/fig1.pdf>
 Package luatex.def Info: figs/fig1.pdf  used on input line 256.
@@ -3059,7 +3059,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig2.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig2.pdf, id=931, 226.7431pt x 231.40654pt>
+<figs/fig2.pdf, id=966, 226.7431pt x 231.40654pt>
 File: figs/fig2.pdf Graphic file (type pdf)
 <use figs/fig2.pdf>
 Package luatex.def Info: figs/fig2.pdf  used on input line 277.
@@ -3115,7 +3115,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 [30]
 warning  (file figs/fig3.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig3.pdf, id=1141, 304.26674pt x 122.40631pt>
+<figs/fig3.pdf, id=1176, 304.26674pt x 122.40631pt>
 File: figs/fig3.pdf Graphic file (type pdf)
 <use figs/fig3.pdf>
 Package luatex.def Info: figs/fig3.pdf  used on input line 104.
@@ -3126,7 +3126,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (file figs/fig4.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig4.pdf, id=1323, 359.05844pt x 211.58849pt>
+<figs/fig4.pdf, id=1358, 359.05844pt x 211.58849pt>
 File: figs/fig4.pdf Graphic file (type pdf)
 <use figs/fig4.pdf>
 Package luatex.def Info: figs/fig4.pdf  used on input line 151.
@@ -3159,25 +3159,95 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.7
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.8
 '
-[34] [35]
+[34]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.9
 '
-
+[35]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 0'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+1'
 
 LaTeX Warning: Marginpar on page 36 moved.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-1'
+2'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-2'
-) [36] [37]
+3'
+[36]
+
+LaTeX Warning: Reference `eq:21.22' on page 37 undefined on input line 340.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+4'
+
+LaTeX Warning: Reference `eq:28.29' on page 37 undefined on input line 363.
+
+[37]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+5'
+
+Overfull \hbox (22.65094pt too wide) detected at line 371
+\OT1/lmr/m/n/8 (\OML/lmm/m/it/8 u\OT1/lmr/m/n/8 ) = [] [] []\OML/lmm/m/it/8 e[
+] \OT1/lmr/m/n/8 = []
+ []
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+6'
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 394.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 394.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\use@mathgroup' on input line 394.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 394.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\accentclass@' on input line 394.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 394.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\accentclass@' on input line 394.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symsymbols' on input line 394.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 394.
+
+) [38] [39]
+\openout2 = texfiles/part6.aux
+ (./texfiles/part6.tex
+Package marginnote Info: Margin note 44.1 is on absolute page 44 on input line 
+1.
+Package marginnote Info: right page because not two side mode on input line 1.
+Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
+) [40
+
+
+
+]
 \openout2 = texfiles/appendix.aux
  (./texfiles/appendix.tex
-Package marginnote Info: Margin note 42.1 is on absolute page 42 on input line 
+Package marginnote Info: Margin note 45.1 is on absolute page 45 on input line 
 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
@@ -3186,42 +3256,45 @@ Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 1.
 
-) [38
+) [41
 
 
 
 ] (./main.bbl
-luaotfload | aux : font no 221 (nil) does not define feature vert for script dfl
+luaotfload | aux : font no 232 (nil) does not define feature vert for script dfl
 t with language dflt
-luaotfload | aux : font no 221 (nil) does not define feature vrt2 for script dfl
+luaotfload | aux : font no 232 (nil) does not define feature vrt2 for script dfl
 t with language dflt
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 50.
- [39
+ [42
 
 
-] [40]) [41] (./main.aux (./texfiles/part1.aux)
+] [43]) [44] (./main.aux (./texfiles/part1.aux)
 (./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux)
-(./texfiles/part5.aux) (./texfiles/appendix.aux))
+(./texfiles/part5.aux) (./texfiles/part6.aux) (./texfiles/appendix.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2E6D91C13D06F0492797474B5F97DD36;7091.
+(rerunfilecheck)             Checksum: 631C5DB6F4D00A5CA0BF692957B20E77;8194.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45573 strings out of 478152
- 596079,1648299 words of node,token memory allocated
- 218637 words of node memory still in use:
-   306 hlist, 75 vlist, 523 rule, 26 local_par, 107 math, 784 glue, 377 kern, 14
-2 penalty, 7 sub_mlist, 914 glyph, 78125 attribute, 5258 glue_spec, 4062 attribu
-te_list, 2 write, 1035 user_defined, 16 pdf_start_link, 16 pdf_end_link, 33 pdf_
-action, 32 pdf_colorstack nodes
-   avail lists: 1:25,2:124520,3:2400,4:3106,5:343,6:83,7:7196,8:135,9:2383,10:22
+ 45663 strings out of 478152
+ 596082,1648299 words of node,token memory allocated
+ 226213 words of node memory still in use:
+   333 hlist, 80 vlist, 497 rule, 1 disc, 26 local_par, 128 math, 797 glue, 415 
+kern, 142 penalty, 7 sub_mlist, 933 glyph, 80569 attribute, 5586 glue_spec, 4192
+ attribute_list, 2 write, 1088 user_defined, 14 pdf_start_link, 14 pdf_end_link,
+ 31 pdf_action, 28 pdf_colorstack nodes
+   avail lists: 1:26,2:121946,3:2402,4:3057,5:337,6:83,7:7196,8:135,9:2377,10:22
 ,11:388,12:1
- 63361 multiletter control sequences out of 65536+600000
- 232 fonts using 216576579 bytes
+ 63395 multiletter control sequences out of 65536+600000
+ 243 fonts using 220455259 bytes
  116i,19n,141p,1233b,1678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.6'
@@ -3276,10 +3349,10 @@ s/type1/public/lm/lmsy8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public
 live/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LaTeX/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LaTeX/t
 exlive/2021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (44 pages, 1525080 bytes).
+Output written on main.pdf (47 pages, 1545729 bytes).
 
-PDF statistics: 1947 PDF objects out of 2073 (max. 8388607)
- 1257 compressed objects within 13 object streams
- 406 named destinations out of 1000 (max. 131072)
- 290 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 2014 PDF objects out of 2073 (max. 8388607)
+ 1320 compressed objects within 14 object streams
+ 432 named destinations out of 1000 (max. 131072)
+ 346 words of extra memory for PDF output out of 10000 (max. 100000000)
 

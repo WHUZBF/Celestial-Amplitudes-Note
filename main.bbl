@@ -300,6 +300,10 @@ R.M.~Wald and A.~Zoupas, \emph{{A General definition of 'conserved quantities'
   {\bfseries 61} (2000) 084027}
   [\href{https://arxiv.org/abs/gr-qc/9911095}{{\ttfamily gr-qc/9911095}}].
 
+\bibitem{Arnold}
+V.I.~Arnold, \emph{{Mathematical Methods of Classical Mechanics}}, Springer New
+  York, NY, 2~ed. (May, 1989).
+
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},
   \href{https://doi.org/10.1016/j.cpc.2016.08.019}{\emph{Comput. Phys. Commun.}

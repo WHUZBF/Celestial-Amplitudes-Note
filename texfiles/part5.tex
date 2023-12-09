@@ -209,7 +209,7 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 
 \section{Massless QED}
 本章用天球的视角来看QED理论，为下一节做准备，本节的讨论都局限于比较简单的，不含磁荷而且电子没有质量的QED理论，但是基于此推出的许多结论实际上是普适的，可以推广到有质量QED上\cite{Strominger:2017zoo}。
-
+\subsection{Classical}
 弯曲时空中QED作用量：
 \begin{equation}
 	S_{EM}=-\frac{1}{2e^2}\int{F}\wedge\star F +S_M=-\frac{1}{4e^2}\int \mathrm{d}^4x\sqrt{-g}F_{\mu]nu}F^{\mu\nu}+S_M
@@ -232,13 +232,17 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 		&\mathcal{I}^-: A_r=0,\quad A_v|_{\mathcal{I}^-}=0
 	\end{aligned}
 \end{equation}
-在$\mathcal{I}^{\pm}$附近可以把$A,F$展开成$\mathcal{O}(1/r)$的形式，用$A^{(i)},F^{(i)}$表示$r^{-i}$项前的系数，那么在这一规范下有：
+在$\mathcal{I}^{\pm}$附近可以把$A,F$展开成$\mathcal{O}(1/r)$的形式，用$A^{(i)},F^{(i)}$表示$r^{-i}$项前的系数，那么在这一规范下有\sn{各项系数都只和$(u,z,\bar z)$相关了}：
 \begin{equation}
-	F_{ur}^{(0)}=A_u^{(0)}=0, F_{z\bar z}^{(0)}=\partial_z A_{\bar z}^{(0)}-\partial_{\bar z}A_z^{(0)},F_{uz}^{(0)}=\partial_u A_z^{(0)},F_{rz}^{(0)}=-A_z^{(1)}
+	F_{ur}^{(0)}=A_u^{(0)}, F_{z\bar z}^{(0)}=\partial_z A_{\bar z}^{(0)}-\partial_{\bar z}A_z^{(0)},F_{uz}^{(0)}=\partial_u A_z^{(0)},F_{rz}^{(0)}=-A_z^{(1)}
 \end{equation}
-$\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \mathbf{A}=0$一样没有完全确定规范，$A_z$还可以进行下面的所谓Large gauge transformation：
+而且我们所关心的场位形在$\mathcal{I}^{+}_{+}$处为真空，即满足：
 \begin{equation}
-	A_z\mapsto A_z+\partial_z\varepsilon(z,\bar z),\quad \forall \varepsilon\in C^\infty\left[C\mathcal{S}^2\right]
+	\left.F_{ur}\right|_{\mathcal{I}_{+}^{+}}=\left.F_{uz}\right|_{\mathcal{I}_{+}^{+}}=0
+\end{equation}
+$\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \mathbf{A}=0$一样没有完全确定规范，$A^{(0)}_z$还可以进行下面的所谓Large gauge transformation：
+\begin{equation}
+	A^{(0)}_z\mapsto A^{(0)}_z+\partial_z\varepsilon(z,\bar z),\quad \forall \varepsilon\in C^\infty\left[C\mathcal{S}^2\right]
 \end{equation}
 
 运动电荷激发的电磁场即所谓Li\'enard\mbox{-}Wiecher势\cite{Jackson1998ClassicalE3}。这里我们在天球坐标下将advanced和retarded势统一写为：
@@ -304,7 +308,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 		&=-\int_{-\infty}^{\infty}du\left.\partial_{u}F_{z\bar{z}}^{(0)}=-F_{z\bar{z}}^{(0)}\right|_{\mathcal{I}_{-}^{+}}^{\mathcal{I}_{+}^{+}}=0
 	\end{aligned}
 \end{equation}
-最后等于0是因为$F_{z\bar z}|_{\mathcal{I}_{+}^{\pm}}$，本质上是因为没有磁单极子，磁场不是long-range的，在无穷远处为0\sn{因为$F_{z\bar z}=\frac{\partial x^{\mu}}{\partial z}\frac{\partial x^{\nu}}{\partial\bar{z}}F_{\mu\nu}=\frac{\partial x^{i}}{\partial z}\frac{\partial x^{j}}{\partial\bar{z}}F_{ij}$，而规范场强的空间分量$F_{ij}$只和磁场有关。}。所以$N_z$无旋，可以由此引申出一个实标量场$N$作为其原函数：
+最后等于0是因为$F_{z\bar z}|_{\mathcal{I}_{+}^{\pm}}=0$，本质上是因为没有磁单极子，磁场不是long-range的，在无穷远处为0\sn{因为$F_{z\bar z}=\frac{\partial x^{\mu}}{\partial z}\frac{\partial x^{\nu}}{\partial\bar{z}}F_{\mu\nu}=\frac{\partial x^{i}}{\partial z}\frac{\partial x^{j}}{\partial\bar{z}}F_{ij}$，而规范场强的空间分量$F_{ij}$只和磁场有关。}。所以$N_z$无旋，可以由此引申出一个实标量场$N$作为其原函数：
 \begin{equation}
 	N_z\equiv e^2\partial_zN=\int_{-\infty}^{\infty}duF_{uz}^{(0)}=A_{z}^{(0)}|_{\mathcal{I}_{+}^{+}}-A_{z}^{(0)}|_{\mathcal{I}_{-}^{+}}
 \end{equation}
@@ -316,8 +320,77 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}
 	Q_{\varepsilon}^{-}=-2\int_{\mathcal{S}_\infty^2} d^{2}zN\partial_{z}\partial_{\bar{z}}\varepsilon+\int_{\mathcal I^{-}}dvd^{2}z\varepsilon\gamma_{z\bar{z}}j_{v}^{(2)}
 \end{equation}
-
+\subsection{Quantization}
 上面讨论的都是经典场，现在进行量子化，目的是说明前面定义的future charge 和 past charges 都是 Large gauge transformations 对应的生成元算符。量子化方案选用正则量子化方案，这里使用的方法不需要事先对时空进行3+1分解，是协变的方法\cite{Ashtekar1987AsymptoticQ,Frolov:1979ab,1989thyg.book.....H,Lee:1990nz,Wald:1999wa}。
 
+经典力学的正则形式是建立在辛几何上的，也就是给相流形上配备了一个非退化的、闭的二形式\cite{Arnold}：
+\begin{equation}\label{eq:23.22}
+	\Omega=\frac{1}{2}\omega_{IJ}dx^I\wedge dx^J
+\end{equation}
+而且可以证明，可以通过选取不同的广义坐标局部的将$\omega_{IJ}$化为下面的矩阵：
+\begin{equation}
+	\omega_{IJ}=\left.\left[\begin{matrix}0&1_{N\times N}\\-1_{N\times N}&0\end{matrix}\right.\right]
+\end{equation}
+力学量的Possion括号由下式给定：
+\begin{equation}
+	\{A,B\}=\Omega^{IJ}\partial_IA\partial_JB
+\end{equation}
+相空间是运动方程的解，可以与初始值一一对应。
 
+到了场论这边，相空间我们可以选取为某一个柯西面$\Sigma$上的场位形。场$\phi$本身是流形上的微分形式，\ref{eq:21.22}中的$dx$应该替换为$\delta\phi$，这里$\delta$是场位形的在壳变分，也就是说$\phi+\delta \phi$仍然是场方程的解。场本身是定义在某个纤维丛上的，可以粗浅的理解为两个流形拼起来，而$d$是底流形上的微分形式算子，$\delta$事实上是另一个正交的微分形式算子，所以$\delta\phi$在$\delta$的意义上是1\mbox{-}form，在$d$的意义上$\delta$的作用不会改变其是几形式，这样$\Omega$形如$\delta\phi\wedge\delta\varphi$从$\delta$的意义上看就是个二形式。构建的微分形式还应当满足规范不变性，闭且非退化，而且还要对柯西面的不同选取一致，利用\cite{Wald:1999wa}中方法可以得到$U(1)$规范场的辛形式为：
+\begin{equation}
+	\Omega_{\Sigma}=-\frac{1}{e^{2}}\int_{\Sigma}\delta(*F)\wedge\delta A
+\end{equation}
+将柯西面选取为$\mathcal{I}^{\pm}$，得到分量为：
+\begin{equation}
+	\begin{aligned}
+		\omega_{uz\bar{z}}|_{\mathcal{I}}+& =-\frac{1}{e^{2}}\left[\delta(*F)_{uz}\wedge\delta A_{\bar{z}}+\delta(*F)_{\bar{z}u}\wedge\delta A_{z}+\delta(*F)_{z\bar{z}}\wedge\delta A_{u}\right]_{\mathcal{I}^{+}}  \\
+		&=-\frac{i}{e^{2}}\left[\delta F_{uz}^{(0)}\wedge\delta A_{\bar{z}}^{(0)}+\delta F_{u\bar{z}}^{(0)}\wedge\delta A_{z}^{(0)}\right],
+	\end{aligned}
+\end{equation}
+其中利用了：\sn{注意到Levi-Civita符号不是张量，而是张量密度，$\sqrt{-g}\epsilon$才是张量，然后利用Hodge dual定义爆算即可}
+\begin{equation}
+	(*F)_{uz}=i\left(F_{uz}-F_{rz}\right),\quad(*F)_{z\bar{z}}=ir^{2}\gamma_{z\bar{z}}F_{ru}
+\end{equation}
+最终得到辛形式：
+\begin{equation}\label{eq:23.29}
+	\Omega_{\mathcal{I}^+}=\frac{1}{e^2}\int dud^2z\left[\delta F_{uz}^{(0)}\wedge\delta A_{\bar{z}}^{(0)}+\delta F_{u\bar{z}}^{(0)}\wedge\delta A_{z}^{(0)}\right]
+\end{equation}
+总是可以把$A_z$的$u\to\pm {\infty}$，也就是$\mathcal{I}^+_{\pm}$的与$u$无关的部分分离出去，这一部分又总是可以写成某个天球上标量场的导数，因为要求$F_{z\bar z}|_{\mathcal{I}_{+}^{\pm}}=0$：
+\begin{equation}
+	A_z^{(0)}(u,z,\bar{z})=\hat{A}_z(u,z,\bar{z})+\partial_z\phi(z,\bar{z}),\quad\partial_z\phi\equiv\frac{1}{2}\left[\left.A_z^{(0)}\right|_{\mathcal I_+^+}+\left.A_z^{(0)}\right|_{\mathcal I_-^+}\right]
+\end{equation}
+利用上面的分解以及soft photon mode重写\ref{eq:28.29}：
+\begin{equation}
+	\Omega_{\mathcal{I}^{+}}=\frac{2}{e^{2}}\int dud^{2}z\partial_{u}\delta\hat{A}_{z}\wedge\delta\hat{A}_{\bar{z}}-2\int d^{2}z\partial_{z}\delta\phi\wedge\partial_{\bar{z}}\delta N
+\end{equation}
+现在考虑正则量子化，场变成算符，而Poisson括号换成Dirac括号：\sn{$\{\quad,\quad\}\mapsto\frac{1}{i}[\quad,\quad]$}
+\begin{equation}
+	\begin{aligned}-\frac{2}{e^2}\left[\partial_u\hat A_z(u,z,\bar z),\hat A_{\bar w}(u',w,\bar w)\right]&=i\delta(u-u')\delta^2(z-w),\\2\left[\partial_z\phi(z,\bar z),\partial_{\bar w}N(w,\bar w)\right]&=i\delta^2(z-w).\end{aligned}
+\end{equation}
+积分得到：\sn{这里$$\Theta(u)=\frac{1}{\pi i}\int\frac{d\omega}{\omega}e^{i\omega u}=\begin{cases}+1&,u>0\\-1&,u<0\end{cases}$$}
+\begin{equation}
+	\begin{aligned}
+		\left[\hat{A}_{z}(u,z,\bar{z}),\hat{A}_{\bar{w}}(u^{\prime},w,\bar{w})\right]& =-\frac{ie^{2}}{4}\Theta(u-u^{\prime})\delta^{2}(z-w),  \\
+		[\phi(z,\bar{z}),N(w,\bar{w})]& =-\frac{i}{4\pi}\log|z-w|^{2}+f(z,\bar{z})+g(w,\bar{w}). 
+	\end{aligned}
+\end{equation}
+
+\subsection{Large guage symmetry}
+利用上面发展的对易式可以去计算$Q_\varepsilon^{\pm}$与场算符的对易关系，注意到物质场部分$Q_H$始终和规范场$A$对易，所以：
+\begin{equation}
+	\begin{aligned}&\left[Q_{\varepsilon}^{+},A_{z}^{(0)}(u,z,\bar{z})\right]=i\partial_{z}\varepsilon(z,\bar{z}),\\&\left[Q_{\varepsilon}^{-},A_{z}^{(0)}(v,z,\bar{z})\right]=i\partial_{z}\varepsilon(z,\bar{z}).\end{aligned}
+\end{equation}
+所以前面定义的守恒荷其实就是对径认同的Large gauge transformation的生成元，自然就是一个守恒荷！前面的讨论一直忽略了流耦合项$S_M$，加入后对前面的结论不会有影响，注意到$Q_S$与物质场对易，根据Noether定理：
+\begin{equation}
+	\left[j_{u}^{(2)}(u',w,\bar{w}),\Phi_{k}(u,z,\bar{z})\right]=-Q_{k}\Phi_{k}(u,z,\bar{z})\gamma^{z\bar{z}}\delta^{2}(z-w)\delta(u-u')
+\end{equation}
+这意味着：
+\begin{equation}
+	\left[Q_\varepsilon^+,\Phi_k(u,z,\bar{z})\right]=\left[\int_{\mathcal{I}^+}\varepsilon*j,\Phi_k(u,z,\bar{z})\right]=-Q_k\varepsilon(z,\bar{z})\Phi_k(u,z,\bar{z})\equiv i\delta_\varepsilon\Phi_k(u,z,\bar{z})
+\end{equation}
+所以$Q_S$生成规范场的规范变换，$Q_H$生成费米场规范变换，合起来$Q_\varepsilon$生成$\mathcal{I}^+$上的local规范变换。
 \section{Ward indentity = Soft theorem}
+\subsection{Ward indentity of $\mathcal{S}$\mbox{-}Matrix}
+\subsection{Mode expansion}
+\subsection{Soft photon \& graviton}
