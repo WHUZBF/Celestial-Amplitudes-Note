@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  9 DEC 2023 15:46
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  10 DEC 2023 19:50
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1674,43 +1674,43 @@ File: tikzlibraryangles.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-LaTeX Font Info:    Redeclaring symbol font `CJKmath' on input line 73.
+LaTeX Font Info:    Redeclaring symbol font `CJKmath' on input line 74.
 LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `normal'
-(Font)                  LTJY3/song/m/n --> LTJY3/SimSun(0)/m/n on input line 73
+(Font)                  LTJY3/song/m/n --> LTJY3/SimSun(0)/m/n on input line 74
 .
 LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
-(Font)                  LTJY3/song/b/n --> LTJY3/SimSun(0)/m/n on input line 73
+(Font)                  LTJY3/song/b/n --> LTJY3/SimSun(0)/m/n on input line 74
 .
 LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 (Font)                  LTJY3/SimSun(0)/m/n --> LTJY3/SimSun(0)/b/n on input li
-ne 73.
+ne 74.
  (./main.aux (./texfiles/part1.aux)
 (./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux)
 (./texfiles/part5.aux) (./texfiles/part6.aux) (./texfiles/appendix.aux))
 \openout1 = main.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for LTJY3/song/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for LTJY3/song/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 74.
+LaTeX Font Info:    ... okay on input line 74.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1741,7 +1741,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 73.
+Package hyperref Info: Link coloring ON on input line 74.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1754,9 +1754,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count391
 )
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \ref on input line 74.
+LaTeX Info: Redefining \pageref on input line 74.
+LaTeX Info: Redefining \nameref on input line 74.
  (./main.out) (./main.out)
 \@outlinefile=\write4
 
@@ -1807,7 +1807,7 @@ Package caption Info: End \AtBeginDocument code.
 
 Package tikz-feynman Warning: Consider loading TikZ-Feynman with \usepackage[co
 mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
- input line 73.
+ input line 74.
 
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: luatex
@@ -1843,7 +1843,7 @@ mpat=1.1.0]{tikz-feynman} so that you can be warned if TikZ-Feynman changes. on
 
 
 LaTeX Font Warning: Font shape `LTJY3/SimSun(0)/m/sc' undefined
-(Font)              using `LTJY3/SimSun(0)/m/n' instead on input line 84.
+(Font)              using `LTJY3/SimSun(0)/m/n' instead on input line 85.
 
 (load cache: extra_microsoftyahei.luc)(load cache: extra_microsoftyahei-bold.luc
 )
@@ -1862,7 +1862,7 @@ Package fontspec Info: Could not resolve font "MicrosoftYaHei/I" (it probably
 luaotfload | aux : font no 50 (nil) does not define feature smcp for script latn
  with language dflt
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 8
-4.
+5.
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1889,27 +1889,27 @@ lt;jfm=quanjiao;"
 LaTeX Font Info:    Font shape `LTJY3/MicrosoftYaHei(0)/bx/n' in size <20.74> n
 ot available
 (Font)              Font shape `LTJY3/MicrosoftYaHei(0)/b/n' tried instead on i
-nput line 84.
+nput line 85.
 luaotfload | aux : font no 56 (nil) does not define feature vert for script dflt
  with language dflt
 luaotfload | aux : font no 56 (nil) does not define feature vrt2 for script dflt
  with language dflt
 
 LaTeX Font Warning: Font shape `T1/lmr/m/scit' undefined
-(Font)              using `T1/lmr/m/scsl' instead on input line 84.
+(Font)              using `T1/lmr/m/scsl' instead on input line 85.
 
 
 LaTeX Font Warning: Font shape `LTJY3/SimSun(0)/m/scsl' undefined
-(Font)              using `LTJY3/SimSun(0)/m/n' instead on input line 84.
+(Font)              using `LTJY3/SimSun(0)/m/n' instead on input line 85.
 
 LaTeX Font Info:    Font shape `LTJY3/SimSun(0)/bx/n' in size <10> not availabl
 e
 (Font)              Font shape `LTJY3/SimSun(0)/b/n' tried instead on input lin
-e 84.
+e 85.
 LaTeX Font Info:    Font shape `LTJY3/MicrosoftYaHei(0)/bx/n' in size <10> not 
 available
 (Font)              Font shape `LTJY3/MicrosoftYaHei(0)/b/n' tried instead on i
-nput line 84.
+nput line 85.
 luaotfload | aux : font no 63 (nil) does not define feature vert for script dflt
  with language dflt
 luaotfload | aux : font no 63 (nil) does not define feature vrt2 for script dflt
@@ -1937,7 +1937,7 @@ Package fontspec Info: Could not resolve font "FangSong/I" (it probably
 (fontspec)             doesn't exist).
 
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 8
-4.
+5.
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1958,48 +1958,48 @@ luaotfload | aux : font no 72 (nil) does not define feature vert for script dflt
 luaotfload | aux : font no 72 (nil) does not define feature vrt2 for script dflt
  with language dflt
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-4.
+5.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-4.
+5.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-84.
+85.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-84.
+85.
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 84.
+(Font)              <10> on input line 85.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 84.
+(Font)              <7> on input line 85.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 84.
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 84
+(Font)              <5> on input line 85.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 85
 .
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 84.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 85.
 
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 84.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 85.
 
 
 (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -2010,7 +2010,7 @@ n '1.6', but at most version '1.5' allowed
 <figs/cover2.pdf, id=168, 294.25534pt x 154.93384pt>
 File: figs/cover2.pdf Graphic file (type pdf)
 <use figs/cover2.pdf>
-Package luatex.def Info: figs/cover2.pdf  used on input line 84.
+Package luatex.def Info: figs/cover2.pdf  used on input line 85.
 (luatex.def)             Requested size: 250.11821pt x 131.69438pt.
 
 warning  (file figs/cover.pdf) (pdf inclusion): PDF inclusion: found PDF version
@@ -2018,7 +2018,7 @@ warning  (file figs/cover.pdf) (pdf inclusion): PDF inclusion: found PDF version
 <figs/cover.pdf, id=169, 264.08864pt x 274.22751pt>
 File: figs/cover.pdf Graphic file (type pdf)
 <use figs/cover.pdf>
-Package luatex.def Info: figs/cover.pdf  used on input line 84.
+Package luatex.def Info: figs/cover.pdf  used on input line 85.
 (luatex.def)             Requested size: 224.4764pt x 233.09448pt.
 [0
 
@@ -2026,11 +2026,11 @@ Package luatex.def Info: figs/cover.pdf  used on input line 84.
 {d:/LaTeX/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}<./figs/cove
 r2.pdf><./figs/cover.pdf>]
 Package marginnote Info: Using workaround for absolute page number on input lin
-e 84.
+e 85.
 LaTeX Font Info:    Font shape `LTJY3/SimSun(0)/bx/n' in size <14.4> not availa
 ble
 (Font)              Font shape `LTJY3/SimSun(0)/b/n' tried instead on input lin
-e 84.
+e 85.
  (./main.toc
 LaTeX Font Info:    Font shape `LTJY3/SimSun(0)/bx/n' in size <12> not availabl
 e
@@ -3110,7 +3110,20 @@ Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 
 
 ]
+luaotfload | aux : font no 221 (nil) does not define feature vert for script dfl
+t with language dflt
+luaotfload | aux : font no 221 (nil) does not define feature vrt2 for script dfl
+t with language dflt
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
+'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
+'
+
+LaTeX Warning: Marginpar on page 30 moved.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 '
 [30]
 warning  (file figs/fig3.pdf) (pdf inclusion): PDF inclusion: found PDF version 
@@ -3121,7 +3134,7 @@ File: figs/fig3.pdf Graphic file (type pdf)
 Package luatex.def Info: figs/fig3.pdf  used on input line 104.
 (luatex.def)             Requested size: 304.68907pt x 122.58157pt.
 [31<./figs/fig3.pdf>]
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 '
 
 warning  (file figs/fig4.pdf) (pdf inclusion): PDF inclusion: found PDF version 
@@ -3132,13 +3145,13 @@ File: figs/fig4.pdf Graphic file (type pdf)
 Package luatex.def Info: figs/fig4.pdf  used on input line 151.
 (luatex.def)             Requested size: 304.68907pt x 179.56047pt.
 [32<./figs/fig4.pdf>]
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
-'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
-'
-
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.6
+'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.7
+'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.8
 '
 [33]
 
@@ -3154,42 +3167,42 @@ LTJY3/SimSun(0)/m/scsl/10 群 |不 |可 |约 |表 |示 [] |比 |如 $\OML/lmm/m
  []
 
 
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.7
-'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.8
-'
-[34]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.9
 '
-[35]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 0'
-
+[34]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 1'
-
-LaTeX Warning: Marginpar on page 36 moved.
-
-
+[35]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 2'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 3'
+
+LaTeX Warning: Marginpar on page 36 moved.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+4'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+5'
 [36]
 
 LaTeX Warning: Reference `eq:21.22' on page 37 undefined on input line 340.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-4'
+6'
 
 LaTeX Warning: Reference `eq:28.29' on page 37 undefined on input line 363.
 
 [37]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-5'
+7'
 
 Overfull \hbox (22.65094pt too wide) detected at line 371
 \OT1/lmr/m/n/8 (\OML/lmm/m/it/8 u\OT1/lmr/m/n/8 ) = [] [] []\OML/lmm/m/it/8 e[
@@ -3198,7 +3211,7 @@ Overfull \hbox (22.65094pt too wide) detected at line 371
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-6'
+8'
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <12> on input line 394.
 
@@ -3233,7 +3246,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 394.
 
-) [38] [39]
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+9'
+[38]) [39]
 \openout2 = texfiles/part6.aux
  (./texfiles/part6.tex
 Package marginnote Info: Margin note 44.1 is on absolute page 44 on input line 
@@ -3261,9 +3277,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 ] (./main.bbl
-luaotfload | aux : font no 232 (nil) does not define feature vert for script dfl
+luaotfload | aux : font no 234 (nil) does not define feature vert for script dfl
 t with language dflt
-luaotfload | aux : font no 232 (nil) does not define feature vrt2 for script dfl
+luaotfload | aux : font no 234 (nil) does not define feature vrt2 for script dfl
 t with language dflt
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 50.
@@ -3284,17 +3300,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45663 strings out of 478152
+ 45692 strings out of 478152
  596082,1648299 words of node,token memory allocated
- 226213 words of node memory still in use:
-   333 hlist, 80 vlist, 497 rule, 1 disc, 26 local_par, 128 math, 797 glue, 415 
-kern, 142 penalty, 7 sub_mlist, 933 glyph, 80569 attribute, 5586 glue_spec, 4192
- attribute_list, 2 write, 1088 user_defined, 14 pdf_start_link, 14 pdf_end_link,
- 31 pdf_action, 28 pdf_colorstack nodes
-   avail lists: 1:26,2:121946,3:2402,4:3057,5:337,6:83,7:7196,8:135,9:2377,10:22
+ 220235 words of node memory still in use:
+   357 hlist, 84 vlist, 447 rule, 2 disc, 27 local_par, 119 math, 748 glue, 438 
+kern, 138 penalty, 8 sub_mlist, 917 glyph, 77709 attribute, 5718 glue_spec, 4052
+ attribute_list, 2 write, 1108 user_defined, 9 pdf_start_link, 9 pdf_end_link, 2
+6 pdf_action, 18 pdf_colorstack nodes
+   avail lists: 1:26,2:124946,3:2410,4:3047,5:313,6:83,7:7196,8:135,9:2399,10:22
 ,11:388,12:1
- 63395 multiletter control sequences out of 65536+600000
- 243 fonts using 220455259 bytes
+ 63413 multiletter control sequences out of 65536+600000
+ 245 fonts using 223712519 bytes
  116i,19n,141p,1233b,1678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.6'
@@ -3349,10 +3365,10 @@ s/type1/public/lm/lmsy8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public
 live/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LaTeX/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LaTeX/t
 exlive/2021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (47 pages, 1545729 bytes).
+Output written on main.pdf (47 pages, 1563263 bytes).
 
-PDF statistics: 2014 PDF objects out of 2073 (max. 8388607)
- 1320 compressed objects within 14 object streams
- 432 named destinations out of 1000 (max. 131072)
+PDF statistics: 2040 PDF objects out of 2073 (max. 8388607)
+ 1346 compressed objects within 14 object streams
+ 443 named destinations out of 1000 (max. 131072)
  346 words of extra memory for PDF output out of 10000 (max. 100000000)
 

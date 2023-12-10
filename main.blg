@@ -7,8 +7,9 @@ A level-1 auxiliary file: texfiles/part2.aux
 A level-1 auxiliary file: texfiles/part3.aux
 A level-1 auxiliary file: texfiles/part4.aux
 A level-1 auxiliary file: texfiles/part5.aux
+A level-1 auxiliary file: texfiles/part6.aux
 A level-1 auxiliary file: texfiles/appendix.aux
-Illegal, another \bibstyle command---line 92 of file main.aux
+Illegal, another \bibstyle command---line 93 of file main.aux
  : \bibstyle
  :          {JHEP}
 I'm skipping whatever remains of this command
@@ -19,45 +20,46 @@ Warning--empty booktitle in Oblak:2015qia
 Warning--empty publisher in Strominger:2017zoo
 Warning--empty booktitle in Jackson1998ClassicalE3
 Warning--empty booktitle in Ashtekar1987AsymptoticQ
-You've used 57 entries,
+Warning--empty publisher in Blumenhagen:2009zz
+You've used 61 entries,
             2363 wiz_defined-function locations,
-            1004 strings with 13057 characters,
-and the built_in function-call counts, 19117 in all, are:
-= -- 1955
-> -- 496
+            1034 strings with 13706 characters,
+and the built_in function-call counts, 20484 in all, are:
+= -- 2091
+> -- 539
 < -- 0
-+ -- 160
-- -- 103
-* -- 1776
-:= -- 2439
-add.period$ -- 57
-call.type$ -- 57
-change.case$ -- 42
++ -- 173
+- -- 112
+* -- 1925
+:= -- 2620
+add.period$ -- 61
+call.type$ -- 61
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 62
-duplicate$ -- 1441
-empty$ -- 1912
-format.name$ -- 309
-if$ -- 4844
+cite$ -- 67
+duplicate$ -- 1538
+empty$ -- 2046
+format.name$ -- 336
+if$ -- 5186
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 202
-newline$ -- 175
-num.names$ -- 57
-pop$ -- 207
+int.to.str$ -- 61
+missing$ -- 217
+newline$ -- 187
+num.names$ -- 61
+pop$ -- 217
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 592
+skip$ -- 628
 stack$ -- 0
-substring$ -- 1009
-swap$ -- 327
+substring$ -- 1063
+swap$ -- 349
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 210
-width$ -- 59
-write$ -- 563
+warning$ -- 6
+while$ -- 226
+width$ -- 63
+write$ -- 605
 (There was 1 error message)

@@ -304,6 +304,30 @@ R.M.~Wald and A.~Zoupas, \emph{{A General definition of 'conserved quantities'
 V.I.~Arnold, \emph{{Mathematical Methods of Classical Mechanics}}, Springer New
   York, NY, 2~ed. (May, 1989).
 
+\bibitem{Blumenhagen:2009zz}
+R.~Blumenhagen and E.~Plauschinn, \emph{{Introduction to conformal field
+  theory}: {with applications to String theory}}, vol.~779 (2009),
+  \href{https://doi.org/10.1007/978-3-642-00450-6}{10.1007/978-3-642-00450-6}.
+
+\bibitem{He:2015zea}
+T.~He, P.~Mitra and A.~Strominger, \emph{{2D Kac-Moody Symmetry of 4D
+  Yang-Mills Theory}},
+  \href{https://doi.org/10.1007/JHEP10(2016)137}{\emph{JHEP} {\bfseries 10}
+  (2016) 137} [\href{https://arxiv.org/abs/1503.02663}{{\ttfamily
+  1503.02663}}].
+
+\bibitem{Strominger:2013lka}
+A.~Strominger, \emph{{Asymptotic Symmetries of Yang-Mills Theory}},
+  \href{https://doi.org/10.1007/JHEP07(2014)151}{\emph{JHEP} {\bfseries 07}
+  (2014) 151} [\href{https://arxiv.org/abs/1308.0589}{{\ttfamily 1308.0589}}].
+
+\bibitem{Nande:2017dba}
+A.~Nande, M.~Pate and A.~Strominger, \emph{{Soft Factorization in QED from 2D
+  Kac-Moody Symmetry}},
+  \href{https://doi.org/10.1007/JHEP02(2018)079}{\emph{JHEP} {\bfseries 02}
+  (2018) 079} [\href{https://arxiv.org/abs/1705.00608}{{\ttfamily
+  1705.00608}}].
+
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},
   \href{https://doi.org/10.1016/j.cpc.2016.08.019}{\emph{Comput. Phys. Commun.}

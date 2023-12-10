@@ -67,7 +67,7 @@ de-Donder规范下：
 \begin{equation}
 	\mathcal{L}_{\text{int}}=\frac{\kappa}{2}h^{\mu\nu}T_{\mu\nu}
 \end{equation}
-这里$T_{\mu\nu}$是场的能动张量，可以使用下式进行计算：
+这里$T_{\mu\nu}$是场的能动张量，可以使用下式进行计算：\sn{平直时空中能动量张量是根据Poincar\'e不变性引入的Noether current，可以说明实际上等价于$$\left.T_{\mu\nu}\right|_{\text{flat}}=-2\left.\frac{\delta S_M}{\delta g^{\mu\nu}}\right|_{g^{\mu\nu}=\eta_{\mu\nu}}$$GR里面的能动量张量就是这个的推广。}
 \begin{equation}
 	T_{\mu\nu}(x)=-\frac{2}{\sqrt{-g}}\frac{\delta S_M}{\delta g_{\mu\nu}(x)}
 \end{equation}
@@ -80,7 +80,7 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 	\tilde S_M=\int d^4x\sqrt{-g}\left(-\frac{1}{2}g^{\mu\nu}\nabla_\mu\phi\nabla_\nu\phi-V(\phi)\right)
 \end{equation}
 
-当然，对称性允许我们在后面添加正比于Ricci标量的项等等，但所谓我们要的就是“最小”耦合。不过在微扰引力框架下，我们其实只需要利用\ref{S_M}对$\eta$求变分导数就好了，对于无质量的自由标量场（对应不动点处的理论），我们得到：
+当然，对称性允许我们在后面添加正比于Ricci标量的项等等，但所谓我们要的就是“最小”耦合。不过在微扰引力框架下，我们其实只需要利用\ref{S_M}对$\eta$求变分导数就好了，对于无质量的自由标量场（对应不动点处的理论），我们得到\sn{实际上，考虑弯曲背景时空之后，多出了一些可重整的项可以加入到作用量中，比如$R\phi$，对于平直时空$R=0$，这一项不用考虑}：
 \begin{equation}\label{eq:20.10}
 	T_{\mu\nu}=\partial_\mu\phi\partial_\nu\phi-\frac{1}{2}\eta_{\mu\nu}\partial^\rho\phi\partial_\rho\phi
 \end{equation}
@@ -313,12 +313,12 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	N_z\equiv e^2\partial_zN=\int_{-\infty}^{\infty}duF_{uz}^{(0)}=A_{z}^{(0)}|_{\mathcal{I}_{+}^{+}}-A_{z}^{(0)}|_{\mathcal{I}_{-}^{+}}
 \end{equation}
 利用$N$，future charges可以写成下面简洁形式：
-\begin{equation}
+\begin{equation}\label{eq:23.21}
 	Q_{\varepsilon}^{+}=2\int_{\mathcal{S}_\infty^2} d^{2}zN\partial_{z}\partial_{\bar{z}}\varepsilon+\int_{\mathcal I^{+}}dud^{2}z\varepsilon\gamma_{z\bar{z}}j_{u}^{(2)}
 \end{equation}
 对past charge也可以来上面的这一套：
-\begin{equation}
-	Q_{\varepsilon}^{-}=-2\int_{\mathcal{S}_\infty^2} d^{2}zN\partial_{z}\partial_{\bar{z}}\varepsilon+\int_{\mathcal I^{-}}dvd^{2}z\varepsilon\gamma_{z\bar{z}}j_{v}^{(2)}
+\begin{equation}\label{eq:23.21.2}
+	Q_{\varepsilon}^{-}=-2\int_{\mathcal{S}_\infty^2} d^{2}zN^-\partial_{z}\partial_{\bar{z}}\varepsilon+\int_{\mathcal I^{-}}dvd^{2}z\varepsilon\gamma_{z\bar{z}}j_{v}^{(2)}
 \end{equation}
 \subsection{Quantization}
 上面讨论的都是经典场，现在进行量子化，目的是说明前面定义的future charge 和 past charges 都是 Large gauge transformations 对应的生成元算符。量子化方案选用正则量子化方案，这里使用的方法不需要事先对时空进行3+1分解，是协变的方法\cite{Ashtekar1987AsymptoticQ,Frolov:1979ab,1989thyg.book.....H,Lee:1990nz,Wald:1999wa}。
@@ -386,11 +386,42 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	\left[j_{u}^{(2)}(u',w,\bar{w}),\Phi_{k}(u,z,\bar{z})\right]=-Q_{k}\Phi_{k}(u,z,\bar{z})\gamma^{z\bar{z}}\delta^{2}(z-w)\delta(u-u')
 \end{equation}
 这意味着：
-\begin{equation}
+\begin{equation}\label{23.36}
 	\left[Q_\varepsilon^+,\Phi_k(u,z,\bar{z})\right]=\left[\int_{\mathcal{I}^+}\varepsilon*j,\Phi_k(u,z,\bar{z})\right]=-Q_k\varepsilon(z,\bar{z})\Phi_k(u,z,\bar{z})\equiv i\delta_\varepsilon\Phi_k(u,z,\bar{z})
 \end{equation}
 所以$Q_S$生成规范场的规范变换，$Q_H$生成费米场规范变换，合起来$Q_\varepsilon$生成$\mathcal{I}^+$上的local规范变换。
 \section{Ward indentity = Soft theorem}
 \subsection{Ward indentity of $\mathcal{S}$\mbox{-}Matrix}
+量子力学里面就知道守恒意味着与哈密顿量对易，而$\mathcal{S}\sim \exp{iHT}$，所以前面的守恒荷会和$\mathcal{S}$对易：\sn{初末态基底选取平面波。}
+\begin{equation}\label{eq:24.1}
+	\boxed{\langle\mathrm{out}|\left(Q_\varepsilon^+\mathcal{S}-\mathcal{S}Q_\varepsilon^-\right)|\mathrm{in}\rangle=0}
+\end{equation}
+这样一个简单的式子就是$\mathcal{S}$\mbox{-}Matrix的Ward identity。利用\ref{eq:23.21}和\ref{eq:23.21.2}得到：
+\begin{equation}
+	\begin{aligned}
+		Q_\varepsilon^-|\mathrm{in}\rangle&=-2\int d^2z\partial_{\bar{z}}\varepsilon\partial_zN^-(z,\bar{z})|\mathrm{in}\rangle+\sum_{k=1}^mQ_k^\mathrm{in}\varepsilon(z_k^\mathrm{in},\bar{z}_k^\mathrm{in})|\mathrm{in}\rangle \\
+		\langle\mathrm{out}|Q_\varepsilon^+&=2\int d^2z\partial_z\partial_{\bar{z}}\varepsilon\langle\mathrm{out}|N(z,\bar{z})+\sum_{k=1}^nQ_k^\mathrm{out}\varepsilon(z_k^\mathrm{out},\bar{z}_k^\mathrm{out})\langle\mathrm{out}|
+	\end{aligned}
+\end{equation}
+第一项没啥好说的，后面会讨论其物理含义，第二项的计算稍微提一下。首先我们假设入射态是$m$个hard particles，而且来自于天球上的点$z_k^{\mathrm{in}}$，\ref{23.36}给出了守恒荷与物质场之间的对易关系，实际上，不难证明守恒荷和产生湮灭算符也满足同样的对易关系\sn{比如标量场\cite{srednicki}$$a^{\dagger}(\mathbf{k})=-i\int d^{3}xe^{ikx}\stackrel{\leftrightarrow}{\partial_{0}}\varphi(x)$$}。以两个入射粒子为例：
+\begin{equation}
+	\begin{aligned}
+		Q^-_{\varepsilon}\ket{\text{in}}&\sim Q^-_{\varepsilon}a_1^\dagger a_2^\dagger\ket{0}\\
+		&\sim \left[Q^-_{\varepsilon},a_1^\dagger a_2^\dagger\right]\ket{0}+\cancelto{0}{a_1^\dagger a_2^\dagger Q^-_{\varepsilon}\ket{0}}\\
+		&\sim  \left[Q^-_{\varepsilon},a_1^\dagger \right]a_2^\dagger\ket{0}+a_1^\dagger\left[Q^-_{\varepsilon},a_2^\dagger \right]\ket{0}\\
+		&\sim Q_1\varepsilon_1\ket{\text{in}}+Q_2\varepsilon_2\ket{\text{in}}
+	\end{aligned}
+\end{equation}
+第二行我们利用了真空态一定是没荷的。现在可以把\ref{eq:24.1}写为：
+\begin{equation}
+	\begin{aligned}
+		2\int d^2z\partial_z\partial_{\bar{z}}\varepsilon\langle\text{out}|&\left(N(z,\bar{z})\mathcal{S}-\mathcal{S}N^-(z,\bar{z})\right)|\text{in}\rangle\\&=\left[\sum_{k=1}^mQ_k^\text{in}\varepsilon(z_k^\text{in},\bar{z}_k^\text{in})-\sum_{k=1}^nQ_k^\text{out}\varepsilon(z_k^\text{out},{\bar{z}}_k^\text{out})\right]\langle\text{out}|\mathcal{S}|\text{in}\rangle
+	\end{aligned}
+\end{equation}
+取$\varepsilon(z,\bar z)=\frac{1}{w-z}$，则上式可以写为如下形式：\sn{$$\partial_{\bar{z}}\frac{1}{z-w}=2\pi\delta^2(z-w)$$}
+\begin{equation}
+	4\pi\langle\mathrm{out}|\left(\partial_zN\mathcal{S}-\mathcal{S}\partial_zN^-\right)|\mathrm{in}\rangle=\left[\sum_{k=1}^m\frac{Q_k^\mathrm{in}}{z-z_k^\mathrm{in}}-\sum_{k=1}^n\frac{Q_k^\mathrm{out}}{z-z_k^\mathrm{out}}\right]\langle\mathrm{out}|\mathcal{S}|\mathrm{in}\rangle 
+\end{equation}
+这个等式其实就是带有U(1) Kac-Moody current的$\text{CFT}_2$的Ward恒等式\cite{Blumenhagen:2009zz,He:2015zea,Strominger:2013lka,Nande:2017dba}。
 \subsection{Mode expansion}
 \subsection{Soft photon \& graviton}

@@ -33,7 +33,7 @@
 \contentsline {subsection}{\numberline {23.3}Large guage symmetry}{38}{subsection.23.3}%
 \contentsline {section}{\numberline {24}Ward indentity = Soft theorem}{38}{section.24}%
 \contentsline {subsection}{\numberline {24.1}Ward indentity of $\mathcal {S}$\mbox {-}Matrix}{38}{subsection.24.1}%
-\contentsline {subsection}{\numberline {24.2}Mode expansion}{38}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.2}Mode expansion}{39}{subsection.24.2}%
 \contentsline {subsection}{\numberline {24.3}Soft photon \& graviton}{39}{subsection.24.3}%
 \contentsline {part}{第六部分\hspace {1em}A Crush Course on CFT}{40}{part.6}%
 \contentsline {part}{第七部分\hspace {1em}Appendix: \\Geometric Approaches}{41}{part.7}%
