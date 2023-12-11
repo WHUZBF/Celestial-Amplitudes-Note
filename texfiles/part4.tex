@@ -492,7 +492,146 @@ Superrotation：
 \end{equation}
 
 文献\cite{Barnich:2010ojg,Barnich:2010eb}中详细讨论了$\mathfrak{bms}_n$及其中心扩张，BMS$_{d+2}$/CFT$_d$对应以及charge algebra。
-to be continue \ldots
+
 \section{Asymptotic flat spacetime: charges}
 时空连续对称性会诱导守恒荷，量子化后变成算符，是后面Ward恒等式的出发点。
 \subsection{Noether theorem}
+考虑下面的对称变换：\sn{场的旋量指标等等被省略了}
+\[x\to x^{\prime},\quad\Phi(x)\to\Phi^{\prime}(x^{\prime})=\mathcal{F}(\Phi(x))\]
+场的变换一部分是因为场是Poincar\'e群的表示，所以坐标变换导致场的变换，另一部分是场位形自己的变换\sn{这里对Noether定理的讨论基于大黄书\cite{DiFrancesco:1997nk}，大黄书的方法最标准且优雅。}。现在考虑由参数$\{\omega_a\}$标记的无穷小变换：
+\[
+x^{\prime\mu} =x^{\mu}+\omega_{a}\frac{\delta x^{\mu}}{\delta\omega_{a}},  \quad
+\Phi^{\prime}(x^{\prime})=\Phi(x)+\omega_{a}\frac{\delta\mathcal{F}}{\delta\omega_{a}}(x).
+\]
+下面的式子给出了变换生成元$G_a$的定义：
+\begin{equation}
+	\delta_\omega\Phi(x)\equiv\Phi'(x)-\Phi(x)\equiv-i\omega_aG_a\Phi(x)
+\end{equation}
+考虑这个对称变换下作用量的改变：
+\begin{equation}
+	\begin{aligned}
+		\mathcal{S}^\prime& =\int\mathrm{d}^{d}x^{\prime}{\mathcal L}(\Phi^{\prime}(x^{\prime}),\partial_{\mu}^{\prime}\Phi^{\prime}(x^{\prime}))  \\
+		&=\int\mathrm{d}^{d}x\left|\frac{\partial x^{\prime}}{\partial x}\right|\mathcal{L}(\mathcal{F}(\Phi(x)),(\frac{\partial x^{\nu}}{\partial x^{\prime\mu}})\partial_{\nu}\mathcal{F}(\Phi(x)))\\
+		&=\int\mathrm{d}^dx\left(1+\partial_\mu(\omega_a\frac{\delta x^\mu}{\delta\omega_a})\right)\mathcal{L}\left(\Phi+\omega_a\frac{\delta\mathcal{F}}{\delta\omega_a},\left(\delta_\mu^\nu-\partial_\mu(\omega_a\frac{\delta x^\nu}{\delta\omega_a})\right)\left(\partial_\nu\Phi+\partial_\nu(\omega_a\frac{\delta\mathcal{F}}{\delta\omega_a})\right)\right)
+	\end{aligned}
+\end{equation}
+注意到我们谈论对称性是在说作用量变分为$0$，$\omega_a$是一簇与坐标无关的参数，但我们推导过程中可以把他们看作是一簇函数，但是对称变换是指这些函数变成常函数之后要有$\delta S=0$。所以，上面的式子最后肯定正比于$\omega_a(x)$的导数，保留到一阶：
+\begin{equation}\label{eq:19.2}
+	\delta\mathcal{S}=-\int\mathrm{d}^{d}xj_{a}^{\mu}\partial_{\mu}\omega_{a}=\int\mathrm{d}^{d}x\partial_{\mu}j_{a}^{\mu}\omega_{a}
+\end{equation}
+其中：
+\begin{equation}\label{eq:19.3}
+	\boxed{
+		j_a^\mu=\left(\frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\partial_\nu\Phi-\delta_i^\mu\mathcal{L}\right)\frac{\delta x^\nu}{\delta\omega_a}-\frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\frac{\delta\mathcal{F}}{\delta\omega_a}
+	}
+\end{equation}
+利用这种比较巧妙的思想我们得到了在$\{\omega_a(x)\}$的变换下\sn{且$\{\omega\}$是常数的时候是对称变换}作用量的变换。现在注意到上式是在场平衡位形附近的变分，所以对于在壳的场，必然有式\ref{eq:19.2}对于任意的$\{\omega_a(x)\}$均为0，即连续对称性给出了守恒流\ref{eq:19.3}：
+\begin{equation}
+	\boxed{\partial_\mu j^\mu_a=0}
+\end{equation}
+对应的可以定义不随时间变化的守恒荷：
+\begin{equation}
+	Q_a=\int\mathrm{d}^{d-1}xj_a^0
+\end{equation}
+注意到对守恒流的定义其实可以相差一个反对称张量的偏导：
+\[
+	j_a^\mu\to j_a^\mu+\partial_\nu B_a^{\nu\mu},\quad\quad B_a^{\nu\mu}=-B_a^{\mu\nu}
+\]
+考虑时空平移对称性：
+\[	
+	\frac{\delta x^\mu}{\delta\omega^\nu}=\delta^\mu_\nu,\quad\frac{\delta\mathcal{F}}{\delta\Phi}=0
+\]
+这带来我们熟悉的能动量张量及其守恒律：
+\begin{equation}
+	\boxed{
+		T_\mathsf{c}^{\mu\nu}=-\eta^{\mu\nu}\mathcal{L}+\frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\partial^\nu\Phi ,\quad \partial_\mu T^{\mu\nu}=0
+	}
+\end{equation}
+守恒流的定义可以差个反对称张量偏导数，所以可以将能动量张量对称化：
+\begin{equation}
+	T_\mathrm{B}^{\mu\nu}=T^{\mu\nu}+\partial_\rho B^{\rho\mu\nu},\quad B^{\rho\mu\nu}=-B^{\mu\rho\nu}
+\end{equation}
+对于一般的时空变换$x^{\prime}\mu=x^\mu+\omega^\mu(x)$，其实作用量的变换可以用能动量张量写成：
+\begin{equation}\label{eq:19.8}
+	\begin{aligned}
+	\delta\mathcal{S}&=\int d^dxT^{\mu\nu}\partial_{\mu}\omega_{\nu}\\
+		&=\frac{1}{2}\int d^dxT^{\mu\nu}\underbrace{\left(\partial_{\mu}\omega_{\nu}+\partial_{\nu}\omega_{\mu}\right)}_{-\delta g_{\mu\nu}\equiv g(x)-{g^\prime}(x^\prime)}\\
+		&=\left.-\frac{1}{2}\int d^dxT^{\mu\nu}\delta g_{\mu\nu}\right|_{g^{\mu\nu}=\eta^{\mu\nu}}
+	\end{aligned}
+\end{equation}
+
+考虑共形变换为对称性，由于Poincar\'e变换是共形变换的一种，所以共形场论中仍有其散度为0，再考虑伸缩变换$\omega^\mu=\lambda x^\mu$，这将导致共形场论中能动张量无迹${T^\mu}_{\mu}=0$。
+
+量子场论中考虑\textbf{不改变积分测度$\mathcal{D}\Phi$}的对称变换：
+\begin{equation}
+	\Phi^{\prime}(x)=\Phi(x)-i\omega_aG_a\Phi(x)
+\end{equation}
+与上面经典守恒流对应的是真空关联函数\sn{利用LSZ公式把外腿在壳之后就得到了散射振幅}意义下的Ward-Takahashi恒等式：
+\begin{equation}
+	\boxed{
+		\frac\partial{\partial x^\mu}\left\langle j_a^\mu(x)\Phi(x_1)\cdots\Phi(x_n)\right\rangle   
+		=-i\sum_{i=1}^n\delta(x-x_i)\left<\Phi(x_1)\cdots G_a\Phi(x_i)\cdots\Phi(x_n)\right>
+	}
+\end{equation}
+如果积分测度发生改变，就会出现量子反常\cite{Bilal:2008qx}。令$\mathcal{Y}=\Phi(x_2)\cdots\Phi(x_n)$，且$t=x_1^0$是$\mathcal{Y}$中最大的时间。对Ward-Takahashi恒等式在${t_-<t<t_+}\cup \mathbb{R}^3$内积分：
+\begin{equation}
+	\langle Q_a(t_+)\Phi(x_1)\mathcal{Y}\rangle-\langle Q_a(t_-)\Phi(x_1)\mathcal{Y}\rangle=-i\left\langle G_a\Phi(x_1)\mathcal{Y}\right\rangle
+\end{equation}
+取极限$t_-\to t_+$，由于$\mathcal{Y}$是任意的，所以：
+\begin{equation}
+	\boxed{
+	[Q_a,\Phi]=-iG_a\Phi }
+\end{equation}
+量子化后，在算符的意义下，守恒荷是对称性的生成元。
+
+广义相对论那边更多的使用所谓广义Noether定理，可以见\cite{Compere:2019qed}第一章的介绍。
+\subsection{Komar Integral}
+广义相对论里面定义守恒荷是一件很难的事情，这里介绍比较初级的理论，利用与电磁理论的对比来定义守恒荷。
+
+利用Killing矢量$K=K^\mu\partial_\mu$，可以得到与之对偶的1\mbox{-}form，$K=K_\mu dx^\mu$，进而可以定义二形式$F\equiv dF$
+\begin{lemma}[Ricci identity]
+	\begin{equation}
+		2\nabla_{[\mu}\nabla_{\nu]}Z^\sigma={R^\sigma}_{\rho\mu\nu}Z^\rho-T^\rho{}_{\mu\nu}\nabla_\rho Z^\sigma 
+	\end{equation}
+\end{lemma}
+\begin{theorem}
+	上面定义的$F$所满足的方程可以写成非齐次Maxwell方程的形式：
+	\begin{equation}\label{eq:19.15}
+		d\star F=\star j
+	\end{equation}
+	其中$j$和物质场能动张量有关，真空$j=0$。
+\end{theorem}
+\begin{proof}
+	利用Ricci恒等式，由于引力无挠：
+	\[(\nabla_{\mu}\nabla_{\nu}-\nabla_{\nu}\nabla_{\mu})K^{\sigma}={R^{\sigma}}_{\rho\mu\nu}K^{\rho}\]
+	缩并$\mu,\sigma$：
+	\[(\nabla_\mu\nabla_\nu-\nabla_\nu\nabla_\mu)K^\mu=R_{\rho\nu}K^\rho \]
+	最后利用Killing方程得到：
+	\[\nabla_\mu\nabla_\nu K^\mu=R_{\rho\nu}K^\rho \]
+	所以：
+	\[\nabla^\mu F_{\mu\nu}=\nabla^\mu\nabla_\mu K_\nu-\nabla^\mu\nabla_\nu K_\mu=-2\nabla^\mu\nabla_\nu K_\mu=-2R_{\rho\nu}K^\rho \]
+	引力场方程：
+	\[R_{\mu\nu}=8\pi G\left(T_{\mu\nu}-\frac12Tg_{\mu\nu}\right)\]
+	显然，我们已经将$F$满足的方程写成了\ref{eq:19.15}的坐标形式。
+\end{proof}
+由此可以类比电磁规范理论定义Komar荷：
+\begin{equation}
+	\boxed{
+	Q_\text{Komar}=-\frac{1}{8\pi G}\int_{\Sigma}d\star F=-\frac{1}{8\pi G}\int_{\partial\Sigma}\star F=-\frac{1}{8\pi G}\int_{\partial\Sigma}\star dK
+	}
+\end{equation}
+若Killing场处处类时，上面的玩意儿我们叫Komar质量（能量）$M_{\text{Komar}}$。下面简要说明一下其守恒的意义。
+
+考虑下图所示的时空子流形：
+\begin{figure}[H]
+	\centering
+	\includegraphics{figs/fig5.pdf}
+\end{figure}
+\noindent 其表示类空超曲面$\Sigma_1$随时间演化到$\Sigma_2$扫过的体积，其边界为：
+\[\partial V=\Sigma_1\cup\Sigma_2\cup B\]
+考虑$j|_B=0$的情况，这将导致下面的恒等式：
+\begin{equation}
+	Q_e(\Sigma_1)-Q_e(\Sigma_2)=\int_{\Sigma_1}\star J-\int_{\Sigma_2}\star J=\int_{\partial V}\star J=\int_Vd\star J=0
+\end{equation}
+也就是随着时间演化，某一区域的荷不变。
+\subsection{BMS charges}

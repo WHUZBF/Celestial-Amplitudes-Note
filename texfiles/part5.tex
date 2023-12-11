@@ -67,7 +67,7 @@ de-Donder规范下：
 \begin{equation}
 	\mathcal{L}_{\text{int}}=\frac{\kappa}{2}h^{\mu\nu}T_{\mu\nu}
 \end{equation}
-这里$T_{\mu\nu}$是场的能动张量，可以使用下式进行计算：\sn{平直时空中能动量张量是根据Poincar\'e不变性引入的Noether current，可以说明实际上等价于$$\left.T_{\mu\nu}\right|_{\text{flat}}=-2\left.\frac{\delta S_M}{\delta g^{\mu\nu}}\right|_{g^{\mu\nu}=\eta_{\mu\nu}}$$GR里面的能动量张量就是这个的推广。}
+这里$T_{\mu\nu}$是场的能动张量，可以使用下式进行计算：\sn{平直时空中能动量张量是根据Poincar\'e不变性引入的Noether current，可以说明(见\ref{eq:19.8})实际上等价于$$\left.T_{\mu\nu}\right|_{\text{flat}}=-2\left.\frac{\delta S_M}{\delta g^{\mu\nu}}\right|_{g^{\mu\nu}=\eta_{\mu\nu}}$$GR里面的能动量张量就是这个的推广。}
 \begin{equation}
 	T_{\mu\nu}(x)=-\frac{2}{\sqrt{-g}}\frac{\delta S_M}{\delta g_{\mu\nu}(x)}
 \end{equation}
@@ -244,6 +244,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}
 	A^{(0)}_z\mapsto A^{(0)}_z+\partial_z\varepsilon(z,\bar z),\quad \forall \varepsilon\in C^\infty\left[C\mathcal{S}^2\right]
 \end{equation}
+规范变换是一种冗余，但是这里的Large gauge transformations 最大的特点就是在无穷远处不归零，这导致很多时候分部积分的边界项不能丢去，确确实实的成为了一个对称性，后面马上会看到会对应无穷多个守恒荷。
 
 运动电荷激发的电磁场即所谓Li\'enard\mbox{-}Wiecher势\cite{Jackson1998ClassicalE3}。这里我们在天球坐标下将advanced和retarded势统一写为：
 \begin{equation}
