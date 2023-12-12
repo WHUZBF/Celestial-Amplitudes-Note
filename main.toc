@@ -1,9 +1,9 @@
 \contentsline {part}{第一部分\hspace {1em}A quick review on SR \& GR}{1}{part.1}%
-\contentsline {section}{\numberline {1}Basics conceptions in SR}{1}{section.1}%
-\contentsline {section}{\numberline {2}Poincar\'e group and Lorentz group}{1}{section.2}%
+\contentsline {section}{\numberline {1}Basics conceptions about spacetime}{1}{section.1}%
+\contentsline {section}{\numberline {2}Poincar\'e group and Lorentz group}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Poincar\'e algebra}{2}{subsection.2.1}%
-\contentsline {section}{\numberline {3}Boost and Rapidity}{2}{section.3}%
-\contentsline {section}{\numberline {4}Connected components of Lorentz group}{3}{section.4}%
+\contentsline {section}{\numberline {3}Boost and Rapidity}{3}{section.3}%
+\contentsline {section}{\numberline {4}Connected components of Lorentz group}{4}{section.4}%
 \contentsline {section}{\numberline {5}Poincar\'e group and particles}{4}{section.5}%
 \contentsline {part}{第二部分\hspace {1em}Lorentz group \& special linear groups}{5}{part.2}%
 \contentsline {section}{\numberline {6}$SO(3)\cong SU(2)/\mathbb {Z}_2$}{5}{section.6}%
@@ -23,22 +23,23 @@
 \contentsline {section}{\numberline {18}Asymptotic flat spacetime: BMS group}{26}{section.18}%
 \contentsline {section}{\numberline {19}Asymptotic flat spacetime: charges}{28}{section.19}%
 \contentsline {subsection}{\numberline {19.1}Noether theorem}{28}{subsection.19.1}%
-\contentsline {subsection}{\numberline {19.2}Komar Integral}{30}{subsection.19.2}%
-\contentsline {subsection}{\numberline {19.3}BMS charges}{31}{subsection.19.3}%
-\contentsline {part}{第五部分\hspace {1em}Soft Theorem}{32}{part.5}%
-\contentsline {section}{\numberline {20}Review on the quantization of gravity}{32}{section.20}%
-\contentsline {section}{\numberline {21}Soft theorem from feynman diagrams}{34}{section.21}%
-\contentsline {section}{\numberline {22}Subleading and subsubleading order soft theorem}{36}{section.22}%
-\contentsline {section}{\numberline {23}Massless QED}{37}{section.23}%
-\contentsline {subsection}{\numberline {23.1}Classical}{37}{subsection.23.1}%
-\contentsline {subsection}{\numberline {23.2}Quantization}{40}{subsection.23.2}%
-\contentsline {subsection}{\numberline {23.3}Large guage symmetry}{41}{subsection.23.3}%
-\contentsline {section}{\numberline {24}Ward indentity = Soft theorem}{41}{section.24}%
-\contentsline {subsection}{\numberline {24.1}Ward indentity of $\mathcal {S}$\mbox {-}Matrix}{41}{subsection.24.1}%
-\contentsline {subsection}{\numberline {24.2}Mode expansion}{42}{subsection.24.2}%
-\contentsline {subsection}{\numberline {24.3}Soft photon \& graviton}{42}{subsection.24.3}%
-\contentsline {part}{第六部分\hspace {1em}A Crush Course on CFT}{43}{part.6}%
-\contentsline {part}{第七部分\hspace {1em}Celestial CFT}{44}{part.7}%
-\contentsline {section}{\numberline {25}Conformal basis}{44}{section.25}%
-\contentsline {part}{第八部分\hspace {1em}Appendix: \\Geometric Approaches}{45}{part.8}%
-\contentsline {part}{参考文献}{46}{part.8}%
+\contentsline {subsection}{\numberline {19.2}Komar Integral \& ADM}{30}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Scattering problem}{32}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}BMS charges}{33}{subsection.19.4}%
+\contentsline {part}{第五部分\hspace {1em}Soft Theorem}{34}{part.5}%
+\contentsline {section}{\numberline {20}Review on the quantization of gravity}{34}{section.20}%
+\contentsline {section}{\numberline {21}Soft theorem from feynman diagrams}{36}{section.21}%
+\contentsline {section}{\numberline {22}Subleading and subsubleading order soft theorem}{38}{section.22}%
+\contentsline {section}{\numberline {23}Massless QED}{39}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Classical}{39}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Quantization}{42}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.3}Large guage symmetry}{43}{subsection.23.3}%
+\contentsline {section}{\numberline {24}Ward indentity = Soft theorem}{43}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Ward indentity of $\mathcal {S}$\mbox {-}Matrix}{43}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.2}Mode expansion}{44}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.3}Soft photon \& graviton}{44}{subsection.24.3}%
+\contentsline {part}{第六部分\hspace {1em}A Crush Course on CFT}{45}{part.6}%
+\contentsline {part}{第七部分\hspace {1em}Celestial CFT}{46}{part.7}%
+\contentsline {section}{\numberline {25}Conformal basis}{46}{section.25}%
+\contentsline {part}{第八部分\hspace {1em}Appendix: \\Geometric Approaches}{47}{part.8}%
+\contentsline {part}{参考文献}{48}{part.8}%

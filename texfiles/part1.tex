@@ -1,5 +1,5 @@
 \part{A quick review on SR \& GR}
-\section{Basics conceptions in SR}\label{sec:1}
+\section{Basics conceptions about spacetime}\label{sec:1}
 我们生活的空间是一个四维局部平坦的\textbf{Lorentz流形}，也就是一个四维微分流形配备一个非正定、非退化的度规$g=g_{\mu\nu}dx^\mu\otimes dx^\nu$，这是一个$(0,2)$张量。局部平坦意思是说任何一点处都可以选取一个坐标系\sn{这个坐标系称为\textbf{局部惯性系}，由于可以从指数映射结合测地线来构造这个惯性系，所以也称为\textbf{自由下落参考系}}使得$g_{\mu\nu}=\eta_{\mu\nu},\nabla_\rho g_{\mu\nu}$\sn{这里符号约定为$\eta_{\mu\nu}=(-,+,+,+)$}。而Lorentz体现在$\eta$有一个指标是负数，而且根据惯性定理，无论你选取什么坐标系将度规对角化，最终负数的个数都是一样的，这样一来我们便可以严格的区分时间和空间\sn{如果这里把$\eta$中的$-1$变成$+1$，我们称为\textbf{Riemann流形}}。
 
 参数化流形后，时空上的每一点（事件）都将对应一个坐标$x^\mu$，时空中的曲线（世界线）可以参数化为$x^\mu(\tau)$，其可以看作是由矢量场$X=X^\mu\partial_\mu=\frac{x^\mu(\tau)}{d\tau}\partial_\mu$诱导的。考虑世界线上相邻的两点，我们可以定义线长为
@@ -26,7 +26,26 @@ GR中最重要的基本假设便是在坐标变换下物理定律是不变的，
 \begin{equation}
 	\Lambda^{\operatorname{T}}\eta\Lambda=\eta
 \end{equation}
-本笔记主要考虑SR时空。
+下面是一些GR中常用公式总结，顺便熟悉下convention，首先是协变导数符号约定：
+\[\nabla_\lambda {V^{\mu\ldots}}_{\nu\ldots}=\partial_\lambda {V^{\mu\ldots}}_{\nu\ldots}+\Gamma_{\lambda\sigma}^{\mu}{V^{\sigma\ldots}}_{\nu\ldots}+\cdots-\Gamma_{\nu\lambda}^{\sigma}{V^{\mu\ldots}}_{\sigma\ldots}-\cdots\]
+测地线方程：\sn{$\tau$是仿射参量，对于有质量粒子可以取为固有时，对于无质量粒子要取成别的，再加上测地线类光的条件。}
+\[
+	\boxed{\frac{\mathrm{d}^2x^\mu}{\mathrm{d}\tau^2}+\Gamma_{\alpha\beta}^\lambda\frac{\mathrm{d}x^\alpha}{\mathrm{d}\tau}\frac{\mathrm{d}x^\beta}{\mathrm{d}\tau}=0}
+\]
+黎曼曲率张量以及对应的Ricci张量和标量：
+\[
+R^{\lambda}{}_{\beta\mu\nu}\equiv\frac{\partial\Gamma_{\nu\beta}^{\lambda}}{\partial x^{\mu}}-\frac{\partial\Gamma_{\mu\beta}^{\lambda}}{\partial x^{\nu}}+\Gamma_{\nu\beta}^{\alpha}\Gamma_{\mu\alpha}^{\lambda}-\Gamma_{\mu\beta}^{\alpha}\Gamma_{\nu\alpha}^{\lambda}
+\]
+\[
+R_{\alpha\beta}=R^{\lambda}{}_{\alpha\lambda\beta}\quad R\equiv\operatorname{Tr}R_{\alpha\beta}=R^{\alpha}{}_{\alpha}=g^{\alpha\beta}R_{\alpha\beta}
+\]
+满足下面的对称性和Bianchi恒等式：\sn{有的文献写协变导数喜欢用$;\mu$代替$\nabla_\mu$，用$,\mu$代替$\partial_\mu$}
+\[
+R_{\alpha\beta\mu\nu}=-R_{\alpha\beta\nu\mu}=-R_{\beta\alpha\mu\nu}=R_{\mu\nu\alpha\beta},\quad R_{\alpha\beta\mu\nu}+R_{\alpha\mu\nu\beta}+R_{\alpha\nu\beta\mu}=0
+\]
+\[
+R_{\alpha\beta\mu\nu;\lambda}+R_{\alpha\beta\nu\lambda;\mu}+R_{\alpha\beta\lambda\mu;\nu}=0
+\]
 \section{Poincar\'e group and Lorentz group}
 显然所有的$\Lambda$构成了一个群，称之为\textbf{Lorentz群}：
 \begin{equation}

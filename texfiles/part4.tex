@@ -303,7 +303,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 	\end{aligned}
 \end{equation}
 其中$\gamma^{AB}C_{AB}=0,C_{AB}=C_{BA}$，角向指标使用$\gamma^{AB}$进行升降，而$D^A$是与$\gamma^{AB}$适配的协变导数\footnote{对于任何一个流形，给定度规后都唯一存在一个无挠的联络$\nabla$使得$\nabla_X g=0,\forall X\in\mathscr{X}(\mathcal{M})$，称为Levi-Civita联络，对应的Clifford符号$\nabla_{e_\mu}e_\nu=\Gamma_{\mu\nu}^{\lambda}e_\lambda$由下式给出：
-\[\Gamma^\lambda_{\mu\nu}=\frac{1}{2}g^{\lambda\sigma}\left(\partial_\mu g_{\nu\sigma}+\partial_\nu g_{\mu\sigma}-\partial_\sigma g_{\mu\nu}\right)\]}。这里特别注意$u,r$并不是Minkowski中的retarded coordinates！只是在$r\to\infty$时$u\approx \tilde t-\tilde r$\sn{这里的$\tilde t,\tilde r$是指Minkowski时空中的通常四维坐标，也就是使得度规为$\eta_{\mu\nu}$的坐标}。同时还要求物质能动张量满足：
+\[\Gamma^\lambda_{\mu\nu}=\frac{1}{2}g^{\lambda\sigma}\left(\partial_\mu g_{\nu\sigma}+\partial_\nu g_{\mu\sigma}-\partial_\sigma g_{\mu\nu}\right)\]这里$\Gamma^{z}_{zz}=-\frac{2\bar z}{1+z\bar z}={\Gamma^{\bar z}_{\bar z\bar z}}^*$，其它都是0。}。这里特别注意$u,r$并不是Minkowski中的retarded coordinates！只是在$r\to\infty$时$u\approx \tilde t-\tilde r$\sn{这里的$\tilde t,\tilde r$是指Minkowski时空中的通常四维坐标，也就是使得度规为$\eta_{\mu\nu}$的坐标}。同时还要求物质能动张量满足：
 \begin{align*}
 	T^M_{uu}\sim\mathcal{O}(r^{-2}),& &T^M_{ur}\sim\mathcal{O}(r^{-4}),&&T^M_{rr}\sim\mathcal{O}(r^{-4})\\
 	T^M_{uA}\sim\mathcal{O}(r^{-2}),&&T^M_{rA}\sim\mathcal{O}(r^{-3}),&&T^M_{AB}\sim\mathcal{O}(r^{-1})
@@ -313,16 +313,16 @@ Minkowski时空的度规在球坐标系下可以写为：
 \ref{eq:17.4}引进的这些参数都是有具体的物理意义的：
 \begin{itemize}
 	\item[$\bullet$]$m_B$：\textbf{Bondi mass aspect}，物理意义是在$\mathcal{I}^+$的$u$处天球上观察得到的时空的能量角密度分布。\textbf{Bondi mass}可以通过积分$M(u)=\oint_{\mathcal{S}^2_\infty}\mathrm{d}^2\Omega m_B(u,x^A)$给出，$u\to-\infty$时，Bondi mass等于ADM能量。
-	\item[$\bullet$]$C_{AB}$：这个量根据无迹对称约束，会给出两种极化模式（或者说引力子的两个螺旋度取值），它完全确定了$\mathcal{I}^+$上的引力波辐射，根据他可以定义\textbf{Bondi news tensor}$N_{AB}=\partial_u C_{AB}$，这个量可以和电磁Fraday张量$F_{uz}=\partial_u A_z$\sn{后面章节将会看到为何是这个形式}类比，它的平方正比于$\mathcal{I}^+$上的能流。
+	\item[$\bullet$]$C_{AB}$：这个量根据无迹对称约束，会给出两种极化模式（或者说引力子的两个螺旋度取值），它完全确定了$\mathcal{I}^+$上的引力波辐射，根据他可以定义\textbf{Bondi news tensor} $N_{AB}=\partial_u C_{AB}$，这个量可以和电磁Fraday张量$F_{uz}=\partial_u A_z$\sn{后面章节将会看到为何是这个形式}类比，它的平方正比于$\mathcal{I}^+$上的能流。
 	\item[$\bullet$]$N_A$：\textbf{angular momentum aspect}，这是相对于$r=0$这一点的角动量角密度分布，对他在$\mathcal{S}^2_\infty$上积分得到在$\mathcal{I}^+$的$u$处天球上观察得到的时空的总角动量。
 \end{itemize}
 
-现在我们选取角向坐标为$x^A=(z,\bar z)$来简化讨论，更一般的讨论见\cite{Compere:2019qed}。这导致$\gamma_{AB}$对角项为0，由$C_{AB}$的无迹对称性质有$C_{zz}C^{zz}=C_{\bar z\bar z}C^{\bar z\bar z}$，实际上这个条件可以强化为$(C_{zz})^*=C_{\bar z\bar z}$，为了简化税额，后面的公式中求复共轭表示下标$z\mapsto \bar z$。在这样的角向坐标选取下，\ref{eq:17.4}简化为\sn{注意到这里忽略了$r^{-2}dudr$贡献，而且相比于$r^2dzd\bar z$忽略了\ref{eq:17.4}最后一项$\mathcal{O}(1)$的贡献}：
+现在我们选取角向坐标为$x^A=(z,\bar z)$来简化讨论，更一般的讨论见\cite{Compere:2019qed}。这导致$\gamma_{AB}$对角项为0，由$C_{AB}$的无迹对称性质有$C_{zz}C^{zz}=C_{\bar z\bar z}C^{\bar z\bar z}$，实际上这个条件可以强化为$(C_{zz})^*=C_{\bar z\bar z}$。在这样的角向坐标选取下，\ref{eq:17.4}简化为\sn{注意到这里忽略了$r^{-2}dudr$贡献，而且相比于$r^2dzd\bar z$忽略了\ref{eq:17.4}最后一项$\mathcal{O}(1)$的贡献}：
 \begin{equation}\label{eq:17.5}
 	\begin{aligned}
 		ds^2=&-du^2-2dudr+2r^2\gamma_{z\bar z}dzd{\bar z}\\
 		&+\frac{2m_B}{r}du^2+rC_{zz}dz^2+rC_{\bar z\bar z}d{\bar z}^2+D^z C_{zz}dudz+D^{\bar z}C_{\bar z\bar z}dud\bar z\\
-		&+\frac{1}{r}\left[\frac{4}{3}\left(N_A+u\partial_zm_B\right)-\frac{1}{4}\partial_z\left(C_{zz}C^{zz}\right)\right]dudz+c.c.+\cdots
+		&+\frac{1}{r}\left[\frac{4}{3}\left(N_z+u\partial_zm_B\right)-\frac{1}{4}\partial_z\left(C_{zz}C^{zz}\right)\right]dudz+c.c.+\cdots
 	\end{aligned}
 \end{equation}
 其中$C_zz,N_z,m_B$按照\ref{eq:17.4}类似定义，而且只与$(u,z,\bar z)$有关，与$r$无关。所以渐近平直时空的度规渐近式（在Bondi gauge下）可以概括为：
@@ -330,7 +330,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 	&g_{uu}=-1+\mathcal{O}(r^{-1}),&&g_{ur}=-1+\mathcal{O}(r^{-2}),&&g_{uz}=\mathcal{O}(1)\\
 	&g_{zz}=\mathcal{O}(1),&&g_{z\bar z}=r^2\gamma_{z\bar z}+\mathcal{O}(1),&&g_{rr}=g_{rz}=0
 \end{align*}
-在不少文献中\cite{Pasterski:2021rjz,Kapec:2014opa,Raclariu:2021zjz}也经常见到\ref{eq:17.5}的另一种等价写法\sn{等价性并不显然，实际上，说他们等价，并不是说可以直接通过\ref{eq:17.5}得到\ref{eq:17.6}，而是\ref{eq:17.6}形势下参量由场方程诱导的约束条件的形式会与\ref{eq:17.5}中的不同，他们的等价性隐藏在约束条件之中了。}：
+在不少文献中\cite{Pasterski:2021rjz,Kapec:2014opa,Raclariu:2021zjz}也经常见到\ref{eq:17.5}的另一种等价写法\sn{等价性并不显然，实际上，说他们等价，并不是说可以直接通过\ref{eq:17.5}得到\ref{eq:17.6}，而是\ref{eq:17.6}形势下参量由场方程诱导的$N_z$的约束条件的形式会与\ref{eq:17.5}中的不同，他们的等价性隐藏在约束条件之中了。}：
 \begin{equation}\label{eq:17.6}
 	\begin{aligned}
 		ds^2=&-du^2-2dudr+2r^2\gamma_{z\bar z}dzd{\bar z}\\
@@ -364,7 +364,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 \begin{equation}
 	\begin{aligned}
 		\partial_u m_B=&\frac{1}{4}D_z^2N^{zz}+\frac{1}{4}D_{\bar z}^2N^{\bar z\bar z}-\frac{1}{2}T^M_{uu}-\frac{1}{4}N_{zz}N^{zz}\\
-		\partial_u N_z=&-\frac{1}{4}\left(D_zD_{\bar z}^2C^{\bar z\bar z}-D^3_zC^{zz}\right)-T^{M}_{uz}+\partial_z m_B+\frac{1}{16}D_zz\partial_u(C_{zz}C^{zz})\\
+		\partial_u N_z=&-\frac{1}{4}\left(D_zD_{\bar z}^2C^{\bar z\bar z}-D^3_zC^{zz}\right)-T^{M}_{uz}+\partial_z m_B+\frac{1}{16}D_z\partial_u(C_{zz}C^{zz})\\
 		&-\frac{1}{4}N^{zz}D_zC_{zz}-\frac{1}{4}N_{zz}D_zC^{zz}-\frac{1}{4}D_z\left(C^{zz}N_{zz}-N^{zz}C_{zz}\right)
 	\end{aligned}
 \end{equation}
@@ -392,7 +392,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 \begin{equation}
 	\begin{aligned}
 		\partial_u m^-_B=&\frac{1}{4}D_z^2M^{zz}+\frac{1}{4}D_{\bar z}^2M^{\bar z\bar z}+\frac{1}{2}T^M_{vv}+\frac{1}{4}M_{zz}M^{zz}\\
-		\partial_u N^-_z=&\frac{1}{4}\left(D_zD_{\bar z}^2D^{\bar z\bar z}-D^3zD^{zz}\right)-T^{M}_{vz}-\partial_z m^-_B+\frac{1}{16}D_zz\partial_v(C_{zz}C^{zz})\\
+		\partial_u N^-_z=&\frac{1}{4}\left(D_zD_{\bar z}^2D^{\bar z\bar z}-D^3_zD^{zz}\right)-T^{M}_{vz}-\partial_z m^-_B+\frac{1}{16}D_z\partial_v(C_{zz}C^{zz})\\
 		&-\frac{1}{4}M^{zz}D_zD_{zz}-\frac{1}{4}M_{zz}D_zD^{zz}-\frac{1}{4}D_z\left(D^{zz}M_{zz}-M^{zz}D_{zz}\right)
 	\end{aligned}
 \end{equation}
@@ -445,18 +445,18 @@ Minkowski时空的度规在球坐标系下可以写为：
 
 Minkowski时空自然渐近平直，对应的三个参数都为0，上式中前两个为0，可以解释为换一下坐标系不会改变质量，也不会产生引力波。但是第三个式子不为0，这意味着渐近对称性在Minkowski时空中被破缺，容易验证当且仅当$f$取\ref{f}的四个值时，对应Poincar\'e群的平动，会让$\delta_{f^+} C_{zz}=0$。这种对称性的自发破缺实际上意味着经典引力中的真空不唯一，且存在Goldstone粒子\cite{Strominger:2017zoo}。
 
-再来看superrotation，首先注意到$Y^{+z}$全纯，这意味着其在$C\mathcal{S}^2$上全局解析，否则在极点处不满足\ref{Y}。这说明$Y^{+z}$只能取为全局共形变换Mobi\"us变换形式，构成Witt代数的$\mathfrak{sl}(2,\mathbb{C})$子代数，有六个分量，通常取为：
+再来看superrotation，首先注意到$Y^{+z}$全纯，这意味着其在$C\mathcal{S}^2$上全局解析，否则在极点处不满足\ref{Y}。这说明$Y^{+z}$只能取为全局共形变换Mobi\"us变换形式，构成Witt代数的$\mathfrak{sl}(2,\mathbb{C})$子代数，有六个分量，通常取为：\sn{也简记为$Y^z=1,z,z^2,i,iz,iz^2$，是$\mathcal{S}^2$上global Kiling vector的基底}
 \begin{align*}
 	&Y^{+z}_{12}=-iz,&&Y^{+z}_{13}=\frac{1}{2}(1+z^2),&&Y^{+z}_{23}=\frac{i}{2}(1-z^2)\\
 	&Y^{+z}_{03}=-z,&&Y^{+z}_{01}=\frac{1}{2}(1-z^2),&&Y^{+z}_{02}=\frac{i}{2}(1+z^2)
 \end{align*}
 事实上，这六个函数对应的正是$SO(3,1)^\uparrow$的六个boost和rotation！所以BMS群的superrotation对应的就是Lorentz群：
 \begin{equation}
-	\text{BMS}=\text{Supertranslation}\ltimes SO(3,1)^\uparrow
+	\text{BMS}=SO(3,1)^\uparrow\ltimes\text{Supertranslation} 
 \end{equation}
 所以，BMS群在最初的意义上并没有superrotation，只是单纯的rotation。但是，文献\cite{Barnich:2009se,Barnich:2010ojg,Barnich:2011mi,Banks:2003vp}指出，真正的渐近对称性或许应该是下面的所谓\textbf{extended BMS group}：
 \begin{equation}
-	\text{extended BMS} =\text{Supertranslation}\ltimes \text{Superrotation}
+	\text{extended BMS} =\text{Superrotation}\ltimes\text{Supertranslation}
 \end{equation}
 也就是说，那些local的解析函数$Y^{+z}$也应当是渐近对称性，这样的话，渐近对称性也变成无限维对称性，superrotation部分与天球上共形变换一一对应。
 
@@ -525,7 +525,7 @@ x^{\prime\mu} =x^{\mu}+\omega_{a}\frac{\delta x^{\mu}}{\delta\omega_{a}},  \quad
 		j_a^\mu=\left(\frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\partial_\nu\Phi-\delta_i^\mu\mathcal{L}\right)\frac{\delta x^\nu}{\delta\omega_a}-\frac{\partial\mathcal{L}}{\partial(\partial_\mu\Phi)}\frac{\delta\mathcal{F}}{\delta\omega_a}
 	}
 \end{equation}
-利用这种比较巧妙的思想我们得到了在$\{\omega_a(x)\}$的变换下\sn{且$\{\omega\}$是常数的时候是对称变换}作用量的变换。现在注意到上式是在场平衡位形附近的变分，所以对于在壳的场，必然有式\ref{eq:19.2}对于任意的$\{\omega_a(x)\}$均为0，即连续对称性给出了守恒流\ref{eq:19.3}：
+利用这种比较巧妙的思想我们得到了在$\{\omega_a(x)\}$的变换下\sn{且$\{\omega_a\}$是常数的时候是对称变换}作用量的变换。现在注意到上式是在场平衡位形附近的变分，所以对于在壳的场，必然有式\ref{eq:19.2}对于任意的$\{\omega_a(x)\}$均为0，即连续对称性给出了守恒流\ref{eq:19.3}：
 \begin{equation}
 	\boxed{\partial_\mu j^\mu_a=0}
 \end{equation}
@@ -585,7 +585,7 @@ x^{\prime\mu} =x^{\mu}+\omega_{a}\frac{\delta x^{\mu}}{\delta\omega_{a}},  \quad
 量子化后，在算符的意义下，守恒荷是对称性的生成元。
 
 广义相对论那边更多的使用所谓广义Noether定理，可以见\cite{Compere:2019qed}第一章的介绍。
-\subsection{Komar Integral}
+\subsection{Komar Integral \& ADM}
 广义相对论里面定义守恒荷是一件很难的事情，这里介绍比较初级的理论，利用与电磁理论的对比来定义守恒荷。
 
 利用Killing矢量$K=K^\mu\partial_\mu$，可以得到与之对偶的1\mbox{-}form，$K=K_\mu dx^\mu$，进而可以定义二形式$F\equiv dF$
@@ -634,4 +634,102 @@ x^{\prime\mu} =x^{\mu}+\omega_{a}\frac{\delta x^{\mu}}{\delta\omega_{a}},  \quad
 	Q_e(\Sigma_1)-Q_e(\Sigma_2)=\int_{\Sigma_1}\star J-\int_{\Sigma_2}\star J=\int_{\partial V}\star J=\int_Vd\star J=0
 \end{equation}
 也就是随着时间演化，某一区域的荷不变。
+
+Komar质量依赖于类时Killing场的存在性，这对于非稳态时空是不可能的。但是对于渐近平直时空，有一种很好的定义场的总能量的方法。
+\begin{definition}[ADM能量]
+	假设时空度规为$g$，在某个类空超曲面$\Sigma$上诱导度规$h$，且这个类空超曲面满足存在某个坐标系$\{x^i\}$使得$r\to\infty ,h_{ij}=\delta_{ij}+\mathcal{O}(1/r)$也就是渐近平直于Euclid时空。$\mathcal{S}^2_r$是嵌在$\Sigma$中半径为$r$的球面，则ADM能量定义为：
+	\begin{equation}
+		\boxed{
+			E_{ADM}=\dfrac{1}{16\pi G}\lim_{r\longrightarrow\infty}\int_{S_{r}^{2}}d\Omega r^{2}\hat{x}^{j}(\partial_{k}h_{jk}-\partial_{j}h_{kk})
+		}
+	\end{equation}
+\end{definition}
+
+前面讨论AFS时我们强调过，虽然我们在Bondi gauge下讨论问题，但是结论都是不依赖于规范的，这里ADM能量也不依赖于坐标系$\{x^i\}$的选取，虽然看起来这个定义依赖于坐标系，而且这个定义对于渐近平直的稳态时空，如果取$\Sigma$渐近正交于类时Killing场，则其与Komar质量一致。
+
+虽然爱因斯坦场方程对于某一给定度规总能求出解，但是能动张量是否是“物理的”值得思考，对此，人们总结出了下面的三个能动张量要满足的条件。
+\begin{definition}[弱能量条件]
+	
+\end{definition}
+
+\begin{definition}[强能量条件]
+	
+\end{definition}
+\begin{definition}[主能量条件]
+	
+\end{definition}
+\begin{theorem}[正质量定理（Schoen\&Yau）]
+	若渐近平直时空没有奇异性，且物质能动张量满足主能量条件，则其ADM质量大于或等于零。当且仅当为闵氏时空时等于零。\footnote{值得注意的是，教皇Witten找到了更简单的证明\cite{Witten:1981mf,Parker:1981uy}。}
+\end{theorem}
+
+\subsection{Scattering problem}
+前面使用几何学和动力学给出了$\mathcal{I}^{\pm}$上的度规约束，为了完整的解出各个参数，我们需要一些initial data。在此，有必要先明确一下我们所考虑的一类时空，它们是所谓C-K时空\cite{ChristodoulouKlainerman+1994}，特点是在$i^{\pm}$都是真空，这给出了下面的渐近条件：
+\[N_{zz}=\mathcal{O}\left(|u|^{-(1+\varepsilon)}\right),\quad\varepsilon>0\]
+为了让Wyle张量在$\mathcal{I}^+_-$上归零，这要求\cite{Strominger:2013jfa,Compere:2019qed}：
+\begin{equation}
+	C_{zz}|_{\mathcal{I}_{-}^{+}}=-2D_{z}^{2}\bar{C}|_{\mathcal{I}_{-}^{+}}
+\end{equation}
+其中$C(z,\bar z)$是$\mathcal{S}^2$上的任意函数，称为Supertranslation memory field。BMS相关的文献符号不是太统一，本part后面内容的讨论我们在\ref{eq:17.5}的约定下干活，对应的我们还有如下不同于前文的符号约定：
+\begin{equation}
+	\begin{aligned}
+	T_{uu}&\equiv\frac{1}{4}N_{zz}N^{zz}+4\pi G\lim_{r\to\infty}\left[r^2T_{uu}^M\right]	\\
+	T_{uz}&\equiv8\pi G\lim_{r\rightarrow\infty}\left[r^{2}T_{uz}^{M}\right]-\frac{1}{4}\partial_{z}\left(C_{zz}N^{zz}\right)-\frac{1}{2}C_{zz}D_{z}N^{zz}
+	\end{aligned}
+\end{equation}
+对应的约束条件变为：\sn{格外注意$N_z$的区别}
+\begin{equation}
+\begin{aligned}
+	\partial_{u}N_{z}&=\frac{1}{4}\partial_{z}\left(D_{z}^{2}C^{zz}-D_{\bar{z}}^{2}C^{\bar{z}\bar{z}}\right)-u\partial_{u}\partial_{z}m_{B}-T_{uz}\\
+	\partial_{u}m_{B}&=\frac{1}{4}\left[D_{z}^{2}N^{zz}+D_{\bar{z}}^{2}N^{\bar{z}\bar{z}}\right]-T_{uu}
+\end{aligned}
+\end{equation}
+从约束条件以及$N^{zz}\equiv\partial_u C^{zz}$就可以看出initial data为：
+\begin{equation}
+	\{N_{zz}(u,z,\bar{z}),C(z,\bar{z})|_{\mathcal{I}_{-}^{+}},m^+_{B}(z,\bar{z})|_{\mathcal{I}_{-}^{+}},N^-_z|_{\mathcal{I}^+_-},\cdots\}
+\end{equation}
+后面的$\cdots$表示当我们考虑度规中的更高阶项时需要加入的initial data。对于$\mathcal{I}^-$类似分析可以得到initial data：
+\begin{equation}
+	\{M_{zz}(u,z,\bar{z}),D(z,\bar{z})|_{\mathcal{I}_{+}^{-}},m^-_{B}(z,\bar{z})|_{\mathcal{I}_{+}^{-}},N^-_z|_{\mathcal{I}^-_+},\cdots\}
+\end{equation}
+
+经典引力理论的散射问题就是在找$\mathcal{I}^+$上的Cauchy data到$\mathcal{I}^-$上的Cauchy data的映射。不过上面的initial data还无法完全使得此问题well-define，文献\cite{Strominger:2013jfa}从Lorentz和CPT不变性的要求出发，认为需要加入下面的对径认同假设来构成散射问题的全部：
+\begin{equation}
+	C(z,\bar{z})|_{\mathcal{I}_{-}^{+}}=D(z,\bar{z})|_{\mathcal{I}_{+}^{-}},\quad m^+_{B}(z,\bar{z})|_{\mathcal{I}_{-}^{+}}=m^-_{B}(z,\bar{z})|_{\mathcal{I}_{+}^{-}}.
+\end{equation}
+同样也要求\cite{Kapec:2014opa}：
+\begin{equation}
+	N^+_{z}(z,\bar{z})|_{\mathcal{I}_{-}^{+}}=N^-_{z}(z,\bar{z})|_{\mathcal{I}_{+}^{-}}
+\end{equation}
+这些式子也使得$BMS^+\times BMS^-$联合变换限制为一个子群，要求：
+\begin{equation}
+	f^+(z,\bar z)|_{\mathcal{I}^+_-}=f^-(z,\bar z)|_{\mathcal{I}^-_+},\quad Y^{+z}|_{\mathcal{I}^+_-}=Y^{-z}|_{\mathcal{I}^-_+}
+\end{equation}
+所以后面我们不再区分$N_z^{\pm},f^{\pm},Y^{\pm},m_B^{\pm},\{C^{zz},D^{zz}\},\{M^{zz},N^{zz}\}$，用统一的符号书写，而且在$\mathcal{I}^{\pm}_{\mp}$上对径认同。在QED中，这种对径认同也是存在的，而且可以很自然地导出。
 \subsection{BMS charges}
+完全可以从广相的角度去推出守恒荷，但是那太麻烦，这里直接从对径认同的条件导出守恒荷。
+
+首先是supertranslation对应的守恒荷：\sn{这里的$d^2z\gamma_{z\bar z}$其实就是$\mathcal{S}^2$上的测度$d^2z\sqrt{\gamma}$}
+\begin{equation}
+	Q_{f}^{+} \equiv\frac{1}{4\pi G}\int_{{\mathcal I}_{-}^{+}}d^{2}z\gamma_{z\bar{z}}fm_{B}=
+	\frac{1}{4\pi G}\int_{\mathcal{I}_{+}^{-}}d^{2}z\gamma_{z\bar{z}}fm_{B}\equiv Q_{f}^{-} 
+\end{equation}
+利用Stokes等式，$\partial\mathcal{I}^+=\mathcal{I}^+_-\cup\mathcal{I}^-_+$，设$m_B|_{\mathcal{I}^+_+}\to 0$并利用前面的约束方程，得到：
+\begin{equation}
+	\begin{gathered}
+		Q_{f}^{+} =\frac1{4\pi G}\int_{\mathcal{I}^+}dud^2z\gamma_{z\bar{z}}f\left[T_{uu}-\frac14\left(D_z^2N^{zz}+D_{\bar{z}}^2N^{\bar{z}\bar{z}}\right)\right] \\
+		Q_{f}^{-} =\frac1{4\pi G}\int_{\mathcal{I}^-}dvd^2z\gamma_{z\bar{z}}f\left[T_{vv}+\frac14\left(D_z^2N^{zz}+D_{\bar{z}}^2N^{\bar{z}\bar{z}}\right)\right] 
+	\end{gathered}
+\end{equation}
+然后再是superrotation部分：
+\begin{equation}
+	Q_{Y}^{+}\equiv\frac{1}{8\pi G}\int_{\mathcal I_{-}^{+}}d^{2}z(Y_{\bar{z}}N_{z}+Y_{z}N_{\bar{z}})=\frac{1}{8\pi G}\int_{\mathcal I_{+}^{-}}d^{2}z(Y_{\bar{z}}N_{z}+Y_{z}N_{\bar{z}})\equiv Q_{Y}^{-}
+\end{equation}
+如果$Y^z$取为$\mathcal{S}^2$上共形Killing场的那六个分量，上式在说明AMD角动量和BORT center-of-mass\sn{可以见文献\cite{Chen:2014kea}中的定义}的守恒律。依旧是利用Stokes方程：\sn{与文献\cite{Pasterski:2021rjz}中的形式稍有不同，注意到$\gamma_{z\bar z}D_z Y^z=\partial_zY_{\bar z}$可以证明等价性}
+\begin{equation}
+	\begin{aligned}
+		&Q_{Y}^{+} =Q_{H}^{+}+Q_{S}^{+},  \\
+		&Q_{S}^{+} =-\frac{1}{16\pi G}\int_{\mathcal{I}^{+}}dud^{2}z[D_{z}^{3}Y^{z}uN^{z}{}_{\bar{z}}+D_{\bar{z}}^{3}Y^{\bar{z}}uN^{\bar{z}}_{z}],  \\
+		&Q_{H}^{+} =\frac{1}{8\pi G}\int_{\mathcal{I}^{+}}dud^{2}z(Y_{\bar{z}}T_{uz}+Y_{z}T_{u\bar{z}}+u\partial_{z}Y_{\bar{z}}T_{uu}+u\partial_{\bar{z}}Y_{z}T_{uu}) 
+	\end{aligned}
+\end{equation}
+我们到后面再聊它们的确是Supertranslations和Suprtrotations的生成元。

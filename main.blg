@@ -8,58 +8,63 @@ A level-1 auxiliary file: texfiles/part3.aux
 A level-1 auxiliary file: texfiles/part4.aux
 A level-1 auxiliary file: texfiles/part5.aux
 A level-1 auxiliary file: texfiles/part6.aux
+A level-1 auxiliary file: texfiles/part7.aux
 A level-1 auxiliary file: texfiles/appendix.aux
-Illegal, another \bibstyle command---line 93 of file main.aux
+Illegal, another \bibstyle command---line 94 of file main.aux
  : \bibstyle
  :          {JHEP}
 I'm skipping whatever remains of this command
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ref.bib
+Repeated entry---line 1519 of file ref.bib
+ : @article{Kapec:2014opa
+ :                       ,
+I'm skipping whatever remains of this entry
 Warning--empty publisher in Rychkov:2016iqz
 Warning--empty booktitle in Oblak:2015qia
 Warning--empty publisher in Strominger:2017zoo
 Warning--empty booktitle in Jackson1998ClassicalE3
 Warning--empty booktitle in Ashtekar1987AsymptoticQ
 Warning--empty publisher in Blumenhagen:2009zz
-You've used 63 entries,
+You've used 68 entries,
             2363 wiz_defined-function locations,
-            1050 strings with 13988 characters,
-and the built_in function-call counts, 20938 in all, are:
-= -- 2130
-> -- 558
+            1090 strings with 14802 characters,
+and the built_in function-call counts, 22411 in all, are:
+= -- 2286
+> -- 598
 < -- 0
-+ -- 179
-- -- 116
-* -- 1974
-:= -- 2681
-add.period$ -- 63
-call.type$ -- 63
-change.case$ -- 46
++ -- 192
+- -- 124
+* -- 2110
+:= -- 2878
+add.period$ -- 68
+call.type$ -- 68
+change.case$ -- 50
 chr.to.int$ -- 0
-cite$ -- 69
-duplicate$ -- 1572
-empty$ -- 2095
-format.name$ -- 348
-if$ -- 5293
+cite$ -- 74
+duplicate$ -- 1685
+empty$ -- 2238
+format.name$ -- 372
+if$ -- 5664
 int.to.chr$ -- 0
-int.to.str$ -- 63
-missing$ -- 223
-newline$ -- 193
-num.names$ -- 63
-pop$ -- 221
+int.to.str$ -- 68
+missing$ -- 241
+newline$ -- 208
+num.names$ -- 68
+pop$ -- 233
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 632
+skip$ -- 671
 stack$ -- 0
-substring$ -- 1079
-swap$ -- 350
+substring$ -- 1147
+swap$ -- 372
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 232
-width$ -- 65
-write$ -- 623
-(There was 1 error message)
+while$ -- 248
+width$ -- 70
+write$ -- 671
+(There were 2 error messages)
