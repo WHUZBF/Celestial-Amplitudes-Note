@@ -225,7 +225,7 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 \begin{equation}
 	Q_E=\frac{1}{e^2}\int_{\mathcal{S}^2_\infty}\star F=\int_{\Sigma}\star j,\quad Q_M=\frac{1}{2\pi}\int_{\mathcal{S}^2_\infty} F
 \end{equation}
-它们是量子化的，只能取整数。QED是$U(1)$规范理论，在$A\mapsto A+d\varepsilon$的规范变换下理论不变，后文不加说明都在所谓\textbf{retarded radial 规范}下进行计算\cite{He:2014cra}：
+它们是量子化的，只能取整数。QED是$U(1)$规范理论，在$A\mapsto A+d\varepsilon$的规范变换下理论不变，后文不加说明都在所谓\textbf{retarded radial 规范}下进行计算\cite{He:2014cra,Kapec:2015ena}：
 \begin{equation}
 	\begin{aligned}
 		&\mathcal{I}^+: A_r=0,\quad A_u|_{\mathcal{I}^+}=0\\
@@ -299,7 +299,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	Q_{\varepsilon}^{+}=\underbrace{-\frac{1}{e^{2}}\int_{\mathcal{I}^{+}}dud^{2}z\left(\partial_{z}\varepsilon F_{u\bar{z}}^{(0)}+\partial_{\bar{z}}\varepsilon F_{uz}^{(0)}\right)}_{Q_{S}^{+}}+\underbrace{\int_{\mathcal{I}^{+}}dud^{2}z\varepsilon\gamma_{z\bar{z}}j_{u}^{(2)}}_{Q_{H}^{+}}
 \end{equation}
 定义Soft phonton mode $N_z$：
-\begin{equation}
+\begin{equation}\label{eq:23.18}
 	N_{z}\equiv \int_{-\infty}^{\infty}duF_{uz}^{(0)}=\lim_{\omega\to0}\int_{-\infty}^{\infty}duF_{uz}^{(0)}e^{i\omega u}
 \end{equation}
 再次看到$N_z$对应的是电磁场的零频部分，也就是软光子部分，而且有：
@@ -420,9 +420,131 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	\end{aligned}
 \end{equation}
 取$\varepsilon(z,\bar z)=\frac{1}{w-z}$，则上式可以写为如下形式：\sn{$$\partial_{\bar{z}}\frac{1}{z-w}=2\pi\delta^2(z-w)$$}
-\begin{equation}
+\begin{equation}\label{eq:24.5}
 	4\pi\langle\mathrm{out}|\left(\partial_zN\mathcal{S}-\mathcal{S}\partial_zN^-\right)|\mathrm{in}\rangle=\left[\sum_{k=1}^m\frac{Q_k^\mathrm{in}}{z-z_k^\mathrm{in}}-\sum_{k=1}^n\frac{Q_k^\mathrm{out}}{z-z_k^\mathrm{out}}\right]\langle\mathrm{out}|\mathcal{S}|\mathrm{in}\rangle 
 \end{equation}
 这个等式其实就是带有U(1) Kac-Moody current的$\text{CFT}_2$的Ward恒等式\cite{Blumenhagen:2009zz,He:2015zea,Strominger:2013lka,Nande:2017dba}。
 \subsection{Mode expansion}
+本部分的终极目标是证明Ward恒等式可以联系渐近对称性和软定理，前文从相空间角度给出了Ward恒等式，在动量空间给出了软定理，是时候在动量空间重写Ward恒等式了，重点就是将场算符用平面波展开，也就是正则量子化的过程。free mode expansion 弯曲时空量子力学领域已经不少人算过了，U(1)规范理论结果如下：
+\begin{equation}
+	A_{\nu}(x)=e\sum_{\alpha=\pm}\int\frac{d^3q}{\left(2\pi\right)^3}\frac{1}{2\omega_q}\left[\varepsilon_{\nu}^{*\alpha}(\vec{q})a_{\alpha}^{\mathrm{out}}(\vec{q})e^{iq\cdot x}+\varepsilon_{\nu}^{\alpha}(\vec{q})a_{\alpha}^{\mathrm{out}}(\vec{q})^\dagger e^{-iq\cdot x}\right]
+\end{equation}
+$q$是平面波在壳动量$q^2=0$，$\varepsilon^\pm_\mu$是极化矢量，常常取为：
+\begin{equation}
+	\varepsilon^{+\mu}(\vec{q})=\frac1{\sqrt{2}}\left(\bar{z},1,-i,-\bar{z}\right),\quad\varepsilon^{-\mu}(\vec{q})=\frac1{\sqrt{2}}\left(z,1,i,-z\right),\quad q_{\mu}\varepsilon^{\pm\mu}(\vec{q})=0,\quad\varepsilon_{\alpha}^{\mu}\varepsilon_{\beta\mu}^{*}=\delta_{\alpha\beta}
+\end{equation}
+产生湮灭算符之间满足对易关系：
+\begin{equation}
+	\left[a_\alpha^{\mathrm{out}}(\vec q),a_\beta^{\mathrm{out}}(\vec q')^\dagger\right]=\delta_{\alpha\beta}(2\pi)^3(2\omega_q)\delta^3\left(\vec q-\vec q'\right)
+\end{equation}
+定义内积：
+\begin{equation}
+	(A,A')=-i\int d\Sigma^{\mu}[A^{\nu}(\nabla_{\mu}{A'}_{\nu}^{*}-\nabla_{\nu}{A'}_{\mu}^{*})-(A\leftrightarrow {A'}^{*})]
+\end{equation}
+这样定义的内积与类空超曲面$\Sigma$的选取是无关的。这样一来产生湮灭算符可以写成：
+\begin{equation}
+	a_\pm(q)=i({A},(\epsilon^\pm e^{iq\cdot x})^*)
+\end{equation}
+对于$\mathcal{I}^-$类似讨论，结果只是把out改成in。下面计算$A_z^{(0)}(u,z,\bar{z})\equiv\lim_{r\to\infty}A_z(u,r,z,\bar{z})$的模式展开：\sn{这里$\hat q,\hat x$都是指其空间部分}
+\begin{equation}
+	\begin{aligned}
+		A_{\mu}(x) =&e\sum_{\alpha=\pm}\int\frac{d^3q}{\left(2\pi\right)^3}\frac{1}{2\omega_q}\left[\varepsilon_{\mu}^{*\alpha}(\vec{q})a_{\alpha}(\vec{q})e^{-i\omega_qu-i\omega_qr(1-\hat{q}\cdot\hat{x})}\right. \\
+		&\left.+\varepsilon_{\mu}^{\alpha}(\vec{q})a_{\alpha}^{\dagger}(\vec{q})e^{i\omega_{q}u+i\omega_{q}r(1-\hat{q}\cdot\hat{x})} \right]\\
+		=&\frac e{8\pi^2}\sum_{\alpha=\pm}\int_0^\infty d\omega_q\omega_q\int_0^\pi d\theta\sin\theta\left[\varepsilon_\mu^{*\alpha}(\vec{q})a_\alpha(\vec{q})e^{-i\omega_qu-i\omega_qr(1-\cos\theta)}\right. \\
+		&\left.+\varepsilon_{\mu}^{\alpha}(\vec{q})a_{\alpha}^{\dagger}(\vec{q})e^{i\omega_{q}u+i\omega_{q}r(1-\cos\theta)}\right].
+	\end{aligned}
+\end{equation}
+这里$\theta$是$\hat q$和$\hat x$之间的夹角，利用数学公式\sn{来源是鞍点近似}：
+\begin{equation}
+	\lim_{r\to\infty}\sin\theta e^{i\omega_qr(1-\cos\theta)}=\frac{i}{\omega_qr}\delta(\theta)+\mathcal{O}((r)^{-2})
+\end{equation}
+代入得到：
+\begin{equation}
+	A_\mu(x)=-\frac{ie}{8\pi^{2}r}\sum_{\alpha=\pm}\int_{0}^{\infty}d\omega_{q}\left[\varepsilon_{\mu}^{*\alpha}(\omega_{q}\hat{x})a_{\alpha}(\omega_{q}\hat{x})e^{-i\omega_{q}u}-c.c.\right]+\mathcal{O}(r^{-2})
+\end{equation}
+我们要求的玩意儿是$A_{z}=\partial_{z}x^{\mu}A_{\mu}$，注意到：
+\[
+	\partial_{z}x^{\mu}\varepsilon_{\mu}^{+}(\omega_{q}\hat{x})=0,\quad\partial_{z}x^{\mu}\varepsilon_{\mu}^{-}(\omega_{q}\hat{x})=\frac{\sqrt{2}r}{1+z\bar{z}}
+\]
+最终求得：\sn{下文中的$\omega$指$\omega_q$，即$q^0$}
+\begin{equation}
+	A_{z}^{(0)}(u,z,\bar{z})=-\frac{i}{8\pi^2}\frac{\sqrt{2}e}{1+z\bar{z}}\int_{0}^{\infty}d\omega\left[a_{+}^{\mathrm{out}}(\omega\hat{x})e^{-i\omega u}-a_{-}^{\mathrm{out}}(\omega\hat{x})^\dagger e^{i\omega u}\right]
+\end{equation}
+把定义式\ref{eq:28.18}改写为厄米的形式：
+\begin{equation}
+	\partial_zN=\dfrac{1}{2e^2}\lim_{\omega\to0^+}\int_{-\infty}^{\infty}du\left(e^{i\omega u}+e^{-i\omega u}\right)F_{uz}^{(0)}
+\end{equation}
+利用$A_z^{(0)}$重写上式为：
+\begin{equation}
+	\partial_zN=-\frac{1}{8\pi e}\frac{\sqrt{2}}{1+z\bar{z}}\lim_{\omega\to0^+}\left[\omega a_+^{\mathrm{out}}(\omega\hat{x})+\omega a_-^{\mathrm{out}}(\omega\hat{x})^\dagger\right]
+\end{equation}
+在$\mathcal{I}^-$上也有类似式子，只需要把$N\to N^-$,out$\to$in 就好。现在可以看出来为啥要叫soft photon mode 了。根据前面的铺垫，\ref{eq:24.5}终于可以写成如下形式：
+\begin{equation}
+	\begin{aligned}
+		\operatorname*{lim}_{\omega\rightarrow0}\left\lfloor\omega\langle\mathrm{out}|\left(a_{+}^{\mathrm{out}}(\omega\hat{x})\mathcal{S}\right.\right.& \left.-\mathcal{S}a_{-}^{\mathrm{in}}(\omega\hat{x})^{\dagger}\right)|\mathrm{in}\rangle   \\
+		&=\sqrt{2}e(1+z\bar{z})\left[\sum_{k=1}^{n}\frac{Q_{k}^\mathrm{out}}{z-z_{k}^\mathrm{out}}-\sum_{k=1}^{m}\frac{Q_{k}^\mathrm{in}}{z-z_{k}^\mathrm{in}}\right]\langle\mathrm{out}|\mathcal{S}|\mathrm{in}\rangle 
+	\end{aligned}
+\end{equation}
 \subsection{Soft photon \& graviton}
+前面用费曼图导出的软定理可以用$\mathcal{S}$矩阵写成如下形式：
+\begin{equation}
+	\lim\limits_{\omega\to0}\left[\omega\langle\text{out}|a_+^\text{out}(\vec{q})\mathcal{S}|\text{in}\rangle\right]=e\lim\limits_{\omega\to0}\left[\sum\limits_{k=1}^m\frac{\omega Q_k^\text{out}p_k^\text{out}\cdot\varepsilon^+}{p_k^\text{out}\cdot q}-\sum\limits_{k=1}^n\frac{\omega Q_k^\text{in}p_k^\text{in}\cdot\varepsilon^+}{p_k^\text{in}\cdot q}\right]\langle\text{out}|\mathcal{S}|\text{in}\rangle 
+\end{equation}
+这里出射和入射态都是平面波为基，而且我们把元电荷作为公因子提出，$Q\in\mathbb{Z}$，出入射动量用Embedding的形式写出来，前面第三部分写过，这里再写一遍：
+\begin{equation}
+	\begin{aligned}
+		&q^{\mu} =\frac\omega{1+z\bar{z}}\left(1+z\bar{z},z+\bar{z},-i(z-\bar{z}),1-z\bar{z}\right),  \\
+		&p_{k}^{\mu} =\frac{E_{k}}{1+z_{k}\bar{z}_{k}}\left(1+z_{k}\bar{z}_{k},z_{k}+\bar{z}_{k},-i(z_{k}-\bar{z}_{k}),1-z_{k}\bar{z}_{k}\right) 
+	\end{aligned}
+\end{equation}
+注意到：
+\begin{equation}
+	\varepsilon_{+}^{\mu}(q)=\frac{1}{\sqrt{2}\omega}\partial_{z}\left[\left(1+z\bar{z}\right)q^{\mu}\right],\quad\varepsilon_{-}^{\mu}(q)=\frac{1}{\sqrt{2}\omega}\partial_{\bar{z}}\left[\left(1+z\bar{z}\right)q^{\mu}\right]
+\end{equation}
+带进去一通暴力计算，软定理被我们写成了：
+\begin{equation}
+\lim_{\omega\to0^+}\left[\omega\left\langle\mathrm{out}\right|a_+^\mathrm{out}(\omega\hat{x})\mathcal{S}\left|\mathrm{in}\right\rangle\right]\\=\frac{e}{\sqrt{2}}\left(1+z\bar{z}\right)\left[\sum_{k\in\mathrm{out}}\frac{Q_k}{z-z_k}-\sum_{k\in\mathrm{in}}\frac{Q_k}{z-z_k}\right]\left\langle\mathrm{out}\right|\mathcal{S}\left|\mathrm{in}\right\rangle
+\end{equation}
+根据${\mathcal{CPT}}$不变性：\sn{?}
+\begin{equation}
+\langle\text{out}|a_+^\text{out}(\vec{q})\mathcal{S}|\text{in}\rangle=-\langle\mathrm{out}|\mathcal{S}a_{-}^{\mathrm{in}\dagger}(\vec{q})|\mathrm{in}\rangle
+\end{equation}
+结合上面两个式子就证明了Ward恒等式和软定理是一回事，或者说通过Ward恒等式，软定理和 Large gauge symmetry 是一回事。这其实反过来说明了我们找到的 Large gauge symmetry 是non-trivial的，确实得看作是一个渐近对称性。这种non-trivial从记忆效应也能体现出来，后面会详细讨论。
+
+回到引力这边，这边的证明思路上差不多，但是有很多比较微妙的点。首先就是守恒荷的量子化，虽然也可以按照QED那边的方法一样做，但是技术细节上微妙许多。不过我们可以猜测它们应当有如下形式：
+\begin{equation}
+	\boxed{
+		\left[Q_f^+,\cdots\right]=i\delta f,\quad \left[Q_f^-,\cdots\right]=i\delta Y
+	}
+\end{equation}
+至于$\delta_f$和$\delta_Y$的形式前面已经算过了，而且它们都是和哈密顿量对易的，这也是利用Ward恒等式的基础。第一个式子证明相对简单，可以看文献\cite{He:2014laa}，第二个等式要复杂许多，首先是需要下面几个式子\cite{Ashtekar1987AsymptoticQ,Ashtekar:1978zz,Ashtekar:1981bq,PhysRevLett.46.573}：
+\begin{equation}
+	\begin{aligned}
+		\begin{bmatrix}N_{\bar{z}\bar{z}}(u,z,\bar{z}),C_{ww}(u',w,\bar{w})\end{bmatrix}&=16\pi Gi\gamma_{z\bar{z}}\delta^2(z-w)\delta(u-u')\\
+		\left[Q_{S}^{+},C_{zz}\right]&=-iuD_{z}^{3}Y^{z},\\\left[Q_{H}^{+},C_{zz}\right]&=\frac{iu}{2}D\cdot YN_{zz}+iY\cdot DC_{zz}-\frac{i}{2}D\cdot YC_{zz}+2iD_{z}Y^{z}C_{zz}
+	\end{aligned}
+\end{equation}
+而且Superrotation对应的相空间也更加复杂\cite{Strominger:2016wns}。这些都只能先argue一下，细说太麻烦。同样也可以给出模式展开，这个时候$g^{\mu\nu}=\eta^{\mu\nu}+\kappa h^{\mu\nu}$，$h^{\mu\nu}$满足linearized Einstein equation：
+\begin{equation}
+	\partial_{\sigma}\partial_{\nu}h^{\sigma}{}_{\mu}+\partial_{\sigma}\partial_{\mu}h^{\sigma}{}_{\nu}-\partial_{\mu}\partial_{\nu}h-\Box h_{\mu\nu}=0
+\end{equation}
+Mode expansion为：
+\begin{equation}
+	{h}_{\mu\nu}(x)=\kappa\sum_{\alpha\in\pm}\int\frac{d^3k}{(2\pi)^3}\frac{1}{2k^0}\left[\epsilon_{\mu\nu}^{\alpha*}a_{\alpha}e^{ik\cdot x}+\epsilon_{\mu\nu}^{\alpha}a_{\alpha}^{\dagger}e^{-ik\cdot x}\right]
+\end{equation}
+若$h=0$，内积定义为：
+\begin{equation}
+	(h,h')=-i\int d\Sigma^\rho[h^{\mu\nu}(\nabla_\rho {h'}_{\mu\nu}^*-2\nabla_\mu {h'}_{\rho\nu}^*)-(h\leftrightarrow {h'}^*)]
+\end{equation}
+同样也可以用鞍点近似去求度规里的那些参数的模式展开，然后去证明软引力子定理，详细的计算移步至文献\cite{Kapec:2014opa}。
+
+
+
+
+高阶软定理修正
+
+
+QED里面直接用渐近分析
+
+
+能量条件

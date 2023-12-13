@@ -303,6 +303,12 @@ T.~He, P.~Mitra, A.P.~Porfyriadis and A.~Strominger, \emph{{New Symmetries of
   {\bfseries 10} (2014) 112} [\href{https://arxiv.org/abs/1407.3789}{{\ttfamily
   1407.3789}}].
 
+\bibitem{Kapec:2015ena}
+D.~Kapec, M.~Pate and A.~Strominger, \emph{{New Symmetries of QED}},
+  \href{https://doi.org/10.4310/ATMP.2017.v21.n7.a7}{\emph{Adv. Theor. Math.
+  Phys.} {\bfseries 21} (2017) 1769}
+  [\href{https://arxiv.org/abs/1506.02906}{{\ttfamily 1506.02906}}].
+
 \bibitem{Jackson1998ClassicalE3}
 J.D.~Jackson, \emph{Classical electrodynamics, 3rd edition},  1998,
   \href{https://api.semanticscholar.org/CorpusID:119985144}{https://api.semanticscholar.org/CorpusID:119985144}.
@@ -361,6 +367,36 @@ A.~Nande, M.~Pate and A.~Strominger, \emph{{Soft Factorization in QED from 2D
   \href{https://doi.org/10.1007/JHEP02(2018)079}{\emph{JHEP} {\bfseries 02}
   (2018) 079} [\href{https://arxiv.org/abs/1705.00608}{{\ttfamily
   1705.00608}}].
+
+\bibitem{He:2014laa}
+T.~He, V.~Lysov, P.~Mitra and A.~Strominger, \emph{{BMS supertranslations and
+  Weinberg\textquoteright{}s soft graviton theorem}},
+  \href{https://doi.org/10.1007/JHEP05(2015)151}{\emph{JHEP} {\bfseries 05}
+  (2015) 151} [\href{https://arxiv.org/abs/1401.7026}{{\ttfamily 1401.7026}}].
+
+\bibitem{Ashtekar:1978zz}
+A.~Ashtekar and R.O.~Hansen, \emph{{A unified treatment of null and spatial
+  infinity in general relativity. I - Universal structure, asymptotic
+  symmetries, and conserved quantities at spatial infinity}},
+  \href{https://doi.org/10.1063/1.523863}{\emph{J. Math. Phys.} {\bfseries 19}
+  (1978) 1542}.
+
+\bibitem{Ashtekar:1981bq}
+A.~Ashtekar and M.~Streubel, \emph{{Symplectic Geometry of Radiative Modes and
+  Conserved Quantities at Null Infinity}},
+  \href{https://doi.org/10.1098/rspa.1981.0109}{\emph{Proc. Roy. Soc. Lond. A}
+  {\bfseries 376} (1981) 585}.
+
+\bibitem{PhysRevLett.46.573}
+A.~Ashtekar, \emph{Asymptotic quantization of the gravitational field},
+  \href{https://doi.org/10.1103/PhysRevLett.46.573}{\emph{Phys. Rev. Lett.}
+  {\bfseries 46} (1981) 573}.
+
+\bibitem{Strominger:2016wns}
+A.~Strominger and A.~Zhiboedov, \emph{{Superrotations and Black Hole Pair
+  Creation}}, \href{https://doi.org/10.1088/1361-6382/aa5b5f}{\emph{Class.
+  Quant. Grav.} {\bfseries 34} (2017) 064002}
+  [\href{https://arxiv.org/abs/1610.00639}{{\ttfamily 1610.00639}}].
 
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},

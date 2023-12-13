@@ -400,13 +400,14 @@ Minkowski时空的度规在球坐标系下可以写为：
 渐近平直时空也可以从时空图上一窥其特征\cite{zhaoliu}，只要是渐近平直时空，Penrose图在$\mathcal{I}^\pm$边界上都类似于Minkowski时空图的直角形状。
 
 \section{Asymptotic flat spacetime: BMS group}
+根据前一节的渐近分析，我们是在寻找满足一系列边界条件的规范变换（微分同胚），这些就是所谓的Allowed Symmetries，但是那些不改变物理，没有啥效应的对称性要剔除掉，得到我们要找的\textbf{渐近对称性}
 \begin{equation}
 	\text{Asymptotic symmetries}=\frac{\text{Allowed symmetries}}{\text{Trivial symmetries}}
 \end{equation}
 
-这个式子是在说我们在体系背景时空原有的对称性外，对于其它允许的对称性寻找叫\textbf{渐近对称性}，我们现在考虑的问题就是平直时空背景，由于渐近平直带来的高阶项（描述无穷远处的引力波扰动），这会导致体系的对称性远远大于Poincar\'e群。
+按理说在无穷远处时空渐近平直，那么在无穷远处的渐近对称性应该就是Poinccre\'e群，但是由于渐近平直带来的高阶项（描述无穷远处的引力波扰动），这会导致体系的对称性远远大于Poincar\'e群。这从某种程度上也意味着，弱场、大尺度近似下广义相对论并不会退化为狭义相对论！
 
-所谓$AFS$的对称变换，并不要求是等度规映射，仅仅要求保持Bondi gauge以及渐近平直性，这其实是要求下面的asymptotic invariant:
+所谓AFS的对称变换，并不要求是等度规映射，仅仅要求保持Bondi gauge以及渐近平直性，这其实是要求下面的asymptotic invariant:
 \begin{align*}
 	&\mathcal{L}_\xi g_{uu}=\mathcal{O}(r^{-1}),&&\mathcal{L}_\xi g_{ur}=\mathcal{O}(r^{-2}),&&\mathcal{L}_\xi g_{uz}=\mathcal{O}(1)\\
 	&\mathcal{L}_\xi g_{zz}=\mathcal{O}(1),&&\mathcal{L}_\xi g_{z\bar z}=\mathcal{O}(1),&&\mathcal{L}_\xi g_{\bar z \bar zz}=\mathcal{O}(1)
@@ -692,7 +693,7 @@ Komar质量依赖于类时Killing场的存在性，这对于非稳态时空是�
 	\{M_{zz}(u,z,\bar{z}),D(z,\bar{z})|_{\mathcal{I}_{+}^{-}},m^-_{B}(z,\bar{z})|_{\mathcal{I}_{+}^{-}},N^-_z|_{\mathcal{I}^-_+},\cdots\}
 \end{equation}
 
-经典引力理论的散射问题就是在找$\mathcal{I}^+$上的Cauchy data到$\mathcal{I}^-$上的Cauchy data的映射。不过上面的initial data还无法完全使得此问题well-define，文献\cite{Strominger:2013jfa}从Lorentz和CPT不变性的要求出发，认为需要加入下面的对径认同假设来构成散射问题的全部：
+经典引力理论的散射问题就是在找$\mathcal{I}^+$上的Cauchy data到$\mathcal{I}^-$上的Cauchy data的映射。不过上面的initial data还无法完全使得此问题well-define，文献\cite{Strominger:2013jfa}从Lorentz和${\mathcal{CPT}}$不变性的要求出发，认为需要加入下面的对径认同假设来构成散射问题的全部：
 \begin{equation}
 	C(z,\bar{z})|_{\mathcal{I}_{-}^{+}}=D(z,\bar{z})|_{\mathcal{I}_{+}^{-}},\quad m^+_{B}(z,\bar{z})|_{\mathcal{I}_{-}^{+}}=m^-_{B}(z,\bar{z})|_{\mathcal{I}_{+}^{-}}.
 \end{equation}
@@ -700,7 +701,7 @@ Komar质量依赖于类时Killing场的存在性，这对于非稳态时空是�
 \begin{equation}
 	N^+_{z}(z,\bar{z})|_{\mathcal{I}_{-}^{+}}=N^-_{z}(z,\bar{z})|_{\mathcal{I}_{+}^{-}}
 \end{equation}
-这些式子也使得$BMS^+\times BMS^-$联合变换限制为一个子群，要求：
+这些式子也使得$BMS^+\times BMS^-$联合变换限制为一个子群，称为$\chi$变换\cite{Kapec:2014opa}，要求：
 \begin{equation}
 	f^+(z,\bar z)|_{\mathcal{I}^+_-}=f^-(z,\bar z)|_{\mathcal{I}^-_+},\quad Y^{+z}|_{\mathcal{I}^+_-}=Y^{-z}|_{\mathcal{I}^-_+}
 \end{equation}

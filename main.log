@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  13 DEC 2023 00:26
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  14 DEC 2023 00:46
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -3047,7 +3047,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (file figs/fig1.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig1.pdf, id=906, 499.44893pt x 234.68678pt>
+<figs/fig1.pdf, id=907, 499.44893pt x 234.68678pt>
 File: figs/fig1.pdf Graphic file (type pdf)
 <use figs/fig1.pdf>
 Package luatex.def Info: figs/fig1.pdf  used on input line 256.
@@ -3061,7 +3061,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig2.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig2.pdf, id=993, 226.7431pt x 231.40654pt>
+<figs/fig2.pdf, id=994, 226.7431pt x 231.40654pt>
 File: figs/fig2.pdf Graphic file (type pdf)
 <use figs/fig2.pdf>
 Package luatex.def Info: figs/fig2.pdf  used on input line 277.
@@ -3090,24 +3090,27 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+4'
 [25] [26]
-Overfull \hbox (8.74947pt too wide) detected at line 469
-[][]
- []
-
-
-Overfull \hbox (12.87398pt too wide) detected at line 492
+Overfull \hbox (8.74947pt too wide) detected at line 470
 [][]
  []
 
 [27]
-Overfull \hbox (7.37277pt too wide) detected at line 517
+Overfull \hbox (12.87398pt too wide) detected at line 493
+[][]
+ []
+
+
+Overfull \hbox (7.37277pt too wide) detected at line 518
 [][]
  []
 
 [28]
 LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 
-548.
+549.
  (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [29]
@@ -3118,10 +3121,10 @@ warning  (pdf backend): ignoring duplicate destination with the name 'theorem.1'
 
 warning  (file figs/fig5.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig5.pdf, id=1197, 134.64703pt x 129.40044pt>
+<figs/fig5.pdf, id=1196, 134.64703pt x 129.40044pt>
 File: figs/fig5.pdf Graphic file (type pdf)
 <use figs/fig5.pdf>
-Package luatex.def Info: figs/fig5.pdf  used on input line 628.
+Package luatex.def Info: figs/fig5.pdf  used on input line 629.
 (luatex.def)             Requested size: 134.6467pt x 129.4001pt.
 [30]
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
@@ -3172,7 +3175,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 [35]
 warning  (file figs/fig3.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig3.pdf, id=1419, 304.26674pt x 122.40631pt>
+<figs/fig3.pdf, id=1420, 304.26674pt x 122.40631pt>
 File: figs/fig3.pdf Graphic file (type pdf)
 <use figs/fig3.pdf>
 Package luatex.def Info: figs/fig3.pdf  used on input line 104.
@@ -3183,7 +3186,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig4.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig4.pdf, id=1601, 359.05844pt x 211.58849pt>
+<figs/fig4.pdf, id=1602, 359.05844pt x 211.58849pt>
 File: figs/fig4.pdf Graphic file (type pdf)
 <use figs/fig4.pdf>
 Package luatex.def Info: figs/fig4.pdf  used on input line 151.
@@ -3299,25 +3302,50 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 1'
-) [44]
+[44]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
+2'
+
+Overfull \hbox (2.3527pt too wide) in paragraph at lines 447--449
+|\LTJY3/SimSun(0)/m/scsl/10 对 |于 $\OMS/lmsy/m/n/10 I[]$ |\LTJY3/SimSun(0)/m
+/scsl/10 类 |似 |讨 |论 [] |结 |果 |只 |是 |把 \T1/lmr/m/n/10 out |\LT
+JY3/SimSun(0)/m/scsl/10 改 |成 \T1/lmr/m/n/10 in[] |\LTJY3/SimSun(0)/m/scsl/1
+0 下 |面 |计 |算 $\OML/lmm/m/it/10 A[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 u; 
+z; []\OT1/lmr/m/n/10 ) \OMS/lmsy/m/n/10  [][] \OML/lmm/m/it/10 A[]\OT1/lmr/m/n
+/10 (\OML/lmm/m/it/10 u; r; z; []\OT1/lmr/m/n/10 )$
+ []
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
+3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
+4'
+
+LaTeX Warning: Reference `eq:28.18' on page 45 undefined on input line 473.
+
+[45]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
+5'
+[46]) [47]
 \openout2 = texfiles/part6.aux
  (./texfiles/part6.tex
-Package marginnote Info: Margin note 49.1 is on absolute page 49 on input line 
+Package marginnote Info: Margin note 52.1 is on absolute page 52 on input line 
 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
-) [45
+) [48
 
 
 
 ]
 \openout2 = texfiles/part7.aux
  (./texfiles/part7.tex
-Package marginnote Info: Margin note 50.1 is on absolute page 50 on input line 
+Package marginnote Info: Margin note 53.1 is on absolute page 53 on input line 
 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
-) [46
+) [49
 
 
 
@@ -3325,7 +3353,7 @@ Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 \openout2 = texfiles/appendix.aux
 
 (./texfiles/appendix.tex
-Package marginnote Info: Margin note 51.1 is on absolute page 51 on input line 
+Package marginnote Info: Margin note 54.1 is on absolute page 54 on input line 
 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
@@ -3334,7 +3362,7 @@ Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 1.
 
-) [47
+) [50
 
 
 
@@ -3345,10 +3373,10 @@ luaotfload | aux : font no 243 (nil) does not define feature vrt2 for script dfl
 t with language dflt
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 50.
- [48
+ [51
 
 
-] [49]) [50] (./main.aux (./texfiles/part1.aux)
+] [52] [53]) [54] (./main.aux (./texfiles/part1.aux)
 (./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux)
 (./texfiles/part5.aux) (./texfiles/part6.aux) (./texfiles/part7.aux)
 (./texfiles/appendix.aux))
@@ -3363,16 +3391,16 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45892 strings out of 478152
+ 45945 strings out of 478152
  596098,1648299 words of node,token memory allocated
- 232058 words of node memory still in use:
-   355 hlist, 87 vlist, 446 rule, 2 disc, 27 local_par, 117 math, 732 glue, 485 
-kern, 129 penalty, 8 sub_mlist, 899 glyph, 81460 attribute, 6419 glue_spec, 4258
- attribute_list, 2 write, 1231 user_defined, 7 pdf_start_link, 7 pdf_end_link, 2
-5 pdf_action, 14 pdf_colorstack nodes
-   avail lists: 1:25,2:119039,3:2406,4:2916,5:363,6:79,7:7026,8:126,9:2510,10:22
-,11:388,12:1
- 63503 multiletter control sequences out of 65536+600000
+ 236290 words of node memory still in use:
+   349 hlist, 87 vlist, 418 rule, 2 disc, 27 local_par, 115 math, 704 glue, 512 
+kern, 126 penalty, 9 sub_mlist, 862 glyph, 82795 attribute, 6783 glue_spec, 4333
+ attribute_list, 2 write, 1286 user_defined, 7 pdf_start_link, 7 pdf_end_link, 2
+8 pdf_action, 14 pdf_colorstack nodes
+   avail lists: 1:25,2:116468,3:2405,4:2863,5:442,6:82,7:7416,8:126,9:2533,10:22
+,11:445,12:1
+ 63524 multiletter control sequences out of 65536+600000
  255 fonts using 224292071 bytes
  116i,19n,141p,1233b,1678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
@@ -3430,10 +3458,10 @@ s/type1/public/lm/lmsy8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public
 live/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LaTeX/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LaTeX/t
 exlive/2021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (53 pages, 1666487 bytes).
+Output written on main.pdf (57 pages, 1692434 bytes).
 
-PDF statistics: 2297 PDF objects out of 2487 (max. 8388607)
- 1487 compressed objects within 15 object streams
- 510 named destinations out of 1000 (max. 131072)
+PDF statistics: 2367 PDF objects out of 2487 (max. 8388607)
+ 1552 compressed objects within 16 object streams
+ 542 named destinations out of 1000 (max. 131072)
  386 words of extra memory for PDF output out of 10000 (max. 100000000)
 
