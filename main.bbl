@@ -168,6 +168,12 @@ P.~Di~Francesco, P.~Mathieu and D.~Senechal, \emph{{Conformal Field Theory}},
 A.~Bilal, \emph{{Lectures on Anomalies}},
   \href{https://arxiv.org/abs/0802.0634}{{\ttfamily 0802.0634}}.
 
+\bibitem{Hawking:1973uf}
+S.W.~Hawking and G.F.R.~Ellis, \emph{{The Large Scale Structure of
+  Space-Time}}, Cambridge Monographs on Mathematical Physics, Cambridge
+  University Press (2, 2023),
+  \href{https://doi.org/10.1017/9781009253161}{10.1017/9781009253161}.
+
 \bibitem{Witten:1981mf}
 E.~Witten, \emph{{A Simple Proof of the Positive Energy Theorem}},
   \href{https://doi.org/10.1007/BF01208277}{\emph{Commun. Math. Phys.}
@@ -182,6 +188,11 @@ T.~Parker and C.H.~Taubes, \emph{{On Witten's Proof of the Positive Energy
 D.~Christodoulou and S.~Klainerman, \emph{The Global Nonlinear Stability of the
   Minkowski Space (PMS-41)}, Princeton University Press, Princeton (1994),
   \href{https://doi.org/doi:10.1515/9781400863174}{doi:10.1515/9781400863174}.
+
+\bibitem{PhysRevLett.67.1486}
+D.~Christodoulou, \emph{Nonlinear nature of gravitation and gravitational-wave
+  experiments}, \href{https://doi.org/10.1103/PhysRevLett.67.1486}{\emph{Phys.
+  Rev. Lett.} {\bfseries 67} (1991) 1486}.
 
 \bibitem{Strominger:2013jfa}
 A.~Strominger, \emph{{On BMS Invariance of Gravitational Scattering}},
@@ -397,6 +408,25 @@ A.~Strominger and A.~Zhiboedov, \emph{{Superrotations and Black Hole Pair
   Creation}}, \href{https://doi.org/10.1088/1361-6382/aa5b5f}{\emph{Class.
   Quant. Grav.} {\bfseries 34} (2017) 064002}
   [\href{https://arxiv.org/abs/1610.00639}{{\ttfamily 1610.00639}}].
+
+\bibitem{Campiglia:2016hvg}
+M.~Campiglia and A.~Laddha, \emph{{Subleading soft photons and large gauge
+  transformations}}, \href{https://doi.org/10.1007/JHEP11(2016)012}{\emph{JHEP}
+  {\bfseries 11} (2016) 012}
+  [\href{https://arxiv.org/abs/1605.09677}{{\ttfamily 1605.09677}}].
+
+\bibitem{Conde:2016csj}
+E.~Conde and P.~Mao, \emph{{Remarks on asymptotic symmetries and the subleading
+  soft photon theorem}},
+  \href{https://doi.org/10.1103/PhysRevD.95.021701}{\emph{Phys. Rev. D}
+  {\bfseries 95} (2017) 021701}
+  [\href{https://arxiv.org/abs/1605.09731}{{\ttfamily 1605.09731}}].
+
+\bibitem{Conde:2016rom}
+E.~Conde and P.~Mao, \emph{{BMS Supertranslations and Not So Soft Gravitons}},
+  \href{https://doi.org/10.1007/JHEP05(2017)060}{\emph{JHEP} {\bfseries 05}
+  (2017) 060} [\href{https://arxiv.org/abs/1612.08294}{{\ttfamily
+  1612.08294}}].
 
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},

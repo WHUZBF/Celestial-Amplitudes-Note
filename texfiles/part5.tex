@@ -361,7 +361,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}
 	A_z^{(0)}(u,z,\bar{z})=\hat{A}_z(u,z,\bar{z})+\partial_z\phi(z,\bar{z}),\quad\partial_z\phi\equiv\frac{1}{2}\left[\left.A_z^{(0)}\right|_{\mathcal I_+^+}+\left.A_z^{(0)}\right|_{\mathcal I_-^+}\right]
 \end{equation}
-利用上面的分解以及soft photon mode重写\ref{eq:28.29}：
+利用上面的分解以及soft photon mode重写\ref{eq:23.29}：
 \begin{equation}
 	\Omega_{\mathcal{I}^{+}}=\frac{2}{e^{2}}\int dud^{2}z\partial_{u}\delta\hat{A}_{z}\wedge\delta\hat{A}_{\bar{z}}-2\int d^{2}z\partial_{z}\delta\phi\wedge\partial_{\bar{z}}\delta N
 \end{equation}
@@ -423,7 +423,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}\label{eq:24.5}
 	4\pi\langle\mathrm{out}|\left(\partial_zN\mathcal{S}-\mathcal{S}\partial_zN^-\right)|\mathrm{in}\rangle=\left[\sum_{k=1}^m\frac{Q_k^\mathrm{in}}{z-z_k^\mathrm{in}}-\sum_{k=1}^n\frac{Q_k^\mathrm{out}}{z-z_k^\mathrm{out}}\right]\langle\mathrm{out}|\mathcal{S}|\mathrm{in}\rangle 
 \end{equation}
-这个等式其实就是带有U(1) Kac-Moody current的$\text{CFT}_2$的Ward恒等式\cite{Blumenhagen:2009zz,He:2015zea,Strominger:2013lka,Nande:2017dba}。
+这个等式其实就是带有U(1) K$\breve{\text{a}}$c-Moody current的$\text{CFT}_2$的Ward恒等式\cite{Blumenhagen:2009zz,He:2015zea,Strominger:2013lka,Nande:2017dba}。
 \subsection{Mode expansion}
 本部分的终极目标是证明Ward恒等式可以联系渐近对称性和软定理，前文从相空间角度给出了Ward恒等式，在动量空间给出了软定理，是时候在动量空间重写Ward恒等式了，重点就是将场算符用平面波展开，也就是正则量子化的过程。free mode expansion 弯曲时空量子力学领域已经不少人算过了，U(1)规范理论结果如下：
 \begin{equation}
@@ -536,15 +536,31 @@ Mode expansion为：
 \begin{equation}
 	(h,h')=-i\int d\Sigma^\rho[h^{\mu\nu}(\nabla_\rho {h'}_{\mu\nu}^*-2\nabla_\mu {h'}_{\rho\nu}^*)-(h\leftrightarrow {h'}^*)]
 \end{equation}
-同样也可以用鞍点近似去求度规里的那些参数的模式展开，然后去证明软引力子定理，详细的计算移步至文献\cite{Kapec:2014opa}。
+同样也可以用鞍点近似去求度规里的那些参数的模式展开，然后去证明软引力子定理，详细的计算移步至文献\cite{Kapec:2014opa,He:2014laa}。
+
+\subsection{Asymptotic analysis on QED}
+这一节的主要目的是讲一下历史进程，文献最早是通过类似于BMS的渐近分析得到守恒荷这些\cite{Strominger:2013lka,He:2014cra}。分析渐近对称性的第一步就是指定边界条件，从而找到允许的对称性。由于$T_{uu}$是能动张量$T_{00}$和$T_{0i}$的线性组合，所以它现在代表能流，由于天球半径按照$r^2$增大，所以为了让能量有限大，$T_{uu}\sim\mathcal{O}\left(\frac{1}{r^2}\right)$，根据Noether定理：
+\begin{equation}
+	T^{\mu\nu}=\frac{1}{16\pi}F^{\alpha\beta}F_{\alpha\beta}\eta^{\mu\nu}-\frac{1}{4\pi}F^{\mu\rho}\partial^{\nu}A_{\rho}
+\end{equation}
+进行对称化操作得到：\sn{这样子做最大的好处是现在不显含$A$，与规范无关了}
+\begin{equation}
+	T_{S}^{\mu\nu}\equiv T^{\mu\nu}-\frac{1}{4\pi}\partial_{\rho}\left(F^{\rho\mu}A^{\nu}\right)=\frac{1}{16\pi}F^{\alpha\beta}F_{\alpha\beta}\eta^{\mu\nu}-\frac{1}{4\pi}F^{\mu\rho}{F^{\nu}}_{\rho}
+\end{equation}
+改到Bondi坐标下：
+\begin{equation}
+	T_{uu}\sim F_{uz}F_{u\bar{z}}\frac{\gamma^{z\bar{z}}}{r^2}+\ldots 
+\end{equation}
+这个式子意味着$F_{uz}\sim\mathcal{O}(1)$，再根据$F_{ru},F_{rz}$是电磁场分量，所以渐近行为均为$\mathcal{O}(1/r^2)$。下面的一组$A$的渐近行为选取就满足这几个条件：\sn{这一节我们并不取定规范}\sn{这个条件充分但不必要，但是根据文献\cite{Campiglia:2016hvg,Conde:2016csj,Conde:2016rom}的讨论，选别的理论会变得不是很自然。}
+\begin{equation}
+	A_z\sim\mathcal{O}(1),\quad A_r\sim\mathcal{O}\left(\frac{1}{r^2}\right),\quad A_u\sim\mathcal{O}\left(\frac{1}{r}\right)
+\end{equation}
+而满足这一边界条件的规范变换只能是：
+\begin{equation}
+	\varepsilon=\varepsilon(z,\bar{z})+\mathcal{O}\left(\frac1r\right)
+\end{equation}
+无穷远（天球）处不归零，就是前面说的Large gauge transformations。类似于引力散射问题的分析，QED这边散射问题为了well-define，也必须把对径认同的要求看作是散射问题定义的一部分。
 
 
 
 
-高阶软定理修正
-
-
-QED里面直接用渐近分析
-
-
-能量条件

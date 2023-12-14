@@ -19,7 +19,7 @@ U=
 	-\beta^* &\alpha^*
 \end{pmatrix},\quad |\alpha|^2+|\beta|^2=1
 \]
-这意味着描述一个群元需要四个实参，且满足$\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2=1$，显然这意味着$SU(2)$的拓扑结构为$\mathcal{S}^3$。另外一个需要用到的概念是\textbf{群中心}，也就是与所有群元都对易的群元\sn{注意与Casimir算符的区别}。不难看出$SU(2)$的群中心构成子群$\mathbb{Z}^2$：
+这意味着描述一个群元需要四个实参，且满足$\alpha_1^2+\alpha_2^2+\beta_1^2+\beta_2^2=1$，显然这意味着$SU(2)$的拓扑结构为$\mathcal{S}^3$。另外一个需要用到的概念是\textbf{群中心}，也就是与所有群元都对易的群元\sn{注意与Casimir算符的区别}。不难看出$SU(2)$的群中心构成子群$\mathbb{Z}_2$：
 \[
 \mathbb{I}_2=\begin{pmatrix}
 	1 & 0\\
@@ -70,10 +70,10 @@ $
 	任意复矩阵都可以分解为一个酉矩阵$Q$和一个上三角矩阵$R$的乘积，且$R$主对角元全为正数。如果这个矩阵是实矩阵，那么$Q$为正交矩阵。如矩阵可逆，则分解唯一。
 \end{lemma}
 \begin{lemma}
-	$SL(2,\mathbb{R})$的拓扑结构为$\mathcal{S}$，基本群为$\mathbb{Z}$
+	$SL(2,\mathbb{R})$的拓扑结构为$\mathcal{S}^1\times \mathbb{R}\times\mathbb{R}^+$，基本群为$\mathbb{Z}$
 \end{lemma}
 \begin{proof}
-	根据QR分解，以及$det S=1\neq 0$，任意$SL(2,\mathbb{R})$中的矩阵都可以唯一的分解为$S=QR$，而且要求$|Q|\cdot|R|=1$，而$R$主对角元全为正数以及$|Q|=\pm 1$实际上给出$Q\in SO(3)$且$R$的对角线上元素有$a\cdot b=1$且为正数的限制，而另一个元素不做限制。这其实就是在对$SL(2,\mathbb{R})$做直积分解，由于$SO(2)$对应的流形为$\mathcal{S}^1$，所以$SL(2,\mathbb{R})$对应的流形为$\mathcal{S}^1\times \mathbb{R}\times\mathbb{R}^+$，后两者基本群平凡，所以$SL(2,\mathbb{R})$对应的基本群为$\mathbb{Z}$。\footnote{这里用了乘积空间基本群为各自基本群的直积。}
+	根据QR分解，以及$\det S=1\neq 0$，任意$SL(2,\mathbb{R})$中的矩阵都可以唯一的分解为$S=QR$，而且要求$|Q|\cdot|R|=1$，而$R$主对角元全为正数以及$|Q|=\pm 1$实际上给出$Q\in SO(3)$且$R$的对角线上元素有$a\cdot b=1$且为正数的限制，而另一个元素不做限制。这其实就是在对$SL(2,\mathbb{R})$做直积分解，由于$SO(2)$对应的流形为$\mathcal{S}^1$，所以$SL(2,\mathbb{R})$对应的流形为$\mathcal{S}^1\times \mathbb{R}\times\mathbb{R}^+$，后两者基本群平凡，所以$SL(2,\mathbb{R})$对应的基本群为$\mathbb{Z}$。\footnote{这里用了乘积空间基本群为各自基本群的直积。}
 \end{proof}
 了解了$SL(2)$的拓扑性质后就可以开始证明本节的核心结论。
 \begin{theorem}
@@ -176,10 +176,10 @@ $
 	$z$方向boost
 	\begin{equation}
 		\begin{pmatrix}
-			\cosh\chi& 0 &0  &\sinh\chi \\
+			\cosh\chi& 0 &0  &-\sinh\chi \\
 			0&1  &0  & 0\\
 			0&0 & 1 &0 \\
-			\sinh\chi&  0&  0&\cosh\chi
+			-\sinh\chi&  0&  0&\cosh\chi
 		\end{pmatrix}\sim\pm\begin{pmatrix}
 			e^{-\chi/2}&0\\
 			0&e^{\chi/2}
@@ -189,7 +189,7 @@ $
 \section{Higher dimensions}
 \begin{definition}[赋范可除代数]
 	首先考虑$\mathbb{R}$或者$\mathbb{C}$上的线性空间我们可以赋予乘法结构将其提升为代数，如果除了$0$元其它元素都有逆元，我们称为\textbf{可除代数}，进一步我们可以赋予范数，而且要求范数满足：
-	\[\left\|xy\right\|=\left\|x\right\|\left\|x\right\|,\forall x,y\in V\]
+	\[\left\|xy\right\|=\left\|x\right\|\left\|y\right\|,\forall x,y\in V\]
 	即\textbf{赋范可除代数}。
 \end{definition}
 \begin{theorem}[Hurwitz]

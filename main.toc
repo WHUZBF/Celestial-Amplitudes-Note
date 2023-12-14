@@ -15,6 +15,7 @@
 \contentsline {section}{\numberline {11}Killing \& Conformal Killing vector field}{12}{section.11}%
 \contentsline {section}{\numberline {12}Conformal transformations in $d>2$}{13}{section.12}%
 \contentsline {section}{\numberline {13}Conformal transformations in $d=2$}{16}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Embedding formalism}{17}{subsection.13.1}%
 \contentsline {section}{\numberline {14}Conformal transformations on the Riemann sphere}{17}{section.14}%
 \contentsline {part}{第四部分\hspace {1em}Celestial Sphere \& Asymptotic Flat Spacetime}{19}{part.4}%
 \contentsline {section}{\numberline {15}Carter-Penrose diagram}{19}{section.15}%
@@ -38,8 +39,9 @@
 \contentsline {subsection}{\numberline {24.1}Ward indentity of $\mathcal {S}$\mbox {-}Matrix}{43}{subsection.24.1}%
 \contentsline {subsection}{\numberline {24.2}Mode expansion}{44}{subsection.24.2}%
 \contentsline {subsection}{\numberline {24.3}Soft photon \& graviton}{46}{subsection.24.3}%
-\contentsline {part}{第六部分\hspace {1em}A Crush Course on CFT}{48}{part.6}%
-\contentsline {part}{第七部分\hspace {1em}Celestial CFT}{49}{part.7}%
-\contentsline {section}{\numberline {25}Conformal basis}{49}{section.25}%
-\contentsline {part}{第八部分\hspace {1em}Appendix: \\Geometric Approaches}{50}{part.8}%
-\contentsline {part}{参考文献}{51}{part.8}%
+\contentsline {subsection}{\numberline {24.4}Asymptotic analysis on QED}{47}{subsection.24.4}%
+\contentsline {part}{第六部分\hspace {1em}A Crush Course on CFT}{49}{part.6}%
+\contentsline {part}{第七部分\hspace {1em}Celestial CFT}{50}{part.7}%
+\contentsline {section}{\numberline {25}Conformal basis}{50}{section.25}%
+\contentsline {part}{第八部分\hspace {1em}Appendix: \\Geometric Approaches}{51}{part.8}%
+\contentsline {part}{参考文献}{52}{part.8}%

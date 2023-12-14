@@ -88,7 +88,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 \end{itemize}
 从这个意义上看，如果我们只关注时空的因果结构，完全可以考虑共形紧化之后的度规，重点是共形紧化后坐标变成有限区间内取值，这使得我们有希望在时空图上表现出共形无限远。继续对\ref{eq:15.6}做变换：
 \begin{equation}
-	T=U+V,\quad R=U-V,\overset{\Rightarrow}{\text{overall}}t\pm r=\tan\frac{1}{2}\left(T\pm R\right)
+	T=U+V,\quad R=U-V\quad\stackrel{\text{overall}}{\Longrightarrow}\quad t\pm r=\tan\frac{1}{2}\left(T\pm R\right)
 \end{equation}
 度规变为：
 \begin{equation}
@@ -302,7 +302,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 		&+\frac{1}{4}\gamma_{AB}C_{CD}C^{CD}dx^Adx^B+\cdots
 	\end{aligned}
 \end{equation}
-其中$\gamma^{AB}C_{AB}=0,C_{AB}=C_{BA}$，角向指标使用$\gamma^{AB}$进行升降，而$D^A$是与$\gamma^{AB}$适配的协变导数\footnote{对于任何一个流形，给定度规后都唯一存在一个无挠的联络$\nabla$使得$\nabla_X g=0,\forall X\in\mathscr{X}(\mathcal{M})$，称为Levi-Civita联络，对应的Clifford符号$\nabla_{e_\mu}e_\nu=\Gamma_{\mu\nu}^{\lambda}e_\lambda$由下式给出：
+其中$\gamma^{AB}C_{AB}=0,C_{AB}=C_{BA}$，角向指标使用$\gamma^{AB}$进行升降，而$D^A$是与单位球面上度规$\gamma^{AB}$适配的协变导数\footnote{对于任何一个流形，给定度规后都唯一存在一个无挠的联络$\nabla$使得$\nabla_X g=0,\forall X\in\mathscr{X}(\mathcal{M})$，称为Levi-Civita联络，对应的Clifford符号$\nabla_{e_\mu}e_\nu=\Gamma_{\mu\nu}^{\lambda}e_\lambda$由下式给出：
 \[\Gamma^\lambda_{\mu\nu}=\frac{1}{2}g^{\lambda\sigma}\left(\partial_\mu g_{\nu\sigma}+\partial_\nu g_{\mu\sigma}-\partial_\sigma g_{\mu\nu}\right)\]这里$\Gamma^{z}_{zz}=-\frac{2\bar z}{1+z\bar z}={\Gamma^{\bar z}_{\bar z\bar z}}^*$，其它都是0。}。这里特别注意$u,r$并不是Minkowski中的retarded coordinates！只是在$r\to\infty$时$u\approx \tilde t-\tilde r$\sn{这里的$\tilde t,\tilde r$是指Minkowski时空中的通常四维坐标，也就是使得度规为$\eta_{\mu\nu}$的坐标}。同时还要求物质能动张量满足：
 \begin{align*}
 	T^M_{uu}\sim\mathcal{O}(r^{-2}),& &T^M_{ur}\sim\mathcal{O}(r^{-4}),&&T^M_{rr}\sim\mathcal{O}(r^{-4})\\
@@ -410,7 +410,7 @@ Minkowski时空的度规在球坐标系下可以写为：
 所谓AFS的对称变换，并不要求是等度规映射，仅仅要求保持Bondi gauge以及渐近平直性，这其实是要求下面的asymptotic invariant:
 \begin{align*}
 	&\mathcal{L}_\xi g_{uu}=\mathcal{O}(r^{-1}),&&\mathcal{L}_\xi g_{ur}=\mathcal{O}(r^{-2}),&&\mathcal{L}_\xi g_{uz}=\mathcal{O}(1)\\
-	&\mathcal{L}_\xi g_{zz}=\mathcal{O}(1),&&\mathcal{L}_\xi g_{z\bar z}=\mathcal{O}(1),&&\mathcal{L}_\xi g_{\bar z \bar zz}=\mathcal{O}(1)
+	&\mathcal{L}_\xi g_{zz}=\mathcal{O}(1),&&\mathcal{L}_\xi g_{z\bar z}=\mathcal{O}(1),&&\mathcal{L}_\xi g_{\bar z \bar z}=\mathcal{O}(1)
 \end{align*}
 和gauge invariant:
 \begin{equation}
@@ -650,21 +650,28 @@ Komar质量依赖于类时Killing场的存在性，这对于非稳态时空是�
 
 虽然爱因斯坦场方程对于某一给定度规总能求出解，但是能动张量是否是“物理的”值得思考，对此，人们总结出了下面的三个能动张量要满足的条件。
 \begin{definition}[弱能量条件]
-	
+	任意瞬时观者测得的能量密度非负，即要求：
+	\begin{equation}
+		T_{ab}u^au^b\geq 0,\quad\forall\text{类时矢量场 }u^a
+	\end{equation}
 \end{definition}
 
 \begin{definition}[强能量条件]
-	
+	这是在证明奇性定理时提出的条件：
+	\begin{equation}
+		T_{ab}Z^aZ^b\geq-\frac12T\text{,}\forall\quad \text{单位类时矢量场 }Z^a
+	\end{equation}
 \end{definition}
 \begin{definition}[主能量条件]
-	
+	本条件要求任一瞬时观者\footnote{就是$Z^a$和粒子世界线在$p$处相切，这时在观者参考系下粒子瞬时静止。这个不难理解，自由下落参考系就是通过测地线指数映射建立的，观者和粒子世界线相切说明相对静止，可做测量。}$(p,Z^a)$测得的4动量密度$W^a\equiv-{T^a}_bZ^b$是指向未来的类时或类光矢量，其物理解释是物质场的能量流动速率小于或等于光速\footnote{见经典名著\cite{Hawking:1973uf}}。
 \end{definition}
+这三个条件互不蕴含，不要被名字忽悠了。
 \begin{theorem}[正质量定理（Schoen\&Yau）]
 	若渐近平直时空没有奇异性，且物质能动张量满足主能量条件，则其ADM质量大于或等于零。当且仅当为闵氏时空时等于零。\footnote{值得注意的是，教皇Witten找到了更简单的证明\cite{Witten:1981mf,Parker:1981uy}。}
 \end{theorem}
 
 \subsection{Scattering problem}
-前面使用几何学和动力学给出了$\mathcal{I}^{\pm}$上的度规约束，为了完整的解出各个参数，我们需要一些initial data。在此，有必要先明确一下我们所考虑的一类时空，它们是所谓C-K时空\cite{ChristodoulouKlainerman+1994}，特点是在$i^{\pm}$都是真空，这给出了下面的渐近条件：
+前面使用几何学和动力学给出了$\mathcal{I}^{\pm}$上的度规约束，为了完整的解出各个参数，我们需要一些initial data。在此，有必要先明确一下我们所考虑的一类时空，它们是所谓C-K时空\cite{ChristodoulouKlainerman+1994,PhysRevLett.67.1486}，特点是在$i^{\pm}$都是真空，这给出了下面的渐近条件：
 \[N_{zz}=\mathcal{O}\left(|u|^{-(1+\varepsilon)}\right),\quad\varepsilon>0\]
 为了让Wyle张量在$\mathcal{I}^+_-$上归零，这要求\cite{Strominger:2013jfa,Compere:2019qed}：
 \begin{equation}
@@ -701,7 +708,7 @@ Komar质量依赖于类时Killing场的存在性，这对于非稳态时空是�
 \begin{equation}
 	N^+_{z}(z,\bar{z})|_{\mathcal{I}_{-}^{+}}=N^-_{z}(z,\bar{z})|_{\mathcal{I}_{+}^{-}}
 \end{equation}
-这些式子也使得$BMS^+\times BMS^-$联合变换限制为一个子群，称为$\chi$变换\cite{Kapec:2014opa}，要求：
+这些式子也使得$BMS^+\times BMS^-$联合变换限制为一个子群，称为$\mathcal{X}$变换\cite{Kapec:2014opa}，要求：
 \begin{equation}
 	f^+(z,\bar z)|_{\mathcal{I}^+_-}=f^-(z,\bar z)|_{\mathcal{I}^-_+},\quad Y^{+z}|_{\mathcal{I}^+_-}=Y^{-z}|_{\mathcal{I}^-_+}
 \end{equation}
