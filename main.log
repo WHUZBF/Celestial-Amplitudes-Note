@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  17 DEC 2023 01:49
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  17 DEC 2023 14:41
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2008,7 +2008,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 warning  (file figs/cover2.pdf) (pdf inclusion): PDF inclusion: found PDF versio
 n '1.6', but at most version '1.5' allowed
-<figs/cover2.pdf, id=217, 294.25534pt x 154.93384pt>
+<figs/cover2.pdf, id=241, 294.25534pt x 154.93384pt>
 File: figs/cover2.pdf Graphic file (type pdf)
 <use figs/cover2.pdf>
 Package luatex.def Info: figs/cover2.pdf  used on input line 85.
@@ -2016,7 +2016,7 @@ Package luatex.def Info: figs/cover2.pdf  used on input line 85.
 
 warning  (file figs/cover.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/cover.pdf, id=218, 264.08864pt x 274.22751pt>
+<figs/cover.pdf, id=242, 264.08864pt x 274.22751pt>
 File: figs/cover.pdf Graphic file (type pdf)
 <use figs/cover.pdf>
 Package luatex.def Info: figs/cover.pdf  used on input line 85.
@@ -2037,7 +2037,14 @@ LaTeX Font Info:    Font shape `LTJY3/SimSun(0)/bx/n' in size <12> not availabl
 e
 (Font)              Font shape `LTJY3/SimSun(0)/b/n' tried instead on input lin
 e 1.
- [1] [2])
+ [1]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 49.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 49.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 49.
+ [2])
 \tf@toc=\write5
 
 \openout5 = main.toc
@@ -2067,18 +2074,14 @@ LaTeX Font Info:    Font shape `LTJY3/SimSun(0)/bx/it' in size <24.88> not avai
 lable
 (Font)              Font shape `LTJY3/SimSun(0)/b/n' tried instead on input lin
 e 1.
-luaotfload | aux : font no 155 (nil) does not define feature vert for script dfl
+luaotfload | aux : font no 186 (nil) does not define feature vert for script dfl
 t with language dflt
-luaotfload | aux : font no 155 (nil) does not define feature vrt2 for script dfl
+luaotfload | aux : font no 186 (nil) does not define feature vrt2 for script dfl
 t with language dflt
 LaTeX Font Info:    Font shape `LTJY3/SimSun(0)/bx/it' in size <8> not availabl
 e
 (Font)              Font shape `LTJY3/SimSun(0)/b/n' tried instead on input lin
 e 3.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 3.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 3.
 
 LaTeX Warning: Marginpar on page 1 moved.
 
@@ -2105,9 +2108,9 @@ LaTeX Font Info:    Font shape `LTJY3/MicrosoftYaHei(0)/bx/n' in size <8> not a
 vailable
 (Font)              Font shape `LTJY3/MicrosoftYaHei(0)/b/n' tried instead on i
 nput line 127.
-luaotfload | aux : font no 181 (nil) does not define feature vert for script dfl
+luaotfload | aux : font no 191 (nil) does not define feature vert for script dfl
 t with language dflt
-luaotfload | aux : font no 181 (nil) does not define feature vrt2 for script dfl
+luaotfload | aux : font no 191 (nil) does not define feature vrt2 for script dfl
 t with language dflt
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on i
 nput line 127.
@@ -2363,13 +2366,13 @@ warning  (pdf backend): ignoring duplicate destination with the name 'theorem.2'
 
 Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
 line 40.
-luaotfload | aux : font no 202 (nil) does not define feature vert for script dfl
+luaotfload | aux : font no 212 (nil) does not define feature vert for script dfl
 t with language dflt
-luaotfload | aux : font no 202 (nil) does not define feature vrt2 for script dfl
+luaotfload | aux : font no 212 (nil) does not define feature vrt2 for script dfl
 t with language dflt
-luaotfload | aux : font no 205 (nil) does not define feature vert for script dfl
+luaotfload | aux : font no 215 (nil) does not define feature vert for script dfl
 t with language dflt
-luaotfload | aux : font no 205 (nil) does not define feature vrt2 for script dfl
+luaotfload | aux : font no 215 (nil) does not define feature vrt2 for script dfl
 t with language dflt
 Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
  line 54.
@@ -3050,7 +3053,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (file figs/fig1.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig1.pdf, id=947, 499.44893pt x 234.68678pt>
+<figs/fig1.pdf, id=977, 499.44893pt x 234.68678pt>
 File: figs/fig1.pdf Graphic file (type pdf)
 <use figs/fig1.pdf>
 Package luatex.def Info: figs/fig1.pdf  used on input line 256.
@@ -3064,7 +3067,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig2.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig2.pdf, id=1034, 226.7431pt x 231.40654pt>
+<figs/fig2.pdf, id=1064, 226.7431pt x 231.40654pt>
 File: figs/fig2.pdf Graphic file (type pdf)
 <use figs/fig2.pdf>
 Package luatex.def Info: figs/fig2.pdf  used on input line 277.
@@ -3127,7 +3130,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'theorem.1'
 
 warning  (file figs/fig5.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig5.pdf, id=1235, 134.64703pt x 129.40044pt>
+<figs/fig5.pdf, id=1266, 134.64703pt x 129.40044pt>
 File: figs/fig5.pdf Graphic file (type pdf)
 <use figs/fig5.pdf>
 Package luatex.def Info: figs/fig5.pdf  used on input line 629.
@@ -3163,9 +3166,9 @@ Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 
 
 ]
-luaotfload | aux : font no 229 (nil) does not define feature vert for script dfl
+luaotfload | aux : font no 239 (nil) does not define feature vert for script dfl
 t with language dflt
-luaotfload | aux : font no 229 (nil) does not define feature vrt2 for script dfl
+luaotfload | aux : font no 239 (nil) does not define feature vrt2 for script dfl
 t with language dflt
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 '
@@ -3181,7 +3184,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 [35]
 warning  (file figs/fig3.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig3.pdf, id=1470, 304.26674pt x 122.40631pt>
+<figs/fig3.pdf, id=1500, 304.26674pt x 122.40631pt>
 File: figs/fig3.pdf Graphic file (type pdf)
 <use figs/fig3.pdf>
 Package luatex.def Info: figs/fig3.pdf  used on input line 104.
@@ -3192,7 +3195,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig4.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig4.pdf, id=1652, 359.05844pt x 211.58849pt>
+<figs/fig4.pdf, id=1682, 359.05844pt x 211.58849pt>
 File: figs/fig4.pdf Graphic file (type pdf)
 <use figs/fig4.pdf>
 Package luatex.def Info: figs/fig4.pdf  used on input line 151.
@@ -3262,8 +3265,6 @@ Overfull \hbox (22.65094pt too wide) detected at line 372
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 8'
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 395.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 395.
@@ -3370,6 +3371,39 @@ Package marginnote Info: Margin note 56.1 is on absolute page 56 on input line
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\use@mathgroup' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\accentclass@' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\accentclass@' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symsymbols' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1.
+
+
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .1'
 
@@ -3380,7 +3414,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 
 
 ]
-Overfull \hbox (8.04263pt too wide) in paragraph at lines 36--37
+Overfull \hbox (8.04263pt too wide) in paragraph at lines 37--38
 []\T1/lmr/m/n/10 spe-cial con-for-mal trans-for-ma-tion : $\OML/lmm/m/it/10 y[]
  \OT1/lmr/m/n/10 = []\OML/lmm/m/it/10 ;  [] \OT1/lmr/m/n/10 = []$ 
  []
@@ -3391,13 +3425,13 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (file figs/fig6.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.7', but at most version '1.5' allowed
-<figs/fig6.pdf, id=2111, 201.91736pt x 208.92554pt>
+<figs/fig6.pdf, id=2141, 201.91736pt x 208.92554pt>
 File: figs/fig6.pdf Graphic file (type pdf)
 <use figs/fig6.pdf>
-Package luatex.def Info: figs/fig6.pdf  used on input line 45.
+Package luatex.def Info: figs/fig6.pdf  used on input line 46.
 (luatex.def)             Requested size: 201.91685pt x 208.92502pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 46.
+(Font)              <9> on input line 47.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 '
@@ -3408,14 +3442,30 @@ warning  (pdf backend): ignoring duplicate destination with the name 'definition
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 '
 
-Overfull \hbox (22.79817pt too wide) detected at line 130
+Overfull \hbox (22.79817pt too wide) detected at line 131
 [][]
  []
 
-[53]) [54]
+[53]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.6
+'
+[54]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 201.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 201.
+
+) [55]
 \openout2 = texfiles/appendix.aux
  (./texfiles/appendix.tex
-Package marginnote Info: Margin note 61.1 is on absolute page 61 on input line 
+Package marginnote Info: Margin note 62.1 is on absolute page 62 on input line 
 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
@@ -3424,7 +3474,7 @@ Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 1.
 
-) [55
+) [56
 
 
 
@@ -3432,10 +3482,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 luaotfload | aux : font no 255 (nil) does not define feature vert for script dfl
 t with language dflt
 luaotfload | aux : font no 255 (nil) does not define feature vrt2 for script dfl
-t with language dflt [56
+t with language dflt [57
 
 
-] [57] [58]) [59] (./main.aux (./texfiles/part1.aux)
+] [58] [59]) [60] (./main.aux (./texfiles/part1.aux)
 (./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux)
 (./texfiles/part5.aux) (./texfiles/part6.aux) (./texfiles/part7.aux)
 (./texfiles/appendix.aux))
@@ -3446,20 +3496,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7CC16F8E10EEF5BB95EC36973FE2D226;10042.
+(rerunfilecheck)             Checksum: F58E651A70E1245FFA82329F62FD0C88;11164.
 )
 
 Here is how much of LuaTeX's memory you used:
- 46079 strings out of 478152
- 596119,1648299 words of node,token memory allocated
- 238585 words of node memory still in use:
-   306 hlist, 83 vlist, 358 rule, 3 disc, 26 local_par, 121 math, 619 glue, 544 
-kern, 114 penalty, 9 sub_mlist, 742 glyph, 83113 attribute, 7477 glue_spec, 4363
- attribute_list, 2 write, 1380 user_defined, 5 pdf_start_link, 5 pdf_end_link, 3
-1 pdf_action, 10 pdf_colorstack nodes
-   avail lists: 1:25,2:115520,3:2418,4:2777,5:325,6:76,7:7202,8:124,9:2646,10:22
+ 46114 strings out of 478152
+ 596099,1648299 words of node,token memory allocated
+ 244393 words of node memory still in use:
+   307 hlist, 83 vlist, 369 rule, 3 disc, 26 local_par, 119 math, 629 glue, 560 
+kern, 114 penalty, 9 sub_mlist, 758 glyph, 85113 attribute, 7694 glue_spec, 4466
+ attribute_list, 2 write, 1400 user_defined, 8 pdf_start_link, 8 pdf_end_link, 3
+5 pdf_action, 16 pdf_colorstack nodes
+   avail lists: 1:25,2:113417,3:2415,4:2751,5:329,6:75,7:7202,8:124,9:2634,10:22
 ,11:417,12:1
- 63587 multiletter control sequences out of 65536+600000
+ 63602 multiletter control sequences out of 65536+600000
  255 fonts using 224292071 bytes
  116i,19n,141p,1233b,1678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
@@ -3482,10 +3532,10 @@ warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
-{d:/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/LaTeX/tex
-live/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{d:/LaTeX/texlive/2021/texmf-d
-ist/fonts/enc/dvips/lm/lm-mathit.enc}{d:/LaTeX/texlive/2021/texmf-dist/fonts/enc
-/dvips/lm/lm-rm.enc}{d:/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.
+{d:/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{d:/LaTeX/texlive
+/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{d:/LaTeX/texlive/2021/texmf-d
+ist/fonts/enc/dvips/lm/lm-ec.enc}{d:/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvi
+ps/lm/lm-mathit.enc}{d:/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.
 enc}{d:/LaTeX/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}<c:/Windo
 ws/Fonts/simkai.ttf><c:/Windows/Fonts/simhei.ttf><c:/Windows/Fonts/simsun.ttc><d
 :/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb><d:
@@ -3524,10 +3574,10 @@ live/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LaTeX/te
 xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LaTeX/t
 exlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><d:/LaTeX/t
 exlive/2021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (63 pages, 2229742 bytes).
+Output written on main.pdf (64 pages, 2244280 bytes).
 
-PDF statistics: 2543 PDF objects out of 2984 (max. 8388607)
- 1718 compressed objects within 18 object streams
- 607 named destinations out of 1000 (max. 131072)
- 442 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 2600 PDF objects out of 2984 (max. 8388607)
+ 1774 compressed objects within 18 object streams
+ 627 named destinations out of 1000 (max. 131072)
+ 490 words of extra memory for PDF output out of 10000 (max. 100000000)
 

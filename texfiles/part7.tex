@@ -1,4 +1,4 @@
-\part{Celestial CFT}
+\part{Celestial $\mathcal{A}$mplitudes \& CCFT}
 % 计数器清零，每个part都要引用，除了part1
 \setcounter{theorem}{0}
 \setcounter{definition}{0}
@@ -6,6 +6,7 @@
 \setcounter{sidenote}{1}
 \section{Conformal basis}
 QFT中利用费曼图计算散射振幅都是在动量空间下进行的，也就是选取在平面波为基底，这样做最大的好处是可以显现出平移对称性。但是在考虑天球上的散射问题时，很显然我们应当最大化利用共性对称性，所以基底应该选取为类似CFT中初级场的形式，称之为“Conformal Primary Wave Function”，这样$\mathbb{R}^{d+1,1}$上的散射振幅就有希望在这个基底下类似于CFT$_{d}$中的n点关联函数，Clifford Cheung很早就利用这个基底对一些特殊情形进行了研究\cite{Cheung:2016iub}。现在顺着文献\cite{Pasterski:2017kqt}的思路来介绍这一组基底。
+\subsection{Massive Scalar}
 \begin{definition}[Massive Scalar Conformal Primary Wave Function]
 自旋为$0$的标量场既没有$\mathbb{R}^{d+1,1}$上的$SO(d+1,1\uparrow$指标，也没有spinning CFT特有的张量指标，或者说处于$SO(d)$的标量表示。对于平面波，我们使用在壳动量来标记基底，现在我们使用$\Delta\in\mathbb{C},\vec{w}$来标记基底。
 \begin{itemize}
@@ -107,7 +108,7 @@ $\mathcal{A}\equiv\bra{\textbf{out}}\mathcal{S}\ket{\text{in}}$，那么在confo
 \end{equation}
 这实际上直接把空间一分为二，分成某个子空间和它的shadow，我们只用取其中一个构成基就好，因为它的shadow是其线性组合。
 
-在考虑$SO(d+1,1)$的无限维表示\sn{这两篇文章比较易读，而且重在比较新，文章的$\S 2.2$是对此内容的一个简短review，更多的阅读材料可以在那里找到。}时会出现所谓\textbf{principal continuous series}的概念：
+在考虑$SO(d+1,1)$的无限维表示\sn{\cite{Sun:2021rrs,Sun:2021thf}这两篇文章比较易读，而且重在比较新，文章\cite{Bissi:2023bhv}的$\S 2.2$是对此内容的一个简短review，更多的阅读材料可以在那里找到。}时会出现所谓\textbf{principal continuous series}的概念：
 \begin{equation}
 	\boxed{\Delta\in\frac d2+i\mathbb{R}}
 \end{equation}
@@ -138,7 +139,7 @@ $\mathcal{A}\equiv\bra{\textbf{out}}\mathcal{S}\ket{\text{in}}$，那么在confo
 \end{equation}
 这佐证了前面提到的只需要在空间和其shadow里面取一个就好了。正交性依赖于内积的定义，这里自然的定义KG内积：
 \begin{equation}
-	(\Phi_1,\Phi_2)=-i\int d^{d+1}X^i\left[\Phi_1(X)\partial_{X^0}\Phi_2^*(X)-\partial_{X^0}\Phi_1(X)\Phi_2^*(X)\right]
+	(\Phi_1,\Phi_2)=-i\int_\Sigma d^{d+1}X^i\left[\Phi_1(X)\partial_{X^0}\Phi_2^*(X)-\partial_{X^0}\Phi_1(X)\Phi_2^*(X)\right]
 \end{equation}
 这个定义是Poincar\'e不变的，是与Cauchy面选取无关的。计算得到：
 \begin{equation}
@@ -148,4 +149,54 @@ $\mathcal{A}\equiv\bra{\textbf{out}}\mathcal{S}\ket{\text{in}}$，那么在confo
 		&\pm\cancelto{0}{\frac{2^{d+3}\pi^{\frac{3d}{2}+2}}{m^{d}}\frac{\Gamma(i\nu_{1})}{\Gamma(\frac{d}{2}+i\nu_{1})}\delta(\nu_{1}+\nu_{2})\frac{1}{|\vec{w}_{1}-\vec{w}_{2}|^{2(\frac{d}{2}+i\nu_{1})}}}
 	\end{aligned}
 \end{equation}
-第二项为$0$是因为\ref{eq:27.23}。
+第二项为$0$是因为\ref{eq:27.23}。总结一下，我们得到了$\ket{\text{in}}$和$\ket{\text{out}}$态的基底为：
+\begin{equation}
+	\boxed{\mathcal{B}^{\pm}=\left\{\begin{array}{c|c}\phi_{\frac{d}{2}+i\nu}^{\pm}(X;\vec{w})&\nu\geq0,\vec{w}\in\mathbb{R}^d\end{array}\right\}}
+\end{equation}
+它的shadow同样是一组基底：
+\begin{equation}
+	\boxed{\widetilde{\mathcal{B}}^\pm=\left\{\begin{array}{c|c}\phi_{\frac{d}{2}+i\nu}^\pm(X;\vec{w})&\nu\le0,\vec{w}\in\mathbb{R}^d\end{array}\right\}}
+\end{equation}
+\subsection{Massless Scalar}
+无质量情况看作是有质量情况的极限，作换元$\omega\equiv\frac{m}{2y}$，积分核有如下渐近行为：
+\begin{equation}
+	G_{\Delta}(y,\vec{z};\vec{w})\xrightarrow{m\to0}\pi^{\frac{d}{2}}\frac{\Gamma(\Delta-\frac{d}{2})}{\Gamma(\Delta)}y^{d-\Delta}\delta^{(d)}(\vec{z}-\vec{w})+\frac{y^{\Delta}}{|\vec{z}-\vec{w}|^{2\Delta}}+\cdots 
+\end{equation}
+计算得到：
+\begin{equation}
+	\begin{aligned}\phi_{\frac{d}{2}+i\nu}^{\pm}(X;\vec{w})\xrightarrow{m\to0}&\left(\frac{m}{2}\right)^{-\frac{d}{2}-i\nu}\frac{\pi^{\frac{d}{2}}\Gamma(i\nu)}{\Gamma(\frac{d}{2}+i\nu)}\int_{0}^{\infty}d\omega\omega^{\frac{d}{2}+i\nu-1}e^{\pm i\omega q(\vec{w})\cdot X}\\+&\left(\frac{m}{2}\right)^{-\frac{d}{2}+i\nu}\int d^{d}\vec{z}\frac{1}{|\vec{z}-\vec{w}|^{2(\frac{d}{2}+i\nu)}}\int_{0}^{\infty}d\omega\omega^{\frac{d}{2}-i\nu-1}e^{\pm i\omega q(\vec{z})\cdot X}\end{aligned}
+\end{equation}
+上面的极限不是well-define的，因为$m^{\pm i\nu}$，但这是个相位，不妨先丢掉,而第二项是第一项的shadow，所以猜测最终应该是下面的形式：
+\begin{equation}
+	\boxed{\varphi_\Delta^\pm(X^\mu;\vec w)\equiv\int_0^\infty d\omega\omega^{\Delta-1}e^{\pm i\omega q\cdot X-\epsilon\omega}=\frac{(\mp i)^\Delta\Gamma(\Delta)}{(-q(\vec w)\cdot X\mp i\epsilon)^\Delta}}
+\end{equation}
+其中$\Delta\in\mathbb{C}$，需要重新去找寻。这个式子的形式就是所谓\textbf{Mellin变换}，可以解释成对未来光锥上的某一条射线积分，也就是把所有同“方向”，不同“能量”的平面波组合。上面变换的逆变换为：
+\begin{equation}
+	e^{\pm i\omega q\cdot X-\epsilon\omega}=\int_{-\infty}^{\infty}\frac{d\nu}{2\pi}\omega^{-\Delta}\frac{(\mp i)^{\Delta}\Gamma(
+		\Delta)}{(-q\cdot X\mp i\epsilon)^{\Delta}},\quad\omega>0,\Re(\Delta)>0
+\end{equation}
+这说明了$\Re(\Delta)>0$就能保证完备性，而且这组基底张成的空间中很重要的一点是不含零动量的平面波解\sn{这一点是必须的，因为他是KG方程没有物理意义的解，要抛弃掉}。如果选取$\Re(\Delta)=\frac{d}{2}$，$\Im(\Delta)\in\mathbb{R}$，则：
+\begin{equation}
+	\begin{pmatrix}\varphi_{\frac{d}{2}+i\nu_{1}}^{\pm}(X^{\mu};\vec{w}_{1}),\varphi_{\frac{d}{2}+i\nu_{2}}^{\pm}(X^{\mu};\vec{w}_{2})\end{pmatrix}=\pm8\pi^{d+2}\delta(\nu_{1}-\nu_{2})\delta^{(d)}(\vec{w}_{1}-\vec{w}_{2})
+\end{equation}
+这个时候注意shadow：
+\begin{equation}
+	\begin{aligned}
+		\widetilde{\varphi_{\frac{d}{2}+i\nu}^{\pm}}(X^{\mu};\vec{w})& =\frac{\Gamma(\frac{d}{2}+i\nu)}{\pi^{\frac{d}{2}}\Gamma(i\nu)}\int d^{d}\vec{z}\frac{1}{|\vec{z}-\vec{w}|^{2(\frac{d}{2}-i\nu)}}\varphi_{\frac{d}{2}+i\nu}^{\pm}(X^{\mu};\vec{z})  \\
+		&=(\mp i)^{\frac d2+i\nu}\Gamma(\frac d2+i\nu)\frac{(-X^2)^{-i\nu}}{(-q(\vec{w})\cdot X\mp i\epsilon)^{\frac d2-i\nu}}\\
+		\left(\varphi_{\frac{d}{2}+i\nu_1}^{\pm}(X^{\mu};\vec{w_1}),\right.&\left.\widetilde{\varphi_{\frac{d}{2}+i\nu_2}^{\pm}}(X^{\mu};\vec{w_2})\right)=\pm8\pi^{\frac{d}{2}+2}\frac{\Gamma(\frac{d}{2}-i\nu_1)}{\Gamma(-i\nu_1)}\delta(\nu_1-\nu_2)\frac{1}{|\vec{w_1}-\vec{w_2}|^{2(\frac{d}{2}+i\nu_1)}}
+	\end{aligned}
+\end{equation}
+其shadow当然也是一组基底，但并不是$\nu\to-\nu$这么简单了，这导致$\nu$的取值范围也拓宽到了所有实数。总结一下，我们得到了Massless scalar的conformal basis：
+\begin{equation}
+	\boxed{\mathcal{B}_{m=0}^{\pm}=\left\{\begin{array}{c|c}\varphi_{\frac{d}{2}+i\nu}^{\pm}(X^{\mu};\vec{w})&\nu\in\mathbb{R},\vec{w}\in\mathbb{R}^{d}\end{array}\right\}}
+\end{equation}
+其shadow也可以作为一组基：
+\begin{equation}
+	\boxed{\widetilde{\mathcal{B}}_{m=0}^{\pm}=\left\{\begin{array}{c|c}\widetilde{\varphi_{\frac{d}{2}+i\nu}^{\pm}}(X^{\mu};\vec{w})&\nu\in\mathbb{R},\vec{w}\in\mathbb{R}^{d}\end{array}\right\}}
+\end{equation}
+\subsection{Phonton \& Graviton}
+这两个除了自旋不为0，还有一个比较麻烦的点是需要取定规范。
+\subsection{Fermions}
+\subsection{Restrict to Mink$_{4}$}
+\subsection{Example: 2 massless and 1 massive scalars at tree\mbox{–}level}
