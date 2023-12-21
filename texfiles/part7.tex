@@ -5,7 +5,7 @@
 \setcounter{lemma}{0}
 \setcounter{sidenote}{1}
 \section{Conformal basis}
-QFT中利用费曼图计算散射振幅都是在动量空间下进行的，也就是选取在平面波为基底，这样做最大的好处是可以显现出平移对称性。但是在考虑天球上的散射问题时，很显然我们应当最大化利用共性对称性，所以基底应该选取为类似CFT中初级场的形式，称之为“Conformal Primary Wave Function”，这样$\mathbb{R}^{d+1,1}$上的散射振幅就有希望在这个基底下类似于CFT$_{d}$中的n点关联函数，Clifford Cheung很早就利用这个基底对一些特殊情形进行了研究\cite{Cheung:2016iub}。现在顺着文献\cite{Pasterski:2017kqt}的思路来介绍这一组基底。
+QFT中利用费曼图计算散射振幅都是在动量空间下进行的，也就是选取在平面波为基底，这样做最大的好处是可以显现出平移对称性。但是在考虑天球上的散射问题时，很显然我们应当最大化利用共性对称性，所以基底应该选取为类似CFT中初级场的形式，称之为“Conformal Primary Wave Function”，这样$\mathbb{R}^{d+1,1}$上的散射振幅就有希望在这个基底下类似于CFT$_{d}$中的n点关联函数，Clifford Cheung很早就利用这个基底对一些特殊情形进行了研究\cite{Cheung:2016iub}\sn{历史上最早可以追溯到Dirac\cite{436861d5-35f6-36cf-9470-cb587eced490}}。现在顺着文献\cite{Pasterski:2017kqt}的思路来介绍这一组基底。
 \subsection{Massive Scalar}
 \begin{definition}[Massive Scalar Conformal Primary Wave Function]
 自旋为$0$的标量场既没有$\mathbb{R}^{d+1,1}$上的$SO(d+1,1\uparrow$指标，也没有spinning CFT特有的张量指标，或者说处于$SO(d)$的标量表示。对于平面波，我们使用在壳动量来标记基底，现在我们使用$\Delta\in\mathbb{C},\vec{w}$来标记基底。
@@ -170,7 +170,7 @@ $\mathcal{A}\equiv\bra{\textbf{out}}\mathcal{S}\ket{\text{in}}$，那么在confo
 \begin{equation}
 	\boxed{\varphi_\Delta^\pm(X^\mu;\vec w)\equiv\int_0^\infty d\omega\omega^{\Delta-1}e^{\pm i\omega q\cdot X-\epsilon\omega}=\frac{(\mp i)^\Delta\Gamma(\Delta)}{(-q(\vec w)\cdot X\mp i\epsilon)^\Delta}}
 \end{equation}
-其中$\Delta\in\mathbb{C}$，需要重新去找寻。这个式子的形式就是所谓\textbf{Mellin变换}，可以解释成对未来光锥上的某一条射线积分，也就是把所有同“方向”，不同“能量”的平面波组合。上面变换的逆变换为：
+其中$\Delta\in\mathbb{C}$，需要重新去找寻。这个式子的形式就是所谓\textbf{Mellin变换}\sn{数学上Mellin变换定义为：\[\widetilde{f}(\Delta)=\int_0^\infty d\omega\omega^{\Delta-1}f(\omega)\]其逆变换为：\[f(\omega)=\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}d\Delta\omega^{-\Delta}\widetilde{f}(\Delta),c\in\mathbb{R}\]}，可以解释成对未来光锥上的某一条射线积分，也就是把所有同“方向”，不同“能量”的平面波组合。注意这个式子有个非常明显的特征，在除去一个归一化因子的意义下，上式结果与$G_\Delta$将$q$替换为$X$得到的结果完全一致。上面变换的逆变换为：
 \begin{equation}
 	e^{\pm i\omega q\cdot X-\epsilon\omega}=\int_{-\infty}^{\infty}\frac{d\nu}{2\pi}\omega^{-\Delta}\frac{(\mp i)^{\Delta}\Gamma(
 		\Delta)}{(-q\cdot X\mp i\epsilon)^{\Delta}},\quad\omega>0,\Re(\Delta)>0
@@ -196,7 +196,202 @@ $\mathcal{A}\equiv\bra{\textbf{out}}\mathcal{S}\ket{\text{in}}$，那么在confo
 	\boxed{\widetilde{\mathcal{B}}_{m=0}^{\pm}=\left\{\begin{array}{c|c}\widetilde{\varphi_{\frac{d}{2}+i\nu}^{\pm}}(X^{\mu};\vec{w})&\nu\in\mathbb{R},\vec{w}\in\mathbb{R}^{d}\end{array}\right\}}
 \end{equation}
 \subsection{Phonton \& Graviton}
-这两个除了自旋不为0，还有一个比较麻烦的点是需要取定规范。
-\subsection{Fermions}
+这两个除了自旋不为0，还有一个比较麻烦的点是需要取定规范。由于自旋不为0，所以基底除了在壳动量、初末态的$\pm$，以及极化矢量带来的$SO(1,d+1)$矢量指标，还需要一个指标用来标记自旋，这里考虑的是无质量玻色子，所以这个指标标记的是粒子的螺旋度，体现为CFT$_d$上的一个$\mathbb{R}^d$张量指标，$a=1,2,\ldots,d$。令在壳动量$k=\omega q$，在Loren规范下可以把平面波基底写为下面的形式：\sn{\[\partial_aq^\mu\equiv\frac{\partial}{\partial w^a}q^\mu(\vec{w})=2(w^a,\delta^{ba},-w^a)\]}：
+\begin{equation}
+	\partial_aq_\mu e^{\pm i\omega q\cdot X}
+\end{equation}
+注意Lorenz规范只能将前面的极化矢量确定到一个正比于$k$的项，选取这样的形式相当于完全取定了规范。不难验证$d=2$时，上面的选取就对应\ref{eq:24.7}的选取。
+\begin{definition}[Spin\mbox{-}1 Massless Boson, $d\geq 1$]
+	~
+	\begin{itemize}
+		\item 在壳：\footnote{满足的是Proca方程}
+		\begin{equation}
+			\left(\frac{\partial}{\partial X^\sigma}\frac{\partial}{\partial X_\sigma}\delta_\nu^\mu-\frac{\partial}{\partial X^\nu}\frac{\partial}{\partial X_\mu}\right)A_{\mu a}^{\Delta\pm}(X^\rho;\vec{w})=0
+		\end{equation}
+		\item 协变：
+		\begin{equation}
+			A_{\mu a}^{\Delta\pm}\left(\Lambda^{\rho}{}_{\nu}X^{\nu};\vec{w}'(\vec{w})\right)=\frac{\partial w^{b}}{\partial{w'^{a}}}\left|\frac{\partial\vec{w}'}{\partial\vec{w}}\right|^{-(\Delta-1)/d}\Lambda_{\mu}{}^{\sigma}A_{\sigma b}^{\Delta\pm}(X^{\rho};\vec{w})
+		\end{equation}
+	\end{itemize}
+\end{definition}
+$\mathbb{H}_{d+1}$上面的 Spin\mbox{-}1 bulk-to boundary 传播子为$G^\Delta_{\mu;q}$\sn{后面只要是$a,b,c$指标就是$\mathbb{R}^d$上的，在只要是$\mu,\nu,\sigma$指标就是$\mathbb{R}^{1,d+1}$上的}，计算上更常用的是其 \textbf{uplift} $G^\Delta_{\mu;\nu}$，定义为：\sn{其实就是拉回映射}
+\begin{equation}
+	G^\Delta_{\mu;q}=\frac{\partial q^\nu}{\partial w^a}G_{\mu;\nu}^\Delta(\hat{p};q)
+\end{equation}
+\begin{equation}
+	G_{\mu;\nu}^{\Delta}(\hat{p};q)=\frac{(-q\cdot\hat{p})\eta_{\mu\nu}+q_{\mu}\hat{p}_{\nu}}{(-q\cdot\hat{p})^{\Delta+1}}
+\end{equation}
+uplift之后，$G^\Delta_{\mu;\nu}$就是一个标量CFT$_d$，而且是$\mathbb{R}^{1,d+1}$上的2\mbox{-}tensor：
+\begin{equation}
+	G_{\mu;\nu}^{\Delta}(\Lambda\hat{p};\Lambda q)=\left|\frac{\partial\vec{w}'}{\partial\vec{w}}\right|^{-\Delta/d}\Lambda^{\rho}{}_{\mu}\Lambda^{\sigma}{}_{\nu}G^{\Delta}{}_{\rho;\sigma}(\hat{p};q)
+\end{equation}
+而且关于两个自变量还满足横向条件：
+\begin{equation}\label{eq:t}
+	\hat{p}^{\mu}G_{\mu;\nu}^{\Delta}(\hat{p};q)=0,\quad q^{\nu}G_{\mu;\nu}^{\Delta}(\hat{p};q)=0
+\end{equation}
+根据前面的标量场经验，不难猜测$A$的形式就是$G$把$q$换成$X$：
+\begin{equation}
+	\boxed{
+		\begin{aligned}
+			A_{\mu a}^{\Delta,\pm}(X^{\mu};\vec{w})& {=\frac{\partial_{a}q_{\mu}}{(-q\cdot X\mp i\epsilon)^{\Delta}}+\frac{\partial_{a}q\cdot X}{(-q\cdot X\mp i\epsilon)^{\Delta+1}}q_{\mu}} \\
+			&=-\frac{1}{(-q\cdot X\mp i\epsilon)^{\Delta-1}}\frac{\partial}{\partial X^{\mu}}\frac{\partial}{\partial w^{a}}\log(-q\cdot X\mp i\epsilon)
+		\end{aligned}
+	}
+\end{equation}
+证明略。下面计算其shadow。
+\begin{definition}[shadow for spinning fields]
+	对于自旋为$J$的场，其会导致带有$J$个$\mathbb{R}^d$上的指标$a_1,\ldots,a_J$，而且这些指标是无迹且全对称的，或者说$\mathcal{O}^\Delta_{a_1\cdot\cdot\cdot a_J}(\vec{w})$是$SO(d)$的无迹对称张量表示，即Spin\mbox{-}J表示。计算其shadow最简单的方式是使用其uplift计算，然后再投影回来，uplift与其自身的关系为:
+	\begin{equation}
+		\mathcal{O}^\Delta_{a_1\cdots a_J}(\vec{w})=\frac{\partial q^{\mu_1}}{\partial w^{a_1}}\cdots\frac{\partial q^{\mu_J}}{\partial w^{a_J}}\mathcal{O}^\Delta_{\mu_1\cdots\mu_J}(\vec{w})
+	\end{equation}
+	uplift与其自变量之间存在类似\ref{eq:t}的横向关系。
+	\begin{equation}
+		\boxed{
+		\widetilde{\mathcal{O}^\Delta}_{\mu_1\cdots\mu_J}(\vec{w})=\frac{\Gamma(\Delta+J)}{\pi^{\frac d2}(\Delta-1)_J\Gamma(\Delta-\frac d2)}\int d^d\vec{w}^{\prime}\frac{\prod_{n=1}^J\left[\delta_{\mu_n}^{\nu_n}(-\frac12q\cdot q^{\prime})+\frac12q_{\mu_n}^{\prime}q^{\nu_n}\right]}{(-\frac12q\cdot q^{\prime})^{d-\Delta+J}}\mathcal{O}^\Delta_{\nu_1\cdots\nu_J}(\vec{w}^{\prime})}
+	\end{equation}
+	这里$(a)_{J}\equiv\Gamma(a+J)/\Gamma(a)$，称为Pochhammer符号，而且不难发现上面的定义对于某些$\Delta$不是well-define的，所以需要解析延拓到全部复平面。
+\end{definition}
+利用上面定义计算得到：
+\begin{equation}
+	\boxed{
+	\widetilde{A_{\mu a}^{\Delta,\pm}}(X^\mu;\vec{w})=(-X^2)^{\frac{d}{2}-\Delta}A_{\mu a}^{d-\Delta,\pm}(X^\mu;\vec{w})
+	}
+\end{equation}
+和无质量标量场一样，不是正比于$A_{\mu a}^{d-\Delta,\pm}$。现在还没有讨论我们的计算是在哪个规范下进行的，但其实前面对$A_{\mu a}^{\Delta,\pm}$那些在壳协变的要求就已经为我们完全取定了规范，是Lorenz和radial规范同时加上去：\sn{这两个规范是可以同时取的，见\cite{PhysRevD.76.084013}}
+\begin{equation}
+	X^{\mu}A_{\mu a}^{\Delta,\pm}(X^{\mu};\vec{w})=0,\quad\partial^{\mu}A_{\mu a}^{\Delta,\pm}(X^{\mu};\vec{w})=0.
+\end{equation}
+下表总结了$A_{\mu a}^{\Delta,\pm}$及其 shadow 为 pure gauge\sn{pure gauge就是说可以从$A=0$通过规范变换变过来，所以场强张量为0，$A$可以写为$\frac{i}{g}U\partial_\mu U^\dagger$的形式}的条件：
+\begin{center}
+	\begin{tabular}[H]{|c|c|c|}
+		\hline & $d=2$ & $d \neq 2$ \\
+		\hline$A_{\mu a}^{\Delta, \pm}$ & & $\Delta=1$ \\
+		& $\Delta=1$ & \\
+		$\widetilde{A_{\mu a}^{d-\Delta, \pm}}$& & $\times$ \\
+		\hline
+	\end{tabular}
+\end{center}
+回顾一些前面给的平面波基底是在Lorenz规范下给的，不一定满足radial规范，所以$A$不能写成平面波基底的积分变换形式，但是：
+\begin{equation}
+	\boxed{
+	\varphi_{\mu a}^{\Delta,\pm}(X^{\mu};\vec{w})=\int_0^\infty d\omega\omega^{\Delta-1}\left(\partial_aq_\mu e^{\pm i\omega q\cdot X-\epsilon\omega}\right)=(\mp i)^\Delta\Gamma(\Delta)\frac{\partial_aq_\mu}{(-q\cdot X\mp i\epsilon)^\Delta}
+	}
+\end{equation}
+和$A_{\mu a}^{\Delta,\pm}$之间只差一个规范变换\sn{$\frac{\partial}{\partial X^\mu}\left(\frac{\partial_aq\cdot X}{(-q\cdot X\mp i\epsilon)^\Delta}\right)$}，那么在计算散射振幅这种与规范选取无关的物理量的时候，用两组基底都能得到同样的结果，但是注意用$\varphi_{\mu a}^{\Delta,\pm}$做基底的时候就没有协变的条件了，但是好处在两基底振幅之间是Mellin变换的形式。在下面的内积定义下：
+\begin{equation}
+	(A_{\mu},A'_{\mu'})=-i\int _\Sigma d^{d+1}X^i\left[A^{\rho}F'^*_{0\rho}-A'^{\rho*}F_{0\rho}\right]
+\end{equation}
+当选取$\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成完备基底，其shadow亦然。
+
+这组基底虽说是Phonton的，但实际上非阿贝尔情形也完全适用，因为每个色指标的场满足相同的方程，相同的协变条件，所以上面的推导完全不变，这是很容易接受的，因为平面波基底对于phonton和gluon都是一样通用的。
+
+现在来看引力子的情况，首先在Lorenz\sn{$\partial^{\mu}h_{\mu\nu}-\frac12\partial_{\nu}h^{\rho}{}_{\rho}=0,$}、无迹规范下平面波基底可以写为：
+\begin{equation}
+	g_{\mu\nu;a_1a_2}^{\pm}(X;\omega,q)=P_{a_1a_2}^{b_1b_2}\partial_{b_1}q_\mu\partial_{b_2}q_\nu e^{\pm i\omega q\cdot X}
+\end{equation}
+这里：
+\begin{equation}
+	P_{a_1a_2}^{b_1b_2}\equiv\delta_{(a_1}^{b_1}\delta_{a_2)}^{b_2}-\frac{1}{d}\delta_{a_1a_2}\delta^{b_1b_2}
+\end{equation}
+\begin{definition}[Graviton, $d\geq 2$]
+	~
+	\begin{itemize}
+		\item 指标约束：
+		\begin{equation}
+			\begin{array}{l}h_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}=h_{\mu_2\mu_1;a_1a_2}^{\Delta,\pm},\\h_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}=h_{\mu_1\mu_2;a_2a_1}^{\Delta,\pm},\quad\delta^{a_1a_2}h_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}=0\end{array}
+		\end{equation}
+		第一个约束是几何上要求度规对称，第二个是要求$\mathbb{R}^d$指标无迹且对称。
+		\item 在壳：\footnote{满足的是Linearized Einstein方程}
+		\begin{equation}
+			\partial_\sigma\partial_\nu {h^\sigma}_{\mu;a_1a_2}+\partial_\sigma\partial_\mu {h^\sigma}_{\nu;a_1a_2}-\partial_\mu\partial_\nu {h^\sigma}_{\sigma;a_1a_2}-\partial^\rho\partial_\rho h_{\mu\nu;a_1a_2}=0
+		\end{equation}
+		\item 协变：
+		\begin{equation}
+			h_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}\left(\Lambda_{\nu}^{\rho}X^{\nu};\vec{w}'(\vec{w})\right)=\frac{\partial w^{b_1}}{\partial w'^{a_1}}\frac{\partial w^{b_2}}{\partial w'^{a_2}}\left|\frac{\partial\vec{w'}}{\partial\vec{w}}\right|^{-(\Delta-2)/d}\Lambda_{\mu_1}^{\sigma_1}\Lambda_{\mu_2}^{\sigma_2}h_{\sigma_1\sigma_2;b_1b_2}^{\Delta,\pm}(X^\rho;\vec{w})
+		\end{equation}
+	\end{itemize}
+\end{definition}
+利用$\mathbb{H}_{d+1}$上面的 Spin\mbox{-}2 bulk-to boundary 传播子：
+\begin{equation}\label{eq:27.55}
+	\boxed{
+		\begin{aligned}
+			h_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}(X;\vec{w})&=P_{a_1a_2}^{b_1b_2}\frac{\left[(-q\cdot X)\partial_{b_1}q_{\mu_1}+(\partial_{b_1}q\cdot X)q_{\mu_1}\right]\left[(-q\cdot X)\partial_{b_2}q_{\mu_2}+(\partial_{b_2}q\cdot X)q_{\mu_2}\right]}{(-q\cdot X)^{\Delta+2}}\\
+			&=P_{a_{1}a_{2}}^{b_{1}b_{2}}\frac{1}{(-q\cdot X\mp i\epsilon)^{\Delta-2}}\partial_{b_{1}}\partial_{\mu_{1}}\log(-q\cdot X\mp i\epsilon)\partial_{b_{2}}\partial_{\mu_{2}}\log(-q\cdot X\mp i\epsilon)
+		\end{aligned}
+		}
+\end{equation}
+其shadow：
+\begin{equation}
+	\widetilde {h_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}}(X;\vec{w})=(-X^2)^{\frac{d}{2}-\Delta}h_{\mu_1\mu_2;a_1a_2}^{d-\Delta,\pm}(X;\vec{w})
+\end{equation}
+前面实际上选取了规范：
+\begin{equation}
+	\eta^{\mu_1\mu_2}h_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}=0,\quad\partial^{\mu}h_{\mu\mu_2;a_1a_2}^{\Delta,\pm}=0,\quad X^{\mu}h_{\mu\mu_2;a_1a_2}^{\Delta,\pm}=0
+\end{equation}
+有Pure gauge条件：\sn{可以写为$\partial_{(\mu}\xi_{\nu)}$的形式}
+\begin{center}
+	\begin{tabular}[H]{|c|cc|c|}
+		\hline & \multicolumn{2}{c|}{$d=2$} & $d \geq 2$ \\
+		\hline$h_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}$ & &$\Delta=0$& $\Delta=0,1$ \\
+		& $\Delta=1$ & & \\
+		$\widetilde{h_{\mu_1\mu_2;a_1a_2}^{d-\Delta,\pm}}$& &$\Delta=2$ & $\times$ \\
+		\hline
+	\end{tabular}
+\end{center}
+同样，前面的平面波基底不满足radial规范，但利用Mellin变换后得到的：
+\begin{equation}
+	\boxed{
+	\begin{aligned}
+		\varphi_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}(X^\mu;\vec{w})&=\int_0^\infty d\omega\omega^{\Delta-1}g_{\mu_1\mu_2;a_1a_2}^{\Delta,\pm}(X^\mu;\omega,q^\mu)\\&=(\mp i)^\Delta\Gamma(\Delta)P_{a_1a_2}^{b_1b_2}\frac{\partial_{b_1}q_{\mu_1}\partial_{b_2}q_{\mu_2}}{(-q\cdot X\mp i\epsilon)^\Delta}
+	\end{aligned}
+}
+\end{equation}
+与\ref{eq:27.55}只差一个规范变换\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		Because:
+		\[\frac{\partial_bq_{(\mu_1}q_{\mu_2)}}{(-q\cdot X)^\Delta}=\frac{\partial_{(\mu_1}}{\Delta-1}\left(\frac{\partial_bq_{\mu_2)}}{(-q\cdot X)^{\Delta-1}}\right)\]
+		\[\frac{q_{\mu_1}q_{\mu_2}}{(-q\cdot X)^\Delta}=\frac{\partial_{(\mu_1}}{\Delta-1}\left(\frac{q_{\mu_2)}}{(-q\cdot X)^{\Delta-1}}\right)\]
+	\end{tabularx}
+\end{margintable}。在下面的内积意义下：
+\begin{equation}
+	\begin{aligned}
+		(h_{\mu\nu},h_{\mu^{\prime}\nu^{\prime}}^{\prime})& =-i\int d^{d+1}X^{i}\Big[h^{\mu\nu}\partial_{0}{h^{\prime}}_{\mu\nu}^{*}-2h^{\mu\nu}\partial_{\mu}{h^{\prime}}_{0\nu}^{*}+h\partial^{\mu}{h^{\prime}}_{0\mu}^{*}-h\partial_{0}{h^{\prime}}^{*}+h_{0\mu}{\partial^{\mu}{h^{\prime}}^{*}}  \\
+		&-(h\leftrightarrow{h^{\prime}}^{*})\Big]
+	\end{aligned}
+\end{equation}
+$\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成完备基底，其shadow亦然。
+\begin{remark}
+	$SO(1,d+1)$群的无限维不可约幺正表示由共形维数$\Delta\in\mathbb{C}$和$SO(d)$的表示去标记(或者说取决于对应的$SO(d)$是哪个自旋表示)。前面找的基底就是在找表示，$\Delta$和$J$之间是有约束的，具体来说有下面几个Series：
+	\begin{itemize}
+		\item Principal Series $\mathcal{P}$: $\forall J\in\mathbb{N},\quad \Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}$
+		\item Complementary Series $\mathcal{C}$: $\Delta=\frac{d}{2}+c$，其中$J=0$时$0<|c|\leq\frac{d}{2}$，$J\geq 1$时$0<|c|\leq\frac{d}{2}-1$
+		\item Discrete Series $\mathcal{D}$: 对于奇数维数$d$，任意$J$，$\Delta$可取半整数或者整数
+	\end{itemize}
+	表示$[\Delta,J]$的shadow就是表示$[d-\Delta,J]$，这两个表示是等价表示。
+\end{remark}
+\newpage
 \subsection{Restrict to Mink$_{4}$}
-\subsection{Example: 2 massless and 1 massive scalars at tree\mbox{–}level}
+根据前面的一系列一般性讨论，回到Mink$_{4}$情况很简单，这里只是用文献中比较常用的记号重新写一遍。\sn{\cite{Donnay:2020guq}$\S 2$基本上是很好的总结}
+
+标量场：
+\begin{equation}
+	\phi_{\Delta,m}\left(\Lambda^{\mu}{}_{\nu}X^{\nu};\frac{aw+b}{cw+d},\frac{\bar{a}\bar{w}+\bar{b}}{\bar{c}\bar{w}+\bar{d}}\right)=|cw+d|^{2\Delta}\phi_{\Delta,m}(X^{\mu};w,\bar{w})
+\end{equation}
+
+无质量规范玻色子：
+\begin{equation}
+	A_{\mu;a}^{\Delta,\pm}\left({\Lambda^{\rho}}_{\nu}X^{\nu};\frac{aw+b}{cw+d},\frac{\bar{a}\bar{w}+\bar{b}}{\bar{c}\bar{w}+\bar{d}}\right)=(cw+d)^{2h}(\bar{c}\bar{w}+\bar{d})^{2\bar{h}}{\Lambda_{\mu}}^{\sigma}A_{\sigma;a}^{\Delta,\pm}(X^{\rho};w,\bar{w})
+\end{equation}
+无质量规范玻色子只有两种螺旋度选取，对应这里$a=w,\bar w$，分别有$J=+1，-1$。
+
+引力子：
+\begin{equation}
+	h_{\mu\nu;a}^{\Delta,\pm}\left(\Lambda^{\mu}{}_{\nu}X^{\nu};\frac{aw+b}{cw+d},\frac{\bar{a}\bar{w}+\bar{b}}{\bar{c}\bar{w}+\bar{d}}\right)=(cw+d)^{\Delta+J}(\bar{c}\bar{w}+\bar{d})^{\Delta-J}{\Lambda_{\mu}}^{\rho}{\Lambda_{\nu}}^{\sigma}h_{\rho\sigma,a}^{\Delta,\pm}(X^{\mu};w,\bar{w})
+\end{equation}
+同样的引力子也只有两种螺旋度选取，对应$a=ww,\bar w\bar w$，分别对应$J=+2,-2$。
+不难看出这些情况共形权$(h,\bar h)=\frac12(\Delta+J,\Delta-J)$，$h-\bar h$确实就对应自旋。
+
+\subsection{Conformally Soft phonton \& Graviton}
+\subsection{Massive Bosons}
+\subsection{Fermions}
+\subsection{Examples}

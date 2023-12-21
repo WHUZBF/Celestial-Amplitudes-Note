@@ -51,8 +51,10 @@
 \contentsline {subsection}{\numberline {27.1}Massive Scalar}{50}{subsection.27.1}%
 \contentsline {subsection}{\numberline {27.2}Massless Scalar}{54}{subsection.27.2}%
 \contentsline {subsection}{\numberline {27.3}Phonton \& Graviton}{55}{subsection.27.3}%
-\contentsline {subsection}{\numberline {27.4}Fermions}{55}{subsection.27.4}%
-\contentsline {subsection}{\numberline {27.5}Restrict to Mink$_{4}$}{55}{subsection.27.5}%
-\contentsline {subsection}{\numberline {27.6}Example: 2 massless and 1 massive scalars at tree\mbox {–}level}{55}{subsection.27.6}%
-\contentsline {part}{第八部分\hspace {1em}Appendix: \\Geometric Approaches}{56}{part.8}%
-\contentsline {part}{参考文献}{57}{part.8}%
+\contentsline {subsection}{\numberline {27.4}Restrict to Mink$_{4}$}{59}{subsection.27.4}%
+\contentsline {subsection}{\numberline {27.5}Conformally Soft phonton \& Graviton}{59}{subsection.27.5}%
+\contentsline {subsection}{\numberline {27.6}Massive Bosons}{59}{subsection.27.6}%
+\contentsline {subsection}{\numberline {27.7}Fermions}{59}{subsection.27.7}%
+\contentsline {subsection}{\numberline {27.8}Examples}{59}{subsection.27.8}%
+\contentsline {part}{第八部分\hspace {1em}Appendix: \\Geometric Approaches}{60}{part.8}%
+\contentsline {part}{参考文献}{61}{part.8}%

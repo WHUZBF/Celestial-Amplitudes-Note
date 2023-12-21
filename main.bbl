@@ -435,6 +435,10 @@ C.~Cheung, A.~de~la Fuente and R.~Sundrum, \emph{{4D scattering amplitudes and
   (2017) 112} [\href{https://arxiv.org/abs/1609.00732}{{\ttfamily
   1609.00732}}].
 
+\bibitem{436861d5-35f6-36cf-9470-cb587eced490}
+P.A.M.~Dirac, \emph{Wave equations in conformal space}, {\emph{Annals of
+  Mathematics} {\bfseries 37} (1936) 429}.
+
 \bibitem{Pasterski:2017kqt}
 S.~Pasterski and S.-H.~Shao, \emph{{Conformal basis for flat space
   amplitudes}}, \href{https://doi.org/10.1103/PhysRevD.96.065022}{\emph{Phys.
@@ -495,6 +499,18 @@ M.S.~Costa, V.~Gon\c{c}alves and J.a.~Penedones, \emph{{Spinning AdS
   Propagators}}, \href{https://doi.org/10.1007/JHEP09(2014)064}{\emph{JHEP}
   {\bfseries 09} (2014) 064} [\href{https://arxiv.org/abs/1404.5625}{{\ttfamily
   1404.5625}}].
+
+\bibitem{PhysRevD.76.084013}
+E.~Magliaro, C.~Perini and C.~Rovelli, \emph{Compatibility of radial, lorenz,
+  and harmonic gauges},
+  \href{https://doi.org/10.1103/PhysRevD.76.084013}{\emph{Phys. Rev. D}
+  {\bfseries 76} (2007) 084013}.
+
+\bibitem{Donnay:2020guq}
+L.~Donnay, S.~Pasterski and A.~Puhm, \emph{{Asymptotic Symmetries and Celestial
+  CFT}}, \href{https://doi.org/10.1007/JHEP09(2020)176}{\emph{JHEP} {\bfseries
+  09} (2020) 176} [\href{https://arxiv.org/abs/2005.08990}{{\ttfamily
+  2005.08990}}].
 
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},
