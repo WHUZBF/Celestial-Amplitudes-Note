@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  22 DEC 2023 00:49
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  23 DEC 2023 00:33
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1687,7 +1687,7 @@ ne 74.
  (./main.aux (./texfiles/part1.aux)
 (./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux)
 (./texfiles/part5.aux) (./texfiles/part6.aux) (./texfiles/part7.aux)
-(./texfiles/appendix.aux))
+(./texfiles/appendixA.aux))
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
@@ -2008,7 +2008,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 warning  (file figs/cover2.pdf) (pdf inclusion): PDF inclusion: found PDF versio
 n '1.6', but at most version '1.5' allowed
-<figs/cover2.pdf, id=249, 294.25534pt x 154.93384pt>
+<figs/cover2.pdf, id=248, 294.25534pt x 154.93384pt>
 File: figs/cover2.pdf Graphic file (type pdf)
 <use figs/cover2.pdf>
 Package luatex.def Info: figs/cover2.pdf  used on input line 85.
@@ -2016,7 +2016,7 @@ Package luatex.def Info: figs/cover2.pdf  used on input line 85.
 
 warning  (file figs/cover.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/cover.pdf, id=250, 264.08864pt x 274.22751pt>
+<figs/cover.pdf, id=249, 264.08864pt x 274.22751pt>
 File: figs/cover.pdf Graphic file (type pdf)
 <use figs/cover.pdf>
 Package luatex.def Info: figs/cover.pdf  used on input line 85.
@@ -3053,7 +3053,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (file figs/fig1.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig1.pdf, id=988, 499.44893pt x 234.68678pt>
+<figs/fig1.pdf, id=987, 499.44893pt x 234.68678pt>
 File: figs/fig1.pdf Graphic file (type pdf)
 <use figs/fig1.pdf>
 Package luatex.def Info: figs/fig1.pdf  used on input line 256.
@@ -3067,7 +3067,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig2.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig2.pdf, id=1074, 226.7431pt x 231.40654pt>
+<figs/fig2.pdf, id=1073, 226.7431pt x 231.40654pt>
 File: figs/fig2.pdf Graphic file (type pdf)
 <use figs/fig2.pdf>
 Package luatex.def Info: figs/fig2.pdf  used on input line 277.
@@ -3130,7 +3130,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'theorem.1'
 
 warning  (file figs/fig5.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig5.pdf, id=1276, 134.64703pt x 129.40044pt>
+<figs/fig5.pdf, id=1277, 134.64703pt x 129.40044pt>
 File: figs/fig5.pdf Graphic file (type pdf)
 <use figs/fig5.pdf>
 Package luatex.def Info: figs/fig5.pdf  used on input line 629.
@@ -3184,7 +3184,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 [35]
 warning  (file figs/fig3.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig3.pdf, id=1510, 304.26674pt x 122.40631pt>
+<figs/fig3.pdf, id=1513, 304.26674pt x 122.40631pt>
 File: figs/fig3.pdf Graphic file (type pdf)
 <use figs/fig3.pdf>
 Package luatex.def Info: figs/fig3.pdf  used on input line 104.
@@ -3195,7 +3195,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig4.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig4.pdf, id=1692, 359.05844pt x 211.58849pt>
+<figs/fig4.pdf, id=1695, 359.05844pt x 211.58849pt>
 File: figs/fig4.pdf Graphic file (type pdf)
 <use figs/fig4.pdf>
 Package luatex.def Info: figs/fig4.pdf  used on input line 151.
@@ -3428,7 +3428,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 
 warning  (file figs/fig6.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.7', but at most version '1.5' allowed
-<figs/fig6.pdf, id=2153, 201.91736pt x 208.92554pt>
+<figs/fig6.pdf, id=2155, 201.91736pt x 208.92554pt>
 File: figs/fig6.pdf Graphic file (type pdf)
 <use figs/fig6.pdf>
 Package luatex.def Info: figs/fig6.pdf  used on input line 46.
@@ -3548,17 +3548,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 7'
 ) [59]
-\openout2 = texfiles/appendix.aux
- (./texfiles/appendix.tex
+\openout2 = texfiles/appendixA.aux
+ (./texfiles/appendixA.tex
 Package marginnote Info: Margin note 66.1 is on absolute page 66 on input line 
-1.
-Package marginnote Info: right page because not two side mode on input line 1.
-Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
+10.
+Package marginnote Info: right page because not two side mode on input line 10.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 1.
-
+Package marginnote Info: xpos seems to be 67.57281pt on input line 10.
 ) [60
 
 
@@ -3570,10 +3566,10 @@ luaotfload | aux : font no 255 (nil) does not define feature vrt2 for script dfl
 t with language dflt [61
 
 
-] [62] [63]) [64] (./main.aux (./texfiles/part1.aux)
-(./texfiles/part2.aux) (./texfiles/part3.aux) (./texfiles/part4.aux)
-(./texfiles/part5.aux) (./texfiles/part6.aux) (./texfiles/part7.aux)
-(./texfiles/appendix.aux))
+] [62] [63]) [64]
+(./main.aux (./texfiles/part1.aux) (./texfiles/part2.aux) (./texfiles/part3.aux
+) (./texfiles/part4.aux) (./texfiles/part5.aux) (./texfiles/part6.aux)
+(./texfiles/part7.aux) (./texfiles/appendixA.aux))
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3581,20 +3577,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C42798B9E87634CB98E50776A46E08AA;11285.
+(rerunfilecheck)             Checksum: 0B8D2E4B41A9ADF8904985DE15135976;11246.
 )
 
 Here is how much of LuaTeX's memory you used:
- 46181 strings out of 478152
+ 46180 strings out of 478152
  596098,1648299 words of node,token memory allocated
- 246123 words of node memory still in use:
+ 246642 words of node memory still in use:
    346 hlist, 84 vlist, 324 rule, 3 disc, 30 local_par, 96 math, 573 glue, 606 k
-ern, 108 penalty, 9 sub_mlist, 764 glyph, 84604 attribute, 8219 glue_spec, 4456 
-attribute_list, 2 write, 1504 user_defined, 9 pdf_start_link, 9 pdf_end_link, 1 
+ern, 108 penalty, 9 sub_mlist, 764 glyph, 84780 attribute, 8242 glue_spec, 4466 
+attribute_list, 2 write, 1512 user_defined, 9 pdf_start_link, 9 pdf_end_link, 1 
 pdf_dest, 37 pdf_action, 20 pdf_colorstack nodes
-   avail lists: 1:26,2:113936,3:2420,4:2643,5:371,6:81,7:7202,8:125,9:2639,10:22
+   avail lists: 1:24,2:113750,3:2420,4:2635,5:371,6:81,7:7202,8:125,9:2639,10:22
 ,11:417,12:1
- 63625 multiletter control sequences out of 65536+600000
+ 63623 multiletter control sequences out of 65536+600000
  255 fonts using 224292071 bytes
  116i,19n,141p,1233b,1678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
@@ -3644,29 +3640,30 @@ exlive/2021/texmf-dist/fonts/type1/public/lm/lmmi7.pfb><d:/LaTeX/texlive/2021/te
 xmf-dist/fonts/type1/public/lm/lmmi8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts
 /type1/public/lm/lmmi9.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/
 lm/lmr10.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb><
-d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr5.pfb><d:/LaTeX/texliv
-e/2021/texmf-dist/fonts/type1/public/lm/lmr6.pfb><d:/LaTeX/texlive/2021/texmf-di
-st/fonts/type1/public/lm/lmr7.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/
-public/lm/lmr8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr9.
-pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri7.pfb><d:/LaTeX/
-texlive/2021/texmf-dist/fonts/type1/public/lm/lmri8.pfb><d:/LaTeX/texlive/2021/t
-exmf-dist/fonts/type1/public/lm/lmri9.pfb><d:/LaTeX/texlive/2021/texmf-dist/font
-s/type1/public/lm/lmss8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public
-/lm/lmssbx10.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.
-pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy5.pfb><d:/LaTeX/
-texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><d:/LaTeX/texlive/2021/t
-exmf-dist/fonts/type1/public/lm/lmsy7.pfb><d:/LaTeX/texlive/2021/texmf-dist/font
-s/type1/public/lm/lmsy8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public
-/lm/lmsy9.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
-><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt9.pfb><d:/LaTeX/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LaTeX/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LaTeX/t
-exlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><d:/LaTeX/t
-exlive/2021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (68 pages, 2281566 bytes).
+d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr17.pfb><d:/LaTeX/texli
+ve/2021/texmf-dist/fonts/type1/public/lm/lmr5.pfb><d:/LaTeX/texlive/2021/texmf-d
+ist/fonts/type1/public/lm/lmr6.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1
+/public/lm/lmr7.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8
+.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr9.pfb><d:/LaTeX/
+texlive/2021/texmf-dist/fonts/type1/public/lm/lmri7.pfb><d:/LaTeX/texlive/2021/t
+exmf-dist/fonts/type1/public/lm/lmri8.pfb><d:/LaTeX/texlive/2021/texmf-dist/font
+s/type1/public/lm/lmri9.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public
+/lm/lmss8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmssbx10.p
+fb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/LaTeX/
+texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy5.pfb><d:/LaTeX/texlive/2021/t
+exmf-dist/fonts/type1/public/lm/lmsy6.pfb><d:/LaTeX/texlive/2021/texmf-dist/font
+s/type1/public/lm/lmsy7.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public
+/lm/lmsy8.pfb><d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy9.pfb>
+<d:/LaTeX/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><d:/LaTeX/tex
+live/2021/texmf-dist/fonts/type1/public/lm/lmtt9.pfb><d:/LaTeX/texlive/2021/texm
+f-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LaTeX/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LaTeX/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><d:/LaTeX/texlive/2021/te
+xmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (68 pages, 2298019 bytes).
 
-PDF statistics: 2683 PDF objects out of 2984 (max. 8388607)
- 1852 compressed objects within 19 object streams
- 671 named destinations out of 1000 (max. 131072)
+PDF statistics: 2689 PDF objects out of 2984 (max. 8388607)
+ 1857 compressed objects within 19 object streams
+ 672 named destinations out of 1000 (max. 131072)
  506 words of extra memory for PDF output out of 10000 (max. 100000000)
 

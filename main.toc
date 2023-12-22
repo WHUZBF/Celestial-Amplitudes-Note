@@ -56,5 +56,5 @@
 \contentsline {subsection}{\numberline {27.6}Massive Bosons}{59}{subsection.27.6}%
 \contentsline {subsection}{\numberline {27.7}Fermions}{59}{subsection.27.7}%
 \contentsline {subsection}{\numberline {27.8}Examples}{59}{subsection.27.8}%
-\contentsline {part}{第八部分\hspace {1em}Appendix: \\Geometric Approaches}{60}{part.8}%
-\contentsline {part}{参考文献}{61}{part.8}%
+\contentsline {part}{Appendix A: Surface Charge}{60}{subsection.27.8}%
+\contentsline {part}{参考文献}{61}{subsection.27.8}%

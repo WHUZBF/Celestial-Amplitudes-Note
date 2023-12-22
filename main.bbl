@@ -168,6 +168,10 @@ P.~Di~Francesco, P.~Mathieu and D.~Senechal, \emph{{Conformal Field Theory}},
 A.~Bilal, \emph{{Lectures on Anomalies}},
   \href{https://arxiv.org/abs/0802.0634}{{\ttfamily 0802.0634}}.
 
+\bibitem{srednicki}
+M.~Srednicki, \emph{{Quantum field theory}}, Cambridge University Press (1,
+  2007).
+
 \bibitem{Hawking:1973uf}
 S.W.~Hawking and G.F.R.~Ellis, \emph{{The Large Scale Structure of
   Space-Time}}, Cambridge Monographs on Mathematical Physics, Cambridge
@@ -241,10 +245,6 @@ T.~McLoughlin, A.~Puhm and A.-M.~Raclariu, \emph{{The SAGEX review on
   \href{https://doi.org/10.1088/1751-8121/ac9a40}{\emph{J. Phys. A} {\bfseries
   55} (2022) 443012} [\href{https://arxiv.org/abs/2203.13022}{{\ttfamily
   2203.13022}}].
-
-\bibitem{srednicki}
-M.~Srednicki, \emph{{Quantum field theory}}, Cambridge University Press (1,
-  2007).
 
 \bibitem{Berends:1987me}
 F.A.~Berends and W.T.~Giele, \emph{{Recursive Calculations for Processes with n
