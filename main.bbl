@@ -1,5 +1,5 @@
 
-\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{10}
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{100}
 
 \bibitem{Weinberg}
 S.~Weinberg, \emph{{The Quantum theory of fields. Vol. 1: Foundations}},
@@ -511,6 +511,43 @@ L.~Donnay, S.~Pasterski and A.~Puhm, \emph{{Asymptotic Symmetries and Celestial
   CFT}}, \href{https://doi.org/10.1007/JHEP09(2020)176}{\emph{JHEP} {\bfseries
   09} (2020) 176} [\href{https://arxiv.org/abs/2005.08990}{{\ttfamily
   2005.08990}}].
+
+\bibitem{Law:2020tsg}
+Y.T.A.~Law and M.~Zlotnikov, \emph{{Massive Spinning Bosons on the Celestial
+  Sphere}}, \href{https://doi.org/10.1007/JHEP06(2020)079}{\emph{JHEP}
+  {\bfseries 06} (2020) 079}
+  [\href{https://arxiv.org/abs/2004.04309}{{\ttfamily 2004.04309}}].
+
+\bibitem{Costa:2011mg}
+M.S.~Costa, J.~Penedones, D.~Poland and S.~Rychkov, \emph{{Spinning Conformal
+  Correlators}}, \href{https://doi.org/10.1007/JHEP11(2011)071}{\emph{JHEP}
+  {\bfseries 11} (2011) 071} [\href{https://arxiv.org/abs/1107.3554}{{\ttfamily
+  1107.3554}}].
+
+\bibitem{Polchinski:1998rr}
+J.~Polchinski, \emph{{String theory. Vol. 2: Superstring theory and beyond}},
+  Cambridge Monographs on Mathematical Physics, Cambridge University Press (12,
+  2007),
+  \href{https://doi.org/10.1017/CBO9780511618123}{10.1017/CBO9780511618123}.
+
+\bibitem{Weinberg:2000cr}
+S.~Weinberg, \emph{{The quantum theory of fields. Vol. 3: Supersymmetry}},
+  Cambridge University Press (6, 2013).
+
+\bibitem{VanProeyen:1999ni}
+A.~Van~Proeyen, \emph{{Tools for supersymmetry}}, {\emph{Ann. U. Craiova Phys.}
+  {\bfseries 9} (1999) 1}
+  [\href{https://arxiv.org/abs/hep-th/9910030}{{\ttfamily hep-th/9910030}}].
+
+\bibitem{Kennedy:1981kp}
+A.D.~Kennedy, \emph{{Clifford Algebras in Two $\omega$ Dimensions}},
+  \href{https://doi.org/10.1063/1.525069}{\emph{J. Math. Phys.} {\bfseries 22}
+  (1981) 1330}.
+
+\bibitem{vanHolten:1982mx}
+J.W.~van Holten and A.~Van~Proeyen, \emph{{N=1 Supersymmetry Algebras in D=2,
+  D=3, D=4 MOD-8}}, \href{https://doi.org/10.1088/0305-4470/15/12/028}{\emph{J.
+  Phys. A} {\bfseries 15} (1982) 3763}.
 
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},

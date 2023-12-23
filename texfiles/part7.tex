@@ -195,7 +195,7 @@ $\mathcal{A}\equiv\bra{\textbf{out}}\mathcal{S}\ket{\text{in}}$，那么在confo
 \begin{equation}
 	\boxed{\widetilde{\mathcal{B}}_{m=0}^{\pm}=\left\{\begin{array}{c|c}\widetilde{\varphi_{\frac{d}{2}+i\nu}^{\pm}}(X^{\mu};\vec{w})&\nu\in\mathbb{R},\vec{w}\in\mathbb{R}^{d}\end{array}\right\}}
 \end{equation}
-\subsection{Phonton \& Graviton}
+\subsection{photon \& Graviton}
 这两个除了自旋不为0，还有一个比较麻烦的点是需要取定规范。由于自旋不为0，所以基底除了在壳动量、初末态的$\pm$，以及极化矢量带来的$SO(1,d+1)$矢量指标，还需要一个指标用来标记自旋，这里考虑的是无质量玻色子，所以这个指标标记的是粒子的螺旋度，体现为CFT$_d$上的一个$\mathbb{R}^d$张量指标，$a=1,2,\ldots,d$。令在壳动量$k=\omega q$，在Loren规范下可以把平面波基底写为下面的形式：\sn{\[\partial_aq^\mu\equiv\frac{\partial}{\partial w^a}q^\mu(\vec{w})=2(w^a,\delta^{ba},-w^a)\]}：
 \begin{equation}
 	\partial_aq_\mu e^{\pm i\omega q\cdot X}
@@ -283,7 +283,7 @@ uplift之后，$G^\Delta_{\mu;\nu}$就是一个标量CFT$_d$，而且是$\mathbb
 \end{equation}
 当选取$\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成完备基底，其shadow亦然。
 
-这组基底虽说是Phonton的，但实际上非阿贝尔情形也完全适用，因为每个色指标的场满足相同的方程，相同的协变条件，所以上面的推导完全不变，这是很容易接受的，因为平面波基底对于phonton和gluon都是一样通用的。
+这组基底虽说是photon的，但实际上非阿贝尔情形也完全适用，因为每个色指标的场满足相同的方程，相同的协变条件，所以上面的推导完全不变，这是很容易接受的，因为平面波基底对于photon和gluon都是一样通用的。
 
 现在来看引力子的情况，首先在Lorenz\sn{$\partial^{\mu}h_{\mu\nu}-\frac12\partial_{\nu}h^{\rho}{}_{\rho}=0,$}、无迹规范下平面波基底可以写为：
 \begin{equation}
@@ -389,9 +389,230 @@ $\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成完备基底，其sh
 	h_{\mu\nu;a}^{\Delta,\pm}\left(\Lambda^{\mu}{}_{\nu}X^{\nu};\frac{aw+b}{cw+d},\frac{\bar{a}\bar{w}+\bar{b}}{\bar{c}\bar{w}+\bar{d}}\right)=(cw+d)^{\Delta+J}(\bar{c}\bar{w}+\bar{d})^{\Delta-J}{\Lambda_{\mu}}^{\rho}{\Lambda_{\nu}}^{\sigma}h_{\rho\sigma,a}^{\Delta,\pm}(X^{\mu};w,\bar{w})
 \end{equation}
 同样的引力子也只有两种螺旋度选取，对应$a=ww,\bar w\bar w$，分别对应$J=+2,-2$。
-不难看出这些情况共形权$(h,\bar h)=\frac12(\Delta+J,\Delta-J)$，$h-\bar h$确实就对应自旋。
+不难看出这些情况共形权$(h,\bar h)=\frac12(\Delta+J,\Delta-J)$，$h-\bar h$确实就对应自旋。后面考虑有质量玻色子这里的$J$的取值范围就会从$-s\sim s$。
 
-\subsection{Conformally Soft phonton \& Graviton}
+\subsection{Conformally Soft photon \& Graviton}
 \subsection{Massive Bosons}
+文献\cite{Law:2020tsg}率先给出了有质量玻色子的分析。而且利用这一基底计算了一些振幅。为了总结结论，首先要介绍\cite{Costa:2011mg}中的Polynomial Encoding。
+\subsubsection{Polynomial encoding of symmetric traceless transverse tensors}
+对于$\mathbb{H}_3$上定义的任意一个spin\mbox{-s}的对称无迹transverse张量$H_{\mu_1\cdot\cdot\cdot\mu_s}(\hat{p})$，可以在下面的辅助矢量定义的子流形上：
+\[\hat{p}^2+1=Y^2=\hat{p}\cdot Y=0\]
+将张量编码进在此子流形上定义的多项式上：\sn{后面对此多项式的一切操作都要记得是在这个子流形上完成的}
+\begin{equation}
+	H(\hat{p},Y)=H_{\mu_1\cdot\cdot\cdot\mu_s}(\hat{p})Y^{\mu_1}\cdotp\cdotp\cdotp Y^{\mu_s}
+\end{equation}
+利用下面定义的微分算符：\sn{\[K_{\mu}K_{\nu}=K_{\nu}K_{\mu},\hat{p}^{\mu}K_{\mu}=0,K_{\mu}K^{\mu}=0\]}
+\begin{equation}
+	\begin{aligned}
+		K_{\mu}=& \begin{aligned}\frac{1}{2}\left(\frac{\partial}{\partial Y^{\mu}}+\hat{p}_{\mu}\left(\hat{p}\cdot\frac{\partial}{\partial Y}\right)\right)+\left(Y\cdot\frac{\partial}{\partial Y}\right)\frac{\partial}{\partial Y^{\mu}}\end{aligned}  \\
+		&+\hat{p}_{\mu}\left(Y\cdot\frac{\partial}{\partial Y}\right)\left(\hat{p}\cdot\frac{\partial}{\partial Y}\right)-\frac{Y_{\mu}}{2}\left(\frac{\partial^{2}}{\partial Y\cdot\partial Y}+\left(\hat{p}\cdot\frac{\partial}{\partial Y}\right)\left(\hat{p}\cdot\frac{\partial}{\partial Y}\right)\right)
+	\end{aligned}
+\end{equation}
+可以将多项式还原成张量本身：\sn{有点像配分函数，这里$(\cdot)_s$是Pochhammer符号}
+\begin{equation}
+	H_{\mu_1\cdots\mu_s}(\hat{p})=\frac{1}{s!\left(\frac{1}{2}\right)_s}K_{\mu_1}\cdotp\cdotp\cdotp K_{\mu_s}H(\hat{p},Y)
+\end{equation}
+对$\hat p$的协变导数定义为：\sn{满足$Y\cdot\nabla_{\hat{p}}=Y\cdot\partial_{\hat{p}}$}
+\begin{equation}
+	\nabla_{\hat{p}^{\mu}}=\frac{\partial}{\partial\hat{p}^{\mu}}+\hat{p}_{\mu}\left(\hat{p}\cdot\frac{\partial}{\partial\hat{p}}\right)+Y_{\mu}\left(\hat{p}\cdot\frac{\partial}{\partial Y}\right)
+\end{equation}
+下面考虑光锥（正则部分）上面的spin\mbox{-}J的对称无迹transverse张量$F_{\mu_{1}\cdots\mu_{J}}(q)$，可以把它看作是天球上的spin\mbox{-}J 对称无迹张量$f_{a_{1}\cdots a_{J}}(w,\bar{w})$的uplift。对称无迹已经把$f$限制成只有两个不为$0$的分量了：\sn{In general $\tilde{f}_J\neq f_J^*$}
+\begin{equation}
+	f_J(w,\bar{w})=f_{w\cdots w}(w,\bar{w})\quad\mathrm{~and~}\quad\tilde{f}_J(w,\bar{w})=f_{\bar{w}\cdots\bar{w}}(w,\bar{w})
+\end{equation} 
+所以
+\begin{equation}\label{eq:27.68}
+	f_J(w,\bar{w})=\frac{\partial q^{\mu_1}}{\partial w}\cdotp\cdotp\cdotp\frac{\partial q^{\mu_J}}{\partial w}F_{\mu_1\cdotp\cdotp\cdotp\mu_J}(q)\quad\mathrm{~and~}\quad\tilde{f}_J(w,\bar{w})=\frac{\partial q^{\mu_1}}{\partial\bar{w}}\cdotp\cdotp\cdotp\frac{\partial q^{\mu_J}}{\partial\bar{w}}F_{\mu_1\cdotp\cdotp\cdotp\mu_J}(q)
+\end{equation}
+利用
+\begin{equation}
+	v^{\mu}\equiv-\frac{1}{2}\partial_{w}\partial_{\bar{w}}q^{\mu}=(-1/2,0,0,1/2)
+\end{equation}
+\begin{equation}
+	\eta^{\mu\nu}=\frac{1}{2}\left(\frac{\partial q^{\mu}}{\partial w}\frac{\partial q^{\nu}}{\partial\bar{w}}+\frac{\partial q^{\mu}}{\partial\bar{w}}\frac{\partial q^{\nu}}{\partial w}\right)+q^{\mu}v^{\nu}+v^{\mu}q^{\nu}
+\end{equation}
+计算$F^{\cdots\mu_i \cdots}$会出现$q^{\mu}\left(v^{\nu}F_{\cdots\nu\cdots}(q)\right)$，不如直接取定规范$v^{\mu_i}F_{\mu_1\cdot\cdot\cdot\mu_J}(q)=0$，这样由于$q_{\mu}\partial_{w}q^{\mu}=q_{\mu}\partial_{\bar{w}}q^{\mu}=0$，并不会对\ref{eq:27.68}产生任何影响。利用下面子流形上的辅助矢量$Z$：
+\begin{equation}
+	v^2=q^2=q\cdot v-1=Z^2=q\cdot Z=v\cdot Z=0.
+\end{equation}
+可以编码$F$为:
+\begin{equation}
+	F(q,Z)=F_{\mu_{1}\cdots\mu_{J}}(q)Z^{\mu_{1}}\cdotp\cdotp\cdotp Z^{\mu_{J}}=\mathcal{F}_{\mu_{1}\cdots\mu_{J}}(q)Z^{\mu_{1}}\cdotp\cdotp\cdotp Z^{\mu_{J}}=\mathcal{F}(q,Z)
+\end{equation}
+这里$\mathcal{F}$的意思是把$F$中$\propto q,\eta$这些与后面$Z$点乘为$0$的项丢掉后形成的新张量\sn{类似于做了一个规范变换，这样一来$\mathcal{F}$对称但不一定无迹}。而且计算表明把\ref{eq:27.68}中的$F$替换为$\mathcal{F}$没有任何影响。同样定义微分算子：\sn{$R_{\mu}R_{\nu}=R_{\nu}R_{\mu}, q^{\mu}R_{\mu}=0, v^{\mu}R_{\mu}=0, R_{\mu}R^{\mu}=0$}
+\begin{equation}
+	\begin{aligned}
+		R_{\mu}=& \frac{d-2}{2}\left(\frac{\partial}{\partial Z^{\mu}}-v_{\mu}\left(q\cdot\frac{\partial}{\partial Z}\right)-q_{\mu}\left(v\cdot\frac{\partial}{\partial Z}\right)\right)+\left(Z\cdot\frac{\partial}{\partial Z}\right)\frac{\partial}{\partial Z^{\mu}}  \\
+		&-q_{\mu}\left(Z\cdot\frac\partial{\partial Z}\right)\left(v\cdot\frac\partial{\partial Z}\right)-v_{\mu}\left(Z\cdot\frac\partial{\partial Z}\right)\left(q\cdot\frac\partial{\partial Z}\right) \\
+		&-\frac{Z_{\mu}}{2}\left(\frac{\partial^{2}}{\partial Z\cdot\partial Z}-2\left(v\cdot\frac{\partial}{\partial Z}\right)\left(q\cdot\frac{\partial}{\partial Z}\right)\right)
+	\end{aligned}
+\end{equation}
+$d$的意思是天球维数，所以意味着在计算的最后要取$d\to 2$极限。
+\begin{equation}
+	F_{\mu_{1}\cdots\mu_{J}}(q)=\frac{1}{J!\left(\frac{d-2}{2}\right)_{J}}R_{\mu_{1}}\cdots R_{\mu_{J}}F(q,Z)=\frac{1}{J!\left(\frac{d-2}{2}\right)_{J}}R_{\mu_{1}}\cdots R_{\mu_{J}}\mathcal{F}(q,Z)
+\end{equation}
+利用这一形式还可计算天球上两张量之间的缩并：\sn{$\mathcal{F}_1$理解为作用于后面的微分算符}
+\begin{equation}
+	\begin{aligned}
+		(f_1,f_2)_C&=g^{a_1b_1}\cdotp\cdotp\cdotp g^{a_Jb_J}f_{1a_1\cdotp\cdotp a_J}f_{2b_1\cdotp\cdotp\cdotp b_J}=\frac{f_{1J}\tilde{f}_{2J}+\tilde{f}_{1J}f_{2J}}{2^J}\\
+		&=F_{1}^{\mu_{1}\cdots\mu_{J}}F_{2\mu_{1}\cdots\mu_{J}}=\frac{1}{J!\left(\frac{d-2}{2}\right)_{J}}\mathcal{F}_{1}(q,R)\mathcal{F}_{2}(q,Z)\\
+		&=\frac{1}{J!\left(\frac{d-2}{2}\right)_{J}}\mathcal{F}_{1}(q,D_Z)\mathcal{F}_{2}(q,Z)
+	\end{aligned}
+\end{equation}
+其中
+\[D_{Z^{\mu}}=\left(\frac{d}{2}-1+Z\cdot\frac{\partial}{\partial Z}\right)\frac{\partial}{\partial Z^{\mu}}-\frac{1}{2}Z_{\mu}\frac{\partial^{2}}{\partial Z\cdot\partial Z}\]
+\subsubsection{Conformal basis of massive bosons}
+有质量玻色子平面波基底为：
+\begin{equation}
+	\phi_{\pm,m,b}^{\mu_1...\mu_s}(X)=\epsilon_b^{\mu_1...\mu_s}e^{\pm im\hat{p}^\nu X_\nu}
+\end{equation}
+这里$b$可以从$-s$取到$s$。Conformal basis可以一般的写为下面的形式：
+\begin{equation}\label{eq:27.77}
+	\phi_{\pm,\Delta,m,J}^{\mu_1\cdots\mu_s}(X;w,\bar{w})=\int_{0}^{\infty}\frac{dy}{y^3}\int dzd\bar{z}\sum_{b=-s}^{s}G_{Jb}^{(s)}(w,\bar{w};y,z,\bar{z})\epsilon_{b}^{\mu_1\cdots \mu_s}e^{\pm im\hat{p}^\nu X_\nu}
+\end{equation}
+$s\leq 2$的玻色子对应的$G$显式表达式为：
+\begin{equation}
+	G_{Ja}^{(0)}=(-q\cdot\hat{p})^{-\Delta}
+\end{equation}
+\begin{equation}
+	\left.G_{J_a}^{(1)}=(-q\cdot\hat{p})^{-\Delta-1}\left(\begin{array}{ccc}\frac{\sqrt{2}(w-z)^2}y&-2(w-z)&-\sqrt{2}y\\\sqrt{2}(w-z)&\frac{(w-z)(\bar{w}-\bar{z})}y-y&\sqrt{2}\left(\bar{w}-\bar{z}\right)\\\sqrt{2}y&2\left(\bar{w}-\bar{z}\right)&-\frac{\sqrt{2}(\bar{w}-\bar{z})^2}y\end{array}\right.\right)
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		&G_{Ja}^{(2)}=(-q\cdot\hat{p})^{-\Delta-2}\times\\
+		&\left(\begin{array}{ccccc}
+			\frac{2(w-z)^4}{y^2} & \frac{4 i(w-z)^3}{y} & 2 \sqrt{6}(w-z)^2 & 4 i y(w-z) & 2 y^2 \\
+			\frac{2(w-z)^3}{y} & i(w-z)^2\left(3-\frac{(w-z)(\bar{w}-\bar{z})}{y^2}\right) & \frac{\sqrt{6}(w-z)\left(y^2-(w-z)(\bar{w}-\bar{z})\right)}{y} & i\left(y^2-3(w-z)(\bar{w}-\bar{z})\right) & 2 y(\bar{z}-\bar{w}) \\
+			2(w-z)^2 & \frac{2 i(w-z)\left(y^2-(w-z)(\bar{w}-\bar{z})\right)}{y} & \frac{\sqrt{\frac{2}{3}}\left((w-z)(\bar{w}-\bar{z})\left((w-z)(\bar{w}-\bar{z})-4 y^2\right)+y^4\right)}{y^2} & \frac{2 i(\bar{z}-\bar{w})\left(y^2-(w-z)(\bar{w}-\bar{z})\right)}{y} & 2(\bar{z}-\bar{w})^2 \\
+			2 y(w-z) & i\left(y^2-3(w-z)(\bar{w}-\bar{z})\right) & \frac{\sqrt{6}(\bar{z}-\bar{w})\left(y^2-(w-z)(\bar{w}-\bar{z})\right)}{y} & i(\bar{z}-\bar{w})^2\left(3-\frac{(w-z)(\bar{w}-\bar{z})}{y^2}\right) & \frac{2(\bar{z}-\bar{w})^3}{y} \\
+			2 y^2 & 4 i y(\bar{z}-\bar{w}) & 2 \sqrt{6}(\bar{z}-\bar{w})^2 & \frac{4 i(\bar{z}-\bar{w})^3}{y} & \frac{2(\bar{z}-\bar{w})^4}{y^2}
+		\end{array}\right)
+	\end{aligned}
+\end{equation}
+对于更高自旋，可以利用encode之后的$G_{J,\Delta}^{(s)}(\hat{p},Y;w,\bar{w})$：\sn{$\theta$是Heviside阶跃函数\[\left.Dq^{\mu}=\left\{\begin{array}{l}\partial_{\bar{w}}q^{\mu}\text{ for }J>0\\\partial_{w}q^{\mu}\text{ for }J<0\end{array}\right.\right.\]}
+\begin{equation}
+	G_{J,\Delta}^{(s)}(\hat{p},Y;w,\bar{w})=(-1)^{|J|\theta(-J)}\frac{(Y\cdot q)^{s-|J|}((\hat{p}\cdot q)(Y\cdot Dq)-(\hat{p}\cdot Dq)(q\cdot Y))^{|J|}}{(-\hat{p}\cdot q)^{\Delta+s}}
+\end{equation}
+利用$K$导数可以提取$G$：
+\begin{equation}\label{eq:27.82}
+	\sum_bG_{Jb}^{(s)}\epsilon_b^{\mu_1...\mu_s}=\frac{1}{s!(\frac{1}{2})_s}K^{\mu_1}\ldots K^{\mu_s}G_{J,\Delta}^{(s)}(\hat{p},Y;w,\bar{w})
+\end{equation}
+encode之后的conformal basis可以很容易地写为：
+\begin{equation}
+	\phi_{J,\Delta}^{\pm,m,s}(X,Y;w,\bar{w})=\int_0^\infty\frac{dy}{y^3}\int dzd\bar{z}G_{J,\Delta}^{(s)}(\hat{p},Y;w,\bar{w})e^{\pm im\hat{p}^\nu X_\nu}
+\end{equation}
+利用\ref{eq:27.82}形式的$K$导数就可以提取出$\phi$了\sn{按理说对$\phi$进行encode应该使用$Z$，这里更应当看作是从\ref{eq:27.77}和\ref{eq:27.82}导出的定义}。可以证明$\boxed{\Delta=1+\mathrm{i}\mathbb{R}_{\geq 0}}$时构成正交完备归一基底。目前更高维以及其Shadow还未被计算过。
 \subsection{Fermions}
+首先介绍高维空间中旋量的概念，主要参考Polchinski\cite{Polchinski:1998rr}附录A，Weinberg\cite{Weinberg:2000cr}附录以及\cite{VanProeyen:1999ni}。另外，A.Zee\cite{A.Zee}使用Clifford代数详细地构造了SO(n)群的旋量表示。
+\subsubsection{Spinors in arbitrary dimensions}
+考虑$d=t+s$维时空中的旋量，其中$t$表示类时坐标个数，$s$表示类空坐标个数，也就是：
+\begin{equation}
+	\eta_{ab}=\operatorname{diag}(\underbrace{-,\cdots,-}_{t},\underbrace{+,\cdot,+}_{s})
+\end{equation}
+Clifford 代数是指满足：\sn{由于考虑一般维数，所以这里$a,b$指标从1开始}
+\begin{equation}
+	\{\Gamma_a,\Gamma_b\}=2\eta_{ab}
+\end{equation}
+的$d$个$\Gamma$构成的代数，如果我们找到了上面代数的表示，那么令：
+\begin{equation}
+	\mathscr{I}_{\mu\nu}\equiv\frac{1}{4\mathrm{i}}[\Gamma_{\mu},\Gamma_{\nu}]=-\mathscr{I}_{\nu\mu}
+\end{equation}
+显然$\mathscr{I}_{\mu\nu}$满足$\mathfrak{so}(t,s)$李代数：
+\begin{equation}
+	\text{i}[\mathscr{J}_{\mu\nu},\mathscr{J}_{\rho\sigma}]=\eta_{\nu\rho}\mathscr{J}_{\mu\sigma}-\eta_{\mu\rho}\mathscr{J}_{\nu\sigma}-\eta_{\sigma\mu}\mathscr{J}_{\rho\nu}+\eta_{\sigma\nu}\mathscr{J}_{\rho\mu}
+\end{equation}
+所以我们间接找到了$SO(t,s)$的表示，但通常来说是可约表示。对于Clifford的表示我们需要偶数维和奇数维分开来看。
+
+首先是比较简单的偶数维，如果$t=0$，利用三个泡利矩阵可以得到$2^{\frac{d}{2}}$维表示：\sn{根据$d$的具体大小选择省略号在何处截断。}
+\begin{equation}
+	\begin{aligned}
+		\Gamma_1& =\sigma_1\otimes\mathbbm{1}\otimes\mathbbm{1}\otimes\ldots   \\
+		\Gamma_{2}& =\sigma_2\otimes\mathbbm{1}\otimes\mathbbm{1}\otimes\ldots   \\
+		\Gamma_{3}& =\sigma_3\otimes\sigma_1\otimes\mathbbm{1}\otimes\ldots   \\
+		\Gamma_{4}& =\sigma_3\otimes\sigma_2\otimes\mathbbm{1}\otimes\ldots   \\
+		\Gamma_{5}& =\sigma_3\otimes\sigma_3\otimes\sigma_1\otimes\ldots   \\
+	\end{aligned}
+\end{equation}
+$t\neq 0$只需要把上面公式中前面$t$个$\Gamma$改成$\mathrm{i}\Gamma$即可。显然有：
+\begin{equation}
+	\Gamma_a^\dagger=(-1)^tA\Gamma_aA^{-1},\quad\quad A\equiv\Gamma_1\ldots\Gamma_t
+\end{equation}
+而且所有的$2^{\frac{d}{2}}\times 2^{\frac{d}{2}}$矩阵都可以用基底$\{\Gamma^{(n)}\}$进行展开：\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		$n=\{0,\ldots,d\}$\\
+		$\Gamma^{(0)}=\mathbbm{1}$
+	\end{tabularx}
+\end{margintable}
+\begin{equation}
+	\Gamma^{(n)}=\Gamma_{a_1...a_n}\equiv\Gamma_{[a_1}\Gamma_{a_2}\ldots\Gamma_{a_n]}
+\end{equation}
+最后一个矩阵$\Gamma^{(d)}$格外重要，一般归一化为：
+\begin{equation}
+	\Gamma_*=(-\mathrm{i})^{d/2+t}\Gamma_1\ldots\Gamma_d,\quad\Gamma_*\Gamma_*=1
+\end{equation}
+这个矩阵对于$d=1+3$的情况就是$\gamma_5$，这里由于定义的$\Gamma_*$与其它所有的$\Gamma_a$都反对易，所以实际上可以把它作为$d+1$维\sn{注意$d$是偶数，所以下一维度是奇数}的$\Gamma_{d+1}$，其它的$\Gamma_a$不变，这样我们就得到了$d+1$维的表示。所以奇数维度的表示需要通过比他第一维度的偶数维来构造，构造出来的是$2^{\lfloor\frac{d}{2}\rfloor}$维表示，同样可以去构造$\Gamma^{(n)}$那些。
+
+在任意维度都可以找到所谓电荷共轭算符$\mathcal{C}$，满足：
+\begin{equation}
+	\mathcal{C}^T=-\varepsilon\mathcal{C},\quad\Gamma_a^T=-\eta\mathcal{C}\Gamma_a\mathcal{C}^{-1}
+\end{equation}
+这里$\varepsilon=\pm1,\eta=\pm1$，但是具体怎么取与维数有关。
+\begin{equation}
+	\left(\mathcal{C}\Gamma^{(n)}\right)^T=-\epsilon(-1)^{n(n-1)/2}(-\eta)^n\mathcal{C}\Gamma^{(n)}
+\end{equation}
+下表给出了$\mathcal{C}\Gamma^{(n)}$对称性以及$\varepsilon,\eta$选取与维数之间的关系：\sn{$S$和$A$是在找对称/反对称的$\mathcal{C}\Gamma^{(n)}$对应的$n \mod 4$}
+\begin{equation*}
+	\begin{array}{|c|c|c|cc|}\hline\text{d (mod 8)}&\text{S}&\text{A}&\varepsilon&\eta\\\hline0&0,3&2,1&-1&+1\\&0,1&2,3&-1&-1\\\hline1&0,1&2,3&-1&-1\\\hline2&1,0&3,2&-1&-1\\&1,2&3,0&+1&+1\\\hline3&1,2&0,3&+1&+1\\\hline4&2,1&0,3&+1&+1\\&2,3&0,1&+1&-1\\\hline5&2,3&0,1&+1&-1\\\hline6&3,2&1,0&+1&-1\\&3,0&1,2&-1&+1\\\hline7&0,3&1,2&-1&+1\\\hline\end{array}
+\end{equation*}
+从上表可以看出奇数维只有一种可能的$\varepsilon,\eta$取值。
+
+前面讲的表示在任意维都存在，称为Dirac旋量表示，但是一般来说这个表示是可约表示，存在更小的旋量。比如对于\textbf{任意偶数维}，都可以用下面的方式约化为两个Weyl旋量：
+\begin{equation}
+	\lambda_L=\frac12\left(1+\Gamma_*\right)\lambda,\quad\lambda_R=\frac12\left(1-\Gamma_*\right)\lambda 
+\end{equation}
+这是根据“手性”来分，还可以根据“虚实”来分。注意到：
+\begin{equation}
+	\Gamma_{a}^{*}=-\eta(-)^{t}B\Gamma_{a}B^{-1},\quad B^{T}=\mathcal{C}A^{-1}
+\end{equation}
+如果旋量满足下面的reality条件，那我们就称为\textbf{Majorana旋量}：\sn{已经利用了Lorentz不变性}
+\begin{equation}
+	\lambda^*=\alpha B\lambda, \quad |\alpha|=1,\quad B^*B=\mathbbm{1}
+\end{equation}
+但是这一条件存在对维数是有约束的。Majorana条件还可以叙述为Dirac共轭和Majorana共轭相等。\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		$\bar{\lambda}\equiv\lambda^T\mathcal{C}$\\
+		$\bar{\lambda}^C\equiv\lambda^\dagger A\alpha^{-1}$
+	\end{tabularx}
+\end{margintable}
+如果Majorana和Wyle条件可以一起加，那就称为Majorana-Wely旋量。引入超对称后还可以引入Sympletic Majorana旋量的概念，要求：
+\begin{equation}
+	\lambda_i^*\equiv\left(\lambda^i\right)^*=B\Omega_{ij}\lambda^j
+\end{equation}
+其中$\Omega$是一个反对称的$\Omega^*\Omega=-\mathbbm{1}$的矩阵。下表总结了各个维数下这几个旋量的存在的可能性，以及对应的最小的Spinor的维数：\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		M$^\pm$：Majorana旋量，$\pm$表示$\eta$需要取的符号\\
+		MW：Majorana-Wely旋量\\
+		SMW：Sympletic Majorana-Wely旋量\\
+		表格对于横向($t$)是$\mod 4$的	\end{tabularx}
+\end{margintable}
+\begin{equation*}
+	\begin{array}{|c|lr|lr|lr|lr|}\hline\text{d  t}&0&&1&&2&&3&\\\hline1&\text{M}&1&\text{M}&1&&&&\\2&\text{M}^-&2&\text{MW}&1&\text{M}^+&2&&\\3&&4&\text{M}&2&\text{M}&2&&\\4&\text{SMW}&4&\text{M}^+&4&\text{MW}&2&\text{M}^-&4\\5&&8&&8&\text{M}&4&\text{M}&4\\6&\text{M}^+&8&\text{SMW}&8&\text{M}^-&8&\text{MW}&4\\7&\text{M}&8&&16&&16&\text{M}&8\\8&\text{MW}&8&\text{M}^-&16&\text{SMW}&16&\text{M}^+&16\\9&\text{M}&16&\text{M}&16&&32&&32\\10&\text{M}^-&32&\text{MW}&16&\text{M}^+&32&\text{SMW}&32\\11&&64&\text{M}&32&\text{M}&32&&64\\12&\text{SMW}&64&\text{M}^+&64&\text{MW}&32&\text{M}^-&64\\\hline\end{array}
+\end{equation*}
+文献\cite{Kennedy:1981kp,vanHolten:1982mx}给出了一些比较有用的公式：
+\begin{equation}
+	\begin{aligned}&\Gamma_{a_1\cdots a_i}\Gamma^{b_1\cdots b_j}=\sum_{k=\left|i-j\right|}^{i+j}\frac{i!j!}{s!t!u!}\delta_{[a_i}^{[b_1} {\cdots} \delta^{b_s}_{a_{t+1}}{\Gamma_{a_1\cdots a_t]}}^{b_{s+1}\cdots b_{j}]}\\&s=\frac{1}{2}(i+j-k),\quad t=\frac{1}{2}(i-j+k),\quad u=\frac{1}{2}(-i+j+k)\end{aligned}
+\end{equation}
+\begin{equation}
+	\begin{aligned}
+		&\Gamma_{b_{1}\ldots b_{k}}\Gamma_{a_{1}\ldots a_{\ell}}\Gamma^{b_{1}\ldots b_{k}}=c_{k,\ell}\Gamma_{a_{1}\ldots a_{\ell}} \\
+		&c_{k,\ell}=(-1)^{k(k-1)/2}k!(-1)^{k\ell}\sum_i^{\min(k,\ell)}\binom{\ell}{i}\binom{D-\ell}{k-i}(-1)^i
+	\end{aligned}
+\end{equation}
+以及Firez恒等式：\sn{$\Delta\equiv 2^{\lfloor d/2\rfloor}$\[\begin{cases}[D]=D&\text{for even }D\\
+		[D]=(D-1)/2&\text{for odd }D\end{cases}\]}
+\begin{equation}
+	M_{\alpha}{}^{\beta}\Delta=\sum_{k=0}^{[D]}(-)^{k(k-1)/2}\frac{1}{k!}\left(\Gamma_{a_1...a_k}\right)_{\alpha}{}^{\beta}\text{Tr}(\Gamma^{a_1...a_k}M)
+\end{equation}
+这里$M$是任意的$\Delta\times\Delta$矩阵。
+\subsubsection{Conformal basis of Dirac spinor}
 \subsection{Examples}
