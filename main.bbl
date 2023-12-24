@@ -563,6 +563,18 @@ J.W.~van Holten and A.~Van~Proeyen, \emph{{N=1 Supersymmetry Algebras in D=2,
   D=3, D=4 MOD-8}}, \href{https://doi.org/10.1088/0305-4470/15/12/028}{\emph{J.
   Phys. A} {\bfseries 15} (1982) 3763}.
 
+\bibitem{Iacobacci:2020por}
+L.~Iacobacci and W.~M\"uck, \emph{{Conformal Primary Basis for Dirac Spinors}},
+  \href{https://doi.org/10.1103/PhysRevD.102.106025}{\emph{Phys. Rev. D}
+  {\bfseries 102} (2020) 106025}
+  [\href{https://arxiv.org/abs/2009.02938}{{\ttfamily 2009.02938}}].
+
+\bibitem{Narayanan:2020amh}
+S.A.~Narayanan, \emph{{Massive Celestial Fermions}},
+  \href{https://doi.org/10.1007/JHEP12(2020)074}{\emph{JHEP} {\bfseries 12}
+  (2020) 074} [\href{https://arxiv.org/abs/2009.03883}{{\ttfamily
+  2009.03883}}].
+
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},
   \href{https://doi.org/10.1016/j.cpc.2016.08.019}{\emph{Comput. Phys. Commun.}

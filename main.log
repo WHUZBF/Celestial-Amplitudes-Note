@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  24 DEC 2023 14:46
+This is LuaHBTeX, Version 1.13.2 (TeX Live 2021/W32TeX)  (format=lualatex 2021.9.12)  25 DEC 2023 00:46
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -3558,21 +3558,21 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 8'
 
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+9'
+
 Overfull \hbox (21.49721pt too wide) detected at line 404
 \OML/lmm/m/it/8 K[]K[] \OT1/lmr/m/n/8 = \OML/lmm/m/it/8 K[]K[]; []K[] \OT1/lmr/
 m/n/8 = 0\OML/lmm/m/it/8 ; K[]K[] \OT1/lmr/m/n/8 = 0
  []
 
 
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-9'
-
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 0'
-[59]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 1'
-
+[59]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 2'
 
@@ -3582,26 +3582,26 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 4'
 
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
+5'
+
 LaTeX Warning: Marginpar on page 60 moved.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-5'
+6'
 [60]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-6'
+7'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-7'
+8'
 
 Overfull \hbox (141.21303pt too wide) detected at line 507
 [][]
  []
 
 [61]
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-8'
-
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 9'
 
@@ -3613,15 +3613,15 @@ LaTeX Font Info:    Trying to load font information for U+bbm on input line 545
  (d:/LaTeX/texlive/2021/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [63]
-[64]) [65]
+[64] [65]) [66]
 \openout2 = texfiles/appendixA.aux
  (./texfiles/appendixA.tex
-Package marginnote Info: Margin note 72.1 is on absolute page 72 on input line 
+Package marginnote Info: Margin note 73.1 is on absolute page 73 on input line 
 10.
 Package marginnote Info: right page because not two side mode on input line 10.
 
 Package marginnote Info: xpos seems to be 67.57281pt on input line 10.
-) [66
+) [67
 
 
 
@@ -3629,11 +3629,11 @@ Package marginnote Info: xpos seems to be 67.57281pt on input line 10.
 luaotfload | aux : font no 260 (nil) does not define feature vert for script dfl
 t with language dflt
 luaotfload | aux : font no 260 (nil) does not define feature vrt2 for script dfl
-t with language dflt [67
+t with language dflt [68
 
 
-] [68] [69] [70])
-[71] (./main.aux (./texfiles/part1.aux) (./texfiles/part2.aux)
+] [69] [70]
+[71]) [72] (./main.aux (./texfiles/part1.aux) (./texfiles/part2.aux)
 (./texfiles/part3.aux) (./texfiles/part4.aux) (./texfiles/part5.aux)
 (./texfiles/part6.aux) (./texfiles/part7.aux) (./texfiles/appendixA.aux))
 
@@ -3647,16 +3647,16 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 46339 strings out of 478152
+ 46368 strings out of 478152
  596094,1648299 words of node,token memory allocated
- 280643 words of node memory still in use:
-   389 hlist, 106 vlist, 280 rule, 10 disc, 40 local_par, 144 math, 613 glue, 67
-9 kern, 136 penalty, 9 sub_mlist, 760 glyph, 97978 attribute, 9066 glue_spec, 51
-55 attribute_list, 2 write, 1714 user_defined, 5 pdf_start_link, 5 pdf_end_link,
- 4 pdf_dest, 31 pdf_action, 18 pdf_colorstack nodes
-   avail lists: 1:25,2:99863,3:2396,4:2435,5:346,6:84,7:7185,8:127,9:2618,10:22,
+ 281985 words of node memory still in use:
+   294 hlist, 86 vlist, 312 rule, 9 disc, 34 local_par, 140 math, 609 glue, 654 
+kern, 130 penalty, 9 sub_mlist, 715 glyph, 98870 attribute, 9221 glue_spec, 5202
+ attribute_list, 2 write, 1726 user_defined, 4 pdf_start_link, 4 pdf_end_link, 2
+ pdf_dest, 31 pdf_action, 12 pdf_colorstack nodes
+   avail lists: 1:25,2:98924,3:2403,4:2429,5:337,6:83,7:7185,8:127,9:2701,10:22,
 11:416,12:1
- 63696 multiletter control sequences out of 65536+600000
+ 63706 multiletter control sequences out of 65536+600000
  261 fonts using 224506039 bytes
  116i,19n,141p,1233b,1678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
@@ -3728,10 +3728,10 @@ xlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/LaTeX/t
 exlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/LaTeX/
 texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><d:/LaTeX/
 texlive/2021/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (75 pages, 2354941 bytes).
+Output written on main.pdf (76 pages, 2368059 bytes).
 
-PDF statistics: 2841 PDF objects out of 2984 (max. 8388607)
- 1999 compressed objects within 20 object streams
- 742 named destinations out of 1000 (max. 131072)
+PDF statistics: 2874 PDF objects out of 2984 (max. 8388607)
+ 2030 compressed objects within 21 object streams
+ 761 named destinations out of 1000 (max. 131072)
  538 words of extra memory for PDF output out of 10000 (max. 100000000)
 

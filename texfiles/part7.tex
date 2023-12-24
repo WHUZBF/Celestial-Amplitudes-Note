@@ -382,7 +382,7 @@ $\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成完备基底，其sh
 \begin{equation}
 	A_{\mu;a}^{\Delta,\pm}\left({\Lambda^{\rho}}_{\nu}X^{\nu};\frac{aw+b}{cw+d},\frac{\bar{a}\bar{w}+\bar{b}}{\bar{c}\bar{w}+\bar{d}}\right)=(cw+d)^{2h}(\bar{c}\bar{w}+\bar{d})^{2\bar{h}}{\Lambda_{\mu}}^{\sigma}A_{\sigma;a}^{\Delta,\pm}(X^{\rho};w,\bar{w})
 \end{equation}
-无质量规范玻色子只有两种螺旋度选取，对应这里$a=w,\bar w$，分别有$J=+1，-1$。
+无质量规范玻色子只有两种螺旋度选取\sn{当然，根据螺旋度定义，其总为$\pm 1$}，对应这里$a=w,\bar w$，分别有$J=+1,-1$。
 
 引力子：
 \begin{equation}
@@ -533,7 +533,7 @@ Clifford 代数是指满足：\sn{由于考虑一般维数，所以这里$a,b$�
 \begin{equation}
 	\mathscr{I}_{\mu\nu}\equiv\frac{1}{4\mathrm{i}}[\Gamma_{\mu},\Gamma_{\nu}]=-\mathscr{I}_{\nu\mu}
 \end{equation}
-显然$\mathscr{I}_{\mu\nu}$满足$\mathfrak{so}(t,s)$李代数：
+显然$\mathscr{I}_{\mu\nu}$满足$\mathfrak{so}(t,s)$李代数：\sn{这也说明了构造的$\mathscr{I}$是$SO(t,s)$变换下，对旋量变换的生成元}
 \begin{equation}
 	\text{i}[\mathscr{J}_{\mu\nu},\mathscr{J}_{\rho\sigma}]=\eta_{\nu\rho}\mathscr{J}_{\mu\sigma}-\eta_{\mu\rho}\mathscr{J}_{\nu\sigma}-\eta_{\sigma\mu}\mathscr{J}_{\rho\nu}+\eta_{\sigma\nu}\mathscr{J}_{\rho\mu}
 \end{equation}
@@ -594,12 +594,10 @@ $t\neq 0$只需要把上面公式中前面$t$个$\Gamma$改成$\mathrm{i}\Gamma$
 \begin{equation}
 	\lambda^*=\alpha B\lambda, \quad |\alpha|=1,\quad B^*B=\mathbbm{1}
 \end{equation}
-但是这一条件存在对维数是有约束的。Majorana条件还可以叙述为Dirac共轭和Majorana共轭相等。\begin{margintable}\footnotesize 
-	\begin{tabularx}{\marginparwidth}{|X}
-		$\bar{\lambda}\equiv\lambda^T\mathcal{C}$\\
-		$\bar{\lambda}^C\equiv\lambda^\dagger A\alpha^{-1}$
-	\end{tabularx}
-\end{margintable}
+但是这一条件存在对维数是有约束的。Majorana条件还可以叙述为Dirac共轭和Majorana共轭相等。\sn{对于$d=1+3$，$\bar{\lambda}^D$回到熟知的$\lambda^\dagger\Gamma^0$}
+\begin{equation}
+	\bar{\lambda}^M\equiv\lambda^T\mathcal{C},\quad\bar{\lambda}^D\equiv\lambda^\dagger A\alpha^{-1}
+\end{equation}	
 如果Majorana和Wyle条件可以一起加，那就称为Majorana-Wely旋量。引入超对称后还可以引入Sympletic Majorana旋量的概念，要求：
 \begin{equation}
 	\lambda_i^*\equiv\left(\lambda^i\right)^*=B\Omega_{ij}\lambda^j
@@ -631,4 +629,50 @@ $t\neq 0$只需要把上面公式中前面$t$个$\Gamma$改成$\mathrm{i}\Gamma$
 \end{equation}
 这里$M$是任意的$\Delta\times\Delta$矩阵。
 \subsubsection{Conformal basis of Dirac spinor}
+后面对于spinor的描述是在Gamma矩阵的Embedding形式下进行。注意到对于$\mathbb{R}^d$上面的Clifford代数$\{\gamma_i\}$，其表示直接导致了$\mathbb{R}^{1,d+1}$下面的$\{\Gamma_a\}$的表示：\sn{这里时间分量用$0$标记}
+\begin{equation}
+	\Gamma_i=\begin{pmatrix}\gamma_i&0\\0&-\gamma_i\end{pmatrix},\quad\Gamma_-=\begin{pmatrix}0&-1\\0&0\end{pmatrix},\quad\Gamma_+=\begin{pmatrix}0&0\\1&0\end{pmatrix}
+\end{equation}
+其中$\Gamma_\pm\equiv\frac{1}{2}\left(\Gamma_0\pm\Gamma_{d+1}\right)$。对应的Dirac旋量可以由两个$\mathbb{R}^d$上面的旋量拼凑构成：
+\[\Psi=\begin{pmatrix}\Psi_+\\\Psi_-\end{pmatrix}\]
+量子场论中，Dirac旋量平面波基底可以表达为：
+\[u_s(p)\mathrm{e}^{+ip\cdot X},\quad v_s(p)\mathrm{e}^{-ip\cdot X}\]
+与前面的情况类似，天球上的conformal basis由$\vec{w},\pm,\Delta$标记\sn{这里没搞懂标记自旋所对应的$\mathbb{R}^d$上的张量指标跑去哪儿了。}。文献\cite{Iacobacci:2020por}显式构造了有质量Dirac旋量的conformal basis：
+%以及一个$\mathbb{R}^d$上的张量指标$a$
+\begin{equation}
+	\begin{aligned}
+		\Psi_\Delta^\pm(X;\vec{w})=&\int_{\mathbb{H}_{d+1}}[\mathrm{d}\hat{p}]\frac{\mathrm{e}^{\pm im\hat{p}\cdot X}}{[-2\hat{p}\cdot q(\vec{w})]^{\Delta+\frac{1}{2}}}\Pi_\pm(\hat{p})\begin{pmatrix}\slashed{w}\\1\end{pmatrix}	\\
+		=&\frac{(\pm i)^{-\Delta-\frac12}(2\pi)^{\frac d2}m^{-\frac d2}}{[-2q(\vec{w})\cdot X\mp i\epsilon]^{\Delta+\frac12}} \\
+		&\times\left(1+\frac1m\Gamma^M\partial_M\right)\left[\left(\sqrt{X^2}\right)^{\Delta-\frac{d-1}2}\mathrm{K}_{\Delta-\frac{d-1}2}\left(m\sqrt{X^2}\right)\right]\begin{pmatrix}\slashed{w}\\1\end{pmatrix}
+	\end{aligned}
+\end{equation}
+其中：
+\begin{equation}
+	\Pi_{\pm}(\hat{p})=\frac{1}{2}\left(1\pm i\hat{p}^M\Gamma_M\right),\quad \slashed{w}\equiv w^i\gamma_i
+\end{equation}
+可以验证确实协变且满足狄拉克方程\sn{\[\left(\Gamma^M\frac{\partial}{\partial X^M}-m\right)\Psi(X)=0\]}。
+\begin{definition}[Shadow of Dirac Spinors]
+	Dirac旋量的shadow计算首先也是先将其uplift：
+	\begin{equation}\label{sd}
+		\Psi_\Delta(X;\vec{w})=\widehat{\Psi_\Delta}(X;q(\vec{w}))\begin{pmatrix}\slashed{w}\\1\end{pmatrix}
+	\end{equation}
+	然后再利用uplift之后的旋量计算shadow：
+	\begin{equation}
+		\widehat{\widetilde{\Psi_\Delta}}(X;q)=\int_{\mathbb{H}_{d+1}}[\operatorname{d}q']\frac{\widehat{\Psi_\Delta}(X;q')q'^M\Gamma_M}{(-2q\cdot q')^{d-\Delta+1/2}}
+	\end{equation}
+	再利用\ref{sd}变回来就好。
+\end{definition}
+对于Dirac旋量计算结果为：
+\begin{equation}
+	\widetilde{\Psi_\Delta^\pm}(X;\vec{w})=\mp i\pi^{\frac{d}{2}}\frac{\Gamma\left(\Delta-\frac{d-1}{2}\right)}{\Gamma\left(\Delta+\frac{1}{2}\right)}\Psi_{d-\Delta}^{\pm}(X;\vec{w})
+\end{equation}
+正交归一完备是在下面的内积意义下讨论的：
+\begin{equation}
+	\left(\Psi,\Psi'\right)=\int\mathrm{d}\Sigma^M\bar{\Psi}\Gamma_M\Psi'=\int_{X^0=\text{const}}\mathrm{d}^{d+1}X\Psi^\dagger(X)\Psi'(X)
+\end{equation}
+可以证明$\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}_{\geq 0}}$时构成正交完备归一基底，其shadow亦然。最后来看无质量极限，得到Mellin变换的形式：
+\begin{equation}
+	\Upsilon_\Delta^\pm(X;\vec{w})=\frac{1}{\sqrt{2}(2\pi)^{\frac{d}{2}+1}}\int\limits_0^\infty\mathrm{d}\omega\omega^{\Delta-\frac{1}{2}}\operatorname{e}^{\pm i\omega q(\vec{w})\cdot X}\begin{pmatrix}\slashed{w}\\1\end{pmatrix}
+\end{equation}
+$\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成正交完备归一基底，shadow也是。文献\cite{Narayanan:2020amh}对$d=1+3$情况进行了细致的讨论，没有使用Gamma矩阵嵌入形式，那里有一些非常具体的表达式。
 \subsection{Examples}
