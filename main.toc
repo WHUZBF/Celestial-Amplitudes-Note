@@ -58,7 +58,7 @@
 \contentsline {subsubsection}{\numberline {27.6.2}Conformal basis of massive bosons}{61}{subsubsection.27.6.2}%
 \contentsline {subsection}{\numberline {27.7}Fermions}{62}{subsection.27.7}%
 \contentsline {subsubsection}{\numberline {27.7.1}Spinors in arbitrary dimensions}{62}{subsubsection.27.7.1}%
-\contentsline {subsubsection}{\numberline {27.7.2}Conformal basis of Dirac spinor}{64}{subsubsection.27.7.2}%
-\contentsline {subsection}{\numberline {27.8}Examples}{64}{subsection.27.8}%
-\contentsline {part}{Appendix A: Surface Charge}{65}{subsection.27.8}%
-\contentsline {part}{参考文献}{66}{subsection.27.8}%
+\contentsline {subsubsection}{\numberline {27.7.2}Conformal basis of Dirac spinor}{65}{subsubsection.27.7.2}%
+\contentsline {subsection}{\numberline {27.8}Examples}{65}{subsection.27.8}%
+\contentsline {part}{Appendix A: Surface Charge}{66}{subsection.27.8}%
+\contentsline {part}{参考文献}{67}{subsection.27.8}%

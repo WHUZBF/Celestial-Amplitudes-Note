@@ -466,7 +466,23 @@ $d$的意思是天球维数，所以意味着在计算的最后要取$d\to 2$极
 \begin{equation}
 	\phi_{\pm,m,b}^{\mu_1...\mu_s}(X)=\epsilon_b^{\mu_1...\mu_s}e^{\pm im\hat{p}^\nu X_\nu}
 \end{equation}
-这里$b$可以从$-s$取到$s$。Conformal basis可以一般的写为下面的形式：
+这里$b$可以从$-s$取到$s$。自旋为1的有质量玻色子极化矢量：\sn{$P^{\mu\nu}\equiv\eta^{\mu\nu}-\frac{\hat{p}^{\mu}\hat{p}^{\nu}}{\hat{p}^{2}}$}
+\begin{equation}
+	\epsilon_{-1}^{\mu}=\sqrt{2}y\partial_{\bar{z}}\hat{p}^{\mu}\quad,\quad\epsilon_{0}^{\mu}=y\partial_{y}\hat{p}^{\mu}\quad,\quad\epsilon_{+1}^{\mu}=\sqrt{2}y\partial_{z}\hat{p}^{\mu}
+\end{equation}
+满足：
+\begin{equation}
+	\epsilon_{a}\cdot\hat{p}=0\quad,\quad\epsilon_{a}^{*}\cdot\epsilon_{b}=\delta_{a,b}\quad,\quad\sum_{a=-1}^{1}\epsilon_{a}^{*\mu}\epsilon_{a}^{\:\nu}=P^{\mu\nu}
+\end{equation}
+自旋为2的有质量玻色子极化矢量：\sn{文献\cite{Hinterbichler:2017qyt,Bonifacio:2017nnt}对更高维情况进行了考虑}
+\begin{equation}
+	\begin{array}{l}\epsilon_{-2}^{\mu\nu}=\epsilon_{-1}^{\mu}\epsilon_{-1}^{\nu},\quad\epsilon_{-1}^{\mu\nu}=\frac{i}{\sqrt{2}}\left(\epsilon_{-1}^{\mu}\epsilon_{0}^{\nu}+\epsilon_{0}^{\mu}\epsilon_{-1}^{\nu}\right),\quad\epsilon_{0}^{\mu\nu}=\sqrt{\frac{2}{3}}\left(\epsilon_{0}^{\mu}\epsilon_{0}^{\nu}-\frac{1}{2}\epsilon_{-1}^{\mu}\epsilon_{+1}^{\nu}-\frac{1}{2}\epsilon_{+1}^{\mu}\epsilon_{-1}^{\nu}\right)\\\epsilon_{+2}^{\mu\nu}=\epsilon_{+1}^{\mu}\epsilon_{+1}^{\nu},\quad\epsilon_{+1}^{\mu\nu}=\frac{-i}{\sqrt{2}}\left(\epsilon_{+1}^{\mu}\epsilon_{0}^{\nu}+\epsilon_{0}^{\mu}\epsilon_{+1}^{\nu}\right)\end{array}
+\end{equation}
+满足：
+\begin{equation}
+	\epsilon_{a}^{\mu\nu}\hat{p}_{\nu}=0,\quad\epsilon_{a}^{*\mu\nu}\epsilon_{b\mu\nu}=\delta_{a,b},\quad\sum_{a=-2}^{2}\epsilon_{a}^{*\mu\nu}\epsilon_{a}^{\rho\sigma}=\frac{1}{2}P^{\mu\rho}P^{\nu\sigma}+\frac{1}{2}P^{\nu\rho}P^{\mu\sigma}-\frac{1}{3}P^{\mu\nu}P^{\rho\sigma}
+\end{equation}
+Conformal basis可以一般的写为下面的形式：
 \begin{equation}\label{eq:27.77}
 	\phi_{\pm,\Delta,m,J}^{\mu_1\cdots\mu_s}(X;w,\bar{w})=\int_{0}^{\infty}\frac{dy}{y^3}\int dzd\bar{z}\sum_{b=-s}^{s}G_{Jb}^{(s)}(w,\bar{w};y,z,\bar{z})\epsilon_{b}^{\mu_1\cdots \mu_s}e^{\pm im\hat{p}^\nu X_\nu}
 \end{equation}
