@@ -428,6 +428,20 @@ E.~Conde and P.~Mao, \emph{{BMS Supertranslations and Not So Soft Gravitons}},
   (2017) 060} [\href{https://arxiv.org/abs/1612.08294}{{\ttfamily
   1612.08294}}].
 
+\bibitem{Lysov:2014csa}
+V.~Lysov, S.~Pasterski and A.~Strominger, \emph{{Low\textquoteright{}s
+  Subleading Soft Theorem as a Symmetry of QED}},
+  \href{https://doi.org/10.1103/PhysRevLett.113.111601}{\emph{Phys. Rev. Lett.}
+  {\bfseries 113} (2014) 111601}
+  [\href{https://arxiv.org/abs/1407.3814}{{\ttfamily 1407.3814}}].
+
+\bibitem{Campiglia:2014yka}
+M.~Campiglia and A.~Laddha, \emph{{Asymptotic symmetries and subleading soft
+  graviton theorem}},
+  \href{https://doi.org/10.1103/PhysRevD.90.124028}{\emph{Phys. Rev. D}
+  {\bfseries 90} (2014) 124028}
+  [\href{https://arxiv.org/abs/1408.2228}{{\ttfamily 1408.2228}}].
+
 \bibitem{Cheung:2016iub}
 C.~Cheung, A.~de~la Fuente and R.~Sundrum, \emph{{4D scattering amplitudes and
   asymptotic symmetries from 2D CFT}},
@@ -574,6 +588,20 @@ S.A.~Narayanan, \emph{{Massive Celestial Fermions}},
   \href{https://doi.org/10.1007/JHEP12(2020)074}{\emph{JHEP} {\bfseries 12}
   (2020) 074} [\href{https://arxiv.org/abs/2009.03883}{{\ttfamily
   2009.03883}}].
+
+\bibitem{Lam:2017ofc}
+H.T.~Lam and S.-H.~Shao, \emph{{Conformal Basis, Optical Theorem, and the Bulk
+  Point Singularity}},
+  \href{https://doi.org/10.1103/PhysRevD.98.025020}{\emph{Phys. Rev. D}
+  {\bfseries 98} (2018) 025020}
+  [\href{https://arxiv.org/abs/1711.06138}{{\ttfamily 1711.06138}}].
+
+\bibitem{Pasterski:2016qvg}
+S.~Pasterski, S.-H.~Shao and A.~Strominger, \emph{{Flat Space Amplitudes and
+  Conformal Symmetry of the Celestial Sphere}},
+  \href{https://doi.org/10.1103/PhysRevD.96.065026}{\emph{Phys. Rev. D}
+  {\bfseries 96} (2017) 065026}
+  [\href{https://arxiv.org/abs/1701.00049}{{\ttfamily 1701.00049}}].
 
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},

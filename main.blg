@@ -26,45 +26,45 @@ Warning--empty publisher in Strominger:2017zoo
 Warning--empty booktitle in Jackson1998ClassicalE3
 Warning--empty booktitle in Ashtekar1987AsymptoticQ
 Warning--empty publisher in Blumenhagen:2009zz
-You've used 105 entries,
+You've used 109 entries,
             2363 wiz_defined-function locations,
-            1359 strings with 20921 characters,
-and the built_in function-call counts, 36708 in all, are:
-= -- 3832
-> -- 976
+            1388 strings with 21629 characters,
+and the built_in function-call counts, 38575 in all, are:
+= -- 4045
+> -- 1024
 < -- 0
-+ -- 308
-- -- 203
-* -- 3438
-:= -- 4719
-add.period$ -- 106
-call.type$ -- 105
-change.case$ -- 83
++ -- 322
+- -- 213
+* -- 3610
+:= -- 4944
+add.period$ -- 110
+call.type$ -- 109
+change.case$ -- 87
 chr.to.int$ -- 0
-cite$ -- 111
-duplicate$ -- 2732
-empty$ -- 3551
-format.name$ -- 609
-if$ -- 9326
+cite$ -- 115
+duplicate$ -- 2879
+empty$ -- 3712
+format.name$ -- 639
+if$ -- 9810
 int.to.chr$ -- 0
-int.to.str$ -- 105
-missing$ -- 381
-newline$ -- 320
-num.names$ -- 105
-pop$ -- 315
+int.to.str$ -- 109
+missing$ -- 397
+newline$ -- 332
+num.names$ -- 109
+pop$ -- 320
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1187
+skip$ -- 1269
 stack$ -- 0
-substring$ -- 1955
-swap$ -- 660
+substring$ -- 2061
+swap$ -- 712
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 6
-while$ -- 409
-width$ -- 108
-write$ -- 1057
+while$ -- 427
+width$ -- 112
+write$ -- 1101
 (There were 2 error messages)

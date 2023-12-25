@@ -382,7 +382,7 @@ $\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成完备基底，其sh
 \begin{equation}
 	A_{\mu;a}^{\Delta,\pm}\left({\Lambda^{\rho}}_{\nu}X^{\nu};\frac{aw+b}{cw+d},\frac{\bar{a}\bar{w}+\bar{b}}{\bar{c}\bar{w}+\bar{d}}\right)=(cw+d)^{2h}(\bar{c}\bar{w}+\bar{d})^{2\bar{h}}{\Lambda_{\mu}}^{\sigma}A_{\sigma;a}^{\Delta,\pm}(X^{\rho};w,\bar{w})
 \end{equation}
-无质量规范玻色子只有两种螺旋度选取\sn{当然，根据螺旋度定义，其总为$\pm 1$}，对应这里$a=w,\bar w$，分别有$J=+1,-1$。
+无质量规范玻色子只有两种螺旋度选取，对应这里$a=w,\bar w$，分别有$J=+1,-1$。
 
 引力子：
 \begin{equation}
@@ -676,3 +676,32 @@ $t\neq 0$只需要把上面公式中前面$t$个$\Gamma$改成$\mathrm{i}\Gamma$
 \end{equation}
 $\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成正交完备归一基底，shadow也是。文献\cite{Narayanan:2020amh}对$d=1+3$情况进行了细致的讨论，没有使用Gamma矩阵嵌入形式，那里有一些非常具体的表达式。
 \subsection{Examples}
+举一些Mink$_4$振幅放到CCFT$_2$上的例子。
+\subsection{ABC toy model}
+考虑两个无质量标量场和一个有质量标量场的$gABC$形式耦合，Mink$_4$树图阶非常简单：
+\begin{equation}
+	\mathcal{A}(\hat{p}_i)=g\delta^{(4)}(\omega_1\hat{q}_1+\omega_2\hat{q}_2-m\hat{p})
+\end{equation}
+变换到conformal basis:
+\begin{equation}
+	\begin{aligned}
+		\tilde{\mathcal{A}}(\Delta_{i},z_{i},\bar{z}_{i})=& g\prod_{i=1}^{2}\left(\int_{0}^{\infty}d\omega_{i}\omega_{i}^{\Delta_{i}-1}\right)\int_{0}^{\infty}\frac{dy}{y^{3}}\int d^{2}w\left(\frac{y}{y^{2}+|z_{3}-w|^{2}}\right)^{\Delta_{3}}  \\
+		&\times\delta^{(4)}(\omega_{1}\hat{q}_{1}+\omega_{2}\hat{q}_{2}-m\hat{p}).
+	\end{aligned}
+\end{equation}
+经过一系列并不是那么容易“注意到”的换元和积分操作\cite{Raclariu:2021zjz,Lam:2017ofc}：\sn{这里$z_{ij}\equiv z_i-z_j$，$\Delta$同理}
+\begin{equation}
+	\widetilde{\mathcal{A}}(\Delta_i,z_i,\bar{z}_i)=\frac{gm^{2\Delta_2+\Delta_3-4}}{2^{2\Delta_2-\Delta_3-2}|z_{12}|^{2\Delta_2-2\Delta_3}}\int_0^\infty d\omega\frac{\omega^{\Delta_1-\Delta_2+\Delta_3-1}}{(m^2|z_{23}|^2+4|z_{12}|^2|z_{13}|^2\omega^2)^{\Delta_3}}
+\end{equation}
+最后让我们相信Mathematica 13$^\circledR$的计算能力：\sn{$B(\alpha,\beta)$是Beta函数}
+\begin{equation}
+	\begin{gathered}
+		\widetilde{\mathcal{A}}(\Delta_i,z_i,\bar{z}_i) =\frac{C(\Delta_1,\Delta_2,\Delta_3)}{|z_{12}|^{\Delta_1+\Delta_2-\Delta_3}|z_{13}|^{\Delta_1+\Delta_3-\Delta_2}|z_{23}|^{\Delta_2+\Delta_3-\Delta_1}}, \\
+		C(\Delta_{1},\Delta_{2},\Delta_{3}) =g\frac{m^{\Delta_1+\Delta_2-4}}{2^{\Delta_1+\Delta_2-1}}B\left(\frac{\Delta_{12}+\Delta_3}2,\frac{-\Delta_{12}+\Delta_3}2\right)
+	\end{gathered}
+\end{equation}
+不难发现，天球振幅确实有共形场论里面多点关联函数的形式，是可以直接根据全局共形对称性完全确定的。文献\cite{Pasterski:2016qvg}考虑了三个有质量标量场耦合，且$m_{\text{in}}=(2+\epsilon)m_{\text{out}}$的渐近行为，式子大概长下面这个复杂的样子：
+\begin{equation}
+	\frac{i2^{\frac{9}{2}}\pi^6\lambda\Gamma(\frac{\Delta_1+\Delta_2+\Delta_3-2}{2})\Gamma(\frac{\Delta_1+\Delta_2-\Delta_3}{2})\Gamma(\frac{\Delta_1-\Delta_2+\Delta_3}{2})\Gamma(\frac{-\Delta_1+\Delta_2+\Delta_3}{2})\sqrt{\varepsilon}}{m^4\Gamma(\Delta_1)\Gamma(\Delta_2)\Gamma(\Delta_3)|w_1-w_2|^{\Delta_1+\Delta_2-\Delta_3}|w_2-w_3|^{\Delta_2+\Delta_3-\Delta_1}|w_3-w_1|^{\Delta_3+\Delta_1-\Delta_2}}+\mathcal{O}(\varepsilon)
+\end{equation}
+已经有非常多的文献在conformal basis下讨论了各种不同的振幅形式。
