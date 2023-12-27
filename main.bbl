@@ -188,6 +188,10 @@ T.~Parker and C.H.~Taubes, \emph{{On Witten's Proof of the Positive Energy
   Theorem}}, \href{https://doi.org/10.1007/BF01208569}{\emph{Commun. Math.
   Phys.} {\bfseries 84} (1982) 223}.
 
+\bibitem{Wald:1984rg}
+R.M.~Wald, \emph{{General Relativity}}, Chicago Univ. Pr., Chicago, USA (1984),
+  \href{https://doi.org/10.7208/chicago/9780226870373.001.0001}{10.7208/chicago/9780226870373.001.0001}.
+
 \bibitem{ChristodoulouKlainerman+1994}
 D.~Christodoulou and S.~Klainerman, \emph{The Global Nonlinear Stability of the
   Minkowski Space (PMS-41)}, Princeton University Press, Princeton (1994),
@@ -409,6 +413,23 @@ A.~Strominger and A.~Zhiboedov, \emph{{Superrotations and Black Hole Pair
   Quant. Grav.} {\bfseries 34} (2017) 064002}
   [\href{https://arxiv.org/abs/1610.00639}{{\ttfamily 1610.00639}}].
 
+\bibitem{Campiglia:2014yka}
+M.~Campiglia and A.~Laddha, \emph{{Asymptotic symmetries and subleading soft
+  graviton theorem}},
+  \href{https://doi.org/10.1103/PhysRevD.90.124028}{\emph{Phys. Rev. D}
+  {\bfseries 90} (2014) 124028}
+  [\href{https://arxiv.org/abs/1408.2228}{{\ttfamily 1408.2228}}].
+
+\bibitem{Cachazo:2014fwa}
+F.~Cachazo and A.~Strominger, \emph{{Evidence for a New Soft Graviton
+  Theorem}},  \href{https://arxiv.org/abs/1404.4091}{{\ttfamily 1404.4091}}.
+
+\bibitem{Campiglia:2016efb}
+M.~Campiglia and A.~Laddha, \emph{{Sub-subleading soft gravitons and large
+  diffeomorphisms}}, \href{https://doi.org/10.1007/JHEP01(2017)036}{\emph{JHEP}
+  {\bfseries 01} (2017) 036}
+  [\href{https://arxiv.org/abs/1608.00685}{{\ttfamily 1608.00685}}].
+
 \bibitem{Campiglia:2016hvg}
 M.~Campiglia and A.~Laddha, \emph{{Subleading soft photons and large gauge
   transformations}}, \href{https://doi.org/10.1007/JHEP11(2016)012}{\emph{JHEP}
@@ -428,19 +449,16 @@ E.~Conde and P.~Mao, \emph{{BMS Supertranslations and Not So Soft Gravitons}},
   (2017) 060} [\href{https://arxiv.org/abs/1612.08294}{{\ttfamily
   1612.08294}}].
 
+\bibitem{Zee:2010qce}
+A.~Zee, \emph{{Quantum Field Theory in a Nutshell: Second Edition}}, Princeton
+  University Press (2, 2010).
+
 \bibitem{Lysov:2014csa}
 V.~Lysov, S.~Pasterski and A.~Strominger, \emph{{Low\textquoteright{}s
   Subleading Soft Theorem as a Symmetry of QED}},
   \href{https://doi.org/10.1103/PhysRevLett.113.111601}{\emph{Phys. Rev. Lett.}
   {\bfseries 113} (2014) 111601}
   [\href{https://arxiv.org/abs/1407.3814}{{\ttfamily 1407.3814}}].
-
-\bibitem{Campiglia:2014yka}
-M.~Campiglia and A.~Laddha, \emph{{Asymptotic symmetries and subleading soft
-  graviton theorem}},
-  \href{https://doi.org/10.1103/PhysRevD.90.124028}{\emph{Phys. Rev. D}
-  {\bfseries 90} (2014) 124028}
-  [\href{https://arxiv.org/abs/1408.2228}{{\ttfamily 1408.2228}}].
 
 \bibitem{Cheung:2016iub}
 C.~Cheung, A.~de~la Fuente and R.~Sundrum, \emph{{4D scattering amplitudes and
