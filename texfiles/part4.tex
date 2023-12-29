@@ -112,13 +112,13 @@ Minkowski时空的度规在球坐标系下可以写为：
 		
 		% AXES
 		\fill[mylightblue] (N) -- (E) -- (S) -- cycle;
-		\draw[->,thick] (-0.1,0) -- (1.2,0) node[below right=-2] {$R$};
-		\draw[->,thick] (0,-1.1) -- (0,1.2) node[left=-1] {$T$};
+		\draw[->,thick] (-0.1,0) -- (1.2,0) node[below=2,right=0] {$R$};
+		\draw[->,thick] (0,-1.1) -- (0,1.2) node[left=0] {$T$};
 		
 		% INFINITY LABELS
 		\node[above=1,above left=0,mydarkblue,align=center] at (O)
 		{$r=0$};
-		\node[left=6,above right=-2,mydarkblue,align=center] at (1,0.04)
+		\node[above=3,right=0,mydarkblue,align=center] at (0.8,0.22)
 		{spacelike\\[-2]infinity ($i^0$)\\[-2]$r=+\infty$};
 		\node[above=6,below right=0,mydarkpurple,align=left] at (0.04,-1)
 		{$t=-\infty$\\[-2]past timelike\\[-2]infinity ($i^-$)};
@@ -150,10 +150,10 @@ Minkowski时空的度规在球坐标系下可以写为：
 		% CONSTANT
 		\draw[->,mydarkpurple!80!black,shorten <=0.4] % constant r
 		(0.66,{-penrose(0.66*pi/2,tan(90*3/(\Nlines+1)))}) to[out=-70,in=150]++ (-45:0.23)
-		node[right=-1] {$t=\text{constant}$};
+		node[right=0] {$t=\text{constant}$};
 		\draw[->,mydarkblue!80!black,shorten <=0.4] % constant t
 		({penrose(-0.27*pi/2,tan(90*3/(\Nlines+1)))},-0.27) to[out=-55,in=170]++ (-35:0.3)
-		node[right=-1] {$r=\text{constant}$};
+		node[below=1,right=0] {$r=\text{constant}$};
 		
 		% PARTICLE
 		\draw[particle,decoration={markings,mark=at position 0.24 with {\arrow{latex}},
@@ -166,10 +166,10 @@ Minkowski时空的度规在球坐标系下可以写为：
 		\conefront{X0};
 		
 		% PHOTON
-		\draw[->,photon] (O) -- (0.5,0.5) node[above=2,right=1] {photon};
+		\draw[->,photon] (O) -- (0.5,0.5) node[above=2,right=0] {photon};
 		
 		% TICKS
-		\tick{E}{90} node[right=4,below=-1] {$+\pi$};
+		\tick{E}{90} node[right=4,below=0.1] {$+\pi$};
 		\tick{S}{ 0} node[left=-1] {$-\pi$};
 		\tick{N}{ 0} node[left=-1] {$+\pi$};
 	\end{tikzpicture}

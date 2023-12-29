@@ -37,12 +37,12 @@
 \contentsline {subsection}{\numberline {23.3}Large guage symmetry}{43}{subsection.23.3}%
 \contentsline {section}{\numberline {24}Ward indentity = Soft theorem}{44}{section.24}%
 \contentsline {subsection}{\numberline {24.1}Ward indentity of $\mathcal {S}$\mbox {-}Matrix}{44}{subsection.24.1}%
-\contentsline {subsection}{\numberline {24.2}Mode expansion}{44}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.2}Mode expansion}{45}{subsection.24.2}%
 \contentsline {subsection}{\numberline {24.3}Soft photon \& graviton}{46}{subsection.24.3}%
 \contentsline {subsection}{\numberline {24.4}Asymptotic analysis on QED}{47}{subsection.24.4}%
 \contentsline {section}{\numberline {25}Spontaneous symmetry breaking}{48}{section.25}%
 \contentsline {subsection}{\numberline {25.1}In QFT}{48}{subsection.25.1}%
-\contentsline {subsection}{\numberline {25.2}On Celestial}{49}{subsection.25.2}%
+\contentsline {subsection}{\numberline {25.2}On Celestial}{50}{subsection.25.2}%
 \contentsline {section}{\numberline {26}Massive QED}{50}{section.26}%
 \contentsline {section}{\numberline {27}Further Progress}{50}{section.27}%
 \contentsline {subsection}{\numberline {27.1}Subleading order}{50}{subsection.27.1}%

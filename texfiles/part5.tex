@@ -371,7 +371,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}
 	A_z^{(0)}(u,z,\bar{z})=\hat{A}_z(u,z,\bar{z})+\partial_z\phi(z,\bar{z}),\quad\partial_z\phi\equiv\frac{1}{2}\left[\left.A_z^{(0)}\right|_{\mathcal I_+^+}+\left.A_z^{(0)}\right|_{\mathcal I_-^+}\right]
 \end{equation}
-利用上面的分解以及soft photon mode重写\ref{eq:23.29}：
+而且$\partial_z \phi$是一个pure gauge。利用上面的分解以及soft photon mode重写\ref{eq:23.29}：
 \begin{equation}
 	\Omega_{\mathcal{I}^{+}}=\frac{2}{e^{2}}\int dud^{2}z\partial_{u}\delta\hat{A}_{z}\wedge\delta\hat{A}_{\bar{z}}-2\int d^{2}z\partial_{z}\delta\phi\wedge\partial_{\bar{z}}\delta N
 \end{equation}
@@ -392,7 +392,12 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}
 	\begin{aligned}&\left[Q_{\varepsilon}^{+},A_{z}^{(0)}(u,z,\bar{z})\right]=i\partial_{z}\varepsilon(z,\bar{z}),\\&\left[Q_{\varepsilon}^{-},A_{z}^{(0)}(v,z,\bar{z})\right]=i\partial_{z}\varepsilon(z,\bar{z}).\end{aligned}
 \end{equation}
-所以前面定义的守恒荷其实就是对径认同的Large gauge transformation的生成元，自然就是一个守恒荷！前面的讨论一直忽略了流耦合项$S_M$，加入后对前面的结论不会有影响，注意到$Q_S$与物质场对易，根据Noether定理：
+所以前面定义的守恒荷其实就是对径认同的Large gauge transformation的生成元，自然就是一个守恒荷！下面是另外一些比较有用的对易关系：
+\begin{equation}\label{eq:23.37}
+	\left[Q_{\varepsilon}^{+},N(z,\bar{z})\right]=0,\quad\left[Q_{\varepsilon}^{+},\hat{A}_{z}(u,z,\bar{z})\right]=0,\quad\left[Q_{\varepsilon}^{+},\phi(z,\bar{z})\right]=i\varepsilon(z,\bar{z})
+\end{equation}
+
+前面的讨论一直忽略了流耦合项$S_M$，加入后对前面的结论不会有影响，注意到$Q_S$与物质场对易，根据Noether定理：
 \begin{equation}
 	\left[j_{u}^{(2)}(u',w,\bar{w}),\Phi_{k}(u,z,\bar{z})\right]=-Q_{k}\Phi_{k}(u,z,\bar{z})\gamma^{z\bar{z}}\delta^{2}(z-w)\delta(u-u')
 \end{equation}
@@ -656,6 +661,15 @@ $O(2)$对称性破缺有两个，一个是Abel的Lie群$SO(2)$的破缺，也就
 这里面还有一个微妙的地方，对于$D>2$的体系，真空态之间其实会有所谓的“超选择性”，也就是说前面虽然说$Q_b$可以把简并的真空态联系起来，但这个算符其实是不可归一化的，或者说对应无穷大的能量。
 \subsection{On Celestial}
 现在把天球上Large gauge symmetry的对称性自发破缺按照前面的框架进行讨论，但天球上的又存在许多subtle的地方。
+
+对于QED，天球上的large规范变换实际上是在选取不同的真空，每一个$\varepsilon(z,\bar z)$就会对应一个真空，所以QED的真空是简并的，而且标记不同真空是用一个（对径认同）函数而不是一个连续参数，所以真空还是无穷维简并的，每一个$\varepsilon(z,\bar z)$便会带来一个对称性破缺的守恒荷$Q^+_\varepsilon$，从\ref{eq:23.37}可以看到$\left[Q_{\varepsilon}^{+},\phi(z,\bar{z})\right]\neq 0$，所以Large gauge symmetry破缺导致的Goldstone粒子是$\phi$对应的软光子！天球上的对称性自发破缺与一般的破缺最大的区别就是破缺对称性对应的守恒荷是normalizable的，不存在真空的超选择性，毕竟每个散射过程原则上都有无穷多的软光子产生湮灭。这个可以理解为天球上的简并真空是用一个local的函数标记的，而不是一般对称性破缺的一个global的连续参数，所以一般的对称性如果改变真空就需要牵一发而动全身，但是天球上真空的变化只需要合适的调整local函数，仅改变天球上的某一点，自然能量就有限大了。
+
+不同真空态都是pure gauge，对应$F=0$，所以他们的$\left.Q^+_\varepsilon\right|_{\mathrm{vacuum}}$实际上都是0，所以说QED比较平庸。但是引力就不一样了，前面$\S 4$就指出了$C$是Supertranslation破缺的Goldstone粒子，引力理论中不同的真空其实对应不同的角动量，也就是说守恒荷是非0的！正是因为真空不唯一，所以真空也带有角动量，所以角动量守恒：
+\begin{equation}
+	\vec J_{\mathrm{initial}}=\vec J_{\mathrm{radiation}}+\vec J_{\mathrm{vacuum}}\geq \vec{J}_{\mathrm{radiation}}
+\end{equation}
+
+引力角动量的非局域性，是因为我们没有考虑真空简并。把真空的角动量也加进来，角动量守恒在引力理论里面就依然成立！而前面说过天球上面对称性自发破缺是不存在超选择性的，所以可以很容易从一个真空转变为另一个真空。
 \section{Massive QED}
 
 \section{Further Progress}
