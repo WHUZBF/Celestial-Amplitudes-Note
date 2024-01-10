@@ -274,7 +274,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	\left.F_{ru}^{(2)}(z,\bar z)\right|_{\mathcal{I}^{+}_-}=\left.F_{rv}^{(2)}(z,\bar z)\right|_{\mathcal{I}^{-}_+}
 	}
 \end{equation}
-这个式子是普适的，而且非常重要，是后面散射问题的核心。现在考虑任意一个天球上的对径认同的函数：
+这个式子是普适的，而且非常重要，是后面散射问题的核心。现在考虑任意一个天球上的对径认同的函数：\sn{在$\mathcal{I}^\pm$上定义但是与$u,v$无关的函数，在$\mathcal{I}^\pm_\mp$上对径认同。}
 \begin{equation}
 	\varepsilon(z,\overline{z})|_{\mathcal{I}_{-}^{+}}=\varepsilon(z,\overline{z})|_{\mathcal{I}_{+}^{-}}
 \end{equation}
@@ -348,7 +348,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \end{equation}
 相空间是运动方程的解，可以与初始值一一对应。
 
-到了场论这边，相空间我们可以选取为某一个柯西面$\Sigma$上的场位形。场$\phi$本身是流形上的微分形式，\ref{eq:21.22}中的$dx$应该替换为$\delta\phi$，这里$\delta$是场位形的在壳变分，也就是说$\phi+\delta \phi$仍然是场方程的解。场本身是定义在某个纤维丛上的，可以粗浅的理解为两个流形拼起来，而$d$是底流形上的微分形式算子，$\delta$事实上是另一个正交的微分形式算子，所以$\delta\phi$在$\delta$的意义上是1\mbox{-}form，在$d$的意义上$\delta$的作用不会改变其是几形式，这样$\Omega$形如$\delta\phi\wedge\delta\varphi$从$\delta$的意义上看就是个二形式。构建的微分形式还应当满足规范不变性，闭且非退化，而且还要对柯西面的不同选取一致，利用\cite{Wald:1999wa}中方法可以得到$U(1)$规范场的辛形式为：
+到了场论这边，相空间我们可以选取为某一个柯西面$\Sigma$上的场位形。场$\phi$本身是流形上的微分形式，\ref{eq:23.22}中的$dx$应该替换为$\delta\phi$，这里$\delta$是场位形的在壳变分，也就是说$\phi+\delta \phi$仍然是场方程的解。场本身是定义在某个纤维丛上的，可以粗浅的理解为两个流形拼起来，而$d$是底流形上的微分形式算子，$\delta$事实上是另一个正交的微分形式算子，所以$\delta\phi$在$\delta$的意义上是1\mbox{-}form，在$d$的意义上$\delta$的作用不会改变其是几形式，这样$\Omega$形如$\delta\phi\wedge\delta\varphi$从$\delta$的意义上看就是个二形式。构建的微分形式还应当满足规范不变性，闭且非退化，而且还要对柯西面的不同选取一致，利用\cite{Wald:1999wa}中方法可以得到$U(1)$规范场的辛形式为：
 \begin{equation}
 	\Omega_{\Sigma}=-\frac{1}{e^{2}}\int_{\Sigma}\delta(*F)\wedge\delta A
 \end{equation}
@@ -367,7 +367,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}\label{eq:23.29}
 	\Omega_{\mathcal{I}^+}=\frac{1}{e^2}\int dud^2z\left[\delta F_{uz}^{(0)}\wedge\delta A_{\bar{z}}^{(0)}+\delta F_{u\bar{z}}^{(0)}\wedge\delta A_{z}^{(0)}\right]
 \end{equation}
-总是可以把$A_z$的$u\to\pm {\infty}$，也就是$\mathcal{I}^+_{\pm}$的与$u$无关的部分分离出去，这一部分又总是可以写成某个天球上标量场的导数，因为要求$F_{z\bar z}|_{\mathcal{I}_{+}^{\pm}}=0$：
+总是可以把$A_z$的$u\to\pm {\infty}$，也就是$\mathcal{I}^+_{\pm}$的与$u$无关的部分分离出去，这一部分又总是可以写成某个天球上标量场的导数，因为要求$F_{z\bar z}|_{\mathcal{I}_{+}^{\pm}}=0$：\sn{这里所做的事情实际上是为了构建包含软光子模式$\{\phi,N\}$的协变相空间做准备，Strominger原始文献\cite{He:2014cra}(那里使用$\{\phi_\pm\}$代替这里的式$\{\phi,N\}$)就指出，如果不这样做会导致计算得出$Q^\pm_\varepsilon$不是Large规范变换的生成元}
 \begin{equation}
 	A_z^{(0)}(u,z,\bar{z})=\hat{A}_z(u,z,\bar{z})+\partial_z\phi(z,\bar{z}),\quad\partial_z\phi\equiv\frac{1}{2}\left[\left.A_z^{(0)}\right|_{\mathcal I_+^+}+\left.A_z^{(0)}\right|_{\mathcal I_-^+}\right]
 \end{equation}
@@ -413,7 +413,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	\boxed{\langle\mathrm{out}|\left(Q_\varepsilon^+\mathcal{S}-\mathcal{S}Q_\varepsilon^-\right)|\mathrm{in}\rangle=0}
 \end{equation}
 这样一个简单的式子就是$\mathcal{S}$\mbox{-}Matrix的Ward identity。利用\ref{eq:23.21}和\ref{eq:23.21.2}得到：
-\begin{equation}
+\begin{equation}\label{eq:24.2}
 	\begin{aligned}
 		Q_\varepsilon^-|\mathrm{in}\rangle&=-2\int d^2z\partial_{\bar{z}}\varepsilon\partial_zN^-(z,\bar{z})|\mathrm{in}\rangle+\sum_{k=1}^mQ_k^\mathrm{in}\varepsilon(z_k^\mathrm{in},\bar{z}_k^\mathrm{in})|\mathrm{in}\rangle \\
 		\langle\mathrm{out}|Q_\varepsilon^+&=2\int d^2z\partial_z\partial_{\bar{z}}\varepsilon\langle\mathrm{out}|N(z,\bar{z})+\sum_{k=1}^nQ_k^\mathrm{out}\varepsilon(z_k^\mathrm{out},\bar{z}_k^\mathrm{out})\langle\mathrm{out}|
@@ -575,6 +575,8 @@ Mode expansion为：
 	\varepsilon=\varepsilon(z,\bar{z})+\mathcal{O}\left(\frac1r\right)
 \end{equation}
 无穷远（天球）处不归零，就是前面说的Large gauge transformations。类似于引力散射问题的分析，可以证明$\{A^0_z\}$是initial data，QED这边散射问题为了well-define，也必须把$\{A^0_z\}$对径认同的要求看作是散射问题定义的一部分。这样的话自然也就要求$\mathcal{I}^\pm$上的规范变换\ref{eq:24.32}互相对径认同。
+
+历史上的发展和本文讨论的路线是完全相反的，2014年那段时间Strominger那些人首先是对QED和微扰引力直接去分析渐近对称性，然后去用Noether定理那一套去构建相应的守恒荷，再使用协变相空间方法进行量子化。过程中根据Lorentz不变性和$\mathcal{CPT}$的要求发现渐近对称性必须是对径认同变换的子群。而现在是把场在$\mathcal{I}^\pm_\mp$上对径认同放在第一性原理上面（看作是散射问题良定义的自然要求），然后引入天球上对径认同的函数去直接构造守恒荷，然后利用协变相空间进行量子化后发现这些守恒荷正是Large gauge/diffeomorphic 变换的生成元！
 \section{Spontaneous symmetry breaking}
 A. Zee\cite{Zee:2010qce}这部分物理讲的很清楚。
 \subsection{In QFT}
@@ -590,7 +592,7 @@ A. Zee\cite{Zee:2010qce}这部分物理讲的很清楚。
 \begin{equation}
 	V(\vec{x})=-\frac{1}{2}{\vec{\varphi}}^2+\frac{\lambda}{4}(\vec{\varphi}^2)^2+\cancelto{0}{\frac{1}{2}(\nabla\varphi)^2}
 \end{equation}
-最后一项为0是因为正定，所以我们后面找真空态场位形要求能量最低可以干脆在那些不随空间变化的场位形里面找。势能的图像就是右边的的典中典Mexican帽
+最后一项为0是因为正定，所以我们后面找真空态场位形要求能量最低可以干脆在那些不随空间变化的场位形里面找。势能的图像就是右边的典中典Mexican帽
 \begin{marginfigure}
 	\begin{center}
 \begin{tikzpicture}[font=\footnotesize]
@@ -602,8 +604,8 @@ A. Zee\cite{Zee:2010qce}这部分物理讲的很清楚。
 		y axis line style=stealth-,
 		y label style={at={(0.35,0.18)}},
 		xmax=1.6,zmax=1.3,
-		xlabel = $\varphi_{_1}$,
-		ylabel=$\varphi_{_2}$,
+		xlabel = $\varphi_{1}$,
+		ylabel=$\varphi_{2}$,
 		zlabel=$V(\vec{x})$,
 		ticks=none
 		]
@@ -671,10 +673,97 @@ $O(2)$对称性破缺有两个，一个是Abel的Lie群$SO(2)$的破缺，也就
 
 引力角动量的非局域性，是因为我们没有考虑真空简并。把真空的角动量也加进来，角动量守恒在引力理论里面就依然成立！而前面说过天球上面对称性自发破缺是不存在超选择性的，所以可以很容易从一个真空转变为另一个真空。
 \section{Massive QED}
+前面创建的一系列理论的前提本质上都是Cauchy面\sn{就是initial data所处的超曲面}为$\mathcal{I}^\pm$。但是对于有质量情况，有质量的粒子不会跑到$\mathcal{I}^\pm$这个“边”(boundary)上去，而会跑到“体”(bulk)里面的$i^{\pm}$，这样就导致柯西面不能选取为$\mathcal{I}^\pm$。前面的结论就会失效，但是软粒子相关的推导都不会受到任何影响，准确来说只有\ref{23.36}会受到影响。也就是说我们需要重新考虑Large gauge对Massive物质场的作用，也就是去考虑$Q^{+}_H\ket{p}$。前面我们的结论表明对于无质量的情况$Q^{+}_H\ket{p}\sim Q_k\varepsilon(z,\bar z)\ket{p}$，这里$\varepsilon$是天球上的Large gauge，自然的就会去想看一下Large gauge在$i^\pm$上的作用，这要求我们把边上的$\varepsilon$延拓到体上去\sn{非常有AdS/CFT的味道了，后面会看到我们使用的格林函数就是bulk-to-boundary传播子}。为了明确起见，下面的讨论在Lorenz规范$\nabla_\mu A^\mu=0$下进行，主要参考文献\cite{Campiglia:2015qka}，不依赖于度规的讨论见\cite{Kapec:2015ena}。那么“延拓”之后的$\varepsilon(x)$应该满足：
+\begin{equation}
+	\square\varepsilon\equiv\nabla^\mu\nabla_\mu\varepsilon=0,\quad \lim_{r\to\infty}\varepsilon(x)=\varepsilon(z,\bar z)
+\end{equation}
+上式有下面形式的解：
+\begin{equation}
+	\varepsilon(x)=\int d^2\hat{q}G\big(x,\hat{q}\big)\varepsilon(\hat{q})
+\end{equation}
+其中：\sn{稍微有点符号混乱，下面的$q$值的是\ref{eq:13.10}定义的$q^0$归一化后的$\hat {q}^\mu$，而前面的$\hat q$指的是其空间部分}
+\begin{equation}
+	\left.
+	\begin{matrix}
+		\square G(x,\hat{q})=0\\
+		\lim_{\overset{r\to\infty}{u\ \text{fixed}}}G(x,\hat{q})=\delta^2(\hat{x}-\hat{q})
+	\end{matrix}
+	\right\}\Rightarrow G\left(x,\hat{q}\right)=-\frac{\sqrt{\gamma(\hat{q})}}{4\pi}\frac{x^{\mu}x_{\mu}}{(q\cdot x)^2}
+\end{equation}
+不难验证$G$还有一个比较好的性质是：
+\[\lim_{\overset{r\to\infty}{v=u+2r\ \text{fixed}}}G(x,\hat{q})=\delta^2(\hat{x}+\hat{q}),\]
+这样就自动满足要求的$\varepsilon$在$\mathcal{I}^\pm_\mp$两个天球上对径认同。不如说这是因为我们取了Lorenz规范带来的方便，因为前面argue过$\mathcal{CPT}$和Lorentz不变性共同带来对径认同。
 
+为了研究$i^\pm$，比较合适的坐标选取是利用Mink$_4$的$\mathbb{H}_3,dS$划分，见图\ref{fig:Mink4}：
+\begin{equation}
+	\tau^2=-x^\mu x_\mu=t^2-r^2\begin{cases}\tau^2>0,&\mathbb{H}_3(\text{Euclidean AdS}_3)\\\tau^2<0,&\text{dS}_3\end{cases}
+\end{equation}
+研究$i^0$时使用dS那些Slice，这里我们用$\mathbb{H}_3$，选取坐标为$(\rho,\tau,\hat x (z,\bar z))$，其中$\rho\equiv\frac r{\sqrt{t^2-r^2}}$。得到Mink$_{4}$上的度规形式：
+\begin{equation}
+ds^2=-d\tau^2+\tau^2\left[\frac{d\rho^2}{1+\rho^2}+\rho^2d\Omega_2^2\right]
+\end{equation}
+取$d\tau=0$就得到了在$\mathbb{H}_3$上的诱导度规。格林函数可以相应的写成形式：
+\begin{equation}
+	G(\tau,\rho,\hat{x};\hat{q})=\frac{\sqrt{\gamma(\hat{q})}}{4\pi\left[\sqrt{1+\rho^2}-\rho\hat{q}\cdot\hat{x}\right]^2}
+\end{equation}
+图\ref{fig:Mink4}上的slice是按照$\tau$划分的，按照$\rho$划分应该为：
+\begin{figure}[H]
+	\centering
+	\includegraphics{figs/fig7.pdf}
+	\caption{$\rho$ slices in Mink$_{4}$}
+\end{figure}
+考虑匀速运动的有质量粒子，$\vec{r}=\frac{\vec{p}}{E}t+\vec{\vec{r}_{0}}$：
+\begin{equation}
+	\begin{aligned}
+		&\rho=\frac{r}{\sqrt{t^{2}-r^{2}}}=\frac{|\frac{1}{E}\vec{p}t+\vec{r}_{0}|}{\sqrt{t^{2}-\left(\frac{1}{E}\vec{p}t+\vec{r}_{0}\right)^{2}}}, \\
+		&\tau=\sqrt{t^{2}-r^{2}}=\sqrt{t^{2}-\left(\frac{1}{E}\vec{p}t+\vec{r}_{0}\right)^{2}}, \\
+		&\hat{x}=\frac{\vec{r}}{r}=\frac{\vec{p}t+E\vec{r}_{0}}{|\vec{p}t+E\vec{r}_{0}|}.
+	\end{aligned}
+\end{equation}
+取$t\to\infty$的极限：
+\begin{equation}
+	\tau\to\frac{m}Et\to\infty,\quad\rho\to\frac{|\vec{p}|}m,\quad\hat{x}\to\hat{p}.
+\end{equation}
+可以看到粒子的世界线最终会趋近于某个$\rho$ slice，而且在$i^+$球上的方位也是确定的。这和前面$\mathcal{I}^+$上的情况完全相同，只不过那个时候是$\mathbb{R}\times \mathcal{S}^2$的结构，我们也是用粒子在哪个天球$(u)$以及在天球上的何处$(z,\bar z)$来标记粒子。现在的步骤就是写下辛形式进行量子化找到对易子。最终的结果为：
+\begin{equation}
+	Q_{\varepsilon}^{+H}\left|\vec{p}\right>=Q\varepsilon\left(\frac{\left|\vec{p}\right|}{m},\hat{p}\right)\left|\vec{p}\right\rangle 
+\end{equation}
+与前面无质量的情况完全类似，只是这个时候large gauge $\varepsilon$不是boundary上的，而是bulk里的。
+
+类似于\ref{eq:24.2}，可以得到：\sn{注意这里不使用上标in，out来标记出入射，螺旋度、电荷、能量的大小用$h,Q,p^0$表示，那么出射粒子的物理量为$-h,-Q,-p^0$}
+\begin{equation}
+	\begin{aligned}
+		\langle\mathrm{out}|Q_{\varepsilon}^{+}& =-2\int d^{2}w\partial_{\bar{w}}\varepsilon\langle\mathrm{out}|\partial_{w}N  \\
+		&+\sum_{k\in\mathrm{massless}}Q_{k}\varepsilon(z_{k},\bar{z}_{k})\langle\mathrm{out}|+\sum_{k\in\mathrm{massive}}Q_{k}\varepsilon\left(\frac{|\vec{p}_{k}|}{m_{k}},\hat{p}_{k}\right)\langle\mathrm{out}|
+	\end{aligned}
+\end{equation}
+Ward恒等式为：
+\begin{equation}
+\begin{aligned}
+	&-2\int d^{2}w\partial_{\vec{w}}\varepsilon\partial_{w}\left\langle\mathrm{out}|\left[N(w,\bar{w})\mathcal{S}-\mathcal{S}N^{-}(w,\bar{w})\right]|\mathrm{in}\right\rangle  \\
+	&=-\left[\sum_{k\in\mathrm{massless}}Q_{k}\varepsilon(z_{k},\bar{z}_{k})+\sum_{k\in\mathrm{massive}}Q_{k}\varepsilon\left(\frac{|\vec{p}_{k}|}{m_{k}},\hat{p}_{k}\right)\right]\langle\mathrm{out}|\mathcal{S}|\mathrm{in}\rangle
+\end{aligned}
+\end{equation}
+取$\varepsilon(w,\bar{w})=\frac1{z-w}$，得到：
+\begin{equation}
+	\begin{aligned}
+		\frac{\sqrt{2}}{1+z\bar{z}}&\lim_{\omega\to0^{+}}\left[\omega\left\langle\mathrm{out}\right|a_{+}\big(\omega\hat{x}(z,\bar{z})\big)\mathcal{S}\left|\mathrm{in}\right\rangle\right] \\
+		&=e\left[\sum_{k\in\text{massless}}\frac{Q_k}{z-z_k}+\sum_{k\in\text{massive}}Q_k\varepsilon\left(\frac{|\vec{p}_k|}{m_k},\hat{p}_k\right)\right]\langle\text{out}|\mathcal{S}|\text{in}\rangle
+	\end{aligned}
+\end{equation}
+利用格林函数的又双叒叕一种表达式：
+\begin{equation}
+	G\left(\frac{|\vec{p_k}|}m,\hat{p}_k;w,\bar{w}\right)=\frac{1}{2\pi}\partial_{\bar{w}}\left[\frac{\sqrt{2}}{1+w\bar{w}}\frac{p_k\cdot\epsilon^+}{p_k\cdot\hat{q}}\right]
+\end{equation}
+得到：\sn{分部积分加上$$\partial_{\bar{z}}\frac{1}{z-w}=2\pi\delta^2(z-w)$$}
+\begin{equation}
+	\varepsilon\left(\frac{|\vec{p_k}|}{m},\hat{p}_k\right)=\frac{\sqrt{2}}{1+z\bar{z}}\frac{p_k\cdot\epsilon^+}{p_k\cdot\hat{q}}
+\end{equation}
+代回到Ward恒等式就再次得到了软定理！
 \section{Further Progress}
 \subsection{Subleading order}
 本节集中处理无质量标量QED中的软定理次领头阶贡献与Ward恒等式的对应，文献\cite{Lysov:2014csa}首先进行了处理，而且引言部分总结了天球物理上的诸多疑点，但注意这已经是十年前的文献了，而且文章的处理思路与现在的处理方法是顺序相反的，并非先利用对径认同找守恒荷。文献\cite{Campiglia:2016hvg}对此进行了补充。
+\subsection{Magnetic monopole}
 \subsection{Non-Abelian gauge theory}
 \subsection{Higher dimensions}
 

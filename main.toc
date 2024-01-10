@@ -44,26 +44,31 @@
 \contentsline {subsection}{\numberline {25.1}In QFT}{48}{subsection.25.1}%
 \contentsline {subsection}{\numberline {25.2}On Celestial}{50}{subsection.25.2}%
 \contentsline {section}{\numberline {26}Massive QED}{50}{section.26}%
-\contentsline {section}{\numberline {27}Further Progress}{50}{section.27}%
-\contentsline {subsection}{\numberline {27.1}Subleading order}{50}{subsection.27.1}%
-\contentsline {subsection}{\numberline {27.2}Non-Abelian gauge theory}{50}{subsection.27.2}%
-\contentsline {subsection}{\numberline {27.3}Higher dimensions}{50}{subsection.27.3}%
-\contentsline {part}{第六部分\hspace {1em}A Crush Course on CFT}{51}{part.6}%
-\contentsline {part}{第七部分\hspace {1em}Celestial $\mathcal {A}$mplitudes \& CCFT}{52}{part.7}%
-\contentsline {section}{\numberline {28}Conformal basis}{52}{section.28}%
-\contentsline {subsection}{\numberline {28.1}Massive Scalar}{52}{subsection.28.1}%
-\contentsline {subsection}{\numberline {28.2}Massless Scalar}{56}{subsection.28.2}%
-\contentsline {subsection}{\numberline {28.3}photon \& Graviton}{57}{subsection.28.3}%
-\contentsline {subsection}{\numberline {28.4}Restrict to Mink$_{4}$}{61}{subsection.28.4}%
-\contentsline {subsection}{\numberline {28.5}Conformally Soft photon \& Graviton}{61}{subsection.28.5}%
-\contentsline {subsection}{\numberline {28.6}Massive Bosons}{61}{subsection.28.6}%
-\contentsline {subsubsection}{\numberline {28.6.1}Polynomial encoding of symmetric traceless transverse tensors}{61}{subsubsection.28.6.1}%
-\contentsline {subsubsection}{\numberline {28.6.2}Conformal basis of massive bosons}{63}{subsubsection.28.6.2}%
-\contentsline {subsection}{\numberline {28.7}Fermions}{64}{subsection.28.7}%
-\contentsline {subsubsection}{\numberline {28.7.1}Spinors in arbitrary dimensions}{64}{subsubsection.28.7.1}%
-\contentsline {subsubsection}{\numberline {28.7.2}Conformal basis of Dirac spinor}{67}{subsubsection.28.7.2}%
-\contentsline {subsection}{\numberline {28.8}Examples}{68}{subsection.28.8}%
-\contentsline {subsubsection}{\numberline {28.8.1}ABC toy model}{68}{subsubsection.28.8.1}%
-\contentsline {subsubsection}{\numberline {28.8.2}$\mathcal {G}$luons}{69}{subsubsection.28.8.2}%
-\contentsline {part}{Appendix A: Surface Charge}{70}{subsubsection.28.8.2}%
-\contentsline {part}{参考文献}{71}{subsubsection.28.8.2}%
+\contentsline {section}{\numberline {27}Further Progress}{52}{section.27}%
+\contentsline {subsection}{\numberline {27.1}Subleading order}{53}{subsection.27.1}%
+\contentsline {subsection}{\numberline {27.2}Magnetic monopole}{53}{subsection.27.2}%
+\contentsline {subsection}{\numberline {27.3}Non-Abelian gauge theory}{53}{subsection.27.3}%
+\contentsline {subsection}{\numberline {27.4}Higher dimensions}{53}{subsection.27.4}%
+\contentsline {part}{第六部分\hspace {1em}A Crush Course on CFT}{54}{part.6}%
+\contentsline {part}{第七部分\hspace {1em}Celestial $\mathcal {A}$mplitudes \& CCFT}{55}{part.7}%
+\contentsline {section}{\numberline {28}Conformal basis}{55}{section.28}%
+\contentsline {subsection}{\numberline {28.1}Massive Scalar}{55}{subsection.28.1}%
+\contentsline {subsection}{\numberline {28.2}Massless Scalar}{59}{subsection.28.2}%
+\contentsline {subsection}{\numberline {28.3}photon \& Graviton}{60}{subsection.28.3}%
+\contentsline {subsection}{\numberline {28.4}Restrict to Mink$_{4}$}{64}{subsection.28.4}%
+\contentsline {subsection}{\numberline {28.5}Conformally Soft photon \& Graviton}{64}{subsection.28.5}%
+\contentsline {subsection}{\numberline {28.6}Massive Bosons}{64}{subsection.28.6}%
+\contentsline {subsubsection}{\numberline {28.6.1}Polynomial encoding of symmetric traceless transverse tensors}{64}{subsubsection.28.6.1}%
+\contentsline {subsubsection}{\numberline {28.6.2}Conformal basis of massive bosons}{66}{subsubsection.28.6.2}%
+\contentsline {subsection}{\numberline {28.7}Fermions}{67}{subsection.28.7}%
+\contentsline {subsubsection}{\numberline {28.7.1}Spinors in arbitrary dimensions}{67}{subsubsection.28.7.1}%
+\contentsline {subsubsection}{\numberline {28.7.2}Conformal basis of Dirac spinor}{70}{subsubsection.28.7.2}%
+\contentsline {subsection}{\numberline {28.8}Examples}{71}{subsection.28.8}%
+\contentsline {subsubsection}{\numberline {28.8.1}ABC toy model}{71}{subsubsection.28.8.1}%
+\contentsline {subsubsection}{\numberline {28.8.2}$\mathcal {G}$luons}{72}{subsubsection.28.8.2}%
+\contentsline {section}{\numberline {29}Some properties of Conformal basis}{72}{section.29}%
+\contentsline {subsection}{\numberline {29.1}Kerr-Schild double copy}{72}{subsection.29.1}%
+\contentsline {subsection}{\numberline {29.2}Wyle double copy}{72}{subsection.29.2}%
+\contentsline {section}{\numberline {30}Celestial Amplitudes}{72}{section.30}%
+\contentsline {part}{Appendix A: Surface Charge}{73}{section.30}%
+\contentsline {part}{参考文献}{74}{section.30}%
