@@ -208,6 +208,107 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 \end{equation}
 \section{Infrared divergence}
 QED中软光子的产生是不需要能隙的，所以看起来任意的QED散射过程都需要无穷多的软光子进行修正，这一节来处理这个问题，我们会看到实软光子的辐射修正和虚软光子的圈图修正会精确地抵消。
+
+在Wilson的有效场论框架下，重整化被理解为在路径积分中先积掉理论的UV和IR能标，带来$\Lambda$和$\Lambda^\prime$两个截断能标，这样路径积分圈图中内线的积分上下限就变成$\Lambda\sim\Lambda^\prime$，自然也就有限。重整化后的场论就是在$\Lambda\sim\Lambda^\prime$能标上的有效理论，从实践上看，我们自然想把$\Lambda^\prime$推导无穷大，重整化群理论告诉我们这仅仅只是将拉式量里面的重整化参数变成无穷大了而已，也就是用无穷大抵消无穷大，能这样做的理论就是可重整化的，是紫外有限的。一般的场论教科书并不太关注红外有限，通常我们就直接把$\Lambda$外推到0了，就像是我们已经先验的知道理论肯定红外有限，计算结果上看也确实是这样，毕竟红外修正是比较trivial的事情。现在我们来具体细致分析一下红外发散是如何产生的，又是如何消除的。
+
+紫外发散来源于圈图积分时高能标自由度部分，那么红外发散也就理应当来源于低能自由度的圈图积分，所以下面我们来单独计算一下圈图的红外积分部分，单独看看红外发散\sn{一般场论教科书里面做重整化当然是直接红外紫外打包处理，我们这里相当于只算红外部分，抽出红外效应看看}。依旧是考虑任何一个QED散射过程，相当于现在我们要考虑外腿之间传递任意数量的虚软光子的修正，所谓虚，表示不在壳，所谓软，表示圈图积分时从$\lambda\sim\Lambda$，这里$\lambda$会在最后趋近于0，$\Lambda$来标记“软”到什么程度才是软粒子。用$M_\Lambda$表示只积分$|p^0|>\Lambda$的硬自由度后的振幅，$M_\lambda$表示虚软光子修正后的振幅。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics{figs/fig8.pdf}
+	\caption{虚软光子辐射修正}
+\end{figure}
+把虚软光子看作是一个外腿辐射$q$的软光子，而另外一个外腿辐射$-q$的软光子，这样就可以利用前面的软定理的结论，发现最终的修正只是多了一个因子：
+\begin{equation}
+	J_{mn}\equiv\int_{\lambda<|\mathbf{q}|<\Lambda} \frac{d^4q}{(2\pi)^4}\frac{-i g_{\mu\nu}}{q^2-i0^+}\cdot\frac{\eta_mQ_m p^\mu_m}{p_m\cdot(-q)-i\eta_m 0^+}\cdot\frac{\eta_nQ_n p^\nu_n}{p_n\cdot(q)-i\eta_n 0^+} 
+\end{equation}
+这里光子的传播子选取了费曼规范。考虑$N$个虚光子的辐射修正，需要对$m,n$对于所有可能的外线进行求和，光子线置换和光子线两端求和会引入重复，所以还需要除以$N!2^N$因子：
+\begin{equation}
+	M_{\lambda}=M_\Lambda\cdot\frac{1}{N!2^N}\left(\sum_{n,m}J_{nm}\right)^N=M_{\Lambda}\exp\left[\frac{1}{2}\sum_{n,m}J_{nm}\right]
+\end{equation}
+将$J_{mn}$中的$\frac{Q_nQ_m\eta_n\eta_m}{(2\pi)^4}$抽离出来，剩下的积分部分记为$K_{mn}$，可以利用留数定理先计算$q^0$部分的积分：\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		极点为：
+		\[\begin{aligned}q^0&=\frac{\mathbf{p}_m}{p_m^0}\cdot\mathrm{q}+\mathrm{i}\eta_m 0^+&q^0&=|\mathbf{q}|-\mathrm{i} 0^+\\q^0&=\frac{\mathbf{p}_n}{p_n^0}\cdot\mathrm{q}-\mathrm{i}\eta_n 0^+&q^0&=-|\mathbf{q}|+\mathrm{i} 0^+\end{aligned}\]
+	\end{tabularx}
+\end{margintable}
+\begin{equation}
+	K_{nm}=\begin{cases}
+		-\pi(p_n\cdot p_m)\int_{\lambda\leq|\mathbf{q}|\leq\Lambda}\frac{\mathrm{d}^3q}{\left|\mathbf{q}\right|^3(E_n-\mathbf{\hat{q}}\cdot\mathbf{p}_n)(E_m-\mathbf{\hat{q}}\cdot\mathbf{p}_m)},&\eta_n=-\eta_m=\pm1\\
+		-\pi(p_n\cdot p_m)\int_{\lambda\leq|\mathbf{q}|\leq\Lambda}\frac{\mathrm{d}^3q}{|\mathbf{q}|^3(E_n-\mathbf{\hat{q}}\cdot\mathbf{p}_n)(E_m-\mathbf{\hat{q}}\cdot\mathbf{p}_m)}-\frac{4\mathrm{i}\pi^3}{\beta_{nm}}\ln\left(\frac{\Lambda}{\lambda}\right),&\eta_n=\eta_m=\pm1
+	\end{cases}
+\end{equation}
+其中
+\[\beta_{nm}\equiv\sqrt{1-\frac{m_n^2m_m^2}{(p_n\cdot p_m)^2}}\]
+这导致虚软光子修正的相因子对数发散，但我们最后实际可观测量是散射振幅的模方，所以最后这个虚数因子无关紧要，我们只需要关注$K_{nm}$的实部，可以统一的写为：
+\begin{equation}
+	\begin{aligned}
+	\operatorname{Re}K_{mn}&=-\pi(p_n\cdot p_m)\int_{\lambda\leq|\mathbf{q}|\leq\Lambda}\frac{\mathrm{d}^3q}{|\mathbf{q}|^3(E_n-\mathbf{\hat{q}}\cdot\mathbf{p}_n)(E_m-\mathbf{\hat{q}}\cdot\mathbf{p}_m)}\\
+	&=\frac{2\pi^2}{\beta_{nm}}\ln\biggl(\frac{1+\beta_{nm}}{1-\beta_{nm}}\biggr)\ln\biggl(\frac{\Lambda}{\lambda}\biggr)
+	\end{aligned}
+\end{equation}
+\begin{remark}
+	考虑非相对论量子力学中的散射问题时，需要求解径向波函数$R_\ell\equiv u_\ell$：
+	\[-\frac{\hbar^2}{2m}\frac{d^2u}{dr^2}+\left[V(r)-\frac{\ell(\ell+1)\hbar}{2mr^2}\right]u_\ell=E_n u_\ell\]
+	如果考虑$V(r)\propto\frac{1}{r}$的库伦散射，径向波函数的相因子并不是球面波的形式，也会出现对数发散：
+	\[R_\ell(r)\sim\frac{\exp(\mathrm{i}pr-\mathrm{i}\nu\ln r)}{r}\]
+	所以这里讨论的问题实际上时这个发散的相对论版本，非相对论版本的详尽分析见\cite{Schiff_1968}。
+\end{remark}
+将上式代入到振幅的模方表达式得到可观测量跃迁速率的修正：
+\begin{equation}\label{23.5}
+	\Gamma_{\lambda}=\left(\frac{\lambda}{\Lambda}\right)^{A}\Gamma_{\Lambda}
+\end{equation}
+其中：\sn{利用了$$\beta_{nm}=\begin{cases}
+		0,&\eta_n\eta_m=+1\\
+		\beta\in(0,1),&\eta_n\eta_m=-1
+	\end{cases}$$}
+\begin{equation}\label{23.6}
+	A=-\frac{1}{8\pi^2}\sum_{nm}\frac{Q_nQ_m\eta_n\eta_m}{\beta_{nm}}\ln\left(\frac{1+\beta_{nm}}{1-\beta_{nm}}\right)=-\frac{Q^{2}}{8\pi^{2}}\left[4-\frac{2}{\beta}\ln\left(\frac{1+\beta}{1-\beta}\right)\right]
+\end{equation}
+$Q$是总电荷量。上式说明$A$总是大于0的，所以当$\lambda\to0$时，会导致$\Gamma_{\lambda}\to 0$，这意味着，考虑了虚软光子的修正之后，红外发散体现为QED中所有的过程都不可能发生！跃迁速率都是0！而这显然是不合常理的，这个发散会通过引入软光子辐射来消除，因为任意过程不但会在外腿之间传递任意数量的虚软光子，还会辐射出任意数量的，\textbf{不可探测的}实软光子。
+
+根据前面的软定理，取模方并对螺旋度求和之后得到跃迁速率，然后再乘上相空间体积元，$\prod_{r=1}^N\frac{\mathrm{d}^3q_r}{(2\pi)^3(2|\mathbf{q}_r|)}$，得到辐射$N$个软光子到动量空间体积微元的微分速率：
+\begin{equation}
+	\mathrm d\Gamma_{\lambda}(\mathbf q_1,\cdots,\mathbf q_N)=\Gamma_{\lambda}\prod_{r=1}^{N}\frac{\mathrm d^3q_r}{(2\pi)^3(2|\mathbf q_r|)}\sum_{nm}\frac{\eta_n\eta_mQ_nQ_m(p_n\cdot p_m)}{(p_n\cdot q_r)(p_m\cdot q_r)}
+\end{equation}
+
+由于我们不可能分辨出能量无限低的软光子，所以我们测量到的跃迁速率应当是将那些所有可能的软光子发射位形积分之后得到的总的$\Gamma_{\lambda}(E,E_{T})$\sn{只要是我们看不到的过程，都要积分积掉！就像是在找边缘概率分布一样。}，这里$E$，表示不可观测的软光子的能量都小于$E$，这里的$E_T$表示不管不可观测的软光子被辐射了多少，最终总的软光子能量都小于$E_T$。首先对软光子动量方向积分：
+\begin{equation}
+	\mathrm{d}\Gamma_{\lambda}(\omega_{1}\cdots\omega_{N})=\Gamma_{\lambda}A^{N}\frac{\mathrm{d}\omega_{1}}{\omega_{1}}\cdots\frac{\mathrm{d}\omega_{N}}{\omega_{N}}
+\end{equation}
+这里$A$就是\ref{23.6}。然后是对所有的软光子辐射数目可能求和，也就是对$N$求和，还要对软光子的能量积分，上限已经由$E,E_T$确定，下限同虚软光子一样是$\lambda$，最后将这个跑动参数定为$0$，后面将看到发散会抵消，理论不依赖于$\lambda$能标。
+\begin{equation}
+	\Gamma_{\lambda}(E,E_{T})=\Gamma_{\lambda}\sum_{N=0}^{\infty}\frac{A^{N}}{N!}\int_{E\geq\omega_{r}\geq\lambda,\sum_{r}\omega_{r}\leq E_{T}}\prod_{r=1}^{N}\frac{\mathrm{d}\omega_{r}}{\omega_{r}}
+\end{equation}
+引入阶跃函数：
+\begin{equation}
+	\theta(E_T-\sum_r\omega_r)=\frac{1}{\pi}\int_{-\infty}^{\infty}\mathrm{d}u\frac{\sin E_Tu}{u}\exp\left(\mathrm{i}u\sum_r\omega_r\right)
+\end{equation}
+可以将$\Gamma_{\lambda}(E,E_{T})$中积分简化为：
+\begin{equation}
+	\Gamma_{\lambda}(E,E_{T})=\frac{1}{\pi}\int_{-\infty}^{\infty}\mathrm{d}u\frac{\sin E_{T}u}{u}\exp\left(A\int_{\lambda}^{E}\frac{\mathrm{d}\omega}{\omega}\mathrm{e}^{\mathrm{i}\omega u}\right)\Gamma_{\lambda}
+\end{equation}
+指数中的积分可以通过写成$(\mathrm{e}^{\mathrm{i}\omega u}=1)/\omega$与$1/\omega$的积分之和，得到：
+\begin{equation}
+	\Gamma_{\lambda}(E,E_{T})\to\mathscr{F}\left(E/E_{T};A\right)\left(\frac{E}{\lambda}\right)^{A}\Gamma_{\lambda}
+\end{equation}
+其中：\sn{作了换元$u\to u/E_T,\omega\to E_T\omega$}
+\begin{equation}
+	\begin{aligned}
+		\mathcal{F}(x;A)& \equiv\frac{1}{\pi}\int_{-\infty}^{\infty}\mathrm{d}u\frac{\sin u}{u}\exp\left(A\int_{0}^{x}\frac{\mathrm{d}\omega}{\omega}(\mathrm{e}^{\mathrm{i}\omega u}-1)\right)  \\
+		&=1-\frac{A^{2}\theta(x-\frac{1}{2})}2\int_{1-x}^{x}\frac{\mathrm{d}\omega}\omega\ln\left(\frac{x}{1-\omega}\right)+\cdots 
+	\end{aligned}
+\end{equation}
+如果$E/E_T\approxeq 1,A\ll 1$，则：
+\begin{equation}
+	\mathscr{F}\left(1;A\right)\simeq1-\frac{1}{12}\pi^2A^2+\cdots \to1
+\end{equation}
+然后注意到\ref{23.5}，最终得到红外修正为：
+\begin{equation}
+	\Gamma_{\lambda}(E,E_{T})\to\mathscr{F}\left(E/E_{T};A\right)\left(\frac{E}{\Lambda}\right)^{A}\Gamma_{\Lambda}
+\end{equation}
+仅仅只是一个接近于1的因子，实际的计算上，我们使用费曼图计算$\Gamma_{\Lambda}$时圈积分在$\Lambda$以上做，而理论本身肯定是与这个“软”能标的选取无关的，所以实际计算上可以自由地选取$\Lambda$，使得$\mathscr{F}\to1,A\ll 1$，这样会使得前面的修正因子非常趋近于1，这样我们只需要计算来源于费曼图的$\Gamma_{\Lambda}$低阶贡献就能非常精确地得到$\Gamma_{\lambda}(E,E_{T})$的近似结果。
+
+软引力子的红外发散抵消也可以类似的分析\cite{PhysRev.140.B516}，非软粒子引起的一般的红外发散的处理参见\cite{Weinberg}$\S 13$。
 \section{Massless QED}
 本章用天球的视角来看QED理论，为下一节做准备，本节的讨论都局限于比较简单的，不含磁荷而且电子没有质量的QED理论，但是基于此推出的许多结论实际上是普适的，可以推广到有质量QED上\cite{Strominger:2017zoo}。
 \subsection{Classical}
