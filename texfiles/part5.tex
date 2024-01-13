@@ -206,7 +206,8 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 		S_{\pm}^{(2)}=-\frac{\kappa}{4}\sum_{i=1}^{n}\eta_{i}\frac{\epsilon_{\pm\mu\nu}(q)q_{\rho}q_{\sigma}J_{i}^{\mu\rho}J_{i}^{\nu\sigma}}{q\cdot p_{i}}
 	\end{gathered}
 \end{equation}
-
+\section{Infrared divergence}
+QED中软光子的产生是不需要能隙的，所以看起来任意的QED散射过程都需要无穷多的软光子进行修正，这一节来处理这个问题，我们会看到实软光子的辐射修正和虚软光子的圈图修正会精确地抵消。
 \section{Massless QED}
 本章用天球的视角来看QED理论，为下一节做准备，本节的讨论都局限于比较简单的，不含磁荷而且电子没有质量的QED理论，但是基于此推出的许多结论实际上是普适的，可以推广到有质量QED上\cite{Strominger:2017zoo}。
 \subsection{Classical}
@@ -434,11 +435,12 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 		2\int d^2z\partial_z\partial_{\bar{z}}\varepsilon\langle\text{out}|&\left(N(z,\bar{z})\mathcal{S}-\mathcal{S}N^-(z,\bar{z})\right)|\text{in}\rangle\\&=\left[\sum_{k=1}^mQ_k^\text{in}\varepsilon(z_k^\text{in},\bar{z}_k^\text{in})-\sum_{k=1}^nQ_k^\text{out}\varepsilon(z_k^\text{out},{\bar{z}}_k^\text{out})\right]\langle\text{out}|\mathcal{S}|\text{in}\rangle
 	\end{aligned}
 \end{equation}
-取$\varepsilon(z,\bar z)=\frac{1}{w-z}$，则上式可以写为如下形式：\sn{$$\partial_{\bar{z}}\frac{1}{z-w}=2\pi\delta^2(z-w)$$}
+取$\varepsilon(z,\bar z)=\frac{1}{w-z}$，则上式可以写为如下形式：\sn{$$\partial_{\bar{z}}\frac{1}{z-w}=2\pi\delta^2(z-w)$$最后$w\leftrightarrow z$}
 \begin{equation}\label{eq:24.5}
 	4\pi\langle\mathrm{out}|\left(\partial_zN\mathcal{S}-\mathcal{S}\partial_zN^-\right)|\mathrm{in}\rangle=\left[\sum_{k=1}^m\frac{Q_k^\mathrm{in}}{z-z_k^\mathrm{in}}-\sum_{k=1}^n\frac{Q_k^\mathrm{out}}{z-z_k^\mathrm{out}}\right]\langle\mathrm{out}|\mathcal{S}|\mathrm{in}\rangle 
 \end{equation}
-这个等式其实就是带有U(1) K$\breve{\text{a}}$c-Moody current的$\text{CFT}_2$的Ward恒等式\cite{Blumenhagen:2009zz,He:2015zea,Strominger:2013lka,Nande:2017dba}。
+这个等式其实就是带有U(1) K$\breve{\text{a}}$c-Moody current的$\text{CFT}_2$的Ward恒等式\cite{Blumenhagen:2009zz,He:2015zea,Strominger:2013lka,Nande:2017dba}。这里的$\varepsilon$的选取是为了后面与正螺旋度光子的软定理联系，如果考虑负螺旋度的情况，可以选取$\varepsilon(z,\bar z)=\frac{1}{\bar w-\bar z}$进行一样的推导。
+
 \subsection{Mode expansion}
 本部分的终极目标是证明Ward恒等式可以联系渐近对称性和软定理，前文从相空间角度给出了Ward恒等式，在动量空间给出了软定理，是时候在动量空间重写Ward恒等式了，重点就是将场算符用平面波展开，也就是正则量子化的过程。free mode expansion 弯曲时空量子力学领域已经不少人算过了，U(1)规范理论结果如下：
 \begin{equation}
@@ -574,9 +576,14 @@ Mode expansion为：
 \begin{equation}\label{eq:24.32}
 	\varepsilon=\varepsilon(z,\bar{z})+\mathcal{O}\left(\frac1r\right)
 \end{equation}
-无穷远（天球）处不归零，就是前面说的Large gauge transformations。类似于引力散射问题的分析，可以证明$\{A^0_z\}$是initial data，QED这边散射问题为了well-define，也必须把$\{A^0_z\}$对径认同的要求看作是散射问题定义的一部分。这样的话自然也就要求$\mathcal{I}^\pm$上的规范变换\ref{eq:24.32}互相对径认同。
+无穷远（天球）处不归零，就是前面说的Large gauge transformations。类似于引力散射问题的分析，可以证明$\{A^0_z\}$是initial data，也就是说在$\mathcal{I}^+(\mathcal{I}^-)$上知晓了它就能将其它所有场在$\mathcal{I}^+(\mathcal{I}^-)$柯西面上的位形确定到只差一个积分常数。所以QED这边散射问题($\mathcal{I}^-\to\mathcal{I}^+$场位形的map问题)为了well-define，也必须把$\{A^0_z\}$对径认同的要求\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		$$\left.A^0_z\right|_{\mathcal{I}^+_-}=\left.A^0_z\right|_{\mathcal{I}^-_+}$$
+	\end{tabularx}
+\end{margintable}看作是散射问题定义的一部分。这样的话自然也就要求$\mathcal{I}^\pm$上的规范变换\ref{eq:24.32}互相对径认同。
 
 历史上的发展和本文讨论的路线是完全相反的，2014年那段时间Strominger那些人首先是对QED和微扰引力直接去分析渐近对称性，然后去用Noether定理那一套去构建相应的守恒荷，再使用协变相空间方法进行量子化。过程中根据Lorentz不变性和$\mathcal{CPT}$的要求发现渐近对称性必须是对径认同变换的子群。而现在是把场在$\mathcal{I}^\pm_\mp$上对径认同放在第一性原理上面（看作是散射问题良定义的自然要求），然后引入天球上对径认同的函数去直接构造守恒荷，然后利用协变相空间进行量子化后发现这些守恒荷正是Large gauge/diffeomorphic 变换的生成元！
+
 \section{Spontaneous symmetry breaking}
 A. Zee\cite{Zee:2010qce}这部分物理讲的很清楚。
 \subsection{In QFT}
@@ -724,11 +731,68 @@ ds^2=-d\tau^2+\tau^2\left[\frac{d\rho^2}{1+\rho^2}+\rho^2d\Omega_2^2\right]
 \begin{equation}
 	\tau\to\frac{m}Et\to\infty,\quad\rho\to\frac{|\vec{p}|}m,\quad\hat{x}\to\hat{p}.
 \end{equation}
-可以看到粒子的世界线最终会趋近于某个$\rho$ slice，而且在$i^+$球上的方位也是确定的。这和前面$\mathcal{I}^+$上的情况完全相同，只不过那个时候是$\mathbb{R}\times \mathcal{S}^2$的结构，我们也是用粒子在哪个天球$(u)$以及在天球上的何处$(z,\bar z)$来标记粒子。现在的步骤就是写下辛形式进行量子化找到对易子。最终的结果为：
-\begin{equation}
+可以看到粒子的世界线最终会趋近于某个$\rho$ slice，而且在$i^+$球上的方位也是确定的。这和前面$\mathcal{I}^+$上的情况完全相同，只不过那个时候是$\mathbb{R}\times \mathcal{S}^2$的结构，我们也是用粒子在哪个天球$(u)$以及在天球上的何处$(z,\bar z)$来标记粒子。现在的步骤就是写下辛形式进行量子化找到对易子。不难猜到最终的结果为：
+\begin{equation}\label{guess}
 	Q_{\varepsilon}^{+H}\left|\vec{p}\right>=Q\varepsilon\left(\frac{\left|\vec{p}\right|}{m},\hat{p}\right)\left|\vec{p}\right\rangle 
 \end{equation}
-与前面无质量的情况完全类似，只是这个时候large gauge $\varepsilon$不是boundary上的，而是bulk里的。
+与前面无质量的情况完全类似，只是这个时候large gauge $\varepsilon$不是boundary上的，而是bulk里的。但是这个结果并非显然，前面我们虽然是直接使用Noether定理“看”出来的，但更严谨的做法还是得去构造带电粒子的相空间辛形式，搞渐近分析和surface charges那一套。文献\cite{Campiglia:2015qka}对复标量场，也就是标量QED进行了仔细分析，稍微总结一下思路，首先是弯曲时空量子场论中算过自由标量场的模式展开，其和平直时空一样是傅里叶展式：\sn{Lecture\cite{Strominger:2017zoo}的习题里面讨论了这个问题，但讨论的是更为简单的$\phi=\phi^\dagger$的实标量场，而我们标量QED里面需要的是复标量场，这样才有$U(1)$对称性，参与耦合的$U(1)$流不等于0，所以下面我按照文献\cite{Campiglia:2015qka}的公式，顺着习题的思路进行了改写}
+\begin{equation}
+	\varphi(x)=\int\frac{d^3\vec{p}}{(2\pi)^32E_p}(b(\vec{p})e^{ip\cdot x}+d^\dagger(\vec{p})e^{-ip\cdot x})
+\end{equation}
+利用$\rho,\tau$可以将相因子写成：
+\begin{equation}
+	p\cdot x=\tau\Big[-\sqrt{p^2+m^2}\sqrt{1+\rho^2}+\rho\vec{p}\cdot\hat{x}\Big]\equiv-\tau f(\vec{p})
+\end{equation}
+类似于前面对光子的处理，我们感兴趣荷是在$|\tau|\to\infty$的柯西面上定义的，所以去考虑$\tau\to-\infty$附近的展开\sn{后面一律考虑$Q^+$，$\tau\to-\infty$对应的$Q^-$讨论类似}。利用鞍点近似，将$f(\vec{p})$在鞍点$\vec{p}=m\rho\hat x$附近进行展开：
+\begin{equation}
+	p\cdot x=-m\tau-\frac{\tau}{2}\mathcal{P}_{ij}(p_{i}-m\rho\hat{x}_{i})(p_{j}-m\rho\hat{x}_{j})+\mathcal{O}(p^{3})
+\end{equation}
+这里$\mathcal{P}_{ij}$是Hessian矩阵：
+\begin{equation}
+	\mathcal{P}_{ij}\equiv\left.\frac{\partial}{\partial p_i}\frac{\partial}{\partial p_j}f\right|_{\vec{p}=m\rho\hat{x}}=\frac{1}{m}\left[\delta_{ij}-\frac{\rho^2}{1+\rho^2}\hat{x}_i\hat{x}_j\right]
+\end{equation}
+代入$\varphi$的模式展开得到：\begin{margintable}\footnotesize 
+	\begin{tabularx}{\marginparwidth}{|X}
+		$\int_{-\infty}^{\infty}dxe^{ikx^2}=\sqrt{\frac{\pi}{k}}e^{i\pi/4}$\\
+		$\det\mathcal{P}=\frac{1}{m^3(1+\rho^2)}$
+	\end{tabularx}
+\end{margintable}
+\begin{equation}\label{26.14}
+	\begin{aligned}
+		\lim_{\tau\to+\infty}\varphi(x)=& \frac1{2m(2\pi)^3\sqrt{1+\rho^2}}\left[b(m\rho\hat{x})e^{-im\tau}\int d^3pe^{-i\frac\tau2{\mathcal P}_{ij}p_ip_j}\right.  \\
+		&+d^{\dagger}(m\rho\hat{x})e^{im\tau}\left.\int d^{3}pe^{i\frac{\tau}{2}\mathcal{P}_{ij}p_{i}p_{j}}\right] \\
+		=&\frac{\sqrt{\frac{(2\pi)^3}{\tau^3\det\mathcal{P}}}}{2m(2\pi)^3\sqrt{1+\rho^2}}\left[b(m\rho\hat{x})e^{-im\tau}e^{-3i\pi/4}+d^\dagger(m\rho\hat{x})e^{im\tau}e^{3i\pi/4}\right]\\
+		=&\frac{\sqrt{m}}{2(2\pi\tau)^{3/2}}\left[b(m\rho\hat{x})e^{-im\tau}e^{-3i\pi/4}+d^\dagger(m\rho\hat{x})e^{im\tau}e^{3i\pi/4}\right]
+	\end{aligned}
+\end{equation}
+现在选取用$\tau$分割的某个$\mathbb{H}_3$ Slice作为柯西面\sn{柯西面从几何上看一个重要的特性就是与所有粒子的世界线最终相交的类空曲面}。对应相空间辛形式为：\sn{这里$\mathbb{H}_3$表示$\tau=1$所对应的单位双曲面，$d^3V$是上面$SL(2,\mathbb{C})$不变的积分测度}
+\begin{equation}
+	\Omega_{\tau}=\int d^{3}V\tau^{3}\partial_{\tau}\delta\varphi\wedge\delta\varphi+h.c
+\end{equation}
+进一步选取$\tau\to\infty$对应的柯西面，这样就能使用\ref{26.14}进一步简化式子：
+\begin{equation}
+	\Omega_{\tau\to\infty}=-\frac{im^2}{2(2\pi)^3}\int d^3V\left(\delta b(m\rho\hat{x})\wedge\delta b^\dagger(m\rho\hat{x})+b\leftrightarrow d\right)
+\end{equation}
+这个辛形式得到的$b,b^\dagger$之间的对易关系与平直时空里的完全一致！
+\begin{equation}
+	\begin{aligned}
+		\left[b(m\rho\hat{x}),b^\dagger(m\rho'\hat{x}')\right]&=\frac{2(2\pi)^3}{m^2}\delta(\rho-\rho')\delta^2(\hat{x}-\hat{x}')=(2\pi)^{3}(2\omega_{p})\delta^{3}(\vec{p}-\vec{p^{\prime}})
+		&=\left[d(m\rho\hat{x}),d^\dagger(m\rho'\hat{x}')\right]
+	\end{aligned}
+\end{equation}
+我们知道标量QED里面的$U(1)$流为：
+\begin{equation}
+	\mathcal{J}_\mu=ie\varphi(D_\mu\varphi)^\dagger+h.c.,\quad D_\mu\varphi\equiv\partial_\mu\varphi-ie{A}_\mu\varphi 
+\end{equation}
+现在hard charges就可以利用bulk里面的$\varepsilon$以及$\tau\to\infty$时的$U(1)$流来定义：
+\begin{equation}
+	Q_\varepsilon^{+H}=-\int_{\mathbb{H}_3}d^3V\varepsilon(\rho,\hat{x})j^\tau(\rho,\hat{x})
+\end{equation}
+其中：
+\begin{equation}
+	j^\tau(\rho,\hat{x})=\lim_{\tau\to\infty}\tau^3\mathcal{J}^\tau(\tau,\rho,\hat{x})=\frac{em^2}{2(2\pi)^3}(b(\rho,\hat{x})b^\dagger(\rho,\hat{x})-d(\rho,\hat{x})d^\dagger(\rho,\hat{x}))
+\end{equation}
+从物理上讲，我们可以认为这个荷由large gauge对hard粒子的作用生成，再利用$b,b^\dagger$之间的对易关系就可以得到\ref{guess}。
 
 类似于\ref{eq:24.2}，可以得到：\sn{注意这里不使用上标in，out来标记出入射，螺旋度、电荷、能量的大小用$h,Q,p^0$表示，那么出射粒子的物理量为$-h,-Q,-p^0$}
 \begin{equation}
@@ -764,8 +828,11 @@ Ward恒等式为：
 \subsection{Subleading order}
 本节集中处理无质量标量QED中的软定理次领头阶贡献与Ward恒等式的对应，文献\cite{Lysov:2014csa}首先进行了处理，而且引言部分总结了天球物理上的诸多疑点，但注意这已经是十年前的文献了，而且文章的处理思路与现在的处理方法是顺序相反的，并非先利用对径认同找守恒荷。文献\cite{Campiglia:2016hvg}对此进行了补充。
 \subsection{Magnetic monopole}
+Strominger认为，前面对软定理的推导是在微扰理论的框架下进行的（使用了费曼图就肯定是在研究微扰场论了），但是QED本身由于朗道极点的存在就必然是UV不完备的，所以要计算软定理领头阶的非微扰贡献，求助于构造一个非微扰的QED是徒劳。不过Strominger认为有磁荷的QED或许能解决这个问题\cite{Strominger:2015bla}。
+
+磁荷同样可以和软光子相互作用，磁荷对软定理领头阶的修正可以完全地通过电磁对偶的手段非常简洁地建立起来。
 \subsection{Non-Abelian gauge theory}
 \subsection{Higher dimensions}
-
+\subsection{$\mathcal{N}=1$ Super Symmetry}
 
 
