@@ -371,7 +371,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	}
 \end{equation}
 也就是说场在两个天球上是对径认同的，这也是为什么前面$\mathcal{I}^{\pm}$天球的角向选取是antipodal的，上边的式子可以写成下面很简洁的形式：
-\begin{equation}
+\begin{equation}\label{24.12}
 	\boxed{
 	\left.F_{ru}^{(2)}(z,\bar z)\right|_{\mathcal{I}^{+}_-}=\left.F_{rv}^{(2)}(z,\bar z)\right|_{\mathcal{I}^{-}_+}
 	}
@@ -932,6 +932,57 @@ Ward恒等式为：
 Strominger认为，前面对软定理的推导是在微扰理论的框架下进行的（使用了费曼图就肯定是在研究微扰场论了），但是QED本身由于朗道极点的存在就必然是UV不完备的，所以要计算软定理领头阶的非微扰贡献，求助于构造一个非微扰的QED是徒劳。不过Strominger认为有磁荷的QED或许能解决这个问题\cite{Strominger:2015bla}。
 
 磁荷同样可以和软光子相互作用，磁荷对软定理领头阶的修正可以完全地通过电磁对偶的手段非常简洁地建立起来。
+\begin{equation}
+	\tilde{F}=-\frac{2\pi}{e^{2}}*F,\quad\tilde{e}=\frac{2\pi}{e},\quad\tilde{Q}_{k}=\frac{1}{\tilde{e}^{2}}\int_{S_{k}^{2}}*\tilde{F}=M_{k},\quad\tilde{M}_{k}=\frac{1}{2\pi}\int_{S_{k}^{2}}\tilde{F}=-Q_{k}
+\end{equation}
+这里$S_k^2$表示包围第$k$个电/磁荷的球面。通过上面的对偶变换，我们建立了$\left(\tilde{Q},\tilde{M}\right)\leftrightarrow\left(M,-Q\right)$的对应，从数学结构上看，磁荷和电荷是完全类似的。注意，我们这里做的操作只是数学上的换元而已，方便我们看出背后的数学结构，并未事先假定电磁之间存在某种对偶。那么类似的磁荷也会和规范场$\tilde{A}$相互作用：
+\begin{align}
+	F=dA,\quad A=e\varepsilon_\alpha \mathrm{e}^{iq\cdot x}\\
+	\tilde{F}=\mathrm{d}\tilde{A}=-\frac{2\pi}{e^2}*\mathrm{d}A,\quad \tilde{A}=\tilde{e}\tilde{\varepsilon}_\alpha \mathrm{e}^{iq\cdot x}
+\end{align}
+所以磁荷那部分的修正只需要做替换$A\mapsto \tilde A,e\mapsto \tilde e,\varepsilon_\alpha\mapsto \tilde{\varepsilon}_\alpha$即可得到。
+\begin{equation}
+	S_0^\alpha=\sum_k\eta_k\frac{eQ_kp_k\cdot\varepsilon^\alpha}{q\cdot p_k}\to \sum_k\eta_k\frac{p_k\cdot(Q_ke\varepsilon^\alpha+M_k\tilde{e}\tilde{\varepsilon}^\alpha)}{q\cdot p_k}
+\end{equation}
+这个式子可以进一步化简，将前面的对偶推到天球上去看：
+\begin{equation}
+	\tilde{F}_{z\bar{z}}^{(0)}=\frac{2\pi i}{e^2}\gamma_{z\bar{z}}F_{ru}^{(2)},\quad\tilde{F}_{ru}^{(2)}=\frac{2\pi i}{e^2}\gamma^{z\bar{z}}F_{z\bar{z}}^{(0)},\quad\tilde{F}_{uz}^{(0)}=\frac{2\pi i}{e^2}F_{uz}^{(0)}
+\end{equation}
+最后一个式子说明：
+\begin{equation}
+	\tilde{A}_z^{(0)}=\frac{2\pi i}{e^2}A_z^{(0)}
+\end{equation}
+同时也给出了$\varepsilon_\alpha$和$\tilde{\varepsilon}_\alpha$之间的比例系数。软定理（领头阶）最终化简为：
+\begin{equation}\label{28.7}
+	\boxed{S_0^\pm=\sum_k\eta_k\frac{(eQ_k\pm\frac{2\pi i}{e}M_k)p_k\cdot\varepsilon^\pm}{q\cdot p_k}}
+\end{equation}
+Strominger认为这应当是考虑了非微扰效应之后的软定理领头阶的精确表达式。类似\ref{24.12}，磁荷这边也有：
+\begin{equation}
+	F_{z\bar{z}}^{(0)}|_{\mathcal I_{-}^{+}}=-F_{z\bar{z}}^{(0)}|_{\mathcal I_{+}^{-}}
+\end{equation}
+负号是因为方向角选取对径认同，所以$\partial_z\leftrightarrow-\partial z$。前面不考虑磁荷时，认为天球上$F_{z\bar z}-0$。这样就可以利用对径认同的天球上的任意函数$\varepsilon(z,\bar z)$定义守恒的荷：
+\begin{align}
+	&\tilde{Q}_{\varepsilon}^{+}=\frac{1}{2\pi}\int_{\mathcal I_{-}^{+}}\varepsilon F=\frac{i}{2\pi}\int_{\mathcal I_{-}^{+}}d^{2}z\varepsilon F_{z\bar{z}}^{(0)}\\
+	&\tilde{Q}_{\varepsilon}^{-}=-\frac{1}{2\pi}\int_{\mathcal I_{+}^{-}}\varepsilon F=-\frac{i}{2\pi}\int_{\mathcal I_{+}^{-}}d^{2}z\varepsilon F_{z\bar{z}}^{(0)}
+\end{align}
+\begin{equation}
+	\boxed{
+		\tilde{Q}_{\varepsilon}^+=\tilde{Q}_{\varepsilon}^-
+	}
+\end{equation}
+再次得到了无穷多个守恒荷，对应的又是何种对称性呢？或许我们可以完全类似于电荷认为它对应磁荷的large gauge symmetries：
+\begin{equation}\label{conjecture1}
+	\tilde{\delta}_\varepsilon\tilde{A}_z^{(0)}=\partial_z\varepsilon
+\end{equation}
+利用$A$可以表达为：
+\begin{equation}
+	\tilde\delta_{\varepsilon}A_{z}^{(0)}=-\frac{ie^{2}}{2\pi}\partial_{z}\varepsilon 
+\end{equation}
+从$A_z$这边看，加入磁荷后相当于原先的$U(1)$ large gauge 变成了一个\textbf{复化}之后的large gauge，对应的守恒荷也复化了。
+
+按理说现在要做的事情就是重复前面模式展开、协变相空间量子化那一套去证明Ward恒等式和\ref{28.7}之间的等价性，\cite{Strominger:2015bla}也这么去做了，但是却存在一些非常大的conjecture。首先认为$\tilde{Q}^\pm$由\ref{conjecture1}生成就是一个猜想，$\tilde{A}$确实存在\ref{conjecture1}这样的large gauge，但是最终这证明$\tilde{Q}^\pm$是其生成元需要构造协变相空间的量子化从而计算对易子。这就导出了另外一个conjecture，我们并不知道磁荷的辛形式如何去构造，而且前面推导电荷那边辛形式非常重要的一个边界条件是假定没有磁荷，加入磁荷之后辛形式如何修改还不清楚，我们只能认为加入磁荷后$Q^\pm$依旧由电荷的large gauge生成。文献\cite{Strominger:2015bla}就是在这些假定下去做的。
+
+另外一个比较重要的点，电荷那边的large gauge是$U(1)$ gauge的一个子群，常说$U(1)$ gauge不是symmetry，只是冗余自由度，要么没有守恒荷，要么构建出的守恒荷其实不守恒\sn{我们讲对称性，首先要可以从Noether定理导出可观测的守恒荷，而且有相应的对物理态的对称变换。global的$U(1)$对称性确实non-trivial，是真正的symmetry，对应电荷守恒，这其实上无穷远处不归零已经有large gauge的影子了，但是local $U(1)$ 是trivial的，它导出电荷守恒并非是Noether定理的结论（回忆Nother定理的那些标记连续对称性的参数是global的而不是local的）。}，这些“symmetry”是trivial的，只是redundancy，并非渐近对称性，我们可以把通常所说的$U(1)$ gauge称为“bulk gauge”，而天球上的large gauge是真正的渐近对称性。对于QED的情况，large gauge是bulk gauge的子群，或者说非平庸的子群，但是磁荷这边就不一样了，上面通过对偶看出来的渐近对称性并不能看成bulk gauge的子群，毕竟都出现复化跑出$U(1)$了，所以通过这点可以看出，\textbf{并不是所有的渐近对称性都可以看作是bulk里的对称性的子群}
 \subsection{Non-Abelian gauge theory}
 \subsection{Higher dimensions}
 \subsection{$\mathcal{N}=1$ Super Symmetry}
