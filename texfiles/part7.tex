@@ -8,7 +8,7 @@
 QFT中利用费曼图计算散射振幅都是在动量空间下进行的，也就是选取在平面波为基底，这样做最大的好处是可以显现出平移对称性。但是在考虑天球上的散射问题时，很显然我们应当最大化利用共性对称性，所以基底应该选取为类似CFT中初级场的形式，称之为“Conformal Primary Wave Function”，这样$\mathbb{R}^{d+1,1}$上的散射振幅就有希望在这个基底下类似于CFT$_{d}$中的n点关联函数，Clifford Cheung很早就利用这个基底对一些特殊情形进行了研究\cite{Cheung:2016iub}\sn{历史上最早可以追溯到Dirac\cite{436861d5-35f6-36cf-9470-cb587eced490}}。现在顺着文献\cite{Pasterski:2017kqt}的思路来介绍这一组基底。
 \subsection{Massive Scalar}
 \begin{definition}[Massive Scalar Conformal Primary Wave Function]
-自旋为$0$的标量场既没有$\mathbb{R}^{d+1,1}$上的$SO(d+1,1\uparrow$指标，也没有spinning CFT特有的张量指标，或者说处于$SO(d)$的标量表示。对于平面波，我们使用在壳动量来标记基底，现在我们使用$\Delta\in\mathbb{C},\vec{w}$来标记基底。
+自旋为$0$的标量场既没有$\mathbb{R}^{d+1,1}$上的$SO\uparrow(d+1,1)$指标，也没有spinning CFT特有的张量指标，或者说处于$SO(d)$的标量表示。对于平面波，我们使用在壳动量来标记基底，现在我们使用$\Delta\in\mathbb{C},\vec{w}$来标记基底。
 \begin{itemize}
 	\item 在壳：
 	\begin{equation}
@@ -81,7 +81,7 @@ $y=0$对应$\partial\mathbb{H}_{d+1}$。$ds^2_{\mathbb{H}_{d+1}}$天然是$SO(d+
 \begin{equation}
 	\phi_\Delta^\pm(X^\mu;\vec{w})=\frac{2^{\frac d2+1}\pi^{\frac d2}}{(im)^{\frac d2}}\frac{(\sqrt{-X^2})^{\Delta-\frac d2}}{(-q(\vec{w})\cdot X\mp i\epsilon)^\Delta}K_{\Delta-\frac d2}(m\sqrt{X^2})
 \end{equation}
-$\mathcal{A}\equiv\bra{\textbf{out}}\mathcal{S}\ket{\text{in}}$，那么在conformal基底下的散射振幅和原先动量空间散射振幅之间关系为：
+$\mathcal{A}\equiv\bra{out}\mathcal{S}\ket{\text{in}}$，那么在conformal基底下的散射振幅和原先动量空间散射振幅之间关系为：
 \begin{equation}
 	\widetilde{\mathcal{A}}(\Delta_i,\vec{w}_i)\equiv\prod_{k=1}^n\int_{\mathbb{H}_{d+1}}[d\hat{p}_k]G_{\Delta_k}(\hat{p}_k;\vec{w}_k)\mathcal{A}(\pm m_i\hat{p}_i^\mu)
 \end{equation}
