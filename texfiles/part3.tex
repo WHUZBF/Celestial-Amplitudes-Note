@@ -111,6 +111,17 @@
 
 根据前面的论证，对于四维闵氏时空，Killing方程共有$10=\frac{4\times(4+1)}{2}$个独立解，也就是说存在$10$个独立的Killing场。实际上可以证明，对于任意$n$维时空，其最多具有$\frac{n(n+1)}{2}$个独立的Killing场，然而闵氏时空的$Poincar\'e$变换正好取到不等式上界。由于Killing场诱导的是等度规映射，所以也成为时空的对称性，根据上面的分析，平直闵氏时空具有最大的对称性。
 \begin{remark}
+	最大平直时空所有点都是“平权”的，也称为\textbf{常曲率空间}，其黎曼张量为：
+	\[R_{\lambda\rho\sigma\nu}=K\left(g_{\lambda\sigma}g_{\rho\nu}-g_{\lambda\nu}g_{\rho\sigma}\right),\quad K=\frac{R}{n(n-1)}\]
+	而且Weyl张量处处为0，也就是说时空是共形平直的，始终存在一个坐标系使得：
+	\[g_\mu\nu=\Omega(x)^2\eta_{\mu\nu}\]
+	对于黎曼流形，最大平直时空除了$K=0$的$\mathbb{R}^d$，还有$K>0$的球面以及$K<0$的双曲空间。宇宙学原理认为空间部分是最大对称空间，在FLRW度规下：
+	\[ds^2=-dt^2+a(t)^2d\Omega_K^2\]
+	这里$d\Omega_K^2$是上面三种的一种，而且根据$K=0,K>0$和$K<0$可以把宇宙分为平宇宙、闭宇宙和开宇宙。
+	
+	\setlength{\parindent}{2em}而对于Lorentz流形，除了$K=0$的$\mathbb{R}^{1,d}$，还有$K>0$的dS时空以及$K<0$的AdS时空，他们都是带宇宙学常数的真空Einstein方程的特解。最后说一下，时空本身是绝对的，但空间是相对的，空间部分平坦取决于我们如何对时空用进行分层（坐标系的选取$t=\mathrm{const}$），所以不能绝对地在未指定坐标系的情况下谈空间部分平直或者弯曲。更多有关最大对称时空的介绍可以见李理老师的报告:\href{https://www.koushare.com/video/videodetail/64861}{带宇宙学常数的时空和黑洞相变（一）}。
+\end{remark}
+\begin{remark}
 	在GR的语境下提到共形变换更多的其实是指Weyl变换，它的定义和共形变换很像，但是不等价。Weyl变换的定义不需要微分同胚，或者说我们直接取同胚为$\mathrm{id}_\mathcal{M}$，这样流形上的点、张量和坐标系都不变，但是我们直接把流形上的度规结构改变，变成：
 	\[\tilde{g}_{ab}=\Omega^2g_{ab}\]
 	还要求物理不变，这就是Weyl invariant，定义与共形变换非常类似，但是不能混淆两者，两者之间的微妙区别会体现在弦论中共形反常的消去上。\cite{Blumenhagen}

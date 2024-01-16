@@ -13,7 +13,7 @@
 \contentsline {part}{第三部分\hspace {1em}Conformal transformations}{11}{part.3}%
 \contentsline {section}{\numberline {10}Pull back, push forward \& Lie derivative}{11}{section.10}%
 \contentsline {section}{\numberline {11}Killing \& Conformal Killing vector field}{12}{section.11}%
-\contentsline {section}{\numberline {12}Conformal transformations in $d>2$}{13}{section.12}%
+\contentsline {section}{\numberline {12}Conformal transformations in $d>2$}{14}{section.12}%
 \contentsline {section}{\numberline {13}Conformal transformations in $d=2$}{16}{section.13}%
 \contentsline {subsection}{\numberline {13.1}Embedding formalism}{17}{subsection.13.1}%
 \contentsline {section}{\numberline {14}Conformal transformations on the Riemann sphere}{17}{section.14}%
