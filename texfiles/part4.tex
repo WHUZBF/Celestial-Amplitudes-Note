@@ -552,7 +552,7 @@ x^{\prime\mu} =x^{\mu}+\omega_{a}\frac{\delta x^{\mu}}{\delta\omega_{a}},  \quad
 \begin{equation}
 	T_\mathrm{B}^{\mu\nu}=T^{\mu\nu}+\partial_\rho B^{\rho\mu\nu},\quad B^{\rho\mu\nu}=-B^{\mu\rho\nu}
 \end{equation}
-对于一般的时空变换$x^{\prime}\mu=x^\mu+\omega^\mu(x)$，其实作用量的变换可以用能动量张量写成：
+对于一般的时空变换$x^{\prime\mu}=x^\mu+\omega^\mu(x)$，其实作用量的变换可以用能动量张量写成：\sn{这本质上就是能动张量的定义，能动张量编码理论在度规发生无穷下变换下的行为。}
 \begin{equation}\label{eq:19.8}
 	\begin{aligned}
 	\delta\mathcal{S}&=\int d^dxT^{\mu\nu}\partial_{\mu}\omega_{\nu}\\
@@ -567,7 +567,7 @@ x^{\prime\mu} =x^{\mu}+\omega_{a}\frac{\delta x^{\mu}}{\delta\omega_{a}},  \quad
 \begin{equation}
 	\Phi^{\prime}(x)=\Phi(x)-i\omega_aG_a\Phi(x)
 \end{equation}
-与上面经典守恒流对应的是真空关联函数\sn{利用LSZ公式把外腿在壳之后就得到了散射振幅}意义下的Ward-Takahashi恒等式：
+与上面经典守恒流对应的是真空关联函数\sn{利用LSZ公式把外腿在壳之后就得到了散射振幅}意义下的Ward-Takahashi恒等式：\sn{这里的公式和\textit{Srednicki}书中不同，首先是因为\textit{Sredniki}书中convention是$\frac{\delta S}{\delta \varphi}\sim -\partial_\mu j^\mu$，比我们在\ref{eq:19.2}中多一个负号。其次是我们这里为了后面讨论二维CFT方便，已经将作用量做Wick转动，路径积分因子$\mathrm{e}^{iS}\mapsto\mathrm{e}^{-S}$。这两点共同导致了这一公式形式。}
 \begin{equation}
 	\boxed{
 		\frac\partial{\partial x^\mu}\left\langle j_a^\mu(x)\Phi(x_1)\cdots\Phi(x_n)\right\rangle   
@@ -578,10 +578,10 @@ x^{\prime\mu} =x^{\mu}+\omega_{a}\frac{\delta x^{\mu}}{\delta\omega_{a}},  \quad
 \begin{equation}
 	\langle Q_a(t_+)\Phi(x_1)\mathcal{Y}\rangle-\langle Q_a(t_-)\Phi(x_1)\mathcal{Y}\rangle=-i\left\langle G_a\Phi(x_1)\mathcal{Y}\right\rangle
 \end{equation}
-取极限$t_-\to t_+$，由于$\mathcal{Y}$是任意的，所以：
+取极限$t_-\to t_+$，由于$\mathcal{Y}$是任意的，所以：\sn{注意这里是在$j^\mu =T^{\mu\nu}\omega_\nu$的convention下，不同文献convention不同常常会差个负号。另外，不少文献中也会把$\delta\omega_a$吸收进左侧$Q$的定义中，这样右侧就直接是$\delta \Phi$了。}
 \begin{equation}
 	\boxed{
-	[Q_a,\Phi]=-iG_a\Phi }
+	[Q_a,\Phi]=-iG_a\Phi =\frac{\delta_\omega \Phi}{\delta \omega_a}}
 \end{equation}
 量子化后，在算符的意义下，守恒荷是对称性的生成元。\sn{你去用$\phi_a,\pi^a$之间的正则对易关系当然也能得到这一点，比如Srednicki\cite{srednicki}，只是这里我们是完全用路径积分量子化的方法。}
 

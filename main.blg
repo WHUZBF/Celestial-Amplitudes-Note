@@ -9,8 +9,9 @@ A level-1 auxiliary file: texfiles/part4.aux
 A level-1 auxiliary file: texfiles/part5.aux
 A level-1 auxiliary file: texfiles/part6.aux
 A level-1 auxiliary file: texfiles/part7.aux
+A level-1 auxiliary file: texfiles/part8.aux
 A level-1 auxiliary file: texfiles/appendixA.aux
-Illegal, another \bibstyle command---line 94 of file main.aux
+Illegal, another \bibstyle command---line 95 of file main.aux
  : \bibstyle
  :          {JHEP}
 I'm skipping whatever remains of this command
@@ -28,7 +29,7 @@ Warning--empty booktitle in Ashtekar1987AsymptoticQ
 Warning--empty publisher in Blumenhagen:2009zz
 You've used 117 entries,
             2363 wiz_defined-function locations,
-            1437 strings with 22627 characters,
+            1438 strings with 22645 characters,
 and the built_in function-call counts, 40848 in all, are:
 = -- 4277
 > -- 1079

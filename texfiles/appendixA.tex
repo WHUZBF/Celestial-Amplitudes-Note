@@ -13,6 +13,101 @@
 \setcounter{lemma}{0}
 \setcounter{sidenote}{1}
 前面介绍协变相空间量子化的时候直接使用结论，没有讲清楚他是什么，这里补上。
+\section*{Geometrical view of Lie Group}
+{\color{red}\hrule}
+\hspace*{\fill} \\%手动添加分割线
+为了方便后面对纤维丛的讨论，首先来利用微分几何的语言重述一下李群的一些基本结论，前面$\S2$其实已经用了不少几何直观，现在来点严谨的数学。为了行文简便简化了不少证明，不过本节内容详细证明都可以在\cite{lcb}中找到。
+\begin{definition}
+	如果$G$既是n维流形又是群，而且其乘法可看作是$G\times G\to G$上的$C^\infty$映射，而且群元求逆映射也是$G\to G$的$C^\infty$映射，那我们称$G$是\textbf{李群}。
+\end{definition}
+\begin{example}
+	有限群可以在上面赋予离散拓扑，这样就可以认为其是一个零维李群。
+\end{example}
+\begin{definition}[同态/同构]
+	$G\to H$的$C^\infty$映射称为同态，如果该映射是个微分同胚，则升级为李群同构。
+\end{definition}
+\begin{definition}
+	$H$是$G$的李子群当且仅当其是子群也是子流形
+\end{definition}
+下面的叙述是重排定理在李群的推广：
+\begin{theorem}[重排定理]
+	$\forall g,L_g:h\mapsto gh$称为$g$生成的\textbf{左平移}，其必然是一个微分同胚。
+\end{theorem}
+后面用正体$A$表示一个切矢，花体$\mathscr{A}$表示矢量场，$\mathscr{A}|_p$表示在$p$处的矢量场取值。
+\begin{definition}
+	如果$\forall g\in G, \left(L_g\right)_*\mathscr{A}=\mathscr{A}$，则称$\mathscr{A}$为\textbf{左不变矢量场}。
+\end{definition}
+\begin{lemma}
+	左不变的矢量场必然$C^\infty$，而且上面的定义根据push forward的定义等价于\[\left.\mathscr{A}\right|_{gh}=\left.(L_g)_*\mathscr{A}\right|_{h},\quad\forall g,h\in G\]
+\end{lemma}
+利用上面的引理可以证明下面极为重要的定理：
+\begin{theorem}
+	$G$上全体左不变的集合记为$\mathscr{L}$，$G$的恒等元处的切空间记为$V_e$，则在线性空间的意义上两者同构。
+\end{theorem}
+也就是说任意一个左不变的矢量场$\mathscr{A}$都唯一对应$V_e$中的一个切矢$A$，vice versa。
+
+李代数抽象的定义不需要依赖于李群，在线性空间上赋予双线性、封闭、反对易且遵循雅可比恒等式的乘法就可以使之提升为一个李代数。前面提到的$\mathscr{L}$其实就构成了一个李代数，矢量场我们是可以根据李导数去定义李括号的$[X,Y]=\mathcal{L}_XY$，这样定义的李括号自然构成了李代数的乘法运算规则，唯一要证明的是封闭性，可以证明两个左不变的矢量场在这样的运算下仍然是一个左不变的矢量场。
+
+李代数是描述李群在恒等元附近的局部性质的，在微分几何这边理所当然会和$V_e$联系起来。注意到任意一个$V_e$中的元素都对应一个左不变矢量场，所以可以使用左不变矢量场之间的李括号$[,]$去定义$V_e$的李括号$\{,\}$从而使之称为一个李代数。
+\begin{definition}[李群的李代数]
+	李群$G$的$V_e$在$\{A,B\}\equiv[\mathscr{A},\mathscr{B}]$的李括号定义下升级为一个李代数，称为李群$G$的李代数$\mathfrak{g}$。
+\end{definition}
+李代数的同构就是指保李括号的一一映射，显然$\mathscr{L}\cong\mathfrak{g}$。
+\begin{theorem}
+	若$H\subset G$，则$\mathfrak{h}\subset{g}$
+\end{theorem}
+再强调一下，李代数本身的定义是不依赖于李群的，但是每个李群都有一个李代数，一个李代数可以有很多个李群与之对应，但是与之对应的单连通李群只有一个。\sn{回忆前面$\S $证明的那么多群同态式子，相同的李代数，不同的李群，最终找到一个单连通群是他们的覆盖群。}既然李群的李代数已经作为几何对象来描述，李括号本质上就可以看作是一个(1,2)型张量，定义下面的\textbf{结构张量}$C$：
+\begin{equation}
+	[A,B]^c=C^c_{ab}A^a B^b
+\end{equation}
+如果我们选取了一组基底$\{e_\mu\}$：
+\begin{equation}
+	[e_\mu,e_\nu]^c=C^c_{ab}(e_\mu)^a(e_\nu)^b=C^{\sigma}_{\mu\nu}e_\sigma
+\end{equation}
+这里$C^{\sigma}_{\mu\nu}$就是我们常说的结构常数，显然它虽说是常数，但是是和坐标系的选取相关的，看你如何在李群李代数空间中选取基底。
+\begin{definition}
+	若$[g,h]\in\mathfrak{h},\forall g\in \mathfrak{g},h\in \mathfrak{h},\mathfrak{h}\subset{\mathfrak{g}}$，那么称$\mathfrak{h}$是$\mathfrak{g}$的\textbf{理想}。从李群这边看就是没有群中心。
+\end{definition}
+\begin{example}
+	任何李代数都有两个平庸的理想，$\{0\}$和自身。
+\end{example}
+正规子群相对于群就像是理想相对于李代数，利用正规子群可以划分等价类从而得到商群的概念，李代数也同样，只不过这时候线性空间的商空间用仿射子集划分。\sn{对于$W\subset V$，$a\sim b\iff A-B\in W$}
+
+\begin{definition}
+	若$\mathfrak{h}$为$\mathfrak{g}$的理想，那么$\mathfrak{g}/\mathfrak{h}$称为商李代数
+\end{definition}
+\begin{theorem}
+	\begin{itemize}
+		\item \textbf{单李代数}：非Abel且不含非平庸的理想。
+		\item \textbf{半单李代数}：非Abel且不含非平庸的Abel理想。
+	\end{itemize}
+	到李群这边看，对应的单李群就是非Abel且不含非平庸正规子群，半单李群就是不含非平庸Abel正规子群
+\end{theorem}
+
+下面从微分几何角度来分析$\mathrm{e}^{\text{Lie Algrbra}}=\text{Lie Group}$。
+\begin{definition}
+	$C^{\infty}$上的曲线$\gamma:\mathbb{R}\to G$如果满足$\gamma{s+t}=\gamma{s}\gamma{t}$，则称为一个\textbf{单参李群}。
+\end{definition}
+这个定义和单参微分同胚群非常相近，后面会看到的确如此。
+\begin{theorem}
+	任何一个左不变的矢量场均完备，也就是说它的任意一条积分曲线参数都可以延拓到全体实轴。
+\end{theorem}
+由于左不变的矢量场完备，根据定义就有希望积分曲线是一个单参李群。还是根据$\mu:\mathscr{L}\cong\mathfrak{g}$，任意一个左不变的矢量场$\mathscr{A}$找到一个过恒等元($\gamma(0)=e$)的积分曲线，那么这条曲线就是$\mathscr{A}$给出的单参李群，而且在单位元处切矢为$A$，反过来如果找到了一个过单位元且单位元处切矢为$A$的单参李群，那么它必然是$\mathscr{A}$的一条积分曲线。所以说李群李代数中的元素$A$实际上充当了生成一个单参李群的作用，所以我们称为\textbf{生成元}。
+
+回忆一下定义了度规结构的流形可以有测地线的概念，给一个点（起点）和这点处的切矢（速度）可以生成一条测地线，这种点和切矢与测地线的一一对应我们称为\textbf{指数映射}。对于单参李群也是如此，现在的点不是任意的，就是单位元，任给一个切矢$A$，可以找到一个单参子群$\gamma$，我们把参数取为$1$那么下面的$\mathfrak{g}\to G$的映射就称为指数映射：
+\[\exp(A)=\gamma(1)\]
+我们也可以把参数带上，这样就可以用生成元加一个实参来用指数映射生成对应的单参李群：
+\[\exp(tA)=\gamma(t)\]
+这个式子形式上就是$\mathrm{e}^{\text{Lie Algrbra}}=\text{Lie Group}$。但是那里的指数$\exp$是真的理解为自然常数为底的指数函数，原因就是物理上我们一般考虑的不是抽象的李群，真正用起来都是矩阵李群，或者说找群的表示。到了矩阵李群的层面上，把群元这些统统替换为矩阵，指数映射里面的$\exp$就不仅仅只是在名字上叫他指数映射了。另外，李括号也可以具体的用矩阵乘法写成$[A,B]=AB-BA$了。
+	
+最后指出单参微分同胚群和单参李群之间的关系，由下面的定理给出：
+\begin{theorem}
+	若$\phi$是由$A\in\mathfrak{g}$对应的$\mathscr{A}$生成的单参微分同胚群，那么：
+	\begin{equation}
+		\phi_t(g)=g\exp(tA)
+	\end{equation}
+\end{theorem}
+从几何图像上也好理解，单参微分同胚群相当于一簇曲线，单参李群只是其中过$e$的一支，想要得到过其它群元的，用群元和最基本的单参李群这一支相乘就好了。
 \section*{Fiber Bundle}
 {\color{red}\hrule}
 \hspace*{\fill} \\%手动添加分割线
