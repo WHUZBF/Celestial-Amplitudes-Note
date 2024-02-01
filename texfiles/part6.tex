@@ -4,3 +4,141 @@
 \setcounter{definition}{0}
 \setcounter{lemma}{0}
 \setcounter{sidenote}{1}
+
+CFT经典教材是大黄书\cite{DiFrancesco:1997nk}，教材\cite{Blumenhagen:2009zz,ito}也是不错的选择\sn{伊藤克司先生的书还没有官方中文译本，不过这里有民间译本的重排本\url{https://github.com/WHUZBF/CFT-book}}，还有一些比较好的讲义\cite{Nawata:2022lsw,Ginsparg:1988ui,Qualls:2015qjb}，共形场论的自举(bootstrap)方法也是非常重要的，可以见讲义\cite{Ribault:2014hia}的专门介绍。CFT也可以当作一门数学课来学习，偏重于数学的阅读材料有\cite{Schottenloher:2008zz}。
+
+首先是一些Overview性质的介绍。CFT无非就是一种特殊的QFT，但是这个时候理论具有比Poincar\'e对称性更大的对称性，在二维的情况下甚至提升为无穷维的对称性，这种对称性能让我们不通过微扰场论直接确定关联函数。一般的QFT中我们用Poincar\'e的不同的不可约表示来标记不同的场，或者说，我们用自旋来标记场，到了CFT这边，我们还需要使用共形维数$\Delta$来标记，对于$s=0$的标量场，共形维数定义为在Dilation $x\mapsto\lambda x$ 下场变换为：
+\begin{equation}
+	\phi^\prime(\lambda \vec{x})=\lambda^{-\Delta}\phi(\vec x)
+\end{equation}
+但是这只是对Dilation要求场在共形变换下“协变”，进一步要求对任意共形变换“协变”就给出了\textbf{初级场}（primary field）的定义。\sn{注意我们遵从大黄书的符号约定，和\cite{Blumenhagen:2009zz,,Ginsparg:1988ui}的定义恰巧相反，对最终CFT中的一些结论没有任何影响，仅仅只是中间推导过程有些细微的差别。}\sn{$s=1/2$是何形式？}
+\begin{definition}
+	共形维数为$\Delta$的初级场(s=0)定义为在任意共形变换下满足：
+	\begin{equation}
+		\phi^\prime(\vec{x^\prime})=\left|\frac{\partial \vec {x^\prime}}{\partial \vec {x}}\right|^{\Delta/d}\phi(\vec {x})
+	\end{equation}
+\end{definition}
+
+初级场将是后面研究的主要对象。二维的共形对称性比较特殊，分为global和local的，如果上面的“协变性”只对global的共形变换适用，那我们称之为\textbf{准初级场}（quasi-primary field）。二维情况下我们还使用复平面为坐标\footnote{这是欧氏空间CFT的主要选取，也是后文研究的主要内容，Wick转动到闵氏时空之后选取所谓光锥坐标。}，但是我们为了一些地方的方便，并不是考虑的$\mathbb{C}$，而是$\mathbb{C}^2$，也就是说我们把$z,\bar z$看作是完全独立的变量，进在一些特殊情况下认为$z^*=\bar z$。而且把$\Delta$拆分为共形权$(h,\bar h)=\frac{1}{2}\left(\Delta+s,\Delta-s\right)$在这一符号约定下，共形权定义变为：
+\begin{equation}
+	\boxed{
+	\phi^{\prime}(\lambda z,\overline{\lambda}\overline{z})=\lambda^{-h}\overline{\lambda}^{-\overline{h}}\phi(z,\overline{z})
+	}
+\end{equation}
+（准）初级场定义变为：
+\begin{equation}
+	\boxed{
+		\phi^{\prime}\left(f(z),\overline{f}(\overline{z})\right)=\left(\frac{\partial f}{\partial z}\right)^{-h}\left(\frac{\partial\overline{f}}{\partial\bar{z}}\right)^{\overline{-h}}\phi(z,\bar{z})
+	}
+\end{equation}
+无穷小共形变换$x\mapsto x+\epsilon$下：
+\begin{equation}
+	\boxed{
+	\delta_{\epsilon,\bar{\epsilon}}\phi(z,\bar{z})\equiv\phi^\prime(x^\prime)-\phi(x)=-\left(h\mathrm{~}\partial_z\epsilon+\epsilon\mathrm{~}\partial_z+\overline{h}\mathrm{~}\partial_{\bar{z}}\bar{\epsilon}+\overline{\epsilon}\mathrm{~}\partial_{\bar{z}}\right)\phi(z,\overline{z})
+	}
+\end{equation}
+
+同QFT一样，这些场都会量子化成算符。不像QFT中我们研究的场是有限多个的，比如说QED就是正负电子对应的Dirac场和一个U(1)规范场耦合，CFT中我们研究的场很多情况下会是无穷多个的，因为我们把$\phi,\partial\phi$看作是不同的场，因为他们是不同共形权的初级场。定义一个CFT第一步就是告诉我们理论中有哪些初级场，也就是一个\textbf{谱}（Spectrum）$\{\mathcal{O}_{h,\bar h}\}$。CFT中我们并非按照微扰场论那一套来建立关联函数的计算方法的，而会去关注场之间的\textbf{算符乘积展开(OPE)}，后面将会看到自举给出了OPE的绝大多数信息，还有一些系数是自举无法确定的，需要CFT的定义给定，这是定义CFT的第二个data。我们这样做是在算符的观点下看问题，或者说是在海森堡表象下看问题，那CFT的态是什么呢？这其实被所谓\textbf{态算符对应}联系起来。
+
+最后想强调一点，正是因为CFT的思考方式和一般的QFT有比较大的不同，所以CFT的建立甚至是不需要已知理论的拉氏量的，我们需要知道的只是理论拥有的对称性，然后去找对称性的表示构造谱，能动量张量则刻画了CFT在共形变换下的性质，是构建OPE必须的，如果强行利用拉格朗日量进行分析反而会变得非常复杂，有的CFT甚至是没办法写下一个拉氏量的，但是通过自洽性分析我们是知道这种理论的存在性的，而且可以根据自举方法走得很远。
+
+\section{Virasoro Algebra}
+讨论共形场论，都是在量子层面上已经消去共形反常后的理论，比如YM理论就是量子化后存在共形反常的QFT，从而不能看作一个CFT。二维CFT的共形代数是$\mathrm{Witt}\times\overline{\mathrm{Witt}}$，后面我们讨论CFT其实都是在其中心扩张$\mathrm{Vir_c}\times\overline{\mathrm{Vir_c}}$下进行\sn{明确一下convention，扩张前的代数用小写l标记，扩张后的用大写L标记}。这里我不打算讨论过多中心荷的物理意义，这应当是弦论课的内容，关于为什么要引入中心荷后面会通过能动张量的OPE一窥。
+\begin{theorem}[Virasorp Algebra]
+	\begin{equation}
+		\boxed{
+		\left[L_m,L_n\right]=\left(m-n\right)L_{m+n}+\frac c{12}\left(m^3-m\right)\delta_{m+n,0}
+		}
+	\end{equation}
+\end{theorem}
+\section{Radial Quantization and Hilbert Space}
+\subsection{Radial Quantization}
+对于$1+1$维时空，可以把空间方向一点紧化为圆，这样平面就会变为一个圆柱面，这样就可以引入圆柱面上的复坐标$w=x^0+ix^1$，这样$w\sim w+2\pi i$自动满足周期性条件，这也是弦论worldsheet的图像。而圆柱面又可以通过共形变换$w\mapsto e^w$变到另一个复平面上：
+\begin{figure}[htbp]
+	\centering
+	\includegraphics{figs/fig9.pdf}
+	\caption{径向量子化}
+\end{figure}
+在这一变换下，时间方向变为了径向，空间方向变成了角向，而且把整个无穷远映射到了原点这一个点上。这下时间平移对应的哈密顿量$H$到复平面这边就变成了dilation算子$D$，而空间平移对应旋转$e^{i\theta}$：
+\begin{equation}
+		\boxed{H=L_0+\bar {L}_0,\quad P=i\left(=L_0-\bar {L}_0\right)}
+\end{equation}
+也正是因为时间方向变成了径向，时序积就应当变成“径向顺序积”，我们要去计算的就是径向顺序积的真空期望值，对于玻色子定义为：\sn{费米子把下面的情况改成负号就好}
+\begin{equation}
+	R\bigl(A(z)B(w)\bigr)\equiv\begin{cases}{}A(z)B(w)&\text{for }|z|>|w|,\\B(w)A(z)&\text{for }|w|>|z|.\end{cases}
+\end{equation}
+
+圆柱上的场我们用$\varphi(w,\bar w)$表示，复平面上的场用$\phi(z,\bar z)$表示，那么根据共形变换：
+\begin{equation}
+	\phi(z,\bar z)=z^{-h}{\bar {z}}^{-\bar h}\varphi(w,\bar w)
+\end{equation}
+在圆柱那边的CFT中我们知道$\varphi(w,\bar w)$可以做平面波展开为$e^{-ip^0x^0+ip^1x^1}$，由于我们考虑的是欧氏空间的场论，Wick转动后得到$e^{-p^0x^0+ip^1x^1}$，即$(e^{-w})^n(e^{-\bar w})^{\bar m}$的形式\sn{$n+m=p^0,n-m=p^1$}。而这恰恰就是洛朗展开的每一项！所以复平面上的CFT的模式展开为洛朗展开：
+\begin{theorem}[Mode Expansion]
+	\begin{equation}
+		\boxed{\phi(z,\overline{z})=\sum_{n,\overline{m}\in\mathbb{Z}}z^{-n-h}\overline{z}^{-\overline{m}-\overline{h}}\phi_{n,\overline{m}}}
+	\end{equation}
+\end{theorem}
+量子化场就是把$\phi_{n,\bar m}$量子化为算符，这些算符具有$(n,\bar m)$的权。
+
+QFT微扰计算中一个非常重要的概念是渐近态，我们考虑的都是无穷远处的平面波入射经过复杂的相互作用后的平面波出射，微扰的角度看入射态就是在无穷远处的过去在真空附近施加一个扰动，也就是插入场算符，出射态也类似的这样做，这样就会自然出来时序积，然后LSZ约化这些的去计算振幅。同样的CFT这边也有这样的物理图景，只是现在无穷远处过去被映射到原点这一个点上了，所以渐近态应该定义为：
+\begin{equation}
+	ket{\phi}=\lim_{z,\overline{z}\to0}\phi(z,\overline{z})\ket{0}
+\end{equation}
+在原点处上式不奇异自然要求：\sn{这似乎告诉我们$n>-h,\bar m>-\bar h$对应的是CFT中的湮灭算符，后面讲到对易子会回到这里}
+\begin{equation}
+	\phi_{n,\overline{m}}\begin{vmatrix}0\end{vmatrix}=0\quad\text{for}\quad n>-h,\quad\overline{m}>-\overline{h}
+\end{equation}
+完整得到渐近态的公式：
+\begin{equation}
+	\boxed{|\phi\rangle=\lim\limits_{z,\overline{z}\to0}\phi(z,\overline{z})\left|0\right\rangle=\phi_{-h,-\overline{h}}\left|0\right\rangle}
+\end{equation}
+这里有个非常有趣的地方，本来一个算符里面有很多模，最后只剩下了一个，所以在CFT中，态和\textbf{局域}算符是唯一对应的！这就是态\mbox{-}算符对应。这和一般的QFT形成了鲜明的对比，那里一个场对应是不同“方向”平面波的组合，没有做到一一对应，但是CFT做到正是因为他把一个无穷大的空间部分在无穷远的过去全部紧化到了原点这一处，为了加深理解我们用路径积分的观点来看一下。
+
+回忆量子力学中的传播子可以用路径积分表达为：
+\begin{equation}
+	G(x_f,x_i)=\int_{x(\tau_i)=x_i}^{x(\tau_f)=x_f}\mathcal{D}xe^{iS}
+\end{equation}
+那么演化后的末态波函数可以用初态波函数传播得到：
+\begin{equation}
+	\psi_{f}(x_{f},\tau_{f})=\int dx_{i}G(x_{f},x_{i})\psi_{i}(x_{i},\tau_{i})
+\end{equation}
+QFT这边“波函数”是一个泛函$\Psi[\phi(\sigma)]$，其模方表示在固定时间，空间中每个点$\sigma$上出现场构型$\phi(\sigma)$的概率，可以用路径积分得到末态：
+\begin{equation}
+	\Psi_f[\phi_f(\sigma),\tau_f]=\int\mathcal{D}\phi_i\int_{\phi(\tau_i)=\phi_i}^{\phi(\tau_f)=\phi_f}\mathcal{D}\phi e^{-S[\phi]}\Psi_i[\phi_i(\sigma),\tau_i]
+\end{equation}
+现在从柱面换到复平面CFT：
+\begin{equation}
+	\Psi_f[\phi_f(\sigma),r_f]=\int\mathcal{D}\phi_i\int_{\phi(r_i)=\phi_i}^{\phi(r_f)=\phi_f}\mathcal{D}\phi e^{-S[\phi]}\Psi_i[\phi_i(\sigma),r_i]
+\end{equation}
+不难发现初始态的作用是对$|z|=r_i$的积分进行加权，构造初始态需要在无穷远的过去，$r_i\to 0$，从而初始态只对原点处积分进行加权，等价于在原点处插入一个算子，即：
+\begin{equation}
+	\Psi[\phi_f;r]=\int^{\phi(r)=\phi_f}\mathcal{D}\phi e^{-S[\phi]}\mathcal{O}(z=0)
+\end{equation}
+
+\subsection{BPZ Conjugate}
+为了构建关联函数，我们需要“左矢”，也就是厄米共轭来构造出射态从而有内积，这里谈的BPZ共轭是厄米共轭在Wick转动后的径向量子化欧氏空间CFT上的自然推广。不想扯过多物理上的考量，\cite{ito}从Wick转动后厄米共轭必须与时间反演一同定义BPZ共轭来解释了这一定义。
+\begin{definition}[BPZ Conjugate]
+	\begin{equation}
+		\phi^\dagger(z,\overline{z})=\overline{z}^{-2h}z^{-2\overline{h}}\phi\left(\frac{1}{\overline{z}},\frac{1}{z}\right)
+	\end{equation}
+\end{definition}
+另一方面直接从洛朗展开得到：
+\begin{equation}
+	\phi^{\dagger}(z,\overline{z})=\overline{z}^{-2h}z^{-2\overline{h}}\sum_{n,\overline{m}\in\mathbb{Z}}\overline{z}^{+n+h}z^{+\overline{m}+\overline{h}}\phi_{n,\overline{m}}=\sum_{n,\overline{m}\in\mathbb{Z}}\overline{z}^{+n-h}z^{+\overline{m}-\overline{h}}\phi_{n,\overline{m}}
+\end{equation}
+从而有：
+\begin{equation}\label{BPZ}
+	\boxed{
+	\left(\phi_{n,\overline{m}}\right)^\dagger=\phi_{-n,-\overline{m}}
+	}
+\end{equation}
+根据场的BPZ共轭定义，出射态应该定义为：
+\begin{equation}
+	\bra{\phi}=\lim\limits_{z,\overline{z}\to0}\bra{ 0  }              \phi^\dagger(z,\overline{z})=\lim\limits_{\overline{w},w\to\infty}w^{2h}\overline{w}^{2\overline{h}}\bra{0}\phi(w,\overline{w})=\bra{0}\phi_{h,\bar h}
+\end{equation}
+这里根据非奇异性要求了：
+\begin{equation}
+	\left<0\right|\phi_{n,\overline{m}}=0\quad\text{for}\quad n<h,\quad\overline{m}<\overline{h}
+\end{equation}
+当然，这里是根据定义严格来构造了一遍，实际计算疯狂使用\ref{BPZ}就好。
+\section{Ward Identity and OPE}
