@@ -19,7 +19,7 @@ CFT经典教材是大黄书\cite{DiFrancesco:1997nk}，教材\cite{Blumenhagen:2
 	\end{equation}
 \end{definition}
 
-初级场将是后面研究的主要对象。二维的共形对称性比较特殊，分为global和local的，如果上面的“协变性”只对global的共形变换适用，那我们称之为\textbf{准初级场}（quasi-primary field）。二维情况下我们还使用复平面为坐标\footnote{这是欧氏空间CFT的主要选取，也是后文研究的主要内容，Wick转动到闵氏时空之后选取所谓光锥坐标。}，但是我们为了一些地方的方便，并不是考虑的$\mathbb{C}$，而是$\mathbb{C}^2$，也就是说我们把$z,\bar z$看作是完全独立的变量，进在一些特殊情况下认为$z^*=\bar z$。而且把$\Delta$拆分为共形权$(h,\bar h)=\frac{1}{2}\left(\Delta+s,\Delta-s\right)$在这一符号约定下，共形权定义变为：
+初级场将是后面研究的主要对象。二维的共形对称性比较特殊，分为global和local的，如果上面的“协变性”只对global的共形变换适用，那我们称之为\textbf{准初级场}（quasi-primary field），显然初级场一定是准初级场，反过来却不一定。二维情况下我们还使用复平面为坐标\footnote{这是欧氏空间CFT的主要选取，也是后文研究的主要内容，Wick转动到闵氏时空之后选取所谓光锥坐标。}，但是我们为了一些地方的方便，并不是考虑的$\mathbb{C}$，而是$\mathbb{C}^2$，也就是说我们把$z,\bar z$看作是完全独立的变量，进在一些特殊情况下认为$z^*=\bar z$。而且把$\Delta$拆分为共形权$(h,\bar h)=\frac{1}{2}\left(\Delta+s,\Delta-s\right)$在这一符号约定下，共形权定义变为：
 \begin{equation}
 	\boxed{
 	\phi^{\prime}(\lambda z,\overline{\lambda}\overline{z})=\lambda^{-h}\overline{\lambda}^{-\overline{h}}\phi(z,\overline{z})
@@ -31,8 +31,8 @@ CFT经典教材是大黄书\cite{DiFrancesco:1997nk}，教材\cite{Blumenhagen:2
 		\phi^{\prime}\left(f(z),\overline{f}(\overline{z})\right)=\left(\frac{\partial f}{\partial z}\right)^{-h}\left(\frac{\partial\overline{f}}{\partial\bar{z}}\right)^{\overline{-h}}\phi(z,\bar{z})
 	}
 \end{equation}
-无穷小共形变换$x\mapsto x+\epsilon$下：
-\begin{equation}
+如果$\phi$全纯我们称为\textbf{chiral}，反全纯称为\textbf{anti-chiral}。无穷小共形变换$x\mapsto x+\epsilon$下：
+\begin{equation}\label{ict}
 	\boxed{
 	\delta_{\epsilon,\bar{\epsilon}}\phi(z,\bar{z})\equiv\phi^\prime(x^\prime)-\phi(x)=-\left(h\mathrm{~}\partial_z\epsilon+\epsilon\mathrm{~}\partial_z+\overline{h}\mathrm{~}\partial_{\bar{z}}\bar{\epsilon}+\overline{\epsilon}\mathrm{~}\partial_{\bar{z}}\right)\phi(z,\overline{z})
 	}
@@ -85,8 +85,8 @@ QFT微扰计算中一个非常重要的概念是渐近态，我们考虑的都�
 	ket{\phi}=\lim_{z,\overline{z}\to0}\phi(z,\overline{z})\ket{0}
 \end{equation}
 在原点处上式不奇异自然要求：\sn{这似乎告诉我们$n>-h,\bar m>-\bar h$对应的是CFT中的湮灭算符，后面讲到对易子会回到这里}
-\begin{equation}
-	\phi_{n,\overline{m}}\begin{vmatrix}0\end{vmatrix}=0\quad\text{for}\quad n>-h,\quad\overline{m}>-\overline{h}
+\begin{equation}\label{eq:30.6}
+	\phi_{n,\overline{m}}\ket{0} =0\quad\text{for}\quad n>-h,\quad\overline{m}>-\overline{h}
 \end{equation}
 完整得到渐近态的公式：
 \begin{equation}
@@ -137,8 +137,145 @@ QFT这边“波函数”是一个泛函$\Psi[\phi(\sigma)]$，其模方表示在
 	\bra{\phi}=\lim\limits_{z,\overline{z}\to0}\bra{ 0  }              \phi^\dagger(z,\overline{z})=\lim\limits_{\overline{w},w\to\infty}w^{2h}\overline{w}^{2\overline{h}}\bra{0}\phi(w,\overline{w})=\bra{0}\phi_{h,\bar h}
 \end{equation}
 这里根据非奇异性要求了：
-\begin{equation}
+\begin{equation}\label{eq:30.17}
 	\left<0\right|\phi_{n,\overline{m}}=0\quad\text{for}\quad n<h,\quad\overline{m}<\overline{h}
 \end{equation}
 当然，这里是根据定义严格来构造了一遍，实际计算疯狂使用\ref{BPZ}就好。
 \section{Ward Identity and OPE}
+\subsection{Infinitesimal Conformal Ward Identity}
+前面$\S 4$已经看到共形对称性对应的守恒流可以使用$T_{\mu\nu}\epsilon^\nu$来构造，利用前面得到的最一般的Ward恒等式\ref{eq:19.11}，对整个时空进行积分：
+\begin{equation}
+	\int dx^0dx^1\frac\partial{\partial x^{\mu}} \left\langle j_{a}^{\mu}(x)\Phi(x_{1})\cdots\Phi(x_{n})\right\rangle  =\sum_{i=1}^{n}\left<\Phi(x_{1})\delta_{\epsilon,\bar \epsilon}\cdots\Phi(x_{i})\cdots\Phi(x_{n})\right>
+\end{equation}
+$z=e^{x^0+ix^1}=x+iy$，进一步利用积分换元得到：\sn{别忘了雅可比行列式}
+\begin{equation}
+	\begin{aligned}
+		\int dx^0dx^1&\partial_\mu\left\langle j_{a}^{\mu}(x)\Phi(x_{1})\cdots\Phi(x_{n})\right\rangle\\
+		&=4\int dzd\bar z\left[\bar\partial(T_{\bar z\bar z}\epsilon)+\partial(T_{zz}\bar\epsilon)\right]\\
+		&=2\int dxdy\left[\bar\partial(T_{\bar z\bar z}\epsilon)+\partial(T_{zz}\bar\epsilon)\right]
+	\end{aligned}
+\end{equation}
+上面取了约定$\epsilon^z\equiv\epsilon(z),\partial_z\equiv\partial$，反全纯部分类似。现在考虑二元积分的格林公式：
+\begin{equation}
+	\begin{aligned}\oint_{\partial\Omega}P(x,y)dx+Q(x,y)dy=\int_\Omega dxdy\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\end{aligned}
+\end{equation}
+利用复变量$z=x+iy$可得下面的形式：\sn{就像是Wick转动一样，我们总假设这样随意复化是可行的}
+\begin{equation}
+	\begin{aligned}\oint_{\partial_\Omega}frac{1}{2}(P-iQ)dz+\frac{1}{2}(P+iQ)d\bar{z}=\int_\Omega dxdy(\partial(Q-iP)+\bar{\partial}(Q+iP))\end{aligned}
+\end{equation}
+上式中所有的围道积分都假设方向相对于$z$而言是逆时针，那么在$\bar z$平面上也就是逆时针，不过为了方便，而且CFT中我们也只考虑全纯部分，反全纯部分只要做个Conjugate就好了，后文中$\oint d\bar z$，表示围道方向相对于$\bar z$逆时针。
+\begin{equation}
+	\int_\Omega dxdy\left(\partial \bar f+\bar\partial f\right)=\frac{1}{2i}\oint_{\partial\omega}fdz+\bar f d\bar z
+\end{equation}
+再取：
+\begin{equation}
+	T(z)\equiv-2\pi iT_{zz},\bar T(\bar z)\equiv-2\pi iT_{\bar z\bar z}
+\end{equation}
+不过这个归一化因子并不重要，只是为了让OPE有一般的convention，后面比如自由玻色子这些具体模型我们都是先将归一化因子待定，再根据OPE的形式来确定它，只需要记住二维共形场论中$T_{zz}$始终全纯，$T_{\bar z\bar z}$始终反全纯就好了。归一化能动张量后，得到初级场的Ward恒等式：
+\begin{equation}\label{ward}
+	\boxed{
+	\sum_{i=1}^{n}\left<\Phi(x_{1})\cdots\delta_{\epsilon,\bar \epsilon}\Phi(x_{i})\cdots\Phi(x_{n})\right>=\frac{1}{2\pi i}\oint\left\langle\left(T(z)\epsilon(z)dz+\bar T(\bar z)\bar \epsilon(\bar z)d\bar z\right)\Phi(x_{1})\cdots\Phi(x_{i})\cdots\Phi(x_{n})\right\rangle
+	}
+\end{equation}
+这里积分围道包围所有$w_i$。根据上式我们可以定义\textbf{Conformal charge}：
+\begin{equation}
+	Q\equiv\frac{1}{2\pi i}\oint_{\mathcal{C}}\Bigl(dzT(z)\epsilon(z)+d\overline{z}\overline{T}(\overline{z})\overline{\epsilon}(\overline{z})\Bigr)
+\end{equation}
+这样便有：
+\begin{equation}\label{eq:31.9}
+	-\delta_{\epsilon,\bar\epsilon}\Phi=\left[Q,\Phi\right]
+\end{equation}
+\subsection{Operator Product Expansion}
+但是\ref{eq:31.9}表面上有个非常大的漏洞，那就是因为全纯，直接导致围道积分始终为0。解决这一问题是注意到Q是一个算符，需要作用到其它场上面，而两个算符靠的非常近时真空涨落发散\sn{类似于$a_p,a_p^\dagger\sim\delta(0)$}，上式积分中出现极点。也正是极点的存在导致我们定义局域算符之间的对易子的时候需要做正规化：
+\begin{equation}
+	[A(z,\bar{z}),B(w,\bar{w})]=\lim_{\begin{smallmatrix}|z|\rightarrow|w|\\|z|>|w|\end{smallmatrix}}A(z,\bar{z})B(w,\bar{w})-\lim_{\begin{smallmatrix}|z|\rightarrow|w|\\|w|>|z|\end{smallmatrix}}B(w,\bar{w})A(z,\bar{z})
+\end{equation}
+这直接导致对易子的计算可以等价于对径向顺序积的计算：\sn{后文中$\mathcal{C}(w)$表示只绕$w$的逆时针围道}
+\begin{equation}
+	\boxed{\begin{gathered}
+			\oint dz\bigl[A(z),B(w)\bigr] =\oint_{|z|>|w|}dzA(z)B(w)-\oint_{|z|<|w|}dzB(w)A(z) \\
+			=\oint_{\mathcal{C}(w)}dzR\Big(A(z)B(w)\Big), 
+	\end{gathered}}
+\end{equation}
+现在利用只含一个初级场的无穷小变换Ward恒等式，或者说\ref{eq:31.9}，注意到\ref{ict}，以及：\sn{回忆$n$阶极点留数公式：\[\begin{aligned}
+		\operatorname{Res}&[f(z),a]\\=&\lim\limits_{z\to a}\frac{1}{(n-1)!}\frac{d^{n-1}}{dz^{n-1}}\left[(z-a)^nf(z)\right]
+	\end{aligned}\]}
+\begin{equation}\label{eq:31.12}
+	\begin{gathered}
+		h\left(\partial_{w}\epsilon(w)\right)\phi(w,\overline{w}) =\frac{1}{2\pi i}\oint_{\mathcal{C}(w)}dzh\frac{\epsilon(z)}{(z-w)^{2}}\phi(w,\overline{w}), \\
+		\epsilon(w)\left(\partial_{w}\phi(w,\overline{w})\right) =\frac1{2\pi i}\oint_{\mathcal{C}(w)}dz\frac{\epsilon(z)}{z-w}\partial_{w}\phi(w,\overline{w}).
+	\end{gathered}
+\end{equation}
+得到全纯部分：
+\begin{equation}
+	R\left(T(z)\phi(w,\overline{w})\right)=\frac{h}{(z-w)^2}\phi(w,\overline{w})+\frac{1}{z-w}\partial_w\phi(w,\overline{w})+\ldots 
+\end{equation}
+\textbf{后面的省略号表示非奇异的项}，一般情况下不用考虑，像这样的把算符展开成其它算符和的形式称为\textbf{OPE}。在一般的QFT中我们计算时序积需要先写下路径积分，然后进行微扰展开算费曼图，但是CFT中我们只需要去考虑OPE就好了，对称性为我们简化了许多。后面写OPE会省略$R(\cdot)$，利用算符和能动张量之间的OPE我们还能给出一个初级场的等价定义：
+\begin{theorem}
+	一个场是共形权为$(h,\bar h)$的初级场\textbf{当且仅当}它满足：
+	\begin{equation}
+		\boxed{\begin{gathered}
+				T(z)\phi(w,\overline{w}) =\frac{h}{(z-w)^{2}}\phi(w,\overline{w})+\frac{1}{z-w}\partial_{w}\phi(w,\overline{w})+\ldots  \\
+				\overline{T}(\overline{z})\phi(w,\overline{w}) =\frac{\overline{h}}{(\overline{z}-\overline{w})^{2}}\phi(w,\overline{w})+\frac{1}{\overline{z}-\overline{w}}\partial_{\overline{w}}\phi(w,\overline{w})+\ldots  
+		\end{gathered}}
+	\end{equation}
+\end{theorem}
+再次强调，之后写下的所有的OPE都应当认为是在在时序关联函数中插入算符时成立的关系！而且因为是时序积之中的关系，所以OPE结合律和交换律都满足。现在再回到Ward恒等式\ref{ward}，但是现在考虑有多个$\Phi$的插入，从前面对OPE的分析得知围道内的极点是$\{w_i\}$，然后利用柯西定理将等式右边的积分换成对绕每个极点的围道积分求和得到：
+\begin{equation}
+	\begin{aligned}0=\oint\frac{dz}{2\pi i}\epsilon(z)&\Bigg[\Big\langle T(z)\phi_1(w_1,\overline{w}_1)\ldots\phi_N(w_N,\overline{w}_N)\Big\rangle\\
+		&-\sum_{i=1}^N\left(\frac{h_i}{(z-w_i)^2}+\frac{1}{z-w_i}\partial_{w_i}\right)\Big\langle\phi_1(w_1,\overline{w}_1)\ldots\phi_N(w_N,\overline{w}_N)\Big\rangle\Bigg]\end{aligned}
+\end{equation}
+等式左边再次利用\ref{eq:31.12}，得到所谓共形Ward恒等式（仅适用于初级场）：\sn{注意这并不是代入$T,Phi$之间OPE得到的，因为OPE中还有一部分Regular的项没有确定，而这些项对关联函数有贡献。}
+\begin{equation}
+	\boxed{\begin{aligned}\big\langle T\left(z\right)&\phi_{1}(w_{1},\overline{w}_{1})\ldots\phi_{N}(w_{N},\overline{w}_{N})\big\rangle\\&=\sum_{i=1}^{N}\left(\frac{h_{i}}{(z-w_{i})^{2}}+\frac{1}{z-w_{i}}\partial_{w_{i}}\right)\Big\langle\phi_{1}(w_{1},\overline{w}_{1})\ldots\phi_{N}(w_{N},\overline{w}_{N})\Big\rangle\end{aligned}}
+\end{equation}
+\subsection{n-point correlators (n<4)}
+利用共形对称性实际上可以完全确定四点以下关联函数的形式。先来考虑准初级chiral场的关联函数，前面考虑的都是无穷小变换的Ward恒等式，但实际上在这里我们要使用的只是有限global共形变换的Ward恒等式，一般形式如下：
+\begin{equation}\label{global ward}
+	\boxed{
+	\langle\phi_1'(x_1')\cdots\phi_N'(x_N')\rangle=\langle\phi_1(x_1')\cdots\phi_N(x_N')\rangle
+	}
+\end{equation}
+上式等价于：
+\begin{equation}
+	\left\langle\phi_{1}\left(z_{1},\bar{z}_{1}\right)\cdots\phi_{n}\left(z_{n},\bar{z}_{n}\right)\right\rangle=\prod_{i=1}^{n}\left(\frac{\partial z'}{\partial z}\right)^{h_{i}}\left(\frac{\partial\bar{z}'}{\partial\bar{z}}\right)^{\bar{h}_{i}}\Bigg|_{z=z_{i},\bar{z}=\bar{z}_{i}}\left\langle\phi_{1}\left(z'_{1},\bar{z}'_{1}\right)\cdots\phi_{n}\left(z'_{n},\bar{z}'_{n}\right)\right\rangle 
+\end{equation}
+可以通过考察路径积分轻易得到。利用这一等式就可以得到一点关联函数必定是trivial的，这也可以根据前面的态算符对应要求的\ref{eq:30.6}\ref{eq:30.17}得到。
+\begin{theorem}[2-pt]
+	\begin{equation}\label{31.19}
+		\left\langle\phi_i(z)\phi_j(w)\right\rangle=\frac{d_{ij}\delta_{h_i,h_j}}{(z-w)^{2h_i}}
+	\end{equation}
+\end{theorem}
+\begin{theorem}[3-pt]
+	\begin{equation}\label{31.20}
+		\left\langle\phi_1(z_1)\phi_2(z_2)\phi_3(z_3)\right\rangle=\frac{C_{123}}{z_{12}^{h_1+h_2-h_3}z_{23}^{h_2+h_3-h_1}z_{13}^{h_1+h_3-h_2}}
+	\end{equation}
+	其中$z_{ij}\equiv z_i-z_j$
+\end{theorem}
+另外根据关联函数的单值性，还进一步要求\sn{后面考虑Virasoro代数表示的时候我们会先暂时忘掉这个要求。}\textbf{Chiral场的共形权只能是整数或者半整数}。把反全纯部分也加进来考虑得到：
+\begin{itemize}
+	\item 2-pt:
+	\begin{equation}
+		\left\langle\phi_1(z_1,\overline{z}_1)\phi_2(z_2,\overline{z}_2)\right\rangle=\frac{d_{12}}{z_{12}^{h_1+h_2}\overline{z}_{12}^{\overline{h}_1+\overline{h}_2}}\delta_{h_1,h_2}\delta_{\overline{h}_1,\overline{h}_2}
+	\end{equation}
+	\item 3-pt:
+	\begin{equation}
+		\begin{aligned}\big\langle\phi_1(z_1,\overline{z}_1)&\phi_2(z_2,\overline{z}_2)\phi_3(z_3,\overline{z}_3)\big\rangle\\&=\frac{C_{123}}{z_{12}^{h_1+h_2-h_3}z_{23}^{h_2+h_3-h_1}z_{13}^{h_1+h_3-h_2}\overline{z}_{12}^{\vec{h}_1+\vec{h}_2-\vec{h}_3}\overline{z}_{23}^{\vec{h}_2+\vec{h}_3-\vec{h}_1}\overline{z}_{13}^{\vec{h}_1+\vec{h}_3-\vec{h}_2} }\end{aligned}
+	\end{equation}
+\end{itemize}
+
+关于这些公式的详细推导\cite{ito}上面都有，这里主要考虑用无穷小Ward恒等式的方法，但是我们考虑的毕竟是准初级场，所以只需要考虑$\epsilon(z)=\epsilon_{-1}+\epsilon_0z+\epsilon_1z^2$。将\ref{global ward}在无穷小变换下展开得到全纯部分：
+\begin{equation}
+	\displaystyle\sum_{i=1}^{n}\left(h_{i}\partial_{i}\epsilon\left(z_{i}\right)+\epsilon\left(z_{i}\right)\partial_{i}\right)\left<\phi_{1}\left(z_{1}\right)\cdots\phi_{n}\left(z_{n}\right)\right>=0+\mathcal{O}(\epsilon^2)
+\end{equation}
+这是一个微分方程，对于$\epsilon(z)=\epsilon_{-1}+\epsilon_0z+\epsilon_1z^2$恒成立，所以我们可以通过求解这个微分方程来确定关联函数的形式，不难验证\ref{31.19}和\ref{31.20}就有这一特征。这种将关联函数计算转化为微分方程的求解的方法后面我们还会碰到。
+
+但是四点及以上函数就不能确定到只差一个待定系数了，不过我们仍旧可以利用所谓\textbf{交叉对称性}(Crossing Symmetry)走的很远。
+
+\subsection{General Form of the OPE}
+
+\section{NOPs and Conformal family}
+\subsection{Normal Ordered Products}
+\subsection{Verma module}
+\subsection{Descendant states}
+\section{Crossing Symmetry}

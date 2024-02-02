@@ -57,27 +57,36 @@
 \contentsline {subsection}{\numberline {30.1}Radial Quantization}{61}{subsection.30.1}%
 \contentsline {subsection}{\numberline {30.2}BPZ Conjugate}{63}{subsection.30.2}%
 \contentsline {section}{\numberline {31}Ward Identity and OPE}{64}{section.31}%
-\contentsline {part}{第七部分\hspace {1em}On-Shell Approach to \\ Scattering $\mathcal {A}$mplitudes}{65}{part.7}%
-\contentsline {section}{\numberline {32}spinor helicity formalism}{65}{section.32}%
-\contentsline {part}{第八部分\hspace {1em}Celestial $\mathcal {A}$mplitudes \& CCFT}{66}{part.8}%
-\contentsline {section}{\numberline {33}Conformal basis}{66}{section.33}%
-\contentsline {subsection}{\numberline {33.1}Massive Scalar}{66}{subsection.33.1}%
-\contentsline {subsection}{\numberline {33.2}Massless Scalar}{70}{subsection.33.2}%
-\contentsline {subsection}{\numberline {33.3}photon \& Graviton}{71}{subsection.33.3}%
-\contentsline {subsection}{\numberline {33.4}Restrict to Mink$_{4}$}{75}{subsection.33.4}%
-\contentsline {subsection}{\numberline {33.5}Conformally Soft photon \& Graviton}{75}{subsection.33.5}%
-\contentsline {subsection}{\numberline {33.6}Massive Bosons}{75}{subsection.33.6}%
-\contentsline {subsubsection}{\numberline {33.6.1}Polynomial encoding of symmetric traceless transverse tensors}{75}{subsubsection.33.6.1}%
-\contentsline {subsubsection}{\numberline {33.6.2}Conformal basis of massive bosons}{77}{subsubsection.33.6.2}%
-\contentsline {subsection}{\numberline {33.7}Fermions}{78}{subsection.33.7}%
-\contentsline {subsubsection}{\numberline {33.7.1}Spinors in arbitrary dimensions}{78}{subsubsection.33.7.1}%
-\contentsline {subsubsection}{\numberline {33.7.2}Conformal basis of Dirac spinor}{81}{subsubsection.33.7.2}%
-\contentsline {subsection}{\numberline {33.8}Examples}{82}{subsection.33.8}%
-\contentsline {subsubsection}{\numberline {33.8.1}ABC toy model}{82}{subsubsection.33.8.1}%
-\contentsline {subsubsection}{\numberline {33.8.2}$\mathcal {G}$luons}{83}{subsubsection.33.8.2}%
-\contentsline {section}{\numberline {34}Some properties of Conformal basis}{83}{section.34}%
-\contentsline {subsection}{\numberline {34.1}Kerr-Schild double copy}{83}{subsection.34.1}%
-\contentsline {subsection}{\numberline {34.2}Wyle double copy}{83}{subsection.34.2}%
-\contentsline {section}{\numberline {35}Celestial Amplitudes}{83}{section.35}%
-\contentsline {part}{Appendix A: Surface Charge}{84}{section.35}%
-\contentsline {part}{参考文献}{87}{equation.35.3}%
+\contentsline {subsection}{\numberline {31.1}Infinitesimal Conformal Ward Identity}{64}{subsection.31.1}%
+\contentsline {subsection}{\numberline {31.2}Operator Product Expansion}{65}{subsection.31.2}%
+\contentsline {subsection}{\numberline {31.3}n-point correlators (n<4)}{66}{subsection.31.3}%
+\contentsline {subsection}{\numberline {31.4}General Form of the OPE}{67}{subsection.31.4}%
+\contentsline {section}{\numberline {32}NOPs and Conformal family}{67}{section.32}%
+\contentsline {subsection}{\numberline {32.1}Normal Ordered Products}{67}{subsection.32.1}%
+\contentsline {subsection}{\numberline {32.2}Verma module}{67}{subsection.32.2}%
+\contentsline {subsection}{\numberline {32.3}Descendant states}{67}{subsection.32.3}%
+\contentsline {section}{\numberline {33}Crossing Symmetry}{67}{section.33}%
+\contentsline {part}{第七部分\hspace {1em}On-Shell Approach to \\ Scattering $\mathcal {A}$mplitudes}{68}{part.7}%
+\contentsline {section}{\numberline {34}spinor helicity formalism}{68}{section.34}%
+\contentsline {part}{第八部分\hspace {1em}Celestial $\mathcal {A}$mplitudes \& CCFT}{69}{part.8}%
+\contentsline {section}{\numberline {35}Conformal basis}{69}{section.35}%
+\contentsline {subsection}{\numberline {35.1}Massive Scalar}{69}{subsection.35.1}%
+\contentsline {subsection}{\numberline {35.2}Massless Scalar}{73}{subsection.35.2}%
+\contentsline {subsection}{\numberline {35.3}photon \& Graviton}{74}{subsection.35.3}%
+\contentsline {subsection}{\numberline {35.4}Restrict to Mink$_{4}$}{78}{subsection.35.4}%
+\contentsline {subsection}{\numberline {35.5}Conformally Soft photon \& Graviton}{78}{subsection.35.5}%
+\contentsline {subsection}{\numberline {35.6}Massive Bosons}{78}{subsection.35.6}%
+\contentsline {subsubsection}{\numberline {35.6.1}Polynomial encoding of symmetric traceless transverse tensors}{78}{subsubsection.35.6.1}%
+\contentsline {subsubsection}{\numberline {35.6.2}Conformal basis of massive bosons}{80}{subsubsection.35.6.2}%
+\contentsline {subsection}{\numberline {35.7}Fermions}{81}{subsection.35.7}%
+\contentsline {subsubsection}{\numberline {35.7.1}Spinors in arbitrary dimensions}{81}{subsubsection.35.7.1}%
+\contentsline {subsubsection}{\numberline {35.7.2}Conformal basis of Dirac spinor}{84}{subsubsection.35.7.2}%
+\contentsline {subsection}{\numberline {35.8}Examples}{85}{subsection.35.8}%
+\contentsline {subsubsection}{\numberline {35.8.1}ABC toy model}{85}{subsubsection.35.8.1}%
+\contentsline {subsubsection}{\numberline {35.8.2}$\mathcal {G}$luons}{86}{subsubsection.35.8.2}%
+\contentsline {section}{\numberline {36}Some properties of Conformal basis}{86}{section.36}%
+\contentsline {subsection}{\numberline {36.1}Kerr-Schild double copy}{86}{subsection.36.1}%
+\contentsline {subsection}{\numberline {36.2}Wyle double copy}{86}{subsection.36.2}%
+\contentsline {section}{\numberline {37}Celestial Amplitudes}{86}{section.37}%
+\contentsline {part}{Appendix A: Surface Charge}{87}{section.37}%
+\contentsline {part}{参考文献}{90}{equation.37.3}%
