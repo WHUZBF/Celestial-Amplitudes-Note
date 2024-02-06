@@ -531,7 +531,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	\end{aligned}
 \end{equation}
 第二行我们利用了真空态一定是没荷的\sn{后面对称性自发破缺会提到$Q^-_\varepsilon$作用到真空上不是0，但是这里$Q_H$是没有破缺的对称性。}。现在可以把\ref{eq:24.1}写为：
-\begin{equation}
+\begin{equation}\label{eq:25.4}
 	\begin{aligned}
 		2\int d^2z\partial_z\partial_{\bar{z}}\varepsilon\langle\text{out}|&\left(N(z,\bar{z})\mathcal{S}-\mathcal{S}N^-(z,\bar{z})\right)|\text{in}\rangle\\&=\left[\sum_{k=1}^mQ_k^\text{in}\varepsilon(z_k^\text{in},\bar{z}_k^\text{in})-\sum_{k=1}^nQ_k^\text{out}\varepsilon(z_k^\text{out},{\bar{z}}_k^\text{out})\right]\langle\text{out}|\mathcal{S}|\text{in}\rangle
 	\end{aligned}
@@ -540,7 +540,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 \begin{equation}\label{eq:24.5}
 	4\pi\langle\mathrm{out}|\left(\partial_zN\mathcal{S}-\mathcal{S}\partial_zN^-\right)|\mathrm{in}\rangle=\left[\sum_{k=1}^m\frac{Q_k^\mathrm{in}}{z-z_k^\mathrm{in}}-\sum_{k=1}^n\frac{Q_k^\mathrm{out}}{z-z_k^\mathrm{out}}\right]\langle\mathrm{out}|\mathcal{S}|\mathrm{in}\rangle 
 \end{equation}
-这个等式其实就是带有U(1) K$\breve{\text{a}}$c-Moody current的$\text{CFT}_2$的Ward恒等式\cite{Blumenhagen:2009zz,He:2015zea,Strominger:2013lka,Nande:2017dba}。这里的$\varepsilon$的选取是为了后面与正螺旋度光子的软定理联系，如果考虑负螺旋度的情况，可以选取$\varepsilon(z,\bar z)=\frac{1}{\bar w-\bar z}$进行一样的推导。这一$\varepsilon$的选取是有非常强的物理上的motivation的，因为后面推导的是单个软光子辐射的软定理，那自然想到只在天球上的某一个点上（这个点正代表着出射软光子$\hat p$）做large guage变换，所以$\delta A_z\sim\partial_z\varepsilon\sim\delta(\cdot)$，这正对应了我们此处的选取。
+这个等式其实就是带有U(1) K$\breve{\text{a}}$c-Moody current的$\text{CFT}_2$的Ward恒等式\cite{Blumenhagen:2009zz,He:2015zea,Strominger:2013lka,Nande:2017dba}，在介绍CFT后会专门讨论。这里的$\varepsilon$的选取是为了后面与正螺旋度光子的软定理联系，如果考虑负螺旋度的情况，可以选取$\varepsilon(z,\bar z)=\frac{1}{\bar w-\bar z}$进行一样的推导。这一$\varepsilon$的选取是有非常强的物理上的motivation的，因为后面推导的是单个软光子辐射的软定理，那自然想到只在天球上的某一个点上（这个点正代表着出射软光子$\hat p$）做large guage变换，所以$\delta A_z\sim\partial_z\varepsilon\sim\delta(\cdot)$，这正对应了我们此处的选取。
 
 \subsection{Mode expansion}
 本部分的终极目标是证明Ward恒等式可以联系渐近对称性和软定理，前文从相空间角度给出了Ward恒等式，在动量空间给出了软定理，是时候在动量空间重写Ward恒等式了，重点就是将场算符用平面波展开，也就是正则量子化的过程。free mode expansion 弯曲时空量子力学领域已经不少人算过了，U(1)规范理论结果如下：
@@ -780,6 +780,10 @@ $O(2)$对称性破缺有两个，一个是Abel的Lie群$SO(2)$的破缺，也就
 \end{equation}
 
 引力角动量的非局域性，是因为我们没有考虑真空简并。把真空的角动量也加进来，角动量守恒在引力理论里面就依然成立！而前面说过天球上面对称性自发破缺是不存在超选择性的，所以可以很容易从一个真空转变为另一个真空。
+
+总结一下，规范场具有local的，在边界上退化的规范对称性（冗余），而众所周知由于这一对称性的要求，规范场的没有能隙，所以存在软粒子，而软粒子实际上对应的是large gauge symmetry，也就是在边界上的非退化的规范冗余的自发破缺。而且这种破缺的简并真空之间是不存在超选择的，对应的守恒荷也是有界的，所以才有了软定理这么丰富的红外现象。但是，large guage symmetry的一个子群，global的规范对称性（真正的对称性）并没有破缺，毕竟从软定理能看到电荷守恒还是满足的，你也可以直接在\ref{eq:25.4}中取$\epsilon=\mathrm{const}$，也就对应global的规范变换，直接得到$\sum_k Q_k=0$。所以large guage symmetry破缺了但没完全破缺，虽然软光子不守恒，但是自然界好歹还是让电荷守恒了。
+
+
 \section{Massive QED}
 前面创建的一系列理论的前提本质上都是Cauchy面\sn{就是initial data所处的超曲面}为$\mathcal{I}^\pm$。但是对于有质量情况，有质量的粒子不会跑到$\mathcal{I}^\pm$这个“边”(boundary)上去，而会跑到“体”(bulk)里面的$i^{\pm}$，这样就导致柯西面不能选取为$\mathcal{I}^\pm$。前面的结论就会失效，但是软粒子相关的推导都不会受到任何影响，准确来说只有\ref{23.36}会受到影响。也就是说我们需要重新考虑Large gauge对Massive物质场的作用，也就是去考虑$Q^{+}_H\ket{p}$。前面我们的结论表明对于无质量的情况$Q^{+}_H\ket{p}\sim Q_k\varepsilon(z,\bar z)\ket{p}$，这里$\varepsilon$是天球上的Large gauge，自然的就会去想看一下Large gauge在$i^\pm$上的作用，这要求我们把边上的$\varepsilon$延拓到体上去\sn{非常有AdS/CFT的味道了，后面会看到我们使用的格林函数就是bulk-to-boundary传播子}。为了明确起见，下面的讨论在Lorenz规范$\nabla_\mu A^\mu=0$下进行，主要参考文献\cite{Campiglia:2015qka}，不依赖于度规的讨论见\cite{Kapec:2015ena}。那么“延拓”之后的$\varepsilon(x)$应该满足：
 \begin{equation}
@@ -814,8 +818,8 @@ ds^2=-d\tau^2+\tau^2\left[\frac{d\rho^2}{1+\rho^2}+\rho^2d\Omega_2^2\right]
 \begin{equation}
 	G(\tau,\rho,\hat{x};\hat{q})=\frac{\sqrt{\gamma(\hat{q})}}{4\pi\left[\sqrt{1+\rho^2}-\rho\hat{q}\cdot\hat{x}\right]^2}
 \end{equation}
-图\ref{fig:Mink4}上的slice是按照$\tau$划分的，按照$\rho$划分应该为：
-\begin{figure}[H]
+图\ref{fig:Mink4}上的slice是按照$\tau$划分的，按照$\rho$划分应该为图\ref{fig:11}。
+\begin{figure}[htbp]\label{fig:11}
 	\centering
 	\includegraphics{figs/fig7.pdf}
 	\caption{$\rho$ slices in Mink$_{4}$}

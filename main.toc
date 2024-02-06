@@ -53,8 +53,8 @@
 \contentsline {subsection}{\numberline {28.5}$\mathcal {N}=1$ Super Symmetry}{59}{subsection.28.5}%
 \contentsline {part}{第六部分\hspace {1em}A Crush Course on CFT}{60}{part.6}%
 \contentsline {section}{\numberline {29}Virasoro Algebra}{61}{section.29}%
-\contentsline {section}{\numberline {30}Radial Quantization and Hilbert Space}{61}{section.30}%
-\contentsline {subsection}{\numberline {30.1}Radial Quantization}{61}{subsection.30.1}%
+\contentsline {section}{\numberline {30}Radial Quantization and Hilbert Space}{62}{section.30}%
+\contentsline {subsection}{\numberline {30.1}Radial Quantization}{62}{subsection.30.1}%
 \contentsline {subsection}{\numberline {30.2}BPZ Conjugate}{63}{subsection.30.2}%
 \contentsline {section}{\numberline {31}Ward Identity and OPE}{64}{section.31}%
 \contentsline {subsection}{\numberline {31.1}Infinitesimal Conformal Ward Identity}{64}{subsection.31.1}%
@@ -62,31 +62,33 @@
 \contentsline {subsection}{\numberline {31.3}n-point correlators (n<4)}{66}{subsection.31.3}%
 \contentsline {subsection}{\numberline {31.4}General Form of the OPE}{67}{subsection.31.4}%
 \contentsline {section}{\numberline {32}NOPs and Conformal family}{67}{section.32}%
-\contentsline {subsection}{\numberline {32.1}Normal Ordered Products}{67}{subsection.32.1}%
-\contentsline {subsection}{\numberline {32.2}Verma module}{67}{subsection.32.2}%
-\contentsline {subsection}{\numberline {32.3}Descendant states}{67}{subsection.32.3}%
-\contentsline {section}{\numberline {33}Crossing Symmetry}{67}{section.33}%
-\contentsline {part}{第七部分\hspace {1em}On-Shell Approach to \\ Scattering $\mathcal {A}$mplitudes}{68}{part.7}%
-\contentsline {section}{\numberline {34}spinor helicity formalism}{68}{section.34}%
-\contentsline {part}{第八部分\hspace {1em}Celestial $\mathcal {A}$mplitudes \& CCFT}{69}{part.8}%
-\contentsline {section}{\numberline {35}Conformal basis}{69}{section.35}%
-\contentsline {subsection}{\numberline {35.1}Massive Scalar}{69}{subsection.35.1}%
-\contentsline {subsection}{\numberline {35.2}Massless Scalar}{73}{subsection.35.2}%
-\contentsline {subsection}{\numberline {35.3}photon \& Graviton}{74}{subsection.35.3}%
-\contentsline {subsection}{\numberline {35.4}Restrict to Mink$_{4}$}{78}{subsection.35.4}%
-\contentsline {subsection}{\numberline {35.5}Conformally Soft photon \& Graviton}{78}{subsection.35.5}%
-\contentsline {subsection}{\numberline {35.6}Massive Bosons}{78}{subsection.35.6}%
-\contentsline {subsubsection}{\numberline {35.6.1}Polynomial encoding of symmetric traceless transverse tensors}{78}{subsubsection.35.6.1}%
-\contentsline {subsubsection}{\numberline {35.6.2}Conformal basis of massive bosons}{80}{subsubsection.35.6.2}%
-\contentsline {subsection}{\numberline {35.7}Fermions}{81}{subsection.35.7}%
-\contentsline {subsubsection}{\numberline {35.7.1}Spinors in arbitrary dimensions}{81}{subsubsection.35.7.1}%
-\contentsline {subsubsection}{\numberline {35.7.2}Conformal basis of Dirac spinor}{84}{subsubsection.35.7.2}%
-\contentsline {subsection}{\numberline {35.8}Examples}{85}{subsection.35.8}%
-\contentsline {subsubsection}{\numberline {35.8.1}ABC toy model}{85}{subsubsection.35.8.1}%
-\contentsline {subsubsection}{\numberline {35.8.2}$\mathcal {G}$luons}{86}{subsubsection.35.8.2}%
-\contentsline {section}{\numberline {36}Some properties of Conformal basis}{86}{section.36}%
-\contentsline {subsection}{\numberline {36.1}Kerr-Schild double copy}{86}{subsection.36.1}%
-\contentsline {subsection}{\numberline {36.2}Wyle double copy}{86}{subsection.36.2}%
-\contentsline {section}{\numberline {37}Celestial Amplitudes}{86}{section.37}%
-\contentsline {part}{Appendix A: Surface Charge}{87}{section.37}%
-\contentsline {part}{参考文献}{90}{equation.37.3}%
+\contentsline {subsection}{\numberline {32.1}Normal Ordered Products}{68}{subsection.32.1}%
+\contentsline {subsection}{\numberline {32.2}Verma module}{68}{subsection.32.2}%
+\contentsline {subsection}{\numberline {32.3}Descendant states}{68}{subsection.32.3}%
+\contentsline {section}{\numberline {33}Crossing Symmetry}{68}{section.33}%
+\contentsline {part}{第七部分\hspace {1em}On-Shell Approach to \\ Scattering $\mathcal {A}$mplitudes}{69}{part.7}%
+\contentsline {section}{\numberline {34}spinor helicity formalism}{69}{section.34}%
+\contentsline {part}{第八部分\hspace {1em}Celestial $\mathcal {A}$mplitudes \& CCFT}{70}{part.8}%
+\contentsline {section}{\numberline {35}Conformal basis}{70}{section.35}%
+\contentsline {subsection}{\numberline {35.1}Massive Scalar}{70}{subsection.35.1}%
+\contentsline {subsection}{\numberline {35.2}Massless Scalar}{74}{subsection.35.2}%
+\contentsline {subsection}{\numberline {35.3}photon \& Graviton}{75}{subsection.35.3}%
+\contentsline {subsection}{\numberline {35.4}Restrict to Mink$_{4}$}{79}{subsection.35.4}%
+\contentsline {subsection}{\numberline {35.5}Conformally Soft photon \& Graviton}{79}{subsection.35.5}%
+\contentsline {subsection}{\numberline {35.6}Massive Bosons}{79}{subsection.35.6}%
+\contentsline {subsubsection}{\numberline {35.6.1}Polynomial encoding of symmetric traceless transverse tensors}{79}{subsubsection.35.6.1}%
+\contentsline {subsubsection}{\numberline {35.6.2}Conformal basis of massive bosons}{81}{subsubsection.35.6.2}%
+\contentsline {subsection}{\numberline {35.7}Fermions}{82}{subsection.35.7}%
+\contentsline {subsubsection}{\numberline {35.7.1}Spinors in arbitrary dimensions}{82}{subsubsection.35.7.1}%
+\contentsline {subsubsection}{\numberline {35.7.2}Conformal basis of Dirac spinor}{85}{subsubsection.35.7.2}%
+\contentsline {subsection}{\numberline {35.8}Examples}{86}{subsection.35.8}%
+\contentsline {subsubsection}{\numberline {35.8.1}ABC toy model}{86}{subsubsection.35.8.1}%
+\contentsline {subsubsection}{\numberline {35.8.2}$\mathcal {G}$luons}{87}{subsubsection.35.8.2}%
+\contentsline {section}{\numberline {36}Some properties of Conformal basis}{87}{section.36}%
+\contentsline {subsection}{\numberline {36.1}Kerr-Schild double copy}{87}{subsection.36.1}%
+\contentsline {subsection}{\numberline {36.2}Wyle double copy}{87}{subsection.36.2}%
+\contentsline {section}{\numberline {37}Celestial $\mathcal {A}$mplitudes}{87}{section.37}%
+\contentsline {subsection}{\numberline {37.1}$\mathcal {A}$mplitudes as Correlators}{87}{subsection.37.1}%
+\contentsline {subsection}{\numberline {37.2}Ward Identity as Ka\v {c}-Moody Symmetry}{87}{subsection.37.2}%
+\contentsline {part}{Appendix A: Surface Charge}{88}{subsection.37.2}%
+\contentsline {part}{参考文献}{91}{equation.37.3}%
