@@ -229,7 +229,7 @@ $z=e^{x^0+ix^1}=x+iy$，进一步利用积分换元得到：\sn{别忘了雅可�
 \textbf{后面的省略号表示非奇异的项}，大多数情况下我们要用的是OPE的奇异部分，因为它完全包含了和对易子一样的信息。像这样的把算符展开成其它算符和的形式称为\textbf{OPE}。在一般的QFT中我们计算时序积需要先写下路径积分，然后进行微扰展开算费曼图，但是CFT中我们只需要去考虑OPE就好了，对称性为我们简化了许多。后面写OPE会省略$R(\cdot)$，利用算符和能动张量之间的OPE我们还能给出一个初级场的等价定义：
 \begin{theorem}
 	一个场是共形权为$(h,\bar h)$的初级场\textbf{当且仅当}它满足：
-	\begin{equation}
+	\begin{equation}\label{31.14}
 		\boxed{\begin{gathered}
 				T(z)\phi(w,\overline{w}) =\frac{h}{(z-w)^{2}}\phi(w,\overline{w})+\frac{1}{z-w}\partial_{w}\phi(w,\overline{w})+\ldots  \\
 				\overline{T}(\overline{z})\phi(w,\overline{w}) =\frac{\overline{h}}{(\overline{z}-\overline{w})^{2}}\phi(w,\overline{w})+\frac{1}{\overline{z}-\overline{w}}\partial_{\overline{w}}\phi(w,\overline{w})+\ldots  
@@ -250,6 +250,79 @@ $z=e^{x^0+ix^1}=x+iy$，进一步利用积分换元得到：\sn{别忘了雅可�
 等式左边再次利用\ref{eq:31.12}，得到所谓共形Ward恒等式（仅适用于初级场）：\sn{注意这并不是代入$T,Phi$之间OPE得到的，因为前面说过OPE收敛半径等于与OPE处最近的其他算符插入处的距离。而我们下面要导出的等式与算符插入点完全无关，推导过程中看到我们将围道变形为单独绕每个$\{w_i\}$的围道来使得OPE的插入是精确的。}
 \begin{equation}
 	\boxed{\begin{aligned}\big\langle T\left(z\right)&\phi_{1}(w_{1},\overline{w}_{1})\ldots\phi_{N}(w_{N},\overline{w}_{N})\big\rangle\\&=\sum_{i=1}^{N}\left(\frac{h_{i}}{(z-w_{i})^{2}}+\frac{1}{z-w_{i}}\partial_{w_{i}}\right)\Big\langle\phi_{1}(w_{1},\overline{w}_{1})\ldots\phi_{N}(w_{N},\overline{w}_{N})\Big\rangle\end{aligned}}
+\end{equation}
+\subsubsection{TT OPE}
+CFT$_{2}$中非常重要的OPE是两个能动张量之间的OPE，就平面上的二维共形场论而言，chiral和anti-chiral部分是完全解耦的，所以：
+\begin{equation}
+	\boxed{
+		T(z)\bar T(\bar w)=0
+	}
+\end{equation}
+回忆能动张量$T\sim\frac{\delta S}\delta{g}$，现在来数质量量纲，由于$S$最终要放到指数上，所以$[S]=0$，再根据泛函导数定义$\frac{\delta f(x)}{\delta f(y)}=\delta^D(x-y)$，所以$[f]+\left[\frac{\delta }{\delta f}\right]=[\delta^D]=D$\sn{最后一个等号是因为$\int{dx^D}\delta^D(x-y)=1$，$[x]=-1$}。由于$[g]=0$，所以$[T]=2$，这暗示着在dilation下$T$的共形权为$(2,0)$，根据\ref{31.14}得到：
+\begin{equation}
+	T(z)T(w)=\cdots+\frac{2T(w)}{(z-w)^2}+\frac{\partial T(w)}{z-w}+\cdots
+\end{equation}
+第一个省略号是因为$T$不一定是初级场！第二个省略号表示奇异项。但是由于$[TT]=4$，所以最奇异的项只能是$(z-w)^{-4}$，而且分子只能是一个常数，我们取归一化为$c/2$得到：
+\begin{theorem}[TT OPE]
+	\begin{equation}
+		\boxed{
+			T(z)T(w)=\frac{c/2}{(z-w)^4}+\frac{2T(w)}{(z-w)^2}+\frac{\partial_wT(w)}{z-w}+\ldots 
+		}
+	\end{equation}
+	$\bar T\bar T$的OPE取个conjugate就好。
+\end{theorem}
+有两点需要解释一下，首先是为何没有$(z-w)^{-3}$项的加入？这可以解释为由于OPE的交换律，所以$z\leftrightarrow w$对称性会紧闭所有奇数次数项。但是有一个例外是$(z-w)^{-1}$：
+\begin{equation}
+	\begin{aligned}T(w)T(z)&=\frac{c/2}{(z-w)^4}+\frac{2T(w)+2(z-w)\partial T(w)}{(z-w)^2}-\frac{\partial T(w)}{z-w}+\ldots=T(z)T(w)\end{aligned}
+\end{equation}
+可见$(z-w)^{-1}$的对称性被更低一阶项分子的泰勒展开保护，但是$(z-w)^{-3}$的更低一阶分子是常数，泰勒展开是trivial的。
+
+虽然$T$并非初级场，但是是准初级场，因为$\{L_0,L_{\pm1}\}$的中心扩张是trivial的。虽然不是初级场，但是能动张量在$z\mapsto f(z)$的共形变换下的行为可以又下式描述：
+\begin{theorem}
+	\begin{equation}\label{schwarzian}
+		\boxed{
+			T^\prime(f(z))=\left(\frac{\partial f(z)}{\partial z}\right)^{-2}\begin{bmatrix}T(z)-\frac{c}{12}S(f(z),z)\end{bmatrix}
+		}
+	\end{equation}
+	其中$S(f,z)$是Schwarzian导数，定义为：
+	\begin{equation}
+		\boxed{
+			S(w,z)=\frac1{(\partial_zw)^2}\Big(\big(\partial_zw\big)\big(\partial_z^3w\big)-\frac32\big(\partial_z^2w\big)^2\big)
+		}
+	\end{equation}
+\end{theorem}
+观察一下无穷小共形变换下能动张量的性质：
+\begin{equation}
+	\begin{aligned}
+		-\delta_{\epsilon}T(z)&=[Q,T]\begin{aligned}=\frac{1}{2\pi i}\oint_{\mathcal{C}(z)}dw\epsilon(w)T(w)T(z)\end{aligned}  \\
+		&=\frac{1}{2\pi i}\oint_{\mathcal{C}(z)}dw\epsilon(w)\left(\frac{c/2}{(w-z)^{4}}+\frac{2T(z)}{(w-z)^{2}}+\frac{\partial_{z}T(z)}{w-z}+\ldots\right) \\
+		&=\frac{c}{12}\partial_{z}^{3}\epsilon(z)+2T(z)\partial_{z}\epsilon(z)+\epsilon(z)\partial_{z}T(z).
+	\end{aligned}
+\end{equation}
+不难证明在无穷小变换下\ref{schwarzian}的正确性。现在来考虑$T$模展开的对易子：
+\begin{equation}
+	T(z)=\sum_{n\in\mathbb{Z}}z^{-n-2}L_n\quad\text{where}\quad L_n=\frac{1}{2\pi i}\oint dzz^{n+1}T(z)
+\end{equation}
+\begin{proof}
+	\begin{equation}
+		\begin{aligned}
+			\begin{bmatrix}L_{m},L_{n}\end{bmatrix}=&\oint\frac{dz}{2\pi i}\oint\frac{dw}{2\pi i}z^{m+1}w^{n+1}\bigl[T(z),T(w)\bigr]  \\
+			=&\oint_{\mathcal{C}(0)}\frac{dw}{2\pi i}w^{n+1}\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}z^{m+1}R\Big(T(z)T(w)\Big) \\
+			=&\oint_{\mathcal{C}(0)}\frac{dw}{2\pi i}w^{n+1}\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}z^{m+1}\bigg(\frac{c/2}{(z-w)^4}+\frac{2T(w)}{(z-w)^2}+\frac{\partial_wT(w)}{z-w}\bigg) \\
+			=&\oint_{\mathcal{C}(0)}\frac{dw}{2\pi i}w^{n+1}\Big((m+1)m(m-1)w^{m-2}\frac c{2\cdot3!} \\
+			&+2\left(m+1\right)w^m\left.T(w)+w^{m+1}\partial_wT(w)\right) \\
+			=&\oint\frac{dw}{2\pi i}\left(\frac c{12}(m^3-m)\mid w^{m+n-1}\right. \\
+			&\left.+2(m+1)w^{m+n+1}T(w)+w^{m+n+2}\partial_{w}T(w)\right) \\
+			=&\frac c{12}\bigl(m^3-m\bigr)\delta_{m,-n}+2(m+1)L_{m+n} \\
+			&+0-\underbrace{\oint\frac{dw}{2\pi i}(m+n+2)T(w)w^{m+n+1}}_{=(m+n+2)L_{m+n}}\\
+			=&(m-n)~L_{m+n}+\frac c{12}\Big(m^3-m\Big)~\delta_{m,-n}
+		\end{aligned}
+	\end{equation}
+	上面这一套是非常一般的做法。
+\end{proof}
+所以能动张量的Laurent模满足的是Virasoro代数。将这一套做法放到\ref{31.14}得到：
+\begin{equation}
+	\boxed{\left[L_m,\phi_n\right]=\left((h-1)m-n\right)\phi_{m+n}}
 \end{equation}
 \subsection{n-point correlators (n<4)}
 利用共形对称性实际上可以完全确定四点以下关联函数的形式。先来考虑准初级chiral场的关联函数，前面考虑的都是无穷小变换的Ward恒等式，但实际上在这里我们要使用的只是有限global共形变换的Ward恒等式，一般形式如下：
@@ -274,6 +347,16 @@ $z=e^{x^0+ix^1}=x+iy$，进一步利用积分换元得到：\sn{别忘了雅可�
 	\end{equation}
 	其中$z_{ij}\equiv z_i-z_j$
 \end{theorem}
+\begin{remark}
+	$d_{\phi\phi},C_{123}$可以用关联函数写成下面的形式：
+	\begin{equation}
+		d_{\phi\phi}=\braket{\phi}{\phi}
+	\end{equation}
+	\begin{equation}
+		C_{123}=\langle0|\phi_{(1)+h_1}\phi_{(2)h_3-h_1}\phi_{(3)-h_3}|0\rangle =\bra{\phi_1}|\phi_{(2)h_3-h_1}|\ket{\phi_3}
+	\end{equation}
+	这里$\phi_{(i)n}$表示$\phi_i$的第$n$个Laurent模。
+\end{remark}
 另外根据关联函数的单值性，还进一步要求\sn{后面考虑Virasoro代数表示的时候我们会先暂时忘掉这个要求。}\textbf{Chiral场的共形权只能是整数或者半整数}。把反全纯部分也加进来考虑得到：
 \begin{itemize}
 	\item 2-pt:
@@ -285,6 +368,7 @@ $z=e^{x^0+ix^1}=x+iy$，进一步利用积分换元得到：\sn{别忘了雅可�
 		\begin{aligned}\big\langle\phi_1(z_1,\overline{z}_1)&\phi_2(z_2,\overline{z}_2)\phi_3(z_3,\overline{z}_3)\big\rangle\\&=\frac{C_{123}}{z_{12}^{h_1+h_2-h_3}z_{23}^{h_2+h_3-h_1}z_{13}^{h_1+h_3-h_2}\overline{z}_{12}^{\vec{h}_1+\vec{h}_2-\vec{h}_3}\overline{z}_{23}^{\vec{h}_2+\vec{h}_3-\vec{h}_1}\overline{z}_{13}^{\vec{h}_1+\vec{h}_3-\vec{h}_2} }\end{aligned}
 	\end{equation}
 \end{itemize}
+根据OPE的交换性和结合性可以知道$C_{123}=C_{231}=C_{312}$。
 
 关于这些公式的详细推导\cite{ito}上面都有，这里主要考虑用无穷小Ward恒等式的方法，但是我们考虑的毕竟是准初级场，所以只需要考虑$\epsilon(z)=\epsilon_{-1}+\epsilon_0z+\epsilon_1z^2$。将\ref{global ward}在无穷小变换下展开得到全纯部分：
 \begin{equation}
@@ -295,9 +379,190 @@ $z=e^{x^0+ix^1}=x+iy$，进一步利用积分换元得到：\sn{别忘了雅可�
 但是四点及以上函数就不能确定到只差一个待定系数了，不过我们仍旧可以利用所谓\textbf{交叉对称性}(Crossing Symmetry)走的很远。
 
 \subsection{General Form of the OPE}
-
+为了简化讨论，先从chiral场开始，$\{\phi_i\}$表示CFT$_2$的Spectrum，下标$i$表示共形权为$h_i$，则OPE有下面的一般形式：
+\begin{theorem}
+	\begin{equation}
+		\boxed{
+		\phi_i(z)\phi_j(w)=\sum_{k,n\geq0}C_{ij}^k\frac{a_{ijk}^n}{n!}\frac{1}{(z-w)^{h_i+h_j-h_k-n}}\partial^n\phi_k(w)
+		}
+	\end{equation}
+	其中：
+	\begin{equation}\label{31.26}
+		\begin{aligned}
+			&a_{ijk}^{n} =\binom{2h_k+n-1}n^{-1}\binom{h_k+h_i-h_j+n-1}n,  \\
+			&C_{ijk} =\sum_l{C_{ij}^{l}d_{lk}}
+		\end{aligned}
+	\end{equation}
+\end{theorem}
+由于1-pt关联函数始终为0，所以上面的OPE对两点关联函数的贡献只能是$n=0$且$h=0$的常值初级场贡献，也即$\left\langle\phi_1\phi_2\right\rangle\propto\frac{\delta_{h_1,h_2}}{z_{12}^{h_1+h_2}}$。
+\begin{proof}
+	考虑下面的关联函数：
+	\begin{equation}
+		\Big\langle\left(\phi_i(z)\phi_j(1)\right)\phi_k(0)\Big\rangle=\sum_{l,n\geq0}C_{ij}^l\frac{a_{ijl}^n}{n!}\frac{1}{(z-1)^{h_i+h_j-h_l-n}}\Big\langle\partial^n\phi_l(1)\phi_k(0)\Big\rangle 
+	\end{equation}
+	这里OPE的插入有效已经暗示$|z-1|<|0-1|=1$。利用两点关联函数的一般形式得到：
+	\begin{equation}
+		\left.\left\langle\partial_{z}^{n}\phi_{l}(z)\phi_{k}(0)\right\rangle\right|_{z=1}=\partial_{z}^{n}\left.\left(\frac{d_{lk}\delta_{h_{l},h_{k}}}{z^{2h_{k}}}\right)\right|_{z=1}=(-1)^{n}n!\left(\begin{matrix}2h_{k}+n-1\\n\end{matrix}\right)d_{lk}\delta_{h_{l},h_{k}}
+	\end{equation}
+	而3-pt关联函数的一般形式前面已经给出：
+	\begin{equation}
+			\Big\langle\left(\phi_i(z)\phi_j(1)\right)\phi_k(0)\Big\rangle=\frac{C_{ijk}}{(z-1)^{h_i+h_j-h_k}z^{h_i+h_k-h_j}}
+	\end{equation}
+	自洽性直接要求：
+	\begin{equation}\label{31.30}
+		\sum\limits_{l,n\geq0}C_{ij}^ld_{lk}a_{ijk}^n\binom{2h_k+n-1}{n}(-1)^n(z-1)^n\overset{!}{=}\frac{C_{ijk}}{\left(1+(z-1)\right)^{h_i+h_k-h_j}}
+	\end{equation}
+	由于$|z-1|<1$，所以可对右边利用下面的广义二项式定理进行展开：
+	\begin{equation}
+		\frac1{(1+x)^H}=\sum_{n=0}^\infty(-1)^n\binom{H+n-1}nx^n
+	\end{equation}
+	比较\ref{31.30}两边就得到了系数\ref{31.26}，这其实就是Bootstrap的思想。
+\end{proof}
+Laurent模之间的一般对易关系形式为：
+\begin{theorem}
+	\begin{equation}
+		\boxed{\left[\phi_{(i)m},\phi_{(j)n}\right]=\sum_kC_{ij}^kp_{ijk}(m,n)\phi_{(k)m+n}+d_{ij}\delta_{m,-n}\binom{m+h_i-1}{2h_i-1}}
+	\end{equation}
+	其中：
+	\begin{equation}
+		\begin{aligned}p_{ijk}(m,n)&=\sum_{\substack{r,s\in\mathbb{Z}_0^+\\r+s=h_i+h_j-h_{k-1}}}C_{r,s}^{ijk}\cdot\binom{-m+h_i-1}{r}\cdot\binom{-n+h_j-1}{s},\\C_{r,s}^{ijk}&=(-1)^r\frac{(2h_k-1)!}{(h_i+h_j+h_k-2)!}\prod_{t=0}^{s-1}(2h_i-2-r-t)\prod_{u=0}^{r-1}(2h_j-2-s-u)\end{aligned}
+	\end{equation}
+	这里$\mathbb{Z_0^+}$的意思是正整数以及0，后面的乘积$\prod$在$s=0(\text{or }r=0)$时定义为1，上面的系数形式还有一个非常重要的信息，阿讷就是只有当$h_k<h_i+h_j$时才有贡献。
+\end{theorem}
+通过共形对称性得到了OPE非常多的信息，唯一没有确定下来的只是一些系数，这就必须要CFT本身的一些性质了\sn{比如能动张量的形式，以及其它的对称性}。
+\subsubsection{Current Algebra}
+\begin{definition}
+	共形权为1的chiral(anti-chiral)场$j(z)$称为流。
+\end{definition}
+考虑一个谱为$N$个流的理论，根据前面Laurent模的一般形式得到：
+\begin{equation}
+	\begin{bmatrix}j_{(i)m},j_{(j)n}\end{bmatrix}=\sum_kC_{ij}^kp_{111}(m,n)j_{(k)m+n}+d_{ij}m\delta_{m,-n}
+\end{equation}
+$d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。我们总是可以通过rescal这些流，使得$d_{ij}=k\delta_{i,j}$，然后再通过对流进行重新组合得到：
+\begin{equation}
+	\boxed{
+		\begin{bmatrix}j_m^i,j_n^j\end{bmatrix}=i\sum_lf^{ijl}j_{m+n}^l+km\delta^{ij}\delta_{m,-n}
+	}
+\end{equation}
+这些流的模构成了一个Lie代数，显然中心荷non-trivial，后面会进一步详细讨论。它实际上是仿射化之后得到的{\itshape Ka\v{c}-Moody}代数。
 \section{NOPs and Conformal family}
 \subsection{Normal Ordered Products}
+两个算符的OPE在两个算符的插入位置一样时会发散，这种发散就类似于一般QFT中的红外发散，因为空间无限大，所以真空零点能发撒，这种发散可以通过取算符的正规乘积(NOP)得到，共形场论也有这样的做法。我们先考虑\textbf{自由场}，也就是$R(\phi\partial^n\phi)$最多只有一项是奇异的，\sn{对到QFT那边就是场的模式展开可以完全分离成产生算符和湮灭算符之和}那么我们直接减去真空期望值就去除了所有的发散项，所以NOP可以定义为：
+\begin{definition}[NOPs]
+	\begin{equation}
+		:\phi_1(z)\phi_2(w):\equiv\left(\phi_1(z)\phi_2(w)-\left\langle{\phi_1(z)\phi_2(w)}\right\rangle\right):
+	\end{equation}
+	这里省略了所有的径向排序，记收缩：
+	\begin{equation}
+		\wick{\c \phi(z)\c \phi(w)}\equiv \left\langle{\phi_1(z)\phi_2(w)}\right\rangle
+	\end{equation}
+	缩并后是一个数，可以提出去。显然在$z\to w$后OPE的所有奇异性都被减除：
+	\begin{equation}
+		:\phi_1\phi_2:(w)\equiv\lim_{z\to w}\left(:\phi_1(z)\phi_2(w):\right)
+	\end{equation}
+\end{definition}
+\begin{theorem}[Wick]
+	\begin{equation}
+		\boxed{
+			\begin{aligned}
+				\mathsf R[\Phi_{a_1}(x_1)\Phi_{a_2}(x_2)\cdots\Phi_{a_n}(x_n)]=\mathsf N\big[&\Phi_{a_1}(x_1)\Phi_{a_2}(x_2)\cdots\Phi_{a_n}(x_n)\\&+\left(\Phi_{a_1}\Phi_{a_2}\cdots\Phi_{a_n}\text{的所有可能缩并}\right)\big]
+			\end{aligned}
+		}
+	\end{equation}
+	由于正规序插入到真空态之间恒为0，所以任何没有完全缩并的项对真空期望值都没有贡献。
+\end{theorem}
+\begin{proof}
+	关于Wick定理的证明可见任何一本正则量子化的QFT教材，比如余钊焕老师的讲义\footnote{\url{http://yzhxxzxy.github.io/cn/teaching.html}}，这里只想强调定理本身依赖于前面对自由场的NOP定义。
+\end{proof}
+\begin{example}
+	\begin{equation}
+		\begin{aligned}\mathsf{R}(\Phi_a\Phi_b\Phi_c\Phi_d)&=\mathsf{N}\big(\Phi_a\Phi_b\Phi_c\Phi_d+\wick{\c \Phi_a\c\Phi_b\Phi_c\Phi_d}+\wick{\c\Phi_a\Phi_b\c\Phi_c\Phi_d}+\wick{\c\Phi_a\Phi_b\Phi_c\c\Phi_d}\\&\quad\quad+\wick{\Phi_a\c\Phi_b\c\Phi_c\Phi_d}+\wick{\Phi_a\c\Phi_b\Phi_c\c\Phi_d}+\wick{\Phi_a\Phi_b\c\Phi_c\c\Phi_d}\\&\quad\quad+\wick{\c\Phi_a\c\Phi_b}\wick{\c\Phi_c\c\Phi_d}+\wick{\c1\Phi_a\c2\Phi_b\c1\Phi_c\c2\Phi_d}+\wick{\c1\Phi_a\c2\Phi_b\c2\Phi_c\c1\Phi_d}\big)\end{aligned}
+	\end{equation}
+	计算的下一步是将所有收缩的项放在一起，未收缩的项放在一起，对于玻色场由于满足对易关系可以随便移动场的位置，这一步是trivial的，不过费米场因为满足反对易关系，所以交换两个场位置时会产生一个负号需要额外注意。
+	
+	左边减去右边，并取$x_a,x_b\to x$和$x_c,x_d\to y$的极限后得到两个NOP的时序积的Wick定理：
+	\begin{equation}
+		\begin{aligned}
+			\mathsf{R}\left[:\Phi_a\Phi_b:(x):\Phi_c\Phi_d:(y)\right]&=\mathsf{N}\big(\Phi_a\Phi_b\Phi_c\Phi_d+\wick{\c\Phi_a\Phi_b\c\Phi_c\Phi_d}+\wick{\c\Phi_a\Phi_b\Phi_c\c\Phi_d}\\&\quad\quad+\wick{\Phi_a\c\Phi_b\c\Phi_c\Phi_d}+\wick{\Phi_a\c\Phi_b\Phi_c\c\Phi_d}\\&\quad\quad+\wick{\c1\Phi_a\c2\Phi_b\c1\Phi_c\c2\Phi_d}+\wick{\c1\Phi_a\c2\Phi_b\c2\Phi_c\c1\Phi_d}\big)
+		\end{aligned}
+	\end{equation}
+	这个计算实际上是非常一般的，他告诉我们计算NOP的时序积时跟没有NOP时一样计算，但是认为NOP内部的场之间的收缩为0。
+\end{example}
+但是对于非自由场，NOP不能这么定义，比如$TT$的NOP照此定义，仍然发散，所以对于一般场的NOP应当定义成减去所有的奇异项。
+\begin{definition}
+	\begin{equation}
+		\left(A(z)B(w)\right)\equiv A(z)B(w)-\wick{\c A(z)\c B(w)}
+	\end{equation}
+	这里$\wick{\c A(z)\c B(w)}$表示OPE的\textbf{所有}奇异部分。注意我们引入了文献中另外一种表示NOP的方式：$\left(\cdot\right)$。同样，定义：
+	\begin{equation}
+		\left(AB\right)(w)=\lim_{z\to w} \left(A(z)B(w)\right)
+	\end{equation}
+\end{definition}
+将NOP其中一个场做洛朗展开，然后可以将OPE用NOP表达为：
+\begin{theorem}[NOPs $\iff$ OPEs]
+	\begin{equation}
+		\phi(z)\chi(w)=\operatorname{sing.}+\sum_{n=0}^\infty\frac{(z-w)^n}{n!}N\big(\partial^n\phi\chi\big)(w)
+	\end{equation}
+	同样可以用OPE表达NOP：
+	\begin{equation}
+		N\left(\phi\chi\right)(w)=\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\frac{\phi(z)\chi(w)}{z-w}
+	\end{equation}
+\end{theorem}
+考虑NOP的Laurent模：
+\begin{equation}
+	\begin{aligned}N\left(\phi\chi\right)&(w)=\sum_{n\in\mathbb{Z}}w^{-n-h^\phi-h^\chi}N\left(\phi\chi\right)_n,\\N\left(\phi\chi\right)_n&=\oint_{\mathcal{C}(0)}\frac{dw}{2\pi i}w^{n+h^\phi+h^\chi-1}N\left(\phi\chi\right)(w)\end{aligned}
+\end{equation}
+\begin{theorem}
+	\begin{equation}
+		\boxed{
+		N\left(\phi\chi\right)_{n}=\sum_{k>-h^{\phi}}\chi_{n-k}\phi_{k}+\sum_{k\leq-h^{\phi}}\phi_{k}\chi_{n-k}
+		}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	\begin{equation}
+		\begin{aligned}N\left(\phi\chi\right)_n&=\oint_{C(0)}\frac{dw}{2\pi i}w^{n+h^\phi+h^{\lambda}-1}\oint_{C(w)}\frac{dz}{2\pi i}\frac{\phi(z)\chi(w)}{z-w}\\&=\underbrace{\oint\frac{dw}{2\pi i}w^{n+h^\phi+h^{\lambda}-1}\Big(\underbrace{\oint_{|z|>|w|}\frac{dz}{2\pi i}\frac{\phi(z)\chi(w)}{z-w}}_{\mathcal{I}_1}}_{\mathcal{I}_2}-\oint_{|z|<|w|}\frac{dz}{2\pi i}\frac{\chi(w)\phi(z)}{z-w}\Big)\end{aligned}
+	\end{equation}
+	计算$\mathcal{I}_1$得到：
+	\begin{equation}
+		\begin{aligned}
+			\mathcal{I}_{1}& =\oint_{|z|>|w|}\frac{dz}{2\pi i}\frac{1}{z-w}\sum_{r,s}z^{-r-h^{\phi}}w^{-s-h^{\chi}}\phi_{r}\chi_{s}  \\
+			&=\oint_{|z|>|w|}\frac{dz}{2\pi i}\left.\frac1z\sum_{p\geq0}\left(\frac wz\right)^p\sum_{r,s}z^{-r-h^\phi}w^{-s-h^\chi}\phi_r\chi_s\right.  \\
+			&=\oint_{|z|>|w|}\frac{dz}{2\pi i}\sum_{p\geq0}\sum_{r,s}z^{-r-h^\phi-p-1}w^{-s-h^\chi+p}\phi_r\chi_s.
+		\end{aligned}
+	\end{equation}
+	频繁利用Cauchy积分公式得到：
+	\begin{equation}
+		\begin{aligned}
+			\mathcal{I}_2&=\oint\frac{dw}{2\pi i}\sum_{p\geq0}\sum_sw^{-s-h^x+p+n+h^\phi+h^x-1}\phi_{-h^\phi-p}\chi_s\\
+			&=\sum_{p\geq0}\phi_{-h^\phi-p}\chi_{h^\phi+n+p}=\sum_{k\leq-h^\phi}\phi_k\chi_{n-k}
+		\end{aligned}
+	\end{equation}
+	对另外一项也同样计算就可以证明这个及其重要的等式了。
+\end{proof}
+这个等式其实非常好理解，从前面对CFT的希尔伯特空间构造可以看到，一个场的Laurent模当$n>-h$时是湮灭算符，$n\leq-h$时是产生算符，所以这个等式的含义就是相对$\phi$而言将所有的产生算符排在前面，湮灭算符放在后面，这正是在QFT中对NOP最naive的定义！
+
+另外，NOP与OPE最大的不同是他并不满足交换律和结合律，这也意味着对多个算符的NOP定义有歧义\sn{对于自由场，前面的定义还是well-define的}，往往选取的是下面的嵌套定义：
+\begin{equation}
+	(ABC\cdots DE)\equiv(A(B(C(\cdots(DE))))))
+\end{equation}
+另外，Wick定理也失效了，不过我们有下面的等式：
+\begin{theorem}[Generalized Wick]
+	\begin{equation}
+		{A(z)(BC)}(w)=\frac1{2\pi i}\oint_{w}\frac{dx}{x-w}\left\{\wick{\c A(z)\c B}(x)C(w)+B(x)\wick{\c A(z)\c C}(w)\right\}+\text{regular}
+	\end{equation}
+\end{theorem}
+上式是对自由场的下面特殊的Wick定理的相互作用推广：
+\begin{equation}
+	\phi_1(x):\phi_2\phi_3:(y)=\wick{\c\phi_1(x)\c\phi_2(y)}:\phi_3(y):+\wick{\c\phi_1(x)\c\phi_3(y)}:\phi_2(y):+\underbrace{:\phi_1(x)\phi_2(y)\phi_3(y):}_{\text{regular}}
+\end{equation}
+还可以证明，虽然结合律失效了，但是有下面等式：
+\begin{theorem}[Rearrangement Lemma]
+	\begin{equation}
+		((AB)E)-(A(BE))=(A([E,B]))+(([E,A])B)+([(AB),E])
+	\end{equation}
+	$E$一般取为$(CD)$。
+\end{theorem}
 \subsection{Verma module}
 \subsection{Descendant states}
 \section{Crossing Symmetry}
