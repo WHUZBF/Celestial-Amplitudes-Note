@@ -606,6 +606,16 @@ M.S.~Costa, V.~Gon\c{c}alves and J.a.~Penedones, \emph{{Spinning AdS
   {\bfseries 09} (2014) 064} [\href{https://arxiv.org/abs/1404.5625}{{\ttfamily
   1404.5625}}].
 
+\bibitem{bougoffa2019note}
+L.~Bougoffa, \emph{A note on the ramanujan master theorem},  2019.
+
+\bibitem{doi:10.1080/10652469.2014.924114}
+M.~Glasser and M.~Milgram, \emph{Master theorems for a family of integrals},
+  \href{https://doi.org/10.1080/10652469.2014.924114}{\emph{Integral Transforms
+  and Special Functions} {\bfseries 25} (2014) 805}
+  [\href{https://arxiv.org/abs/https://doi.org/10.1080/10652469.2014.924114}{{\ttfamily
+  https://doi.org/10.1080/10652469.2014.924114}}].
+
 \bibitem{PhysRevD.76.084013}
 E.~Magliaro, C.~Perini and C.~Rovelli, \emph{Compatibility of radial, lorenz,
   and harmonic gauges},
@@ -617,6 +627,27 @@ L.~Donnay, S.~Pasterski and A.~Puhm, \emph{{Asymptotic Symmetries and Celestial
   CFT}}, \href{https://doi.org/10.1007/JHEP09(2020)176}{\emph{JHEP} {\bfseries
   09} (2020) 176} [\href{https://arxiv.org/abs/2005.08990}{{\ttfamily
   2005.08990}}].
+
+\bibitem{Donnay:2018neh}
+L.~Donnay, A.~Puhm and A.~Strominger, \emph{{Conformally Soft Photons and
+  Gravitons}}, \href{https://doi.org/10.1007/JHEP01(2019)184}{\emph{JHEP}
+  {\bfseries 01} (2019) 184}
+  [\href{https://arxiv.org/abs/1810.05219}{{\ttfamily 1810.05219}}].
+
+\bibitem{Pano:2021ewd}
+Y.~Pano, S.~Pasterski and A.~Puhm, \emph{{Conformally soft fermions}},
+  \href{https://doi.org/10.1007/JHEP12(2021)166}{\emph{JHEP} {\bfseries 12}
+  (2021) 166} [\href{https://arxiv.org/abs/2108.11422}{{\ttfamily
+  2108.11422}}].
+
+\bibitem{Dolan:2011dv}
+F.A.~Dolan and H.~Osborn, \emph{{Conformal Partial Waves: Further Mathematical
+  Results}},  \href{https://arxiv.org/abs/1108.6194}{{\ttfamily 1108.6194}}.
+
+\bibitem{Symanzik:1972wj}
+K.~Symanzik, \emph{{On Calculations in conformal invariant field theories}},
+  \href{https://doi.org/10.1007/BF02824349}{\emph{Lett. Nuovo Cim.} {\bfseries
+  3} (1972) 734}.
 
 \bibitem{Law:2020tsg}
 Y.T.A.~Law and M.~Zlotnikov, \emph{{Massive Spinning Bosons on the Celestial
@@ -694,6 +725,31 @@ S.~Pasterski, S.-H.~Shao and A.~Strominger, \emph{{Flat Space Amplitudes and
   \href{https://doi.org/10.1103/PhysRevD.96.065026}{\emph{Phys. Rev. D}
   {\bfseries 96} (2017) 065026}
   [\href{https://arxiv.org/abs/1701.00049}{{\ttfamily 1701.00049}}].
+
+\bibitem{Pasterski:2017ylz}
+S.~Pasterski, S.-H.~Shao and A.~Strominger, \emph{{Gluon Amplitudes as 2d
+  Conformal Correlators}},
+  \href{https://doi.org/10.1103/PhysRevD.96.085006}{\emph{Phys. Rev. D}
+  {\bfseries 96} (2017) 085006}
+  [\href{https://arxiv.org/abs/1706.03917}{{\ttfamily 1706.03917}}].
+
+\bibitem{Stieberger:2018edy}
+S.~Stieberger and T.R.~Taylor, \emph{{Strings on Celestial Sphere}},
+  \href{https://doi.org/10.1016/j.nuclphysb.2018.08.019}{\emph{Nucl. Phys. B}
+  {\bfseries 935} (2018) 388}
+  [\href{https://arxiv.org/abs/1806.05688}{{\ttfamily 1806.05688}}].
+
+\bibitem{Stieberger:2018onx}
+S.~Stieberger and T.R.~Taylor, \emph{{Symmetries of Celestial Amplitudes}},
+  \href{https://doi.org/10.1016/j.physletb.2019.03.063}{\emph{Phys. Lett. B}
+  {\bfseries 793} (2019) 141}
+  [\href{https://arxiv.org/abs/1812.01080}{{\ttfamily 1812.01080}}].
+
+\bibitem{Law:2019glh}
+Y.T.A.~Law and M.~Zlotnikov, \emph{{Poincar\'e constraints on celestial
+  amplitudes}}, \href{https://doi.org/10.1007/JHEP03(2020)085}{\emph{JHEP}
+  {\bfseries 03} (2020) 085}
+  [\href{https://arxiv.org/abs/1910.04356}{{\ttfamily 1910.04356}}].
 
 \bibitem{Ellis:2016jkw}
 J.~Ellis, \emph{{TikZ-Feynman: Feynman diagrams with TikZ}},

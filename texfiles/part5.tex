@@ -609,7 +609,7 @@ $q$是平面波在壳动量$q^2=0$，$\varepsilon^\pm_\mu$是极化矢量，常�
 	\lim\limits_{\omega\to0}\left[\omega\langle\text{out}|a_+^\text{out}(\vec{q})\mathcal{S}|\text{in}\rangle\right]=e\lim\limits_{\omega\to0}\left[\sum\limits_{k=1}^m\frac{\omega Q_k^\text{out}p_k^\text{out}\cdot\varepsilon^+}{p_k^\text{out}\cdot q}-\sum\limits_{k=1}^n\frac{\omega Q_k^\text{in}p_k^\text{in}\cdot\varepsilon^+}{p_k^\text{in}\cdot q}\right]\langle\text{out}|\mathcal{S}|\text{in}\rangle 
 \end{equation}
 这里出射和入射态都是平面波为基，而且我们把元电荷作为公因子提出，$Q\in\mathbb{Z}$，出入射动量用Embedding的形式写出来，前面第三部分写过，这里再写一遍：
-\begin{equation}
+\begin{equation}\label{eq:25.19}
 	\begin{aligned}
 		&q^{\mu} =\frac\omega{1+z\bar{z}}\left(1+z\bar{z},z+\bar{z},-i(z-\bar{z}),1-z\bar{z}\right),  \\
 		&p_{k}^{\mu} =\frac{E_{k}}{1+z_{k}\bar{z}_{k}}\left(1+z_{k}\bar{z}_{k},z_{k}+\bar{z}_{k},-i(z_{k}-\bar{z}_{k}),1-z_{k}\bar{z}_{k}\right) 
@@ -784,7 +784,7 @@ $O(2)$对称性破缺有两个，一个是Abel的Lie群$SO(2)$的破缺，也就
 总结一下，规范场具有local的，在边界上退化的规范对称性（冗余），而众所周知由于这一对称性的要求，规范场的没有能隙，所以存在软粒子，而软粒子实际上对应的是large gauge symmetry，也就是在边界上的非退化的规范冗余的自发破缺。而且这种破缺的简并真空之间是不存在超选择的，对应的守恒荷也是有界的，所以才有了软定理这么丰富的红外现象。但是，large guage symmetry的一个子群，global的规范对称性（真正的对称性）并没有破缺，毕竟从软定理能看到电荷守恒还是满足的，你也可以直接在\ref{eq:25.4}中取$\epsilon=\mathrm{const}$，也就对应global的规范变换，直接得到$\sum_k Q_k=0$。所以large guage symmetry破缺了但没完全破缺，虽然软光子不守恒，但是自然界好歹还是让电荷守恒了。
 
 
-\section{Massive QED}
+\section{Massive QED}\label{sec:27}
 前面创建的一系列理论的前提本质上都是Cauchy面\sn{就是initial data所处的超曲面}为$\mathcal{I}^\pm$。但是对于有质量情况，有质量的粒子不会跑到$\mathcal{I}^\pm$这个“边”(boundary)上去，而会跑到“体”(bulk)里面的$i^{\pm}$，这样就导致柯西面不能选取为$\mathcal{I}^\pm$。前面的结论就会失效，但是软粒子相关的推导都不会受到任何影响，准确来说只有\ref{23.36}会受到影响。也就是说我们需要重新考虑Large gauge对Massive物质场的作用，也就是去考虑$Q^{+}_H\ket{p}$。前面我们的结论表明对于无质量的情况$Q^{+}_H\ket{p}\sim Q_k\varepsilon(z,\bar z)\ket{p}$，这里$\varepsilon$是天球上的Large gauge，自然的就会去想看一下Large gauge在$i^\pm$上的作用，这要求我们把边上的$\varepsilon$延拓到体上去\sn{非常有AdS/CFT的味道了，后面会看到我们使用的格林函数就是bulk-to-boundary传播子}。为了明确起见，下面的讨论在Lorenz规范$\nabla_\mu A^\mu=0$下进行，主要参考文献\cite{Campiglia:2015qka}，不依赖于度规的讨论见\cite{Kapec:2015ena}。那么“延拓”之后的$\varepsilon(x)$应该满足：
 \begin{equation}
 	\square\varepsilon\equiv\nabla^\mu\nabla_\mu\varepsilon=0,\quad \lim_{r\to\infty}\varepsilon(x)=\varepsilon(z,\bar z)
@@ -986,8 +986,9 @@ Strominger认为这应当是考虑了非微扰效应之后的软定理领头阶�
 
 按理说现在要做的事情就是重复前面模式展开、协变相空间量子化那一套去证明Ward恒等式和\ref{28.7}之间的等价性，\cite{Strominger:2015bla}也这么去做了，但是却存在一些非常大的conjecture。首先认为$\tilde{Q}^\pm$由\ref{conjecture1}生成就是一个猜想，$\tilde{A}$确实存在\ref{conjecture1}这样的large gauge，但是最终这证明$\tilde{Q}^\pm$是其生成元需要构造协变相空间的量子化从而计算对易子。这就导出了另外一个conjecture，我们并不知道磁荷的辛形式如何去构造，而且前面推导电荷那边辛形式非常重要的一个边界条件是假定没有磁荷，加入磁荷之后辛形式如何修改还不清楚，我们只能认为加入磁荷后$Q^\pm$依旧由电荷的large gauge生成。文献\cite{Strominger:2015bla}就是在这些假定下去做的。
 
-另外一个比较重要的点，电荷那边的large gauge是$U(1)$ gauge的一个子群，常说$U(1)$ gauge不是symmetry，只是冗余自由度，要么没有守恒荷，要么构建出的守恒荷其实不守恒\sn{我们讲对称性，首先要可以从Noether定理导出可观测的守恒荷，而且有相应的对物理态的对称变换。global的$U(1)$对称性确实non-trivial，是真正的symmetry，对应电荷守恒，这其实上无穷远处不归零已经有large gauge的影子了，但是local $U(1)$ 是trivial的，它导出电荷守恒并非是Noether定理的结论（回忆Nother定理的那些标记连续对称性的参数是global的而不是local的）。}，这些“symmetry”是trivial的，只是redundancy，并非渐近对称性，我们可以把通常所说的$U(1)$ gauge称为“bulk gauge”，而天球上的large gauge是真正的渐近对称性。对于QED的情况，large gauge是bulk gauge的子群，或者说非平庸的子群，但是磁荷这边就不一样了，上面通过对偶看出来的渐近对称性并不能看成bulk gauge的子群，毕竟都出现复化跑出$U(1)$了，所以通过这点可以看出，\textbf{并不是所有的渐近对称性都可以看作是bulk里的对称性的子群}
+另外一个比较重要的点，电荷那边的large gauge是$U(1)$ gauge的一个子群，常说$U(1)$ gauge不是symmetry，只是冗余自由度，要么没有守恒荷，要么构建出的守恒荷其实不守恒\footnote{我们讲对称性，首先要可以从Noether定理导出可观测的守恒荷，而且有相应的对物理态的对称变换。global的$U(1)$对称性确实non-trivial，是真正的symmetry，对应电荷守恒，这其实上无穷远处不归零已经有large gauge的影子了，但是local $U(1)$ 是trivial的，它导出电荷守恒并非是Noether定理的结论（回忆Nother定理的那些标记连续对称性的参数是global的而不是local的）。}，这些“symmetry”是trivial的，只是redundancy，并非渐近对称性，我们可以把通常所说的$U(1)$ gauge称为“bulk gauge”，而天球上的large gauge是真正的渐近对称性。对于QED的情况，large gauge是bulk gauge的子群，或者说非平庸的子群，但是磁荷这边就不一样了，上面通过对偶看出来的渐近对称性并不能看成bulk gauge的子群，毕竟都出现复化跑出$U(1)$了，所以通过这点可以看出，\textbf{并不是所有的渐近对称性都可以看作是bulk里的对称性的子群}
 \subsection{Non-Abelian gauge theory}
+不像其它定理到非阿贝尔情形就非常棘手，这一节的东西推广到非阿贝尔情形几乎是trivial的，下面顺着文献\cite{He:2015zea,Nande:2017dba}的思路来回顾一下。
 \subsection{Higher dimensions}
 \subsection{$\mathcal{N}=1$ Super Symmetry}
 
