@@ -353,7 +353,7 @@ CFT$_{2}$中非常重要的OPE是两个能动张量之间的OPE，就平面上�
 		d_{\phi\phi}=\braket{\phi}{\phi}
 	\end{equation}
 	\begin{equation}
-		C_{123}=\langle0|\phi_{(1)+h_1}\phi_{(2)h_3-h_1}\phi_{(3)-h_3}|0\rangle =\bra{\phi_1}|\phi_{(2)h_3-h_1}|\ket{\phi_3}
+		C_{123}=\langle0|\phi_{(1)+h_1}\phi_{(2)h_3-h_1}\phi_{(3)-h_3}|0\rangle =\bra{\phi_1}\phi_{(2)h_3-h_1}\ket{\phi_3}
 	\end{equation}
 	这里$\phi_{(i)n}$表示$\phi_i$的第$n$个Laurent模。
 \end{remark}
@@ -427,9 +427,21 @@ Laurent模之间的一般对易关系形式为：
 	\begin{equation}
 		\begin{aligned}p_{ijk}(m,n)&=\sum_{\substack{r,s\in\mathbb{Z}_0^+\\r+s=h_i+h_j-h_{k-1}}}C_{r,s}^{ijk}\cdot\binom{-m+h_i-1}{r}\cdot\binom{-n+h_j-1}{s},\\C_{r,s}^{ijk}&=(-1)^r\frac{(2h_k-1)!}{(h_i+h_j+h_k-2)!}\prod_{t=0}^{s-1}(2h_i-2-r-t)\prod_{u=0}^{r-1}(2h_j-2-s-u)\end{aligned}
 	\end{equation}
-	这里$\mathbb{Z_0^+}$的意思是正整数以及0，后面的乘积$\prod$在$s=0(\text{or }r=0)$时定义为1，上面的系数形式还有一个非常重要的信息，阿讷就是只有当$h_k<h_i+h_j$时才有贡献。
+	这里$\mathbb{Z_0^+}$的意思是正整数以及0，后面的乘积$\prod$在$s=0(\text{or }r=0)$时定义为1，上面的系数形式还有一个非常重要的信息，就是只有当$h_k<h_i+h_j$时才有贡献。
 \end{theorem}
 通过共形对称性得到了OPE非常多的信息，唯一没有确定下来的只是一些系数，这就必须要CFT本身的一些性质了\sn{比如能动张量的形式，以及其它的对称性}。
+
+更一般的非手征（准）初级场OPE的一般表达式更加复杂，形式为：
+\begin{equation}
+	\boxed{
+		\phi_i(z,\overline{z})\phi_j(w,\overline{w})=\sum_{p}\sum_{\{k,\overline{k}\}}C_{ij}^p\frac{\beta_{ij}^{p,\{k\}}\overline{\beta}_{ij}^{p,\{\overline{k}\}}\phi_{p}^{\{k,\overline{k}\}}(w,\overline{w})}{(z-w)^{h_i+h_j-h_p-K}(\overline{z}-\overline{w})^{\overline{h}_i+\overline{h}_j-\overline{h}_p-\overline{K}}}
+	}
+\end{equation}
+这里：
+\begin{equation}
+	\{\hat{L}_{-k_1}\ldots\hat{L}_{-k_n}\hat{\overline{L}}_{-k_1}\ldots\hat{\overline{L}}_{-k_n}\phi_p(z,\overline{z})\},\quad K\equiv\sum_i k_i
+\end{equation}
+$\beta_{ij}^{p,\{k\}}$和前面的$a^n_{ijk}$一样是之和初级场的共形权有关的，是与理论本身无关的可以计算出来的系数，我们唯一不知道的就是$C_{ij}^p$。
 \subsubsection{Current Algebra}
 \begin{definition}
 	共形权为1的chiral(anti-chiral)场$j(z)$称为流。
@@ -445,6 +457,109 @@ $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。�
 	}
 \end{equation}
 这些流的模构成了一个Lie代数，显然中心荷non-trivial，后面会进一步详细讨论。它实际上是仿射化之后得到的{\itshape Ka\v{c}-Moody}代数。
+\section{Crossing Symmetry}
+本节的目的是最大程度得到四点关联函数$\langle\phi_1(z_1,\bar{z}_1)\phi_2(z_2,\bar{z}_2)\phi_3(z_3,\bar{z}_3)\phi_4(z_4,\bar{z}_4)\rangle $的信息。$n<4$的可以完全确定从数学上看是因为黎曼球面上任意两个或三个点，都可以通过共形变换映射为固定的$\{0,1,\infty\}$，但是四点我们最多只能将他们映射到$\{0,x,1,\infty\}$，其中$x$是\textbf{交比（Crossing Ratio）}。
+\begin{equation}
+	x=\frac{(z_1-z_2)(z_3-z_4)}{(z_1-z_3)(z_2-z_4)},\quad\bar{x}=\frac{(\bar{z}_1-\bar{z}_2)(\bar{z}_3-\bar{z}_4)}{(\bar{z}_1-\bar{z}_3)(\bar{z}_2-\bar{z}_4)}
+\end{equation}
+所以四点关联函数用前面的方法只能确定到一个与交比有关的函数。利用\ref{global ward}，我们知道任意四点关联函数可以与下面的关联函数联系起来：\sn{$z\mapsto \frac{(z_1-z)(z_3-z_4)}{(z-z_4)(z_1-z_3)}$}
+\begin{equation}
+	\propto \langle\phi_i(0,0)\phi_j(x,\bar x)\phi_l(1,1)\phi_m(\infty,\infty)\rangle\equiv G^{ij}_{lm}(x,\bar x)
+\end{equation}
+由于OPE由结合律，所以可以前两个先做OPE，后两个在做OPE，注意到$\braket{\phi_p\phi_q}\sim\delta_{h_p,h_q}$，我们可以将上式重写为：
+\begin{equation}\label{32.3}
+	G^{ij}_{lm}(x,\bar x)=\sum_pC_{ij}^pC_{lm}^p\mathcal{F}_{ij}^{lm}(p\mid x)\overline{\mathcal{F}}_{ij}^{lm}(p\mid\overline{x})
+\end{equation}
+这里的$\mathcal{F}_{ij}^{lm}(p\mid x)$称为\textbf{Conformal Block}，关联函数就是由这些Block线性组合而来的。再次利用\ref{global ward}，考虑$z\mapsto 1-z$和$z\mapsto 1/z$，有：
+\begin{equation}
+	G^{ij}_{lm}(x,\bar x)=\langle\phi_i(1,1)\phi_j(1-x,1-\bar x)\phi_l(0,0)\phi_m(\infty,\infty)\rangle= G^{lj}_{im}(1-x,1-\bar x)
+\end{equation}
+\begin{equation}
+	G^{ij}_{lm}(x,\bar x)=x^{2h_j}\bar x^{2\bar h_j}\langle\phi_i(1,1)\phi_j(\frac{1}{x},\frac{1}{\bar x})\phi_l(\infty,\infty)\phi_m(0,0)\rangle= x^{2h_j}\bar x^{2\bar h_j}G^{mj}_{il}(\frac{1}{x},\frac{1}{\bar x})
+\end{equation}
+这让我们得到另外两个$G(x,\bar x)$的表达式：
+\begin{align}
+	\label{32.6} G(x,\bar x)&=\sum_pC_{im}^pC_{jl}^p\mathcal{F}_{im}^{jl}(p\mid1-x)\overline{\mathcal{F}}_{im}^{jl}(p\mid1-\overline{x})\\
+	\label{32.7} G\left(x,\bar x\right)&=x^{-2h_j}\overline{x}^{-2\overline{h}_j}\sum_pC_{il}^pC_{jm}^p\mathcal{F}_{il}^{jm}\left(p\mid\frac1x\right)\overline{\mathcal{F}}_{il}^{jm}\left(p\mid\frac1{\overline{x}}\right)
+\end{align}
+这三个等式对应不同顺序的OPE缩并，就像是QFT中费曼图的$s,t,u$三个channel，$p$就像是中间的传播子，共形不变性要求这三个$G(x,\bar x)$的等式殊途同归，这就给出了$C^p_{ij}$必须要满足的一套等式，共形自举的思想就是通过这套方程完全确定OPE系数。
+\begin{figure}[htbp]
+	\centering
+	\includegraphics{figs/fig10.pdf}
+	\caption{$G(x)=G(1-x)$Crossing Symmetry的图示}
+\end{figure}
+\subsection{Fusing and Braiding Matrices}
+考虑一个比较简单的情形，CFT的谱是个有限谱\sn{比如RCFT}，这样Conformal Blocks构成了一个有限维线性空间，其中的某个线性组合得到的元素就是我们要的四点关联函数\sn{当然还要把全纯反全纯组合起来}。这其实就是在说\ref{32.3}，\ref{32.6}和\ref{32.7}中的Conformal Blocks相差的仅仅是一个线性变换，他们是同一个线性空间的不同基底！
+\begin{equation}
+	\mathcal{F}_{ij}^{kl}(p\mid x)=\sum_qB{\left[\begin{smallmatrix}j&k\\i&l\end{smallmatrix}\right]}_{p,q}\mathcal{F}_{ik}^{jl}\!\left(q\mid\frac1x\right)
+\end{equation}
+\begin{equation}
+	\mathcal{F}_{ij}^{kl}(p\mid x)=\sum_qF{\left[\begin{array}{cc}j&k\\i&l\end{array}\right]}_{p,q}\mathcal{F}_{il}^{jk}(q\mid1-x)
+\end{equation}
+这里$B$称作\textbf{Braiding Matrices}，$F$称作\textbf{Fusing Materices}，$p,q$是标记矩阵元，$\{i,j,l,m\}$标记矩阵本身。我们用类似轮换序图的形式来表达上面的两个方程：
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/fig11.pdf}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{figs/fig12.pdf}
+\end{figure}
+利用下面图表的交换性：
+\begin{figure}[H]
+	\centering
+	\includegraphics{figs/fig13.pdf}
+\end{figure}
+得到hexgon恒等式：
+\begin{equation}
+	\boxed{
+		\sum_{p} B\left[\begin{array}{cc}
+			j & k \\
+			i & s
+		\end{array}\right]_{r p} B\left[\begin{array}{cc}
+			j & l \\
+			p & m
+		\end{array}\right]_{s t} B\left[\begin{array}{cc}
+			k & l \\
+			i & t
+		\end{array}\right]_{p u}=\sum_{q} B\left[\begin{array}{cc}
+			k & l \\
+			r & m
+		\end{array}\right]_{s q} B\left[\begin{array}{cc}
+			j & l \\
+			i & q
+		\end{array}\right]_{r u} B\left[\begin{array}{cc}
+			j & k \\
+			u & m
+		\end{array}\right]_{q t}
+	}
+\end{equation}
+上面的方程非常像Yang-Baxter方程，所以CFT和可积性有很大的关联。但是注意上面这不是证明！就和YBE的图形化规则推导一样，只是便于计算和记忆。同样根据下面的图表交换：
+\begin{figure}[H]
+	\centering
+	\includegraphics{figs/fig14.pdf}
+\end{figure}
+得到pentagon恒等式：
+\begin{equation}
+	\boxed{
+		 F\left[\begin{array}{cc}
+			j & k \\
+			i & s
+		\end{array}\right]_{r t} F\left[\begin{array}{cc}
+			t & l \\
+			i & m
+		\end{array}\right]_{s u} =\sum_{p} F\left[\begin{array}{cc}
+			k & l \\
+			r & m
+		\end{array}\right]_{s p} F\left[\begin{array}{cc}
+			j & p \\
+			i & m
+		\end{array}\right]_{r u} F\left[\begin{array}{cc}
+			j & k \\
+			u & l
+		\end{array}\right]_{p t}
+	}
+\end{equation}
 \section{NOPs and Conformal family}
 \subsection{Normal Ordered Products}
 两个算符的OPE在两个算符的插入位置一样时会发散，这种发散就类似于一般QFT中的红外发散，因为空间无限大，所以真空零点能发撒，这种发散可以通过取算符的正规乘积(NOP)得到，共形场论也有这样的做法。我们先考虑\textbf{自由场}，也就是$R(\phi\partial^n\phi)$最多只有一项是奇异的，\sn{对到QFT那边就是场的模式展开可以完全分离成产生算符和湮灭算符之和}那么我们直接减去真空期望值就去除了所有的发散项，所以NOP可以定义为：
@@ -565,4 +680,3 @@ $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。�
 \end{theorem}
 \subsection{Verma module}
 \subsection{Descendant states}
-\section{Crossing Symmetry}
