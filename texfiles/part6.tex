@@ -1005,7 +1005,7 @@ $m$和质心动量有关，$n$和卷绕数有关，$m\neq 0$的态称为Kaluza\m
 \subsection{Free Fermions}
 这里我们考虑Majorana型费米子，也就是下面作用量中：
 \begin{equation}
-	\mathcal{S}=\frac1{4\pi\kappa}\int dzd\overline{z}\left(\psi\overline{\partial}\psi+\overline{\psi}\partial\overline{\psi}\right)
+	\mathcal{S}=\frac1{4\pi}\int dzd\overline{z}\left(\psi\overline{\partial}\psi+\overline{\psi}\partial\overline{\psi}\right)
 \end{equation}
 $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。运动方程为：
 \begin{equation}
@@ -1013,9 +1013,9 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 \end{equation}
 传播子$K\equiv\left\langle\psi(z)\psi(w)\right\rangle$为：
 \begin{equation}
-	\partial_{\overline{z}}K(z,w)=2\pi\kappa\delta^{(2)}(z-w)\Rightarrow K(z,w)=\frac{1}{z-w}
+	\partial_{\overline{z}}K(z,w)=2\pi\delta^{(2)}(z-w)\Rightarrow K(z,w)=\frac{1}{z-w}
 \end{equation}
-这表明$\psi(z)$是共形权为$(\frac{1}{2},0)$的初级场，利用这一点也可证明作用量确实共形不变。上式也是OPE的正则部分，注意到上式并非关于$z,w$对称的，因为费米子的反对易性，所以对径向序的定义为：
+这表明$\psi(z)$是共形权为$(\frac{1}{2},0)$的初级场，利用这一点也可证明作用量确实共形不变。上式也是OPE的奇异部分，注意到上式并非关于$z,w$对称的，因为费米子的反对易性，所以对径向序的定义为：
 \begin{equation}
 	R\big(\Psi(z)\Theta(w)\big):=
 	\begin{cases}+\Psi(z)\Theta(w)&\mathrm{for}\quad|z|>|w|\\-\Theta(w)\Psi(z)&\mathrm{for}\quad|w|>|z|\end{cases}
@@ -1034,32 +1034,109 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 		\left\{\psi_{r},\psi_{s}\right\}=&\oint\frac{dz}{2\pi i}\oint\frac{dw}{2\pi i}\left\{\psi(z),\psi(w)\right\}z^{r-\frac{1}{2}}w^{s-\frac{1}{2}} \\
 		=&\oint\frac{dw}{2\pi i}w^{s-\frac12}\Big(\oint_{|z|>|w|}\frac{dz}{2\pi i}\psi(z)\psi(w)z^{r-\frac12} \\
 		&-\oint_{|z|<|w|}\frac{dz}{2\pi i}\left.-\psi(w)\psi(z)z^{r-\frac12}\right) \\
-		=&\oint\frac{dw}{2\pi i}w^{s-\frac12}\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\underbrace{R\big(\psi(z)\psi(w)\big)}_{\frac{\kappa}{z-w}}z^{r-\frac12} \\
-		=&\kappa\oint\frac{aw}{2\pi i}w^{r+s-1} \\
-		=&\kappa~\delta_{r+s,0}~
+		=&\oint\frac{dw}{2\pi i}w^{s-\frac12}\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\underbrace{R\big(\psi(z)\psi(w)\big)}_{\frac{1}{z-w}}z^{r-\frac12} \\
+		=&\oint\frac{aw}{2\pi i}w^{r+s-1} \\
+		=&\delta_{r+s,0}
 	\end{aligned}
 \end{equation}
 费米子体系我们用下面的式子来确定能动张量：
 \begin{equation}
-	T_{\mu\nu}^c=8\pi\kappa\left.\gamma\left(-\eta_{\mu\nu}\mathcal{L}+\sum_i\frac{\partial\mathcal{L}}{\partial\left(\partial^\mu\phi_i\right)}\partial_\nu\phi_i\right)\right. 
+	T_{\mu\nu}^c=8\pi\left.\gamma\left(-\eta_{\mu\nu}\mathcal{L}+\sum_i\frac{\partial\mathcal{L}}{\partial\left(\partial^\mu\phi_i\right)}\partial_\nu\phi_i\right)\right. 
 \end{equation}
 \begin{equation}
-	T_{zz}=\gamma~\psi~\partial\psi~,\quad T_{z\overline{z}}=-\gamma~\overline{\psi}~\partial\overline{\psi}~,\quad\quad T_{\overline{z}z}=-\gamma~\psi~\overline{\partial}\psi~=0,\quad T_{\overline{z}z}=\gamma~\overline{\psi}~\overline{\partial}\overline{\psi}=0
+	T_{zz}=\gamma\psi\partial\psi,\quad T_{z\overline{z}}=-\gamma\overline{\psi}\partial\overline{\psi},\quad\quad T_{\overline{z}z}=-\gamma\psi\overline{\partial}\psi=0,\quad T_{\overline{z}z}=\gamma\overline{\psi}\overline{\partial}\overline{\psi}=0
 \end{equation}
 然后取NOP去除零点能：
 \begin{equation}
-	T(z)=\gamma\mathrm{~}N\left(\mathrm{~}\psi\mathrm{~}\partial\psi\mathrm{~}\right)
+	T(z)=\gamma N\left(\psi\partial\psi\right)(z)
 \end{equation}
-费米子情况，由于反对易性，NOP洛朗模要修正为：
+费米子情况，由于反对易性，NOP洛朗模要修正为：\sn{Blumenhagen书中NOP定义差个符号，导致后面洛朗模和能动张量都差个负号}
 \begin{equation}
 	\boxed{
-		N\left(\psi_0\theta\right)_r=-\sum_{s>-h^\theta}\psi_{r-s}\theta_s+\sum_{s\leq-h^\phi}\theta_s\psi_{r-s}
+		N\left(\theta\psi\right)_r=-\sum_{s>-h^\theta}\psi_{r-s}\theta_s+\sum_{s\leq-h^\phi}\theta_s\psi_{r-s}
 	}
+\end{equation}
+得到能动张量的洛朗模：\sn{对于共形权为$h$的初级场$\phi$，其次级场$\partial\phi$的洛朗模与$\phi_n$有关系：$(\partial\phi)_n=-(n+h)\phi_n$}
+\begin{equation}\label{35.49}
+	L_m=-\gamma\sum_{s>-\frac32}\psi_{m-s}\psi_s\left(s+\frac12\right)+\gamma\sum_{s\leq-\frac32}\psi_s\psi_{m-s}\left(s+\frac12\right)
+\end{equation}
+然后就可以根据$\left[L_m,\psi_r\right]=\left(-\frac m2-r\right)\psi_{m+r}$的要求确定$\gamma$，这里继续采用Wick定理来做：
+\begin{equation}
+	\begin{aligned}
+		T(z) \psi(w)&=\gamma:\psi\partial\psi:(z)\psi(w)\\
+		&=-\gamma \wick{\c\psi(z)\c\psi(w)}\partial\psi(z)+\gamma\psi(z)\partial_z\wick{\c\psi(z)\c\partial(w)}\\
+		&=-\frac{\gamma}{z-w}\partial\psi(z)-\frac{\gamma}{(z-w)^2}\psi(z)\\
+		&=-\frac{\gamma}{z-w}\partial\psi(w)-\frac{\gamma}{(z-w)^2}\psi(w)-\frac{\gamma}{(z-w)}\partial\psi(w)+\cdots\\
+		&=-\frac{\gamma}{(z-w)^2}\psi(w)-\frac{2\gamma}{z-w}\partial\psi(w)+\cdots
+	\end{aligned}
+\end{equation}
+最后两个等号用了$\psi(z)$泰勒展开，与\ref{31.14}对比得到$\gamma=-\frac1{2}$：
+\begin{equation}
+	\boxed{
+			T(z)=-\frac1{2} N\left(\psi\partial\psi\right)(z)
+	}
+\end{equation}
+同样的步骤计算TT OPE可以得知：
+\begin{theorem}
+	自由（Majorana)型费米子CFT的中心荷：$\boxed{c=\frac{1}{2}}$
+\end{theorem}
+
+现在来考虑费米子的希尔伯特空间，对于NS Sector，答案是trivial的：
+\begin{equation}
+	\mathcal{H}_{NS}\ket{n_{\frac12},n_{\frac32},n_{\frac52},\ldots}=\left(\psi_{-\frac12}\right)^{n_{\frac12}}\left(\psi_{-\frac32}\right)^{n_{\frac32}}\left(\psi_{-\frac52}\right)^{n_{\frac52}}\ldots\left|0\right\rangle,\quad n_{s}=0,1
+\end{equation}
+这里$n_s=0,1$是因为反对易性，这和泡利不相容原理吻合。哈密顿量全纯部分也能很好地从\ref{35.49}得到：
+\begin{equation}
+	L_0=\sum_{s=\frac12}^\infty s\psi_{-s}\psi_s
+\end{equation}
+不难发现零点能确实被shift掉了。第N个level的简并度有下面的生成函数：
+\begin{equation}
+	\prod_{r\geq0}\left(1+q^{r+\frac12}\right)=\sum_{N\in\frac12\mathbb{Z}}P(N)q^N
+\end{equation}
+
+但是Ramond Sector比较微妙。首先要问$\{\psi_{n},n\in\mathbb{Z}\}$中哪些是湮灭算符，根据$z\to 0$的奇异性，似乎这要求$\psi_0$以及$\psi_{n>0}$都是湮灭算符。但是按照前面推倒的$\{\psi_r,\psi_s\}=\delta_{r+s,0}$，$\psi_0\ket{0}$也将被所有的$\psi_{n>0}$湮灭，但是$\psi_0^2=\frac{1}{2}$得出$\braket{\psi_0}=\frac{12}\neq 0$，而且$[L_0,\psi_0]=0$导致$\ket{0}$和$\psi_0\ket{0}$能量相同。种种这些都告诉我们\textbf{$\psi_0\ket{0}$和$\ket{0}$是简并的两个真空！}希尔伯特空间需要在这两个简并的空间上去构造。
+
+还有一个比较怪的点是Ramond Sector的两点关联函数：
+\begin{equation}
+	\begin{aligned}
+		\langle\psi(z)\psi(w)\rangle & =\sum_{k,q\in\mathbb{Z}}z^{-k-1/2}w^{-q-1/2}\langle \psi_k\psi_q\rangle   \\
+		&=\frac1{2\sqrt{zw}}+\sum_{k=1}^\infty z^{-k-1/2}w^{k-1/2} \\
+		&=\frac1{\sqrt{zw}}\left\{\frac12+\sum_{k=1}^\infty\left(\frac wz\right)^k\right\} \\
+		&=\frac1{2\sqrt{zw}}\frac{z+w}{z-w} \\
+		&=\frac12\frac{\sqrt{z/w}+\sqrt{w/z}}{z-w}
+	\end{aligned}
+\end{equation}
+和前面OPE的形式是冲突的，只有当$w\to z$的极限意义下才相同。根据自由场NOP的定义，需要用OPE减去上面的两点关联函数：
+\begin{equation}
+	\begin{aligned}\langle T(z)\rangle&=-\frac14\lim_{w\to z}\partial_w\left(\frac{\sqrt{zw}+\sqrt{w/z}}{z-w}\right)+\frac1{2(z-w)^2}\\&=\frac1{16z^2}\neq 0\end{aligned}
+\end{equation}
+这自然导致Ramond Sector的能动张量零点能没有消干净！事实上R Sector的chiral能量为：\sn{式\ref{35.49}中对$s$的求和，在R Sector理解为跑遍所有满足不等号的整数}
+\begin{equation}
+	L_0=\sum_{s=1}^\infty s\psi_{-s}\psi_s+\frac{1}{16}
 \end{equation}
 \subsubsection{Bosonization}
 \subsection{$b,c$ ghost}
-
-
+这部分是弦论非常关心的，这里只做一些结论的总结，因为推导完全可以作为前面两部分的课后习题。
+\begin{equation}
+	\mathcal{S}=\frac1{4\pi}\int d^2z\left(b_{zz}\partial^zc^z+b_{\bar z\bar 
+		z}\partial^{\overline{z}}c^{\overline{z}}\right)
+\end{equation}
+数量纲就会发现$b,c$共形维数分别为：$h^b=2,h^c=-1$，但是这并不是说他们是玻色子，相反，他们暂时违背自旋统计定理，是Grassmann数。根据作用量可读出传播子：
+\begin{equation}
+	\partial^z\left\langle b(z)c(w)\right\rangle=4\pi\left.\delta^{(2)}(z-w)\quad\Rightarrow\quad\left\langle b(z)c(w)\right\rangle=\frac1{z-w}\right. 
+\end{equation}
+进而得到$b,c$之间OPE计算出反对易关系：
+\begin{equation}
+	\left\{b_m,c_n\right\}=\delta_{n+m,0},\quad\left\{b_m,b_n\right\}=0,\quad\left\{c_m,c_n\right\}=0
+\end{equation}
+由于这个体系很像自由费米体系，所以对能动量张量的求解可以通过下面的ansatz进行：
+\begin{equation}
+	T(z)=\alpha N\left(b\partial c\right)+\beta N\left(\partial bc\right)
+\end{equation}
+计算得知$\alpha=2,\beta=1$，且：
+\begin{theorem}
+	$b,c$鬼场的中心荷$\boxed{c=-26}$
+\end{theorem}
 \section{Unitary Representations of the Virasoro Algebra}
 \section{Fusion Rules}
 \section{Ka\v{c}\mbox{–}Moody Symmetry}
