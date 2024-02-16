@@ -11,7 +11,7 @@ CFT经典教材是大黄书\cite{DiFrancesco:1997nk}，教材\cite{Blumenhagen:2
 \begin{equation}
 	\phi^\prime(\lambda \vec{x})=\lambda^{-\Delta}\phi(\vec x)
 \end{equation}
-但是这只是对Dilation要求场在共形变换下“协变”，进一步要求对任意共形变换“协变”就给出了\textbf{初级场}（primary field）的定义。\sn{注意我们遵从大黄书的符号约定，和\cite{Blumenhagen:2009zz,,Ginsparg:1988ui}的定义恰巧相反，对最终CFT中的一些结论没有任何影响，仅仅只是中间推导过程有些细微的差别。}\sn{$s=1/2$是何形式？}
+但是这只是对Dilation要求场在共形变换下“协变”，进一步要求对任意共形变换“协变”就给出了\textbf{初级场}（primary field）的定义。\sn{注意我们遵从大黄书的符号约定，和\cite{Blumenhagen:2009zz,Ginsparg:1988ui}的定义恰巧相反，对最终CFT中的一些结论没有任何影响，仅仅只是中间推导过程有些细微的差别。}\sn{$s=1/2$是何形式？}
 \begin{definition}
 	共形维数为$\Delta$的初级场(s=0)定义为在任意共形变换下满足：
 	\begin{equation}
@@ -264,7 +264,7 @@ CFT$_{2}$中非常重要的OPE是两个能动张量之间的OPE，就平面上�
 \end{equation}
 第一个省略号是因为$T$不一定是初级场！第二个省略号表示奇异项。但是由于$[TT]=4$，所以最奇异的项只能是$(z-w)^{-4}$，而且分子只能是一个常数，我们取归一化为$c/2$得到：
 \begin{theorem}[TT OPE]
-	\begin{equation}
+	\begin{equation}\label{TT}
 		\boxed{
 			T(z)T(w)=\frac{c/2}{(z-w)^4}+\frac{2T(w)}{(z-w)^2}+\frac{\partial_wT(w)}{z-w}+\ldots 
 		}
@@ -321,7 +321,7 @@ CFT$_{2}$中非常重要的OPE是两个能动张量之间的OPE，就平面上�
 	上面这一套是非常一般的做法。
 \end{proof}
 所以能动张量的Laurent模满足的是Virasoro代数。将这一套做法放到\ref{31.14}得到：
-\begin{equation}
+\begin{equation}\label{31.27}
 	\boxed{\left[L_m,\phi_n\right]=\left((h-1)m-n\right)\phi_{m+n}}
 \end{equation}
 \subsection{n-point correlators (n<4)}
@@ -447,7 +447,7 @@ $\beta_{ij}^{p,\{k\}}$和前面的$a^n_{ijk}$一样是之和初级场的共形�
 	共形权为1的chiral(anti-chiral)场$j(z)$称为流。
 \end{definition}
 考虑一个谱为$N$个流的理论，根据前面Laurent模的一般形式得到：
-\begin{equation}
+\begin{equation}\label{current}
 	\begin{bmatrix}j_{(i)m},j_{(j)n}\end{bmatrix}=\sum_kC_{ij}^kp_{111}(m,n)j_{(k)m+n}+d_{ij}m\delta_{m,-n}
 \end{equation}
 $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。我们总是可以通过rescal这些流，使得$d_{ij}=k\delta_{i,j}$，然后再通过对流进行重新组合得到：
@@ -466,7 +466,7 @@ $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。�
 \begin{equation}
 	\propto \langle\phi_i(0,0)\phi_j(x,\bar x)\phi_l(1,1)\phi_m(\infty,\infty)\rangle\equiv G^{ij}_{lm}(x,\bar x)
 \end{equation}
-由于OPE由结合律，所以可以前两个先做OPE，后两个在做OPE，注意到$\braket{\phi_p\phi_q}\sim\delta_{h_p,h_q}$，我们可以将上式重写为：
+由于OPE由结合律，所以可以前两个先做OPE，后两个在做OPE，注意到$\braket{\phi_p}{\phi_q}\sim\delta_{h_p,h_q}$，我们可以将上式重写为：
 \begin{equation}\label{32.3}
 	G^{ij}_{lm}(x,\bar x)=\sum_pC_{ij}^pC_{lm}^p\mathcal{F}_{ij}^{lm}(p\mid x)\overline{\mathcal{F}}_{ij}^{lm}(p\mid\overline{x})
 \end{equation}
@@ -486,7 +486,7 @@ $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。�
 \begin{figure}[htbp]
 	\centering
 	\includegraphics{figs/fig10.pdf}
-	\caption{$G(x)=G(1-x)$Crossing Symmetry的图示}
+	\caption{$G(x)=G(1-x)$ Crossing Symmetry的图示}
 \end{figure}
 \subsection{Fusing and Braiding Matrices}
 考虑一个比较简单的情形，CFT的谱是个有限谱\sn{比如RCFT}，这样Conformal Blocks构成了一个有限维线性空间，其中的某个线性组合得到的元素就是我们要的四点关联函数\sn{当然还要把全纯反全纯组合起来}。这其实就是在说\ref{32.3}，\ref{32.6}和\ref{32.7}中的Conformal Blocks相差的仅仅是一个线性变换，他们是同一个线性空间的不同基底！
@@ -596,13 +596,26 @@ $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。�
 	计算的下一步是将所有收缩的项放在一起，未收缩的项放在一起，对于玻色场由于满足对易关系可以随便移动场的位置，这一步是trivial的，不过费米场因为满足反对易关系，所以交换两个场位置时会产生一个负号需要额外注意。
 	
 	左边减去右边，并取$x_a,x_b\to x$和$x_c,x_d\to y$的极限后得到两个NOP的时序积的Wick定理：
-	\begin{equation}
+	\begin{equation}\label{33.6}
 		\begin{aligned}
 			\mathsf{R}\left[:\Phi_a\Phi_b:(x):\Phi_c\Phi_d:(y)\right]&=\mathsf{N}\big(\Phi_a\Phi_b\Phi_c\Phi_d+\wick{\c\Phi_a\Phi_b\c\Phi_c\Phi_d}+\wick{\c\Phi_a\Phi_b\Phi_c\c\Phi_d}\\&\quad\quad+\wick{\Phi_a\c\Phi_b\c\Phi_c\Phi_d}+\wick{\Phi_a\c\Phi_b\Phi_c\c\Phi_d}\\&\quad\quad+\wick{\c1\Phi_a\c2\Phi_b\c1\Phi_c\c2\Phi_d}+\wick{\c1\Phi_a\c2\Phi_b\c2\Phi_c\c1\Phi_d}\big)
 		\end{aligned}
 	\end{equation}
 	这个计算实际上是非常一般的，他告诉我们计算NOP的时序积时跟没有NOP时一样计算，但是认为NOP内部的场之间的收缩为0。
 \end{example}
+\begin{remark}
+	下面是一些比较有用的缩并等式：
+	\begin{equation}
+		\wick{\c A(z)\c{:B^{n}:}}(w)=n\wick{\c A(z)\c B(w)}:B^{n-1}(w):
+	\end{equation}
+	\begin{equation}
+		\wick{\c A(z):\c {e}^{B(w)}:}=\wick{\c A(z)\c B(w)}:e^{B(w)}:
+	\end{equation}
+	\begin{equation}\label{33.9}
+		\begin{aligned}
+			\wick{:\c{e}^{A(z)}::\c{e}^{B(z)}:}&=\sum_{m,n,k}\frac{k!}{m!n!}\begin{pmatrix}m\\k\end{pmatrix}\begin{pmatrix}n\\k\end{pmatrix}[\wick {\c A(z)\c B(w)}]^k:A^{m-k}(w)B^{n-k}(w):\\&=\exp\left\{\wick{\c A(z)\c B(w)}\right\}:e^{A(w)}e^{B(w)}:\end{aligned}
+	\end{equation}
+\end{remark}
 但是对于非自由场，NOP不能这么定义，比如$TT$的NOP照此定义，仍然发散，所以对于一般场的NOP应当定义成减去所有的奇异项。
 \begin{definition}
 	\begin{equation}
@@ -663,8 +676,10 @@ $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。�
 \end{equation}
 另外，Wick定理也失效了，不过我们有下面的等式：
 \begin{theorem}[Generalized Wick]
-	\begin{equation}
-		{A(z)(BC)}(w)=\frac1{2\pi i}\oint_{w}\frac{dx}{x-w}\left\{\wick{\c A(z)\c B}(x)C(w)+B(x)\wick{\c A(z)\c C}(w)\right\}+\text{regular}
+	\begin{equation}\label{wick}
+		\boxed{
+			{A(z)(BC)}(w)=\frac1{2\pi i}\oint_{\mathcal{C}(w)}\frac{dx}{x-w}\left\{\wick{\c A(z)\c B}(x)C(w)+B(x)\wick{\c A(z)\c C}(w)\right\}+\text{regular}
+		}
 	\end{equation}
 \end{theorem}
 上式是对自由场的下面特殊的Wick定理的相互作用推广：
@@ -678,5 +693,380 @@ $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。�
 	\end{equation}
 	$E$一般取为$(CD)$。
 \end{theorem}
+$T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{N}(TT)$是共形权为$(4,0)$的初级场：
+\begin{equation}
+	\boxed{
+		\mathcal{N}(TT)=N\left(TT\right)-\frac3{10}\partial^2T
+	}
+\end{equation}
+后面会用到这个式子。
 \subsection{Verma module}
+从真空态出发，将$L_n$作为产生算符作用上去，得到的一系列态成为Verma模：
+\begin{definition}[Verma Module]
+	\begin{equation}
+		\boxed{
+			\left\{L_{k_1}\ldots L_{k_n}|0\rangle|k_i\leq-2\right\}
+		}
+	\end{equation}
+	中的元素称为Verma Module。
+\end{definition}
+根据态算符对应，每一个Verma Module都会对应一个场（不一定是初级场），可以证明这些场一定是能动张量或者其偏导或者它们的NOP：
+\begin{equation}
+	\boxed{
+		F\in\left\{T,\partial T,\ldots,N(\ldots)\right\}
+	}
+\end{equation}
 \subsection{Descendant states}
+前面是考虑一个真空态开始往上构造其它态，由于：
+\begin{equation}
+	L_n\left|\phi\right\rangle=\left[L_n,\phi_{-h}\right]\left|0\right\rangle=\left(h\left(n+1\right)-n\right)\phi_{-h+n}\left|0\right\rangle=0,\quad n>0
+\end{equation}
+所以初级场作用在真空态上构造的$\ket{\phi}$也比较特殊，和真空态一样被所有的$L_n$湮灭算符湮灭，所以也可以考虑从$\ket{\phi}$开始构造其它态：
+\begin{definition}[Descendant States]
+	\begin{equation}
+		\boxed{
+			\left\{L_{k_1}\ldots L_{k_n}|\phi\rangle|k_i\leq-1\right\}
+		}
+	\end{equation}
+	其中$\phi$是任意一个初级场。这些态成为初级场的次级态（descendant states）。
+\end{definition}
+\begin{table}[H]
+\centering
+\begin{tabular}{lrc}
+	\text { Field } & \text { State } & \text { Level } \\
+	\hline \hline$ \phi(z)$& $\phi_{-h}|0\rangle=|h\rangle$ & $0 $\\
+	\hline $\partial \phi $& $L_{-1} \phi_{-h}|0\rangle $& $1$ \\
+	\hline$ \partial^{2} \phi $& $L_{-1} L_{-1} \phi_{-h}|0\rangle $& $2 $\\
+	$N(T \phi)$ &$ L_{-2} \phi_{-h}|0\rangle$ & 2 \\
+	\hline $\partial^{3} \phi$ & $L_{-1} L_{-1} L_{-1} \phi_{-h}|0\rangle$ & $3$ \\
+	$N(T \partial \phi)$ &$ L_{-2} L_{-1} \phi_{-h}|0\rangle $&$ 3$ \\
+	$N(\partial T \phi) $& $L_{-3} \phi_{-h}|0\rangle $& $3$ \\
+	\hline \ldots & \ldots & \ldots
+\end{tabular}
+\end{table}
+同样根据态算符对应，这些态也会对应到一些场，根据上面的表就可以猜到是：
+\begin{equation}
+	\boxed{
+		\left[\phi(z)\right]:=\left\{\phi,\partial\phi,\partial^2\phi,\ldots,N(T\phi),\ldots\right\}
+	}
+\end{equation}
+我们成为$\phi$的Conformal Family。Verma Module是直接真空态生成来的，真空态对应$h=0$，可以用$[1]$来标记这个特殊的Conformal Family。
+
+注意到在上面的表中我们写下来对应的Level，注意到$L_0$可看作体系的哈密顿量，真空态对应能量0，初级场$\ket{h}$对应能量$h$，而作用$L_{-k}$上去会把能量加$k$，所以这就跟量子力学中谐振子问题作用产生算符得到更高能级的态一样。只不过这里能级都是简并的，而简并态数目的计数在后面的环面CFT配分函数构造上有很大的作用，对于Verma module（真空态毕竟唯一），或者$\ket{h}$本身不简并的Conformal Family来说，设$P(N)$是第$N$个Level简并度，则其有下面的生成函数：
+\begin{equation}
+	\boxed{
+		\prod_{n=1}^\infty\frac1{1-q^n}=\sum_{N=0}^\infty P(N)q^N
+	}
+\end{equation}
+
+\section{Representations of the Virasoro Algebra}
+现在来从群表示的观点看下我们前面的Verma Module和Conformal Family实在做什么。前面反复强调如果我们有了一个理论的对称代数，那么确定其希尔伯特空间就是在找群表示。最简单的CFT就是只有Virasoro代数作为其对称代数，由于这时左右模完全分离，所以我们可以先分开讨论，然后$\bigoplus_{\{h,\bar h\}} V_{c,h}\otimes V_{c,\bar h}$就构成了整个表示空间\sn{也正因为完全分离，这里$h,\bar h$直积时无特殊要求，后面玻色子我们会看到一个有要求的最简单的例子。}。
+
+我们要找的表示是所谓最高权表示，从量子力学的角度去想，构造谱的第一步是去找CSCO，由于理论没有其他对称性，也就是说没有其他力学量和$L_0$对易，所以我们期望构造的谱是$L_0$的本征值。进一步，由于$\{L_n,n\geq0\}$构成了理论的湮灭算符，所以我们先找到被所有湮灭算符湮灭的那些态：
+\begin{equation}
+	\begin{aligned}L_n\left|h\right\rangle&=0\quad\text{for}\quad n>0,\\L_0\left|h\right\rangle&=h\left|h\right\rangle\end{aligned}
+\end{equation}
+找到了所有的最高权之后，下一步就是将产生算符$\{L_{n},n<0\}$作用到上面构造能量更高的态：\sn{这些态都是$L_0$的本征态，但是我们并不用$\ket{h+k}$这样的记号标记他们，因为要和最高权区分。}
+\begin{equation}
+	L_{-1}\ket{h},\quad L_{-2}\ket{h},\quad L_{-1}L_{-1}\ket{h},\quad L_{-3}\ket{h},\quad\ldots
+\end{equation}
+不难发现，最高权就是真空态和理论中的初级态，而其他用产生算符构造的态就是Verma module和descendant states。
+
+但是这只是从数学上构造出了这些态，真正物理的态最大的特点就是可归一化，所以那些模方为0的态要被剔除出去，比如说前面在构造Verma Module时，就没有把$L_{-1}\ket{0}$算进去，后面我们会进一步阐明如何找到其它的模方为0的态。进一步如果要求理论是幺正的，那些模方为负数的表示还要整个剔除掉。\sn{注意，幺正性要求那些有模方为负数的次级态的表示是被禁闭的，而不是像模方为0的态稍微剔除一下就好。}
+
+如果理论还存在更大的对称性，这个时候CSCO就会加入其他的和${L_0}$对易的算符，谱将会同时对角化CSCO中的算符，即最高权现在由更多量子数标记$\ket{h,q}$。而且产生湮灭算符也不只有$\{L_{n},n<0\}$了，构造次级态还需要用理论中其他的产生湮灭算符去作用。这在数学上本身就是个非常麻烦的事情，后面我们并不追求数学上的一般性和严谨性，只是给些例子。
+
+\section{Free CFT}
+学习CFT最好的方式是给出一些具体的例子，首先我们考虑最简单的自由CFT。
+\subsection{Free Bosons}
+自由玻色场可以从圆柱上定义的标量场量子化后得来，这里直接给出二维CFT的版本\sn{已经做了Wick转动，$\kappa$是弦论来的耦合常数}：
+\begin{equation}
+	\begin{aligned}
+		\text{S}& =\frac1{4\pi\kappa}\int dzd\overline{z}\sqrt{|g|}g^{ab}\partial_aX\partial_bX  \\
+		&\xleftarrow{\kappa=1}\frac1{4\pi}\int dzd\overline{z}\partial X\cdot\overline{\partial}X
+	\end{aligned}
+\end{equation}
+其中度规是从圆柱上的平直度规转到复平面上的度规：
+\begin{equation}
+	\left.g_{ab}=\left[\begin{array}{cc}0&\frac{1}{2z\overline{z}}\\\frac{1}{2z\overline{z}}&0\end{array}\right.\right],\quad g^{ab}=\left[\begin{array}{cc}0&2z\overline{z}\\2z\overline{z}&0\end{array}\right]
+\end{equation}
+再次强调CFT的定义根本不需要拉氏量，这里只是更场论一点的出发方式。直接读出运动方程：\sn{这也说明$X(z,\bar z)$总是可以写成全纯和反全纯部分之和}
+\begin{equation}
+	\partial\overline{\partial}X(z,\overline{z})=0
+\end{equation}
+可以定义下面两个手征场：
+\begin{equation}\label{35.4}
+	j(z)=i\partial X(z,\overline z),\quad\bar j(\overline z)=i\overline\partial X(z,\overline z)
+\end{equation}
+还可以读出传播子$K\equiv\left\langle{X(z,\bar z)X(w,\bar w)}\right\rangle$：
+\begin{equation}
+	\partial_z\partial_{\overline{z}}K(z,\overline{z},w,\overline{w})=-2\pi\delta^{(2)}(z,-w)\Rightarrow K=-\log\left|z-w\right|^2
+\end{equation}
+这直接说明了$X$不是初级场，但是：
+\begin{equation}
+	\left\langle j(z)j(w)\right\rangle=\frac{1}{(z-w)^2}
+\end{equation}
+说明了$j(z)$是$h=1$的初级场，也得到了OPE：\sn{由于OPE的最奇异项只能是二次的，而一次的又破坏了$z\leftrightarrow w$的对称性。}
+\begin{equation}\label{35.7}
+	\boxed{
+		j(z)j(w)=\partial_z X(z)\partial_w X(w)=\frac{1}{(z-w)^2}+\ldots
+	}
+\end{equation}
+根据OPE很容易算出对易关系：
+\begin{equation}
+	\boxed{
+		\begin{bmatrix}j_m,j_n\end{bmatrix}= m\delta_{m+n,0}
+	}
+\end{equation}
+根据$j$是共形权为1的初级场很容易证明作用量的确是共形不变的\sn{不少文献数量纲之后根据尺度不变性直接说明共形不变，绝大多数情况下这没问题，甚至一度让人们觉得尺度不变蕴含共形不变。但是上世纪八十年代Polchinski就研究了反例\cite{Polchinski:1987dy}}。下面演示如何通过作用量确定CFT中最关键的能动张量：
+\begin{equation}
+	T_{ab}=-4\pi~\gamma\frac1{\sqrt{|g|}}\frac{\delta\mathcal{S}}{\delta g^{ab}}
+\end{equation}
+这里$\gamma$是待定的归一化系数，利用上式计算得到：\sn{$\delta\sqrt{|g|}=-\frac12\sqrt{|g|}g_{ab}\delta g^{ab}$}
+\begin{equation}
+	T_{zz}=-\gamma\mathrm{~}\partial X\partial X\mathrm{~},\quad\quad T_{z\overline{z}}=T_{\overline{z}z}=0
+\end{equation}
+下面最重要的一步就是取正规乘积，这相当于把理论的零点能shift掉：
+\begin{equation}
+	T(z)=-\gamma N(\partial X\partial X)(z)=\gamma N(jj)(z)
+\end{equation}
+定$\gamma$的方式有很多，重点就是其洛朗模$L_n$要满足Virasoro代数，$L_n$和初级场的洛朗模之间对易关系要有正确的形式\ref{31.27}，或者是能动张量和初级场的OPE有\ref{31.14}的形式，我们主要来看这种方法：\sn{\ref{35.7}得知$\wick{\c j(z)\c j(w)}=\frac{1}{(z-w)^2}$}
+\begin{equation}
+	\begin{aligned}
+		\wick{\c T(z)\c j(w)}&=\gamma \wick{\c N(jj)(z)\c j(w)}=\gamma \wick{\c j(w)\c N(jj)(z)}\\
+		&=\frac{\gamma}{2\pi i}\oint_{\mathcal{C}(z)}\frac{dx}{x-z}\left\{\wick{\c j(w)\c j(x)}j(z)+j(x)\wick{\c j(w)\c j(z)}\right\}\\
+		&=\frac{2\gamma}{(z-w)^2}j(z)\\
+		&=\frac{2\gamma}{(z-w)^2}j(w)+\frac{2\gamma}{z-w}\partial j(w)
+	\end{aligned}
+\end{equation}
+最后一步使用泰勒展开并丢掉Regular部分。和\ref{31.14}对比便知道$\gamma=\frac{1}{2}$：
+\begin{equation}
+	\boxed{
+		T(z)=\frac{1}{2}N(jj)(z)
+	}
+\end{equation}
+\begin{equation}\label{35.14}
+	L_n=\frac{1}{2}\left.N(jj)_n=\frac{1}{2}\sum_{k>-1}j_{n-k}\left.j_k+\frac{1}{2}\right.\sum_{k\leq-1}j_k\left.j_{n-k}\right.\right. 
+\end{equation}
+下面再来阐明如何计算中心荷，比较简单的方式是利用$\langle0|L_{+2}L_{-2}|0\rangle=\langle0|[L_2,L_{-2}]|0\rangle=\frac c2$，为了继续熟悉Wick定理，我们根据$TT$ OPE来计算：
+\begin{equation}
+	\begin{aligned}
+		T(z)T(w)&=\frac{1}{4}R\left[:jj:(z):jj:(w)\right]+\cdots\\
+		&=\frac{1}{4}\wick{\c j(z)\c j(w)}:j(z)j(w):\times 2+\frac{1}{4}\wick{\c j(z)\c j(w)}\cdot\wick{\c j(z)\c j(w)}\times 2+\cdots\\
+		&=\frac{1}{(z-w)^2}:j(z)j(w):+\frac{\frac{1}{2}}{(z-w)^4}+\cdots\\
+		&=\frac{1}{(z-w)^2}:jj:(w)+\frac{1}{z-w}\partial_w :jj:(w)\times\frac{1}{2}+\frac{\frac{1}{2}}{(z-w)^4}+\cdots\\
+		&=\frac{\frac{1}{2}}{(z-w)^4}+\frac{2T(w)}{(z-w)^2}+\frac{\partial_w T(w)}{z-w}+\cdots
+	\end{aligned}
+\end{equation}
+这里利用了自由场的Wick定理\ref{33.6}进行计算，倒数第二个等号利用了$j(z)$泰勒展开。与\ref{TT}对比得到：
+\begin{theorem}
+	自由玻色场CFT的中心荷$\boxed{c=1}$
+\end{theorem}
+如果理论是$N$个无相互作用的Boson场，那么中心荷是$c=N$。所以中心荷某种程度上可以理解为理论的自由度个数。
+\subsubsection{Vertex Operator}
+虽然从CFT的角度来看我们更关心$j$，但是从弦的角度来看$X$是更基本的，利用\ref{35.7}洛朗展开后积分得到：
+\begin{equation}\label{35.16}
+	\left.X(z,\overline{z})=x_0-i\left(\begin{array}{c}j_0\ln z+\overline{j}_0\ln\overline{z}\\\end{array}\right.\right)+i\sum_{n\neq0}\frac1n\left(\begin{array}{c}j_nz^{-n}+\overline{j}_n\overline{z}^{-n}\\\end{array}\right)
+\end{equation}
+根据$X(e^{2\pi i}z,e^{-2\pi i}\bar z)=X(z,\bar z)$有：
+\begin{equation}\label{35.17}
+	\boxed{
+		j_0=\bar j_0
+	}
+\end{equation}
+这个等式是后面构造正确的希尔伯特空间的关键。从自由场模式展开的观点来看，这些$z^n$模对到圆柱那边就是傅里叶展开，所以$j_n$就是理论的产生湮灭算符。而$j_0$实际上对应质心的正则动量$\pi_0$：
+\begin{equation}
+	\pi_0=\frac1{4\pi}\int_0^{2\pi}dx^1\frac{\partial X{\left(x^0,x^1\right)}}{\partial{\left(-ix^0\right)}}=\frac{j_0+\overline{j}_0}2=j_0
+\end{equation}
+$x_0$对应弦的质心。按照正则量子化应当有$[x_0,\pi_0]=i$。这样来看\ref{35.14}就分成了质心的动能和弦上激发能，相对质心能量两部分。
+\begin{equation}
+	L_0=\frac12~j_0~j_0+\frac12~\sum_{k\geq1}j_{-k}~j_k+\frac12~\sum_{k\leq-1}j_k~j_{-k}
+\end{equation}
+\begin{definition}[Vertex Operator]
+	虽然$X$本身不是初级场，但是总可以定义下面的顶点算符：
+	\begin{equation}
+		\boxed{
+			V(z)=:e^{i\alpha X(z)}:
+		}
+	\end{equation}
+	他是共形权为$\left(\frac{\alpha^2}{2},0\right)$的初级场，反全纯部分也可以类似定义。
+\end{definition}
+\begin{proof}
+	利用Wick定理得到下面的OPE：
+	\begin{equation}
+		\partial\varphi(z):\varphi^n:(w)=\frac{-n}{z-w}:\varphi^{n-1}:(w)
+	\end{equation}
+	将顶点算符泰勒展开得到：
+	\begin{equation}\label{35.21}
+		\begin{aligned}
+			\wick{\c j(z)\c V_{\alpha}(w)}& \begin{aligned}=\sum_{n=0}^\infty\frac{-in}{z-w}\frac{(i\alpha)^n}{n!}:\varphi^{n-1}:(w)\end{aligned}  \\
+			&=\frac{\alpha}{z-w} V_\alpha(w)
+		\end{aligned}
+	\end{equation}
+	再计算与$T$的OPE：\footnote{计算中并没有直接去用\ref{35.21}，想想这是为什么？可以参考\url{https://physics.stackexchange.com/questions/398365/ope-double-contractions-between-t-and-eikx}}
+	\begin{equation}
+		\begin{aligned}
+			\wick{\c T(z)\c V_{\alpha}(w)}
+			=&\frac{1}{2}\sum_{n=0}^\infty\frac{(i\alpha)^n}{n!}:\partial\varphi(z)\partial\varphi(z)::\varphi(w,\bar{w})^n: \\
+			=&\frac1{2}\frac1{(z-w)^2}\sum_{n=2}^\infty\frac{(i\alpha)^n}{n!}\cdot n(n-1):\varphi(w,\bar{w})^{n-2}: \\
+			&+\frac1{z-w}\sum_{n=1}^\infty\frac{(i\alpha)^n}{n!}\cdot n:\partial\varphi(z)\varphi(w,\bar{w})^{n-1}: \\
+			=&\frac{\alpha^2}{2}\frac{V_\alpha(w,\bar{w})}{(z-w)^2}+\frac{\partial_wV_\alpha(w,\bar{w})}{z-w}
+		\end{aligned}
+	\end{equation}
+	最后一个等号利用了$\partial\phi(z)$在$w$处的泰勒展开。
+\end{proof}
+根据\ref{35.21}可以得到下面的对易关系：
+\begin{equation}
+	[j_0,V_\alpha]=\alpha V_\alpha\Rightarrow j_0\ket{\alpha}=\alpha \ket{\alpha}
+\end{equation}
+所以$\alpha$的物理含义是质心动量！手征的部分终究不是物理的，我们需要把全纯反全纯的顶点算符按一定的要求组合起来得到体系真正的初级场。这个要求就是\ref{35.17}，左模动量要等于右模动量，所以体系中的初级场应当是：
+\begin{equation}
+	V_\alpha(z,\bar z)=V_{\alpha}(z)\bar V_{\alpha}(\bar z)=:e^{i\alpha X(z,\bar z)}:
+\end{equation}
+对应共形权为$\left(\frac{\alpha^2}{2},\frac{\alpha^2}{2}\right)$。利用\ref{33.9}得到：
+\begin{equation}
+	V_\alpha(z,\bar z)V_\beta(w,\bar w)=|z-w|^{2\alpha\beta}V_{\alpha+\beta}(w,\bar w)
+\end{equation}
+显然$\left\langle V_{\alpha}(z,\overline{z})V_{\beta}(w,\overline{w})\right\rangle \sim\delta(|\alpha|-|\beta|)$，但是$\alpha=\beta\Rightarrow\alpha\beta>0$，根据上面的OPE这将导致体系呈现出长程关联，超距作用。所以唯一的可能就是$\alpha+\beta=0$，所以顶点算符的两点关联函数\textbf{唯一不为零的}只能是：
+\begin{equation}
+	\left\langle V_{-\alpha}(z,\overline{z})V_{\alpha}(w,\overline{w})\right\rangle=\frac1{(z-w)^{\alpha^2}(\overline{z}-\overline{w})^{\alpha^2}}
+\end{equation}
+而$\alpha$的含义是质心动量，所以这其实是动量守恒的体现。实际上自由玻色子对称性比共形对称性更大，从作用量可以看出$X(z,\overline{z})\mapsto X(z,\overline{z})+a$并不会对作用量产生任何影响，根据Noether定理这实际上对应的是\ref{35.4}这两个守恒流，自由玻色子真正的对称性是$\hat{\mathfrak{u}}(1)_1$的流对称性。守恒流对应的守恒荷正是$Q=\oint\frac{dz}{2\pi i}j(z)=j_{0}$，所以有动量守恒。这一点可以推广到顶点算符的n点关联函数，其不为0当且仅当$\sum_i \alpha_i=0$。
+
+现在我们构造出了理论里所有的谱$\{j,V_\alpha\}$，构造希尔伯特空间的产生湮灭算符这里用的是流所对应的$j_n$而不是$L_n$\sn{当然这里$L_n$本身就是$j_n$构造来的}：
+\begin{theorem}
+	自由玻色体系的希尔伯特空间由下面的态张成：
+	\begin{equation}
+		j_{-1}^{n_1}j_{-2}^{n_2}\cdots\bar{j}_{-1}^{m_1}\bar{j}_{-2}^{m_2}\cdots|\alpha\rangle\quad(n_i,m_j\geq0)
+	\end{equation}
+\end{theorem}
+这其实蕴含了相当大的物理意义，我们并不从群表示的观点来看，而是从物理本身上来看。这里$\alpha$的不同标记了不同质心动量的真空，它是在$\alpha=0$的“绝对”真空上作用$V_\alpha(z,\bar z)$得到的。我们也提到了$j_n$就是$X$模式展开之后的产生湮灭算符，所以用它在这些真空上面作用得到希尔伯特空间也是非常合理的。
+\subsubsection{Compactified Bosons}
+既然玻色体系是允许$X(z,\overline{z})\mapsto X(z,\overline{z})+a$的shift的，那我们何不干脆把$X$的位形空间粘合起来，也就是认为：
+\begin{equation}
+	X\sim X+2\pi nR,\quad n\in\mathbb{Z}
+\end{equation}
+把$X$看作是像角度变量一样的场，这样的紧致化显然是可行的，$n$称为\textbf{winding number}。但要注意，我们这里是把位形空间从$\mathbb{R}$紧致化成$\mathbb{R}\cup\infty\cong\mathcal{S}^1_R$，并没有对场本身所定义在的时空流形做任何的拓扑变形，这一点要与后面环面CFT区分。
+
+这样一来，场的单值性被放宽为$X(e^{2\pi i}z,e^{-2\pi i}\bar z)=X(z,\bar z)+2\pi n R$，从而\ref{35.17}变为：
+\begin{equation}\label{35.29}
+	\boxed{
+		j_0-\bar j_0=nR,\quad n\in \mathbb{Z}
+	}
+\end{equation}
+顶点算符（手征）也只允许那些$\alpha=\frac{m}{R},m\in\mathbb{Z}$的谱。这种紧致化对场论的希尔伯特空间会有比较大的变化，由于\ref{35.17}改变了，所以左右模的组合方式也要随之改变，而且体系的谱也从连续谱变成了离散谱。
+
+$\{j_0,\bar j_0,L_0\}$构成体系的CSCO，初级态应该同时对角化它们，除了\ref{35.29}，还有质心动量给的约束：
+\begin{equation}
+	\boxed{
+		\pi_0=\frac{j_0+\bar j_0}{2}=\alpha=\frac{m}{R},\quad m\in\mathbb{Z}
+	}
+\end{equation}
+初级场原先由$\ket{\alpha}$标记，现在由两个整数标记为$\ket{m,n}$：
+\begin{equation}
+	j_0\left|m,n\right\rangle=\left(\frac mR+\frac{Rn}2\right)\left|m,n\right\rangle,\quad\quad\overline{j}_0\left|m,n\right\rangle=\left(\frac mR-\frac{Rn}2\right)\left|m,n\right\rangle 
+\end{equation}
+$m$和质心动量有关，$n$和卷绕数有关，$m\neq 0$的态称为Kaluza\mbox{-}Klein态。这个最高权的共形权显然为：
+\begin{equation}
+	h=\frac{1}{2}\left(\frac mR+\frac{Rn}2\right)^2, \quad \bar h=\frac{1}{2}\left(\frac mR-\frac{Rn}2\right)^2
+\end{equation}
+希尔伯特空间的剩下部分就是把$j_n,\bar j_n$作用到$\ket{m,n}$上面去了。
+\begin{remark}
+	前面推导有关顶点算符的对易关系都是使用的wick定理，这样推起来虽然方便，但是物理上看比较好的方式是直接代入$X$的显式表达式\ref{35.16}，再根据正则对易关系$[x_0,\pi_0]=i$得到$[\pi_0,V_\alpha]=\alpha V_\alpha$，前面只是在$j_0=\pi_0$的特例下去推导\footnote{这也解释了$j_0$作用到$\ket{m,n}$真空上得到的并非$\alpha$}。所谓不同的真空，应当就是$\pi_0$的不同模，同样也是$j_0,\bar j_0$的本征态。然后在上面作用$j_n$就得到了次级态。这样来看前面的一系列讨论物理图像就很清晰。
+\end{remark}
+\subsubsection{Current Algebra Realization}
+现在回到非紧致化的Bosons，除了$j$这一个流，顶点算符还确定了两个流：
+\begin{equation}
+	j^\pm(z)=:e^{\pm i\sqrt{2}X}:
+\end{equation}
+利用前面得到的$jV$以及$VV$ OPE我们可以得到下面的对易关系：\sn{Blumenhagen\cite{Blumenhagen:2009zz}从自举的角度，也就是从\ref{current}考虑了这个问题}
+\begin{equation}
+	\boxed{
+		\begin{aligned}
+			&\left[j_m,j_n\right]=m\delta_{m+n,0},&&\left[j_m^\pm,j_n^\pm\right]=0,\\
+			&\left[j_m,j_n^\pm\right]=\pm\sqrt{2}j_{m+n}^\pm,&&\left[j_m^+,j_n^-\right]=\sqrt{2}j_{m+n}+m\delta_{m+n,0}
+		\end{aligned}
+	}
+\end{equation}
+重定义：
+\begin{equation}
+	j^1=\frac1{\sqrt{2}}\left(j^++j^-\right),\quad\quad j^2=\frac1{\sqrt{2}i}\left(j^+-j^-\right),\quad\quad j^3=j
+\end{equation}
+得到：
+\begin{equation}
+	\boxed{
+		\left[j_m^i,j_n^j\right]=+i\mathrm{~}\sqrt{2}\sum_k\epsilon^{ijk}\mathrm{~}j_{m+n}^k+m\mathrm{~}\delta^{ij}\mathrm{~}\delta_{m,-n}
+	}
+\end{equation}
+这具有流代数的形式，这实际上是个$\mathfrak{su}(2)$的流代数。
+\begin{remark}
+	注意，我们只是说明了在自由玻色子体系中具有流代数代数结构，并不是说自由玻色子有$\mathfrak{su}(2)$的对称性！它的对称性永远是$\mathfrak{u}(1)$，问题的关键就在于在$N(jj)$的能动张量所描述的玻色体系下，这三个流真正守恒的也就$i\partial X$一个，后面会发现如果要让其对称性提升为$\mathfrak{su}(2)$，必须重新构造能动张量，这相当于在作用量中加入其他的项，构成所谓WZW模型。紧致化为半径为$\frac{1}{\sqrt{2}}$圆的玻色体系也会提升为$\mathfrak{su}(2)$对称性。
+\end{remark}
+\subsection{Free Fermions}
+这里我们考虑Majorana型费米子，也就是下面作用量中：
+\begin{equation}
+	\mathcal{S}=\frac1{4\pi\kappa}\int dzd\overline{z}\left(\psi\overline{\partial}\psi+\overline{\psi}\partial\overline{\psi}\right)
+\end{equation}
+$\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。运动方程为：
+\begin{equation}
+	\partial\overline{\psi}=\overline{\partial}\psi=0
+\end{equation}
+传播子$K\equiv\left\langle\psi(z)\psi(w)\right\rangle$为：
+\begin{equation}
+	\partial_{\overline{z}}K(z,w)=2\pi\kappa\delta^{(2)}(z-w)\Rightarrow K(z,w)=\frac{1}{z-w}
+\end{equation}
+这表明$\psi(z)$是共形权为$(\frac{1}{2},0)$的初级场，利用这一点也可证明作用量确实共形不变。上式也是OPE的正则部分，注意到上式并非关于$z,w$对称的，因为费米子的反对易性，所以对径向序的定义为：
+\begin{equation}
+	R\big(\Psi(z)\Theta(w)\big):=
+	\begin{cases}+\Psi(z)\Theta(w)&\mathrm{for}\quad|z|>|w|\\-\Theta(w)\Psi(z)&\mathrm{for}\quad|w|>|z|\end{cases}
+\end{equation}
+这直接导致费米子的OPE是反交换律的，这也解释了为什么OPE中没有$(z-w)^{-\frac{1}{2}}$的项。费米体系我们比较关注下面的两类边界条件：
+\begin{equation}
+	\begin{aligned}\psi(e^{2\pi i}z)&=+\psi(z)&&\text{Neveu-Schwarz sector (NS)}\\\psi(e^{2\pi i}z)&=-\psi(z)&&\text{Ramond sector (R)}\end{aligned}
+\end{equation}
+这就像是对多值函数$\sqrt{z}$考虑其哪一支。两类边界条件也导致了不同的洛朗展开：
+\begin{equation}
+	\psi(z)=\sum_r\psi_r\mathrm{~}z^{-r-\frac12}=\begin{cases}r\in\mathbb{Z}+\frac1{2}&NS\\r\in\mathbb{Z}&R\end{cases}
+\end{equation}
+反对易关系同样包含于OPE：
+\begin{equation}
+	\begin{aligned}
+		\left\{\psi_{r},\psi_{s}\right\}=&\oint\frac{dz}{2\pi i}\oint\frac{dw}{2\pi i}\left\{\psi(z),\psi(w)\right\}z^{r-\frac{1}{2}}w^{s-\frac{1}{2}} \\
+		=&\oint\frac{dw}{2\pi i}w^{s-\frac12}\Big(\oint_{|z|>|w|}\frac{dz}{2\pi i}\psi(z)\psi(w)z^{r-\frac12} \\
+		&-\oint_{|z|<|w|}\frac{dz}{2\pi i}\left.-\psi(w)\psi(z)z^{r-\frac12}\right) \\
+		=&\oint\frac{dw}{2\pi i}w^{s-\frac12}\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\underbrace{R\big(\psi(z)\psi(w)\big)}_{\frac{\kappa}{z-w}}z^{r-\frac12} \\
+		=&\kappa\oint\frac{aw}{2\pi i}w^{r+s-1} \\
+		=&\kappa~\delta_{r+s,0}~
+	\end{aligned}
+\end{equation}
+费米子体系我们用下面的式子来确定能动张量：
+\begin{equation}
+	T_{\mu\nu}^c=8\pi\kappa\left.\gamma\left(-\eta_{\mu\nu}\mathcal{L}+\sum_i\frac{\partial\mathcal{L}}{\partial\left(\partial^\mu\phi_i\right)}\partial_\nu\phi_i\right)\right. 
+\end{equation}
+\begin{equation}
+	T_{zz}=\gamma~\psi~\partial\psi~,\quad T_{z\overline{z}}=-\gamma~\overline{\psi}~\partial\overline{\psi}~,\quad\quad T_{\overline{z}z}=-\gamma~\psi~\overline{\partial}\psi~=0,\quad T_{\overline{z}z}=\gamma~\overline{\psi}~\overline{\partial}\overline{\psi}=0
+\end{equation}
+然后取NOP去除零点能：
+\begin{equation}
+	T(z)=\gamma\mathrm{~}N\left(\mathrm{~}\psi\mathrm{~}\partial\psi\mathrm{~}\right)
+\end{equation}
+费米子情况，由于反对易性，NOP洛朗模要修正为：
+\begin{equation}
+	\boxed{
+		N\left(\psi_0\theta\right)_r=-\sum_{s>-h^\theta}\psi_{r-s}\theta_s+\sum_{s\leq-h^\phi}\theta_s\psi_{r-s}
+	}
+\end{equation}
+\subsubsection{Bosonization}
+\subsection{$b,c$ ghost}
+
+
+\section{Unitary Representations of the Virasoro Algebra}
+\section{Fusion Rules}
+\section{Ka\v{c}\mbox{–}Moody Symmetry}
+\subsection{Ka\v{c}\mbox{–}Moody Algebras}
+\subsection{Sugawara Construction}
+\subsection{Knizhnik\mbox{–}Zamolodchikov Equation}
+\section{Example: Highest Weight Representations of $\widehat{\mathfrak{su}}(2)_{k}$ }
+\section{Coset Construction}
+\section{$\mathcal{W}$ Algebras}
+本节主要参考\cite{Pope:1991ig}。
