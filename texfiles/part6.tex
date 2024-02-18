@@ -1051,7 +1051,7 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 	T(z)=\gamma N\left(\psi\partial\psi\right)(z)
 \end{equation}
 费米子情况，由于反对易性，NOP洛朗模要修正为：\sn{Blumenhagen书中NOP定义差个符号，导致后面洛朗模和能动张量都差个负号}
-\begin{equation}
+\begin{equation}\label{eq:35.48}
 	\boxed{
 		N\left(\theta\psi\right)_r=-\sum_{s>-h^\theta}\psi_{r-s}\theta_s+\sum_{s\leq-h^\phi}\theta_s\psi_{r-s}
 	}
@@ -1103,7 +1103,8 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 		&=\frac1{2\sqrt{zw}}+\sum_{k=1}^\infty z^{-k-1/2}w^{k-1/2} \\
 		&=\frac1{\sqrt{zw}}\left\{\frac12+\sum_{k=1}^\infty\left(\frac wz\right)^k\right\} \\
 		&=\frac1{2\sqrt{zw}}\frac{z+w}{z-w} \\
-		&=\frac12\frac{\sqrt{z/w}+\sqrt{w/z}}{z-w}
+		&=\frac12\frac{\sqrt{z/w}+\sqrt{w/z}}{z-w}\\
+		&=\frac{1}{(z-w)^{2}}+\frac{1}{8w^{2}}-\frac{z-w}{8w^{3}}+\frac{15}{128w^{4}}(z-w)^{2}+\cdots 
 	\end{aligned}
 \end{equation}
 和前面OPE的形式是冲突的，只有当$w\to z$的极限意义下才相同。根据自由场NOP的定义，需要用OPE减去上面的两点关联函数：
@@ -1114,7 +1115,56 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 \begin{equation}
 	L_0=\sum_{s=1}^\infty s\psi_{-s}\psi_s+\frac{1}{16}
 \end{equation}
+\begin{remark}
+	似乎看起来R Sector非常怪异，但实际上它们在boson理论中也会出现，这都是因为理论有$\mathbb{Z}_2$的对称性，所以我们可以考虑转一圈不回到原位，而是加个符号的理论边界条件，这不会对$\mathcal{S}$产生任何影响，但是会要求洛朗展开出现割线：
+	\begin{equation}
+		i\partial X(z)=\sum_{r\in\mathbb{Z}+\frac12}a_rz^{-r-1}
+	\end{equation}
+	从数学上看这实际上是进入了Virasoro代数的另一个表示罢了。bosons这边我们称为\textbf{twisted sector}。
+\end{remark}
 \subsubsection{Bosonization}
+现在考虑一个两个无相互作用费米场构成的理论，可以复化为：
+\begin{equation}
+	\Psi(z)=\frac1{\sqrt{2}}\Big(\psi^{(1)}(z)+i\psi^{(2)}(z)\Big),\quad \bar\Psi(z)=\frac1{\sqrt{2}}\Big(\psi^{(1)}(z)-i\psi^{(2)}(z)\Big)
+\end{equation}
+这里的$\bar{\cdot}$并不意味着反全纯。相应的拉氏量为：
+\begin{equation}
+	\mathcal{L}=\Psi\partial\bar \Psi+\bar \Psi\partial\Psi+c.c.
+\end{equation}
+显然理论具有一个global的$U(1)$对称性，根据Noether定理\ref{eq:19.3}导致守恒流\sn{使用正规序消去零点能}：
+\begin{equation}
+	j(z)=N\big(\Psi\overline{\Psi}\big)(z)=-iN\big(\psi^{(1)}\psi^{(2)}\big)(z)
+\end{equation}
+上式已经合适选取归一化因子使得其为$h=1$初级场。上式最后一个等号利用了$N(\psi^{(a)}\psi^{(b)})=-N(\psi^{(b)}\psi^{(a)})$，这并不是用反对易性直接看出来的，因为OPE的对易性反对易性并不能放到NOP上，这个式子的证明可以利用\ref{eq:35.48}。$\Psi$之间的反对易关系可以直接从定义读出：
+\begin{equation}
+	\left\{\Psi_r,\Psi_s\right\}=\left\{\overline{\Psi}_r,\overline{\Psi}_s\right\}=0,\quad\quad\left\{\Psi_r,\overline{\Psi}_s\right\}=\delta_{r+s,0}
+\end{equation}
+既然都说了这个对称性是$U(1)$对称性，$j$的洛朗模之间也确实有和玻色子一样的对易关系：
+\begin{equation}\label{b1}
+	\boxed{
+			\begin{aligned}
+			\left\{\Psi_m,\overline{\Psi}_n\right\}&=\delta_{m+n,0},&\left\{\Psi_m,\Psi_n\right\}&=\left\{\overline{\Psi}_m,\overline{\Psi}_n\right\}=0,\\
+			\left[j_m,j_n\right]&=m\delta_{m+n,0},&\left[L_m,j_n\right]&=-nj_{m+n},\\
+			\left[j_m,\Psi_s\right]&=+\Psi_{m+s},&\left[j_m,\overline{\Psi}_s\right]&=-\overline{\Psi}_{m+s}.
+		\end{aligned}
+	}
+\end{equation}
+第二行说明了理论的对称性，第三行说明了$\Psi,\bar \Psi$带$\pm$的对称荷。现在考虑下面守恒流定义的理论：
+\begin{equation}
+	j(z)=i\partial X(z,\overline{z}),\quad j^{\pm}(z)=V_{\pm1}(z)=:e^{\pm iX}:
+\end{equation}
+这对应紧致化到$R=1$上圆的bosons\sn{这里为什么我还没完全搞清楚，但似乎对于$\mathcal{S}_R^1$上的Bosons，$V_{R^{-1}}$会变成守恒流}，不难发现有下面的对易关系：
+\begin{equation}\label{b2}
+	\boxed{
+		\begin{aligned}\left[j_m,j_n\right]&=m\delta_{m+n},\quad&\left[j_m^+,j_n^-\right]&=\delta_{m+n,0},\\\left[j_m,j_n^\pm\right]&=\pm j_{m+n}^\pm,\quad&\left[j_m^\pm,j_n^\pm\right]&=0.\end{aligned}
+	}
+\end{equation}
+如果$j^+\to\Psi,j^-\to \bar \Psi,[\cdot]\to\{\cdot\}$，我们发现\ref{b1}和\ref{b2}完全一致！
+\begin{theorem}[Bosonization]
+	\begin{equation*}
+		\text{Two Fermions} = \text{One Bosons}
+	\end{equation*}
+\end{theorem}
 \subsection{$b,c$ ghost}
 这部分是弦论非常关心的，这里只做一些结论的总结，因为推导完全可以作为前面两部分的课后习题。
 \begin{equation}

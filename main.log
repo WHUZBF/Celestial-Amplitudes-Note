@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2024.2.8)  17 FEB 2024 23:53
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2024.2.8)  18 FEB 2024 15:18
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -2102,7 +2102,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 warning  (file figs/cover2.pdf) (pdf inclusion): PDF inclusion: found PDF versio
 n '1.6', but at most version '1.5' allowed
-<figs/cover2.pdf, id=522, 294.25534pt x 154.93384pt>
+<figs/cover2.pdf, id=518, 294.25534pt x 154.93384pt>
 File: figs/cover2.pdf Graphic file (type pdf)
 <use figs/cover2.pdf>
 Package luatex.def Info: figs/cover2.pdf  used on input line 91.
@@ -2110,7 +2110,7 @@ Package luatex.def Info: figs/cover2.pdf  used on input line 91.
 
 warning  (file figs/cover.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/cover.pdf, id=523, 264.08864pt x 274.22751pt>
+<figs/cover.pdf, id=519, 264.08864pt x 274.22751pt>
 File: figs/cover.pdf Graphic file (type pdf)
 <use figs/cover.pdf>
 Package luatex.def Info: figs/cover.pdf  used on input line 91.
@@ -3145,7 +3145,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (file figs/fig1.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig1.pdf, id=1344, 499.44893pt x 234.68678pt>
+<figs/fig1.pdf, id=1339, 499.44893pt x 234.68678pt>
 File: figs/fig1.pdf Graphic file (type pdf)
 <use figs/fig1.pdf>
 Package luatex.def Info: figs/fig1.pdf  used on input line 256.
@@ -3159,7 +3159,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig2.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig2.pdf, id=1430, 226.7431pt x 231.40654pt>
+<figs/fig2.pdf, id=1425, 226.7431pt x 231.40654pt>
 File: figs/fig2.pdf Graphic file (type pdf)
 <use figs/fig2.pdf>
 Package luatex.def Info: figs/fig2.pdf  used on input line 277.
@@ -3226,7 +3226,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'theorem.1'
 
 warning  (file figs/fig5.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig5.pdf, id=1639, 134.64703pt x 129.40044pt>
+<figs/fig5.pdf, id=1634, 134.64703pt x 129.40044pt>
 File: figs/fig5.pdf Graphic file (type pdf)
 <use figs/fig5.pdf>
 Package luatex.def Info: figs/fig5.pdf  used on input line 629.
@@ -3280,7 +3280,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 [35]
 warning  (file figs/fig3.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig3.pdf, id=1878, 304.26674pt x 122.40631pt>
+<figs/fig3.pdf, id=1873, 304.26674pt x 122.40631pt>
 File: figs/fig3.pdf Graphic file (type pdf)
 <use figs/fig3.pdf>
 Package luatex.def Info: figs/fig3.pdf  used on input line 104.
@@ -3291,7 +3291,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig4.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig4.pdf, id=2060, 359.05844pt x 211.58849pt>
+<figs/fig4.pdf, id=2055, 359.05844pt x 211.58849pt>
 File: figs/fig4.pdf Graphic file (type pdf)
 <use figs/fig4.pdf>
 Package luatex.def Info: figs/fig4.pdf  used on input line 151.
@@ -3327,7 +3327,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 
 warning  (file figs/fig8.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig8.pdf, id=2327, 179.75456pt x 246.50595pt>
+<figs/fig8.pdf, id=2322, 179.75456pt x 246.50595pt>
 File: figs/fig8.pdf Graphic file (type pdf)
 <use figs/fig8.pdf>
 Package luatex.def Info: figs/fig8.pdf  used on input line 217.
@@ -3505,7 +3505,7 @@ LaTeX Warning: Reference `fig:11' on page 54 undefined on input line 821.
 
 warning  (file figs/fig7.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig7.pdf, id=2851, 165.89177pt x 164.24963pt>
+<figs/fig7.pdf, id=2846, 165.89177pt x 164.24963pt>
 File: figs/fig7.pdf Graphic file (type pdf)
 <use figs/fig7.pdf>
 Package luatex.def Info: figs/fig7.pdf  used on input line 824.
@@ -3602,7 +3602,7 @@ File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [61]
 warning  (file figs/fig9.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.6', but at most version '1.5' allowed
-<figs/fig9.pdf, id=3051, 285.53064pt x 137.65558pt>
+<figs/fig9.pdf, id=3046, 285.53064pt x 137.65558pt>
 File: figs/fig9.pdf Graphic file (type pdf)
 <use figs/fig9.pdf>
 Package luatex.def Info: figs/fig9.pdf  used on input line 75.
@@ -3695,7 +3695,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 [71]
 warning  (file figs/fig10.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig10.pdf, id=3255, 282.86559pt x 86.5112pt>
+<figs/fig10.pdf, id=3250, 282.86559pt x 86.5112pt>
 File: figs/fig10.pdf Graphic file (type pdf)
 <use figs/fig10.pdf>
 Package luatex.def Info: figs/fig10.pdf  used on input line 488.
@@ -3712,7 +3712,7 @@ LaTeX Warning: Marginpar on page 72 moved.
 
 warning  (file figs/fig11.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig11.pdf, id=3259, 361.34076pt x 79.03728pt>
+<figs/fig11.pdf, id=3254, 361.34076pt x 79.03728pt>
 File: figs/fig11.pdf Graphic file (type pdf)
 <use figs/fig11.pdf>
 Package luatex.def Info: figs/fig11.pdf  used on input line 502.
@@ -3720,7 +3720,7 @@ Package luatex.def Info: figs/fig11.pdf  used on input line 502.
 
 warning  (file figs/fig12.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig12.pdf, id=3260, 359.7692pt x 78.29552pt>
+<figs/fig12.pdf, id=3255, 359.7692pt x 78.29552pt>
 File: figs/fig12.pdf Graphic file (type pdf)
 <use figs/fig12.pdf>
 Package luatex.def Info: figs/fig12.pdf  used on input line 506.
@@ -3728,7 +3728,7 @@ Package luatex.def Info: figs/fig12.pdf  used on input line 506.
 [72<./figs/fig10.pdf>]
 warning  (file figs/fig13.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig13.pdf, id=3334, 326.16074pt x 174.9737pt>
+<figs/fig13.pdf, id=3329, 326.16074pt x 174.9737pt>
 File: figs/fig13.pdf Graphic file (type pdf)
 <use figs/fig13.pdf>
 Package luatex.def Info: figs/fig13.pdf  used on input line 511.
@@ -3736,7 +3736,7 @@ Package luatex.def Info: figs/fig13.pdf  used on input line 511.
 
 warning  (file figs/fig14.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig14.pdf, id=3335, 329.51929pt x 180.79405pt>
+<figs/fig14.pdf, id=3330, 329.51929pt x 180.79405pt>
 File: figs/fig14.pdf Graphic file (type pdf)
 <use figs/fig14.pdf>
 Package luatex.def Info: figs/fig14.pdf  used on input line 540.
@@ -3804,146 +3804,161 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 8'
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1118.
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
+9'
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1118.
+Overfull \hbox (25.29341pt too wide) in paragraph at lines 1137--1139
+|\LTJY3/SimSun(0)/m/scsl/10 上 |式 |已 |经 |合 |适 |选 |取 |归 |一 |
+化 |因 |子 |使 |得 |其 |为 $\OML/lmm/m/it/10 h \OT1/lmr/m/n/10 = 1$ |\LT
+JY3/SimSun(0)/m/scsl/10 初 |级 |场 [] |上 |式 |最 |后 |一 |个 |等 |
+号 |利 |用 |了 $\OML/lmm/m/it/10 N\OT1/lmr/m/n/10 (\OML/lmm/m/it/10  [] []\
+OT1/lmr/m/n/10 ) =
+ []
 
 [87]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
+0'
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@text@composite@x' on input line 1142.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@text@composite@x' on input line 1143.
+(hyperref)                removing `math shift' on input line 1168.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1146.
+(hyperref)                removing `math shift' on input line 1168.
+
+[88]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@text@composite@x' on input line 1192.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1146.
+(hyperref)                removing `\@text@composite@x' on input line 1193.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1146.
+(hyperref)                removing `math shift' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1146.
+(hyperref)                removing `\setbox' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1146.
+(hyperref)                removing `\z@' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1146.
+(hyperref)                removing `\hbox' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1146.
+(hyperref)                removing `\mathsurround' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textstyle' on input line 1146.
+(hyperref)                removing `\z@' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1146.
+(hyperref)                removing `math shift' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1146.
+(hyperref)                removing `\textstyle' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1146.
+(hyperref)                removing `\use@mathgroup' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1146.
+(hyperref)                removing `\<def>-command' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1146.
+(hyperref)                removing `\accentclass@' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1146.
+(hyperref)                removing `\<def>-command' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathaccent' on input line 1146.
+(hyperref)                removing `\accentclass@' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1146.
+(hyperref)                removing `math shift' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1146.
+(hyperref)                removing `\mathaccent' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1146.
+(hyperref)                removing `\use@mathgroup' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1146.
+(hyperref)                removing `\<def>-command' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1146.
+(hyperref)                removing `\accentclass@' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1146.
+(hyperref)                removing `\<def>-command' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1146.
+(hyperref)                removing `\accentclass@' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1148.
+(hyperref)                removing `subscript' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1148.
+(hyperref)                removing `math shift' on input line 1196.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1148.
+(hyperref)                removing `math shift' on input line 1198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1148.
+(hyperref)                removing `\use@mathgroup' on input line 1198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1148.
+(hyperref)                removing `\<def>-command' on input line 1198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1148.
+(hyperref)                removing `\accentclass@' on input line 1198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 1148.
+(hyperref)                removing `\<def>-command' on input line 1198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1148.
+(hyperref)                removing `\accentclass@' on input line 1198.
 
-) [88]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symsymbols' on input line 1198.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 1198.
+
+) [89]
 \openout2 = texfiles/part7.aux
  (./texfiles/part7.tex
-Package marginnote Info: Margin note 97.1 is on absolute page 97 on input line 
+Package marginnote Info: Margin note 98.1 is on absolute page 98 on input line 
 2.
 Package marginnote Info: right page because not two side mode on input line 2.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 2.
@@ -3991,9 +4006,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 '
 
-LaTeX Warning: Marginpar on page 89 moved.
+LaTeX Warning: Marginpar on page 90 moved.
 
-[89
+[90
 
 
 
@@ -4017,7 +4032,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 
 warning  (file figs/fig15.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.7', but at most version '1.5' allowed
-<figs/fig15.pdf, id=3717, 427.02657pt x 190.13033pt>
+<figs/fig15.pdf, id=3733, 427.02657pt x 190.13033pt>
 File: figs/fig15.pdf Graphic file (type pdf)
 <use figs/fig15.pdf>
 Package luatex.def Info: figs/fig15.pdf  used on input line 98.
@@ -4030,13 +4045,13 @@ Overfull \hbox (0.27884pt too wide) in paragraph at lines 94--100
 
  []
 
-[90]
+[91]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.6
 '
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.7
 '
-[91<./figs/fig15.pdf>]
+[92<./figs/fig15.pdf>]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.8
 '
 
@@ -4048,30 +4063,34 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.9
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 0'
-[92]
+[93]
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .1'
-[93]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 1'
+[94]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+2'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'theorem.2'
 
-[94]
+[95]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+3'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'theorem.3'
+
+[96]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+4'
+
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .2'
-
-Overfull \hbox (26.18625pt too wide) detected at line 326
-[][][][][]
- []
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-2'
-[95]) [96]
+) [97]
 \openout2 = texfiles/part8.aux
  (./texfiles/part8.tex
-Package marginnote Info: Margin note 105.1 is on absolute page 105 on input lin
+Package marginnote Info: Margin note 106.1 is on absolute page 106 on input lin
 e 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
@@ -4117,7 +4136,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'definition
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 '
-[97
+[98
 
 
 
@@ -4133,7 +4152,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 
 warning  (file figs/fig6.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.7', but at most version '1.5' allowed
-<figs/fig6.pdf, id=3916, 201.91736pt x 208.92554pt>
+<figs/fig6.pdf, id=3947, 201.91736pt x 208.92554pt>
 File: figs/fig6.pdf Graphic file (type pdf)
 <use figs/fig6.pdf>
 Package luatex.def Info: figs/fig6.pdf  used on input line 46.
@@ -4141,10 +4160,10 @@ Package luatex.def Info: figs/fig6.pdf  used on input line 46.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.5
 '
-[98<./figs/fig6.pdf>]
+[99<./figs/fig6.pdf>]
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .2'
-[99]
+[100]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.6
 '
 
@@ -4152,7 +4171,7 @@ Overfull \hbox (22.79817pt too wide) detected at line 132
 [][][][][]
  []
 
-[100]
+[101]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.7
 '
 
@@ -4169,9 +4188,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.8
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.9
 '
 
-LaTeX Warning: Marginpar on page 101 moved.
+LaTeX Warning: Marginpar on page 102 moved.
 
-[101]
+[102]
 warning  (pdf backend): ignoring duplicate destination with the name 'theorem.1'
 
 
@@ -4190,14 +4209,14 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .3'
-[102]
+[103]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 1'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 2'
 
-LaTeX Warning: Marginpar on page 103 moved.
+LaTeX Warning: Marginpar on page 104 moved.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
@@ -4207,7 +4226,7 @@ Overfull \hbox (26.11093pt too wide) detected at line 263
 [][][][]
  []
 
-[103]
+[104]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 3'
 
@@ -4228,7 +4247,7 @@ Overfull \hbox (1.57495pt too wide) detected at line 323
 0 h[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 X[]\OT1/lmr/m/n/10 ; [])
  []
 
-[104]
+[105]
 Overfull \hbox (12.61285pt too wide) detected at line 334
 [][][][]
  []
@@ -4246,7 +4265,7 @@ Overfull \hbox (27.72197pt too wide) detected at line 366
 [] \OT1/lmr/m/n/8 = [] []
  []
 
-[105]
+[106]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 384.
@@ -4274,10 +4293,10 @@ Overfull \hbox (26.43849pt too wide) detected at line 415
 S/lmsy/m/n/10 ^^@ [] [] \OML/lmm/m/it/10 @[] []
  []
 
-[106]
+[107]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 1'
-[107]
+[108]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 2'
 
@@ -4298,19 +4317,19 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 6'
-[108]
+[109]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 7'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 8'
 
-LaTeX Warning: Marginpar on page 109 moved.
+LaTeX Warning: Marginpar on page 110 moved.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 9'
-[109]
+[110]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 0'
 
@@ -4324,7 +4343,7 @@ Overfull \hbox (141.21303pt too wide) detected at line 583
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 2'
-[110]
+[111]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 3'
 
@@ -4336,7 +4355,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 6'
-[111]
+[112]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 7'
 
@@ -4348,9 +4367,9 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 0'
-[112]
+[113]
 
-LaTeX Warning: Marginpar on page 113 moved.
+LaTeX Warning: Marginpar on page 114 moved.
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
@@ -4361,13 +4380,13 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 3'
-[113]
+[114]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 4'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .6'
-[114]
+[115]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 5'
 
@@ -4405,7 +4424,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 805.
 
-[115]
+[116]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 810.
@@ -4474,7 +4493,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@text@composite@x' on input line 835.
 
-[116] [117]
+[117] [118]
 Overfull \hbox (57.45497pt too wide) detected at line 904
 [][][][][]
  []
@@ -4487,10 +4506,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\@text@composite@x' on input line 912.
 
-) [118]
+) [119]
 \openout2 = texfiles/part9.aux
  (./texfiles/part9.tex
-Package marginnote Info: Margin note 127.1 is on absolute page 127 on input lin
+Package marginnote Info: Margin note 128.1 is on absolute page 128 on input lin
 e 1.
 Package marginnote Info: right page because not two side mode on input line 1.
 Package marginnote Info: xpos seems to be 67.57281pt on input line 1.
@@ -4507,14 +4526,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) [119
+) [120
 
 
 
 ]
 \openout2 = texfiles/appendixA.aux
  (./texfiles/appendixA.tex
-Package marginnote Info: Margin note 128.1 is on absolute page 128 on input lin
+Package marginnote Info: Margin note 129.1 is on absolute page 129 on input lin
 e 10.
 Package marginnote Info: right page because not two side mode on input line 10.
 
@@ -4542,7 +4561,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'theorem.2'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .5'
-[120
+[121
 
 
 
@@ -4567,13 +4586,13 @@ warning  (pdf backend): ignoring duplicate destination with the name 'definition
 
 warning  (pdf backend): ignoring duplicate destination with the name 'theorem.5'
 
-[121]
+[122]
 warning  (pdf backend): ignoring duplicate destination with the name 'theorem.6'
 
-) [122] (./main.bbl [123
+) [123] (./main.bbl [124
 
 
-] [124] [125] [126] [127]) [128] (./main.aux
+] [125] [126] [127] [128]) [129] (./main.aux
 (./texfiles/part1.aux) (./texfiles/part2.aux) (./texfiles/part3.aux)
 (./texfiles/part4.aux) (./texfiles/part5.aux) (./texfiles/part6.aux)
 (./texfiles/part7.aux) (./texfiles/part8.aux) (./texfiles/part9.aux)
@@ -4585,20 +4604,20 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 253E8969C3EDEAA03C6EFDC90FA509E0;23360.
+(rerunfilecheck)             Checksum: 2DA5483F10329F682DA3DCD4884AF5E7;23145.
 )
 
 Here is how much of LuaTeX's memory you used:
- 62918 strings out of 478285
+ 62989 strings out of 478285
  596140,2848258 words of node,token memory allocated
- 133759 words of node memory still in use:
+ 134815 words of node memory still in use:
    322 hlist, 92 vlist, 409 rule, 7 disc, 37 local_par, 177 math, 769 glue, 74 k
-ern, 160 penalty, 17 sub_mlist, 814 glyph, 50816 attribute, 75 glue_spec, 4773 a
+ern, 160 penalty, 17 sub_mlist, 814 glyph, 51300 attribute, 75 glue_spec, 4817 a
 ttribute_list, 2 write, 203 user_defined, 4 pdf_start_link, 4 pdf_end_link, 3 pd
 f_dest, 44 pdf_action, 14 pdf_colorstack nodes
-   avail lists: 1:25,2:116208,3:18467,4:3472,5:943,6:92,7:9235,8:124,9:3790,10:2
+   avail lists: 1:25,2:115680,3:18467,4:3472,5:943,6:92,7:9221,8:124,9:3790,10:2
 7,11:477
- 79017 multiletter control sequences out of 65536+600000
+ 79066 multiletter control sequences out of 65536+600000
  243 fonts using 232810215 bytes
  114i,23n,141p,1339b,5029s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -4687,10 +4706,10 @@ s/msam10.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msa
 m7.pfb><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
 b><d:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><d:/
 texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (134 pages, 4063199 bytes).
+Output written on main.pdf (135 pages, 4078603 bytes).
 
-PDF statistics: 4854 PDF objects out of 5155 (max. 8388607)
- 3670 compressed objects within 37 object streams
- 1394 named destinations out of 1440 (max. 131072)
- 1050 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 4885 PDF objects out of 5155 (max. 8388607)
+ 3699 compressed objects within 37 object streams
+ 1416 named destinations out of 1440 (max. 131072)
+ 1047 words of extra memory for PDF output out of 10000 (max. 100000000)
 

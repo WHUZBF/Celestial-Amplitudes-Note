@@ -232,7 +232,7 @@ Sandwich一下可以得到：
 	\end{equation}
 \end{definition}
 其中$\epsilon(i,j,k,l)=\epsilon^{\mu_{1}\mu_{2}\mu_{3}\mu_{4}}p_{i\mu_{1}}p_{j\mu_{2}}p_{k\mu_{3}}p_{l\mu_{4}}$。
-前面我们只说明了这个符号是在壳的，我们还需要说明横向极化条件也被满足，实际上极化矢量有下面的形式：
+前面我们只说明了这个符号是在壳的，我们还需要说明横向极化条件也被满足，实际上极化矢量有下面的形式：\sn{出射对应$\epsilon$，入射对应$\epsilon^*$，后面考虑散射全部都是出射}
 \begin{equation}
 		\boxed{
 			\epsilon_{-}^{\mu}(p;q)=-\frac{\langle p|\gamma^{\mu}|q]}{\sqrt{2}[qp]},\quad\epsilon_{+}^{\mu}(p;q)=-\frac{\langle q|\gamma^{\mu}|p]}{\sqrt{2}\langle qp\rangle}
@@ -284,7 +284,7 @@ Sandwich一下可以得到：
 	-2h_1=x_{12}+x_{13}\mathrm{~,~}\quad-2h_2=x_{12}+x_{23}\mathrm{~,~}\quad-2h_3=x_{13}+x_{23}
 \end{equation}
 最终我们完全确定了三点振幅：
-\begin{equation}
+\begin{equation}\label{43.33}
 	\boxed{
 		A_3\big(1^{h_1}2^{h_2}3^{h_3}\big)=c\left<12\right>^{h_3-h_1-h_2}\langle13\rangle^{h_2-h_1-h_3}\langle23\rangle^{h_1-h_2-h_3}
 	}
@@ -307,6 +307,51 @@ Sandwich一下可以得到：
 		-2=[d\sigma]=-2+2[\mathcal{A}]+2(n-2)-4
 	\end{equation}
 \end{proof}
+另外你还可以从$p\to\mathbb{R}$时振幅趋近0去想，因为\ref{43.33}关于$\left\langle\cdot\right\rangle$是$-h$幂次的，$h$是总的螺旋度，而$p\in\mathbb{R}$时，会让所有的括号都变成0，所以只有在$h\leq 0$时才不会发散。所以$h\leq 0$的时候反全纯，否则全纯。
+
+上面的这些分析最大的特点是普适性，我们没有引入任何的费曼规则，完全是从自洽性进行分析，这种bootstrap的想法甚至能帮助我们重塑理论的拉氏量\sn{比如在线讲义\url{https://www.ph.nat.tum.de/fileadmin/w00bya/t70/Seminar2021/Amplitudes_Sanfilippo.pdf}，三点振幅形式加上理论的定域性要求（没有高阶导数项），就可以重塑拉氏量的三点相互作用项。}。。现在我们来考虑YM理论，量纲分析能帮助我们进一步确定振幅。
+\begin{theorem}
+	\begin{equation}
+		A^\text{tree}_n(1^+2^+\ldots n^+)=0\quad\mathrm{and}\quad A^\text{tree}_n(1^-2^+\ldots n^+)=0
+	\end{equation}
+	\begin{equation}
+		A^\text{tree}_n(1^-2^-\ldots n^-)=0\quad\mathrm{and}\quad A^\text{tree}_n(1^+2^-\ldots n^-)=0
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	从振幅是洛伦兹标量出发，不难发现振幅都有下面的形式：
+	\begin{equation}
+		A_n\sim\sum_\text{diagrams}{ \frac { \sum \left ( \prod ( \epsilon _ i \cdot \epsilon _ j ) \right ) \left ( \prod ( \epsilon _ i \cdot k _ j ) \right ) \left ( \prod ( k _ i \cdot k _ j ) \right ) }{ \prod P _ I ^ 2}}
+	\end{equation}
+	分母表示平方传播子。传播子质量量纲$[\Delta]=-2$，顶角函数$[V_3]=1,[V_4]=0$，对于全部都是三顶角的图：
+	\begin{equation}\label{43.39}
+		\left[A_n\right]\sim\frac{(\mathrm{mass})^{n-2}}{(\mathrm{mass}^2)^{n-3}}\sim(\mathrm{mass})^{4-n}
+	\end{equation}
+	不难发现这种图分子量纲最大，其他图量纲都小于$n-2$。接下来注意到：
+	\begin{equation}
+		\epsilon_{i+}\cdot\epsilon_{j+}\propto\langle q_iq_j\rangle,\quad\epsilon_{i-}\cdot\epsilon_{j-}\propto[q_iq_j],\quad\epsilon_{i-}\cdot\epsilon_{j+}\propto\langle iq_j\rangle[jq_i]
+	\end{equation}
+	$q_i$是粒子参考动量，在所有图求和之后振幅与其无关，所以我们可以把所有的$q_i$取成相同的$q$，这样对于振幅$A_n(1^+2^+\cdots n^+)$，唯一有贡献的只能是$\epsilon\cdot k$，而这样的项要有$n$个，这直接导致分子的质量量纲至少为$n>n-2$，所以这样的振幅是被禁闭的。继续考虑$A_n(1^-2^+\cdots n^+)$，取$q_2=q_3=\cdots=q_n=p_1$，这导致$\epsilon_{i+}\cdot\epsilon_{j_+}=0=\epsilon_{1-}\cdot\epsilon_{j+}$。这再次导致需要$n$个$\epsilon\cdot k$，导致禁闭。
+	
+	\setlength{\parindent}{2em}到这里就证明完了，但是这只是意味着树图振幅求和为0，实际上圈图修正后不为0，证明失效的原因在于\ref{43.39}在loop-level上不成立，tree-level上成立是因为加一个外线，只会带来一个顶角和一个传播子，但是loop-level这一点是错的。
+\end{proof}
+我们还可以利用三点振幅形式来说明光子没有三点自相互作用项。比如全纯部分振幅形式为：
+\begin{equation}
+	\mathcal{M}(1^+2^+3^+)=c_1[12][23][31],\quad\mathcal{M}(1^+2^+3^-)=c_2\frac{[12]^3}{[23][31]}
+\end{equation}
+注意这是振幅，而不是色序偏振幅。由于粒子是玻色子，交换任意两个粒子动量应该是对称的（产生湮灭之间满足对易关系），但是上面括号部分是反对称的，所以要么$c=0$.要么理论中不只有一种玻色子，也就是说这些玻色子带色荷，交换的时候把颜色也交换了，$c$带有颜色指标，而且是全反对称的：
+\begin{equation}
+	\mathcal{M}(1_a^+2_b^+3_c^+)=c_1^{abc}[12][23][31],\quad\mathcal{M}(1_a^+2_b^+3_c^-)=c_2^{abc}\frac{[12]^3}{[23][31]}
+\end{equation}
+这正好就说明了光子无自相互作用，圈图修正也为0\sn{
+		\begin{equation*}
+			\feynmandiagram [small,baseline=(d.base), horizontal=d to b] {
+			a[particle=\(\gamma\)] -- [boson] b[blob] -- [boson] c[particle=\(\gamma\)],
+			b -- [boson] d [particle=\(\gamma\)],
+		};
+		= 0
+		\end{equation*}
+	}，胶子三点相互作用正比于全反对称结构张量$f^{abc}$。
 
 虽然我们利用本节的旋量螺旋度形式可以很简洁的表达振幅，但是我们更希望用动力学变量直接表示出来，如：
 \begin{definition}[Mandelstam variables]
@@ -319,15 +364,14 @@ Sandwich一下可以得到：
 \begin{example}
 	\begin{equation}
 		\begin{aligned}
-		\frac{\langle12\rangle\langle34\rangle}{\langle13\rangle\langle24\rangle}& =\frac{\langle12\rangle\langle34\rangle[31][42]}{s_{13}s_{24}}&=\frac{\langle21\rangle[13]\langle34\rangle[42]}{s_{13}s_{24}}  \\
+		\frac{\langle12\rangle\langle34\rangle}{\langle13\rangle\langle24\rangle}& =\frac{\langle12\rangle\langle34\rangle[31][42]}{s_{13}s_{24}}=\frac{\langle21\rangle[13]\langle34\rangle[42]}{s_{13}s_{24}}  \\
 		&=\frac{s_{12}s_{34}/2+s_{24}s_{13}/2-s_{23}s_{14}/2}{s_{13}s_{24}}=\frac{s^2/2-t^2/2+(s+t)^2/2}{(s+t)^2} \\
 		&=\frac s{s+t}
 	\end{aligned}
 	\end{equation}
 \end{example}
 实际上这个计算是non-trivial的，你需要灵活利用前面的那些恒等式。利用更现代的Momentum Twistor方法，可以把这种化简变成机械式的，具体可见文献\cite{Badger:2013gxa}附录。
-\subsection{From Amplitudes to Lagrangian}
-主要参考这个在线讲义\sn{\url{https://www.ph.nat.tum.de/fileadmin/w00bya/t70/Seminar2021/Amplitudes_Sanfilippo.pdf}}。
+
 \section{Berends-Giele Current}
 这节有点跑题，实际上属于off-shell的内容，主要参考\cite{Dixon:1996wi,Mangano:1990by}
 \section{BCFW Recursion Relations}
