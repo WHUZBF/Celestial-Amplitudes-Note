@@ -69,59 +69,62 @@
 \contentsline {subsection}{\numberline {33.1}Normal Ordered Products}{74}{subsection.33.1}%
 \contentsline {subsection}{\numberline {33.2}Verma module}{77}{subsection.33.2}%
 \contentsline {subsection}{\numberline {33.3}Descendant states}{77}{subsection.33.3}%
-\contentsline {section}{\numberline {34}Representations of the Virasoro Algebra}{78}{section.34}%
-\contentsline {section}{\numberline {35}Free CFT}{79}{section.35}%
-\contentsline {subsection}{\numberline {35.1}Free Bosons}{79}{subsection.35.1}%
-\contentsline {subsubsection}{\numberline {35.1.1}Vertex Operator}{81}{subsubsection.35.1.1}%
-\contentsline {subsubsection}{\numberline {35.1.2}Compactified Bosons}{83}{subsubsection.35.1.2}%
+\contentsline {section}{\numberline {34}Representations of the Virasoro Algebra}{79}{section.34}%
+\contentsline {section}{\numberline {35}Free CFT}{80}{section.35}%
+\contentsline {subsection}{\numberline {35.1}Free Bosons}{80}{subsection.35.1}%
+\contentsline {subsubsection}{\numberline {35.1.1}Vertex Operator}{82}{subsubsection.35.1.1}%
+\contentsline {subsubsection}{\numberline {35.1.2}Compactified Bosons}{84}{subsubsection.35.1.2}%
 \contentsline {subsubsection}{\numberline {35.1.3}Current Algebra Realization}{84}{subsubsection.35.1.3}%
-\contentsline {subsection}{\numberline {35.2}Free Fermions}{84}{subsection.35.2}%
-\contentsline {subsubsection}{\numberline {35.2.1}Bosonization}{87}{subsubsection.35.2.1}%
-\contentsline {subsection}{\numberline {35.3}$b,c$ ghost}{88}{subsection.35.3}%
+\contentsline {subsection}{\numberline {35.2}Free Fermions}{85}{subsection.35.2}%
+\contentsline {subsubsection}{\numberline {35.2.1}Bosonization}{88}{subsubsection.35.2.1}%
+\contentsline {subsection}{\numberline {35.3}$b,c$ ghost}{89}{subsection.35.3}%
 \contentsline {section}{\numberline {36}Unitary Representations of the Virasoro Algebra}{89}{section.36}%
-\contentsline {section}{\numberline {37}Fusion Rules}{89}{section.37}%
-\contentsline {section}{\numberline {38}Ka\v {c}\mbox {–}Moody Symmetry}{89}{section.38}%
-\contentsline {subsection}{\numberline {38.1}Ka\v {c}\mbox {–}Moody Algebras}{89}{subsection.38.1}%
-\contentsline {subsection}{\numberline {38.2}Sugawara Construction}{89}{subsection.38.2}%
-\contentsline {subsection}{\numberline {38.3}Knizhnik\mbox {–}Zamolodchikov Equation}{89}{subsection.38.3}%
-\contentsline {section}{\numberline {39}Example: Highest Weight Representations of $\setbox \z@ \hbox {\mathsurround \z@ $\textstyle \mathfrak {su}$}\mathaccent "0362{\mathfrak {su}}(2)_{k}$ }{89}{section.39}%
-\contentsline {section}{\numberline {40}Coset Construction}{89}{section.40}%
-\contentsline {section}{\numberline {41}$\mathcal {W}$ Algebras}{89}{section.41}%
-\contentsline {part}{第七部分\hspace {1em}On-Shell Approach to \\ Scattering $\mathcal {A}$mplitudes}{90}{part.7}%
-\contentsline {section}{\numberline {42}Color Decomposition of Gluon Amplitudes}{90}{section.42}%
-\contentsline {subsection}{\numberline {42.1}Color-Ordered Feynman Rules}{91}{subsection.42.1}%
-\contentsline {section}{\numberline {43}spinor helicity formalism}{92}{section.43}%
-\contentsline {subsection}{\numberline {43.1}Little Group Scale}{95}{subsection.43.1}%
-\contentsline {section}{\numberline {44}Berends-Giele Current}{97}{section.44}%
-\contentsline {section}{\numberline {45}BCFW Recursion Relations}{97}{section.45}%
-\contentsline {section}{\numberline {46}Cachazo-Svrcek-Witten Rules}{97}{section.46}%
-\contentsline {section}{\numberline {47}CHY Formula}{97}{section.47}%
-\contentsline {part}{第八部分\hspace {1em}Celestial $\mathcal {A}$mplitudes \& CCFT}{98}{part.8}%
-\contentsline {section}{\numberline {48}Conformal basis}{98}{section.48}%
-\contentsline {subsection}{\numberline {48.1}Massive Scalar}{98}{subsection.48.1}%
-\contentsline {subsection}{\numberline {48.2}Massless Scalar}{102}{subsection.48.2}%
-\contentsline {subsection}{\numberline {48.3}photon \& Graviton}{103}{subsection.48.3}%
-\contentsline {subsection}{\numberline {48.4}Restrict to Mink$_{4}$}{107}{subsection.48.4}%
-\contentsline {subsection}{\numberline {48.5}Conformally Soft photon \& Graviton}{107}{subsection.48.5}%
-\contentsline {subsubsection}{\numberline {48.5.1}Photon}{107}{subsubsection.48.5.1}%
-\contentsline {subsubsection}{\numberline {48.5.2}Graviton}{108}{subsubsection.48.5.2}%
-\contentsline {subsection}{\numberline {48.6}Massive Bosons}{109}{subsection.48.6}%
-\contentsline {subsubsection}{\numberline {48.6.1}Polynomial encoding of symmetric traceless transverse tensors}{109}{subsubsection.48.6.1}%
-\contentsline {subsubsection}{\numberline {48.6.2}Conformal basis of massive bosons}{111}{subsubsection.48.6.2}%
-\contentsline {subsection}{\numberline {48.7}Fermions}{112}{subsection.48.7}%
-\contentsline {subsubsection}{\numberline {48.7.1}Spinors in arbitrary dimensions}{112}{subsubsection.48.7.1}%
-\contentsline {subsubsection}{\numberline {48.7.2}Conformal basis of Dirac spinor}{114}{subsubsection.48.7.2}%
-\contentsline {subsection}{\numberline {48.8}Examples}{115}{subsection.48.8}%
-\contentsline {subsubsection}{\numberline {48.8.1}ABC toy model}{116}{subsubsection.48.8.1}%
-\contentsline {subsubsection}{\numberline {48.8.2}$\mathcal {G}$luons}{116}{subsubsection.48.8.2}%
-\contentsline {section}{\numberline {49}Some properties of Conformal basis}{117}{section.49}%
-\contentsline {subsection}{\numberline {49.1}Kerr-Schild double copy}{117}{subsection.49.1}%
-\contentsline {subsection}{\numberline {49.2}Wyle double copy}{117}{subsection.49.2}%
-\contentsline {section}{\numberline {50}Celestial $\mathcal {A}$mplitudes}{117}{section.50}%
-\contentsline {subsection}{\numberline {50.1}$\mathcal {A}$mplitudes as Correlators}{117}{subsection.50.1}%
-\contentsline {subsubsection}{\numberline {50.1.1}Poincar\'e Symmetry}{117}{subsubsection.50.1.1}%
-\contentsline {subsubsection}{\numberline {50.1.2}Poincar\'e Constraints}{119}{subsubsection.50.1.2}%
-\contentsline {subsection}{\numberline {50.2}Ward Identity as Ka\v {c}-Moody Symmetry}{119}{subsection.50.2}%
-\contentsline {part}{第九部分\hspace {1em}CFT$_2$ on Torus}{120}{part.9}%
-\contentsline {part}{Appendix A: Surface Charge}{121}{part.9}%
-\contentsline {part}{参考文献}{124}{equation.50.20}%
+\contentsline {subsection}{\numberline {36.1}Null States}{89}{subsection.36.1}%
+\contentsline {subsection}{\numberline {36.2}Unitary Constrains}{90}{subsection.36.2}%
+\contentsline {section}{\numberline {37}Fusion Rules}{92}{section.37}%
+\contentsline {subsection}{\numberline {37.1}Ising Model}{93}{subsection.37.1}%
+\contentsline {section}{\numberline {38}Ka\v {c}\mbox {–}Moody Symmetry}{93}{section.38}%
+\contentsline {subsection}{\numberline {38.1}Ka\v {c}\mbox {–}Moody Algebras}{93}{subsection.38.1}%
+\contentsline {subsection}{\numberline {38.2}Sugawara Construction}{93}{subsection.38.2}%
+\contentsline {subsection}{\numberline {38.3}Knizhnik\mbox {–}Zamolodchikov Equation}{93}{subsection.38.3}%
+\contentsline {section}{\numberline {39}Example: Highest Weight Representations of $\setbox \z@ \hbox {\mathsurround \z@ $\textstyle \mathfrak {su}$}\mathaccent "0362{\mathfrak {su}}(2)_{k}$ }{93}{section.39}%
+\contentsline {section}{\numberline {40}Coset Construction}{93}{section.40}%
+\contentsline {section}{\numberline {41}$\mathcal {W}$ Algebras}{93}{section.41}%
+\contentsline {part}{第七部分\hspace {1em}On-Shell Approach to \\ Scattering $\mathcal {A}$mplitudes}{94}{part.7}%
+\contentsline {section}{\numberline {42}Color Decomposition of Gluon Amplitudes}{94}{section.42}%
+\contentsline {subsection}{\numberline {42.1}Color-Ordered Feynman Rules}{95}{subsection.42.1}%
+\contentsline {section}{\numberline {43}spinor helicity formalism}{96}{section.43}%
+\contentsline {subsection}{\numberline {43.1}Little Group Scale}{99}{subsection.43.1}%
+\contentsline {section}{\numberline {44}Berends-Giele Current}{101}{section.44}%
+\contentsline {section}{\numberline {45}BCFW Recursion Relations}{101}{section.45}%
+\contentsline {section}{\numberline {46}Cachazo-Svrcek-Witten Rules}{101}{section.46}%
+\contentsline {section}{\numberline {47}CHY Formula}{101}{section.47}%
+\contentsline {part}{第八部分\hspace {1em}Celestial $\mathcal {A}$mplitudes \& CCFT}{102}{part.8}%
+\contentsline {section}{\numberline {48}Conformal basis}{102}{section.48}%
+\contentsline {subsection}{\numberline {48.1}Massive Scalar}{102}{subsection.48.1}%
+\contentsline {subsection}{\numberline {48.2}Massless Scalar}{106}{subsection.48.2}%
+\contentsline {subsection}{\numberline {48.3}photon \& Graviton}{107}{subsection.48.3}%
+\contentsline {subsection}{\numberline {48.4}Restrict to Mink$_{4}$}{111}{subsection.48.4}%
+\contentsline {subsection}{\numberline {48.5}Conformally Soft photon \& Graviton}{111}{subsection.48.5}%
+\contentsline {subsubsection}{\numberline {48.5.1}Photon}{111}{subsubsection.48.5.1}%
+\contentsline {subsubsection}{\numberline {48.5.2}Graviton}{112}{subsubsection.48.5.2}%
+\contentsline {subsection}{\numberline {48.6}Massive Bosons}{113}{subsection.48.6}%
+\contentsline {subsubsection}{\numberline {48.6.1}Polynomial encoding of symmetric traceless transverse tensors}{113}{subsubsection.48.6.1}%
+\contentsline {subsubsection}{\numberline {48.6.2}Conformal basis of massive bosons}{115}{subsubsection.48.6.2}%
+\contentsline {subsection}{\numberline {48.7}Fermions}{116}{subsection.48.7}%
+\contentsline {subsubsection}{\numberline {48.7.1}Spinors in arbitrary dimensions}{116}{subsubsection.48.7.1}%
+\contentsline {subsubsection}{\numberline {48.7.2}Conformal basis of Dirac spinor}{118}{subsubsection.48.7.2}%
+\contentsline {subsection}{\numberline {48.8}Examples}{119}{subsection.48.8}%
+\contentsline {subsubsection}{\numberline {48.8.1}ABC toy model}{120}{subsubsection.48.8.1}%
+\contentsline {subsubsection}{\numberline {48.8.2}$\mathcal {G}$luons}{120}{subsubsection.48.8.2}%
+\contentsline {section}{\numberline {49}Some properties of Conformal basis}{121}{section.49}%
+\contentsline {subsection}{\numberline {49.1}Kerr-Schild double copy}{121}{subsection.49.1}%
+\contentsline {subsection}{\numberline {49.2}Wyle double copy}{121}{subsection.49.2}%
+\contentsline {section}{\numberline {50}Celestial $\mathcal {A}$mplitudes}{121}{section.50}%
+\contentsline {subsection}{\numberline {50.1}$\mathcal {A}$mplitudes as Correlators}{121}{subsection.50.1}%
+\contentsline {subsubsection}{\numberline {50.1.1}Poincar\'e Symmetry}{121}{subsubsection.50.1.1}%
+\contentsline {subsubsection}{\numberline {50.1.2}Poincar\'e Constraints}{123}{subsubsection.50.1.2}%
+\contentsline {subsection}{\numberline {50.2}Ward Identity as Ka\v {c}-Moody Symmetry}{123}{subsection.50.2}%
+\contentsline {part}{第九部分\hspace {1em}CFT$_2$ on Torus}{124}{part.9}%
+\contentsline {part}{Appendix A: Surface Charge}{125}{part.9}%
+\contentsline {part}{参考文献}{128}{equation.50.20}%

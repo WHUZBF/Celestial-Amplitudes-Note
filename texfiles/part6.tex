@@ -725,12 +725,12 @@ $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{
 \begin{definition}[Descendant States]
 	\begin{equation}
 		\boxed{
-			\left\{L_{k_1}\ldots L_{k_n}|\phi\rangle|k_i\leq-1\right\}
+			\left\{L_{k_1}\ldots L_{k_n}|\phi\rangle:\mathrm{~}k_i\leq-1\right\}
 		}
 	\end{equation}
-	其中$\phi$是任意一个初级场。这些态成为初级场的次级态（descendant states）。
+	其中$\phi$是任意一个初级场。这些态称为初级场的次级态（descendant states）。
 \end{definition}
-\begin{table}[H]
+\begin{table}[H]\label{descendant}
 \centering
 \begin{tabular}{lrc}
 	\text { Field } & \text { State } & \text { Level } \\
@@ -743,6 +743,7 @@ $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{
 	$N(\partial T \phi) $& $L_{-3} \phi_{-h}|0\rangle $& $3$ \\
 	\hline \ldots & \ldots & \ldots
 \end{tabular}
+\caption{次级态和次级场之间的对应}
 \end{table}
 同样根据态算符对应，这些态也会对应到一些场，根据上面的表就可以猜到是：
 \begin{equation}
@@ -759,6 +760,43 @@ $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{
 	}
 \end{equation}
 
+次级态和次级场之间用NOP对应，而NOP天然的和OPE有对应，所以实际上我们可以用OPE的围道积分来表示：
+\begin{theorem}
+	用$\widehat{L}_{-n}\phi(w)$表示$L_{-n}\ket\phi$对应的次级场，那么：
+	\begin{equation}
+		\boxed{
+			\widehat{L}_{-n}\phi(w)=\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\frac1{(z-w)^{n-1}}T(z)\phi(w)
+		}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	利用态算符对应，取$w\to 0$的极限就能看出正确性了。代入OPE实际计算几个粒例子也能得到表\ref{descendant}的结果。
+\end{proof}
+现在我们来证明CFT自举里面非常重要的一个微分方程，核心目的是将次级态和其他初级场的关联函数用其他初级场的关联函数来表示。
+\begin{theorem}
+	$\phi,\phi_1,\ldots,\phi_N$是初级场，则：
+	\begin{equation}\label{33.31}
+		\boxed{
+			\begin{gathered}
+				\left\langle\widehat{L}_{-n}\left.\phi(w)\left.\phi_1(w_1)\ldots\phi_N(w_N)\right.\right\rangle=\mathcal{L}_{-n}\left\langle\left.\phi(w)\left.\phi_1(w_1)\ldots\phi_N(w_N)\right.\right\rangle\right.\right. \\
+				\text{Where,}\qquad\mathcal{L}_{-n}=\sum_{i=1}^N\left(\frac{(n-1)h_i}{(w_i-w)^n}-\frac1{(w_i-w)^{n-1}}\partial_{w_i}\right)
+			\end{gathered}
+		}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	\begin{equation}
+		\begin{aligned}
+			&\left\langle\widehat{L}_{-n}\phi(w)\phi_1(w_1)\ldots\phi_N(w_N)\right\rangle  \\
+			=&\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\left.(z-w)^{1-n}\left\langle\left(T(z)\phi(w)\right)\phi_1(w_1)\ldots\phi_N(w_N)\right\rangle\right.  \\
+			=&-\sum_{i=1}^N\oint_{\mathcal{C}(w_i)}\frac{dz}{2\pi i}\left.(z-w)^{1-n}\left\langle\phi(w)\phi_1(w_1)\ldots\left(T(z)\phi_i(w_i)\right)\ldots\phi_N(w_N)\right\rangle\right.  \\
+			=&-\sum_{i=1}^N\oint_{\mathcal{C}(w_i)}\frac{dz}{2\pi i}\left(z-w\right)^{1-n}\times  \\
+			&\times\left(\frac{h_i}{(z-w_i)^2}+\frac1{z-w_i}\partial_{w_i}\right)\left\langle\phi(w)\phi_1(w_1)\ldots\phi_N(w_N)\right\rangle  \\
+			=&-\sum_{i=1}^N\left((1-n)\left(w_i-w\right)^{-n}h_i+\left(w_i-w\right)^{1-n}\partial_{w_i}\right)\left<\phi(w)\phi_1(w_1)\ldots\phi_N(w_N)\right>
+		\end{aligned}
+	\end{equation}
+	上面证明中第二个等号利用了全平面内极点留数只和为0，第三个等号利用了初级场OPE。
+\end{proof}
 \section{Representations of the Virasoro Algebra}
 现在来从群表示的观点看下我们前面的Verma Module和Conformal Family实在做什么。前面反复强调如果我们有了一个理论的对称代数，那么确定其希尔伯特空间就是在找群表示。最简单的CFT就是只有Virasoro代数作为其对称代数，由于这时左右模完全分离，所以我们可以先分开讨论，然后$\bigoplus_{\{h,\bar h\}} V_{c,h}\otimes V_{c,\bar h}$就构成了整个表示空间\sn{也正因为完全分离，这里$h,\bar h$直积时无特殊要求，后面玻色子我们会看到一个有要求的最简单的例子。}。
 
@@ -1188,7 +1226,172 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 	$b,c$鬼场的中心荷$\boxed{c=-26}$
 \end{theorem}
 \section{Unitary Representations of the Virasoro Algebra}
+\subsection{Null States}
+在关注幺正表示之前先来看看表示中出现Null State的条件，由于线性空间中任何一个向量都可以用基底展开，所以向量模为0等价于下面的二次型为0：
+\begin{equation}
+	0=\|v\|^2=\sum_{a,b=1}^n\lambda_a\left<a\mid b\right>\lambda_b=\sum_{a,b=1}^n\lambda_aM_{ab}\lambda_b=\vec{\lambda}^TM\vec{\lambda}
+\end{equation}
+也正是因为这是一个二次型，所以上式成立等价于$\lambda$是矩阵$M$的零模，按照这个思路，对于某个最高权表示我们也可以去寻找对应的$M$表示，但是由于$L_0$是厄米的，所以他的每一个特征子空间，也就是那些N-level之间是正交的，所以$M=\bigoplus_{N=1} M_N$：
+\begin{equation}
+	\left<h\right|\prod_iL_{+k_i}\left.\prod_jL_{-m_j}\left|h\right>,\quad\quad\sum_ik_i=\sum_jm_j=N\right. 
+\end{equation}
+下面要做的事情就是把所谓的Ka\v{c}行列式$\det M$求出来，他的零点就对应存在零模的表示，零点的重数就表示零模的个数。
+\begin{example}
+	\underline{$N=1$：}
+	\begin{equation}
+		M_1(h,c)=\left\langle h\right|L_1L_{-1}\left|h\right\rangle=2\left\langle h\right|L_0\left|h\right\rangle=2h
+	\end{equation}
+	\underline{$N=2$：}
+	
+	子空间由$\{L_{-2}~|h\rangle ,L_{-1}~L_{-1}~|h\rangle \}$张成：
+	\begin{equation}
+		\det M_2(c,h)=\det\begin{pmatrix}4h+\frac c2&6h\\6h&4h(2h+1)\end{pmatrix}=32h\left(h^2-\frac58h+\frac18hc+\frac1{16}c\right)
+	\end{equation}
+	不难发现$h=0$时$N=1$上面有一个Null State，$h=\frac{5-c}{16}\pm\frac1{16}\sqrt{(1-c)(25-c)}$时$N=2$上面出现Null State，更高阶的情况以此类推。现在来关注一下如何具体地把$N=2$上面的Null State构造出来，做下面的ansatz：
+	\begin{equation}
+		L_{-2}\left|h\right\rangle+aL_{-1}L_{-1}\left|h\right\rangle=0
+	\end{equation}
+	由于他是零模，所以任何算符作用上去都是0，作用$L_{-1}$得到：
+	\begin{equation}
+		\begin{aligned}
+			0& =[L_1,L_{-2}]\ket{h}+a[L_1,L_{-1}L_{-1}]\ket{h}  \\
+			&=3L_{-1}\left|h\right\rangle+a~\left(2L_0L_{-1}+2L_{-1}L_0\right)|h\rangle  \\
+			&=\left(3+2a\left(2h+1\right)\right)L_{-1}\left|h\right\rangle \quad\quad\quad\qquad\qquad\Rightarrow a=-\frac{3}{2(2h+1)}
+		\end{aligned}
+	\end{equation}
+	当然，你也可以通过直接求解$M_2 \cdot (1,a)^T$这个方程组来得到$a$。这样就得到了一个CFT自洽性所要求的方程：
+	\begin{equation}
+		\left(L_{-2}-\frac3{2(2h+1)}L_{-1}^2\right)|h\rangle=0
+	\end{equation}
+	其中$h=\frac{5-c}{16}\pm\frac1{16}\sqrt{(1-c)(25-c)}$。
+\end{example}
+Ka\v{c}行列式的零点结构已经被一般地研究过了：
+\begin{theorem}
+	\begin{equation}
+		\boxed{
+			\begin{gathered}% 全部居中对齐
+				\det M_N(c,h)=\alpha_N\prod_{\substack{p,q\leq N\\p,q>0}}\left(h-h_{p,q}(c)\right)^{P(N-pq)}\\% 多行下标使用\substack或者subarray环境
+			h_{p,q}(m)=\frac{\left(\begin{array}{c}(m+1)p-mq\\\end{array}\right)^2-1}{4m(m+1)},\quad m=-\frac12\pm\frac12\sqrt{\frac{25-c}{1-c}}
+			\end{gathered}
+		}
+	\end{equation}
+	上面的公式中$\alpha_N$是某个正数，对零点估计无影响，$m$有两个取值，计算中取其中某一个就好了，因为这两种取值给出的$\{h_{p,q}\}$是相同的。
+\end{theorem}
+\subsection{Unitary Constrains}
+幺正性对理论做了非常强的限制，但是完整的证明非常复杂，这里仅仅只是做一个结论总结。幺正性最容易想到的一个限制是$h\geq 0$，在其基础之上我们还可以对中心荷进行分类，结合图\ref{unitary}：
+\begin{figure}[htbp]
+	\centering
+	\includegraphics{figs/fig16.pdf}
+	\label{unitary}
+	\caption{Ka\v{c}行列式零点和中心荷之间的关系}
+\end{figure}
+\begin{itemize}
+	\item $c>1,h> 0$：Ka\v{c}行列式无零点且其本征值都是正的，这个时候理论总是幺正
+	\item $c=1$：Ka\v{c}行列式零点分布为$h=\frac{n^2}{4},n\in\mathbb{Z}$
+	\item $c<1,h\geq 0$：只有图\ref{unitary}的交点处才会出现幺正表示
+\end{itemize}
+下面的定理给出了交点处的坐标：
+\begin{theorem}[Unitary Minimal Models]
+	$c<1,h\geq 0$的CFT，只有在中心荷满足：
+	\begin{equation}
+	\boxed{
+			c=1-\frac6{m(m+1)}\quad m=3,4,\ldots
+	}
+	\end{equation}
+	时才有幺正谱，谱为：
+	\begin{equation}
+		\boxed{
+			h_{p,q}(m)=\frac{\left(\left(m+1\right)p-mq\right)^2-1}{4m\left(m+1\right)},\quad 1\leq p\leq m-1\mathrm{~and~}1\leq q\leq m
+		}
+	\end{equation}
+\end{theorem}
+我们原先说CFT的谱是无穷多或者连续的，但对于对称性只有Virasoro的CFT，幺正性直接让理论的谱变成有限离散的。这时的CFT我们称为\textbf{unitary minimal models}。有些时候理论不必是幺正的，不过我们还是希望这个CFT的谱依旧被限制为有限离散谱，这时的CFT称为\textbf{Minimal models}，由下面的中心荷和谱定义：
+\begin{theorem}[Minimal models]
+	\begin{equation}
+		\boxed{
+			\begin{gathered}
+				c=1-6\frac{(p-q)^2}{pq},\quad p,q\geq2,\quad p\perp q\\
+			h_{r,s}(p,q)=\frac{(pr-qs)^2-(p-q)^2}{4pq},\quad 1\leq r\leq q-1\text{ and }1\leq s\leq p-1
+			\end{gathered}
+		}
+	\end{equation}
+\end{theorem}
+类似这种谱有限离散，而且这时$h$还都是有理数的CFT我们称为\textbf{有理CFT（RCFT）}。
+\begin{example}
+	考虑$m=3$的幺正极小模型，这实际上是Ising Model二阶相变临界点处的理论，根据公式可以计算出中心荷为$\frac{1}{2}$，谱为：
+	\begin{table}[H]
+		\centering
+		\renewcommand{\arraystretch}{1.5}
+			\begin{tabular}{|c|c|}
+				\hline
+				$\frac{1}{2}$  & 0              \\ \hline
+				$\frac{1}{16}$ & $\frac{1}{16}$ \\ \hline
+				0              & $\frac{1}{2}$  \\ \hline
+			\end{tabular}
+		\caption{Ising模型的谱，横轴表示$1\leq p\leq 2$，纵轴表示$1\leq q\leq 3$}
+	\end{table}
+	从$p,q$取值范围来看似乎有$m(m-1)$个谱，但实际上有一半是重复的，只有$\mathrm{C}^2_m$个谱。
+\end{example}
+
 \section{Fusion Rules}
+让我们从一个例子出发，利用\ref{33.31}
+\begin{equation}
+	\widehat{L}_{-2}\left.\phi(z)-\frac3{2\left(2h+1\right)}\widehat{L}_{-1}^2\right.\phi(z)=\left(\mathcal{L}_{-2}-\frac3{2\left(2h+1\right)}\mathcal{L}_{-1}^2\right)\left\langle\phi(w)\left.\phi_1(w_1)\ldots\phi_N(w_N)\right\rangle\right. =0
+\end{equation}
+得到微分方程：
+\begin{equation}
+	\left(\sum_{i=1}^N\left(\frac{h_i}{(w_i-w)^2}-\frac{1}{w_i-w}\partial_{w_i}\right)-\frac{3}{2(2h+1)}\partial_w^2\right)\left\langle\phi(w)\phi_1(w_1)\ldots\phi_N(w_N)\right\rangle=0
+\end{equation}
+前面用共形对称性已经确定两点和三点函数只差一个常数系数，带入到方程中发现第一个non-trival的结果来自于三点函数：
+\begin{equation}
+	2\left(2h+1\right)\left(h+2h_2-h_1\right)=3\left(h-h_1+h_2\right)\left(h-h_1+h_2+1\right)
+\end{equation}
+$h,h_1,h_2$分别是$\phi,\phi_1,\phi_2$对应的共形权。这对三点函数的$C_{\phi\phi_1\phi_2}$做出了更强的限制，告诉我们绝大部分都是0。当然这个限制仅限于$h=h_{2,1}(m) \text{ or } h_{1,2}(m)$，这时上面的推导才成立，但是$h_1,h_2$是一般的。不妨取$h=h_{2,1}$，并把$h_1$也取为存在Null State的谱$h_{p,q}$，根据上面的方程可以解出不为0的条件是：
+\begin{equation}
+	h_2=\frac16+\frac h3+h_1\pm\frac23\sqrt{h^2+3hh_1-\frac12h+\frac32h_1+\frac1{16}}\in\{h_{p-1,q}(m),h_{p+1,q}(m)\}
+\end{equation}
+由OPE的一般表达式我们知道OPE是由一系列初级场和其导数，或者说次级场组合而成的，由于OPE有结合律，所以三点函数的计算可以看作是前两个先插入OPE\sn{我们假设第三个场隔得比较远，使得OPE的插入是精确的}，然后和第三个场做两点函数，而两点函数不为零当且仅当共形权一致。上面的方程告诉我们三点函数不为零的条件是$h_2$只能取特定的两个值，从OPE去看这正说明了前两个场的OPE最终出来的那些场只能是共形权为$\{h_{p-1,q}(m),h_{p+1,q}(m)\}$的场的线性组合！这一思想完全可以推广到次级场的OPE：
+\begin{equation}
+	\begin{bmatrix}\phi_{(2,1)}\end{bmatrix}\times\begin{bmatrix}\phi_{(p,q)}\end{bmatrix}=\begin{bmatrix}\phi_{(p+1,q)}\end{bmatrix}+\begin{bmatrix}\phi_{(p-1,q)}\end{bmatrix}
+\end{equation}
+也就是说，$\phi_{(2,1)}$和$\phi_{(p,q)}$ Conformal family中的元素做OPE，最终得到的只能是$\phi_{(p-1,q)}$和$\phi_{(p+1,q)}$ Conformal family中元素的组合。
+\begin{theorem}[Fusion rules of unitary minimal models]
+	\begin{equation}
+		\boxed{
+			\left[\phi_{(p_1,q_1)}\right]\times \left[\phi_{(p_2,q_2)}\right]=\sum^{p_1+p_2-1}_{\begin{subarray}{l}
+					k=1+|p_1-p_2|\\k+p_1+p_2\mathrm{~} \text{odd}\end{subarray}}\sum^{q_1+q_2-1}_{\begin{subarray}{l}
+					l=1+|q_1-q_2|\\l+q_1+q_2\mathrm{~} \text{odd}\end{subarray}}\left[\phi_{(k,l)}\right]
+		}
+	\end{equation}
+\end{theorem}
+只要是RCFT，谱是离散有限的，都可以构造类似的融合规则：
+\begin{equation}
+	\boxed{
+		[\left.\phi_i\right.]\times[\left.\phi_j\right.]=\sum_kN_{ij}^k\left[\left.\phi_k\right.\right],\quad N_{ij}^k\in\mathbb{Z}^+_0
+	}
+\end{equation}
+根据OPE的性质可以知道这是一个交换代数，还是一个结合代数，其中的恒等元$[1]$就是Verma Module，对应真空表示，毕竟本身某个初级态的次级态就是用$N(T\cdots)$定义出来的。
+\begin{theorem}
+	\begin{equation}
+		\boxed{
+			\sum_lN_{kj}^lN_{il}^m=\sum_lN_{ij}^lN_{lk}^m
+		}
+	\end{equation}
+	定义$(\overline{N}_i)_{jk}\equiv N_{ij}^k$，上式可以写成矩阵形式：
+	\begin{equation}
+		\boxed{
+			\overline{N}_i\overline{N}_k=\overline{N}_k\overline{N}_i
+		}
+	\end{equation}
+\end{theorem}
+\begin{proof}
+	证明就是使用交换律和结合律：
+	\begin{equation}
+		\begin{aligned}&\left[\phi_i\right]\times\left(\left[\phi_j\right]\times\left[\phi_k\right]\right)=\left[\phi_i\right]\times\sum_{l}N_{jk}^{l}\left[\phi_l\right]=\sum_{l,m}N_{jk}^{l}N_{il}^{m}\left[\phi_m\right]\\&\left(\left[\phi_i\right]\times\left[\phi_j\right]\right)\times\left[\phi_k\right]=\sum_{l,m}N_{ij}^{l}N_{lk}^{l}\left[\phi_m\right],\end{aligned}
+	\end{equation}
+\end{proof}
+\subsection{Ising Model}
+
 \section{Ka\v{c}\mbox{–}Moody Symmetry}
 \subsection{Ka\v{c}\mbox{–}Moody Algebras}
 \subsection{Sugawara Construction}
