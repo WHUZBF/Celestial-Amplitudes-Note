@@ -34,7 +34,7 @@ CFT经典教材是大黄书\cite{DiFrancesco:1997nk}，教材\cite{Blumenhagen:2
 如果$\phi$全纯我们称为\textbf{chiral}，反全纯称为\textbf{anti-chiral}。无穷小共形变换$x\mapsto x+\epsilon$下：
 \begin{equation}\label{ict}
 	\boxed{
-	\delta_{\epsilon,\bar{\epsilon}}\phi(z,\bar{z})\equiv\phi^\prime(x^\prime)-\phi(x)=-\left(h\mathrm{~}\partial_z\epsilon+\epsilon\mathrm{~}\partial_z+\overline{h}\mathrm{~}\partial_{\bar{z}}\bar{\epsilon}+\overline{\epsilon}\mathrm{~}\partial_{\bar{z}}\right)\phi(z,\overline{z})
+	\delta_{\epsilon,\bar{\epsilon}}\phi(z,\bar{z})\equiv\phi^\prime(x^\prime)-\phi(x)=-\left(h\partial_z\epsilon+\epsilon\partial_z+\overline{h}\partial_{\bar{z}}\bar{\epsilon}+\overline{\epsilon}\partial_{\bar{z}}\right)\phi(z,\overline{z})
 	}
 \end{equation}
 \begin{remark}
@@ -249,7 +249,7 @@ $z=e^{x^0+ix^1}=x+iy$，进一步利用积分换元得到：\sn{别忘了雅可�
 \end{equation}
 等式左边再次利用\ref{eq:31.12}，得到所谓共形Ward恒等式（仅适用于初级场）：\sn{注意这并不是代入$T,Phi$之间OPE得到的，因为前面说过OPE收敛半径等于与OPE处最近的其他算符插入处的距离。而我们下面要导出的等式与算符插入点完全无关，推导过程中看到我们将围道变形为单独绕每个$\{w_i\}$的围道来使得OPE的插入是精确的。}
 \begin{equation}
-	\boxed{\begin{aligned}\big\langle T\left(z\right)&\phi_{1}(w_{1},\overline{w}_{1})\ldots\phi_{N}(w_{N},\overline{w}_{N})\big\rangle\\&=\sum_{i=1}^{N}\left(\frac{h_{i}}{(z-w_{i})^{2}}+\frac{1}{z-w_{i}}\partial_{w_{i}}\right)\Big\langle\phi_{1}(w_{1},\overline{w}_{1})\ldots\phi_{N}(w_{N},\overline{w}_{N})\Big\rangle\end{aligned}}
+	\boxed{\begin{aligned}\big\langle T\left(z\right)&\phi_{1}(w_{1},\overline{w}_{1})\ldots\phi_{N}(w_{N},\overline{w}_{N})\big\rangle\\&=\sum_{i=1}^{N}\left(\frac{h_{i}}{(z-w_{i})^{2}}+\frac{1}{z-w_{i}}\partial_{w_{i}}\right)\Big\langle\phi_{1}(w_{1},\overline{w}_{1})\ldots\phi_{N}(w_{N},\overline{w}_{N})\Big\rangle+\text{regular}\end{aligned}}
 \end{equation}
 \subsubsection{TT OPE}
 CFT$_{2}$中非常重要的OPE是两个能动张量之间的OPE，就平面上的二维共形场论而言，chiral和anti-chiral部分是完全解耦的，所以：
@@ -372,9 +372,15 @@ CFT$_{2}$中非常重要的OPE是两个能动张量之间的OPE，就平面上�
 
 关于这些公式的详细推导\cite{ito}上面都有，这里主要考虑用无穷小Ward恒等式的方法，但是我们考虑的毕竟是准初级场，所以只需要考虑$\epsilon(z)=\epsilon_{-1}+\epsilon_0z+\epsilon_1z^2$。将\ref{global ward}在无穷小变换下展开得到全纯部分：
 \begin{equation}
-	\displaystyle\sum_{i=1}^{n}\left(h_{i}\partial_{i}\epsilon\left(z_{i}\right)+\epsilon\left(z_{i}\right)\partial_{i}\right)\left<\phi_{1}\left(z_{1}\right)\cdots\phi_{n}\left(z_{n}\right)\right>=0+\mathcal{O}(\epsilon^2)
+	\boxed{
+		\displaystyle\sum_{i=1}^{n}\left(h_{i}\partial_{i}\epsilon\left(z_{i}\right)+\epsilon\left(z_{i}\right)\partial_{i}\right)\left<\phi_{1}\left(z_{1}\right)\cdots\phi_{n}\left(z_{n}\right)\right>=0
+	}
 \end{equation}
-这是一个微分方程，对于$\epsilon(z)=\epsilon_{-1}+\epsilon_0z+\epsilon_1z^2$恒成立，所以我们可以通过求解这个微分方程来确定关联函数的形式，不难验证\ref{31.19}和\ref{31.20}就有这一特征。这种将关联函数计算转化为微分方程的求解的方法后面我们还会碰到。
+这是一个微分方程，对于$\epsilon(z)=\epsilon_{-1}+\epsilon_0z+\epsilon_1z^2$恒成立，分开写可以写成：
+\begin{equation}\label{31.37}
+	\begin{aligned}\sum_i\partial_{w_i}\langle\phi_1(w_1)\cdots\phi_n(w_n)\rangle&=0\\\sum_i(w_i\partial_{w_i}+h_i)\langle\phi_1(w_1)\cdots\phi_n(w_n)\rangle&=0\\\sum_i(w_i^2\partial_{w_i}+2w_ih_i)\langle\phi_1(w_1)\cdots\phi_n(w_n)\rangle&=0\end{aligned}
+\end{equation}
+前面导出的Ward恒等式称为local的，现在这三个称为global的。所以我们可以通过求解这个微分方程来确定关联函数的形式，不难验证\ref{31.19}和\ref{31.20}就有这一特征。这种将关联函数计算转化为微分方程的求解的方法后面我们还会碰到。
 
 但是四点及以上函数就不能确定到只差一个待定系数了，不过我们仍旧可以利用所谓\textbf{交叉对称性}(Crossing Symmetry)走的很远。
 
@@ -730,7 +736,7 @@ $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{
 	\end{equation}
 	其中$\phi$是任意一个初级场。这些态称为初级场的次级态（descendant states）。
 \end{definition}
-\begin{table}[H]\label{descendant}
+\begin{table}[H]
 \centering
 \begin{tabular}{lrc}
 	\text { Field } & \text { State } & \text { Level } \\
@@ -744,6 +750,7 @@ $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{
 	\hline \ldots & \ldots & \ldots
 \end{tabular}
 \caption{次级态和次级场之间的对应}
+\label{descendant}
 \end{table}
 同样根据态算符对应，这些态也会对应到一些场，根据上面的表就可以猜到是：
 \begin{equation}
@@ -763,14 +770,14 @@ $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{
 次级态和次级场之间用NOP对应，而NOP天然的和OPE有对应，所以实际上我们可以用OPE的围道积分来表示：
 \begin{theorem}
 	用$\widehat{L}_{-n}\phi(w)$表示$L_{-n}\ket\phi$对应的次级场，那么：
-	\begin{equation}
+	\begin{equation}\label{eq:33.30}]
 		\boxed{
 			\widehat{L}_{-n}\phi(w)=\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\frac1{(z-w)^{n-1}}T(z)\phi(w)
 		}
 	\end{equation}
 \end{theorem}
 \begin{proof}
-	利用态算符对应，取$w\to 0$的极限就能看出正确性了。代入OPE实际计算几个粒例子也能得到表\ref{descendant}的结果。
+	利用态算符对应，取$w\to 0$的极限就能看出正确性了。代入OPE实际计算几个例子也能得到表\ref{descendant}的结果。
 \end{proof}
 现在我们来证明CFT自举里面非常重要的一个微分方程，核心目的是将次级态和其他初级场的关联函数用其他初级场的关联函数来表示。
 \begin{theorem}
@@ -778,7 +785,7 @@ $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{
 	\begin{equation}\label{33.31}
 		\boxed{
 			\begin{gathered}
-				\left\langle\widehat{L}_{-n}\left.\phi(w)\left.\phi_1(w_1)\ldots\phi_N(w_N)\right.\right\rangle=\mathcal{L}_{-n}\left\langle\left.\phi(w)\left.\phi_1(w_1)\ldots\phi_N(w_N)\right.\right\rangle\right.\right. \\
+				\left\langle\widehat{L}_{-n}\phi(w)\phi_{1}(w_{1})\ldots\phi_{N}(w_{N})\right\rangle=\mathcal{L}_{-n}\langle\phi(w)\phi_{1}(w_{1})\ldots\phi_{N}(w_{N})\rangle  \\
 				\text{Where,}\qquad\mathcal{L}_{-n}=\sum_{i=1}^N\left(\frac{(n-1)h_i}{(w_i-w)^n}-\frac1{(w_i-w)^{n-1}}\partial_{w_i}\right)
 			\end{gathered}
 		}
@@ -862,7 +869,7 @@ $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{
 \end{equation}
 这里$\gamma$是待定的归一化系数，利用上式计算得到：\sn{$\delta\sqrt{|g|}=-\frac12\sqrt{|g|}g_{ab}\delta g^{ab}$}
 \begin{equation}
-	T_{zz}=-\gamma\mathrm{~}\partial X\partial X\mathrm{~},\quad\quad T_{z\overline{z}}=T_{\overline{z}z}=0
+	T_{zz}=-\gamma\partial X\partial X,\quad\quad T_{z\overline{z}}=T_{\overline{z}z}=0
 \end{equation}
 下面最重要的一步就是取正规乘积，这相当于把理论的零点能shift掉：
 \begin{equation}
@@ -1031,9 +1038,9 @@ $m$和质心动量有关，$n$和卷绕数有关，$m\neq 0$的态称为Kaluza\m
 	j^1=\frac1{\sqrt{2}}\left(j^++j^-\right),\quad\quad j^2=\frac1{\sqrt{2}i}\left(j^+-j^-\right),\quad\quad j^3=j
 \end{equation}
 得到：
-\begin{equation}
+\begin{equation}\label{35.37}
 	\boxed{
-		\left[j_m^i,j_n^j\right]=+i\mathrm{~}\sqrt{2}\sum_k\epsilon^{ijk}\mathrm{~}j_{m+n}^k+m\mathrm{~}\delta^{ij}\mathrm{~}\delta_{m,-n}
+		\left[j_m^i,j_n^j\right]=+i\sqrt{2}\sum_k\epsilon^{ijk}j_{m+n}^k+m\delta^{ij}\delta_{m,-n}
 	}
 \end{equation}
 这具有流代数的形式，这实际上是个$\mathfrak{su}(2)$的流代数。
@@ -1064,7 +1071,7 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 \end{equation}
 这就像是对多值函数$\sqrt{z}$考虑其哪一支。两类边界条件也导致了不同的洛朗展开：
 \begin{equation}
-	\psi(z)=\sum_r\psi_r\mathrm{~}z^{-r-\frac12}=\begin{cases}r\in\mathbb{Z}+\frac1{2}&NS\\r\in\mathbb{Z}&R\end{cases}
+	\psi(z)=\sum_r\psi_rz^{-r-\frac12}=\begin{cases}r\in\mathbb{Z}+\frac1{2}&NS\\r\in\mathbb{Z}&R\end{cases}
 \end{equation}
 反对易关系同样包含于OPE：
 \begin{equation}
@@ -1339,8 +1346,10 @@ Ka\v{c}行列式的零点结构已经被一般地研究过了：
 	\widehat{L}_{-2}\left.\phi(z)-\frac3{2\left(2h+1\right)}\widehat{L}_{-1}^2\right.\phi(z)=\left(\mathcal{L}_{-2}-\frac3{2\left(2h+1\right)}\mathcal{L}_{-1}^2\right)\left\langle\phi(w)\left.\phi_1(w_1)\ldots\phi_N(w_N)\right\rangle\right. =0
 \end{equation}
 得到微分方程：
-\begin{equation}
-	\left(\sum_{i=1}^N\left(\frac{h_i}{(w_i-w)^2}-\frac{1}{w_i-w}\partial_{w_i}\right)-\frac{3}{2(2h+1)}\partial_w^2\right)\left\langle\phi(w)\phi_1(w_1)\ldots\phi_N(w_N)\right\rangle=0
+\begin{equation}\label{37.2}
+	\boxed{
+		\left(\sum_{i=1}^N\left(\frac{h_i}{(w_i-w)^2}-\frac{1}{w_i-w}\partial_{w_i}\right)-\frac{3}{2(2h+1)}\partial_w^2\right)\left\langle\phi(w)\phi_1(w_1)\ldots\phi_N(w_N)\right\rangle=0
+	}
 \end{equation}
 前面用共形对称性已经确定两点和三点函数只差一个常数系数，带入到方程中发现第一个non-trival的结果来自于三点函数：
 \begin{equation}
@@ -1393,9 +1402,279 @@ $h,h_1,h_2$分别是$\phi,\phi_1,\phi_2$对应的共形权。这对三点函数�
 \subsection{Ising Model}
 
 \section{Ka\v{c}\mbox{–}Moody Symmetry}
+从现在开始，我们来考虑比Virasoro对称性更大的对称性。本节大量涉及无穷维李代数的艰深数学内容，大黄书专门用了两章进行铺垫介绍，这里不追求数学上的严谨性。\sn{数学读物可见\cite{Fuchs:1997af,Kac:1990gs}}
 \subsection{Ka\v{c}\mbox{–}Moody Algebras}
+Ka\v{c}\mbox{–}Moody对称性是理论中加入了其他守恒流，这些守恒流的洛朗模之间满足下面的代数关系：
+\begin{definition}[Ka\v{c}\mbox{–}Moody Algebras]
+	\begin{equation}\label{38.1}
+		\boxed{
+			\left[j_m^a,j_n^b\right]=i\sum_cf^{abc}j_{m+n}^c+k m\delta^{ab}\delta_{m+n,0}
+		}
+	\end{equation}
+	$k$称为这个代数的level。
+\end{definition}
+从上面的定义看到$\{j_0^a\}$构成了上面这个代数的子代数，没有中心荷：
+\begin{equation}\label{38.2}
+	\left[j_0^a,j_0^b\right]=i\sum_cf^{abc}j_0^c
+\end{equation}
+这就是我们熟悉的李代数结构$\mathfrak{g}$，而Ka\v{c}\mbox{–}Moody代数可以看作是这个子代数的仿射化，记为$\hat{\mathfrak{g}}_k$。比如\ref{35.37}就是一个$\widehat{\mathfrak{su}}(2)_{1}$的代数结构。
+\begin{theorem}[OPEs of Currents]
+	由于OPE和对易关系蕴含完全相同的信息，所以前面的对易关系也可以翻译为流之间的OPE：
+	\begin{equation}\label{38.3}
+		\boxed{
+			j^a(z)j^b(w)=\frac {k\delta^{ab}}{(z-w)^2}+\sum_c\frac{if^{abc}}{z-w}~j^c(w)+\cdots 
+		}
+	\end{equation}
+\end{theorem}
+
 \subsection{Sugawara Construction}
+构造CFT首先要给出理论的谱，这可以通过寻找Ka\v{c}\mbox{–}Moody代数的表示得到，这个后面再说。理论在无穷小共形变换时的性质完全由能动张量刻画，本节的目的就是完全从自洽性出发把能动张量构造出来。
+
+这些流是守恒流，就像我们构造Casimir算符一样，可以做下面的ansatz：
+\begin{equation}
+	T(z)=\gamma\sum_{a=1}^{\dim\mathfrak{g}}N\bigl(j^aj^a\bigr)(z)
+\end{equation}
+把所有的流加起来使得其再对称群变换下是不变的，现在根据$j^a$的共形权为$1$定出前面的归一化系数。
+\begin{equation}
+	L_m=\gamma\sum_{a=1}^{\dim\mathfrak{g}}\left(\sum_{l\leq-1}j_l^aj_{m-l}^a+\sum_{l>-1}j_{m-l}^aj_l^a\right)
+\end{equation}
+计算对易关系\footnote{计算中第四个等号利用了结构张量前两个指标反对称所导出的：
+\begin{equation*}
+	\begin{aligned}\sum_{l\leq-1}\left(j_l^bj_{m+n-l}^c-j_{l+n}^bj_{m-l}^c\right)&=\sum_{l\leq-1}j_l^bj_{m+n-l}^c-\sum_{l\leq-1+n}j_l^bj_{m+n-l}^c=-\sum_{l=0}^{n-1}j_l^bj_{m+n-l}^c\\\sum_{l>-1}\left(j_{m+n-l}^cj_l^b-j_{m-l}^cj_{l+n}^b\right)&=\sum_{l>-1}j_{m+n-l}^cj_l^b-\sum_{l>-1+n}j_{m+n-l}^cj_l^b=+\sum_{l=0}^{n-1}j_{m+n-l}^cj_l^b\end{aligned}
+	\end{equation*}}：\sn{你依旧可以用OPE做}
+\begin{align*}
+		&[L_m,j_n^a]\\
+		=&\gamma\sum_b\left(\sum_{l\leq-1}\left[j_l^bj_{m-l}^b,j_n^a\right]+\sum_{l>-1}\left[j_{m-l}^bj_l^b,j_n^a\right]\right) \\
+		=&\gamma\sum_b\left(\sum_{l\leq-1}\left(j_l^b\bigl[j_{m-l}^b,j_n^a\bigr]+\bigl[j_l^b,j_n^a\bigr]j_{m-l}^b\right)+\sum_{l>-1}\left(j_{m-l}^b\bigl[j_l^b,j_n^a\bigr]+\bigl[j_{m-l}^b,j_n^a\bigr]j_l^b\right)\right) \\
+		=&-2\gamma nkj_{m+n}^{a}+\gamma\sum_{b,c}if^{bac}\sum_{l\leq-1}\big(j_{l}^{b}j_{m+n-l}^{c}+j_{l+n}^{c}j_{m-l}^{b}\big) \\
+		&+\gamma\sum_{b,c}if^{bac}\sum_{l>-1}\bigl(j_{m+n-l}^{c}j_{l}^{b}+j_{m-l}^{b}j_{l+n}^{c}\bigr)\displaybreak\\%换页
+		=&-2\gamma nkj_{m+n}^a-\gamma\sum_{b,c}if^{bac}\sum_{l=0}^{n-1}[j_l^b,j_{m+n-l}^c] \\
+		=&-2\gamma nkj_{m+n}^a-\gamma\sum_{b,c}if^{bac}\sum_{l=0}^{n-1}\sum_dif^{bcd}j_{m+n}^d \\
+		=&-2\gamma nkj_{m+n}^a+\gamma n\sum_{b,c,d}f^{bac}f^{bcd}j_{m+n}^d. 
+\end{align*}
+李代数的伴随表示有下面的等式：
+\begin{equation}\label{38.6}
+	\sum_{b,c}f^{bac}f^{bcd}=-2C_{\mathfrak{g}}\delta^{ad}
+\end{equation}
+其中$C_{\mathfrak{g}}$叫\textbf{dual Coxeter number}，下表给出了一些李群的dual Coxeter number：
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|c|c|c|}
+		\hline
+		Algebar        & $A_n$ & $D_n$  & $E_6$ & $E_7$ & $E_8$ \\ \hline
+		$C_{\mathfrak{g}}$ & $n+1$ & $2n-2$ & $12$  & $18$  & $30$  \\ \hline
+	\end{tabular}
+	\caption{ADE分类的Coxeter number，在现在的语境下可以将$A_n$对应$\mathfrak{su}_{n+1}$，$D_n$对应$\mathfrak{so}_{2n}$}
+\end{table}
+\begin{theorem}[Sugawara energy–momentum tensor]
+	$\hat{\mathfrak{g}}_k$所确定CFT的能动张量由下式给定：
+	\begin{equation}\label{38.7}
+		\boxed{
+			T(z)=\frac1{2\left(k+C_{\mathfrak{g}}\right)}\sum_{a=1}^{\dim\mathfrak{g}}N\left(j^aj^a\right)(z)
+		}
+	\end{equation}
+\end{theorem}
+利用能动张量OPE或者$\frac c2=\left\langle0\right|L_{+2}L_{-2}\left|0\right\rangle $可计算出理论的中心荷：
+\begin{theorem}
+	Sugawara构造出来的CFT中心荷为：
+	\begin{equation}
+		\boxed{
+			c=\frac{k\dim\mathfrak{g}}{k+C_{\mathfrak{g}}}
+		}
+	\end{equation}
+\end{theorem}
+\subsection{WZNW Models}
+前面导出能动张量的过程再次强调了研究CFT时很多情况下拉氏量是放在次要位置的，我们当然也可以直接构造一个有流对称代数的拉氏量，即所谓的WZW模型，然后再用作用量变分导数得到能动张量。本节目的是知道这样做有多麻烦。
+
+从自由玻色场来看，其作用量可以写成下面的形式：\sn{已重新选取耦合常数}
+\begin{equation}
+	\mathcal{S}=\frac1{8\pi}\int_\Sigma\mathrm{d}^2x\partial^\mu g^{-1}\partial_\mu g=\frac1{8\pi}\int_\Sigma\mathrm{d}^2x\partial g^{-1}\overline{\partial}g
+\end{equation}
+这里$\Sigma$是复平面这个最简单的黎曼曲面，其中$g$是：
+\begin{equation}
+	g:\mathbb{C}\to\mathcal{U}(1);z\mapsto g(z,\overline{z})=\exp(i\varphi(z,\overline{z}))
+\end{equation}
+前面说$\phi\mapsto\phi+a$是$U(1)$对称性或许还有些困惑，从这个作用量就很好看出来的确是$g\mapsto e^{ia} g$的$U(1)$变换，WZNW模型就是对这个模型的非阿贝尔推广。
+\subsubsection{Nonlinear Sigma Models}
+\begin{definition}
+	非线性sigma模型包含一个定义在某个黎曼曲面上的到群流形的玻色场$g:\Sigma\to G$\footnote{或者精确点说是在$G$的幺正表示里面取值}，作用量为：
+	\begin{equation}
+		\mathcal{S}_0=\frac1{2a^2}\int_\Sigma\mathrm{d}^2x\mathrm{~Tr}\left(\partial^\mu g^{-1}\partial_\mu g\right)
+	\end{equation}
+	这个$\mathrm{Tr}$其实要写成$\mathrm{Tr^\prime}$和一般的取迹进行区分，如果在某个表示下，生成元矩阵有$\mathrm{Tr}(t^a t^b)=x\delta^{ab}$，那么$\mathrm{Tr^\prime}\equiv\frac{1}{x}\mathrm{Tr}$。后面假设都已经做了这个归一化。
+\end{definition}
+对作用量进行变分得到运动方程：
+\begin{equation}
+	\partial^\mu(g^{-1}\partial_\mu g)=0
+\end{equation}
+这直接说明了存在下面的守恒流：
+\begin{equation}
+	J_\mu=g^{-1}\partial_\mu g
+\end{equation}
+这个守恒流对应模型的global $G\times G$对称性。黎曼曲面是一个一维复流形，任何一点领域都同胚于复平面的开子集，所以可以在上面local地赋予复坐标，定义上面守恒流的全纯和反全纯部分：
+\begin{equation}
+	J_z=g^{-1}\partial g,\quad\bar{J}_{\overline{z}}=g^{-1}\overline{\partial}g\Rightarrow\partial\bar{J}_{\overline{z}}+\bar{\partial}J_z=0
+\end{equation}
+一般而言，全纯和反全纯部分不能单独守恒，和$U(1)$的情况不一样，我们期望在理论中加上一些项，让对称性进一步扩大为反全纯和全纯部分单独守恒。
+\begin{definition}[Wess-Zumino term]
+	\begin{equation}
+		\Gamma=\frac{-i}{12\pi}\int_B\mathrm{d}^3y\epsilon_{\alpha\beta\gamma}\operatorname{Tr}\left(\widetilde{g}^{-1}\partial^\alpha\widetilde{g}\widetilde{g}^{-1}\partial^\beta\widetilde{g}\widetilde{g}^{-1}\partial^\gamma\widetilde{g}\right)
+	\end{equation}
+	这里$B$是一个带边三维流行，其边界为$\Sigma$，$\tilde{g}: B\to G$可看作是$g$从Boundary到Bulk的扩张，这种扩张不是唯一的，流形$B$也不是唯一的。但可以证明这个差别只会体现为$2n\pi i$，所以虽然作用量上面看不一样，但是最终就欧几里得路径积分而言$e^{-\Gamma}$是唯一的，所以不会对场论造成任何影响。
+\end{definition}
+\subsubsection{Wess-Zumino-Novikov-Witten Models}
+考虑下面的作用量：
+\begin{equation}
+	\mathcal{S}=\mathcal{S}_0+k\Gamma,\quad k\in\mathbb{Z}
+\end{equation}
+按照前面说的虽然$\Gamma$不唯一，但是理论唯一。计算运动方程为：
+\begin{equation}
+	\partial^\mu(g^{-1}\partial_\mu g)+\frac{a^2ik}{4\pi}\epsilon_{\mu\nu}\partial^\mu(g^{-1}\partial^\nu g)=0
+\end{equation}
+在复坐标下为：
+\begin{equation}
+	\left(1+\frac{a^2k}{4\pi}\right)\partial(g^{-1}\overline{\partial}g)+\left(1-\frac{a^2k}{4\pi}\right)\overline{\partial}(g^{-1}\partial g)=0
+\end{equation}
+所以为了让流的全纯和反全纯部分的流单独守恒，要求：
+\begin{equation}
+	a^2=4\pi/k
+\end{equation}
+\begin{theorem}[$\widehat{\mathfrak{g}}_k$ WZNW Models]
+	\begin{equation}
+		\mathcal{S}=\frac k{8\pi}\int_\Sigma\mathrm{d}^2x\mathrm{~Tr}\left(\partial^\mu g^{-1}\partial_\mu g\right)+k\Gamma ,\quad k\in\mathbb{Z}^+
+	\end{equation}
+\end{theorem}
+另外一个$a^2=-4\pi/k$的解并不是我们关注的流守恒。左右流的单独守恒体现到场上是场可以分解为$g(z,\overline{z})=g_L(z)g_R(\overline{z})$，提现到体系的对称群上是从global $G\times G$扩张为local的$G(z)\times  G(\bar z)$，即下面的变换下作用量不变：
+\begin{equation}
+	g(z,\bar{z})\to\Omega(z)g(z,\bar{z})\overline{\Omega}^{-1}(\bar{z}),\quad \Omega(z),\bar \Omega(\bar z)\in G
+\end{equation}
+rescale守恒流：
+\begin{equation}
+	\begin{aligned}
+		{J(z)} &\equiv-\frac k2J_z(z)=-\frac k2\partial gg^{-1} \\
+	\bar{J}(\overline{z}) &\equiv\frac k2\bar{J}_{\overline{z}}(\overline{z})=\frac k2g^{-1}\overline{\partial}g
+	\end{aligned}
+\end{equation}
+然后类似于YM理论里面的操作，在生成元$t^a$上投影，$J=J^at^a$，可以证明$J^a$就是那些Ka\v{c}\mbox{-}Moody流，理论的能动张量也就是Sugawara构造的那样！
+
 \subsection{Knizhnik\mbox{–}Zamolodchikov Equation}
+前面我们研究初级场实际上都是在看其在Virasoro代数下如何变换，现在显然我们要找更大对称群的表示。就像是YM理论一样，除了Lorentz变换本身对场进行了分类，分成标量场，矢量场等等。然后理论中本身冒出来一个规范对称群，要求理论中不同的场$\phi_a$之间在$\phi_a\to U^{ab}_R\phi_b$的规范变换下理论仍不变。这种场之间的内在对称性实际上就类似于Ka\v{c}\mbox{-}Moody对称性，场除了被Virasoro表示分类（不同的共形权），还要在流代数的表示之中。
+\begin{definition}[Ka\v{c}\mbox{–}Moody (chiral) primary field]
+	\begin{equation}\label{kac}
+		\boxed{
+			j^a(z)\phi_R^r(w)=\frac1{z-w}\sum_s\left(t_R^a\right)_s^r\phi_R^s(w)+\cdots 
+		}
+	\end{equation}
+	$j^a$是生成变换群$G$的流，$R$表示$\{\phi_R^a\}$具体处于群的哪个表示，$t^a_R$是生成元的表示矩阵。满足这一条件的初级场，一定也是Virasoro初级场，你可以尝试去计算Sugawara能动张量和$\phi$之间的OPE来证明这一点。
+\end{definition}
+\begin{remark}
+	本节我们只考虑全纯部分，因为全纯反全纯完全解耦，把反全纯部分也加上来后初级场定义为：
+	\begin{equation}
+		\begin{aligned}&j^a(z)\phi_{R,\bar R}(w,\bar{w})\sim\frac{t_R^a\phi_{R,\bar R}(w,\bar{w})}{z-w}\\&\bar{j}^a(\bar{z})\phi_{R,\bar R}(w,\bar{w})\sim-\frac{\phi_{R,\bar R}(w,\bar{w})t_{{\bar R}}^a}{\bar{z}-\bar{w}}\end{aligned}
+	\end{equation}
+	$R,\bar R$分别表示全纯和反全纯部分处于哪个表示。另外，不少文献对\ref{kac}的定义差个负号，这会导致后面的方程正负号有些差别，但这无伤大雅。
+\end{remark}
+\subsection{Ward Identity for Ka\v{c}\mbox{–}Moody Symmetries}
+Virasoro初级场有Ward恒等式限制它们之间的关联函数形式，同样这里也有更强的限制：
+\begin{theorem}
+	\begin{equation}\label{38.11}
+		\boxed{
+			\begin{aligned}
+				\left<j^{a}(z)\phi_{R_{1}}(w_{1},\overline{w}_{1})\right.& \ldots\phi_{R_N}(w_N,\overline{w}_N)\rangle   \\
+				&=\sum_{i=1}^N\frac{t_{R_i}^a}{z-w_i}\left\langle\left.\phi_{R_1}(w_1,\overline{w}_1)\ldots\phi_{R_N}(w_N,\overline{w}_N)\right.\right\rangle +\text{regular}
+			\end{aligned}
+		}
+	\end{equation}
+	这里$\{\phi_{R_i}\}$是Ka\v{c}\mbox{–}Moody (chiral) primary field，$t_{R_i}$仅仅作用于$\phi_{R_i}$，它们的矩阵指标没有明写出来。
+\end{theorem}
+\begin{proof}
+	证明过程和共形Ward恒等式的证明一模一样，守恒流给出守恒荷从而给出Ka\v{c}\mbox{-}Moody代数作用下场的无穷小变换的形式：
+	\begin{equation}
+		-\delta_\epsilon\phi(w)=\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\sum_a\left.j^a(z)\right.\epsilon^a(z)\phi(w)
+	\end{equation}
+	考虑关联函数的无穷小变换：
+	\begin{equation}
+		\begin{aligned}
+			&\delta_{\epsilon}\left\langle\phi_{R_{1}}(w_{1},\overline{w}_{1})\ldots\phi_{R_{N}}(w_{N},\overline{w}_{N})\right\rangle  \\
+			&=\oint_{\mathcal{C}(w_1,...,w_N)}\frac{dz}{2\pi i}\sum_a\epsilon^a(z)\Big\langle j^a(z)\phi_{R_1}(w_1,\overline{w}_1)\ldots\phi_{R_N}(w_N,\overline{w}_N)\Big\rangle  \\
+			&=\sum_{i=1}^N\oint_{\mathcal{C}(w_i)}\frac{dz}{2\pi i}\sum_a\epsilon^a(z)\big<\phi_{R_1}(w_1,\overline{w}_1)\ldots\bigg(j^a(z)\phi_{R_i}(w_i,\overline{w}_i)\bigg)\ldots\phi_{R_N}(w_N,\overline{w}_N)\big>\\
+			&=\sum_{i=1}^N\oint_{\mathcal{C}(w_i)}\frac{dz}{2\pi i}\sum_a\epsilon^a(z)\frac{t_{R_i}^a}{z-w_i}\left\langle\phi_{R_1}(w_1,\overline{w}_1)\ldots\phi_{R_N}(w_N,\overline{w}_N)\right\rangle
+		\end{aligned}
+	\end{equation}
+	比较第一个等号和最后一个等号即得证。由于上面的关联函数在$G$的global作用下实际上要不变，所以上面这一长串等式，\textbf{在$\epsilon$为常数时}，实际上为0，所以我们其实还有下面的等式成立：\footnote{证明的前一半是local形式的证明，因为证明中群变换的参数$\epsilon$是local的，所以才能说积分号里面的东西相等；证明global的形式实际上是让$\epsilon$是global的参数，也就是考虑global的群变换，这部分才是对称性，由于$\epsilon$与$z$无关，所以上式最后一个等式可以把围道积分积出来得到下式。\ref{31.37}也可以用这种方式来看。}
+	\begin{equation}
+		\boxed{
+			\sum_{i=1}^nt_i^a\left<\phi_1(z_1)\cdots\phi_n(z_n)\right>=0
+		}
+	\end{equation}
+	这个等式类似于\ref{31.37}，确定了两点和三点函数。
+\end{proof}
+\subsection{Ka\v{c}\mbox{–}Moody descendant fields}
+从态的角度看，现在对称性增大了，原先构造descendant fields是用Virasoro初级场配合$L_{-n},n\geq 1$去构造，现在初级场应该用Ka\v{c}\mbox{–}Moody初级场，产生算符应该用对称性所对应的$j_{-n},n\geq 1$\footnote{现在估计就不难从数学上去理解我们为什么构造Free Bosons的希尔伯特空间的时候是用$j_{-n}$去构造了，因为理论是$\hat{\mathfrak{u}}(1)$的对称性，所以我们希望初级场是Ka\v{c}\mbox{-}Moody的，次级态也是，所以$j_{-n}$作用真空上去得到Verma模，作用到顶点算符构造的初级场上面得到次级态（$jV_\alpha$的OPE确实有\ref{kac}的形式，$U(1)$还是过于trivial，生成元表示就是一个常数。）。由于$T$就是用$j$ Sugawara构造来的，所以也同时是Virasoro初级态。}。\sn{下面的$\mathcal{U}(\hat{g}_k)$不少文献称为$\hat{g}_k$的泛包络代数的表示，名字很唬人，简单点说就是那些$j^a_{-n}$构成的一个结合代数，也就是$j^a_{-n}j^b_{-m}\ldots$，下标$+$表示只取$n\geq 1$。}
+\[\text{Ka\v{c}\mbox{–}Moody descendant fields} = \{\mathcal{U}(\hat{g}_k)_+\ket{\phi_R}\}\]
+同样类似\ref{eq:33.30}态算符对应给出次级场：
+\begin{equation}
+	\boxed{
+		(\widehat{j}_{-n}^a\phi_R)(w)=\oint_{\mathcal{C}(w)}\frac{dz}{2\pi i}\frac1{(z-w)^n}j^a(z)\phi_R(w)
+	}
+\end{equation}
+\begin{example}
+	\begin{equation}
+		\begin{aligned}
+			j_0^a\left|\phi_R\right\rangle & =\lim\limits_{w\to0}\oint\frac{dz}{2\pi i}j^{a}(z)\phi_{R}(w)\big|0\big>  \\
+			&=\lim_{w\to0}\oint\frac{dz}{2\pi i}\left(\frac1{z-w}t_R^a\phi_R(w)+\cdots\right)\left|0\right\rangle=t_R^a\left|\phi_R\right\rangle 
+		\end{aligned}
+	\end{equation}
+	这个方程蛮重要的，它告诉我们$\phi_R$生成了$j_0$的表示空间而$j_0$就是没有仿射化的，通常的李代数\ref{38.2}的群表示，一下就看清楚了$\phi_R$这个下标$R$的具体意义。而对称性变大之后，最高权除了由$L_0$本征值$h$标记，还应该由$j_0^a$所处的表示来标记，后面用例子来感受这一点。
+\end{example}
+利用这个我们可以类似去计算Ka\v{c}\mbox{–}Moody descendant fields和Ka\v{c}\mbox{–}Moody primary fields之间的关联函数，有与\ref{33.31}类似的方程：
+\begin{theorem}
+	\begin{equation}\label{38.15}
+		\boxed{
+			\begin{gathered}
+				\left\langle\widehat{j}_{-n}\phi_R(w)\phi_{R_1}(w_{1})\ldots\phi_{R_N}(w_{N})\right\rangle=\mathcal{J}_{-n}\langle\phi_R(w)\phi_{R_1}(w_{1})\ldots\phi_{R_N}(w_{N})\rangle  \\
+				\text{Where,}\qquad\mathcal{J}_{-n}=-\sum_{i=1}^N\frac{t^a_{R_i}}{(w_i-w)^n}
+			\end{gathered}
+		}
+	\end{equation}
+\end{theorem}
+
+更关键的是去找理论中的零模，从而得到类似\ref{37.2}的对初级场关联函数约束。
+\begin{theorem}[Knizhnik–Zamolodchikov Equation]
+	\begin{equation}\label{KZ}
+		\boxed{
+			\left(\partial_{w_i}-\frac{1}{k+C_{\mathfrak{g}}}\sum_{j\neq i}\left.\frac{\sum_{a}t_{R_i}^{a}\otimes t_{R_j}^{a}}{w_i-w_j}\right)\big\langle\phi_{R_1}(w_1)\ldots\phi_{R_N}(w_N)\big\rangle=0\right.
+		}
+	\end{equation}
+	上式省略了矩阵下标，$t^a_{R_i}$只作用于$\phi_{R_i}$。上面方程对任意的$i=1,\ldots,N$都成立。
+\end{theorem}
+\begin{proof}
+	\begin{equation}
+		\begin{aligned}
+			L_{-1}\left|\phi_{R}^{r}\right\rangle & =\frac1{2\left(k+C_{\mathfrak{g}}\right)}\sum_a\left(\sum_{l\leq-1}j_l^aj_{-1-l}^a+\sum_{l>-1}j_{-1-l}^aj_l^a\right)\ket{\phi_R^r}  \\
+			&=\frac1{2\left(k+C_{\mathfrak{g}}\right)}\sum_a\left(j_{-1}^aj_0^a+j_{-1}^a j_0^a\right)\ket{\phi_R^r}\\
+			&=\frac1{k+C_{\mathfrak{g}}}\sum_aj_{-1}^a\sum_s{\left(t_R^a\right)^r}_s\ket{\phi_R^r},
+		\end{aligned}
+	\end{equation}
+	直接给出了一个Null State：
+	\begin{equation}
+		\left(\widehat{L}_{-1}-\frac1{k+C_{\mathfrak{g}}}\sum_a\widehat{j}_{-1}^at_R^a\right)\phi_R(z)=0
+	\end{equation}
+	这可以看作是Sugawara构造用次级态表述。把它插在关联函数中恒为0：
+	\begin{equation}
+		0=\left\langle\phi_{R_1}(w_1)\ldots\left(\widehat{L}_{-1}-\frac1{k+C_{\mathfrak{g}}}\sum_a\widehat{j}_{-1}^at_{R_i}^a\right)\phi_{R_i}(w_i)\ldots\phi_{R_N}(w_N)\right\rangle 
+	\end{equation}
+	再利用\ref{33.31}和\ref{38.15}即可证明。
+\end{proof}
+注意这个约束非常一般，前面\ref{37.2}好歹还要求$\ket{h}$本身就是有零模的谱，对$h$有约束，这里就啥也没有了。KZ方程的解催生出了非常多的数学问题，由于四点函数不能被共形对称性很好的确定，所以我们比较关心这个方程能否给出四点函数的形式?文章\cite{Knizhnik:1984nr}在末尾用合流超几何函数给了答案。
+\begin{remark}
+	本节前面的讨论相当于选取了一个特殊的基底，\ref{38.6}更一般的表述是下面的Killing型：
+	\begin{equation}
+		K^{ab}=\frac1{2g}\operatorname{Tr}\left(\operatorname{ad}_{t^a}\operatorname{ad}_{t^b}\right)=\frac1{2g}f^{acd}f^{bdc}
+	\end{equation}
+	前面我们在$\mathfrak{g}$中shift基底将$K_{ab}$化为$\delta_{ab}$，\ref{38.1}、\ref{38.3}、\ref{38.7}和\ref{KZ}的形式都要发生相应的变化，具体来说就是$\delta^{ab}\to K_{ab}$，注意$J^aJ^a$中隐含了一个$\delta_{ab}$。
+\end{remark}
+
 \section{Example: Highest Weight Representations of $\widehat{\mathfrak{su}}(2)_{k}$ }
 \section{Coset Construction}
 \section{$\mathcal{W}$ Algebras}
