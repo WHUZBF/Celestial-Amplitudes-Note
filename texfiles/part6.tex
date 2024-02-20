@@ -1677,5 +1677,79 @@ Virasoro初级场有Ward恒等式限制它们之间的关联函数形式，同�
 
 \section{Example: Highest Weight Representations of $\widehat{\mathfrak{su}}(2)_{k}$ }
 \section{Coset Construction}
+WZW Moldels 核心是理论的那些流，这正是极小模型欠缺的，但似乎两个WZW模型的“商”可以和极小模型联系起来。更广点说，配集构造试图完全分类RCFT，本节做些最基本的介绍。
+
+考虑一个定义在$\hat{\mathfrak{g}}_{k_{\mathfrak{g}}}$上的WZW模型，考虑子代数$\mathfrak{h}\subset{\mathfrak{g}}$，这个子代数仿射化为$\hat{\mathfrak{h}}_{k_{\mathfrak{h}}}$后也可定义一个WZW模型。注意这里的$k_{\mathfrak{h}}$和$_{\mathfrak{g}}$是有关系的，成正比$k_{\mathfrak{h}}=x_ek_{\mathfrak{g}}$，这里的$x_e$是\textbf{Embedding index}。两个WZW模型的能动张量可以用Sugawara构造构造出来：
+\begin{equation}
+	\begin{gathered}
+		T_{\mathfrak{g}}(z) =\frac1{2\left(k_{\mathfrak{g}}+C_{\mathfrak{g}}\right)}\sum_{a=1}^{\mathrm{dim~}\mathfrak{g}}N\bigl(j_{\mathfrak{g}}^{a}j_{\mathfrak{g}}^{a}\bigr)(z) \\
+		T_{\mathfrak{h}}(z) =\frac1{2\left(k_{\mathfrak{h}}+C_{\mathfrak{h}}\right)}\sum_{b=1}^{\mathrm{dim~}\mathfrak{h}}N{\left(j_{\mathfrak{h}}^{b}j_{\mathfrak{h}}^{b}\right)}(z) 
+	\end{gathered}
+\end{equation}
+显然$j_\mathfrak{h}$在两个模型中都被包含，都是流，所以：
+\begin{equation}
+	\begin{aligned}T_{\mathfrak{g}}(z)j_{\mathfrak{h}}^b(w)&=\frac{j_{\mathfrak{h}}^b(w)}{(z-w)^2}+\frac{\partial_wj_{\mathfrak{h}}^b(w)}{z-w}+\cdots\\T_{\mathfrak{h}}(z)j_{\mathfrak{h}}^b(w)&=\frac{j_{\mathfrak{h}}^b(w)}{(z-w)^2}+\frac{\partial_wj_{\mathfrak{h}}^b(w)}{z-w}+\cdots\end{aligned}
+\end{equation}
+两式相减得到：
+\begin{equation}
+	T_{\mathfrak{g}/\mathfrak{h}}(z)~j_{\mathfrak{h}}^{b}(w)~=\text{regular}\quad T_{\mathfrak{g}/\mathfrak{h}}(z)~T_{\mathfrak{h}}(w)=\text{regular},\quad T_{\mathfrak{g}/\mathfrak{h}}\equiv\left(T_{\mathfrak{g}}-T_{\mathfrak{h}}\right)
+\end{equation}
+而OPE正规意味着对易子为0，所以我们可以把那个大的WZW模型分解为小的WZW和一个与其“正交”的模型：$T_\mathfrak{g}=T_{\mathfrak{g}/\mathfrak{h}}+T_\mathfrak{h}$。
+\begin{equation}
+	T_{\mathfrak{g}/\mathfrak{h}}T_{\mathfrak{g}/\mathfrak{h}}=T_{\mathfrak{g}/\mathfrak{h}}T_{\mathfrak{g}}=T_{\mathfrak{g}}T_{\mathfrak{g}}-T_{\mathfrak{h}}T_{\mathfrak{g}}=T_{\mathfrak{g}}T_{\mathfrak{g}}-T_{\mathfrak{h}}T_{\mathfrak{h}}
+\end{equation}
+这意味着$T_{{\mathfrak{g}/\mathfrak{h}}}$的中心荷等于两个理论之差：
+\begin{equation}
+	\boxed{
+		c_{\mathfrak{g}/\mathfrak{h}}=c_{\mathfrak{g}}-c_{\mathfrak{h}}=\frac{k_{\mathfrak{g}}\dim\mathfrak{g}}{k_{\mathfrak{g}}+C_{\mathfrak{g}}}-\frac{k_{\mathfrak{h}}\dim\mathfrak{h}}{k_{\mathfrak{h}}+C_{\mathfrak{h}}}
+	}
+\end{equation}
+\begin{definition}[Coset Construction]
+	$T_{\mathfrak{g}/\mathfrak{h}}$，以及流$\{j\in\hat{\mathfrak{g}}_{k_\mathfrak{g}}|\mathcal{R}(jj_{\mathfrak{h}}) \text { no singular},\forall j_{\mathfrak{g}}\in \hat{\mathfrak{h}}_{k_\mathfrak{g}}\}$定义了一个CFT，这也常被称为\textbf{Goddard–Kent–Olive
+		(GKO) 构造。}
+\end{definition}
+\begin{remark}
+	理论的流是那些和$\hat{\mathfrak{h}}_{k_\mathfrak{g}}$中的流OPE非奇异的，这也符合“商掉”的naive想法。注意我们这里称为陪集\textbf{陪集}构造，因为只有在$\mathfrak{h}$是理想的时候这个商才是个李代数，所以构造出来的CFT一般不是一个WZW模型。这恰巧是非常重要的，用WZW模型可以构造出新的物理！
+\end{remark}
+\subsubsection{Back to unitary minimal models}
+经常要涉及到的一类陪集构造是$(\hat{\mathfrak{g}}_{k_1}\oplus\hat{\mathfrak{g}}_{k_2})/\hat{\mathfrak{g}}_k$，称为\textbf{diagonal coset models}。$\hat{\mathfrak{g}}_{k_i}$里面的流是$j^a_{(i)}$，那么$\hat{\mathfrak{g}}_{k_1}\oplus\hat{\mathfrak{g}}_{k_2}$里面的流就是：
+\begin{equation}
+	j^{ab}=j_{(1)}^a+j_{(2)}^b,\quad [j_{(1)}^a,j_{(2)}^b]=0
+\end{equation}
+注意这里的对易关系说明我们考虑的实际上是外直和。底下的$\hat{\mathfrak{g}}_k$里面的流是对角的那部分：
+\begin{equation}
+	j_{\mathrm{diag}}^a=j_{(1)}^a+j_{(2)}^a
+\end{equation}
+$j_{\mathrm{diag}}$仍旧满足Ka\v{c}-Moody代数：
+\begin{equation}
+	\left.\left[\begin{array}{c}j_m^a,j_n^b\\\end{array}\right.\right]=i\sum_cf^{abc}j_{m+n}^c+km\delta^{ab}\delta_{m+n,0}
+\end{equation}
+还是因为$[j_{(1)}^a,j_{(2)}^b]=0$，得到：
+\begin{equation}
+	f^{abc}=f^{abc}+f^{abc},\quad k=k_1+k_2
+\end{equation}
+而且按照Sugawara构造：
+\begin{equation}
+	T_{(\mathfrak{g}_{k_1}\times\mathfrak{g}_{k_2})/\mathfrak{g}_{k_1+k_2}}=T_{\mathfrak{g}_{k_1}}+T_{\mathfrak{g}_{k_2}}-T_{\mathfrak{g}_{k_1+k_2}}
+\end{equation}
+下面的Coset构造：
+\begin{equation}\label{coset}
+	\frac{\widehat{\mathfrak{su}}(2)_k\times\widehat{\mathfrak{su}}(2)_1}{\mathfrak{su}(2)_{k+1}}
+\end{equation}
+不难计算出中心荷为：
+\begin{equation}
+	c=\frac{3k}{k+2}+1-\frac{3\left(k+1\right)}{k+3}=1-\frac6{(k+2)(k+3)}
+\end{equation}
+这正是unitary minimal models的中心荷，而且你无法找到与所有的$j_{\mathrm{dia}}$都对易的$j^{ab}$，所以理论中是没有守恒流的，这也正是极小模型的特征，它只有Virasoro对称性。严格证明这两个的等价性非常复杂，但是这里指出两者是完全一致的！
+\subsubsection{Branching Rules}
+前面我们只说了GKO构造之后的理论有哪些流，问有哪些谱就要去想最高权表示，由于原先大的WZW模型分成了两个正交的模型，所以我们自然觉得原先WZW模型的最高权表示现在在更小的两个群下看是可约的，应该会被分解为若干个$\mathfrak{g}/\mathfrak{h}$和$\mathfrak{h}$的最高权表示的直积。
+\begin{equation}
+	\left(\lambda_\mathfrak{g}\right)=\bigoplus_{\lambda_\mathfrak{h}}\left(\lambda_\mathfrak{h}\right)\otimes\left(\lambda_{\mathfrak{g}/\mathfrak{h}}\right)
+\end{equation}
+我们只是形式的写下了这个关系，具体怎么分解就称为\textbf{Branching Rules}。比如$\hat{\mathfrak{g}}=\widehat{\mathfrak{su}}(2)_k\times\widehat{\mathfrak{su}}(2)_1\to \widehat{\mathfrak{su}}(2)_{k+1}\times (\widehat{\mathfrak{su}}(2)_k\times\widehat{\mathfrak{su}}(2)_1)/\widehat{\mathfrak{su}}(2)_{k+1}$的分解就是：
+\begin{equation}
+	\begin{aligned}\left(p-1\right)_k\otimes\left(\epsilon\right)_1&=\bigoplus_{0\leq(q-1)\leq k+1}\left(q-1\right)_{k+1}\otimes\left(h_{p,q}(m)\right)\\p-q+\epsilon=0\mathrm{~mod~}2\end{aligned}
+\end{equation}
+这里$\epsilon=0,1,m=k+2,0\leq(p-1)\leq k$，$(l)_k$意思是$\widehat{\mathfrak{su}}(2)_k$的自旋$\frac{l}{2}$最高权表示。上世纪粒子物理研究很多都在干各种群表示分解，文献\cite{Slansky:1981yr}就总结的很到位，另外还有比如LieART\cite{Feger:2012bs,Feger:2019tvk}这种Mathematica$^\circledR$程序包可以很方便地进行计算。
 \section{$\mathcal{W}$ Algebras}
 本节主要参考\cite{Pope:1991ig}。

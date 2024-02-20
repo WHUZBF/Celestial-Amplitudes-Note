@@ -35,45 +35,45 @@ Warning--empty publisher in Blumenhagen:2009zz
 Warning--empty year in ito
 Warning--empty publisher in Schottenloher:2008zz
 Warning--empty publisher in Kac:1990gs
-You've used 144 entries,
+You've used 147 entries,
             2363 wiz_defined-function locations,
-            1622 strings with 26898 characters,
-and the built_in function-call counts, 50056 in all, are:
-= -- 5220
-> -- 1329
+            1646 strings with 27447 characters,
+and the built_in function-call counts, 51315 in all, are:
+= -- 5361
+> -- 1358
 < -- 0
-+ -- 420
-- -- 276
-* -- 4679
-:= -- 6394
-add.period$ -- 145
-call.type$ -- 144
-change.case$ -- 116
++ -- 429
+- -- 282
+* -- 4793
+:= -- 6554
+add.period$ -- 148
+call.type$ -- 147
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 153
-duplicate$ -- 3733
-empty$ -- 4871
-format.name$ -- 828
-if$ -- 12702
+cite$ -- 156
+duplicate$ -- 3826
+empty$ -- 4985
+format.name$ -- 846
+if$ -- 13028
 int.to.chr$ -- 0
-int.to.str$ -- 144
-missing$ -- 511
-newline$ -- 437
-num.names$ -- 145
-pop$ -- 441
+int.to.str$ -- 147
+missing$ -- 523
+newline$ -- 446
+num.names$ -- 148
+pop$ -- 448
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1608
+skip$ -- 1657
 stack$ -- 0
-substring$ -- 2718
-swap$ -- 894
+substring$ -- 2796
+swap$ -- 921
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 9
-while$ -- 558
-width$ -- 147
-write$ -- 1433
+while$ -- 572
+width$ -- 150
+write$ -- 1465
 (There were 3 error messages)

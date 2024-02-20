@@ -529,6 +529,25 @@ V.G.~Knizhnik and A.B.~Zamolodchikov, \emph{{Current Algebra and Wess-Zumino
   \href{https://doi.org/10.1016/0550-3213(84)90374-2}{\emph{Nucl. Phys. B}
   {\bfseries 247} (1984) 83}.
 
+\bibitem{Slansky:1981yr}
+R.~Slansky, \emph{{Group Theory for Unified Model Building}},
+  \href{https://doi.org/10.1016/0370-1573(81)90092-2}{\emph{Phys. Rept.}
+  {\bfseries 79} (1981) 1}.
+
+\bibitem{Feger:2012bs}
+R.~Feger and T.W.~Kephart, \emph{{LieART\textemdash{}A Mathematica application
+  for Lie algebras and representation theory}},
+  \href{https://doi.org/10.1016/j.cpc.2014.12.023}{\emph{Comput. Phys. Commun.}
+  {\bfseries 192} (2015) 166}
+  [\href{https://arxiv.org/abs/1206.6379}{{\ttfamily 1206.6379}}].
+
+\bibitem{Feger:2019tvk}
+R.~Feger, T.W.~Kephart and R.J.~Saskowski, \emph{{LieART 2.0 \textendash{} A
+  Mathematica application for Lie Algebras and Representation Theory}},
+  \href{https://doi.org/10.1016/j.cpc.2020.107490}{\emph{Comput. Phys. Commun.}
+  {\bfseries 257} (2020) 107490}
+  [\href{https://arxiv.org/abs/1912.10969}{{\ttfamily 1912.10969}}].
+
 \bibitem{Pope:1991ig}
 C.N.~Pope, \emph{{Lectures on W algebras and W gravity}},  in \emph{{Summer
   School in High-energy Physics and Cosmology}}, pp.~827--867, 12, 1991
