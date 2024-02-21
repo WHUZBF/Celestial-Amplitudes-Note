@@ -120,18 +120,18 @@
 \contentsline {subsubsection}{\numberline {48.6.2}Conformal basis of massive bosons}{124}{subsubsection.48.6.2}%
 \contentsline {subsection}{\numberline {48.7}Fermions}{125}{subsection.48.7}%
 \contentsline {subsubsection}{\numberline {48.7.1}Spinors in arbitrary dimensions}{125}{subsubsection.48.7.1}%
-\contentsline {subsubsection}{\numberline {48.7.2}Conformal basis of Dirac spinor}{127}{subsubsection.48.7.2}%
-\contentsline {subsection}{\numberline {48.8}Examples}{128}{subsection.48.8}%
+\contentsline {subsubsection}{\numberline {48.7.2}Conformal basis of Dirac spinor}{128}{subsubsection.48.7.2}%
+\contentsline {subsection}{\numberline {48.8}Examples}{129}{subsection.48.8}%
 \contentsline {subsubsection}{\numberline {48.8.1}ABC toy model}{129}{subsubsection.48.8.1}%
-\contentsline {subsubsection}{\numberline {48.8.2}$\mathcal {G}$luons}{129}{subsubsection.48.8.2}%
+\contentsline {subsubsection}{\numberline {48.8.2}$\mathcal {G}$luons}{130}{subsubsection.48.8.2}%
 \contentsline {section}{\numberline {49}Some properties of Conformal basis}{130}{section.49}%
 \contentsline {subsection}{\numberline {49.1}Kerr-Schild double copy}{130}{subsection.49.1}%
 \contentsline {subsection}{\numberline {49.2}Wyle double copy}{130}{subsection.49.2}%
 \contentsline {section}{\numberline {50}Celestial $\mathcal {A}$mplitudes}{130}{section.50}%
 \contentsline {subsection}{\numberline {50.1}$\mathcal {A}$mplitudes as Correlators}{130}{subsection.50.1}%
-\contentsline {subsubsection}{\numberline {50.1.1}Poincar\'e Symmetry}{130}{subsubsection.50.1.1}%
-\contentsline {subsubsection}{\numberline {50.1.2}Poincar\'e Constraints}{132}{subsubsection.50.1.2}%
-\contentsline {subsection}{\numberline {50.2}Ward Identity as Ka\v {c}-Moody Symmetry}{132}{subsection.50.2}%
-\contentsline {part}{第九部分\hspace {1em}CFT$_2$ on Torus}{133}{part.9}%
-\contentsline {part}{Appendix A: Surface Charge}{134}{part.9}%
-\contentsline {part}{参考文献}{137}{equation.50.20}%
+\contentsline {subsubsection}{\numberline {50.1.1}Poincar\'e Symmetry}{131}{subsubsection.50.1.1}%
+\contentsline {subsubsection}{\numberline {50.1.2}Poincar\'e Constraints}{133}{subsubsection.50.1.2}%
+\contentsline {subsection}{\numberline {50.2}Ward Identity as Ka\v {c}-Moody Symmetry}{134}{subsection.50.2}%
+\contentsline {part}{第九部分\hspace {1em}CFT$_2$ on Torus}{135}{part.9}%
+\contentsline {part}{Appendix A: Surface Charge}{136}{part.9}%
+\contentsline {part}{参考文献}{139}{equation.50.37}%

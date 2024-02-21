@@ -468,6 +468,18 @@ $\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成完备基底，其sh
 	$n=3,4$的情况请见文献中的讨论。
 \end{remark}
 下面来考虑$\Delta=2$的Goldstone模式：
+\begin{equation}
+	\widetilde{h_{\mu\nu;a}^{\Delta=2}}\equiv-X^2h_{\mu\nu;a}^{\Delta=2}=\partial_\mu\zeta_{\nu;a}+\partial_\nu\zeta_{\mu;a}
+\end{equation}
+其中Pure Gauge：
+\begin{equation}
+	\zeta_{\mu;a}\equiv-\frac1{24}\partial_a^3[X^\rho(q_\rho\partial_{\bar{a}}q_\mu-q_\mu\partial_{\bar{a}}q_\rho)\mathrm{log}(-q\cdot X)]
+\end{equation}
+把度规$h$在Bondi坐标下写出啦，就可以找到对应的Bondi News：
+\begin{equation}
+	\widetilde{N}_{zz;ww}^{\Delta=2}=\frac1{(z-w)^4}=D_z^3Y^z_{ww},\quad Y_{ww}^z\equiv-\frac1{6(z-w)}
+\end{equation}
+后面会看到它与CCFT上能动张量之间的联系。
 \subsection{Massive Bosons}
 文献\cite{Law:2020tsg}率先给出了有质量玻色子的分析。而且利用这一基底计算了一些振幅。为了总结结论，首先要介绍\cite{Costa:2011mg}中的Polynomial Encoding。
 \subsubsection{Polynomial encoding of symmetric traceless transverse tensors}
@@ -770,7 +782,7 @@ $\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成正交完备归一�
 	\widetilde{\mathcal{A}}(\Delta_i,z_i,\bar{z}_i)=\frac{gm^{2\Delta_2+\Delta_3-4}}{2^{2\Delta_2-\Delta_3-2}|z_{12}|^{2\Delta_2-2\Delta_3}}\int_0^\infty d\omega\frac{\omega^{\Delta_1-\Delta_2+\Delta_3-1}}{(m^2|z_{23}|^2+4|z_{12}|^2|z_{13}|^2\omega^2)^{\Delta_3}}
 \end{equation}
 最后让我们相信Mathematica 13$^\circledR$的计算能力：\sn{$B(\alpha,\beta)$是Beta函数}
-\begin{equation}
+\begin{equation}\label{48.132}
 	\begin{gathered}
 		\widetilde{\mathcal{A}}(\Delta_i,z_i,\bar{z}_i) =\frac{C(\Delta_1,\Delta_2,\Delta_3)}{|z_{12}|^{\Delta_1+\Delta_2-\Delta_3}|z_{13}|^{\Delta_1+\Delta_3-\Delta_2}|z_{23}|^{\Delta_2+\Delta_3-\Delta_1}}, \\
 		C(\Delta_{1},\Delta_{2},\Delta_{3}) =g\frac{m^{\Delta_1+\Delta_2-4}}{2^{\Delta_1+\Delta_2-1}}B\left(\frac{\Delta_{12}+\Delta_3}2,\frac{-\Delta_{12}+\Delta_3}2\right)
@@ -852,7 +864,7 @@ $\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成正交完备归一�
 	}
 \end{equation}
 动量守恒可以写成下面的算符形式：
-\begin{equation}
+\begin{equation}\label{50.7}
 	\boxed{
 		\mathcal{P}_\mu\widetilde{\mathcal{A}}_n=0,\quad\mathcal{P}_\mu\equiv\sum_{k=1}^nP_{\mu,k}
 	}
@@ -866,7 +878,7 @@ $\boxed{\Delta\in\frac{d}{2}+\mathrm{i}\mathbb{R}}$时构成正交完备归一�
 	\begin{aligned}L_0\mathcal{O}_{h,\bar{h}}&=2(z\partial_z+h)\mathcal{O}_{h,\bar{h}},\quad L_-\mathcal{O}_{h,\bar{h}}=\partial_z\mathcal{O}_{h,\bar{h}},\quad L_+\mathcal{O}_{h,\bar{h}}=(z^2\partial_z+2zh)\mathcal{O}_{h,\bar{h}},\\\bar{L}_0\mathcal{O}_{h,\bar{h}}&=2(\bar{z}\partial_{\bar{z}}+\bar{h})\mathcal{O}_{h,\bar{h}},\quad\bar{L}_-\mathcal{O}_{h,\bar{h}}=\partial_{\bar{z}}\mathcal{O}_{h,\bar{h}},\quad\bar{L}_+\mathcal{O}_{h,\bar{h}}=(\bar{z}^2\partial_{\bar{z}}+2\bar{z}\bar{h})\mathcal{O}_{h,\bar{h}}.\end{aligned}
 \end{equation}
 同样有Lorenz不变性带来的方程：
-\begin{equation}
+\begin{equation}\label{50.10}
 	\boxed{
 		\mathcal{L}_I\widetilde{\mathcal{A}}_n=\bar{\mathcal{L}_I}\widetilde{\mathcal{A}_n}=0,\quad \mathcal{L}_I=\sum_{k=1}^nL_{I,k},\quad\bar{\mathcal{L}}_I\equiv\sum_{k=1}^n\bar{L}_{I,k}
 	}
@@ -908,5 +920,83 @@ Lorenz不变性的限制在天球上就是global共形变换的限制，这一�
 \end{equation}
 上式对任意$\{J_i\}$的取值都成立，$I,J$是振幅的螺旋度指标，对$I_j,j=1,\ldots,n$的求和使用Einstein求和约定。同样，$M^{\mu\nu}$算符也要带上$I,J$指标变成矩阵，不过它的改变是trivial的，只需要乘上$\delta_{I,J}$就好了。文献\cite{Law:2020tsg}详细讨论了对称性对有质量自旋不为0粒子的散射振幅的限制，我们这里考虑比较简单的无质量情形\cite{Law:2019glh}。
 \subsubsection{Poincar\'e Constraints}
+\ref{50.7}的约束可以看作是一个线性方程组：
+\begin{equation}
+	Q\cdot X=0\quad\text{with}\quad Q=(q_1^\mu q_2^\mu...q_n^\mu),\quad X_j\equiv\epsilon_j\exp(\frac12\partial_{h_j}+\frac12\partial_{\bar{h}_j})A
+\end{equation}
+这个齐次线性方程组前面的系数矩阵是个$4\times n$的，考虑$n\leq 4$的情况，方程有非零解的情况只能是$\rank_r Q<n$，这等价于任取$Q$的$n$行出来构成行列式都要求其为$0$。而$Q$本身又是一个取值关于$q$连续的矩阵，所以最终会导致$\tilde{\mathcal{A}}$出现$\delta$函数。比如四点情况这要求：\sn{这只是其中一个解，其他解要求$\{z_i\}$中至少两个相同，这样的运动学比较特殊，下面的是更一般的，更吸引人的振幅。}
+\begin{equation}
+	\widetilde{\mathcal{A}}_4\propto\delta(z-\bar{z}),\quad z=\frac{z_{13}z_{24}}{z_{12}z_{34}},\quad\bar{z}=\frac{\bar{z}_{13}\bar{z}_{24}}{\bar{z}_{12}\bar{z}_{34}}
+\end{equation}
+下一步是利用\ref{50.10}，但实际上没必要直接用这个方程，这个方程体现到天球上就是全局共形不变性，共形场论告诉我们振幅被限制为下面的形式：\sn{无质量情况$z_i$和运动学对应比较简单，所以交比可以直接用Mandelstam变量表示为：\[z=-\frac ts,s=-(p_1+p_2)^2, t=-(p_1+p_3)^2\]}
+\begin{equation}
+	\widetilde{\mathcal{A}}_4=K_{h_i,\bar{h}_i}(z_i,\bar{z}_i)\delta(z-\bar{z})f^{h_i,\bar{h}_i}(z,\bar{z})
+\end{equation}
+其中：
+\begin{equation}
+	K_{h_i,\bar{h}_i}(z_i,\bar{z}_i)=\prod_{i<j=1}^4z_{ij}^{h/3-h_i-h_j}\bar{z}_{ij}^{\bar{h}/3-\bar{h}_i-\bar{h}_j},\quad h=\sum_{i=1}^4h_i,\quad\bar{h}=\sum_{i=1}^4\bar{h}_i
+\end{equation}
+共形场论到这一步就无法继续走下去了，但我们的振幅并非只有$SL(2,\mathbb{C})$的共形对称性，它的对称性是更大的Poincar\'e对称性，所以依赖于交比的函数$f^{h_i,\bar{h}_i}(z,\bar{z})$应该能被进一步确定。重新代入动量守恒\ref{50.7}：\sn{这里下标的意思是某一个$h_i,\bar h_i$增加$\frac{1}{2}$}
+\begin{equation}\label{50.22}
+	\sum_{j=1}^4K_{h_j+\frac12,\bar{h}_j+\frac12}(z_i,\bar{z}_i)f^{h_j+\frac12,\bar{h}_j+\frac12}(z,\bar{z})=0
+\end{equation}
+直接计算得知：
+\begin{equation}
+	\sum_{j=1}^4K_{h_j+\frac12,\bar{h_j}+\frac12}(z_i,\bar{z_i})=0
+\end{equation}
+很容易想到\ref{50.22}第一个非平庸解：\sn{更细致分析表明也只需要想到这个}
+\begin{equation}
+	f^{h_i+\frac12,\bar{h}_i+\frac12}(z,\bar{z})=f^{h_j+\frac12,\bar{h}_j+\frac12}(z,\bar{z}),\quad\forall i,j
+\end{equation}
+这表明$f$作为$\{\Delta_i=h_i+\bar h_i\}$的函数，$\{\Delta_i\}$只能以$\sum_i^4\Delta_i$的形式依赖于$f$：
+\begin{equation}
+	f^{h_i,\bar{h}_i}(z,\bar{z})=f^{\beta,J_i}(z,\bar{z}),\quad\beta=\sum_{i=1}^4(h_i+\bar{h}_i)=\sum_{i=1}^4\Delta_i
+\end{equation}
+$J_i=h_i-\bar h_i$是已知的螺旋度。或者$\Delta_i$单独依赖于$f$，但是必须具有$1$的周期。但是这种情况根据Mellin变换所要求的收敛性，其导致$f$要么是个常数，要么就不是解析的，所以我们不用考虑这种情况\cite{Law:2019glh}。
+\begin{remark}
+	考虑下面更一般的方程：
+	\begin{equation}
+		e^{\partial_{z_i}}f(z_1,z_2,...,z_n)=e^{\partial_{z_j}}f(z_1,z_2,...,z_n)\quad\text{for all pairs}\quad i\neq j,i,j\in\{1,...,n\}
+	\end{equation}
+	比如第一个约束：
+	\begin{equation}
+		f(z_1+1,z_2,...)=f(z_1,z_2+1,...)
+	\end{equation}
+	任何的函数$f(x,y,\ldots)$总是可以重定义为$\tilde f(x+y,y,\ldots)$：
+	\begin{equation}
+		\tilde{f}(z_1+z_2+1,z_2,...)=\tilde{f}(z_1+z_2+1,z_2+1,...)
+	\end{equation}
+	这其实就是在说函数$f$最终可以整理为$z_1+z_2$的函数，而剩下的那些$z_2$的以来只能是周期为$1$的依赖。这样的构造可以一直持续下去，最终可以说明$f$可以整理为$z_1+\cdots z_n$的函数，剩下的$z_2,\ldots ,z_n$只能是周期为$1$的变量。前面的构造是从$z_1$开始一直进行下去的，你也可以从$z_2$开始进行构造，最终说明$f$是$z_1+\cdots z_n$的函数，剩下的$z_1,z_3\ldots ,z_n$周期为$1$。这样最终就说明了所有的$z_i$要么是以求和的整体形式依赖于$f$，要么就是周期形式依赖。
+\end{remark}
 
+再举一个两个无质量粒子和一个有质量粒子的情况，Lorentz不变性限制为：
+\begin{equation}
+	\widetilde{\mathcal{A}}(1,2,3^{(m)})=\frac{C^J(\Delta_1,\Delta_2,\Delta_3)}{|z_{12}|^{\Delta_1+\Delta_2-\Delta_3}|z_{23}|^{\Delta_2+\Delta_3-\Delta_1}|z_{13}|^{\Delta_1+\Delta_3-\Delta_2}}
+\end{equation}
+分子可以用动量守恒：
+\begin{equation}
+	\left(P_1+P_2+P_3^{(m)}\right)\widetilde{\mathcal{A}}_3(1,2,3^{(m)})=0
+\end{equation}
+继续去限制住：
+\begin{equation}
+	\begin{aligned}
+		\left(\frac{\Delta_{12}^2}4-\frac{(\Delta_3-1)^2}4\right)C_{\Delta_1,\Delta_2,\Delta_3-1}+\Delta_3(\Delta_3-1)C_{\Delta_1,\Delta_2,\Delta_3+1}& =0,  \\
+		\begin{aligned}4\epsilon_2(\Delta_3-1)C_{\Delta_1,\Delta_2+1,\Delta_3}+m\epsilon_3(\Delta_3-1-\Delta_{12})C_{\Delta_1,\Delta_2,\Delta_3-1}\end{aligned}& =0,  \\
+		4\epsilon_1(\Delta_3-1)C_{\Delta_1+1,\Delta_2,\Delta_3}+m\epsilon_3(\Delta_3-1+\Delta_{12})C_{\Delta_1,\Delta_2,\Delta_3-1}& =0, \\
+		\Delta_i-\Delta_j&\equiv \Delta_{ij}.
+	\end{aligned}
+\end{equation}
+为了化简这个方程，可以在$C$中提出一个Beta函数：
+\begin{equation}
+	C_{\Delta_1,\Delta_2,\Delta_3}^J=\left(\frac m2\right)^{\Delta_1+\Delta_2}\cdot B\left(\frac{\Delta_1-\Delta_2+\Delta_3}2,\frac{\Delta_2-\Delta_1+\Delta_3}2\right)c^J_{\Delta_1,\Delta_2,\Delta_3}
+\end{equation}
+其中$c^J_{\Delta_1,\Delta_2,\Delta_3}$是新的未知变量，代入方程后满足：\sn{已经利用$\epsilon_{1}=\epsilon_{2}=-\epsilon_{3}$，也就是说要么入射只有有质量粒子，要么出射只有有质量粒子，这也是动力学所允许的情况。}
+\begin{equation}
+	\begin{aligned}c^J_{\Delta_1,\Delta_2,\Delta_3-1}&=c^J_{\Delta_1,\Delta_2,\Delta_3+1}\\c^J_{\Delta_1+1,\Delta_2,\Delta_3}&=c^J_{\Delta_1,\Delta_2+1,\Delta_3}\\c^J_{\Delta_1+1,\Delta_2,\Delta_3}&=c^J_{\Delta_1,\Delta_2,\Delta_3-1}\end{aligned}
+\end{equation}
+再次出现了周期性依赖，按照前面的argue，这种依赖会导致非解析性从而逆Mellin变换不是Well-define的，所以为了让逆Mellin变换Well-define，只能让它关于$\{\Delta_i\}$的依赖是常数：
+\begin{equation}
+	c^J_{\Delta_1,\Delta_2,\Delta_3-1}=c^J
+\end{equation}
+当然，不同螺旋度，以及不同的理论导致的耦合常数会使得$c$有些差别，对比直接根据Mellin变换得到的\ref{48.132}，$c^{J=0}=\frac{2g}{m^4}$。我们从对称性就直接确定了振幅，剩下的前面的系数就是量纲分析，终究只是个Scaling的系数。
 \subsection{Ward Identity as Ka\v{c}-Moody Symmetry}
