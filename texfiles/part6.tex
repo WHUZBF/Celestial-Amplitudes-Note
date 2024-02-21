@@ -1676,8 +1676,107 @@ Virasoro初级场有Ward恒等式限制它们之间的关联函数形式，同�
 \end{remark}
 
 \section{Example: Highest Weight Representations of $\widehat{\mathfrak{su}}(2)_{k}$ }
+ $\widehat{\mathfrak{su}}(2)_{k}$流代数和我们熟悉的角动量系统非常接近，首先按照下面的方式构造出流中的上升下降算符：
+ \begin{equation}
+ 	\hat{j}_m^3=\frac1{\sqrt{2}}~j_m^3~,\quad\quad\hat{j}_m^\pm=\frac1{\sqrt{2}}~\left(j_m^1\pm i~j_m^2\right)
+ \end{equation}
+满足对易关系：
+\begin{equation}
+	\left[\hat{j}_m^3,\hat{j}_n^3\right]=\frac{mk}2\delta_{m+n,0},\quad\left[\hat{j}_m^3,\hat{j}_n^\pm\right]=\pm\hat{j}_{m+n}^\pm,,\quad\left[\hat{j}_m^+,\hat{j}_n^-\right]=km\delta_{m+n,0}+2\hat{j}_{m+n}^3
+\end{equation}
+前面就提到过$\{j_0\}$生成无中心荷的$\mathfrak{su}(2)$子代数，而且不难看到$L_0$和他们是对易的，所以现在$L_0$的$h$模是简并的，简并态构成的子空间是$\mathfrak{su}(2)$子代数的表示空间，这个表示空间还不只有一个不等价不可约表示，可能是很多不等价不可约表示直和起来构造出的更大的空间。所以现在最高权应该有两个指标标记，一个指标是其共形权$h$，表示其能量$L_0$，最高的含义依旧是：
+\begin{equation}
+	L_0\ket{h}=h\ket{h,q},\quad L_n\ket{h,q}=0,\quad \forall n>0
+\end{equation}
+第二个标记$q$是在说其处于哪个$\mathfrak{su}(2)$的表示，$\mathfrak{su}(2)$群的表示可以用自旋$l=0,\frac{1}{2},1,\ldots$去标记，而我们这里关心的是最高权，所以它在$\mathfrak{su}(2)$的表示中也是最高的那个，也就是$m=l$，这里我们设$q=2l\in\mathbb{Z}^+_0$。另外它作为最高权还要类似$L_{-n}$湮灭一样被$j^a_{-n}$湮灭：
+\begin{equation}
+	\begin{aligned}\hat{j}_n^3\left|h,q\right\rangle&=\hat{j}_n^\pm\left|h,q\right\rangle=0\quad\text{for }n>0\\\hat{j}_0^3\left|h,q\right\rangle&=\frac{q}{2}\left|h,q\right\rangle,\\\hat{j}_0^+\left|h,q\right\rangle&=0.\end{aligned}
+\end{equation}
+这些条件合起来就定义了一个最高权表示，与Virasoro代数不同，初级态不止包含这些最高权，实际上它应该包含所有$h$模简并的态，或者说我们要用$\hat {j}_0^\pm$继续在$\mathfrak{su}(2)$的自旋$q/2$表示中升降把表示空间构造全：\sn{再次强调按照定义这些$\alpha\neq 0$的态不是最高权，它们在$\mathfrak{su}(2)$的表示下不是最高的。}
+\begin{equation}
+	\left|h,q_\alpha\right\rangle:=\left(\hat{j}_0^-\right)^\alpha\left|h,q\right\rangle ,\quad \alpha =0,1,2,\ldots,q
+\end{equation}
+这就对应于前面Ka\v{c}\mbox{-}Moody初级场的$\ket{h,q_\alpha}$，显然从这个构造就可以看出来$\ket{h,q_\alpha}$张成$\mathfrak{su}(2)$的一个表示。利用Sugawara构造得知：
+\begin{equation}
+	L_0=\frac1{2\left(k+2\right)}\sum_{a=1}^3\left(\sum_{l\leq-1}j_{+l}^aj_{-l}^a+\sum_{l>-1}j_{-l}^aj_{+l}^a\right)
+\end{equation}
+由此可计算$\ket{h,q}$关于$L_0$的本征值：
+\begin{equation}
+	\begin{aligned}
+		L_{0}\left|h,q\right\rangle & =\frac1{2\left(k+2\right)}\sum_{a=1}^{3}j_{0}^{a}j_{0}^{a}\left|h,q\right\rangle   \\
+		&=\frac1{k+2}\sum_{a=1}^3\hat{j}_0^a\hat{j}_0^a\left|h,q\right\rangle=\frac{q(q+2)}{4(k+2)}\left|h,q\right\rangle 
+	\end{aligned}
+\end{equation}
+计算的最后利用了$j_0^aj_0^a$是$\mathfrak{su}(2)$的Casimir算符。但是我们又知道本征值应该为$h$，所以$L_0$的谱和允许的表示之间是有关联的，要求：
+\begin{equation}
+	\boxed{
+		h=\frac{q(q+2)}{4(k+2)}
+	}
+\end{equation}
+而$q\in\mathbb{Z}^+_0$，所以理论中的谱可取值被极大限制住了，这也再次说明了这个模型是个RCFT。上面做的这些实际上是在考虑$\widehat{\mathfrak{su}}(2)_k$的非常特殊的一个$\mathfrak{su}(2)$子群，其实这样的子群有无数多个$\mathfrak{su}(2)_{(n)}\subset\widehat{\mathfrak{su}}(2)_k$：\sn{\[\begin{aligned}
+		&\left[L_0,\widetilde{j}^{\pm}_{(n)}\right]=\mp n\widetilde{j}^{\pm}_{(n)}\\
+		&\left[\widehat{j}_0^3,\widetilde{j}^{\pm}_{(n)}\right]=\pm \widetilde{j}^{\pm}_{(n)}
+	\end{aligned}\]
+所以$h$的增加以1为单位，$q$的增加以2为单位}
+\begin{equation}
+	\boxed{
+		\begin{aligned}
+			&\widetilde{j}_{(n)}^+ =\frac1{\sqrt{2}}\left(j_{-n}^1+i~j_{-n}^2\right),  \\
+			&\widetilde{j}_{(n)}^- =\frac1{\sqrt{2}}\left(j_{+n}^1-i~j_{+n}^2\right),  \\
+			&\widetilde{j}_{(n)}^{3} =\frac1{\sqrt{2}}~j_0^3-\frac{n~k}2~, 
+		\end{aligned}
+	}
+\end{equation}
+首先考虑$\mathfrak{su}(2)_{(1)}$，计算$j^+_{(1)}\ket{h,q}$的模：
+\begin{equation}
+	\begin{aligned}
+		\langle h,q\mid\tilde{j}^{-}_{(1)}\tilde{j}^{+}_{(1)}\big|h,q\big\rangle & =\langle h,q\mid\begin{bmatrix}\tilde{j}^-_{(1)},\tilde{j}^+_{(1)}\end{bmatrix}\big|h,q\big\rangle   \\
+		&=\langle h,q\mid-2\tilde{j}^3\mid h,q\rangle  \\
+		&=-2\bra{h,q}j_0^3-\frac k{2}\ket{h,q} \\
+		&=-q+k
+	\end{aligned}
+\end{equation}
+而我们如果考虑幺正表示，所有的谱模应当正定，所以$q\leq k$。
+\begin{theorem}
+	$\widehat{\mathfrak{su}}(2)_k$最高权表示幺正要求$\boxed{0\leq q\leq k}$。
+\end{theorem}
+我们只说明了必要性，请相信它也是充分的。现在考虑其他$\mathfrak{su}(2)_{(n)}$。现在考虑具体的$k=1$的简单情形，考虑$\ket{0,0}$这个最高权，反复作用$\widetilde{j}_{(n)}^\pm$去构造表示空间中的其它态，表示空间中的向量我们仍用本征值$h,q$标记，但是它们不是最高权，所以前面的一些约束都没有了。最高权表示对应的初级态$\ket{h,q_\alpha}$相对$\widetilde{\mathfrak{su}}(2)_{(0)}$处在自旋$q/2$表示中，自然想到把这些初级态作用$\widetilde{j}_{(n)}^\pm$之后应该是别的$\widetilde{\mathfrak{su}}(2)_{(n)}$子群的表示。
+
+比如$\tilde{j}_{(1)}^3\ket{0,0}=-\frac{1}{2}\ket{0,0}$，而且$\tilde{j}_{(1)}^-\ket{0,0}=0$，所以$\{\ket{0,0},\tilde{j}_{(1)}^+\ket{0,0}=\ket{0,0}\}$处于$\widetilde{\mathfrak{su}}(2)_{(1)}$的自旋$1/2$表示，对应$(h,q)=\{(0,0),(1,2)\}$。
+
+$\tilde{j}_{(2)}^3\tilde{j}_{(1)}^+|0,0\rangle =0$且$\tilde{j}_{(2)}^+\tilde{j}_{(1)}^+|0,0\rangle =0$，所以$\tilde{j}_{(1)}^+|0,0\rangle $又处在$\widetilde{\mathfrak{su}}(2)_{(2)}$的自旋$0$表示。$\{\tilde{j}_{(1)}^+|0,0\rangle ,\tilde{j}_{(3)}^{+}\tilde{j}_{(1)}^{+}|0,0\rangle \}$又张成$\mathfrak{su}(2)_{(3)}$的自旋$1/2$表示，对应$(h,q)=\{(0,0),(4,4)\}$。可见，由于这些不同$n$对应$\tilde{j}_{(n)}^\pm$的是不对易的，所以这些表示是以某种方式“纠缠”在一起的。这个过程可以无限进行下去，我们得到权图\ref{fig17}。
+\begin{figure}
+	\centering
+	\includegraphics{figs/fig17.pdf}
+	\caption{这些黑点表示作用$\widetilde{j}^\pm_{(n)}$可以得到的态，实心箭头表示用roots升降权，空心箭头表示作用任何一个root上去都得0}
+	\label{fig17}
+\end{figure}
+
+这个权图是有边界的，边界为$(h,q)=(m^2,2m),m\in\mathbb{Z}$。这些边界才是真正要紧的，构造次级态就看它们，就$\widehat{\mathfrak{su}}(2)_1$而言，知道了边界的那些态，就足够构造整个希尔伯特空间，下面从玻色子的想法来说明。
+
+玻色子体系是有$\widehat{\mathfrak{su}}(2)_1$代数的，具体而言可以由$R=\sqrt{2}$上的紧致化实现：\sn{后面的$(h,q)$表示场对应的态所对应的$L_0,\widehat{j}^3_0$本征值}
+\begin{equation}
+	\begin{aligned}j(z)&=i\partial X(z,\overline{z})&\left(h,q\right)&=\left(1,0\right),\\V_{\pm\sqrt{2}}&=:e^{\pm i\sqrt{2}X}:&\left(h,q\right)&=\left(1,\pm2\right)\end{aligned}
+\end{equation}
+前面提到过还应存在初级场：
+\begin{equation}
+	V_{\pm\sqrt{2}m}=:e^{\pm i\sqrt{2}mX}:\quad (h,q)=(m^2,\pm 2m)
+\end{equation}
+似乎这些场就能对应到权图上面的边界态，其实这是可以严格证明的。根据这一点，由玻色场希尔伯特空间$j_{-n}\ket{\alpha}$的启发，用边界态作用$j_{-n}$上去应该就能得到$\widehat{\mathfrak{su}}(2)_1$模型完整的$\ket{0,0}$最高权表示表示空间了。每个态上面的简并度也可以很方便地用生成函数表达为：\sn{$q^h$前面的系数表示$L_0$的本征值为$h$的本征空间的简并度}
+\begin{equation}
+	\boxed{
+		\mathcal{Z}_{0,1}(q)=\frac1{\prod_{n=1}^\infty\left(1-q^n\right)}\sum_{m\in\mathbb{Z}}q^{m^2}
+	}
+\end{equation}
+另外还有一个$q=1,h=1/4$的最高权表示，也可以类似的做，得到生成简并度的生成函数：
+\begin{equation}
+	\boxed{
+		\mathcal{Z}_{1,1}(q)=\frac1{\prod_{n=1}^\infty\left(1-q^n\right)}\sum_{m\in\mathbb{Z}}q^{(m+\frac 1{2})^2}
+	}
+\end{equation}
+这两个函数在构造环面上的$\mathcal{S}^1_{\sqrt{2}}$自由玻色子的配分函数很有用。
 \section{Coset Construction}
-WZW Moldels 核心是理论的那些流，这正是极小模型欠缺的，但似乎两个WZW模型的“商”可以和极小模型联系起来。更广点说，配集构造试图完全分类RCFT，本节做些最基本的介绍。
+WZW Moldels 核心是理论的那些流，这正是极小模型欠缺的，但似乎两个WZW模型的“商”可以和极小模型联系起来。更广点说，陪集构造试图完全分类RCFT，本节做些最基本的介绍。
 
 考虑一个定义在$\hat{\mathfrak{g}}_{k_{\mathfrak{g}}}$上的WZW模型，考虑子代数$\mathfrak{h}\subset{\mathfrak{g}}$，这个子代数仿射化为$\hat{\mathfrak{h}}_{k_{\mathfrak{h}}}$后也可定义一个WZW模型。注意这里的$k_{\mathfrak{h}}$和$_{\mathfrak{g}}$是有关系的，成正比$k_{\mathfrak{h}}=x_ek_{\mathfrak{g}}$，这里的$x_e$是\textbf{Embedding index}。两个WZW模型的能动张量可以用Sugawara构造构造出来：
 \begin{equation}
@@ -1711,7 +1810,7 @@ WZW Moldels 核心是理论的那些流，这正是极小模型欠缺的，但�
 \begin{remark}
 	理论的流是那些和$\hat{\mathfrak{h}}_{k_\mathfrak{g}}$中的流OPE非奇异的，这也符合“商掉”的naive想法。注意我们这里称为陪集\textbf{陪集}构造，因为只有在$\mathfrak{h}$是理想的时候这个商才是个李代数，所以构造出来的CFT一般不是一个WZW模型。这恰巧是非常重要的，用WZW模型可以构造出新的物理！
 \end{remark}
-\subsubsection{Back to unitary minimal models}
+\subsection{Back to unitary minimal models}
 经常要涉及到的一类陪集构造是$(\hat{\mathfrak{g}}_{k_1}\oplus\hat{\mathfrak{g}}_{k_2})/\hat{\mathfrak{g}}_k$，称为\textbf{diagonal coset models}。$\hat{\mathfrak{g}}_{k_i}$里面的流是$j^a_{(i)}$，那么$\hat{\mathfrak{g}}_{k_1}\oplus\hat{\mathfrak{g}}_{k_2}$里面的流就是：
 \begin{equation}
 	j^{ab}=j_{(1)}^a+j_{(2)}^b,\quad [j_{(1)}^a,j_{(2)}^b]=0
@@ -1741,7 +1840,7 @@ $j_{\mathrm{diag}}$仍旧满足Ka\v{c}-Moody代数：
 	c=\frac{3k}{k+2}+1-\frac{3\left(k+1\right)}{k+3}=1-\frac6{(k+2)(k+3)}
 \end{equation}
 这正是unitary minimal models的中心荷，而且你无法找到与所有的$j_{\mathrm{dia}}$都对易的$j^{ab}$，所以理论中是没有守恒流的，这也正是极小模型的特征，它只有Virasoro对称性。严格证明这两个的等价性非常复杂，但是这里指出两者是完全一致的！
-\subsubsection{Branching Rules}
+\subsection{Branching Rules}
 前面我们只说了GKO构造之后的理论有哪些流，问有哪些谱就要去想最高权表示，由于原先大的WZW模型分成了两个正交的模型，所以我们自然觉得原先WZW模型的最高权表示现在在更小的两个群下看是可约的，应该会被分解为若干个$\mathfrak{g}/\mathfrak{h}$和$\mathfrak{h}$的最高权表示的直积。
 \begin{equation}
 	\left(\lambda_\mathfrak{g}\right)=\bigoplus_{\lambda_\mathfrak{h}}\left(\lambda_\mathfrak{h}\right)\otimes\left(\lambda_{\mathfrak{g}/\mathfrak{h}}\right)
@@ -1753,3 +1852,5 @@ $j_{\mathrm{diag}}$仍旧满足Ka\v{c}-Moody代数：
 这里$\epsilon=0,1,m=k+2,0\leq(p-1)\leq k$，$(l)_k$意思是$\widehat{\mathfrak{su}}(2)_k$的自旋$\frac{l}{2}$最高权表示。上世纪粒子物理研究很多都在干各种群表示分解，文献\cite{Slansky:1981yr}就总结的很到位，另外还有比如LieART\cite{Feger:2012bs,Feger:2019tvk}这种Mathematica$^\circledR$程序包可以很方便地进行计算。
 \section{$\mathcal{W}$ Algebras}
 本节主要参考\cite{Pope:1991ig}。
+
+\section{Liouville theory}
