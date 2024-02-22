@@ -1775,6 +1775,19 @@ $\tilde{j}_{(2)}^3\tilde{j}_{(1)}^+|0,0\rangle =0$且$\tilde{j}_{(2)}^+\tilde{j}
 	}
 \end{equation}
 这两个函数在构造环面上的$\mathcal{S}^1_{\sqrt{2}}$自由玻色子的配分函数很有用。
+\subsection{$\widehat{\mathfrak{so}}(\mathrm{N})_1$ Current Algebra}u
+前面一直在玩玻色子，也体会到了它加上各种边界条件可以实现$\widehat{\mathfrak{su}}$，费米子对应的实际上是$\widehat{\mathfrak{so}}$流代数。考虑$N$个自由费米子，作用量在$\psi_i\mapsto O_{ij}\psi_j$的作用下不变，其中$O_{ij}\in SO(N)$属于其基本表示之中。仿照前面玻色化那里定义的流，可以非abel推广到：\sn{前面玻色化那里两个费米子有个$SO(2)$对称性，是abel的，对应$t_{ij}=\epsilon_{ij}$}
+\begin{equation}
+	j^a(z)=\gamma N(\mathrm{~}\psi^it_{ij}^a\psi^j)
+\end{equation}
+选取归一化$\Tr(t^a t^b)=2\delta^{ab}$。归一化系数$\gamma$可以用wick定理求$jj$ OPE得到：
+\begin{equation}
+	j^a(z)j^b(w)=\gamma^2\frac{2\Tr (t^at^b)}{(z-w)^2}+2\gamma\frac{if^{abc}}{z-w}j^c(w)+\cdots
+\end{equation}
+所以要求$\gamma =\frac{1}{2}$，而且这意味着$k=1$，所以确实实现了$\widehat{\mathfrak{so}}(\mathrm{N})_1$流代数。利用Sugawara构造就可以很方便得到理论的能动张量，对应的中心荷由\ref{38.8}给出：
+\begin{equation}
+	c=\frac{1\cdot \frac{N(N-1)}{2}}{1+N-1}=\frac{N}{2}
+\end{equation}
 \section{Coset Construction}
 WZW Moldels 核心是理论的那些流，这正是极小模型欠缺的，但似乎两个WZW模型的“商”可以和极小模型联系起来。更广点说，陪集构造试图完全分类RCFT，本节做些最基本的介绍。
 

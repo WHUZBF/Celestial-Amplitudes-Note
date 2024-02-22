@@ -26,10 +26,23 @@ Yang-Mill理论的拉氏量为：
 	\mathcal{L}=\mathrm{Tr}\left(-\frac12\partial_{\mu}A_{\nu}\partial^{\mu}A^{\nu}-i\sqrt{2}g\partial^{\mu}A^{\nu}A_{\nu}A_{\mu}+\frac{g^2}4A^{\mu}A^{\nu}A_{\nu}A_{\mu}\right)
 \end{equation}
 
-QCD过程复杂的是顶角函数都会含有色因子，从费曼规则上看他们是和动力学参数动量这些耦合在一起的，这导致最终计算上除了运动学，还要关注色因子求和，非常麻烦。但是在树图阶，色和动力学是解耦的，问题的关键在于下面的完备性关系：
+QCD过程复杂的是顶角函数都会含有色因子，从费曼规则上看他们是和动力学参数动量这些耦合在一起的，这导致最终计算上除了运动学，还要关注色因子求和，非常麻烦。但是在树图阶，色和动力学是解耦的，问题的关键在于下面的完备性关系：\sn{在基本表示下成立，不过QCD就是取的基本表示}
 \begin{equation}
 	(T^a)_i^j(T^a)_k^l={\delta_i}^l{\delta_k}^j-\frac1N{\delta_i}^j{\delta_k}^l
 \end{equation}
+\begin{remark}
+	这个完备性关系可以用下面形象的图表达：
+	\begin{figure}[H]
+		\centering
+		\includegraphics{figs/fig18.pdf}
+	\end{figure}
+	粗黑点表示一个生成元矩阵，胶子线表示色因子求和，外线表示矩阵下标，相连表示求和。这种类似Penrose张量图示的方法非常直观，甚至书籍\cite{cvitanovic_group_2008}就全篇用这个记号讲群论。比如下面的化简就可以用图的方法证明：
+	\begin{figure}[H]
+		\centering
+		\includegraphics{figs/fig19.pdf}
+	\end{figure}
+	\cite{Gelis:2019yfm}用这种图证明了四点情况的色因子分解。
+\end{remark}
 由此可以把任意树图阶振幅写成下面的形式：
 \begin{equation}
 	\mathcal{A}_n^{\mathrm{full,tree}}=g^{n-2}\sum_{\sigma\in\mathfrak{S}_n/\mathbb{Z}_n}\operatorname{tr}\Big(T^{a_{\sigma(1)}}\cdots T^{a_{\sigma(n)}}\Big)A_n(\sigma(1)\cdots\sigma(n))
