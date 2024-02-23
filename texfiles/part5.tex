@@ -132,7 +132,7 @@ $S_M$是物质场的作用量，但是是在弯曲时空中的，可以使用最
 考虑最低阶修正，也就是只保留极点，得到：
 \begin{equation}\label{eq:21.4}
 	\boxed{
-	\mathcal{A}(p,q)=\left[\sum_{i}\eta_iQ_{i}\frac{\epsilon(q)\cdot p_{i}}{q\cdot p_{i}}\right]\mathcal{A}(p)}+\mathcal{O}(1)
+		\mathcal{A}(p,q)=\left[\sum_{i}\eta_iQ_{i}\frac{\epsilon(q)\cdot p_{i}}{q\cdot p_{i}}\right]\mathcal{A}(p)+\mathcal{O}(1)}
 \end{equation}
 其中对于入射粒子$\eta_i=-1$，出射粒子为$+1$。QED中辐射出光子的振幅都可以拆分成$\epsilon(q)_\mu \mathcal{M}^\mu$，振幅是相对论不变量，但是我们虽然常说$\epsilon(q)_\mu$是极化矢量，但它并不是真正意义上的矢量，因为其在lorentz变换下并不协变，而是会多出来一个正比于$q$的项\sn{我们是在Lorentz变换的意义下理解，其实矢量的这种变换完全可以理解为规范选取不同，从而从振幅的规范不变性导出结果。\cite{srednicki}}\cite{Weinberg}。为了让振幅是相对论不变量，必须有：
 \begin{equation}\label{eq:21.5}
@@ -412,7 +412,7 @@ $\mathcal{I}^-$处类似。但这个规范选取就如库伦规范$\nabla\cdot \
 	\end{aligned}
 \end{equation}
 最后等于0是因为$F_{z\bar z}|_{\mathcal{I}_{+}^{\pm}}=0$，本质上是因为没有磁单极子，磁场不是long-range的，在无穷远处为0\sn{因为$F_{z\bar z}=\frac{\partial x^{\mu}}{\partial z}\frac{\partial x^{\nu}}{\partial\bar{z}}F_{\mu\nu}=\frac{\partial x^{i}}{\partial z}\frac{\partial x^{j}}{\partial\bar{z}}F_{ij}$，而规范场强的空间分量$F_{ij}$只和磁场有关。}。所以$N_z$无旋，可以由此引申出一个实标量场$N$作为其原函数：
-\begin{equation}
+\begin{equation}\label{eq:23.20}
 	N_z\equiv e^2\partial_zN=\int_{-\infty}^{\infty}duF_{uz}^{(0)}=A_{z}^{(0)}|_{\mathcal{I}_{+}^{+}}-A_{z}^{(0)}|_{\mathcal{I}_{-}^{+}}
 \end{equation}
 利用$N$，future charges可以写成下面简洁形式：
@@ -899,7 +899,7 @@ ds^2=-d\tau^2+\tau^2\left[\frac{d\rho^2}{1+\rho^2}+\rho^2d\Omega_2^2\right]
 \end{equation}
 从物理上讲，我们可以认为这个荷由large gauge对hard粒子的作用生成，再利用$b,b^\dagger$之间的对易关系就可以得到\ref{guess}。
 
-类似于\ref{eq:24.2}，可以得到：\sn{注意这里不使用上标in，out来标记出入射，螺旋度、电荷、能量的大小用$h,Q,p^0$表示，那么出射粒子的物理量为$-h,-Q,-p^0$}
+类似于\ref{eq:24.2}，可以得到：\sn{注意这里不使用上标in，out来标记出入射，螺旋度、电荷、能量的大小用$h,Q,p^0$表示，那么出射取正，入射粒子的物理量为$-h,-Q,-p^0$，也就是在前面加了个$\eta_n$被我们省略了}
 \begin{equation}
 	\begin{aligned}
 		\langle\mathrm{out}|Q_{\varepsilon}^{+}& =-2\int d^{2}w\partial_{\bar{w}}\varepsilon\langle\mathrm{out}|\partial_{w}N  \\
@@ -989,6 +989,70 @@ Strominger认为这应当是考虑了非微扰效应之后的软定理领头阶�
 另外一个比较重要的点，电荷那边的large gauge是$U(1)$ gauge的一个子群，常说$U(1)$ gauge不是symmetry，只是冗余自由度，要么没有守恒荷，要么构建出的守恒荷其实不守恒\footnote{我们讲对称性，首先要可以从Noether定理导出可观测的守恒荷，而且有相应的对物理态的对称变换。global的$U(1)$对称性确实non-trivial，是真正的symmetry，对应电荷守恒，这其实上无穷远处不归零已经有large gauge的影子了，但是local $U(1)$ 是trivial的，它导出电荷守恒并非是Noether定理的结论（回忆Nother定理的那些标记连续对称性的参数是global的而不是local的）。}，这些“symmetry”是trivial的，只是redundancy，并非渐近对称性，我们可以把通常所说的$U(1)$ gauge称为“bulk gauge”，而天球上的large gauge是真正的渐近对称性。对于QED的情况，large gauge是bulk gauge的子群，或者说非平庸的子群，但是磁荷这边就不一样了，上面通过对偶看出来的渐近对称性并不能看成bulk gauge的子群，毕竟都出现复化跑出$U(1)$了，所以通过这点可以看出，\textbf{并不是所有的渐近对称性都可以看作是bulk里的对称性的子群}
 \subsection{Non-Abelian gauge theory}
 不像其它定理到非阿贝尔情形就非常棘手，这一节的东西推广到非阿贝尔情形几乎是trivial的，下面顺着文献\cite{He:2015zea,Nande:2017dba}的思路来回顾一下。
+
+场强张量：
+\begin{equation}
+	\mathcal{F}_{\mu\nu}=\partial_\mu\mathcal{A}_\nu-\partial_\nu\mathcal{A}_\mu-i\left[\mathcal{A}_\mu,\mathcal{A}_\nu\right]=\mathcal{F}_{\mu\nu}^aT^a
+\end{equation}
+满足运动方程：\sn{取归一化\[f^{acd}f^{bcd}=\delta^{ab}=\operatorname{tr}\bigl[T^aT^b\bigr]\]}
+\begin{equation}
+	\nabla^\nu\mathcal{F}_{\nu\mu}-i\left[\mathcal{A}^\nu,\mathcal{F}_{\nu\mu}\right]=g_{YM}^2j_{\mu}^M
+\end{equation}
+有规范对称性：
+\begin{equation}
+	\delta_{\varepsilon}\mathcal{A}_{\mu}=\partial_{\mu}\varepsilon-i\left[\mathcal{A}_{\mu},\varepsilon\right],\quad\delta_{\varepsilon}\phi_{k}=i\varepsilon^{a}T_{k}^{a}\phi_{k},\quad\delta_{\varepsilon}j_{\mu}^{M}=-i\left[j_{\mu}^{M},\varepsilon\right]
+\end{equation}
+在$\mathcal{I}^{+}$处渐近展开：
+\begin{equation}
+	\begin{aligned}
+		&\mathcal{A}_z(u,r,z,\bar{z}) =A_z(u,z,\bar{z})+\mathcal{O}\left(\frac1r\right),  \\
+		&\mathcal{A}_r(u,r,z,\bar{z}) =\frac1{r^2}A_r(u,z,\bar{z})+\mathcal{O}\left(\frac1{r^3}\right),  \\
+		&\mathcal{A}_{u}(u,r,z,\bar{z}) =\frac1rA_u(u,z,\bar{z})+\mathcal{O}\left(\frac1{r^2}\right). 
+	\end{aligned}
+\end{equation}
+场强有下面的展开形式：
+\begin{equation}
+	\begin{gathered}
+		\mathcal{F}_{ur}=\frac1{r^2}F_{ur}+\mathcal{O}\left(\frac1{r^3}\right),\quad\mathcal{F}_{uz}=F_{uz}+\mathcal{O}\left(\frac1r\right),\quad\mathcal{F}_{z\bar{z}}=F_{z\bar{z}}+\mathcal{O}\left(\frac1r\right)\\
+		F_{ur}=\partial_{u}A_{r}+A_{u},\quad F_{uz}=\partial_{u}A_{z},\quad F_{z\bar{z}}=\partial_{z}A_{\bar{z}}-\partial_{\bar{z}}A_{z}-i\left[A_{z},A_{\bar{z}}\right]
+	\end{gathered}
+\end{equation}
+上面是纯粹的渐近分析，我们平时说的规范变换在无穷远处归0，这自然是保护前面场强的渐近展开的，但实际上还有下面的无穷远处不归0的large gauge变换也不会改变场强的渐近展开形式：
+\begin{equation}
+	\delta_\varepsilon A_z(u,z,\bar{z})=D_z\varepsilon(z,\bar{z})
+\end{equation}
+和前面QED的分析一样，不同的$\epsilon$标记了不同的真空，而且为了让散射是良定义的，在C-K时空下，必须要求：
+\begin{equation}
+	\left.A_z\right|_{\mathcal{I}_-^+}=\left.A_z\right|_{\mathcal{I}_+^-}
+\end{equation}
+Large Guage Symmetry 也只允许对角的那部分了：\footnote{注意这里$A,\epsilon$都应当理解为和$T^a$色因子求和之后的矩阵}
+\begin{equation}
+	\left.\varepsilon(z,\bar{z})\right|_{\mathcal{I}_-^+}=\left.\varepsilon(z,\bar{z})\right|_{\mathcal{I}_+^-}
+\end{equation}
+这是一个non-trivial的对称性，确实和QED一样会带来无穷多的守恒荷。守恒荷的非abel推广为：
+\begin{equation}
+	Q_\varepsilon^+=\frac1{g_{YM}^2}\int_{\mathcal{I}_-^+}\mathrm{tr}\left[\varepsilon*F\right]
+\end{equation}
+然后你就可以用Ward恒等式去建立与软定理之间的联系，更好说明问题的方式其实是直接在天球基底下把软定理写成Ka\v{c}\mbox{-}Moody Ward恒等式的形式。推迟到Part\ref{part8}再来做这件事情。
+
+现在先做一些准备工作，考虑一下非abel的软定理，这方面\cite{Schwartz:2014sze}$\S 36.3$是很不错的阅读材料。单个在壳软胶子出射到简单，考虑动量为$p_\gamma^\mu$，螺旋度为$\epsilon_\lambda(p_\gamma)$，色指标为$a$的软胶子出射，软定理可以表达为：
+\begin{equation}
+	\lim_{p_{\gamma}^{0}\to0^{+}}\left[p_{\gamma}^{0}\mathcal{M}^{a,\lambda}(p_{\gamma})\right]=g_{YM}\left[\sum_{k\in\text{out}}\frac{p_{k}\cdot\epsilon_{\lambda}(p_{\gamma})}{p_{k}\cdot\hat{p}_{\gamma}}T_{k}^{a}-\sum_{k\in\text{in}}\frac{p_{k}\cdot\epsilon_{\lambda}(p_{\gamma})}{p_{k}\cdot\hat{p}_{\gamma}}\left(T_{k}^{a}\right)^{*}\right]\mathcal{M}
+\end{equation}
+下标$k$表示第$k$个粒子以及其所处$SU(3)$群表示。上式可以写成CCFT上关联函数的形式：
+\begin{equation}\label{eq:28.24}
+	\begin{aligned}
+		\langle\mathcal{O}_{1}(p_{1})\cdots\mathcal{O}_{n}(p_{n})\mathcal{O}^{a}(q,\varepsilon)\rangle_{U=1}=& \begin{aligned}g_{YM}\sum_{k=1}^{n}\frac{p_{k}\cdot\varepsilon}{p_{k}\cdot q}\langle\mathcal{O}_{1}(p_{1})\cdots \end{aligned}  \\
+		&T_k^a\mathcal{O}_k(p_k)\cdots\mathcal{O}_n(p_n)\rangle_{U=1}+\mathcal{O}(q^0)
+	\end{aligned}
+\end{equation}
+其中假设所有粒子均出射，入射$T^a$要取共轭。这里说一下下标$U=1$的含义，在无穷远处规范场归0，$\mathcal{CS}^2$上会有一个平直联络$U_z=U\partial_z U^{-1},U\in\mathcal{G}$，$U=1$就对应平直联络trivial，这是微扰论中的选取，只有这样，才会让$\mathcal{CS}^2$上不同点的色的定义是一致的。前面软定理就是建立在微扰论上的，所以要这样选取。
+
+胶子同样会有Ward恒等式$q_\mu\mathcal{M}^\mu=0$，所以考虑将\ref{eq:28.24}中$\epsilon\mapsto q$，这导致不被禁闭的散射过程必有：
+\begin{equation}
+	\sum_{k=1}^n\langle\mathcal{O}_{1}(p_{1})\cdots T_k^a\mathcal{O}_k(p_k)\cdots\mathcal{O}_n(p_n)\rangle_{U=1}=0
+\end{equation}
+所以软胶子定理对应色守恒。
 \subsection{Higher dimensions}
 \subsection{$\mathcal{N}=1$ Super Symmetry}
 

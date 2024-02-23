@@ -1,4 +1,4 @@
-\part{Celestial $\mathcal{A}$mplitudes \& CCFT}
+\part{Celestial $\mathcal{A}$mplitudes \& CCFT}\label{part8}
 % 计数器清零，每个part都要引用，除了part1
 \setcounter{theorem}{0}
 \setcounter{definition}{0}
@@ -1000,3 +1000,118 @@ $J_i=h_i-\bar h_i$是已知的螺旋度。或者$\Delta_i$单独依赖于$f$，�
 \end{equation}
 当然，不同螺旋度，以及不同的理论导致的耦合常数会使得$c$有些差别，对比直接根据Mellin变换得到的\ref{48.132}，$c^{J=0}=\frac{2g}{m^4}$。我们从对称性就直接确定了振幅，剩下的前面的系数就是量纲分析，终究只是个Scaling的系数。
 \subsection{Ward Identity as Ka\v{c}-Moody Symmetry}
+软定理利用天球上的关联函数可以写成Ka\v{c}-Moody Ward恒等式的形式，这体现的是渐近对称性在CCFT上的作用。
+\subsubsection{Abelian Case}
+关注\ref{eq:24.5}，注意到$N$是未来类光无穷远处的算符，$N^-$是过去类光无穷远处的算符，所以等式左边夹在$\ket{in}$和$\bra{out}$之间的部分可以写成时间排序$\mathcal{T}\left[\left(\partial_zN-\partial_zN^-\right)\mathcal{S}\right]$，注意到\ref{eq:23.20}，可以定义全纯的流：
+\begin{equation}
+	J_z=-\frac{4\pi}{e^2}\left(N_z-N_z^-\right)=\frac{4\pi}{e^2}\bigl(\left.A_z^{(0)}\right|_{\mathcal{I}_-^+}+\left.A_z^{(0)}\right|_{\mathcal{I}_+^-}-\left.A_z^{(0)}\right|_{\mathcal{I}_-^-}-\left.A_z^{(0)}\right|_{\mathcal{I}_+^+}\bigr)
+\end{equation}
+则软定理\ref{eq:24.5}就可以写成下面的形式：
+\begin{equation}
+	\begin{aligned}
+		\langle J_z\mathcal{O}_1(\omega_1,z_1,\bar{z}_1)...\mathcal{O}_n(\omega_n,z_n,\bar{z}_n)\rangle & \begin{aligned}&\equiv\lim_{\omega\to0}\omega\langle\mathcal{O}^+(\omega,z,\bar{z})\mathcal{O}_1(\omega_1,z_1,\bar{z}_1)...\mathcal{O}_n(\omega_n,z_n,\bar{z}_n)\rangle\end{aligned}  \\
+		&=\sum_{k=1}^n\frac{Q_k}{z-z_k}\langle\mathcal{O}_1(\omega_1,z_1,\bar{z}_1)...\mathcal{O}_n(\omega_n,z_n,\bar{z}_n)\rangle.
+	\end{aligned}
+\end{equation}
+其中我们假设了所有的粒子都是出射，入射可以用交叉对称性去转换为出射粒子。注意到这正是\ref{38.11}的$U(1)$流代数Ward恒等式，电荷的不同标记处在$U(1)$的不同表示。\ref{eq:24.5}是出射为正螺旋度的软光子定理，对应一个全纯的$U(1)$流，自然可以完全类似的定义反全纯的部分，对应的就是出射为负螺旋度光子的软定理。
+
+还可以定义下面的Goldstone流\cite{Nande:2017dba}：
+\begin{equation}
+	S_z=\frac i4\left(\left.A_z^{(0)}\right|_{\mathcal{I}_+^+}+\left.A_z^{(0)}\right|_{\mathcal{I}_-^+}+\left.A_z^{(0)}\right|_{\mathcal{I}_+^-}+\left.A_z^{(0)}\right|_{\mathcal{I}_-^-}\right)
+\end{equation}
+在large gauge下的变换为：
+\begin{equation}
+	\delta_\varepsilon S_z=i\partial_z\varepsilon 
+\end{equation}
+这两个流可以和前面研究的Conformally soft photon联系起来，加上CS和Goldstone模式之后，与$\Delta=1+i\lambda$一起构成了一个完备基底，所以类似于$A_\mu$在平面波基底下展开，同样也可以在这组基底下进行展开，前面的系数就量子化为产生湮灭算符，$A^G$前面的系数是$S_z$，$A^{CS}$前面的系数是$J_z$\cite{Donnay:2018neh}。两个流之间满足正交归一关系：
+\begin{equation}
+	[J_w(w),S_{w^\prime}(w^\prime)]=8\pi^2\delta^{(2)}(w-w^\prime)
+\end{equation}
+这得益于$A^G$和$A^{CS}$之间正交归一。
+\subsubsection{non-Abelian Case}
+类似于QED情况可定义软胶子模：
+\begin{equation}
+	\begin{aligned}N_z&=\int_{-\infty}^\infty duF_{uz}=A_z\big|_{\mathcal{I}_+^+}-A_z\big|_{\mathcal{I}_-^+}.\\N_z^-&=\int_{-\infty}^\infty dvF_{vz}^-=A_z^-\big|_{\mathcal{I}_+^-}-A_z^-\big|_{\mathcal{I}_-^-}.\end{aligned}
+\end{equation}
+只不过这个时候它们都是与$T^a$色因子缩并之后的矩阵。在下面流的定义下：
+\begin{equation}
+	J_z=-\frac{4\pi}{g_{YM}^2}\left(N_z-N_z^-\right)
+\end{equation}
+出射正螺旋度的软胶子定理\ref{eq:28.24}可以写成：\sn{推导完全是前面QED情况带上色指标之后的复刻，无质量QED成立无质量QCD必然也成立，但是有质量QED那里能否拓展到有质量QCD还不好说，所以这个式子我们先假设所有外腿都无质量。}
+\begin{equation}
+	\begin{aligned}\langle J_z^a\mathcal{O}_1(\omega_1,z_1,\bar{z}_1)\cdots\mathcal{O}_n(\omega_n,z_n,\bar{z}_n)\rangle_{U=1}\equiv &
+		\lim_{\omega\to0}\omega\langle\mathcal{O}^{+,a}(\omega,z,\bar{z})\mathcal{O}_1(\omega_1,z_1,\bar{z}_1)...\mathcal{O}_n(\omega_n,z_n,\bar{z}_n)\rangle \\=&\sum_{k=1}^n\frac{1}{z-z_k}\langle\mathcal{O}_1(\omega_1,z_1,\bar{z}_1)\cdots\\&T_k^a\mathcal{O}_k(\omega_k,z_k,\bar{z}_k)\cdots\mathcal{O}_n(\omega_n,z_n,\bar{z}_n)\rangle_{U=1}\end{aligned}
+\end{equation}
+这里$J^a_z=\Tr(T^aJ_z)$。显然这就是非阿贝尔流代数的Ward恒等式。考虑$J_z$在$\mathcal{CS}^2$某个闭合回路上的加权积分：
+\begin{equation}
+	J_{\mathcal{C}}[\varepsilon]=\oint_{\mathcal{C}}\frac{dz}{2\pi i}\mathrm{tr}\left[\varepsilon J_z\right]
+\end{equation}
+把他插到关联函数里面：
+\begin{equation}\label{51.44}
+	\langle\left.J_{\mathcal{C}}[\varepsilon]\mathcal{O}_1\cdots\mathcal{O}_n\right.\rangle_{U=1}=\sum_{k\in\mathcal{C}}\langle\left.\mathcal{O}_1\cdots\varepsilon^a(z_k)T_k^a\mathcal{O}_k\cdots\mathcal{O}_n\right.\rangle_{U=1}
+\end{equation}
+可见其生成了$\mathcal{C}$里面的large gauge变换，这是有很大的物理缘由的，可以证明$J_{\mathcal{C}}$和$Q_\epsilon$之间有下面的联系：
+\begin{equation}
+	J_\mathcal{C}[\varepsilon]=Q_\varepsilon^{-S}-Q_\varepsilon^{+S}
+\end{equation}
+右边$Q_\varepsilon$积分计算时，取$\varepsilon$在围道外为0，而$Q^S$生成的正是large gauge。Ka\v{c}-Moody Symmetry还有一个比较重要的是其level，前面$U(1)$的情况没有额外讨论这一点，因为任何level都等价，但是非abel情形不一样。类似\ref{51.44}，注意到：\sn{这里莫非是直接类比过来的吗？文献\cite{He:2015zea}说是根据软定理来的，还没搞懂}
+\begin{equation}
+	\langle J_{\mathcal{C}}(\varepsilon)J_w\mathcal{O}_1\cdots \mathcal{O}_n\rangle_{U=1}=\sum_{k\in\mathcal{C}}\langle J_w\mathcal{O}_1\cdots\varepsilon_k(z_k)\mathcal{O}_k\cdots \mathcal{O}_n\rangle_{U=1}+\langle\varepsilon(w)J_w\mathcal{O}_1\cdots \mathcal{O}_n\rangle_{U=1}
+\end{equation}
+其中最后一项当且仅当$\omega\in\mathcal{C}$时存在。而一般的Ka\v{c}-Moody Symmetry：
+\begin{equation}
+	\begin{aligned}
+		&\oint_\mathcal{C}\frac{dz}{2\pi i}\varepsilon^a(z)\left\langle J^a(z)J^b(w)\mathcal{O}_1\cdots\mathcal{O}_n\right\rangle\\
+		=&\oint_\mathcal{C}\frac{dz}{2\pi i}\sum_{k\in\mathcal{C}} \frac{\varepsilon ^a}{z-w_k} \left\langle J^b(w)\mathcal{O}_1\cdots T^a_k\mathcal{O}_k\cdots\mathcal{O}_n\right\rangle
+		+\oint_{\mathcal{C}_w}\frac{dz}{2\pi i}\varepsilon ^a(z)\left\langle \left(J^a(z)J^b(w)\right)\mathcal{O}_1\cdots\mathcal{O}_n\right\rangle\\
+		=&\sum_{k\in\mathcal{C}}\left\langle J^b(w)\mathcal{O}_1\cdots \varepsilon_k(z_k)\mathcal{O}_k\cdots\mathcal{O}_n\right\rangle
+		+\oint_{\mathcal{C}_w}\frac{dz}{2\pi i}\varepsilon ^a(z)\left\langle \left(\frac{if^{abc}J^c(w)}{(z-w)}+ \frac{k\delta^{ab}}{(z-w)^2} \right)\mathcal{O}_1\cdots\mathcal{O}_n\right\rangle\\
+		=&\sum_{k\in\mathcal{C}}\left\langle J^b(w)\mathcal{O}_1\cdots \varepsilon_k(z_k)\mathcal{O}_k\cdots\mathcal{O}_n\right\rangle
+		+\left\langle\left(\varepsilon_A(w)J_w\right)^b\mathcal{O}_1\cdots \mathcal{O}_n\right\rangle
+		+k\partial \varepsilon^b(w)\left\langle\mathcal{O}_1\cdots \mathcal{O}_n\right \rangle
+	\end{aligned}
+\end{equation}
+所以这个$SU(2)$流代数level是0。
+
+作为微扰论推导软定理，我们都是在$U=1$的前提下，既然large gauge可以改变这个$U$，而$J_\mathcal{C}$又正好生成了这个变换，那我们就可以通过插入$J_\mathcal{C}$来得到其他$U$下的关联函数。考虑下面的变换：
+\begin{equation}
+	\delta U(z,\bar{z})=i\varepsilon(z,\bar{z})+\ldots
+\end{equation}
+关联函数的变化可以表示为：
+\begin{equation}
+	\begin{aligned}
+		\delta_{\varepsilon}\langle\mathcal{O}_{1}\cdots\mathcal{O}_{n}\rangle_{U=1}& \equiv\langle\mathcal{O}_1\cdots\mathcal{O}_n\rangle_{U=1+i\varepsilon}-\langle\mathcal{O}_1\cdots\mathcal{O}_n\rangle_{U=1}  \\
+		&=i\sum_{k\in\mathcal{C}}\langle\mathcal{O}_1\cdots\varepsilon^a(z_k)T_k^a\mathcal{O}_k\cdots\mathcal{O}_n\rangle_{U=1} \\
+		&=i\left<J_{\mathcal{C}}[\varepsilon]\mathcal{O}_{1}\cdots\mathcal{O}_{n}\right.\rangle_{U=1}.
+	\end{aligned}
+\end{equation}
+所以前面的conjecture是正确的，$J_\mathcal{C}$还可以写为：
+\begin{equation}
+	J_{\mathcal{C}}[\varepsilon]=\int_{R_{\mathcal{C}}}d^2z\gamma_{z\bar{z}}\varepsilon^a\frac\delta{\delta U^a}
+\end{equation}
+这里$R_\mathcal{C}$表示$\mathcal{C}$的内部。$U=1$相当于选取了一个特殊的真空，$J_\mathcal{C}$的作用是在不同的真空下切换，这体现了large gauge的破缺，破缺带来的Goldstone玻色子就是软胶子。
+
+QED里面反全纯的部分对应出射螺旋度为负的软胶子，QCD是否也是这样呢？答案非常微妙，首先双软胶子出射的软定理就很微妙，从微扰论出发可以证明：
+\begin{equation}
+	\begin{aligned}\mathcal{A}_{n+2}(p_1,\ldots,p_n;q,\epsilon,a;q^{\prime},\epsilon^{\prime},b)&=g_{YM}^2\sum_{k=1}^n\frac{\epsilon\cdot p_k}{q\cdot p_k}\sum_{j=1}^n\frac{\epsilon^{\prime}\cdot p_j}{q^{\prime}\cdot p_j}\langle O_1\cdots T_k^aO_k\cdots T_j^bO_j\cdots O_n\rangle_{U=1}\\&-ig_{YM}^2f^{abc}\sum_{j=1}^n\frac{\epsilon^{\prime}\cdot p_j}{q^{\prime}\cdot p_j}\frac{\epsilon\cdot q^{\prime}}{q\cdot q^{\prime}}(O_1\cdots T_j^cO_j\cdots O_n)_{U=1}+\mathcal{O}(q^0,q^{\prime0})\end{aligned}
+\end{equation}
+软定理需要取$q,q\prime\to0$的极限，但是这个极限是和次序有关的！
+\begin{equation}
+	\begin{aligned}\left[\lim_{q\to0},\lim_{q^{\prime}\to0}\right]\mathcal{A}_{n+2}(p_1,\ldots,p_n;q,\epsilon,a;q^{\prime},\epsilon^{\prime},b)=ig_{YM}^2f^{abc}&\sum_{k=1}^n\left(\frac{\epsilon\cdot p_k}{p_k\cdot q}-\frac{\epsilon\cdot q^{\prime}}{q\cdot q^{\prime}}\right)\left(\frac{\epsilon^{\prime}\cdot p_k}{q^{\prime}\cdot p_k}-\frac{\epsilon^{\prime}\cdot q}{q\cdot q^{\prime}}\right)\\&\times\langle O_1\cdots T_k^aO_k\cdots O_n\rangle_{U=1}+\mathcal{O}\left(q^0,q^0\right)\end{aligned}
+\end{equation}
+除非两个出射胶子的螺旋度一致，否则右边不为0。这意味着胶子的$\mathcal{S}$矩阵在软边界处的定义很模糊。如果你选取所有螺旋度为正的胶子都先变软，那么：
+\begin{equation}\label{51.3}
+	J_z^aJ_{\bar{w}}^b\sim-\frac{if^{abc}}{z-w}J_{\bar{w}}^c.
+\end{equation}
+这样全纯的流生成流对称性，反过来要求螺旋度为负的胶子先变软：
+\begin{equation}
+	J_z^aJ_{\bar{w}}^b\sim-\frac{if^{abc}}{\bar{z}-\bar{w}}J_z^c
+\end{equation}
+现在反全纯的流生成流对称性，这意味着QCD这里全纯的流和反全纯的流不能放在对等的地位，你必须舍弃一个，这一点非常怪\sn{我并没有搞懂为什么\ref{51.3}就意味着全纯的是流对称了，它是怎么来的}。\cite{He:2015zea}
+
+注意，直到现在，本节涉及到的所有的关联函数只是把S矩阵换了个写法，我们依旧是在平面波基底下讨论问题，要换到天球基底还需要进行Mellin变换：
+\begin{equation}
+	\mathcal{O}_\Delta(z,\bar{z})=\int_0^\infty d\omega\omega^{\Delta-1}\mathcal{O}(\omega,z,\bar{z})
+\end{equation}
+注意Mellin变换需要对所有能量积分，但是前面定义的流是在$\omega\to0$的软粒子极限下定义的，这意味着把流放到天球上去没那么简单。文献\cite{Guevara:2021abz,Strominger:2021mtt,Adamo:2019ipt,Guevara:2019ypd}对这一点进行了讨论。
+\subsubsection{Graviton}
