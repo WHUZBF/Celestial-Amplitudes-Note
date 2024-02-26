@@ -26,7 +26,6 @@ Repeated entry---line 3197 of file ref.bib
  : @article{Donnay:2020guq
  :                        ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Guevara:2021abz.Strominger:2021mtt"
 Warning--empty publisher in Rychkov:2016iqz
 Warning--empty booktitle in Oblak:2015qia
 Warning--empty publisher in Strominger:2017zoo
@@ -37,45 +36,45 @@ Warning--empty year in ito
 Warning--empty publisher in Schottenloher:2008zz
 Warning--empty publisher in Kac:1990gs
 Warning--empty year in cvitanovic_group_2008
-You've used 154 entries,
+You've used 159 entries,
             2363 wiz_defined-function locations,
-            1687 strings with 28502 characters,
-and the built_in function-call counts, 53309 in all, are:
-= -- 5556
-> -- 1415
+            1721 strings with 29224 characters,
+and the built_in function-call counts, 55584 in all, are:
+= -- 5796
+> -- 1484
 < -- 0
-+ -- 448
-- -- 294
-* -- 4976
-:= -- 6808
-add.period$ -- 155
-call.type$ -- 154
-change.case$ -- 123
++ -- 468
+- -- 309
+* -- 5172
+:= -- 7090
+add.period$ -- 160
+call.type$ -- 159
+change.case$ -- 127
 chr.to.int$ -- 0
-cite$ -- 164
-duplicate$ -- 3978
-empty$ -- 5190
-format.name$ -- 882
-if$ -- 13529
+cite$ -- 169
+duplicate$ -- 4158
+empty$ -- 5398
+format.name$ -- 927
+if$ -- 14105
 int.to.chr$ -- 0
-int.to.str$ -- 154
-missing$ -- 547
-newline$ -- 467
-num.names$ -- 155
-pop$ -- 474
+int.to.str$ -- 159
+missing$ -- 566
+newline$ -- 482
+num.names$ -- 160
+pop$ -- 496
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1713
+skip$ -- 1788
 stack$ -- 0
-substring$ -- 2880
-swap$ -- 957
+substring$ -- 3046
+swap$ -- 994
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 594
-width$ -- 157
-write$ -- 1528
+while$ -- 622
+width$ -- 162
+write$ -- 1576
 (There were 3 error messages)

@@ -352,7 +352,7 @@ CFT$_{2}$中非常重要的OPE是两个能动张量之间的OPE，就平面上�
 	\begin{equation}
 		d_{\phi\phi}=\braket{\phi}{\phi}
 	\end{equation}
-	\begin{equation}
+	\begin{equation}\label{31.33}
 		C_{123}=\langle0|\phi_{(1)+h_1}\phi_{(2)h_3-h_1}\phi_{(3)-h_3}|0\rangle =\bra{\phi_1}\phi_{(2)h_3-h_1}\ket{\phi_3}
 	\end{equation}
 	这里$\phi_{(i)n}$表示$\phi_i$的第$n$个Laurent模。
@@ -426,7 +426,7 @@ CFT$_{2}$中非常重要的OPE是两个能动张量之间的OPE，就平面上�
 \end{proof}
 Laurent模之间的一般对易关系形式为：
 \begin{theorem}
-	\begin{equation}
+	\begin{equation}\label{eq:31.45}
 		\boxed{\left[\phi_{(i)m},\phi_{(j)n}\right]=\sum_kC_{ij}^kp_{ijk}(m,n)\phi_{(k)m+n}+d_{ij}\delta_{m,-n}\binom{m+h_i-1}{2h_i-1}}
 	\end{equation}
 	其中：
@@ -700,7 +700,7 @@ $d_{ij}$在$i\neq j$时为0，但是不同的$ij$对应的比例系数不同。�
 	$E$一般取为$(CD)$。
 \end{theorem}
 $T$不是初级场，$N(TT)$也不是初级场，但是下面定义的$\mathcal{N}(TT)$是共形权为$(4,0)$的初级场：
-\begin{equation}
+\begin{equation}\label{33.23}
 	\boxed{
 		\mathcal{N}(TT)=N\left(TT\right)-\frac3{10}\partial^2T
 	}
@@ -1220,7 +1220,7 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 \begin{equation}
 	\partial^z\left\langle b(z)c(w)\right\rangle=4\pi\left.\delta^{(2)}(z-w)\quad\Rightarrow\quad\left\langle b(z)c(w)\right\rangle=\frac1{z-w}\right. 
 \end{equation}
-进而得到$b,c$之间OPE计算出反对易关系：
+进而得到$b,c$之间OPE\sn{$bb,cc$自己之间的OPE没有奇异部分}计算出反对易关系：
 \begin{equation}
 	\left\{b_m,c_n\right\}=\delta_{n+m,0},\quad\left\{b_m,b_n\right\}=0,\quad\left\{c_m,c_n\right\}=0
 \end{equation}
@@ -1228,10 +1228,14 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 \begin{equation}
 	T(z)=\alpha N\left(b\partial c\right)+\beta N\left(\partial bc\right)
 \end{equation}
-计算得知$\alpha=2,\beta=1$，且：
+根据$b,c$是对应共形权的初级场，计算得知$\alpha=2,\beta=1$，且：
 \begin{theorem}
 	$b,c$鬼场的中心荷$\boxed{c=-26}$
 \end{theorem}
+\begin{remark}
+	$b,c$明明是初级场，而且共形权不相等，为何它们之间的关联函数不是0？
+\end{remark}
+\subsubsection{BRST Operator of Virasoro Algebra}
 \section{Unitary Representations of the Virasoro Algebra}
 \subsection{Null States}
 在关注幺正表示之前先来看看表示中出现Null State的条件，由于线性空间中任何一个向量都可以用基底展开，所以向量模为0等价于下面的二次型为0：
@@ -1447,7 +1451,7 @@ Ka\v{c}\mbox{–}Moody对称性是理论中加入了其他守恒流，这些守�
 		=&\gamma\sum_b\left(\sum_{l\leq-1}\left[j_l^bj_{m-l}^b,j_n^a\right]+\sum_{l>-1}\left[j_{m-l}^bj_l^b,j_n^a\right]\right) \\
 		=&\gamma\sum_b\left(\sum_{l\leq-1}\left(j_l^b\bigl[j_{m-l}^b,j_n^a\bigr]+\bigl[j_l^b,j_n^a\bigr]j_{m-l}^b\right)+\sum_{l>-1}\left(j_{m-l}^b\bigl[j_l^b,j_n^a\bigr]+\bigl[j_{m-l}^b,j_n^a\bigr]j_l^b\right)\right) \\
 		=&-2\gamma nkj_{m+n}^{a}+\gamma\sum_{b,c}if^{bac}\sum_{l\leq-1}\big(j_{l}^{b}j_{m+n-l}^{c}+j_{l+n}^{c}j_{m-l}^{b}\big) \\
-		&+\gamma\sum_{b,c}if^{bac}\sum_{l>-1}\bigl(j_{m+n-l}^{c}j_{l}^{b}+j_{m-l}^{b}j_{l+n}^{c}\bigr)\displaybreak\\%换页
+		&+\gamma\sum_{b,c}if^{bac}\sum_{l>-1}\bigl(j_{m+n-l}^{c}j_{l}^{b}+j_{m-l}^{b}j_{l+n}^{c}\bigr)\\%换页\displaybreak
 		=&-2\gamma nkj_{m+n}^a-\gamma\sum_{b,c}if^{bac}\sum_{l=0}^{n-1}[j_l^b,j_{m+n-l}^c] \\
 		=&-2\gamma nkj_{m+n}^a-\gamma\sum_{b,c}if^{bac}\sum_{l=0}^{n-1}\sum_dif^{bcd}j_{m+n}^d \\
 		=&-2\gamma nkj_{m+n}^a+\gamma n\sum_{b,c,d}f^{bac}f^{bcd}j_{m+n}^d. 
@@ -1864,6 +1868,193 @@ $j_{\mathrm{diag}}$仍旧满足Ka\v{c}-Moody代数：
 \end{equation}
 这里$\epsilon=0,1,m=k+2,0\leq(p-1)\leq k$，$(l)_k$意思是$\widehat{\mathfrak{su}}(2)_k$的自旋$\frac{l}{2}$最高权表示。上世纪粒子物理研究很多都在干各种群表示分解，文献\cite{Slansky:1981yr}就总结的很到位，另外还有比如LieART\cite{Feger:2012bs,Feger:2019tvk}这种Mathematica$^\circledR$程序包可以很方便地进行计算。
 \section{$\mathcal{W}$ Algebras}
-本节主要参考\cite{Pope:1991ig}。
+本节主要参考\cite{Pope:1991ig}。前面考虑对称性本质上都是在找Virasoro代数的扩张，最简单的情况就是加入一个$s=1$对应的Ka\v{c}\mbox{-}Moody流。自然就要问可不可以往对称代数里面加入更高自旋的流\sn{注意这里我们扩展了流的定义，任意理论中对称性对应的守恒流无论$h$是否为1我们都称为流}，进一步扩张Virasoro代数？这是$\mathcal{W}$代数的物理出发点，我们仍旧只考虑$\mathcal{A}\times\bar{\mathcal{A}}$的对称性的chiral部分。
+\subsection{$\mathcal{W}(2,3)$ Algebra}
+第一个例子是不加入$s=1$的流，加入$s=3$的流，注意能动张量本身是自旋为2的流，所以我们称这时候的代数是$\mathcal{W}(2,3)$代数。
+\begin{equation}\label{eq:41.1}
+	\begin{aligned}&\left[\left.L_m,L_n\right.\right]=\left(m-n\right)L_{m+n}+\frac c{12}\left(m^3-m\right)\delta_{m+n,0}\\&\left[\left.L_m,W_n\right.\right]=\left(2m-n\right)W_{m+n}\end{aligned}
+\end{equation}
+第一个等式就是Virasoro代数，第二个等式因为$W$是$h=3$的初级场，现在还需要考虑$WW$之间的对易关系。根据\ref{eq:31.45}对易关系的右边是一堆初级场的线性组合，而且最高自旋为$3+3-2=4$，而代数中的初级场除了$T,W$，剩下能凑出自旋为4的只能是\ref{33.23}给出的$\mathcal{N}(TT)$。但是自旋为1的初级场可能通过像$\mathcal{N}(TT)$的方式结合得到\sn{或许你想用$T,W$次级场线性组合得到初级场，但是次级场相比于初级场$h$只增不减}：
+\begin{equation}\label{eq:41.2}
+	\begin{aligned}
+		\left.\left[\begin{array}{c}W_{m},W_{n}\end{array}\right.\right]& =C_{WW}^Lp_{332}(m,n)L_{m+n}+C_{WW}^Wp_{333}(m,n)W_{m+n}  \\
+		&+C_{WW}^{\mathcal{N}(TT)}p_{334}(m,n)\mathcal{N}\big(LL\big)_{m+n}+d_{WW}\begin{pmatrix}m+2\\5\end{pmatrix}\delta_{m+n,0}
+	\end{aligned}
+\end{equation}
+上面公式中的系数绝大部分都是可以通过自举定出来的。首先回忆$TT$ OPE里面的中心项对应$d_{LL}=\frac{c}{2}$完全是惯例的选取，也就是说取这样一个$d_{LL}$的归一化，其他归一化等价于把算符Scaling一下。所以这里$d_{WW}$也完全可以看作是一个惯例的选取，一般取为$\frac{c}{3}$。根据$p$的一般计算式$p_{\Delta\Delta(2k+1)}(m,n)=p_{\Delta\Delta(2k+1)}(n,m)$，另一方面，由于对易关系\ref{eq:41.2}是反对称的，所以这直接导致$C_{\Delta\Delta}^{(2k+1)}=0$，$W_n$的项直接没了$C_{WW}^{W}=0$\sn{这一点推广后在构建$\mathcal{W}_\infty$代数时非常有用}。
 
+再根据\ref{eq:31.45}，$p_{233}(m,n)=\frac{2m-n}3$，而且和\ref{eq:41.1}对比得知$C_{LW}^W=3$。根据定义$C_{ijk}^1=C_{ij}^ld_{lk}$，得益于$C^W_{WW}=0$，且$\mathcal{N}(TT)$和$T$共形维数不同导致$d_{\mathcal{N}(TT),L}=0$，所以：
+\begin{equation}\label{eq:41.3}
+	C_{WW}^L=C_{WWL}\left(d_{LL}\right)^{-1}=C_{LW}^Wd_{WW}\left(d_{LL}\right)^{-1}=3\cdot\frac c3\cdot\frac2c=2
+\end{equation}
+最后需要计算的只剩下$C_{WW}^{\mathcal{N}(TT)}$，核心就是利用\ref{eq:41.3}的思想：
+\begin{equation}
+	\begin{aligned}
+		&\mathcal{N}(TT)_{-4}\left|0\right\rangle=\left(L_{-2}L_{-2}-\frac3{10}\cdot2L_{-4}\right)\left|0\right\rangle \\
+		\Rightarrow&d_{\mathcal{N}(TT)\mathcal{N}(TT)}=\bra{0}\mathcal{N}(TT)_4\mathcal{N}(TT)_{-4}\ket{0}=\frac{\left(5c+22\right)c}{10}
+	\end{aligned}
+\end{equation}
+再根据\ref{31.33}得到：
+\begin{equation}
+	\begin{aligned}
+		C_{WW\mathcal{N}(TT)}& =\left\langle0\middle| W_3W_1\left(L_{-2}L_{-2}-\frac35L_{-4}\right) \middle| 0\right\rangle\\
+		&=\left\langle0\right|W_3\left[W_1,L_{-2}L_{-2}\right]\left|0\right\rangle-\frac35\left\langle0\right|W_3\left[W_1,L_{-4}\right]\left|0\right\rangle  \\
+		&=5\left<0\right|W_3\left(L_{-2}W_{-1}+W_{-1}L_{-2}\right)\left|0\right>-\frac{27}5\left<0\right|W_3W_{-3}\left|0\right> \\
+		&=5\left\langle0\right|W_3\left[W_{-1},L_{-2}\right]\left|0\right\rangle-\frac{27}5\langle0|W_3W_{-3}\left|0\right\rangle  \\
+		&=\frac{48}5\left\langle0\right|W_3W_{-3}\left|0\right\rangle=\frac{48}5d_{WW}=\frac{16}5c.
+	\end{aligned}
+\end{equation}
+所以：
+\begin{equation}
+	C_{WW}^{\mathcal{N}(TT)}=C_{WW\mathcal{N}(TT)}\left(d_{\mathcal{N}(TT)\mathcal{N}(TT)}\right)^{-1}=\frac{32}{5c+22}
+\end{equation}
+$\mathcal{W}(2,3)$代数的最后一块拼图为：
+\begin{equation}
+	\begin{aligned}
+		\left.\left[\begin{array}{c}W_{m},W_{n}\end{array}\right.\right]& \begin{aligned}&=2p_{332}(m,n)L_{m+n}+\frac{32}{5c+22}p_{334}(m,n)\mathcal{N}\big(LL\big)_{m+n}\end{aligned}  \\
+		&+\frac c3\begin{pmatrix}m+2\\5\end{pmatrix}\delta_{m+n,0}
+	\end{aligned}
+\end{equation}
+整体用OPE写起来是：\sn{$\sim$表示只写奇异项}
+\begin{equation}
+	\begin{aligned}
+		T(z)T(w) \sim&\frac{\partial T(w)}{z-w}+\frac{2T}{(z-w)^2}+\frac{c/2}{(z-w)^4} \\
+		T(z)W(w) \sim&\frac{\partial W}{z-w}+\frac{3W}{(z-w)^2}  \\
+		W(z)W(w) \sim&\frac{16}{22+5c}\Big(\frac{\partial\mathcal{N}(TT)}{z-w}+\frac{2\mathcal{N}(TT)}{(z-w)^2}\Big)  \\
+		&+\frac{1}{15}\Big(\frac{\partial^3T}{z-w}+\frac{9}{2}\frac{\partial^2T}{(z-w)^2}+15\frac{\partial T}{(z-w)^3}+30\frac{T}{(z-w)^4}\Big) \\
+		&+\frac{c/3}{(z-w)^6}
+	\end{aligned}
+\end{equation}
+
+上面的代数满足李代数的所有比如反对称和雅可比恒等式所有特征，但是数学家并不称为李代数，而称为包络代数(enveloping algebra)，因为对易子的右边出现了$LL$这种非线性的项。假设代数中拥有的流的最大自旋为$s$，那么这个流自己的对易子必定会引入一个$2s-2>s$的流，这只能通过$\mathcal{N}(TT)$这样直接结合两个更低自旋的流组成非线性项得到。唯一的例外是$s=2$所对应的Virasoro代数。
+
+不同中心荷会导致不同$\mathcal{W}$代数的中心扩张，类似于前面对Virasoro代数表示的分析，只有当中心荷取一系列值时，理论中才可能出现幺正表示，计算表明：
+\begin{equation}
+	c=2\left(1-\frac{12}{(k+3)(k+4)}\right)
+\end{equation}
+会将$\mathcal{W}(2,3)$代数对应到一个RCFT。而RCFT又可以通过陪集构造来得到，上面的中心荷的选取对应的陪集构造为：
+\begin{equation}
+	\frac{\widehat{\mathfrak{su}}(3)_k\times\widehat{\mathfrak{su}}(3)_1}{\mathfrak{su}(3)_{k+1}}
+\end{equation}
+\subsection{$\mathcal{W}(2,4)$ Algebra}
+现在考虑理论中不是多加一个$h=3$的流，而是4的流：
+\begin{equation}
+	\left[L_m,W_n\right]=\left(3m-n\right)W_{m+n}
+\end{equation}
+仍旧考虑自举的方法：\sn{现在$C^W_{WW}\neq0$}
+\begin{equation}
+	\begin{aligned}
+		\left.\left[\begin{array}{c}W_{m},W_{n}\end{array}\right.\right]& =C_{WW}^{L}p_{442}(m,n)L_{m+n}+C_{WW}^{W}p_{444}(m,n)W_{m+n}  \\
+		&+C_{WW}^{\mathcal{N}(LL)}p_{444}(m,n)\mathcal{N}\big(LL\big)_{m+n} \\
+		&+C_{WW}^{\mathcal{N}(L\partial^{2}L)}p_{446}(m,n)\mathcal{N}\big(L\partial^{2}L\big)_{m+n} \\
+		&+C_{WW}^{\mathcal{N}(\mathcal{N}(LL)L)}p_{446}(m,n)\mathcal{N}\big(\mathcal{N}(LL)L\big)_{m+n} \\
+		&+C_{WW}^{\mathcal{N}(WL)}\left.p_{446}(m,n)\right.\mathcal{N}(WL)_{m+n}+\left.\frac c4\right.\begin{pmatrix}m+3\\7\end{pmatrix}\delta_{m+n,0}
+	\end{aligned}
+\end{equation}
+其中已经选取了归一化$d_{WW}=\frac c4$，那些$\mathcal{N}(AB)$这里也没有写出的必要了，只需要知道他们是构造出来的特定维数的初级场就好。$p$都可以直接计算出来，那些$C$也是可以计算出来的：
+\begin{equation}
+	\begin{aligned}
+		C_{WW}^{L}=& \text{2 ,}  &C_{WW}^{\mathcal{N}(\mathcal{N}(LL)L)}&=\frac{24\left(72c+13\right)}{\left(5c+22\right)\left(7c+68\right)\left(2c-1\right)}\\
+		C_{WW}^{\mathcal N(LL)}=& \frac{42}{5c+22}, &C_{WW}^{\mathcal{N}(WL)}&=\frac{28}{3\left(c+24\right)}C_{WW}^{W} \\
+		C_{WW}^{\mathcal{N}(L\partial^{2}L)} =&\frac{3\left(19c-524\right)}{10\left(7c+68\right)\left(2c-1\right)}, 
+	\end{aligned}
+\end{equation}
+但是$c$和$C^W_{WW}$还是自由的，而雅可比恒等式又对他们做出了限制：
+\begin{equation}
+	\left(C_{WW}^W\right)^2=\frac{54\left(c+24\right)\left(c^2-172c+196\right)}{\left(5c+22\right)\left(7c+68\right)\left(2c-1\right)}
+\end{equation}
+所以直接去从李代数的角度研究$\mathcal{W}(2,\Delta)$本身过于复杂。$\mathcal{W}(2,4)$对于满足上式的$c$还都是闭的，而到了$\mathcal{W}(2,5)$，要求代数是闭的，中心荷只能是$\frac67,-7,-\frac{350}{11},134\pm60\sqrt{5}$，但是到了$\mathcal{W}(2,6)$，任何中心荷选取又都可以了。
+\subsection{$\mathcal{W}_N$ Algebra}
+前面$\mathcal{W}(2,\Delta)$代数，只是在Virasoro代数的基础上加入一个流，如果$2<s\leq N$的流各加一个，得到的就是$\mathcal{W}(2,3,\ldots,N)$代数，也就是$\mathcal{W}_N$代数。第一节研究的就是$\mathcal{W}_3$代数。但是通过前面两节的铺垫可知直接去研究对易关系够呛，比如$\mathcal{W}_4$的对易关系显式\cite{Kausch:1990bn,Blumenhagen:1990jv}非常复杂。换个思路，我们或许可以直接去研究其对应的CFT本身的实现。$\mathcal{W}_N$代数实际上就可以通过$N-1$个玻色子（标量场）$\vec{\phi}$实现。
+
+首先考虑一个微分算子：
+\begin{equation}
+	L=u_N\partial^N+u_{N-2}\partial^{N-2}+u_{N-3}\partial^{N-3}\cdots+u_1\partial+u_0
+\end{equation}
+利用Miura变换可以和$SU(N)$群联系起来：
+\begin{equation}
+	L=\prod_{i=1}^N\left(\alpha_0\partial+(\vec{\mu}_i-\vec{\mu}_{i+1})\cdot\partial\vec{\phi}\right)
+\end{equation}
+这里$\alpha_0$是任意常数，$\vec{\mu}_i$是$SU(N)$的基本权，定义为$\vec{\mu}_i\cdot\vec{\alpha}_j=\delta_{ij}$，这里$\alpha_j$是$SU(N)$的simple roots。类似于前面讨论的free Boson，$\vec{\phi}$是自旋为0的玻色场，而且不是初级场，满足OPE为：
+\begin{equation}
+	\phi_i(z)\phi_j(w)\sim\delta_{ij}\log(z-w)
+\end{equation}
+每求一个导数，其自旋加一，所以我们可以用$[\phi^m\partial^n\phi]$去表示$u_{N-s}$，对应自旋为$s$。除了一个尺度放缩，$T(z)$就是$u_{N-2}$，而$u_{N-s},s\geq 3$一般不是初级场，还可能需要加上一些更低自旋的流组合起来得到的项，类似于$\mathcal{N}(TT)$。这套方法可以具体用在$\mathcal{W}_3$的实现上：
+\begin{equation}
+	\begin{aligned}
+		T(z) =&\frac12(\partial\phi_1)^2+\frac12(\partial\phi_2)^2+\alpha_1\partial^2\phi_1+\alpha_2\partial^2\phi_2,  \\
+		W(z) =&\frac{2\sqrt{2}}{\sqrt{22+5c}}\Big(\frac{1}{3}(\partial\phi_{1})^{3}-\partial\phi_{1}(\partial\phi_{2})^{2}+\alpha_{1}\partial\phi_{1}\partial^{2}\phi_{1}-2\alpha_{2}\partial\phi_{1}\partial^{2}\phi_{2}-\alpha_{1}\partial\phi_{2}\partial^{2}\phi_{2}  \\
+		&+\frac13\alpha_1^2\partial^3\phi_1-\alpha_1\alpha_2\partial^3\phi_2\Big)
+	\end{aligned}
+\end{equation}
+中心荷：
+\begin{equation}
+	c=2-16\alpha_1^2,\quad \alpha_1^2=3\alpha_2^2
+\end{equation}
+
+类似于$\mathcal{W}_3$，我们预期$\mathcal{W}_N$的幺正表示也只会出现在一些固定的$c$的选取，从而对应一个RCFT，从而可以用陪集构造构造出来。不难猜测这个陪集构造为：
+\begin{equation}
+	\frac{\widehat{\mathfrak{su}}(N)_k\times\widehat{\mathfrak{su}}(N)_1}{\mathfrak{su}(N)_{k+1}}
+\end{equation}
+对应的中心荷：
+\begin{equation}
+	c=\left(N-1\right)\left(1-\frac{N\left(N+1\right)}{\left(m+N\right)\left(m+N+1\right)}\right)\quad\mathrm{~with~}\quad m\geq1~.
+\end{equation}
+所以似乎对$\mathcal{W}$代数的分类变成了对RCFT的分类。对于不大的$N$，这一点被明确建立起来了，更高$N$还有待研究。
+
+\subsection{$\mathcal{W}_\infty$ Algebra}
+Virasoro代数里面不会出现非线性项是因为$2\times 2-2=2$，出现非线性项总归是两项乘积的自旋大于最大允许的自旋。如果现在取$N\to\infty$的极限，由于任何自旋都允许了，所以$\mathcal{W}_\infty$代数应该不需要低自旋的流组成更高自旋的非线性流，所以它应当是一个线性代数。
+
+另外，$W_N$代数对易子的右边也不是包含所有$2\sim\leq s+s^\prime-2$的流，比如$C^W_{WW}=0$就得知$WW$右边不包含$s=3$的$W$，这个观察可以进一步推广，实际上，自旋为$s$和$s^\prime$的流之间的OPE应当只会包含$s+s^\prime-2,s+s^\prime-4,\cdots$\sn{如果自旋和是偶数就在2终止，否则在3终止，因为不可能有2以下的流。}。现在我们用上标标记自旋，下标标记洛朗模，做ansatz：
+\begin{equation}
+	[V_m^i,V_n^j]=\sum_{\ell\geq0}g_{2\ell}^{ij}(m,n)V_{m+n}^{i+j-2\ell}+c_i(m)\delta^{ij}\delta_{m+n,0}
+\end{equation}
+注意，由于历史原因，这里的$V^i$表示的是自旋为$s=i+2$的流
+\begin{equation}
+	V^i(z)=\sum_{m=-\infty}^\infty V_m^iz^{-m-i-2}
+\end{equation}
+由于后面涉及到的公式过于复杂，为了方便直接引用原文献的公式，还是不要随意更改符号约定。文献\cite{Pope:1989ew,Pope:1989sr}经过暴力计算得到：
+\begin{equation}
+	\begin{aligned}
+		c_i(m)&=m(m^2-1)(m^2-4)\cdots(m^2-(i+1)^2)c_i\\
+		c_i&=\frac{2^{2i-3}i!\left(i+2\right)!}{\left(2i+1\right)!!\left(2i+3\right)!!}c
+	\end{aligned}
+\end{equation}
+\begin{equation}
+	\begin{gathered}
+		g_{\ell}^{ij}(m,n)=\frac1{2(\ell+1)!}\phi_{\ell}^{ij}N_{\ell}^{ij}(m,n)\\
+		\begin{aligned}
+			N_{\ell}^{\boldsymbol{i}j}(m,n)& =\sum_{k=0}^{\ell+1}(-1)^k\binom{\ell+1}k[i+1+m]_{\ell+1-k}[i+1-m]_k[j+1+n]_k[j+1-n]_{\ell+1-k},  \\
+			&=\sum_{k=0}^{\ell+1}(-1)^k\binom{\ell+1}k(2i+2-\ell)_k[2j+2-k]_{\ell+1-k}[i+1+m]_{\ell+1-k}[j+1+n]_k
+		\end{aligned}\\
+		\phi_\ell^{ij}={}_4F_3\left[\begin{array}{cc}-\frac12,\frac32,-\frac{\ell}2-\frac12,-\frac{\ell}2\\-i-\frac12,-j-\frac12,i+j-\ell+\frac52\end{array};1\right]
+	\end{gathered}
+\end{equation}
+这里$[a]_n\equiv a(a-1)\cdots(a-n+1)=a!/(a-n)!$称为descending Pochhammer符号，$(a)_n\equiv a(a+1)\cdots(a+n-1)=(a+n-1)!/(a-1)!$称为ascending Pochhammer符号。$\phi_\ell^{ij}$定义里面的那一堆叫做"Saalschützian ${}_4F_3(1)$ generalised hypergeometric function "。也可以用Wigner 6\mbox{-}j符号去表达\sn{这部分内容可见喀兴林\cite{kxl}角动量那一章节}\cite{Pope:1989sr}。平民化的形式为：
+\begin{equation}
+	\phi_\ell^{ij}=\sum_{k\geq0}\frac{(-\frac12)_k(\frac32)_k(-\frac\ell2-\frac12)_k(-\frac\ell2)_k}{k!\left(-i-\frac12\right)_k(-j-\frac12)_k(i+j-\ell+\frac52)_k}
+\end{equation}
+\begin{example}
+	\begin{equation}
+		[V_m^i,V_n^j]=\frac12\phi_0^{ij}N_0^{ij}(m,n)V_{m+n}^{i+j}+\frac1{2\cdot3!}\phi_2^{ij}N_2^{ij}(m,n)V_{m+n}^{i+j-2}+\frac1{2\cdot5!}\phi_4^{ij}N_4^{ij}(m,n)V_{m+n}^{i+j-4}+\cdots 
+	\end{equation}
+	其中：
+	\begin{equation}
+		\begin{aligned}
+			\phi_{0}^{ij} =&1,  \\
+			\phi_{2}^{ij} =&1-\frac9{(2i+1)(2j+1)(2i+2j+1)},  \\
+			\phi_{4}^{ij} =&1-\frac{30}{(2i+1)(2j+1)(2i+2j-3)}\left(1+\frac{15/2}{(2i-1)(2j-1)(2i+2j-1)}\right) \\
+			N_{0}^{{i}j}(m,n) =&2(j{+}1)m{-}2(i{+}1)n\\
+			N_2^{ij}(m,n)=&4j(j+1)(2j+1)m^3-12ij(2j+1)m^2n+12ij(2i+1)mn^2-4i(i+1)(2i+1)n^3\\&-4j(j+1)(1+3i+3i^2+2j+3ij)m+4i(i+1)(1+3j+3j^2+2i+3ij)n\\
+			N_4^{ij}(m,n)=&\text{ 5'th-order polynomial in m and n}
+		\end{aligned}
+	\end{equation}
+	上面例子看$L_m=V^0_m$的情形，除了$V^3$，其它的场都不是初级场，但是在$L_{0},L_{\pm}$子代数下是准初级场，当然，也可以通过重新组合来把它们变成初级场，但代价就是$\mathcal{W}_\infty$再次变为非线性。
+\end{example}
+\subsubsection{Contraction}
+\subsubsection{Wedge subalgebra}
+\subsection{$\mathcal{W}_{1+\infty}$ Algebra}
+\subsection{Realization of $\mathcal{W}$ Algebras}
+\subsection{BRST Operator of $\mathcal{W}$ Algebras}
+\subsection{$\mathcal{W}$ Gravity}
 \section{Liouville theory}
