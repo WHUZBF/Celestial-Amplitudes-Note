@@ -582,6 +582,36 @@ C.N.~Pope, L.J.~Romans and X.~Shen, \emph{{$W$(infinity) and the Racah-wigner
 \bibitem{kxl}
 喀兴林, \emph{高等量子力学(第2版)}, 高等教育出版社 (2006).
 
+\bibitem{Fialowski_2005}
+A.~Fialowski and M.~de~Montigny, \emph{Deformations and contractions of lie
+  algebras}, \href{https://doi.org/10.1088/0305-4470/38/28/006}{\emph{Journal
+  of Physics A: Mathematical and General} {\bfseries 38} (2005) 6335}.
+
+\bibitem{Hull:1992vj}
+C.M.~Hull, \emph{{W geometry}},
+  \href{https://doi.org/10.1007/BF02098483}{\emph{Commun. Math. Phys.}
+  {\bfseries 156} (1993) 245}
+  [\href{https://arxiv.org/abs/hep-th/9211113}{{\ttfamily hep-th/9211113}}].
+
+\bibitem{Karabali:1994av}
+D.~Karabali, \emph{{W(infinity) algebras and incompressibility in the quantum
+  Hall effect}},  in \emph{{20th International Colloquium on Group Theoretical
+  Methods in Physics}}, 6, 1994
+  [\href{https://arxiv.org/abs/hep-th/9411082}{{\ttfamily hep-th/9411082}}].
+
+\bibitem{Karabali:1994sg}
+D.~Karabali, \emph{{W(infinity) algebras in the quantum Hall effect}},
+  \href{https://doi.org/10.1016/0550-3213(94)90364-6}{\emph{Nucl. Phys. B}
+  {\bfseries 428} (1994) 531}
+  [\href{https://arxiv.org/abs/hep-th/9405057}{{\ttfamily hep-th/9405057}}].
+
+\bibitem{Strominger:2021mtt}
+A.~Strominger, \emph{{$w_{1+\infty}$ Algebra and the Celestial Sphere: Infinite
+  Towers of Soft Graviton, Photon, and Gluon Symmetries}},
+  \href{https://doi.org/10.1103/PhysRevLett.127.221601}{\emph{Phys. Rev. Lett.}
+  {\bfseries 127} (2021) 221601}
+  [\href{https://arxiv.org/abs/2105.14346}{{\ttfamily 2105.14346}}].
+
 \bibitem{Elvang:2015rqa}
 H.~Elvang and Y.-t.~Huang, \emph{{Scattering Amplitudes in Gauge Theory and
   Gravity}}, Cambridge University Press (4, 2015).
@@ -849,13 +879,6 @@ A.~Guevara, E.~Himwich, M.~Pate and A.~Strominger, \emph{{Holographic symmetry
   \href{https://doi.org/10.1007/JHEP11(2021)152}{\emph{JHEP} {\bfseries 11}
   (2021) 152} [\href{https://arxiv.org/abs/2103.03961}{{\ttfamily
   2103.03961}}].
-
-\bibitem{Strominger:2021mtt}
-A.~Strominger, \emph{{$w_{1+\infty}$ Algebra and the Celestial Sphere: Infinite
-  Towers of Soft Graviton, Photon, and Gluon Symmetries}},
-  \href{https://doi.org/10.1103/PhysRevLett.127.221601}{\emph{Phys. Rev. Lett.}
-  {\bfseries 127} (2021) 221601}
-  [\href{https://arxiv.org/abs/2105.14346}{{\ttfamily 2105.14346}}].
 
 \bibitem{Adamo:2019ipt}
 T.~Adamo, L.~Mason and A.~Sharma, \emph{{Celestial amplitudes and conformal

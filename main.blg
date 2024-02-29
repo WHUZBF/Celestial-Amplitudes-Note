@@ -17,6 +17,7 @@ Illegal, another \bibstyle command---line 392 of file main.aux
  :          {JHEP}
 I'm skipping whatever remains of this command
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 10022 items from 5000.
 Database file #1: ref.bib
 Repeated entry---line 1519 of file ref.bib
  : @article{Kapec:2014opa
@@ -36,45 +37,45 @@ Warning--empty year in ito
 Warning--empty publisher in Schottenloher:2008zz
 Warning--empty publisher in Kac:1990gs
 Warning--empty year in cvitanovic_group_2008
-You've used 159 entries,
+You've used 163 entries,
             2363 wiz_defined-function locations,
-            1721 strings with 29224 characters,
-and the built_in function-call counts, 55584 in all, are:
-= -- 5796
-> -- 1484
+            1756 strings with 29933 characters,
+and the built_in function-call counts, 56915 in all, are:
+= -- 5935
+> -- 1509
 < -- 0
-+ -- 468
-- -- 309
-* -- 5172
-:= -- 7090
-add.period$ -- 160
-call.type$ -- 159
-change.case$ -- 127
++ -- 477
+- -- 314
+* -- 5292
+:= -- 7261
+add.period$ -- 164
+call.type$ -- 163
+change.case$ -- 131
 chr.to.int$ -- 0
-cite$ -- 169
-duplicate$ -- 4158
-empty$ -- 5398
-format.name$ -- 927
-if$ -- 14105
+cite$ -- 173
+duplicate$ -- 4250
+empty$ -- 5535
+format.name$ -- 942
+if$ -- 14452
 int.to.chr$ -- 0
-int.to.str$ -- 159
-missing$ -- 566
-newline$ -- 482
-num.names$ -- 160
-pop$ -- 496
+int.to.str$ -- 163
+missing$ -- 580
+newline$ -- 494
+num.names$ -- 164
+pop$ -- 509
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1788
+skip$ -- 1841
 stack$ -- 0
-substring$ -- 3046
-swap$ -- 994
+substring$ -- 3114
+swap$ -- 1022
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 10
-while$ -- 622
-width$ -- 162
-write$ -- 1576
+while$ -- 636
+width$ -- 166
+write$ -- 1617
 (There were 3 error messages)
