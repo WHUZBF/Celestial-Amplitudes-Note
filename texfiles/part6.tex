@@ -1089,7 +1089,7 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 	T_{\mu\nu}^c=8\pi\left.\gamma\left(-\eta_{\mu\nu}\mathcal{L}+\sum_i\frac{\partial\mathcal{L}}{\partial\left(\partial^\mu\phi_i\right)}\partial_\nu\phi_i\right)\right. 
 \end{equation}
 \begin{equation}
-	T_{zz}=\gamma\psi\partial\psi,\quad T_{z\overline{z}}=-\gamma\overline{\psi}\partial\overline{\psi},\quad\quad T_{\overline{z}z}=-\gamma\psi\overline{\partial}\psi=0,\quad T_{\overline{z}z}=\gamma\overline{\psi}\overline{\partial}\overline{\psi}=0
+	T_{zz}=\gamma\psi\partial\psi,\quad T_{z\overline{z}}=-\gamma\overline{\psi}\partial\overline{\psi}=0,\quad T_{\overline{z}z}=-\gamma\psi\overline{\partial}\psi=0,\quad T_{\overline{z}z}=\gamma\bar{\psi}\bar{\partial}\bar{\psi}
 \end{equation}
 然后取NOP去除零点能：
 \begin{equation}
@@ -2088,7 +2088,7 @@ Virasoro代数里面不会出现非线性项是因为$2\times 2-2=2$，出现非
 	[V_m^i,V_n^j]=\sum_{\ell>0}q^{2\ell}g_{2\ell}^{ij}(m,n)V_{m+n}^{i+j-2\ell}+q^{2i}c_i(m)\delta^{ij}\delta_{m+n,0}
 \end{equation}
 取$q\to 0$极限，李代数中元素用小写$v$记：
-\begin{equation}
+\begin{equation}\label{w}
 	[v_m^i,v_n^j]=\Big((j+1)m-(i+1)n\Big)v_{m+n}^{i+j}+\frac{c}{12}m(m^2-1)\delta^{i,0}\delta^{j,0}\delta_{m+n,0}
 \end{equation}
 这就是$w_\infty$代数。注意，只有$L_m=v^0_m$张成的Virasoro子代数是有中心荷的，高自旋的中心荷都是trivial的，用更符合直觉的上标标记自旋的记号，高自旋部分代数可表达为：
@@ -2109,7 +2109,7 @@ Virasoro代数里面不会出现非线性项是因为$2\times 2-2=2$，出现非
 	\end{gathered}
 \end{equation}
 注意，上面的表达式都是带着收缩因子的，通常表达OPE时习惯把收缩因子取为$q=\frac14$：
-\begin{equation}
+\begin{equation}\label{eq:41.38}
 	\begin{aligned}
 		V^0(z)V^0(w) \sim&\frac{\partial V^0}{z-w}+\frac{2V^0}{(z-w)^2}+\frac{c/2}{(z-w)^4}, \\
 		V^0(z)V^1(w) \sim&\frac{\partial V^1}{z-w}+\frac{3V^1}{(z-w)^2},  \\
@@ -2121,8 +2121,145 @@ Virasoro代数里面不会出现非线性项是因为$2\times 2-2=2$，出现非
 \end{equation}
 从上面的几个OPE可以清楚地看到$V^1$是初级场，但是$V^2$准初级。
 \subsubsection{Wedge subalgebra}
+$\mathfrak{sl}(2,\mathbb{R})$是$\mathbb{R}$上的Virasoro代数，显然构成$\mathcal{W}_\infty$代数的子代数。实际上这个子代数可以取地更大一些，$\forall i ,\{V_{m}^i\},-i-1\leq m\leq i+1$构成了$\mathcal{W}_\infty$代数的子代数。$i$为纵轴，$m$为横轴，这些算符作为离散的点填满了一个楔形，所以称为\textbf{wedge子代数}。每一层有$2i+3$个算符，它们实际上处于$SL(2,\mathbb{R})$的$2i+1$维不可约表示之中。考虑$SL(N,\mathbb{R})$的自伴表示，这是一个$N^2-1$维的表示，它在$SL(2,\mathbb{R})$上的诱导表示有下面的不可约表示分解：
+\begin{equation}
+	\mathrm{(N^2-1)\longrightarrow3~\oplus~5\oplus~7~\oplus\cdots\oplus(2N-1)}
+\end{equation}
+可以看到，取$N\to\infty$，这个wedge子代数就处于$SL(\infty,\mathbb{R})$的自伴表示之中，也就是说它们是$\mathfrak{sl}(\infty,\mathbb{R})$的生成元，所以$\mathfrak{sl}(\infty,\mathbb{R})$是$\mathcal{W}$的wedge子代数。
+
+有限维李代数不同生成元的选取是等价的，只是基底的选取不同，最终的李括号是等价的。但是你最终不同的基底在$N\to\infty$的极限下导出的李括号可能是不等价的。$\mathfrak{sl}(\infty,\mathbb{R})$就有由单参数标记的互不等价的一簇代数，生成元用$X^i_m$标记，这里$i,m$之间满足在wedge内：
+\begin{equation}
+	\begin{gathered}
+		[X_m^i,X_n^j]=\sum_{\ell\geq0}g_{2\ell}^{ij}(m,n;s)X_{m+n}^{i+j-2\ell},\quad s\geq -\frac12\\
+		g_{\ell}^{ij}(m,n;s)=\frac1{2(\ell+1)!}\phi_{\ell}^{ij}(s)~N_{\ell}^{ij}(m,n)\\
+		\left.\phi_\ell^{ij}(s)={}_4F_3\left[\begin{array}{c}-\frac{1}{2}-2s,\frac{3}{2}+2s,-\frac{\ell}{2}-\frac{1}{2},-\frac{\ell}{2}\\-i-\frac{1}{2},-j-\frac{1}{2},i+j-\ell+\frac{5}{2}\end{array}\right.;1\right]
+	\end{gathered}
+\end{equation}
+这里我们把$g^{ij}_\ell,\phi^{ij}_\ell$扩展为了一个单参曲线。而$\mathcal{W}_\infty$的wedge子代数对应的那一个是$s=0$的情况。
 \subsection{$\mathcal{W}_{1+\infty}$ Algebra}
+$s=0$对应$\mathcal{W}_\infty$的wedge子代数，那是否可以通过对$s$的不同选取，使其称为更大的代数的wedge子代数？我们比较关心的是对易子等式右边出来自旋为$1$的项，也就是$\mathcal{W}_{1+\infty}$代数。已经证明这有且只有一种选取，$s=-\frac{1}{2}$，对应的李代数中元素用$\tilde{V}^{i}_m$表示：
+\begin{equation}
+	\begin{gathered}
+		[\widetilde{V}_m^i,\widetilde{V}_n^j]=\sum_{\ell\geq0}q^{2\ell}\tilde{g}_{2\ell}^{ij}(m,n)\widetilde{V}_{m+n}^{i+j-2\ell}+q^{2i}\tilde{c}_i(m)\delta^{ij}\delta_{m+n,0}\\
+		\tilde{g}_{\ell}^{ij}(m,n)\equiv g_{\ell}^{ij}(m,n,-\frac12)\\
+		\tilde{c}_i(m)=m(m^2-1)(m^2-4)\cdots(m^2-(i+1)^2)\tilde{c}_i\\
+		\widetilde{c}_i=\frac{2^{2\boldsymbol{i}-2}\left((i+1)!\right)^2}{(2i+1)!!(2i+3)!!}c.
+	\end{gathered}
+\end{equation}
+可以发现$\mathcal{W}_{1\infty}$和$\mathcal{W}_\infty$只有细微的一些差别，而他的收缩$w_{1+\infty}$的李括号形式上依旧是\ref{w}，只是这个时候上标的取值不再是$i\geq 0$，而是$i\geq -1$。$\mathcal{W}_{1+\infty}$用OPE写下来形式为：
+\begin{equation}
+	\widetilde{V}^i(z)\widetilde{V}^j(w)~\sim~-\sum_{\ell\geq0}q^{2\ell}\widetilde{f}_{2\ell}^{ij}(\partial_z,\partial_w)\frac{\widetilde{V}^{i+j-2\ell}(w)}{z-w}~-q^{2i}\widetilde{c}_i\delta^{ij}(\partial_z)^{2i+3}\frac{1}{z-w}
+\end{equation}
+其中：
+\begin{equation}
+	\tilde{f}_{\ell}^{ij}(m,n)=\frac1{2(\ell+1)!}\tilde{\phi}_{\ell}^{ij}M_{\ell}^{ij}(m,n)
+\end{equation}
+\subsubsection{Lone-star algebra}
+前面对李代数的讨论是完全一般的，除了后面构造OPE形式，我们对李括号的限制就是反对易和雅可比恒等式，并没有完全就理解为对易子，物理上更多的会把李括号直接理解为结合代数生成的对易子：
+\begin{equation}
+	[A,B]\equiv A\star B-B\star A,\quad A\star(B\star C)=(A\star B)\star C.
+\end{equation}
+这个结合代数$\star$称为Lone-star代数，可以证明，$\mathcal{W}_\infty$情况下为：
+\begin{equation}
+	V_m^i\star V_n^j=\frac12\sum_{\ell\geq-1}q^\ell g_\ell^{ij}(m,n)V_{m+n}^{i+j-\ell},
+\end{equation}
+$\mathcal{W}_{1+\infty}$非常类似：
+\begin{equation}
+	\widetilde{V}_m^i\star \widetilde{V}_n^j=\frac12\sum_{\ell\geq-1}q^\ell \widetilde{g}_\ell^{ij}(m,n)\widetilde{V}_{m+n}^{i+j-\ell},
+\end{equation}
 \subsection{Realization of $\mathcal{W}$ Algebras}
+\subsubsection{Differential-operator realisations at $c = 0$}
+在考虑具体物理上CFT的实现之前先来看看直接用微分算符实现，类似于$\mathcal{W}_N$一样，但是这只适用于中心扩张trivial情况。先看$\mathcal{W}_{1+\infty}$代数，定义：
+\begin{equation}
+	j_n\equiv\widetilde{V}_n^{-1},\quad L_n\equiv\widetilde{V}_n^0
+\end{equation}
+$j_m$生成了无中心荷的$U(1)$ Ka\v{c}\mbox{-}Moody代数，再引入一个微分算符$d$与其满足对易关系：\sn{我们构建的是一个包络代数实现，实际上还需要$j_m$满足一个ideal relation，$j_mj_n-j_{m+n}=0$，总之，后面用微分算子具体实现$j,d$是满足种种这些的。}
+\begin{equation}\label{41.48}
+	[j_m,j_n]=0,\quad[d,j_m]=-mj_m
+\end{equation}
+Virasoro代数生成元可表达为：
+\begin{equation}
+	L_m=(d+\frac12m)j_m
+\end{equation}
+可以证明生成元可以下面递推形式表达：
+\begin{equation}\label{41.50}
+	\widetilde{V}_m^i\equiv(d+\frac12m)\widetilde{V}^{i-1}_m+\frac{i^2(i^2-m^2)}{4(4i^2-1)}\widetilde{V}_m^{i-2}
+\end{equation}
+\begin{example}
+	上面的递推式可以最终写成：
+	\begin{equation}
+		\widetilde{V}_m^i=P_i(d;m)j_m
+	\end{equation}
+	前几个$P$为：
+	\begin{equation}
+		\begin{aligned}
+			P_{-1}& =1,  \\
+			P_{0}& =d+\frac12m,  \\
+			P_{1}& =d^2+md+\frac1{12}(2m^2+1),  \\
+			P_{2}& =d^3+\frac32md^2+\frac1{20}(12m^2+7)+\frac1{40}(2m^3+7m),  \\
+			P_{3}& =d^4+2md^3+\frac{1}{14}(18m^2+13)d^2+\frac{1}{14}(4m^3+13m)d+\frac{1}{560}(8m^4+100m^2+27)
+		\end{aligned}
+	\end{equation}
+\end{example}
+不妨取$j_m=e^{\boldsymbol{i}m\theta},\quad d=i\frac\partial{\partial\theta}$来实现\ref{41.48}，$\mathcal{W}_{1+\infty}$代数(centerless)就可以看作是$\mathcal{S}^{1}$上所有的光滑微分算子构成的代数。同样的方法可以用在$\mathcal{W}_\infty$上：
+\begin{equation}
+	V_m^i=Q_i(L_0;m)L_m,\quad L_m=ie^{im\theta}\frac\partial{\partial\theta}
+\end{equation}
+一般的递推关系与\ref{41.50}相比只是去掉$\tilde{ }$并$d\mapsto L_0$。$Q$前面几个值为：
+\begin{equation}
+	\begin{aligned}
+		Q_{0}& =1,  \\
+		Q_{1}& =L_0+\frac m2,  \\
+		Q_{2} &=L_0^2+mL_0+\frac15(m^2+1),  \\
+		Q_{3} &=L_{0}^{3}+\frac{3m}{2}L_{0}^{2}+\frac{1}{14}(9m^{2}+10)L_{0}+\frac{1}{14}(m^{3}+5m),  \\
+		Q_{4} &=L_0^4+2mL_0^3+\frac{1}{3}(4m^2+5)L_0^2+\frac{1}{3}(m^3+5m)L_0+\frac{1}{42}(m^4+15m^2+8)
+	\end{aligned}
+\end{equation}
+$\mathcal{W}_{\infty}$也是$\mathcal{S}^{1}$上的光滑微分算子构成的代数，但是$\mathcal{W}_{1+\infty}$允许常数项$\left(\frac{\partial}{\partial\theta}\right)^0$的出现，但这里微分算子最低阶都是$1$。
+\subsubsection{Embedding $\mathcal{W}_{\infty}$ in $\mathcal{W}_{1+\infty}$}
+前面的微分算子实现可以看出$\mathcal{W}_{\infty}\subset\mathcal{W}_{1+\infty}$，这种浸入可以显示表达出来，但是前面的基底（生成元）选取在这里并不合适，假设我们已经将$\mathcal{W}_\infty$和$\mathcal{W}_{1+\infty}$的生成元进行合适的redefine，仍旧用$V,\widetilde{V}$表达（生成的李括号与原来等价），则：
+\begin{equation}
+	V_m^i=\sum_{j=-1}^ia_{ij}(m)\widetilde{V}_m^j,\quad i=0,1,\ldots
+\end{equation}
+$a_{ij}$是一个$i-j$阶的多项式，前面几个为：
+\begin{equation}
+	\begin{aligned}
+		V_{m}^{0} &=\widetilde{V}_m^0+\frac m2\widetilde{V}_m^{-1}-\frac c8\delta_{m,0},  \\
+		V_m^{1} &=\widetilde{V}_m^1+\frac m2\widetilde{V}_m^0+\frac1{12}(m^2-1)\widetilde{V}_m^{-1},  \\
+		V_{m}^{2} &=\widetilde{V}_m^2+\frac m2\widetilde{V}_m^1+\frac1{20}(2m^2-3)\widetilde{V}_m^0+\frac1{120}(2m^3+7m)\widetilde{V}_m^{-1}-\frac{3c}{320}\delta_{m,0} 
+	\end{aligned}
+\end{equation}
+那么$\{V^{i\geq 0}_m,\widetilde{V}^{-1}_m\}$就生成了新的基底下的$\mathcal{W}_{1+\infty}$代数，$\{V^{i\geq 0}_m\}$就是浸入的$\mathcal{W}_{\infty}$子代数。这种浸入对两个代数的中心荷有下面的要求：
+\begin{equation}
+	c=-2\tilde{c}
+\end{equation}
+这意味着想直接通过浸入把$\mathcal{W}_{1+\infty}$的幺正表示分解为$\mathcal{W}_{\infty}$的幺正表示的计划泡汤了，因为幺正表示最基本的要求是$c>0$。
+\subsubsection{Fermionic Realization}
+利用前面复化的费米模型可以实现有中心荷的$\mathcal{W}$代数。回忆$\Psi$模型的定义：
+\begin{equation}
+	\overline{\Psi}(z)\Psi(w)\sim\frac1{z-w},\quad T(z)=\frac12N\left(\partial\overline{\Psi}\Psi-\overline{\Psi}\partial\Psi \right),\quad J(z)=N(\Psi\overline{\Psi})
+\end{equation}
+仿照$J$流，问题是能否用$\Psi$或者其次级态的组合生成更高自旋的流？\sn{同样，我们只是实现$\mathcal{W}$代数，并不意味着原先$\Psi$模型的$T$定义下有这些流对称性，$\mathcal{W}$引力才是真正让$\mathcal{W}$代数作为对称代数}事实上这种构造不仅存在，还是唯一的。比如自旋2的流，只可能是$\{\partial\overline{\Psi}\Psi,\overline{\Psi}\partial\Psi \}$的线性组合，但是其中一个线性组合是$\partial J$，所以剩下的一个线性无关的只能是前面构造的$T$。更高自旋类似，每个自旋只能构建出一个独立的算符，不过你具体在每个自旋如何去线性组合那些$\Psi,\partial\Psi$仍旧是自由的，相当于在$\mathcal{W}$代数里面取不同的基底，我们期望这些基底会是$T$下的准初级场，这对应一簇用$a\in\mathbb{R}$标记的：
+\begin{equation}\label{41.59}
+	\begin{gathered}
+		\widetilde{V}^i(z)=\sum_{j=0}^{i+1}\alpha_j(i;a)N\left(\partial^j\overline{\Psi}\partial^{i+1-j}\Psi \right)\\
+		\alpha_j(i;a)=\binom{i+1}j\frac{(i+2a+2-j)_j(2a-i-1)_{i+1-j}}{(i+2)_{i+1}}
+	\end{gathered}
+\end{equation}
+这生成了$\mathcal{W}_{1+\infty}$代数。但是中心荷和$a$的关系比较复杂，前面我们涉及到的所有代数，中心项都会带上一个关于自旋的$\delta_{s,s'}$，但是上面的基底一般来说中心项并不是关于自旋对角的，也就是说两个不同自旋的算符之间的对易关系也会出来中心项，当且仅当$a=0,\pm\frac12$的时候中心项对角。
+
+$a=0$就对应$q=\frac14$得到的$\mathcal{W}_{1+\infty}$的OPE，也是标准讨论$\mathcal{W}_{1+\infty}$代数时的选取，但是中心荷为$c=1$；$a=\pm \frac{1}{2}$对应中心荷$c=-2$，取正号时$\{\widetilde{V}^{-1},\widetilde{V}^{i\geq 0}\}$构成$\mathcal{W}_{1+\infty}$代数，直接把$\widetilde{V}^{-1}$丢掉，剩下的$\widetilde{V}^{i\geq 0}$构成$\mathcal{W}_{\infty}$子代数。
+\subsubsection{Bosonic Realization}
+考虑自由的复标量场：\sn{其它$\phi\phi,\bar\phi\bar\phi$之间的OPE是0}
+\begin{equation}
+	\overline{\phi}(z)\phi(w)\sim\log(z-w),\quad T(z)=-N(\partial\phi\partial\bar\phi)(z)
+\end{equation}
+根据前面费米实现的经验，可以通过线性组合$\phi$和次级场得到更高自旋的流，而且这时每个自旋同样只能得到一个线性无关的流，下面的基底选取生成了$q=\frac14$时的$\mathcal{W}_\infty$代数\ref{eq:41.38}：
+\begin{equation}
+	V^i(z)=\frac{2^{-i-1}(i+2)!}{(i+1)(2i+1)!!}\sum_{k=0}^i(-)^k\binom{i+1}k\binom{i+1}{k+1}:\partial^{i-k+1}\overline{\phi}\partial^{k+1}\phi :
+\end{equation}
+
+$\mathcal{W}_{1+\infty}$的玻色实现可以通过前面费米实现的玻色化得到。
 \subsection{Related Topics}
 \subsubsection{$\mathcal{W}$ Gravity}
 考虑二维引力，引力场$h_{\mu\nu}$可以看作是在local的Virasoro代数下的规范场，把这个代数扩张为$\mathcal{W}$代数，自然也就可以构建一个local $\mathcal{W}$代数下的规范引力理论，这个理论必然会导致高自旋的$h_{\mu\nu\cdots\rho}$引力场的引入。所以$\mathcal{W}$引力可以看作是引力的高自旋推广，如果考虑的是收缩形变后的$w$代数，那么就是经典$\mathcal{W}$引力。这部分内容在上世纪末火了一段时间，但还比较容易算的东西算完了也没看出什么新物理，所以纯粹学习$\mathcal{W}$引力完全只能算作是陶冶情操，这部分感兴趣可以翻阅\cite{Hull:1992vj}，$\mathcal{W}$代数的内容前面数学部分的介绍已经非常完善了，这部分物理就没必要介绍了。
@@ -2130,6 +2267,20 @@ Virasoro代数里面不会出现非线性项是因为$2\times 2-2=2$，出现非
 非常amazing，$\mathcal{W}$代数竟然可以和凝聚态里面的量子霍尔效应联系起来，下面我们顺着Karabali的系列工作\cite{Karabali:1994av,Karabali:1994sg}来尝试理解一下。
 
 \subsubsection{${w}_{1+\infty}$ on the Celestial}
-Strominger近期的工作\cite{Strominger:2021mtt}又带火了一把$\mathcal{W}$代数。
-
+Strominger近期的工作\cite{Strominger:2021mtt}又带火了一把$\mathcal{W}$代数。复化的Fermion可以用一个实标量场$X$表达，具体对应为：
+\begin{equation}
+	\Psi=:e^X:\quad\quad\overline{\Psi}=:e^{-X}
+\end{equation}
+这里我们已经把顶点算符里面的$i$吸收进$X$里面了，所以：
+\begin{equation}
+	X(z)X(w)\sim\log(z-w)
+\end{equation}
+利用玻色场可以将费米场的NOP表达为：
+\begin{equation}
+	\begin{gathered}
+		:\partial^i\overline{\Psi}(z)\partial^j\Psi(z):=\sum_{k=i+1}^{i+j+1}\frac1k(-)^{k-1-i}\binom\ell{k-1-i}\partial^{i+j-k+1}P^{(k)}(z)\\
+		P^{(k)}(z)=:e^{-X(z)}\partial^ke^{X(z)}:
+	\end{gathered}
+\end{equation}
+那么前面的\ref{41.59}也就可以顺利用玻色场表达出来了。
 \section{Liouville theory}
