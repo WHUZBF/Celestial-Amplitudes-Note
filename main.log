@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2024.2.8)  1 MAR 2024 15:13
+This is LuaHBTeX, Version 1.16.0 (TeX Live 2023)  (format=lualatex 2024.2.8)  2 MAR 2024 14:38
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -3656,7 +3656,13 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
 7'
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+8'
 [67]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
+9'
+
 warning  (pdf backend): ignoring duplicate destination with the name 'theorem.4'
 
 
@@ -3672,83 +3678,77 @@ warning  (pdf backend): ignoring duplicate destination with the name 'theorem.6'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'theorem.7'
 
-
-Package tcolorbox Warning: Discard zero height first box part due to break prob
-lems (possible loss of zero height content) on input line 349.
-
 [69
 warning  (pdf backend): pop empty color page stack 0
 ]
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-8'
-[70
-warning  (pdf backend): pop empty color page stack 0
-] [71]
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.1
-9'
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
+0'
+[70] [71]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
+1'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .3'
 [72]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-0'
+2'
 
 warning  (file figs/fig10.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig10.pdf, id=3438, 282.86559pt x 86.5112pt>
+<figs/fig10.pdf, id=3446, 282.86559pt x 86.5112pt>
 File: figs/fig10.pdf Graphic file (type pdf)
 <use figs/fig10.pdf>
-Package luatex.def Info: figs/fig10.pdf  used on input line 494.
+Package luatex.def Info: figs/fig10.pdf  used on input line 496.
 (luatex.def)             Requested size: 282.86488pt x 86.51097pt.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-1'
+3'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-2'
+4'
 
 LaTeX Warning: Marginpar on page 73 moved.
 
 [73<./figs/fig10.pdf>]
 warning  (file figs/fig11.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig11.pdf, id=3515, 361.34076pt x 79.03728pt>
+<figs/fig11.pdf, id=3523, 361.34076pt x 79.03728pt>
 File: figs/fig11.pdf Graphic file (type pdf)
 <use figs/fig11.pdf>
-Package luatex.def Info: figs/fig11.pdf  used on input line 508.
+Package luatex.def Info: figs/fig11.pdf  used on input line 510.
 (luatex.def)             Requested size: 304.68907pt x 66.65013pt.
 
 warning  (file figs/fig12.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig12.pdf, id=3516, 359.7692pt x 78.29552pt>
+<figs/fig12.pdf, id=3524, 359.7692pt x 78.29552pt>
 File: figs/fig12.pdf Graphic file (type pdf)
 <use figs/fig12.pdf>
-Package luatex.def Info: figs/fig12.pdf  used on input line 512.
+Package luatex.def Info: figs/fig12.pdf  used on input line 514.
 (luatex.def)             Requested size: 304.68907pt x 66.31134pt.
 
 warning  (file figs/fig13.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig13.pdf, id=3517, 326.16074pt x 174.9737pt>
+<figs/fig13.pdf, id=3525, 326.16074pt x 174.9737pt>
 File: figs/fig13.pdf Graphic file (type pdf)
 <use figs/fig13.pdf>
-Package luatex.def Info: figs/fig13.pdf  used on input line 517.
+Package luatex.def Info: figs/fig13.pdf  used on input line 519.
 (luatex.def)             Requested size: 326.15993pt x 174.97325pt.
 
 warning  (file figs/fig14.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig14.pdf, id=3518, 329.51929pt x 180.79405pt>
+<figs/fig14.pdf, id=3526, 329.51929pt x 180.79405pt>
 File: figs/fig14.pdf Graphic file (type pdf)
 <use figs/fig14.pdf>
-Package luatex.def Info: figs/fig14.pdf  used on input line 546.
+Package luatex.def Info: figs/fig14.pdf  used on input line 548.
 (luatex.def)             Requested size: 329.51846pt x 180.7936pt.
 [74<./figs/fig11.pdf><./figs/fig12.pdf><./figs/fig13.pdf>]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-3'
+5'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .4'
 
-Overfull \hbox (1.55705pt too wide) in paragraph at lines 571--584
+Overfull \hbox (1.55705pt too wide) in paragraph at lines 573--586
 []|\LTJY3/SimSun(0)/m/scsl/10 两 |个 |算 |符 |的 \T1/lmr/m/n/10 OPE |\LTJY
 3/SimSun(0)/m/scsl/10 在 |两 |个 |算 |符 |的 |插 |入 |位 |置 |一 |
 样 |时 |会 |发 |散 [] |这 |种 |发 |散 |就 |类 |似 |于 |一 |般 \T
@@ -3760,57 +3760,57 @@ warning  (pdf backend): ignoring duplicate destination with the name 'definition
 .5'
 [76]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-4'
+6'
 [77] [78] [79]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-5'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
-6'
-
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 7'
-[80]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 8'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.2
 9'
-
+[80]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 0'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 1'
-[81]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 2'
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 3'
-[82] [83]
+[81]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 4'
-[84]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 5'
-[85]
+[82] [83]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 6'
-[86]
+[84]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 7'
-
+[85]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 8'
-[87]
+[86]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.3
 9'
-[88]
+
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 0'
+[87]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
+1'
+[88]
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
+2'
 
-Overfull \hbox (25.29341pt too wide) in paragraph at lines 1182--1184
+Overfull \hbox (25.29341pt too wide) in paragraph at lines 1185--1187
 |\LTJY3/SimSun(0)/m/scsl/10 上 |式 |已 |经 |合 |适 |选 |取 |归 |一 |
 化 |因 |子 |使 |得 |其 |为 $\OML/lmm/m/it/10 h \OT1/lmr/m/n/10 = 1$ |\LT
 JY3/SimSun(0)/m/scsl/10 初 |级 |场 [] |上 |式 |最 |后 |一 |个 |等 |
@@ -3820,50 +3820,50 @@ OT1/lmr/m/n/10 ) =
 
 
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
-1'
+3'
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1213.
+(hyperref)                removing `math shift' on input line 1216.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1213.
+(hyperref)                removing `math shift' on input line 1216.
 
 [89]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
-2'
+4'
 [90]
 
 Package tcolorbox Warning: Discard zero height first box part due to break prob
-lems (possible loss of zero height content) on input line 1301.
+lems (possible loss of zero height content) on input line 1304.
 
 [91]
 
-Package caption Warning: \label without proper reference on input line 1307.
+Package caption Warning: \label without proper reference on input line 1310.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `unitary' on page 92 undefined on input line 1303.
+LaTeX Warning: Reference `unitary' on page 92 undefined on input line 1306.
 
 
 warning  (file figs/fig16.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig16.pdf, id=3937, 216.81pt x 220.09528pt>
+<figs/fig16.pdf, id=3946, 216.81pt x 220.09528pt>
 File: figs/fig16.pdf Graphic file (type pdf)
 <use figs/fig16.pdf>
-Package luatex.def Info: figs/fig16.pdf  used on input line 1306.
+Package luatex.def Info: figs/fig16.pdf  used on input line 1309.
 (luatex.def)             Requested size: 216.80946pt x 220.09473pt.
 
-Package caption Warning: \label without proper reference on input line 1307.
+Package caption Warning: \label without proper reference on input line 1310.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `unitary' on page 92 undefined on input line 1313.
+LaTeX Warning: Reference `unitary' on page 92 undefined on input line 1316.
 
 [92
 warning  (pdf backend): pop empty color page stack 0
 <./figs/fig16.pdf>]
-Overfull \hbox (8.76318pt too wide) in paragraph at lines 1341--1356
+Overfull \hbox (8.76318pt too wide) in paragraph at lines 1344--1359
 []|\LTJY3/SimSun(0)/m/scsl/10 类 |似 |这 |种 |谱 |有 |限 |离 |散 [] |
 而 |且 |这 |时 $\OML/lmm/m/it/10 h$ |\LTJY3/SimSun(0)/m/scsl/10 还 |都 |
 是 |有 |理 |数 |的 \T1/lmr/m/n/10 CFT |\LTJY3/SimSun(0)/m/scsl/10 我 |
@@ -3872,40 +3872,38 @@ Overfull \hbox (8.76318pt too wide) in paragraph at lines 1341--1356
  []
 
 
-Overfull \hbox (8.97481pt too wide) detected at line 1362
+Overfull \hbox (8.97481pt too wide) detected at line 1365
 [][][][] [] \OML/lmm/m/it/10 \OT1/lmr/m/n/10 (\OML/lmm/m/it/10 z\OT1/lmr/m/n/1
 0 ) = [] [] = 0
  []
 
 [93]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
-3'
+5'
 [94]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@text@composite@x' on input line 1419.
+(hyperref)                removing `\@text@composite@x' on input line 1422.
 
 
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
-4'
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@text@composite@x' on input line 1421.
-
-
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
-5'
-[95]
-
-Package tcolorbox Warning: Discard zero height first box part due to break prob
-lems (possible loss of zero height content) on input line 1500.
-
-[96]
 warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 6'
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@text@composite@x' on input line 1424.
+
+
+warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
+7'
+[95]
+
 Package tcolorbox Warning: Discard zero height first box part due to break prob
-lems (possible loss of zero height content) on input line 1539.
+lems (possible loss of zero height content) on input line 1503.
+
+[96]
+
+Package tcolorbox Warning: Discard zero height first box part due to break prob
+lems (possible loss of zero height content) on input line 1542.
 
 [97
 warning  (pdf backend): pop empty color page stack 0
@@ -3914,404 +3912,401 @@ warning  (pdf backend): pop empty color page stack 0
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@text@composite@x' on input line 1592.
+(hyperref)                removing `\@text@composite@x' on input line 1595.
 
 [99]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@text@composite@x' on input line 1627.
+(hyperref)                removing `\@text@composite@x' on input line 1630.
 
-
-warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
-7'
 [100] [101]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1693.
+(hyperref)                removing `math shift' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1693.
+(hyperref)                removing `\setbox' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1693.
+(hyperref)                removing `\z@' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1693.
+(hyperref)                removing `\hbox' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1693.
+(hyperref)                removing `\mathsurround' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1693.
+(hyperref)                removing `\z@' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1693.
+(hyperref)                removing `math shift' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textstyle' on input line 1693.
+(hyperref)                removing `\textstyle' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1693.
+(hyperref)                removing `\use@mathgroup' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1693.
+(hyperref)                removing `\<def>-command' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1693.
+(hyperref)                removing `\accentclass@' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1693.
+(hyperref)                removing `\<def>-command' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1693.
+(hyperref)                removing `\accentclass@' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1693.
+(hyperref)                removing `math shift' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathaccent' on input line 1693.
+(hyperref)                removing `\mathaccent' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1693.
+(hyperref)                removing `\use@mathgroup' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1693.
+(hyperref)                removing `\<def>-command' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1693.
+(hyperref)                removing `\accentclass@' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1693.
+(hyperref)                removing `\<def>-command' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1693.
+(hyperref)                removing `\accentclass@' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1693.
+(hyperref)                removing `subscript' on input line 1696.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1693.
+(hyperref)                removing `math shift' on input line 1696.
 
 [102]
 warning  (file figs/fig17.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.6', but at most version '1.5' allowed
-<figs/fig17.pdf, id=4183, 287.33388pt x 257.4167pt>
+<figs/fig17.pdf, id=4194, 287.33388pt x 257.4167pt>
 File: figs/fig17.pdf Graphic file (type pdf)
 <use figs/fig17.pdf>
-Package luatex.def Info: figs/fig17.pdf  used on input line 1765.
+Package luatex.def Info: figs/fig17.pdf  used on input line 1768.
 (luatex.def)             Requested size: 287.33318pt x 257.41606pt.
 [103]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1793.
+(hyperref)                removing `math shift' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\setbox' on input line 1793.
+(hyperref)                removing `\setbox' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1793.
+(hyperref)                removing `\z@' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 1793.
+(hyperref)                removing `\hbox' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 1793.
+(hyperref)                removing `\mathsurround' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 1793.
+(hyperref)                removing `\z@' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1793.
+(hyperref)                removing `math shift' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\textstyle' on input line 1793.
+(hyperref)                removing `\textstyle' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1793.
+(hyperref)                removing `\use@mathgroup' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1793.
+(hyperref)                removing `\<def>-command' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1793.
+(hyperref)                removing `\accentclass@' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1793.
+(hyperref)                removing `\<def>-command' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1793.
+(hyperref)                removing `\accentclass@' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1793.
+(hyperref)                removing `math shift' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathaccent' on input line 1793.
+(hyperref)                removing `\mathaccent' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1793.
+(hyperref)                removing `\use@mathgroup' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1793.
+(hyperref)                removing `\<def>-command' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1793.
+(hyperref)                removing `\accentclass@' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1793.
+(hyperref)                removing `\<def>-command' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1793.
+(hyperref)                removing `\accentclass@' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1793.
+(hyperref)                removing `\use@mathgroup' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1793.
+(hyperref)                removing `\<def>-command' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1793.
+(hyperref)                removing `\accentclass@' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symoperators' on input line 1793.
+(hyperref)                removing `\symoperators' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1793.
+(hyperref)                removing `subscript' on input line 1796.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1793.
+(hyperref)                removing `math shift' on input line 1796.
 
 [104<./figs/fig17.pdf>]
 
-LaTeX Warning: Reference `38.8' on page 105 undefined on input line 1802.
+LaTeX Warning: Reference `38.8' on page 105 undefined on input line 1805.
 
 [105] [106]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1881.
+(hyperref)                removing `math shift' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1881.
+(hyperref)                removing `\use@mathgroup' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1881.
+(hyperref)                removing `\<def>-command' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1881.
+(hyperref)                removing `\accentclass@' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1881.
+(hyperref)                removing `\<def>-command' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1881.
+(hyperref)                removing `\accentclass@' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 1881.
+(hyperref)                removing `\symsymbols' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1881.
+(hyperref)                removing `math shift' on input line 1884.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1883.
+(hyperref)                removing `math shift' on input line 1886.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1883.
+(hyperref)                removing `\use@mathgroup' on input line 1886.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1883.
+(hyperref)                removing `\<def>-command' on input line 1886.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1883.
+(hyperref)                removing `\accentclass@' on input line 1886.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1883.
+(hyperref)                removing `\<def>-command' on input line 1886.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1883.
+(hyperref)                removing `\accentclass@' on input line 1886.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 1883.
+(hyperref)                removing `\symsymbols' on input line 1886.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1883.
+(hyperref)                removing `math shift' on input line 1886.
 
 [107] [108]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1950.
+(hyperref)                removing `math shift' on input line 1953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1950.
+(hyperref)                removing `\use@mathgroup' on input line 1953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1950.
+(hyperref)                removing `\<def>-command' on input line 1953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1950.
+(hyperref)                removing `\accentclass@' on input line 1953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1950.
+(hyperref)                removing `\<def>-command' on input line 1953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1950.
+(hyperref)                removing `\accentclass@' on input line 1953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 1950.
+(hyperref)                removing `\symsymbols' on input line 1953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1950.
+(hyperref)                removing `math shift' on input line 1953.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1978.
+(hyperref)                removing `math shift' on input line 1981.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 1978.
+(hyperref)                removing `\use@mathgroup' on input line 1981.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1978.
+(hyperref)                removing `\<def>-command' on input line 1981.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1978.
+(hyperref)                removing `\accentclass@' on input line 1981.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 1978.
+(hyperref)                removing `\<def>-command' on input line 1981.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 1978.
+(hyperref)                removing `\accentclass@' on input line 1981.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 1978.
+(hyperref)                removing `\symsymbols' on input line 1981.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1978.
+(hyperref)                removing `subscript' on input line 1981.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1978.
+(hyperref)                removing `math shift' on input line 1981.
 
 [109]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2016.
+(hyperref)                removing `math shift' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 2016.
+(hyperref)                removing `\use@mathgroup' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2016.
+(hyperref)                removing `\<def>-command' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2016.
+(hyperref)                removing `\accentclass@' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2016.
+(hyperref)                removing `\<def>-command' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2016.
+(hyperref)                removing `\accentclass@' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 2016.
+(hyperref)                removing `\symsymbols' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2016.
+(hyperref)                removing `subscript' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\infty' on input line 2016.
+(hyperref)                removing `\infty' on input line 2019.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2016.
+(hyperref)                removing `math shift' on input line 2019.
 
 [110]
-Overfull \hbox (4.46263pt too wide) detected at line 2043
+Overfull \hbox (4.46263pt too wide) detected at line 2046
 [][][][][]
  []
 
 
-Overfull \hbox (21.40262pt too wide) detected at line 2051
+Overfull \hbox (21.40262pt too wide) detected at line 2054
 [][][]\OT1/lmr/m/n/10 [\OML/lmm/m/it/10 V[]; V[]\OT1/lmr/m/n/10 ] = []\OML/lmm/
 m/it/10 []N[]\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 m; n\OT1/lmr/m/n/10 )\OML/lmm/m
 /it/10 V[] \OT1/lmr/m/n/10 + []\OML/lmm/m/it/10 []N[]\OT1/lmr/m/n/10 (\OML/lmm
@@ -4321,249 +4316,233 @@ m/it/10 V[] \OT1/lmr/m/n/10 + []
  []
 
 
-Overfull \hbox (30.64229pt too wide) detected at line 2062
+Overfull \hbox (30.64229pt too wide) detected at line 2065
 [][][][][]
  []
 
 [111] [112]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2139.
+(hyperref)                removing `math shift' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 2139.
+(hyperref)                removing `\use@mathgroup' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2139.
+(hyperref)                removing `\<def>-command' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2139.
+(hyperref)                removing `\accentclass@' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2139.
+(hyperref)                removing `\<def>-command' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2139.
+(hyperref)                removing `\accentclass@' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 2139.
+(hyperref)                removing `\symsymbols' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2139.
+(hyperref)                removing `subscript' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\infty' on input line 2139.
+(hyperref)                removing `\infty' on input line 2142.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2139.
+(hyperref)                removing `math shift' on input line 2142.
 
 [113]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2170.
+(hyperref)                removing `math shift' on input line 2173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 2170.
+(hyperref)                removing `\use@mathgroup' on input line 2173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2170.
+(hyperref)                removing `\<def>-command' on input line 2173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2170.
+(hyperref)                removing `\accentclass@' on input line 2173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2170.
+(hyperref)                removing `\<def>-command' on input line 2173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2170.
+(hyperref)                removing `\accentclass@' on input line 2173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 2170.
+(hyperref)                removing `\symsymbols' on input line 2173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2170.
+(hyperref)                removing `math shift' on input line 2173.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2171.
+(hyperref)                removing `math shift' on input line 2174.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2171.
+(hyperref)                removing `math shift' on input line 2174.
 
 [114]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2219.
+(hyperref)                removing `math shift' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 2219.
+(hyperref)                removing `\use@mathgroup' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2219.
+(hyperref)                removing `\<def>-command' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2219.
+(hyperref)                removing `\accentclass@' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2219.
+(hyperref)                removing `\<def>-command' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2219.
+(hyperref)                removing `\accentclass@' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 2219.
+(hyperref)                removing `\symsymbols' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2219.
+(hyperref)                removing `subscript' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\infty' on input line 2219.
+(hyperref)                removing `\infty' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2219.
+(hyperref)                removing `math shift' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2219.
+(hyperref)                removing `math shift' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 2219.
+(hyperref)                removing `\use@mathgroup' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2219.
+(hyperref)                removing `\<def>-command' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2219.
+(hyperref)                removing `\accentclass@' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2219.
+(hyperref)                removing `\<def>-command' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2219.
+(hyperref)                removing `\accentclass@' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 2219.
+(hyperref)                removing `\symsymbols' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2219.
+(hyperref)                removing `subscript' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\infty' on input line 2219.
+(hyperref)                removing `\infty' on input line 2222.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2219.
+(hyperref)                removing `math shift' on input line 2222.
 
 [115] [116]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2264.
+(hyperref)                removing `math shift' on input line 2267.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 2264.
+(hyperref)                removing `\use@mathgroup' on input line 2267.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2264.
+(hyperref)                removing `\<def>-command' on input line 2267.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2264.
+(hyperref)                removing `\accentclass@' on input line 2267.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2264.
+(hyperref)                removing `\<def>-command' on input line 2267.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2264.
+(hyperref)                removing `\accentclass@' on input line 2267.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 2264.
+(hyperref)                removing `\symsymbols' on input line 2267.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2264.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\use@mathgroup' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\accentclass@' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symsymbols' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\infty' on input line 2266.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2266.
+(hyperref)                removing `math shift' on input line 2267.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\use@mathgroup' on input line 2269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 2269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\accentclass@' on input line 2269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 2269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\accentclass@' on input line 2269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symsymbols' on input line 2269.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -4576,6 +4555,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2269.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2272.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 2272.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\infty' on input line 2272.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 2272.
 
 ) [117]
 \openout2 = texfiles/part7.aux
@@ -4636,7 +4631,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 
 warning  (file figs/fig18.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.7', but at most version '1.5' allowed
-<figs/fig18.pdf, id=4518, 301.29564pt x 45.48795pt>
+<figs/fig18.pdf, id=4529, 301.29564pt x 45.48795pt>
 File: figs/fig18.pdf Graphic file (type pdf)
 <use figs/fig18.pdf>
 Package luatex.def Info: figs/fig18.pdf  used on input line 37.
@@ -4644,7 +4639,7 @@ Package luatex.def Info: figs/fig18.pdf  used on input line 37.
 
 warning  (file figs/fig19.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.7', but at most version '1.5' allowed
-<figs/fig19.pdf, id=4520, 279.31752pt x 68.23192pt>
+<figs/fig19.pdf, id=4531, 279.31752pt x 68.23192pt>
 File: figs/fig19.pdf Graphic file (type pdf)
 <use figs/fig19.pdf>
 Package luatex.def Info: figs/fig19.pdf  used on input line 42.
@@ -4673,7 +4668,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.6
 
 warning  (file figs/fig15.pdf) (pdf inclusion): PDF inclusion: found PDF version
  '1.7', but at most version '1.5' allowed
-<figs/fig15.pdf, id=4876, 427.02657pt x 190.13033pt>
+<figs/fig15.pdf, id=4888, 427.02657pt x 190.13033pt>
 File: figs/fig15.pdf Graphic file (type pdf)
 <use figs/fig15.pdf>
 Package luatex.def Info: figs/fig15.pdf  used on input line 111.
@@ -4793,7 +4788,7 @@ warning  (pdf backend): ignoring duplicate destination with the name 'sidenote.4
 
 warning  (file figs/fig6.pdf) (pdf inclusion): PDF inclusion: found PDF version 
 '1.7', but at most version '1.5' allowed
-<figs/fig6.pdf, id=5088, 201.91736pt x 208.92554pt>
+<figs/fig6.pdf, id=5099, 201.91736pt x 208.92554pt>
 File: figs/fig6.pdf Graphic file (type pdf)
 <use figs/fig6.pdf>
 Package luatex.def Info: figs/fig6.pdf  used on input line 46.
@@ -5318,16 +5313,16 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 63627 strings out of 478285
+ 63637 strings out of 478285
  596115,2848258 words of node,token memory allocated
- 162008 words of node memory still in use:
+ 162128 words of node memory still in use:
    347 hlist, 86 vlist, 549 rule, 7 disc, 34 local_par, 155 math, 912 glue, 62 k
-ern, 170 penalty, 18 sub_mlist, 975 glyph, 62231 attribute, 75 glue_spec, 5805 a
+ern, 170 penalty, 18 sub_mlist, 975 glyph, 62286 attribute, 75 glue_spec, 5810 a
 ttribute_list, 2 write, 197 user_defined, 4 pdf_start_link, 4 pdf_end_link, 2 pd
 f_dest, 50 pdf_action, 12 pdf_colorstack nodes
-   avail lists: 1:21,2:104841,3:18456,4:3480,5:791,6:83,7:7750,8:124,9:3651,10:2
+   avail lists: 1:21,2:104781,3:18456,4:3480,5:856,6:83,7:7750,8:124,9:3674,10:2
 7,11:491
- 79286 multiletter control sequences out of 65536+600000
+ 79291 multiletter control sequences out of 65536+600000
  243 fonts using 232810215 bytes
  114i,23n,141p,1339b,5029s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
@@ -5432,10 +5427,10 @@ ve/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><d:/texlive/20
 mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><d:/texlive/2023/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm7.pfb><d:/texlive/2023/texmf-dist/fon
 ts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (170 pages, 4851510 bytes).
+Output written on main.pdf (170 pages, 4853325 bytes).
 
-PDF statistics: 6168 PDF objects out of 6186 (max. 8388607)
- 4614 compressed objects within 47 object streams
- 1810 named destinations out of 2073 (max. 131072)
+PDF statistics: 6179 PDF objects out of 6186 (max. 8388607)
+ 4625 compressed objects within 47 object streams
+ 1815 named destinations out of 2073 (max. 131072)
  1311 words of extra memory for PDF output out of 10000 (max. 100000000)
 
