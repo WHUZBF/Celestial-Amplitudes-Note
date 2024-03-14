@@ -11,10 +11,11 @@ CFT经典教材是大黄书\cite{DiFrancesco:1997nk}，教材\cite{Blumenhagen:2
 \begin{equation}
 	\phi^\prime(\lambda \vec{x})=\lambda^{-\Delta}\phi(\vec x)
 \end{equation}
-但是这只是对Dilation要求场在共形变换下“协变”，进一步要求对任意共形变换“协变”就给出了\textbf{初级场}（primary field）的定义。\sn{注意我们遵从大黄书的符号约定，和\cite{Blumenhagen:2009zz,Ginsparg:1988ui}的定义恰巧相反，对最终CFT中的一些结论没有任何影响，仅仅只是中间推导过程有些细微的差别。}\sn{$s=1/2$是何形式？}
+但是这只是对Dilation要求场在共形变换下“协变”，进一步要求对任意共形变换“协变”就给出了\textbf{初级场}（primary field）的定义。\sn{注意我们遵从大黄书的符号约定，和\cite{Blumenhagen:2009zz,Ginsparg:1988ui}的定义恰巧相反，对最终CFT中的一些结论没有任何影响，仅仅只是中间推导过程有些细微的差别。}\sn{对于$s\neq 0$的情况$\phi$需要额外带上指标，就像Lorentz指标一样。而这些指标使得$\phi_{ab\cdots}$构成$SO(D)$的自旋$s$表示（$s\in\mathbb{Z}$时可以通过找张量表示构造）。$D=2$时$SO(2)$的不可约表示是一个trivial的相位因子，所以二维CFT并不需要care这些$SO(D)$指标，初级场就简单由\ref{28.27}定义。更多有关高维CFT的内容可见\cite{Rychkov:2016iqz}。}
 \begin{definition}
 	共形维数为$\Delta$的初级场(s=0)定义为在任意共形变换下满足：
 	\begin{equation}
+		\label{28.27}
 		\phi^\prime(\vec{x^\prime})=\left|\frac{\partial \vec {x^\prime}}{\partial \vec {x}}\right|^{\Delta/d}\phi(\vec {x})
 	\end{equation}
 \end{definition}
@@ -1353,7 +1354,7 @@ Ka\v{c}行列式的零点结构已经被一般地研究过了：
 				$\frac{1}{16}$ & $\frac{1}{16}$ \\ \hline
 				0              & $\frac{1}{2}$  \\ \hline
 			\end{tabular}
-		\caption{Ising模型的谱，横轴表示$1\leq p\leq 2$，纵轴表示$1\leq q\leq 3$}
+		\caption{Ising模型的谱，横轴表示$1\leq p\leq 2$，纵轴表示$1\leq q\leq 3$，这种表叫\textit{Ka\v{c}表}}
 	\end{table}
 	从$p,q$取值范围来看似乎有$m(m-1)$个谱，但实际上有一半是重复的，只有$\mathrm{C}^2_m$个谱。
 \end{example}
@@ -1417,7 +1418,24 @@ $h,h_1,h_2$分别是$\phi,\phi_1,\phi_2$对应的共形权。这对三点函数�
 		\begin{aligned}&\left[\phi_i\right]\times\left(\left[\phi_j\right]\times\left[\phi_k\right]\right)=\left[\phi_i\right]\times\sum_{l}N_{jk}^{l}\left[\phi_l\right]=\sum_{l,m}N_{jk}^{l}N_{il}^{m}\left[\phi_m\right]\\&\left(\left[\phi_i\right]\times\left[\phi_j\right]\right)\times\left[\phi_k\right]=\sum_{l,m}N_{ij}^{l}N_{lk}^{l}\left[\phi_m\right],\end{aligned}
 	\end{equation}
 \end{proof}
-\subsection{Ising Model}
+\subsection{Landau–Ginzburg Formulation}
+Minimal model名字叫极小，内容一点也不小，即便是前面我们略掉了大部分的证明细节还是只讲了冰山一脚，接下来我们简单介绍一些极小模型的具体实现。由于量子力学是幺正的，所以这里我们考虑的是极小模型$\mathcal{M}_{p,q}$的子集，幺正极小模型$\mathcal{M}_m$。与这个模型所对应的欧氏场论是所谓Landau–Ginzburg模型：
+\begin{equation}
+\begin{gathered}
+		\mathcal{A}=\int d^2x\left[\frac12(\partial_\mu\varphi)^2+V(\varphi)\right]
+	V(\varphi)=g_1\varphi+g_2:\varphi^2:+\cdots+g_{2(m-2)}:\varphi^{2(m-2)}:+g:\varphi^{2(m-1)}:
+\end{gathered}
+\end{equation}
+这里我们把作用量符号改记$\mathcal{A}$，因为这个理论最早提出来是为了唯象地解释相变，这里的场实际上是序参量，上式积分得到的是自由能。当然，这个理论在量子场论中也有对应，从重整化的角度看，他对应标量场在不动点处的理论。注意$V(\varphi)$中没有$\varphi^{2(m-1)-1}$项，因为总可以通过$\varphi\mapsto\varphi+\mathrm{const.}$将其纳入$g_1:\varphi:$中。按照经典相变理论的分析，假设$g>0$，是一个不变的常数，现在在${g_i}$这恶鬼参数空间下变动，总存在一个点，使得$V(\phi)$有$m-1$个极大值，比如$m=2,V(\varphi)=g(\varphi^2-a^2)^2;m=3,V(\varphi)=g\varphi^2\left(\varphi^2-b^2\right)^2$，这些不同的极大值用量子力学的语言说就是简并基态，它们也对应着理论中的$m-1$个不同的相。而$g_i=0,g\neq 0$，也就是$\mathcal{A}$直到$\varphi$的$2m-3$阶导数都为0，这对应理论的$m-1$个相共存的临界点（multi-critical point）。
+
+multi-critical point处作用量所对应的运动方程为：
+\begin{equation}
+	\partial_z\partial_{\bar{z}}\varphi\sim:\varphi^{2q-3}:
+\end{equation}
+这里的$\sim$表示要把上式看作跟OPE一样，只有在关联函数下才成立的等式。
+
+
+
 
 \section{Ka\v{c}\mbox{–}Moody Symmetry}
 从现在开始，我们来考虑比Virasoro对称性更大的对称性。本节大量涉及无穷维李代数的艰深数学内容，大黄书专门用了两章进行铺垫介绍，这里不追求数学上的严谨性。\sn{数学读物可见\cite{Fuchs:1997af,Kac:1990gs}}
