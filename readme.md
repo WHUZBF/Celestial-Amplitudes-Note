@@ -16,3 +16,5 @@
 # LaTex模板
 
 笔记利用[Adhumunt的模板](https://github.com/Adhumunt/NotesTeX)写成，稍微做了点本地化修改。
+
+现在有点处于半弃坑状态，其他内容会补上，里面的天球内容或许不会补了，目前天球振幅的文献我跟到22年，除了Mellin变换我没看到任何其他不水的东西。完全无法从boundary回到bulk中去，而对于CCFT的尝试也处于非常naive的阶段，而且CCFT看起来和一般的CFT非常不同，难以处理。
