@@ -1224,7 +1224,7 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 \begin{equation}\label{eq:35.67}
 	\partial^z\left\langle b(z)c(w)\right\rangle=4\pi\left.\delta^{(2)}(z-w)\quad\Rightarrow\quad\left\langle b(z)c(w)\right\rangle=\frac1{z-w}\right. 
 \end{equation}
-进而得到$b,c$之间OPE\sn{$bb,cc$自己之间的OPE没有奇异部分}计算出反对易关系：
+进而得到$b,c$之间OPE\sn{$bb,cc$自己之间的OPE没有奇异部分，只有$bc$之间：\[b(z)c(w)\sim\frac{1}{z-w}\]}计算出反对易关系：
 \begin{equation}
 	\left\{b_m,c_n\right\}=\delta_{n+m,0},\quad\left\{b_m,b_n\right\}=0,\quad\left\{c_m,c_n\right\}=0
 \end{equation}
@@ -1244,9 +1244,70 @@ $\psi$这个给wyle旋量是一个实值标量场，而且是个Grassmann数。�
 	
 	\item $b,c$明明是初级场，而且共形权不相等，为何它们之间的关联函数\ref{eq:35.67}不是0？
 \end{itemize}
-这两个问题是有直接联系的，下面我们来解决它们。
+这两个问题是有直接联系的，下面我们来解决它们。根据规范场论引入鬼态进行正则量子化的经验（Gupta量子化方法），鬼态会对真空态做一些破坏，真空态在CFT中依靠$b,c$的谐振子代数定义，$b$没啥好说的，由于共形权大于0，所以和一般的场处理起来一样。但是$c$共形权小于0，我们尝试利用下面的最高权态要求构造真空\sn{初级场都是Virasoro代数的最高权态，真空$L_0$最小，而且被其他初级场湮灭}：
+\begin{equation}
+	\ket{0},\quad\left|c\right\rangle=c_1\left|0\right\rangle,\quad\left|\left(\partial c\right)c\right\rangle=c_0c_1\left|0\right\rangle 
+\end{equation}
+不难验证上面的三个都满足$c_{n\geq 2}$作用上去为0，后面两个更是对于$c_{n\geq 1}$都是0，后面两个是重点，因为它们是$L_0$左模能量更低的“真空”。而且这两个态的厄米共轭也很不一样，直觉上可能觉得$(c_{1}\ket{0})^\dagger=\ket{0}c_{-1}$，但实际上：
+\begin{equation}
+	(c_1\left|0\right\rangle)^\dagger=\left<0\right|c_{-1}c_0\xrightarrow{\text{Norm.}}\left\langle0\right|c_{-1}c_0c_1\left|0\right\rangle=1
+\end{equation}
+如果我们从naive的想法直接出发去计算bc的关联函数：
+\begin{equation}
+	\begin{aligned}\langle b(z)c(w)\rangle&=\sum_{m\leq1}\langle0|b_nz^{-n-2}c_mw^{-m+1}\mid0\rangle\\&=\langle0|0\rangle\frac w{z^2}\sum_{n\geq2}\left(\frac wz\right)^n=\frac{w^3}{z^3}\frac{\langle0|0\rangle}{z-w}\end{aligned}
+\end{equation}
+不但和前面同样naive想法从传播子来的形式对不上，更糟糕的是和前面的形式同样都似乎破缺掉了global共形对称性，除非$\braket{0}{0}=0$。事实上问题的关键就在于$\ket{0}$确实是null vector！现在我们来解释一下前面说的这一堆乌云。
 
+首先根据$b,c$的$U(1)$对称性可以得到Noether流：
+\begin{equation}
+	j(z)=-:b(z)c(z):
+\end{equation}
+这个流虽然在经典层面上守恒，但是量子层面上会出现反常。利用鬼场能动张量计算得到：
+\begin{equation}
+	\begin{gathered}
+		T(z)j(w)\sim\frac{-3}{(z-w)^3}+\frac{j(w)}{(z-w)^2}+\frac{\partial_wj(w)}{z-w}+\ldots \\
+		[L_n,j_m]=\frac{-3n(n+1)}2\delta_{n+m,0}-mj_{m+n}
+	\end{gathered}
+\end{equation}
+从上面的计算结果能直接看出来$j$连准初级场都不是。
 
+考虑满足下面OPE的算符$\mathcal{O}_q$：
+\begin{equation}
+	j(z)\mathcal{O}_q(w)\sim\frac{q\mathcal{O}_q(w)}{z-w}+\ldots,\quad\begin{cases}\mathcal{O}_{q=1}(w)=c(w)\\\mathcal{O}_{q=-1}(w)=b(w)&\end{cases}
+\end{equation}
+称为鬼数(ghost number)为$q$的算符，根据态算符对应:
+\begin{equation}
+	\left|q\right\rangle=\lim_{{z}\to0}\mathcal{O}_q(z)\left|0\right\rangle 
+\end{equation}
+这其实是$j_0$的本征态：
+\begin{equation}
+	j_0\left|q\right\rangle=q\left|q\right\rangle 
+\end{equation}
+前面说过$j_0$不是厄米的，会出现常数项，这直接导致$\braket{q^\prime}{q}$不一定为0：
+\begin{equation}
+	\begin{aligned}q\langle q^{\prime}|q\rangle&=\langle q^{\prime}|j_0|q\rangle=(j_0^{\dagger}|q^{\prime}\rangle)^{\dagger}|q\rangle\\&=[(3-j_0)|q^{\prime}\rangle^{\dagger}|q\rangle=(3-q^{\prime})\langle q^{\prime}|q\rangle\end{aligned}
+\end{equation}
+可见，只要$q+q^\prime=3$，$\braket{q^\prime}{q}$就可以不为0，$q$取$0,1$得到两对互为厄米共轭的态：
+\begin{equation}
+	\begin{aligned}q&=0:\quad|0\rangle&\leftrightarrow q=3:\quad c_{-1}c_0c_1|0\rangle\\q&=1:\quad c_1|0\rangle&\leftrightarrow q=2:\quad c_0c_1|0\rangle\end{aligned}
+\end{equation}
+这就解释了归一化$\left\langle0\right|c_{-1}c_0c_1\left|0\right\rangle=1$的合理性，以及$(\ket{0})^\dagger\neq\bra{0}$带来的$\ket{0}$为null state。现在回到最初的问题，如何理解$bc$关联函数从传播子来看确实是$\frac1{z-w}$？首先计算下面的五点关联函数：\sn{计算中利用了：\[\begin{aligned}b_{m\geq-1}\left|0\right\rangle&=0,\quad&\left\langle0\right|b_{m\leq1}&=0\\c_{n\geq2}\left|0\right\rangle&=0,\quad&\left\langle0\right|c_{n\leq-2}&=0\end{aligned}\]}
+\begin{equation}
+	\begin{aligned}
+		\langle0|c_{-1}c_0c_1c(z)b(w)|0\rangle &=\sum_{\overset{m\leq-}{n\geq2}}\left\langle0\right|c_{-1}c_0c_1(\delta_{n+m,0}-b_mc_n)\left|0\right\rangle z^{-n+1}w^{-m-2}\\
+		&=\sum_{m\leq-2}\left.\frac{w^{-m-2}}{z^{-m-1}}-\sum_{m\leq-2,n\geq2}\left<0\right|c_{-1}c_0c_1b_m\underbrace{\left.c_n\right)}_{=0}|0\rangle z^{-n+1}w^{-m-2}\right.  \\
+		&=\sum_{m\leq-2}\frac{w^{-m-2}}{z^{-m-1}}=\frac1{z-w}
+	\end{aligned}
+\end{equation}
+同样可以计算得到$\left<0\right|c_{-1}c_0c_1b(z)c(w)\left|0\right>=\frac1{z-w}$。所以这似乎意味着我们考虑涉及到鬼场的真空关联函数的时候，都要当成是有背景荷的真空关联函数，直接夹在null state $\ket{0}$之间是没有意义的，也就是说：\sn{省略关联函数里面的径向排序}
+\begin{equation}
+	\bra{0}\cdot\ket{0}\sim\bra{0}c_{-1}c_0c_1\ket{0}
+\end{equation}
+但是前面直接从场论的观点，从传播子出发，它又是怎么自己“知道”这一点的呢？首先，我们前面的从场论出发实际上是直接从路径积分出发来看，然而在鬼场的路径积分语言中$\int\mathcal{D}[c]$包含下面三个积分：
+\begin{equation}
+	\int\mathrm{d}c_{-1}\mathrm{d}c_0\mathrm{d}c_1c_{-1}^xc_0^yc_1^z=\delta_{x,1}\delta_{y,1}\delta_{z,1}
+\end{equation}
+自然地就帮我们把背景给加上了！
 \begin{remark}
 	最后说一句，本节研究的所有三个模型中心荷都不是trivial的，但弦论为了消去共形反常只允许trivial的中心荷，所以都会在理论中加入别的场来把中心荷消掉，而这一步实际上也就暗含了常说的弦论为了自洽必须定义在更高维度空间中。比如玻色弦，上面鬼场$c=-26$，暗含其必须定义在$26$维时空中\footnote{Recall:中心荷某种程度上对应自由度}；如果引入超对称得到超弦理论，每个费米子会带来一个超对称玻色子伙伴，玻色子同理，对于鬼场，也会带来对易的，但是共形权是分数$\frac32,-\frac12$的伙伴$\beta,\gamma$。引入超对称后一个完整的玻色场理论一定还包括一个费米场，总的中心荷为$\frac32$，而鬼场的中心荷这时变成了$11$，这暗示理论必须定义在$\frac{2}{3}(26-11)=10$维空间中。
 \end{remark}
